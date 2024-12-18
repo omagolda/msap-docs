@@ -65,7 +65,7 @@ MISC, are defined exactly the same as in UD.
 As the key characteristics of morpho-syntactic dependency trees, morpho-syntactic
 features (MS features) are modelled after the morphological features in UD and may be
 viewed as a generalization of them. [Like in UD]( https://universaldependencies.org/u/overview/morphology.html),
-the features are an unordered set of name and value pairs separated by pipes, of the
+the features are an alphabetically ordered set of name and value pairs separated by pipes, of the
 structure `Name1=Value1|Name2=Value2`.[^msf0] Most feature names and values are equivalent to
 those in UD, for example `Gender=Masc`, `Voice=Pass`, etc.
 
