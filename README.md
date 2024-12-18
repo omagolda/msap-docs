@@ -144,7 +144,7 @@ In line with the principle of independence from word boundaries, in MS trees thi
 corresponds to traditional case morphemes as well as adpositions (these usually have
 `case` as DEPREL in UD trees) and coverbs when such exist. The inclusion of adpositions
 in determining the `Case` feature entails the expansions of cases possible in almost any
-language. Predicates in German, for example, now have an elative case (indicating motion
+language. Nominals in German, for example, now have an elative case (indicating motion
 from the inside of the argument) expressed by the combination of the synthetic dative
 case and the periphrastic _aus_ preposition.
 
