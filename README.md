@@ -45,7 +45,7 @@ Morphosyntactic Annotation will bring the trees of very different languages much
 
 #### Minimal Deviation from CoNLL-U
 
-We will add the morphosyntactic features in a new 11th column called `MS-FEATS'. The original CoNLL-U file can thus be recovered by simply dropping this column. On the other hand, the morphosyntactic tree can be built by dropping all the lemmas that do not have MS-FEATS defined for them. On the other hand, in polysynthetic languages, the addition of MS-features to content words will expose the argument structure even if it is encapsulated in a single word. 
+We will add the morphosyntactic features in a new 11th column called `MS-FEATS'. The original CoNLL-U file can thus be recovered by simply dropping this column. On the other hand, the morphosyntactic tree can be built by dropping all the lemmas that do not have MS-FEATS defined for them. On the other hand, in polysynthetic languages, the addition of MS-features to content words will expose the argument structure even if it is encapsulated in a single word.
 
 ## Schema Description
 
@@ -78,7 +78,7 @@ important characteristics:
   may appear in the final output, their MS-feats column should be `_`. This is  in
   contrast with content words that happen to have no MS-feats that should contain an
   orphan pipe `|`.
-* The features are defined not only by morphemes but by any _grammatical_ function 
+* The features are defined not only by morphemes but by any _grammatical_ function
 marker, be it a morpheme or a word. So the content node _go_ in _will go_ should bear
 the feature `Tense=Fut`.
   * All applicable features should be marked on the respective content nodes, even if
@@ -89,7 +89,7 @@ the feature `Tense=Fut`.
 features are needed, and in a phrase like _he goes_ only _he_ should bear
 `Number=Sing|Person=3`, and _goes_ should have only `Tense=Pres` (and other features if
 relevant).
-* The feature structure is not flat. In other words, features are not necessarily single 
+* The feature structure is not flat. In other words, features are not necessarily single
 strings. They can contain:
   * a list of values separated by a semicolon, for example `Aspect=Perf;Prog` on the verb
   of the English clause _I have been walking_
@@ -97,12 +97,12 @@ strings. They can contain:
   (“he can’t walk”) where the negation refers to the ability[^msf1]
   * a conjunction of values. This mechanism is to be used only in cases of explicit
   conjunction of grammatical constructions, for example `Case=and(Cnd,Temp)` is the
-  manifestation of the English phrase _if and when_ when connecting two clauses (see 
+  manifestation of the English phrase _if and when_ when connecting two clauses (see
   below for discussion on the `Case` feature)
   * and a disjunction of values, `Tense=or(Past,Fut)`
 
 The mapping from morpho-syntactic constructions to features does not have to be
-one-to-one. In cases where several constructions have the exact some meaning (e.g., 
+one-to-one. In cases where several constructions have the exact some meaning (e.g.,
 they differ in geographic distribution, register or personal preferences), it is
 perfectly suitable to assign the same feature combination to both of them. For example,
 in Spanish, both _comiera_ and _comiese_ will be assigned `Aspect=Imp|Mood=Sub|Tense=Past|VerbForm=Fin`
@@ -113,7 +113,7 @@ determiners, adpositions, conjunctions and subordinators, and some particles. Th
 categories may not neatly correspond to UD POS tags. Some clearly do, like auxiliaries
 (POS tag `AUX`), while others, like `DET` may include also contentful word, like _all_
 and _every_. Some POS tags like `ADV` mix many contentful words (_nicely_, _rapidly_,
-_often_, etc.) with a few that serve as conjunctions (_when_, _then_, etc.), and in 
+_often_, etc.) with a few that serve as conjunctions (_when_, _then_, etc.), and in
 rare cases the same word may be considered functional or contentful depending on the
 context.[^msf2]
 
@@ -125,18 +125,18 @@ walk”, i.e., he may not walk), where the negation pertains to the verb itself 
 be tagged as `Mood=Pot|Polarity=Neg`.
 
 [^msf2]: Compare the word _then_ in the sentence _if you want, then I'll do it_
-(functional) to the same word in _I didn't know what to do, then I understood_ (_then_ 
+(functional) to the same word in _I didn't know what to do, then I understood_ (_then_
 stands for "after some time" hence contentful).
 
 #### Feature Inventory
 
-quick link: [inventory of relation features](https://github.com/omagolda/msud-docs/blob/pages-source/inventory.md)
+quick link: [inventory of relation features](inventory.md)
 
 Since the MS features are a generalization of UD's morphological features, their types
 and possible values are also highly similar with that of [UD's features](https://universaldependencies.org/u/feat/index.html).
 Therefore, for most features, the list in UD is sufficient in characterizing content
 nodes in MS trees as well.
-The most prominent exceptions to this is the expansion of the`Case` feature. 
+The most prominent exceptions to this is the expansion of the`Case` feature.
 
 Originally, the `Case` feature characterized the relation between a predicate and
 its argument, almost always a nominal, but for MS trees its role is expanded twice. First,
@@ -159,7 +159,7 @@ In general, the same function word/morpheme combination should be mapped to the 
 _na_ should be mapped only to `Case=Conj` even when it serves a function of introducing
 the agent of a passive verb.
 
-"[inventory.md](https://github.com/omagolda/msud-docs/blob/pages-source/inventory.md)"
+"[inventory.md](inventory.md)"
 details a set of universal values for the `Case` feature. These feature does not cover
 all possible relations, and in some cases when there are adpositions or conjunctions that
 do not correspond to any of the features, the value of the respective feature should be
@@ -167,13 +167,13 @@ the canonical citation form of the function word transliterated into latin lette
 quotation marks. For example, the word _books_ in the phrase _about books_ should be
 assigned the MS features `Case="about"|Number=Plur`.
 
-A mapping from adpositions and conjunctions to the features in "inventory.md" should be 
-created as part of the annotation process. Note that the mapping does not have to be 
+A mapping from adpositions and conjunctions to the features in "inventory.md" should be
+created as part of the annotation process. Note that the mapping does not have to be
 one-to-one.
 
 ### Content Nodes
 
-Content nodes, to which morpho-syntactic features are to be defined, are all words or 
+Content nodes, to which morpho-syntactic features are to be defined, are all words or
 morphemes from open classes (like nouns, verbs and adjectives) that do not convey a
 grammatical modification of another word.[^cn1] These content words should form a
 morpho-syntactic tree, and this is automatically true in most cases when converting UD
@@ -187,9 +187,9 @@ For example, in the sentence _the quick brown fox jumps over the lazy dog_ there
 content words (quick, brown, fox, jump, lazy, dog) and 3 function words (the, over, the).
 <!--- we probably need a better example --->
 
-In compounds or headless expressions, i.e., cases where one of the `fixed`, `flat` or 
-`goeswith` DEPRELs are used, all words are judged together to either be of content or of 
-function. Usually such cases will be contentful, but sometimes a fixed expression can be 
+In compounds or headless expressions, i.e., cases where one of the `fixed`, `flat` or
+`goeswith` DEPRELs are used, all words are judged together to either be of content or of
+function. Usually such cases will be contentful, but sometimes a fixed expression can be
 a multi-word adposition, for example _as well as_ and _because of_.
 
 [^cn1]: In most languages, content nodes are equivalent to words. However, in some noun
@@ -216,7 +216,7 @@ Basque, the UD nodes:
 ~~~
 should be tagged as:
 ~~~ conllu
-4	ziurtatu	ziurtatu	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	_   Aspect=Perf|Mood=Ind|Tense=Past|VerbForm=Fin   
+4	ziurtatu	ziurtatu	VERB	_	Aspect=Perf|VerbForm=Part	0	root	_	_   Aspect=Perf|Mood=Ind|Tense=Past|VerbForm=Fin
 5	zuten	edun	AUX	_	Mood=Ind|Number[abs]=Sing|Number[erg]=Plur|Person[abs]=3|Person[erg]=3|Tense=Past|VerbForm=Fin	4	aux	_	ReconstructedLemma=Yes  _
 5.1 _   _   _   _   _   4   nsubj   _   _   Case=Erg|Number=Plur|Person=3
 5.2 _   _   _   _   _   4   obj _   _   Case=Abs|Number=Sing|Person=3
@@ -240,7 +240,7 @@ Abstract nodes are also to be used when the argument is outside the clause.
 #### Gaps
 
 Abstract nodes are also to be used in simple gaps, when there are function words
-referring to some missing argument. For example, a phrase like _books to choose from_, 
+referring to some missing argument. For example, a phrase like _books to choose from_,
 should be annotated as:
 ~~~ conllu
 4   books   book    NOUN    NN  Number=Plur 2   obj _   _   Number=Plur
@@ -296,7 +296,7 @@ VerbForm: default Fin, except if "to" as aux-child
 if there is only one "do"-child, copy the tense to the verb
 
 if there is a "be"-child
-* if there is one "be"-child of a verb:   
+* if there is one "be"-child of a verb:
     * if the head verb is VerbForm Ger, or VerbForm Part and Tense Pres, set Aspect to Prog
     * if the head verb is VerbForm Part and Tense Past, set Voice to Pass
 * if there are two "be"-children, set Aspect to Prog, and if it's a verb, set Voice to Pass
