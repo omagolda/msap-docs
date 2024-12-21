@@ -32,10 +32,9 @@ while(<>)
             $f[9] = scalar(@nonmsf) ? join('|', @nonmsf) : '_';
             # Do not copy any MS features if this is a function word.
             # If it is not a function word but there are no features, use '|' instead of '_'.
-            if(!(scalar(@msffunc) && $msffunc[0] eq 'MSFFunc=Yes'))
-            {
-                $msfeats = scalar(@msfeats) ? join('|', @msfeats) : '|';
-            }
+            my $is_function_word = scalar(@msffunc) == 0 || $msffunc[0] ne 'MSFFunc=No';
+            my $has_msfeats = scalar(@msfeats) > 0;
+            $msfeats = $is_function_word ? '_' : $has_msfeats ? join('|', @msfeats) : '|';
         }
         push(@f, $msfeats);
         # Pack the line again.
