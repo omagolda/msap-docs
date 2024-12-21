@@ -14,6 +14,12 @@ SCEN = util.Filter delete_tree_if_node='node.udeprel == "orphan"' mwe.MsfInit mw
 view:
 	cat $(INPUT) | udapy -TA $(SCEN) | less -R
 
+.PHONY: viewmsf
+viewmsf:
+	cat $(INPUT) | udapy -s $(SCEN) | ./conllu2msfeats.pl | less
+
 # Process a CoNLL-U file and save it in the MSF CoNLL-U Plus format.
 .PHONY: convert
+convert:
 	cat $(INPUT) | udapy -s $(SCEN) | ./conllu2msfeats.pl > $(OUTPUT)
+
