@@ -8,6 +8,7 @@ logger = logging.getLogger(__name__)
 def process_verb(head_tok, children_toks):
 
 	logger.debug("Examining head: %s", head_tok)
+	head_tok["content"] = True
 	head_tok["ms feats"]["tmp-head"].add("VERB")
 
 	# keep existing features for all nominals
@@ -18,51 +19,62 @@ def process_verb(head_tok, children_toks):
 
 		#Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
+
 			#TAM
 			#Mood
 			if "Mood" in child_tok["feats"]:
 				logger.debug("Adding Mood feature with value %s", child_tok["feats"]["Mood"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+				logger.warning("No MOOD: Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
 			#Tense
 			if "Tense" in child_tok["feats"]:
 				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+				logger.warning("No TENSE: Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# !! issues here
 			#Aspect
-			if child_tok["lemma"] == "stare" and 'Ger' in head_tok["feats"]["VerbForm"]:
-				logger.debug("Adding Aspect feature with value %s", child_tok["Prog"])
-				head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+			# if child_tok["lemma"] == "stare" and 'Ger' in head_tok["feats"]["VerbForm"]:
+			# 	logger.debug("Adding Aspect feature with value %s", child_tok["Prog"])
+			# 	head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
 			#Modality
-			if child_tok["lemma"] == "potere":
-				logger.debug("Adding Mood feature with value %s", child_tok["Pot"])
-				head_tok["ms feats"]["Mood"].add(child_tok["Pot"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-			if child_tok["lemma"] == "volere":
-				logger.debug("Adding Mood feature with value %s", child_tok["Des"])
-				head_tok["ms feats"]["Mood"].add(child_tok["Des"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-			if child_tok["lemma"] == "dovere":
-				logger.debug("Adding Mood feature with value %s", child_tok["Nec"])
-				head_tok["ms feats"]["Mood"].add(child_tok["Nec"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+			# if child_tok["lemma"] == "potere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Pot"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Pot"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# if child_tok["lemma"] == "volere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Des"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Des"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# if child_tok["lemma"] == "dovere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Nec"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Nec"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
 			#Voice:
 			if child_tok["lemma"] == "venire": #how do we treat essere, which is ambigous with active forms?
 				logger.debug("Adding Voice feature with value %s", child_tok["Pass"])
 				head_tok["ms feats"]["Voice"].add(child_tok["Pass"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-			if child_tok["lemma"] == "fare": #it is probably not defined as aux
-				logger.debug("Adding Voice feature with value %s", child_tok["Cau"])
-				head_tok["ms feats"]["Voice"].add(child_tok["Cau"])
-			else:
-				logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-			#Indexing (person, number)
+			# else:
+				# !! why the warning?
+				# logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# if child_tok["lemma"] == "fare": #it is probably not defined as aux
+			# 	logger.debug("Adding Voice feature with value %s", child_tok["Cau"])
+			# 	head_tok["ms feats"]["Voice"].add(child_tok["Cau"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# TODO: Indexing (person, number)
 

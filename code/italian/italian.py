@@ -13,6 +13,7 @@ import code.italian.verbs as verbs
 import code.italian.nouns as nouns
 import code.italian.adjs as adjs
 import code.italian.advs as advs
+import code.italian.ita_utils as ita_utils
 import conllu
 
 
@@ -24,8 +25,8 @@ def DFS(root_tree):
 			# print(child)
 			yield from DFS(child)
 		yield(root_tree.token, [child.token for child in children])
-	# else:
-	# 	yield(root_tree.token, None)
+	else:
+		yield(root_tree.token, [])
 
 	# else:
 	# 	return
@@ -109,30 +110,36 @@ if __name__ == '__main__':
 
 			# for head, children in heads_dict.items():
 			for head_tok, children_toks in DFS(tree):
+				children_toks = [tok for tok in children_toks if not tok["content"]]
 				# head_tok = tokenlist[id2idx[head]]
 				# children_toks = [tokenlist[id2idx[child]] for child in children]
 
 				# remove parataxis
 				children_toks = [tok for tok in children_toks if tok["deprel"] != "parataxis"]
 
-
 				logging.info("Processing head (%s/%s) with children (%s)",
-				 head_tok, head_tok["upos"], " | ".join(str(x) for x in children_toks))
+							head_tok, head_tok["upos"],
+							" | ".join(str(x) for x in children_toks))
 
 				# TODO: check case of ADPs
-				head_tok["content"] = True
-
-				if head_tok["upos"] in ["VERB"]:
+				# head_tok["content"] = True
+				if head_tok["upos"] in ["DET", "AUX"]:
+					pass
+				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
-				elif head_tok["upos"] in ["NOUN", "PROPN"]:
+				elif head_tok["upos"] in ["NOUN", "PROPN", "NUM", "SYM"]:
 					nouns.process_noun(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADJ"]:
 					adjs.process_adj(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
+				# elif head_tok["upos"] in ["NUM"]:
+					# head_tok["content"] = True
+					# ita_utils.copy_features(head_tok)
 				else:
 					logging.warning("Found head (%s) with PoS %s, children (%s)",
-					 head_tok, head_tok["upos"], " | ".join(str(x) for x in children_toks))
+									head_tok, head_tok["upos"],
+									" | ".join(str(x) for x in children_toks))
 					#TODO: NUM?
 					#TODO: PRON?
 

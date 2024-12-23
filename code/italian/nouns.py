@@ -8,8 +8,7 @@ logger = logging.getLogger(__name__)
 def process_noun(head_tok, children_toks):
 
 	logger.debug("Examining head: %s", head_tok)
-
-	# TODO: sentences with copula?
+	head_tok["content"] = True
 
 	# keep existing features for all nominals
 	ita_utils.copy_features(head_tok)
@@ -17,8 +16,17 @@ def process_noun(head_tok, children_toks):
 	for child_tok in children_toks:
 		logger.debug("Examining child: %s", child_tok)
 
+		if child_tok["deprel"] == "cop":
+			logger.debug("Adding TAM features with values Mood: %s - Tense: %s",
+						child_tok["feats"]["Mood"], child_tok["feats"]["Tense"])
+			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+
+			# TODO: add Person and Number to subject
+
+
 		# determiners
-		if child_tok["deprel"] == "det":
+		elif child_tok["deprel"] == "det":
 			# add definiteness
 			if "Definite" in child_tok["feats"]:
 				logger.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
@@ -37,10 +45,15 @@ def process_noun(head_tok, children_toks):
 			logger.debug("Adding Case feature with value %s", lbd.switch_nominal_case(child_tok))
 			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
 
-		elif child_tok["upos"] in ["NOUN", "PROPN"]:
-			logger.debug("Switching node to content and keeping its features")
-			ita_utils.copy_features(child_tok)
-			child_tok["content"] = True
+		elif child_tok["deprel"] == "cc":
+
+			logger.debug("Adding Case feature with value %s", lbd.switch_conj_case(child_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_conj_case(child_tok))
+
+		# if child_tok["upos"] in ["NOUN", "PROPN"]:
+		# 	logger.debug("Switching node to content and keeping its features")
+		# 	ita_utils.copy_features(child_tok)
+		# 	child_tok["content"] = True
 
 		else:
 			logger.warning("Node %s/%s needs new rules", child_tok, child_tok["upos"])
