@@ -39,6 +39,8 @@ def process_noun(head_tok, children_toks):
 				logger.debug("Changing Degree feature to Sup")
 				head_tok["ms feats"]["Degree"].remove("Cmp").add("Sup")
 
+			# TODO: lemma-based decision on other determiners
+
 
 		# case relations
 		elif child_tok["deprel"] == "case":

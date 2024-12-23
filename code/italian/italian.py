@@ -69,7 +69,7 @@ if __name__ == '__main__':
 			id2idx = {token['id']:i for i, token in enumerate(tokenlist)}
 			idx2id = {y:x for x, y in id2idx.items()}
 
-			# filter out useless nodes (punct, reparandum)
+			# * filter out useless nodes (punct, reparandum)
 			filtered_tokenlist = tokenlist \
 								.filter(id=lambda x: isinstance(x, int)) \
 								.filter(upos=lambda x: x!="PUNCT") \
@@ -102,12 +102,15 @@ if __name__ == '__main__':
 				children_toks = [tok for tok in children_toks if not tok["content"]]
 
 				# remove parataxis
-				# ? do we need it?
+				# TODO: filter out sentences with parataxis
 				children_toks = [tok for tok in children_toks if tok["deprel"] != "parataxis"]
 
 				logging.info("Processing head (%s/%s) with children (%s)",
 							head_tok, head_tok["upos"],
 							" | ".join(str(x) for x in children_toks))
+
+				# TODO: handle nominative, accusative, dative (only on pronouns?)
+				# TODO: placeholder for agentive in passive clauses
 
 				# head_tok["content"] = True
 				if head_tok["upos"] in ["VERB"]:
@@ -165,46 +168,3 @@ if __name__ == '__main__':
 
 			to_write = tokenlist.serialize()
 			print(to_write, file=fout)
-
-
-	# with open(out_path, 'w', encoding='utf8') as outfile:
-	#     for i in range(len(parse_trees)): # iterate over the sentences
-	#         parse_tree = parse_trees[i]
-	#         parse_list: conllu.TokenList = parse_lists[i]
-
-	#         id2idx = {token['id']:i for i, token in enumerate(parse_list) if isinstance(token['id'], int)}
-	#         idx2id = [token['id'] if isinstance(token['id'], int) else None for token in parse_list]
-
-	#         heads = utils.span(parse_tree)
-	#         assert utils.verify_span(heads)
-
-	#         to_add = []
-	#         for head, children in heads[::-1]:
-	#             head: conllu.Token = parse_list[id2idx[head]]
-	#             children = [parse_list[id2idx[child]] for child in children]
-	#             added_nodes = apply_grammar(head, children)
-	#             if added_nodes:
-	#                 added_idxs = get_where_to_add(added_nodes, id2idx)
-	#                 to_add += list(zip(added_nodes, added_idxs))
-
-	#         for added_node in to_add[::-1]:
-	#             node, idx = added_node
-	#             parse_list.insert(idx + 1, node)
-
-	#         for node in parse_list:
-	#             # setting ms-feats for content nodes that were not dealt with earlier
-	#             if node['upos'] in {'ADJ', 'INTJ'} | VERBAL | NOMINAL and not node.get('ms feats', None): # if the node is a content node and the ms_feats are not set
-	#                 ms_feats = deepcopy(node['feats'])
-	#                 if ms_feats is None:
-	#                     ms_feats = '|'
-	#                 node['ms feats'] = ms_feats
-	#             # function nodes end up with empty ms-feats
-	#             else:
-	#                 node['ms feats'] = node.get('ms feats', None)
-
-	#             # sort alphabetically the MS features of all nodes
-	#             node['ms feats'] = order_alphabetically(node['ms feats'])
-	#         assert utils.verify_treeness(parse_list)
-
-	#         to_write = parse_list.serialize()
-	#         outfile.write(to_write + '\n')

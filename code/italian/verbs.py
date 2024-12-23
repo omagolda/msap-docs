@@ -14,8 +14,14 @@ def process_verb(head_tok, children_toks):
 	# TODO: copy relevant verbal features
 	# ita_utils.copy_features(head_tok)
 
-	# TODO: default polarity to Pos, than change to Neg if "not" is present
+	# * default polarity to Pos, than change to Neg if "not" is present
 	head_tok["ms feats"]["Polarity"].add("Pos")
+
+	# TODO: default Mood to "Ind"
+
+	# TODO: default VerbForm to "Fin"
+
+	# TODO: default Voice to "Act"
 
 
 	for child_tok in children_toks:
@@ -80,6 +86,10 @@ def process_verb(head_tok, children_toks):
 			# TODO: difference "non possiamo andare" vs. "possiamo non andare"
 			logger.warning("Found negation")
 
+		if child_tok["deprel"] == "mark":
+			pass
+			# TODO: handle "Case"
 
 		# TODO: Indexing (person, number)
 
+	# TODO: if no subj found -> create abstract node
