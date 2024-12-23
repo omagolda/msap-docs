@@ -115,10 +115,10 @@
 [verbs:18] DEBUG:Examining child: non
 [verbs:18] DEBUG:Examining child: si
 [verbs:18] DEBUG:Examining child: più
-[italian:168] ERROR:Node Qui should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node pure should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Qui should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node pure should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-617
 [italian:63] DEBUG:Processing sentence: 970. Prescrizione del diritto dell'enfiteuta.
 [italian:79] DEBUG:Removed punctuation: 970 Prescrizione di il diritto di l' enfiteuta
@@ -194,7 +194,7 @@
 [italian:120] INFO:Processing head (sta/VERB) with children (Come)
 [verbs:10] DEBUG:Examining head: sta
 [verbs:18] DEBUG:Examining child: Come
-[italian:168] ERROR:Node Come should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Come should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 2Parole_4-57
 [italian:63] DEBUG:Processing sentence: Hanno verificato anche se la raccolta dei rifiuti funziona bene.
 [italian:79] DEBUG:Removed punctuation: Hanno verificato anche se la raccolta di i rifiuti funziona bene
@@ -229,8 +229,8 @@
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
 [verbs:18] DEBUG:Examining child: anche
-[italian:168] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node bene should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node bene should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 2_Europarl-265
 [italian:63] DEBUG:Processing sentence: Un altro emendamento consente agli stati membri di stabilire requisiti più rigorosi, soprattutto per le cisterne qualora la temperatura ambiente alla quale si lavora e si effettuano i trasporti sia di solito inferiore a -20º.
 [italian:79] DEBUG:Removed punctuation: Un altro emendamento consente a gli stati membri di stabilire requisiti più rigorosi soprattutto per le cisterne qualora la temperatura ambiente a la quale si lavora e si effettuano i trasporti sia di solito inferiore a -20º
@@ -270,7 +270,7 @@
 [italian:120] INFO:Processing head (cisterne/NOUN) with children (soprattutto | per | le)
 [nouns:10] DEBUG:Examining head: cisterne
 [nouns:17] DEBUG:Examining child: soprattutto
-[nouns:58] WARNING:Node soprattutto/ADV needs new rules
+[nouns:59] WARNING:Node soprattutto/ADV needs new rules
 [nouns:17] DEBUG:Examining child: per
 [nouns:45] DEBUG:Adding Case feature with value TBD-per
 [nouns:17] DEBUG:Examining child: le
@@ -331,8 +331,8 @@
 [verbs:18] DEBUG:Examining child: di
 [italian:120] INFO:Processing head (consente/VERB) with children ()
 [verbs:10] DEBUG:Examining head: consente
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node soprattutto should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node soprattutto should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: 3_UDHR-20
 [italian:63] DEBUG:Processing sentence: Ogni individuo ha diritto alla vita, alla libertà ed alla sicurezza della propria persona.
 [italian:79] DEBUG:Removed punctuation: Ogni individuo ha diritto a la vita a la libertà ed a la sicurezza di la propria persona
@@ -369,11 +369,11 @@
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: propria
-[nouns:58] WARNING:Node propria/DET needs new rules
+[nouns:59] WARNING:Node propria/DET needs new rules
 [italian:120] INFO:Processing head (sicurezza/NOUN) with children (ed | a | la)
 [nouns:10] DEBUG:Examining head: sicurezza
 [nouns:17] DEBUG:Examining child: ed
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: a
 [nouns:45] DEBUG:Adding Case feature with value TBD-a
 [nouns:17] DEBUG:Examining child: la
@@ -388,7 +388,7 @@
 [nouns:10] DEBUG:Examining head: diritto
 [italian:120] INFO:Processing head (ha/VERB) with children ()
 [verbs:10] DEBUG:Examining head: ha
-[italian:168] ERROR:Node propria should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node propria should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: 7_WIKIShake-96
 [italian:63] DEBUG:Processing sentence: Gli Halls ebbero una figlia, Elizabeth, che si sposò due volte ma morì senza dare alla luce un erede nel 1670, ponendo fine alla linea ereditaria diretta di Shakespeare.
 [italian:79] DEBUG:Removed punctuation: Gli Halls ebbero una figlia Elizabeth che si sposò due volte ma morì senza dare a la luce un erede in il 1670 ponendo fine a la linea ereditaria diretta di Shakespeare
@@ -510,7 +510,7 @@
 [italian:120] INFO:Processing head (slalom/NOUN) with children (e | di | lo)
 [nouns:10] DEBUG:Examining head: slalom
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: lo
@@ -558,7 +558,8 @@
 [verbs:18] DEBUG:Examining child: devono
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node attorno should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[verbs:52] DEBUG:Adding Modality feature with value Nec
+[italian:167] ERROR:Node attorno should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-1333
 [italian:63] DEBUG:Processing sentence: Art. 22.
 [italian:79] DEBUG:Removed punctuation: Art. 22
@@ -746,7 +747,7 @@
 [nouns:10] DEBUG:Examining head: leader
 [ita_utils:12] WARNING:Node leader has no features
 [nouns:17] DEBUG:Examining child: uno
-[nouns:58] WARNING:Node uno/PRON needs new rules
+[nouns:59] WARNING:Node uno/PRON needs new rules
 [italian:120] INFO:Processing head (Bo/PROPN) with children (di)
 [nouns:10] DEBUG:Examining head: Bo
 [ita_utils:12] WARNING:Node Bo has no features
@@ -766,7 +767,7 @@
 [verbs:18] DEBUG:Examining child: è
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node uno should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node uno should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2017
 [italian:63] DEBUG:Processing sentence: o ascoltare i diversi rumori che il getto fa, a seconda che lo dirigiamo sull'erba, sul terriccio, su freschi rametti, su un cespuglio spinoso?
 [italian:79] DEBUG:Removed punctuation: o ascoltare i diversi rumori che il getto fa a seconda che lo dirigiamo su l' erba su il terriccio su freschi rametti su un cespuglio spinoso
@@ -887,13 +888,13 @@
 [italian:120] INFO:Processing head (filiali/NOUN) with children (e | di | le | loro)
 [nouns:10] DEBUG:Examining head: filiali
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: le
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: loro
-[nouns:58] WARNING:Node loro/DET needs new rules
+[nouns:59] WARNING:Node loro/DET needs new rules
 [italian:120] INFO:Processing head (b.r./NOUN) with children (di | le)
 [nouns:10] DEBUG:Examining head: b.r.
 [ita_utils:12] WARNING:Node b.r. has no features
@@ -948,7 +949,7 @@
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: loro
-[nouns:58] WARNING:Node loro/DET needs new rules
+[nouns:59] WARNING:Node loro/DET needs new rules
 [italian:120] INFO:Processing head (erano/AUX) with children ()
 [italian:120] INFO:Processing head (di/ADP) with children ()
 [italian:140] WARNING:Found head (di) with PoS ADP, children ()
@@ -976,8 +977,8 @@
 [adjs:28] DEBUG:Adding TAM features with values Mood: Ind - Tense: Imp
 [italian:120] INFO:Processing head (uccidevano/VERB) with children ()
 [verbs:10] DEBUG:Examining head: uccidevano
-[italian:168] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: tut-995
 [italian:63] DEBUG:Processing sentence: ma, se si tratta di servitù negativa o di servitù per il cui esercizio non è necessario il fatto dell'uomo, il termine decorre dal giorno in cui si è verificato un fatto che ne ha impedito l'esercizio.
 [italian:79] DEBUG:Removed punctuation: ma se si tratta di servitù negativa o di servitù per il cui esercizio non è necessario il fatto di l' uomo il termine decorre da il giorno in cui si è verificato un fatto che ne ha impedito l' esercizio
@@ -1006,7 +1007,7 @@
 [nouns:17] DEBUG:Examining child: il
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: cui
-[nouns:58] WARNING:Node cui/DET needs new rules
+[nouns:59] WARNING:Node cui/DET needs new rules
 [italian:120] INFO:Processing head (non/ADV) with children ()
 [advs:9] INFO:Here
 [italian:120] INFO:Processing head (è/AUX) with children ()
@@ -1033,7 +1034,7 @@
 [italian:120] INFO:Processing head (servitù/NOUN) with children (o | di)
 [nouns:10] DEBUG:Examining head: servitù
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [italian:120] INFO:Processing head (servitù/NOUN) with children (di)
@@ -1097,8 +1098,8 @@
 [italian:120] INFO:Processing head (decorre/VERB) with children (ma)
 [verbs:10] DEBUG:Examining head: decorre
 [verbs:18] DEBUG:Examining child: ma
-[italian:168] ERROR:Node cui should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node cui should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-2283
 [italian:63] DEBUG:Processing sentence: Fu con queste parole, mentre le truppe antisommossa si preparavano all'attacco, che lo studente di Tirana, Azem Hajdari guidò la prima grande manifestazione di 5.000 giovani nel dicembre '90.
 [italian:79] DEBUG:Removed punctuation: Fu con queste parole mentre le truppe antisommossa si preparavano a l' attacco che lo studente di Tirana Azem Hajdari guidò la prima grande manifestazione di 5.000 giovani in il dicembre '90
@@ -1217,7 +1218,7 @@
 [italian:120] INFO:Processing head (miraggio/NOUN) with children (o)
 [nouns:10] DEBUG:Examining head: miraggio
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [italian:120] INFO:Processing head (miracolo/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: miracolo
 [italian:120] INFO:Processing head (contributo/NOUN) with children (il)
@@ -1279,7 +1280,7 @@
 [verbs:18] DEBUG:Examining child: fortemente
 [italian:120] INFO:Processing head (Sostiene/VERB) with children ()
 [verbs:10] DEBUG:Examining head: Sostiene
-[italian:168] ERROR:Node fortemente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node fortemente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-590
 [italian:63] DEBUG:Processing sentence: Nel caso in cui segua la divisione e il fondo venga goduto separatamente dagli enfiteuti o dagli eredi, ciascuno risponde per gli obblighi inerenti all'enfiteusi proporzionalmente al valore della sua porzione.
 [italian:79] DEBUG:Removed punctuation: In il caso in cui segua la divisione e il fondo venga goduto separatamente da gli enfiteuti o da gli eredi ciascuno risponde per gli obblighi inerenti a l' enfiteusi proporzionalmente a il valore di la sua porzione
@@ -1316,7 +1317,7 @@
 [italian:120] INFO:Processing head (eredi/NOUN) with children (o | da | gli)
 [nouns:10] DEBUG:Examining head: eredi
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: da
 [nouns:45] DEBUG:Adding Case feature with value TBD-da
 [nouns:17] DEBUG:Examining child: gli
@@ -1377,7 +1378,7 @@
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sua
-[nouns:58] WARNING:Node sua/DET needs new rules
+[nouns:59] WARNING:Node sua/DET needs new rules
 [italian:120] INFO:Processing head (valore/NOUN) with children (a | il)
 [nouns:10] DEBUG:Examining head: valore
 [nouns:17] DEBUG:Examining child: a
@@ -1390,9 +1391,9 @@
 [verbs:10] DEBUG:Examining head: risponde
 [verbs:18] DEBUG:Examining child: ciascuno
 [verbs:18] DEBUG:Examining child: proporzionalmente
-[italian:168] ERROR:Node separatamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node proporzionalmente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node separatamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node proporzionalmente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: 2Parole_1-44
 [italian:63] DEBUG:Processing sentence: Ha cominciato a cantare in chiesa quando era bambina.
 [italian:79] DEBUG:Removed punctuation: Ha cominciato a cantare in chiesa quando era bambina
@@ -1460,7 +1461,7 @@
 [italian:120] INFO:Processing head (partecipanti/NOUN) with children (tutti | i)
 [nouns:10] DEBUG:Examining head: partecipanti
 [nouns:17] DEBUG:Examining child: tutti
-[nouns:58] WARNING:Node tutti/DET needs new rules
+[nouns:59] WARNING:Node tutti/DET needs new rules
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (siano/AUX) with children ()
@@ -1496,8 +1497,8 @@
 [italian:120] INFO:Processing head (richiede/VERB) with children (si)
 [verbs:10] DEBUG:Examining head: richiede
 [verbs:18] DEBUG:Examining child: si
-[italian:168] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node preventivamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node preventivamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-938
 [italian:63] DEBUG:Processing sentence: Ogni proprietario è tenuto (2908) a dare passaggio per i suoi fondi alle condutture elettriche, in conformità delle leggi in materia.
 [italian:79] DEBUG:Removed punctuation: Ogni proprietario è tenuto 2908 a dare passaggio per i suoi fondi a le condutture elettriche in conformità di le leggi in materia
@@ -1524,7 +1525,7 @@
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: suoi
-[nouns:58] WARNING:Node suoi/DET needs new rules
+[nouns:59] WARNING:Node suoi/DET needs new rules
 [italian:120] INFO:Processing head (a/ADP) with children ()
 [italian:140] WARNING:Found head (a) with PoS ADP, children ()
 [italian:120] INFO:Processing head (le/DET) with children ()
@@ -1563,7 +1564,7 @@
 [italian:120] INFO:Processing head (tenuto/VERB) with children (è)
 [verbs:10] DEBUG:Examining head: tenuto
 [verbs:18] DEBUG:Examining child: è
-[italian:168] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-745
 [italian:63] DEBUG:Processing sentence: essere faziosi.
 [italian:79] DEBUG:Removed punctuation: essere faziosi
@@ -1592,7 +1593,7 @@
 [verbs:10] DEBUG:Examining head: è
 [verbs:18] DEBUG:Examining child: C'
 [verbs:18] DEBUG:Examining child: chi
-[italian:168] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-913
 [italian:63] DEBUG:Processing sentence: Sezione IV.
 [italian:79] DEBUG:Removed punctuation: Sezione IV
@@ -1633,7 +1634,7 @@
 [italian:120] INFO:Processing head (Province/NOUN) with children (o | di | le)
 [nouns:10] DEBUG:Examining head: Province
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: le
@@ -1646,7 +1647,7 @@
 [italian:120] INFO:Processing head (Comune/NOUN) with children (e | di | il)
 [nouns:10] DEBUG:Examining head: Comune
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: il
@@ -1661,7 +1662,7 @@
 [italian:120] INFO:Processing head (Comuni/NOUN) with children (o | di | i)
 [nouns:10] DEBUG:Examining head: Comuni
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: i
@@ -1696,7 +1697,7 @@
 [italian:120] INFO:Processing head (legge/NOUN) with children (e | con)
 [nouns:10] DEBUG:Examining head: legge
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: con
 [nouns:45] DEBUG:Adding Case feature with value TBD-con
 [italian:120] INFO:Processing head (referendum/NOUN) with children (mediante)
@@ -1743,7 +1744,7 @@
 [italian:120] INFO:Processing head (Comuni/NOUN) with children (e)
 [nouns:10] DEBUG:Examining head: Comuni
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (Provincie/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: Provincie
 [italian:120] INFO:Processing head (siano/AUX) with children ()
@@ -1777,6 +1778,7 @@
 [verbs:18] DEBUG:Examining child: può
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
+[verbs:52] DEBUG:Adding Modality feature with value Pot
 [italian:62] INFO:Processing sentence id: 9_PS-117
 [italian:63] DEBUG:Processing sentence: E non parliamo solo dei cosiddetti "analisti quantitativi".
 [italian:79] DEBUG:Removed punctuation: E non parliamo solo di i cosiddetti analisti quantitativi
@@ -1796,7 +1798,7 @@
 [italian:120] INFO:Processing head (analisti/NOUN) with children (solo | di | i)
 [nouns:10] DEBUG:Examining head: analisti
 [nouns:17] DEBUG:Examining child: solo
-[nouns:58] WARNING:Node solo/ADV needs new rules
+[nouns:59] WARNING:Node solo/ADV needs new rules
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: i
@@ -1805,8 +1807,8 @@
 [verbs:10] DEBUG:Examining head: parliamo
 [verbs:18] DEBUG:Examining child: E
 [verbs:18] DEBUG:Examining child: non
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node solo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node solo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: 2Parole_1-20
 [italian:63] DEBUG:Processing sentence: Per vedere le trasmissioni televisive le persone andavano nei bar, nei circoli, nelle sedi dei partiti politici.
 [italian:79] DEBUG:Removed punctuation: Per vedere le trasmissioni televisive le persone andavano in i bar in i circoli in le sedi di i partiti politici
@@ -1904,9 +1906,9 @@
 [verbs:10] DEBUG:Examining head: facciamo
 [verbs:18] DEBUG:Examining child: questo
 [verbs:18] DEBUG:Examining child: più
-[italian:168] ERROR:Node sempre should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
-[italian:168] ERROR:Node di should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'ADV'}})
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node sempre should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
+[italian:167] ERROR:Node di should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: test-160
 [italian:63] DEBUG:Processing sentence: Tutte le cure sono state messe in atto – affermano – ma non possiamo pronunciarci sul futuro di Michael Schumacher”.
 [italian:79] DEBUG:Removed punctuation: Tutte le cure sono state messe in atto affermano ma non possiamo pronunciar ci su il futuro di Michael Schumacher
@@ -1915,7 +1917,7 @@
 [italian:120] INFO:Processing head (cure/NOUN) with children (Tutte | le)
 [nouns:10] DEBUG:Examining head: cure
 [nouns:17] DEBUG:Examining child: Tutte
-[nouns:58] WARNING:Node Tutte/DET needs new rules
+[nouns:59] WARNING:Node Tutte/DET needs new rules
 [nouns:17] DEBUG:Examining child: le
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (sono/AUX) with children ()
@@ -1961,6 +1963,7 @@
 [verbs:18] DEBUG:Examining child: possiamo
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
+[verbs:52] DEBUG:Adding Modality feature with value Pot
 [verbs:18] DEBUG:Examining child: ci
 [italian:120] INFO:Processing head (messe/VERB) with children (sono | state)
 [verbs:10] DEBUG:Examining head: messe
@@ -1968,8 +1971,8 @@
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
 [verbs:18] DEBUG:Examining child: state
-[italian:168] ERROR:Node Tutte should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Tutte should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 8_WIT3-53
 [italian:63] DEBUG:Processing sentence: Si accumulano in cima alla piramide.
 [italian:79] DEBUG:Removed punctuation: Si accumulano in cima a la piramide
@@ -2070,7 +2073,7 @@
 [italian:120] INFO:Processing head (avvengono/VERB) with children (non)
 [verbs:10] DEBUG:Examining head: avvengono
 [verbs:18] DEBUG:Examining child: non
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-3373
 [italian:63] DEBUG:Processing sentence: Nel 2000 esce Haven, album pensato per essere "più heavy", che si distingue non solo per la forte vena "catchy" ma soprattutto per la sperimentazione in campo elettronico e che divide nuovamente fan e critica.
 [italian:79] DEBUG:Removed punctuation: In il 2000 esce Haven album pensato per essere più heavy che si distingue non solo per la forte vena catchy ma soprattutto per la sperimentazione in campo elettronico e che divide nuovamente fan e critica
@@ -2132,9 +2135,9 @@
 [italian:120] INFO:Processing head (sperimentazione/NOUN) with children (ma | soprattutto | per | la)
 [nouns:10] DEBUG:Examining head: sperimentazione
 [nouns:17] DEBUG:Examining child: ma
-[nouns:49] DEBUG:Adding Case feature with value Advs
+[nouns:50] DEBUG:Adding Case feature with value Advs
 [nouns:17] DEBUG:Examining child: soprattutto
-[nouns:58] WARNING:Node soprattutto/ADV needs new rules
+[nouns:59] WARNING:Node soprattutto/ADV needs new rules
 [nouns:17] DEBUG:Examining child: per
 [nouns:45] DEBUG:Adding Case feature with value TBD-per
 [nouns:17] DEBUG:Examining child: la
@@ -2142,7 +2145,7 @@
 [italian:120] INFO:Processing head (vena/NOUN) with children (solo | per | la)
 [nouns:10] DEBUG:Examining head: vena
 [nouns:17] DEBUG:Examining child: solo
-[nouns:58] WARNING:Node solo/ADV needs new rules
+[nouns:59] WARNING:Node solo/ADV needs new rules
 [nouns:17] DEBUG:Examining child: per
 [nouns:45] DEBUG:Adding Case feature with value TBD-per
 [nouns:17] DEBUG:Examining child: la
@@ -2158,7 +2161,7 @@
 [italian:120] INFO:Processing head (critica/NOUN) with children (e)
 [nouns:10] DEBUG:Examining head: critica
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (fan/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: fan
 [ita_utils:12] WARNING:Node fan has no features
@@ -2175,11 +2178,11 @@
 [nouns:10] DEBUG:Examining head: Haven
 [italian:120] INFO:Processing head (esce/VERB) with children ()
 [verbs:10] DEBUG:Examining head: esce
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
-[italian:168] ERROR:Node solo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node soprattutto should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node nuovamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
+[italian:167] ERROR:Node solo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node soprattutto should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node nuovamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 9_PS-569
 [italian:63] DEBUG:Processing sentence: E tutto questo è ancor più problematico nel caso del controllo delle zanzare vista l'urgenza del problema.
 [italian:79] DEBUG:Removed punctuation: E tutto questo è ancor più problematico in il caso di il controllo di le zanzare vista l' urgenza di il problema
@@ -2244,8 +2247,8 @@
 [adjs:28] DEBUG:Adding TAM features with values Mood: Ind - Tense: Pres
 [adjs:23] DEBUG:Examining child: più
 [adjs:41] DEBUG:Adding Degree feature with value Cmp
-[italian:168] ERROR:Node ancor should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node ancor should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-3732
 [italian:63] DEBUG:Processing sentence: In questo periodo divenne evidente il passaggio in secondo piano del Progetto San Marco davanti a programmi spaziali più recenti anche attraverso la distribuzione dei fondi stanziati per la ricerca spaziale attraverso la suddetta legge n. 388.
 [italian:79] DEBUG:Removed punctuation: In questo periodo divenne evidente il passaggio in secondo piano di il Progetto San Marco davanti a programmi spaziali più recenti anche attraverso la distribuzione di i fondi stanziati per la ricerca spaziale attraverso la suddetta legge n. 388
@@ -2348,16 +2351,16 @@
 [italian:120] INFO:Processing head (distribuzione/NOUN) with children (anche | attraverso | la)
 [nouns:10] DEBUG:Examining head: distribuzione
 [nouns:17] DEBUG:Examining child: anche
-[nouns:58] WARNING:Node anche/ADV needs new rules
+[nouns:59] WARNING:Node anche/ADV needs new rules
 [nouns:17] DEBUG:Examining child: attraverso
 [nouns:45] DEBUG:Adding Case feature with value TBD-attraverso
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (divenne/VERB) with children ()
 [verbs:10] DEBUG:Examining head: divenne
-[italian:168] ERROR:Node davanti should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node davanti should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: quest-905
 [italian:63] DEBUG:Processing sentence: Che cosa simboleggiano le "frecce che si inseguono"?
 [italian:79] DEBUG:Removed punctuation: Che cosa simboleggiano le frecce che si inseguono
@@ -2436,7 +2439,7 @@
 [adjs:23] DEBUG:Examining child: ancora
 [adjs:59] DEBUG:Switching node to content and keeping its features
 [ita_utils:12] WARNING:Node ancora has no features
-[italian:168] ERROR:Node oggi should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node oggi should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 2_Europarl-242
 [italian:63] DEBUG:Processing sentence: Ringrazio ancora una volta tutti coloro che sono intervenuti, e in particolare il relatore onorevole Koch.
 [italian:79] DEBUG:Removed punctuation: Ringrazio ancora una volta tutti coloro che sono intervenuti e in particolare il relatore onorevole Koch
@@ -2446,7 +2449,7 @@
 [italian:120] INFO:Processing head (volta/NOUN) with children (ancora | una)
 [nouns:10] DEBUG:Examining head: volta
 [nouns:17] DEBUG:Examining child: ancora
-[nouns:58] WARNING:Node ancora/ADV needs new rules
+[nouns:59] WARNING:Node ancora/ADV needs new rules
 [nouns:17] DEBUG:Examining child: una
 [nouns:32] DEBUG:Adding Definite feature with value Ind
 [italian:120] INFO:Processing head (tutti/DET) with children ()
@@ -2476,7 +2479,7 @@
 [italian:120] INFO:Processing head (relatore/NOUN) with children (e | il)
 [nouns:10] DEBUG:Examining head: relatore
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: il
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (coloro/PRON) with children (tutti)
@@ -2484,7 +2487,7 @@
 [italian:120] INFO:Processing head (Ringrazio/VERB) with children (coloro)
 [verbs:10] DEBUG:Examining head: Ringrazio
 [verbs:18] DEBUG:Examining child: coloro
-[italian:168] ERROR:Node ancora should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node ancora should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2292
 [italian:63] DEBUG:Processing sentence: Senza rimorsi perché i Pirati dei Caraibi sono suoi fratelli di mare:
 [italian:79] DEBUG:Removed punctuation: Senza rimorsi perché i Pirati di i Caraibi sono suoi fratelli di mare
@@ -2519,17 +2522,17 @@
 [italian:120] INFO:Processing head (fratelli/NOUN) with children (perché | sono | suoi)
 [nouns:10] DEBUG:Examining head: fratelli
 [nouns:17] DEBUG:Examining child: perché
-[nouns:58] WARNING:Node perché/SCONJ needs new rules
+[nouns:59] WARNING:Node perché/SCONJ needs new rules
 [nouns:17] DEBUG:Examining child: sono
 [nouns:20] DEBUG:Adding TAM features with values Mood: Ind - Tense: Pres
 [nouns:17] DEBUG:Examining child: suoi
-[nouns:58] WARNING:Node suoi/DET needs new rules
+[nouns:59] WARNING:Node suoi/DET needs new rules
 [italian:120] INFO:Processing head (rimorsi/NOUN) with children (Senza)
 [nouns:10] DEBUG:Examining head: rimorsi
 [nouns:17] DEBUG:Examining child: Senza
 [nouns:45] DEBUG:Adding Case feature with value TBD-senza
-[italian:168] ERROR:Node perché should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node perché should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-3095
 [italian:63] DEBUG:Processing sentence: Ma la cosa più incredibile è un "Peep - show - pavillon", in cui, attraverso opportuni fori, si possono guardare i disegni erotici di Fendi.
 [italian:79] DEBUG:Removed punctuation: Ma la cosa più incredibile è un Peep show pavillon in cui attraverso opportuni fori si possono guardare i disegni erotici di Fendi
@@ -2588,9 +2591,10 @@
 [verbs:18] DEBUG:Examining child: possono
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
+[verbs:52] DEBUG:Adding Modality feature with value Pot
 [italian:120] INFO:Processing head (Peep/X) with children (Ma | è | un | show | pavillon)
 [italian:140] WARNING:Found head (Peep) with PoS X, children (Ma | è | un | show | pavillon)
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2766
 [italian:63] DEBUG:Processing sentence: Arriva don Carlo, il parroco:
 [italian:79] DEBUG:Removed punctuation: Arriva don Carlo il parroco
@@ -2718,7 +2722,7 @@
 [nouns:17] DEBUG:Examining child: di
 [nouns:45] DEBUG:Adding Case feature with value TBD-di
 [nouns:17] DEBUG:Examining child: etc.
-[nouns:58] WARNING:Node etc./ADV needs new rules
+[nouns:59] WARNING:Node etc./ADV needs new rules
 [italian:120] INFO:Processing head (ore/NOUN) with children (di)
 [nouns:10] DEBUG:Examining head: ore
 [nouns:17] DEBUG:Examining child: di
@@ -2734,11 +2738,11 @@
 [nouns:17] DEBUG:Examining child: un
 [nouns:32] DEBUG:Adding Definite feature with value Ind
 [nouns:17] DEBUG:Examining child: Live
-[nouns:58] WARNING:Node Live/X needs new rules
+[nouns:59] WARNING:Node Live/X needs new rules
 [italian:120] INFO:Processing head (esce/VERB) with children ()
 [verbs:10] DEBUG:Examining head: esce
-[italian:168] ERROR:Node Live should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node etc. should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node Live should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node etc. should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: tut-288
 [italian:63] DEBUG:Processing sentence: La distanza si misura dalla linea del confine alla base esterna del tronco dell'albero nel tempo della piantagione, o dalla linea stessa al luogo dove fu fatta la semina.
 [italian:79] DEBUG:Removed punctuation: La distanza si misura da la linea di il confine a la base esterna di il tronco di l' albero in il tempo di la piantagione o da la linea stessa a il luogo dove fu fatta la semina
@@ -2845,7 +2849,7 @@
 [italian:120] INFO:Processing head (linea/NOUN) with children (o | da | la)
 [nouns:10] DEBUG:Examining head: linea
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: da
 [nouns:45] DEBUG:Adding Case feature with value TBD-da
 [nouns:17] DEBUG:Examining child: la
@@ -2853,7 +2857,7 @@
 [italian:120] INFO:Processing head (misura/VERB) with children (si)
 [verbs:10] DEBUG:Examining head: misura
 [verbs:18] DEBUG:Examining child: si
-[italian:168] ERROR:Node dove should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node dove should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-3590
 [italian:63] DEBUG:Processing sentence: Ecco tutti i retroscena.
 [italian:79] DEBUG:Removed punctuation: Ecco tutti i retroscena
@@ -2864,13 +2868,13 @@
 [italian:120] INFO:Processing head (retroscena/NOUN) with children (Ecco | tutti | i)
 [nouns:10] DEBUG:Examining head: retroscena
 [nouns:17] DEBUG:Examining child: Ecco
-[nouns:58] WARNING:Node Ecco/ADV needs new rules
+[nouns:59] WARNING:Node Ecco/ADV needs new rules
 [nouns:17] DEBUG:Examining child: tutti
-[nouns:58] WARNING:Node tutti/DET needs new rules
+[nouns:59] WARNING:Node tutti/DET needs new rules
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
-[italian:168] ERROR:Node Ecco should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node Ecco should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: tut-3568
 [italian:63] DEBUG:Processing sentence: Il problema non è tuttavia scomparso.
 [italian:79] DEBUG:Removed punctuation: Il problema non è tuttavia scomparso
@@ -2891,8 +2895,8 @@
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
 [verbs:18] DEBUG:Examining child: tuttavia
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node tuttavia should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node tuttavia should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-3771
 [italian:63] DEBUG:Processing sentence: la fibra presenta una sezione poligonale.
 [italian:79] DEBUG:Removed punctuation: la fibra presenta una sezione poligonale
@@ -3010,7 +3014,7 @@
 [adjs:28] DEBUG:Adding TAM features with values Mood: Ind - Tense: Pres
 [italian:120] INFO:Processing head (Rimangono/VERB) with children ()
 [verbs:10] DEBUG:Examining head: Rimangono
-[italian:168] ERROR:Node domani should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node domani should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-1809
 [italian:63] DEBUG:Processing sentence: Ma lui si strapazza, lavora troppo, non ha capito che deve stare più attento.
 [italian:79] DEBUG:Removed punctuation: Ma lui si strapazza lavora troppo non ha capito che deve stare più attento
@@ -3043,6 +3047,7 @@
 [verbs:18] DEBUG:Examining child: deve
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
+[verbs:52] DEBUG:Adding Modality feature with value Nec
 [italian:120] INFO:Processing head (capito/VERB) with children (non | ha)
 [verbs:10] DEBUG:Examining head: capito
 [verbs:18] DEBUG:Examining child: non
@@ -3054,9 +3059,9 @@
 [verbs:18] DEBUG:Examining child: Ma
 [verbs:18] DEBUG:Examining child: lui
 [verbs:18] DEBUG:Examining child: si
-[italian:168] ERROR:Node troppo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node troppo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-1574
 [italian:63] DEBUG:Processing sentence: Sono inoltre convinto che la storia di Moretti sia anche segnata dalle sue origini romane.
 [italian:79] DEBUG:Removed punctuation: Sono inoltre convinto che la storia di Moretti sia anche segnata da le sue origini romane
@@ -3093,7 +3098,7 @@
 [nouns:17] DEBUG:Examining child: le
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sue
-[nouns:58] WARNING:Node sue/DET needs new rules
+[nouns:59] WARNING:Node sue/DET needs new rules
 [italian:120] INFO:Processing head (segnata/VERB) with children (che | sia | anche)
 [verbs:10] DEBUG:Examining head: segnata
 [verbs:18] DEBUG:Examining child: che
@@ -3106,8 +3111,8 @@
 [adjs:23] DEBUG:Examining child: inoltre
 [adjs:59] DEBUG:Switching node to content and keeping its features
 [ita_utils:12] WARNING:Node inoltre has no features
-[italian:168] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node sue should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node anche should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node sue should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: splet-209
 [italian:63] DEBUG:Processing sentence: c) che non ha fabbricato il prodotto per la vendita o qualsiasi altra forma di distribuzione a scopo economico, né l'ha fabbricato o distribuito nel quadro della sua attività professionale;
 [italian:79] DEBUG:Removed punctuation: c che non ha fabbricato il prodotto per la vendita o qualsiasi altra forma di distribuzione a scopo economico né l' ha fabbricato o distribuito in il quadro di la sua attività professionale
@@ -3149,7 +3154,7 @@
 [italian:120] INFO:Processing head (forma/NOUN) with children (o | qualsiasi)
 [nouns:10] DEBUG:Examining head: forma
 [nouns:17] DEBUG:Examining child: o
-[nouns:49] DEBUG:Adding Case feature with value Disj
+[nouns:50] DEBUG:Adding Case feature with value Disj
 [nouns:17] DEBUG:Examining child: qualsiasi
 [nouns:35] WARNING:DET qualsiasi with features {'Number': 'Sing', 'PronType': 'Ind'}
 [italian:120] INFO:Processing head (vendita/NOUN) with children (per | la)
@@ -3184,7 +3189,7 @@
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sua
-[nouns:58] WARNING:Node sua/DET needs new rules
+[nouns:59] WARNING:Node sua/DET needs new rules
 [italian:120] INFO:Processing head (quadro/NOUN) with children (in | il)
 [nouns:10] DEBUG:Examining head: quadro
 [nouns:17] DEBUG:Examining child: in
@@ -3205,8 +3210,8 @@
 [verbs:18] DEBUG:Examining child: ha
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2135
 [italian:63] DEBUG:Processing sentence: Però o si ha piena fiducia nel designatore o lo si sostituisce:
 [italian:79] DEBUG:Removed punctuation: Però o si ha piena fiducia in il designatore o lo si sostituisce
@@ -3245,7 +3250,7 @@
 [verbs:18] DEBUG:Examining child: Però
 [verbs:18] DEBUG:Examining child: o
 [verbs:18] DEBUG:Examining child: si
-[italian:168] ERROR:Node Però should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Però should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2785
 [italian:63] DEBUG:Processing sentence: Tra le zone più contagiate dalla "moda" del rally capitolino ci sono via Cristoforo Colombo e via Prenestina:
 [italian:79] DEBUG:Removed punctuation: Tra le zone più contagiate da la moda di il rally capitolino ci sono via Cristoforo Colombo e via Prenestina
@@ -3299,13 +3304,13 @@
 [italian:120] INFO:Processing head (via/NOUN) with children (e)
 [nouns:10] DEBUG:Examining head: via
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (via/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: via
 [italian:120] INFO:Processing head (sono/VERB) with children (ci)
 [verbs:10] DEBUG:Examining head: sono
 [verbs:18] DEBUG:Examining child: ci
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: quest-2085
 [italian:63] DEBUG:Processing sentence: Chi viene al cinema con me?
 [italian:79] DEBUG:Removed punctuation: Chi viene a il cinema con me
@@ -3372,9 +3377,9 @@
 [verbs:18] DEBUG:Examining child: Ho
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node spesso should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node troppo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node prima should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node spesso should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node troppo should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node prima should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 5_WIKIBalzac-210
 [italian:63] DEBUG:Processing sentence: Lo stile frammentario riflette la vita stessa dell'autore, un possibile tentativo di renderla stabile attraverso la narrazione.
 [italian:79] DEBUG:Removed punctuation: Lo stile frammentario riflette la vita stessa di l' autore un possibile tentativo di render la stabile attraverso la narrazione
@@ -3467,7 +3472,7 @@
 [nouns:45] DEBUG:Adding Case feature with value TBD-in
 [italian:120] INFO:Processing head (Tutti/PRON) with children ()
 [italian:140] WARNING:Found head (Tutti) with PoS PRON, children ()
-[italian:168] ERROR:Node come should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node come should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: tut-2367
 [italian:63] DEBUG:Processing sentence: Qui è circolata una quantità di denaro decisamente sproporzionata alla ricchezza, sarebbe meglio dire alla povertà, del Paese, che ha un Prodotto interno lordo di 1,5 miliardi di dollari.
 [italian:79] DEBUG:Removed punctuation: Qui è circolata una quantità di denaro decisamente sproporzionata a la ricchezza sarebbe meglio dire a la povertà di il Paese che ha un Prodotto interno lordo di 1,5 miliardi di dollari
@@ -3560,8 +3565,8 @@
 [verbs:18] DEBUG:Examining child: è
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node Qui should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node meglio should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Qui should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node meglio should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-2029
 [italian:63] DEBUG:Processing sentence: Invece la sua foto, caro Benigni, è da un lato un reperto etnografico, che attesta la persistenza di un gesto nobilmente arcaico, dall'altro un documento visivo connesso con tutta la sua arte, e senza dubbio destinato a entrare stabilmente nell'iconografia dei libri che si scriveranno su di lei.
 [italian:79] DEBUG:Removed punctuation: Invece la sua foto caro Benigni è da un lato un reperto etnografico che attesta la persistenza di un gesto nobilmente arcaico da l' altro un documento visivo connesso con tutta la sua arte e senza dubbio destinato a entrare stabilmente in l' iconografia di i libri che si scriveranno su di lei
@@ -3573,11 +3578,11 @@
 [italian:120] INFO:Processing head (foto/NOUN) with children (Invece | la | sua)
 [nouns:10] DEBUG:Examining head: foto
 [nouns:17] DEBUG:Examining child: Invece
-[nouns:58] WARNING:Node Invece/ADV needs new rules
+[nouns:59] WARNING:Node Invece/ADV needs new rules
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sua
-[nouns:58] WARNING:Node sua/DET needs new rules
+[nouns:59] WARNING:Node sua/DET needs new rules
 [italian:120] INFO:Processing head (caro/ADJ) with children ()
 [adjs:9] DEBUG:Examining head: caro
 [italian:120] INFO:Processing head (Benigni/PROPN) with children ()
@@ -3640,11 +3645,11 @@
 [nouns:17] DEBUG:Examining child: con
 [nouns:45] DEBUG:Adding Case feature with value TBD-con
 [nouns:17] DEBUG:Examining child: tutta
-[nouns:58] WARNING:Node tutta/DET needs new rules
+[nouns:59] WARNING:Node tutta/DET needs new rules
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sua
-[nouns:58] WARNING:Node sua/DET needs new rules
+[nouns:59] WARNING:Node sua/DET needs new rules
 [italian:120] INFO:Processing head (e/CCONJ) with children ()
 [italian:140] WARNING:Found head (e) with PoS CCONJ, children ()
 [italian:120] INFO:Processing head (senza/ADP) with children ()
@@ -3700,7 +3705,7 @@
 [italian:120] INFO:Processing head (documento/NOUN) with children (altro | un)
 [nouns:10] DEBUG:Examining head: documento
 [nouns:17] DEBUG:Examining child: altro
-[nouns:58] WARNING:Node altro/PRON needs new rules
+[nouns:59] WARNING:Node altro/PRON needs new rules
 [nouns:17] DEBUG:Examining child: un
 [nouns:32] DEBUG:Adding Definite feature with value Ind
 [italian:120] INFO:Processing head (reperto/NOUN) with children (è | un)
@@ -3709,12 +3714,12 @@
 [nouns:20] DEBUG:Adding TAM features with values Mood: Ind - Tense: Pres
 [nouns:17] DEBUG:Examining child: un
 [nouns:32] DEBUG:Adding Definite feature with value Ind
-[italian:168] ERROR:Node Invece should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node altro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node tutta should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node stabilmente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Invece should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}, 'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node altro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node tutta should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node stabilmente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 2_Europarl-456
 [italian:63] DEBUG:Processing sentence: Non so se questo la incoraggerà a proseguire nella stessa direzione, ma vorrei comunque rivolgerle le mie congratulazioni.
 [italian:79] DEBUG:Removed punctuation: Non so se questo la incoraggerà a proseguire in la stessa direzione ma vorrei comunque rivolger le le mie congratulazioni
@@ -3753,13 +3758,14 @@
 [nouns:17] DEBUG:Examining child: le
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: mie
-[nouns:58] WARNING:Node mie/DET needs new rules
+[nouns:59] WARNING:Node mie/DET needs new rules
 [italian:120] INFO:Processing head (rivolger/VERB) with children (ma | vorrei | comunque | le)
 [verbs:10] DEBUG:Examining head: rivolger
 [verbs:18] DEBUG:Examining child: ma
 [verbs:18] DEBUG:Examining child: vorrei
 [verbs:26] DEBUG:Adding Mood feature with value Cnd
 [verbs:33] DEBUG:Adding Tense feature with value Pres
+[verbs:52] DEBUG:Adding Modality feature with value Des
 [verbs:18] DEBUG:Examining child: comunque
 [verbs:18] DEBUG:Examining child: le
 [italian:120] INFO:Processing head (proseguire/VERB) with children (a)
@@ -3773,9 +3779,9 @@
 [italian:120] INFO:Processing head (so/VERB) with children (Non)
 [verbs:10] DEBUG:Examining head: so
 [verbs:18] DEBUG:Examining child: Non
-[italian:168] ERROR:Node Non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node comunque should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node mie should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node Non should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node comunque should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node mie should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: tut-3797
 [italian:63] DEBUG:Processing sentence: La fibra, che è costituita da una sostanza proteica, la cheratina, ha lunghezza tra i 2 e i 40 nm e sezione circolare;
 [italian:79] DEBUG:Removed punctuation: La fibra che è costituita da una sostanza proteica la cheratina ha lunghezza tra i 2 e i 40 nm e sezione circolare
@@ -3819,7 +3825,7 @@
 [nouns:10] DEBUG:Examining head: nm
 [ita_utils:12] WARNING:Node nm has no features
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (2/NUM) with children (tra | i)
@@ -3835,7 +3841,7 @@
 [italian:120] INFO:Processing head (sezione/NOUN) with children (e)
 [nouns:10] DEBUG:Examining head: sezione
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (lunghezza/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: lunghezza
 [italian:120] INFO:Processing head (ha/VERB) with children ()
@@ -3866,7 +3872,7 @@
 [nouns:17] DEBUG:Examining child: il
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: suo
-[nouns:58] WARNING:Node suo/DET needs new rules
+[nouns:59] WARNING:Node suo/DET needs new rules
 [italian:120] INFO:Processing head (il/DET) with children ()
 [italian:120] INFO:Processing head (dicembre/NOUN) with children ()
 [nouns:10] DEBUG:Examining head: dicembre
@@ -3982,7 +3988,7 @@
 [italian:120] INFO:Processing head (apogeo/NOUN) with children (e | un)
 [nouns:10] DEBUG:Examining head: apogeo
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: un
 [nouns:32] DEBUG:Adding Definite feature with value Ind
 [italian:120] INFO:Processing head (perigeo/NOUN) with children (con | un)
@@ -4001,7 +4007,7 @@
 [verbs:18] DEBUG:Examining child: venne
 [italian:120] INFO:Processing head (vide/VERB) with children ()
 [verbs:10] DEBUG:Examining head: vide
-[italian:168] ERROR:Node suo should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node suo should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: quest-541
 [italian:63] DEBUG:Processing sentence: Dove si è tenuta la Conferenza internazionale su popolazione e sviluppo?
 [italian:79] DEBUG:Removed punctuation: Dove si è tenuta la Conferenza internazionale su popolazione e sviluppo
@@ -4020,7 +4026,7 @@
 [italian:120] INFO:Processing head (sviluppo/NOUN) with children (e)
 [nouns:10] DEBUG:Examining head: sviluppo
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (popolazione/NOUN) with children (su)
 [nouns:10] DEBUG:Examining head: popolazione
 [nouns:17] DEBUG:Examining child: su
@@ -4037,7 +4043,7 @@
 [verbs:18] DEBUG:Examining child: è
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node Dove should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node Dove should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
 [italian:62] INFO:Processing sentence id: 2Parole_4-201
 [italian:63] DEBUG:Processing sentence: Il 28 settembre improvvisamente è mancata la luce e si sono spenti tutti gli apparecchi elettrici.
 [italian:79] DEBUG:Removed punctuation: Il 28 settembre improvvisamente è mancata la luce e si sono spenti tutti gli apparecchi elettrici
@@ -4068,7 +4074,7 @@
 [italian:120] INFO:Processing head (apparecchi/NOUN) with children (tutti | gli)
 [nouns:10] DEBUG:Examining head: apparecchi
 [nouns:17] DEBUG:Examining child: tutti
-[nouns:58] WARNING:Node tutti/DET needs new rules
+[nouns:59] WARNING:Node tutti/DET needs new rules
 [nouns:17] DEBUG:Examining child: gli
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (spenti/VERB) with children (e | si | sono)
@@ -4084,8 +4090,8 @@
 [verbs:18] DEBUG:Examining child: è
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
-[italian:168] ERROR:Node improvvisamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node improvvisamente should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node tutti should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-353
 [italian:63] DEBUG:Processing sentence: I corpi di Adelio Castiglioni, dei suoi figli Samuele, 5 anni, e Roberta, 11, di Luigi Cazzaniga, di Tarcisio Cattaneo, di Michelangelo Lamberti sono stati abbandonati sulla strada dai loro carnefici.
 [italian:79] DEBUG:Removed punctuation: I corpi di Adelio Castiglioni di i suoi figli Samuele 5 anni e Roberta 11 di Luigi Cazzaniga di Tarcisio Cattaneo di Michelangelo Lamberti sono stati abbandonati su la strada da i loro carnefici
@@ -4111,7 +4117,7 @@
 [nouns:10] DEBUG:Examining head: Roberta
 [ita_utils:12] WARNING:Node Roberta has no features
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [italian:120] INFO:Processing head (Samuele/PROPN) with children ()
 [nouns:10] DEBUG:Examining head: Samuele
 [ita_utils:12] WARNING:Node Samuele has no features
@@ -4122,7 +4128,7 @@
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: suoi
-[nouns:58] WARNING:Node suoi/DET needs new rules
+[nouns:59] WARNING:Node suoi/DET needs new rules
 [italian:120] INFO:Processing head (di/ADP) with children ()
 [italian:140] WARNING:Found head (di) with PoS ADP, children ()
 [italian:120] INFO:Processing head (Cazzaniga/PROPN) with children ()
@@ -4184,15 +4190,15 @@
 [nouns:17] DEBUG:Examining child: i
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: loro
-[nouns:58] WARNING:Node loro/DET needs new rules
+[nouns:59] WARNING:Node loro/DET needs new rules
 [italian:120] INFO:Processing head (abbandonati/VERB) with children (sono | stati)
 [verbs:10] DEBUG:Examining head: abbandonati
 [verbs:18] DEBUG:Examining child: sono
 [verbs:26] DEBUG:Adding Mood feature with value Ind
 [verbs:33] DEBUG:Adding Tense feature with value Pres
 [verbs:18] DEBUG:Examining child: stati
-[italian:168] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node suoi should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node loro should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: tut-2709
 [italian:63] DEBUG:Processing sentence: Una decina i feriti.
 [italian:79] DEBUG:Removed punctuation: Una decina i feriti
@@ -4269,7 +4275,7 @@
 [nouns:17] DEBUG:Examining child: la
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: sua
-[nouns:58] WARNING:Node sua/DET needs new rules
+[nouns:59] WARNING:Node sua/DET needs new rules
 [italian:120] INFO:Processing head (e/CCONJ) with children ()
 [italian:140] WARNING:Found head (e) with PoS CCONJ, children ()
 [italian:120] INFO:Processing head (come/SCONJ) with children ()
@@ -4317,7 +4323,7 @@
 [nouns:17] DEBUG:Examining child: il
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [nouns:17] DEBUG:Examining child: proprio
-[nouns:58] WARNING:Node proprio/DET needs new rules
+[nouns:59] WARNING:Node proprio/DET needs new rules
 [italian:120] INFO:Processing head (visto/VERB) with children (che | ha)
 [verbs:10] DEBUG:Examining head: visto
 [verbs:18] DEBUG:Examining child: che
@@ -4353,10 +4359,10 @@
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (abbiamo/VERB) with children ()
 [verbs:10] DEBUG:Examining head: abbiamo
-[italian:168] ERROR:Node così should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
-[italian:168] ERROR:Node oggi should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
-[italian:168] ERROR:Node proprio should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node così should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node sua should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
+[italian:167] ERROR:Node oggi should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node proprio should be empty bus has features defaultdict(<class 'set'>, {'tmp-child': {'NOUN'}})
 [italian:62] INFO:Processing sentence id: isst_tanl-1863
 [italian:63] DEBUG:Processing sentence: Personaggi.
 [italian:79] DEBUG:Removed punctuation: Personaggi
@@ -4388,7 +4394,7 @@
 [italian:120] INFO:Processing head (patrimonio/NOUN) with children (e | il)
 [nouns:10] DEBUG:Examining head: patrimonio
 [nouns:17] DEBUG:Examining child: e
-[nouns:49] DEBUG:Adding Case feature with value Conj
+[nouns:50] DEBUG:Adding Case feature with value Conj
 [nouns:17] DEBUG:Examining child: il
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (paesaggio/NOUN) with children (il)
@@ -4424,4 +4430,4 @@
 [nouns:32] DEBUG:Adding Definite feature with value Def
 [italian:120] INFO:Processing head (Qual/PRON) with children (è)
 [italian:140] WARNING:Found head (Qual) with PoS PRON, children (è)
-[italian:168] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})
+[italian:167] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'tmp-head': {'ADV'}})

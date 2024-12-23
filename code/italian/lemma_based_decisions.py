@@ -24,6 +24,35 @@ def switch_conj_case(token):
 	return f"TBD-CONJ-{token['lemma']}"
 
 
+def switch_verb_modality(token):
+
+	if token["lemma"] == "potere":
+		return "Pot"
+
+	if token["lemma"] == "volere":
+		return "Des"
+
+	if token["lemma"] == "dovere":
+		return "Nec"
+
+# if child_tok["lemma"] == "potere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Pot"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Pot"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# if child_tok["lemma"] == "volere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Des"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Des"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
+			# if child_tok["lemma"] == "dovere":
+			# 	logger.debug("Adding Mood feature with value %s", child_tok["Nec"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["Nec"])
+			# else:
+			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+
 # | *__Other conjunctions__*                                                                                                                         ||
 # | Advs     | adversative            |                                    | X but Y                                                                          |                                                      | but, yet, though                            | ale, avšak, však, nýbrž                                                                  | ale                                                                    | ale                                                                    | але, аднак, затое, прычым | но, зато | но | tačiau | bet | ma | pero | mas | aber, sondern | maar | men | لٰكِنَّ | lākinna |
 # | Reas     | reason                 |                                    | X because / for Y (if paratactic; hypotactic constructions would be Case=Cau above) |                                                      | for                                         | neboť                                                                                    | lebo                                                                   | bo                                                                     |  | ведь | защото |  | jo |  |  |  | denn | want | för, ty |  |  |

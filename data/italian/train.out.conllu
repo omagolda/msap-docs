@@ -258,7 +258,7 @@
 19	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_	_	False
 20	sciatori	sciatore	NOUN	S	Gender=Masc|Number=Plur	22	nsubj	22:nsubj	_	Definite=Def|Gender=Masc|Number=Plur	True
 21	devono	dovere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	aux	22:aux	_	_	False
-22	girare	girare	VERB	V	VerbForm=Inf	0	root	0:root	_	Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+22	girare	girare	VERB	V	VerbForm=Inf	0	root	0:root	_	Modality=Nec|Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 23	attorno	attorno	ADV	B	_	26	case	26:case	_	_	False
 24	ad	a	ADP	E	_	23	fixed	23:fixed	_	_	False
 25	alcuni	alcuno	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	26	det	26:det	_	_	False
@@ -495,7 +495,7 @@
 8	negativa	negativo	ADJ	A	Gender=Fem|Number=Sing	7	amod	7:amod	_	Gender=Fem|Number=Sing	True
 9	o	o	CCONJ	CC	_	11	cc	11:cc	_	_	False
 10	di	di	ADP	E	_	11	case	11:case	_	_	False
-11	servitù	servitù	NOUN	S	Gender=Fem	7	conj	5:obl:di|7:conj:o	_	Case=Disj,TBD-di|Gender=Fem	True
+11	servitù	servitù	NOUN	S	Gender=Fem	7	conj	5:obl:di|7:conj:o	_	Case=TBD-di,Disj|Gender=Fem	True
 12	per	per	ADP	E	_	15	case	15:case	_	_	False
 13	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_	_	False
 14	cui	cui	DET	DR	PronType=Rel	15	det:poss	15:det:poss	_	_	False
@@ -647,7 +647,7 @@
 19-20	dagli	_	_	_	_	_	_	_	_	_	False
 19	da	da	ADP	E	_	21	case	21:case	_	_	False
 20	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	21:det	_	_	False
-21	eredi	erede	NOUN	S	Number=Plur	17	conj	13:obl:agent:da|17:conj:o	SpaceAfter=No	Case=Disj,TBD-da|Definite=Def|Number=Plur	True
+21	eredi	erede	NOUN	S	Number=Plur	17	conj	13:obl:agent:da|17:conj:o	SpaceAfter=No	Case=TBD-da,Disj|Definite=Def|Number=Plur	True
 22	,	,	PUNCT	FF	_	3	punct	3:punct	_	_	False
 23	ciascuno	ciascuno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	24	nsubj	24:nsubj	_	_	False
 24	risponde	rispondere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|tmp-head=VERB	True
@@ -809,7 +809,7 @@
 17-18	delle	_	_	_	_	_	_	_	_	_	False
 17	di	di	ADP	E	_	19	case	19:case	_	_	False
 18	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_	_	False
-19	Province	provincia	NOUN	S	Gender=Fem|Number=Plur	15	conj	12:nmod:di|15:conj:o	_	Case=Disj,TBD-di|Definite=Def|Gender=Fem|Number=Plur	True
+19	Province	provincia	NOUN	S	Gender=Fem|Number=Plur	15	conj	12:nmod:di|15:conj:o	_	Case=TBD-di,Disj|Definite=Def|Gender=Fem|Number=Plur	True
 20	interessate	interessato	ADJ	A	Gender=Fem|Number=Plur	19	amod	19:amod	_	Gender=Fem|Number=Plur	True
 21	e	e	CCONJ	CC	_	24	cc	24:cc	_	_	False
 22-23	del	_	_	_	_	_	_	_	_	_	False
@@ -820,7 +820,7 @@
 26-27	dei	_	_	_	_	_	_	_	_	_	False
 26	di	di	ADP	E	_	28	case	28:case	_	_	False
 27	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	28	det	28:det	_	_	False
-28	Comuni	comune	NOUN	S	Gender=Masc|Number=Plur	15	conj	12:nmod:di|15:conj:o	_	Case=Disj,TBD-di|Definite=Def|Gender=Masc|Number=Plur	True
+28	Comuni	comune	NOUN	S	Gender=Masc|Number=Plur	15	conj	12:nmod:di|15:conj:o	_	Case=TBD-di,Disj|Definite=Def|Gender=Masc|Number=Plur	True
 29	interessati	interessato	ADJ	A	Gender=Masc|Number=Plur	28	amod	28:amod	_	Gender=Masc|Number=Plur	True
 30	espressa	esprimere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	9	acl	9:acl	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|tmp-head=VERB	True
 31	mediante	mediante	ADP	E	_	32	case	32:case	_	_	False
@@ -838,7 +838,7 @@
 42	Consigli	consiglio	NOUN	S	Gender=Masc|Number=Plur	40	nsubj:pass	40:nsubj:pass	_	Definite=Def|Gender=Masc|Number=Plur	True
 43	regionali	regionale	ADJ	A	Number=Plur	42	amod	42:amod	SpaceAfter=No	Number=Plur	True
 44	,	,	PUNCT	FF	_	40	punct	40:punct	_	_	False
-45	consentire	consentire	VERB	V	VerbForm=Inf	0	root	0:root	_	Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+45	consentire	consentire	VERB	V	VerbForm=Inf	0	root	0:root	_	Modality=Pot|Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 46	che	che	SCONJ	CS	_	57	mark	57:mark	_	_	False
 47	Provincie	provincia	NOUN	S	Gender=Fem|Number=Plur	57	nsubj:pass	57:nsubj:pass|62:nsubj:pass	_	Gender=Fem|Number=Plur	True
 48	e	e	CCONJ	CC	_	49	cc	49:cc	_	_	False
@@ -948,7 +948,7 @@
 13	non	non	ADV	BN	PronType=Neg	15	advmod	15:advmod	_	_	False
 14	possiamo	potere	AUX	VM	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_	_	False
 15-16	pronunciarci	_	_	_	_	_	_	_	_	_	False
-15	pronunciar	pronunciare	VERB	V	VerbForm=Inf	6	conj	6:conj:ma	_	Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+15	pronunciar	pronunciare	VERB	V	VerbForm=Inf	6	conj	6:conj:ma	_	Modality=Pot|Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 16	ci	ci	PRON	PC	Clitic=Yes|Number=Plur|Person=1|PronType=Prs	15	expl	15:expl	_	_	False
 17-18	sul	_	_	_	_	_	_	_	_	_	False
 17	su	su	ADP	E	_	19	case	19:case	_	_	False
@@ -1050,7 +1050,7 @@
 29	soprattutto	soprattutto	ADV	B	_	32	advmod	32:advmod	_	_	False
 30	per	per	ADP	E	_	32	case	32:case	_	_	False
 31	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	32:det	_	_	False
-32	sperimentazione	sperimentazione	NOUN	S	Gender=Fem|Number=Sing	24	conj	18:obl:per|24:conj:ma	_	Case=Advs,TBD-per|Definite=Def|Gender=Fem|Number=Sing	True
+32	sperimentazione	sperimentazione	NOUN	S	Gender=Fem|Number=Sing	24	conj	18:obl:per|24:conj:ma	_	Case=TBD-per,Advs|Definite=Def|Gender=Fem|Number=Sing	True
 33	in	in	ADP	E	_	34	case	34:case	_	_	False
 34	campo	campo	NOUN	S	Gender=Masc|Number=Sing	32	nmod	32:nmod:in	_	Case=TBD-in|Gender=Masc|Number=Sing	True
 35	elettronico	elettronico	ADJ	A	Gender=Masc|Number=Sing	34	amod	34:amod	_	Gender=Masc|Number=Sing	True
@@ -1251,7 +1251,7 @@
 22	,	,	PUNCT	FF	_	21	punct	21:punct	_	_	False
 23	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	25	expl:pass	25:expl:pass	_	_	False
 24	possono	potere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	aux	25:aux	_	_	False
-25	guardare	guardare	VERB	V	VerbForm=Inf	9	acl:relcl	9:acl:relcl	_	Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+25	guardare	guardare	VERB	V	VerbForm=Inf	9	acl:relcl	9:acl:relcl	_	Modality=Pot|Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 26	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	27:det	_	_	False
 27	disegni	disegno	NOUN	S	Gender=Masc|Number=Plur	25	nsubj:pass	25:nsubj:pass	_	Definite=Def|Gender=Masc|Number=Plur	True
 28	erotici	erotico	ADJ	A	Gender=Masc|Number=Plur	27	amod	27:amod	_	Gender=Masc|Number=Plur	True
@@ -1378,7 +1378,7 @@
 29-30	dalla	_	_	_	_	_	_	_	_	_	False
 29	da	da	ADP	E	_	31	case	31:case	_	_	False
 30	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	31:det	_	_	False
-31	linea	linea	NOUN	S	Gender=Fem|Number=Sing	4	conj	4:conj:o	_	Case=Disj,TBD-da|Definite=Def|Gender=Fem|Number=Sing	True
+31	linea	linea	NOUN	S	Gender=Fem|Number=Sing	4	conj	4:conj:o	_	Case=TBD-da,Disj|Definite=Def|Gender=Fem|Number=Sing	True
 32	stessa	stesso	ADJ	A	Gender=Fem|Number=Sing	31	amod	31:amod	_	Gender=Fem|Number=Sing	True
 33-34	al	_	_	_	_	_	_	_	_	_	False
 33	a	a	ADP	E	_	35	case	35:case	_	_	False
@@ -1482,7 +1482,7 @@
 11	capito	capire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	4:conj	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Past,Pres|VerbForm=Part|tmp-head=VERB	True
 12	che	che	SCONJ	CS	_	14	mark	14:mark	_	_	False
 13	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux	14:aux	_	_	False
-14	stare	stare	VERB	V	VerbForm=Inf	11	ccomp	11:ccomp	_	Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+14	stare	stare	VERB	V	VerbForm=Inf	11	ccomp	11:ccomp	_	Modality=Nec|Mood=Ind|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 15	più	più	ADV	B	_	16	advmod	16:advmod	_	_	False
 16	attento	attento	ADJ	A	Gender=Masc|Number=Sing	14	xcomp	14:xcomp	SpaceAfter=No	Degree=Cmp|Gender=Masc|Number=Sing	True
 17	.	.	PUNCT	FS	_	4	punct	4:punct	_	_	False
@@ -1817,7 +1817,7 @@
 15	vorrei	volere	AUX	VM	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	17	aux	17:aux	_	_	False
 16	comunque	comunque	ADV	B	_	17	advmod	17:advmod	_	_	False
 17-18	rivolgerle	_	_	_	_	_	_	_	_	_	False
-17	rivolger	rivolgere	VERB	V	VerbForm=Inf	8	conj	6:xcomp|8:conj:ma	_	Mood=Cnd|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
+17	rivolger	rivolgere	VERB	V	VerbForm=Inf	8	conj	6:xcomp|8:conj:ma	_	Modality=Des|Mood=Cnd|Tense=Pres|VerbForm=Inf|tmp-head=VERB	True
 18	le	le	PRON	PC	Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	17	iobj	17:iobj	_	_	False
 19	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_	_	False
 20	mie	mio	DET	AP	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	21	det:poss	21:det:poss	_	_	False

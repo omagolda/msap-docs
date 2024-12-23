@@ -46,27 +46,13 @@ def process_verb(head_tok, children_toks):
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
 
-			# !! issues here
-			#Modality
-			# if child_tok["lemma"] == "potere":
-			# 	logger.debug("Adding Mood feature with value %s", child_tok["Pot"])
-			# 	head_tok["ms feats"]["Mood"].add(child_tok["Pot"])
-			# else:
-			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
+			# Modality
+			modality = lbd.switch_verb_modality(child_tok)
+			if modality:
+				logger.debug("Adding Modality feature with value %s", modality)
+				head_tok["ms feats"]["Modality"].add(modality)
 
-			# if child_tok["lemma"] == "volere":
-			# 	logger.debug("Adding Mood feature with value %s", child_tok["Des"])
-			# 	head_tok["ms feats"]["Mood"].add(child_tok["Des"])
-			# else:
-			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-
-			# if child_tok["lemma"] == "dovere":
-			# 	logger.debug("Adding Mood feature with value %s", child_tok["Nec"])
-			# 	head_tok["ms feats"]["Mood"].add(child_tok["Nec"])
-			# else:
-			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-
-			#Voice:
+			# Voice:
 			if child_tok["lemma"] == "venire": #how do we treat essere, which is ambigous with active forms?
 				logger.debug("Adding Voice feature with value %s", child_tok["Pass"])
 				head_tok["ms feats"]["Voice"].add(child_tok["Pass"])
