@@ -7,7 +7,7 @@ OUTPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.msf
 .PHONY: all
 all: view
 
-SCEN = util.Filter delete_tree_if_node='node.udeprel == "orphan"' mwe.MsfInit mwe.MsfNumPhrase mwe.MsfCase mwe.MsfRemoveFunc
+SCEN = mwe.Slavic_cond mwe.Slavic_future mwe.Slavic_imperative mwe.Slavic_inf mwe.Slavic_past mwe.Slavic_pres mwe.Slavic_transgressive util.Filter delete_tree_if_node='node.udeprel == "orphan"' mwe.MsfInit mwe.MsfNumPhrase mwe.MsfCase mwe.MsfRemoveFunc
 
 # Process a CoNLL-U file and view the resulting trees.
 .PHONY: view
