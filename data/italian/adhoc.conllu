@@ -1,0 +1,29 @@
+# sent_id = tut-3797
+# text = La fibra, che è costituita da una sostanza proteica, la cheratina, ha lunghezza tra i 2 e i 40 nm e sezione circolare;
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_
+2	fibra	fibra	NOUN	S	Gender=Fem|Number=Sing	15	nsubj	6:nsubj:pass|15:nsubj	SpaceAfter=No
+3	,	,	PUNCT	FF	_	2	punct	2:punct	_
+4	che	che	PRON	PR	PronType=Rel	6	nsubj:pass	2:ref	_
+5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_
+6	costituita	costituire	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	2:acl:relcl	_
+7	da	da	ADP	E	_	9	case	9:case	_
+8	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_
+9	sostanza	sostanza	NOUN	S	Gender=Fem|Number=Sing	6	obl:agent	6:obl:agent:da	_
+10	proteica	proteica	ADJ	A	Gender=Fem|Number=Sing	9	amod	9:amod	SpaceAfter=No
+11	,	,	PUNCT	FF	_	9	punct	9:punct	_
+12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_
+13	cheratina	cheratina	NOUN	S	Gender=Fem|Number=Sing	9	appos	9:appos	SpaceAfter=No
+14	,	,	PUNCT	FF	_	2	punct	2:punct	_
+15	ha	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+16	lunghezza	lunghezza	NOUN	S	Gender=Fem|Number=Sing	15	obj	15:obj	_
+17	tra	tra	ADP	E	_	19	case	19:case	_
+18	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_
+19	2	2	NUM	N	NumType=Card	16	nummod	16:nummod	_
+20	e	e	CCONJ	CC	_	23	cc	23:cc	_
+21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_
+22	40	40	NUM	N	NumType=Card	23	nummod	23:nummod	_
+23	nm	nm	NOUN	S	_	19	conj	19:conj:e	_
+24	e	e	CCONJ	CC	_	25	cc	25:cc	_
+25	sezione	sezione	NOUN	S	Gender=Fem|Number=Sing	16	conj	15:obj|16:conj:e	_
+26	circolare	circolare	ADJ	A	Number=Sing	25	amod	25:amod	SpaceAfter=No
+27	;	;	PUNCT	FC	_	15	punct	15:punct	_
