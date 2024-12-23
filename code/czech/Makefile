@@ -4,6 +4,7 @@ UDDIR = /net/work/people/zeman/unidep
 INPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.conllu
 OUTPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.msf
 LKDIR = /net/work/people/zeman/casovani-sloves/Slavic_languages
+TMPFILE = /net/work/people/zeman/msap-docs/code/czech/lk.conllu
 
 .PHONY: all
 all: view
@@ -14,17 +15,17 @@ LKSCEN = mwe.Slavic_cond mwe.Slavic_future mwe.Slavic_imperative mwe.Slavic_inf 
 # Process a CoNLL-U file and view the resulting trees.
 .PHONY: view
 view:
-	$(LKDIR)/main.sh -i $(INPUT) -o lk.conllu
-	cat lk.conllu | udapy -TA $(SCEN) | less -R
+	cd $(LKDIR) ; ./main.sh -i $(INPUT) -o $(TMPFILE)
+	cat $(TMPFILE) | udapy -TA $(SCEN) | less -R
 
 .PHONY: viewmsf
 viewmsf:
-	$(LKDIR)/main.sh -i $(INPUT) -o lk.conllu
-	cat lk.conllu | udapy -s $(SCEN) | ./conllu2msfeats.pl | less
+	cd $(LKDIR) ; ./main.sh -i $(INPUT) -o $(TMPFILE)
+	cat $(TMPFILE) | udapy -s $(SCEN) | ./conllu2msfeats.pl | less
 
 # Process a CoNLL-U file and save it in the MSF CoNLL-U Plus format.
 .PHONY: convert
 convert:
-	$(LKDIR)/main.sh -i $(INPUT) -o lk.conllu
-	cat lk.conllu | udapy -s $(SCEN) | ./conllu2msfeats.pl > $(OUTPUT)
+	cd $(LKDIR) ; ./main.sh -i $(INPUT) -o $(TMPFILE)
+	cat $(TMPFILE) | udapy -s $(SCEN) | ./conllu2msfeats.pl > $(OUTPUT)
 
