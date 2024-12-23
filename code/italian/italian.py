@@ -140,7 +140,6 @@ if __name__ == '__main__':
 					logging.warning("Found head (%s) with PoS %s, children (%s)",
 									head_tok, head_tok["upos"],
 									" | ".join(str(x) for x in children_toks))
-					#TODO: NUM?
 					#TODO: PRON?
 
 			for node in tokenlist:

@@ -35,14 +35,18 @@ def process_verb(head_tok, children_toks):
 			else:
 				logger.warning("No TENSE: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
-			# !! issues here
-			#Aspect
-			# if child_tok["lemma"] == "stare" and 'Ger' in head_tok["feats"]["VerbForm"]:
-			# 	logger.debug("Adding Aspect feature with value %s", child_tok["Prog"])
-			# 	head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
-			# else:
-			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
+			# Aspect
+			if head_tok["feats"]["VerbForm"] == "Ger":
+				if child_tok["lemma"] == "stare":
+					logger.debug("Adding Aspect feature with value Prog") #child_tok["Prog"])
+					# head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
+					head_tok["ms feats"]["Aspect"].add("Prog")
+				else:
+					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
+									head_tok, child_tok)
+
+			# !! issues here
 			#Modality
 			# if child_tok["lemma"] == "potere":
 			# 	logger.debug("Adding Mood feature with value %s", child_tok["Pot"])
