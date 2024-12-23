@@ -11,24 +11,31 @@ def process_verb(head_tok, children_toks):
 	head_tok["content"] = True
 	head_tok["ms feats"]["tmp-head"].add("VERB")
 
-	# keep existing features for all nominals
-	ita_utils.copy_features(head_tok)
+	# TODO: copy relevant verbal features
+	# ita_utils.copy_features(head_tok)
+
+	# TODO: default polarity to Pos, than change to Neg if "not" is present
+	head_tok["ms feats"]["Polarity"].add("Pos")
+
 
 	for child_tok in children_toks:
 		logger.debug("Examining child: %s", child_tok)
 
-		#Auxiliaries and copulas
+		# TODO: agreement on pronouns
+		# TODO: Handle adding "Case" on fell for es. "So I cried until I fell asleep"
+
+		# Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
 
 			#TAM
-			#Mood
+			# Mood
 			if "Mood" in child_tok["feats"]:
 				logger.debug("Adding Mood feature with value %s", child_tok["feats"]["Mood"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 			else:
 				logger.warning("No MOOD: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
-			#Tense
+			# Tense
 			if "Tense" in child_tok["feats"]:
 				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
@@ -66,5 +73,13 @@ def process_verb(head_tok, children_toks):
 			# else:
 			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
-			# TODO: Indexing (person, number)
+		if child_tok["lemma"] == "non":
+			# # Polarity
+			# if ""
+			# TODO: check what the negation refers to, either modality or polarity
+			# TODO: difference "non possiamo andare" vs. "possiamo non andare"
+			logger.warning("Found negation")
+
+
+		# TODO: Indexing (person, number)
 

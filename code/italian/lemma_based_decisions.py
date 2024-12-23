@@ -1,5 +1,5 @@
 def switch_nominal_case(token):
-	return f"TBD-{token['lemma']}"
+	return f"TBD-'{token['lemma']}'"
 
 def switch_conj_case(token):
 

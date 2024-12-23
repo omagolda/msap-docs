@@ -60,12 +60,11 @@ if __name__ == '__main__':
 
 		for tree, tokenlist in zip(parse_trees, parse_lists):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
-			logging.debug("Processing sentence: %s", tokenlist.metadata["text"])
-			# print(tokenlist.metadata["text"])
+			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 
 			for node in tokenlist:
 				node["ms feats"] = collections.defaultdict(set)
-				node["content"] = False
+				node["content"] = False # * set all nodes to false at the beginning
 
 			id2idx = {token['id']:i for i, token in enumerate(tokenlist)}
 			idx2id = {y:x for x, y in id2idx.items()}
@@ -95,37 +94,23 @@ if __name__ == '__main__':
 			# TODO: split parataxis?
 
 			tree = filtered_tokenlist.to_tree()
-			# print(tree.token)
-			# input()
 
-			# heads = utils.span(tree)
-			# print(heads)
-			# heads_dict = {}
-			# for element in heads:
-			# 	head, children = element
-			# 	heads_dict[head] = children
-
-			# assert utils.verify_span(heads) #TODO: a che serve?
-
-
-			# for head, children in heads_dict.items():
+			# * visit tree in depth-first fashion
 			for head_tok, children_toks in DFS(tree):
+
+				# * only select non-content children: information will be gathered only from those
 				children_toks = [tok for tok in children_toks if not tok["content"]]
-				# head_tok = tokenlist[id2idx[head]]
-				# children_toks = [tokenlist[id2idx[child]] for child in children]
 
 				# remove parataxis
+				# ? do we need it?
 				children_toks = [tok for tok in children_toks if tok["deprel"] != "parataxis"]
 
 				logging.info("Processing head (%s/%s) with children (%s)",
 							head_tok, head_tok["upos"],
 							" | ".join(str(x) for x in children_toks))
 
-				# TODO: check case of ADPs
 				# head_tok["content"] = True
-				if head_tok["upos"] in ["DET", "AUX"]:
-					pass
-				elif head_tok["upos"] in ["VERB"]:
+				if head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
 				elif head_tok["upos"] in ["NOUN", "PROPN", "NUM", "SYM"]:
 					nouns.process_noun(head_tok, children_toks)
@@ -133,9 +118,12 @@ if __name__ == '__main__':
 					adjs.process_adj(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
-				# elif head_tok["upos"] in ["NUM"]:
-					# head_tok["content"] = True
-					# ita_utils.copy_features(head_tok)
+				elif head_tok["upos"] in ["DET", "AUX"]:
+					# TODO: handle case with dependencies
+					pass
+				elif head_tok["upos"] in ["ADP"]:
+					# TODO everything here
+					pass
 				else:
 					logging.warning("Found head (%s) with PoS %s, children (%s)",
 									head_tok, head_tok["upos"],
@@ -143,6 +131,7 @@ if __name__ == '__main__':
 					#TODO: PRON?
 
 			for node in tokenlist:
+				# TODO: at the end function words should have "_" and content words with no ms-feat should have "|"
 
 				# restore original lemma
 				node['lemma'] = node['lemma'].split(" ")[0]
@@ -153,14 +142,21 @@ if __name__ == '__main__':
 						node_feats = node['feats']
 						node_msfeats = node["ms feats"]
 
-						for feat, value in node["feats"].items():
-							if feat in node["ms feats"]:
-								assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
-							else:
-								node["ms feats"][feat].add(node["feats"][feat])
+						# TODO: copy default values
+						# for feat, value in node["feats"].items():
+						# 	if feat in node["ms feats"]:
+						# 		print(node.items())
+						# 		input()
+						# 		assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
+						# 	else:
+						# 		node["ms feats"][feat].add(node["feats"][feat])
 
 					sorted_msfeats = sorted(node["ms feats"].items())
-					sorted_msfeats = [f"{x}={','.join(y)}" for x, y in sorted_msfeats]
+					# * if multiple values are present, they are conjoined by semi-colon
+					# TODO: handle negation -> es. not(Pot)
+					# TODO: handle conjunction of values -> es. "if and when" and(Cnd,Tmp)
+					# TODO: handle disjunction of values -> es. Tense=or(Past,Fut)
+					sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
