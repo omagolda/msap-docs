@@ -6,9 +6,10 @@ logger = logging.getLogger(__name__)
 
 def process_adv(head_tok, children_toks):
 
-	logging.info("Here")
+	logger.info("Examining head: '%s'", head_tok)
 
-	head_tok["ms feats"]["tmp-head"].add("ADV")
+	# head_tok["ms feats"]["tmp-head"].add("ADV")
 
 	for child_tok in children_toks:
-		child_tok["ms feats"]["tmp-child"].add("ADV")
+		logger.info("Examining child: '%s/%s'", child_tok, child_tok["upos"])
+		# child_tok["ms feats"]["tmp-child"].add("ADV")

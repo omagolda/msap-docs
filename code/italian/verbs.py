@@ -7,9 +7,9 @@ logger = logging.getLogger(__name__)
 
 def process_verb(head_tok, children_toks):
 
-	logger.debug("Examining head: %s", head_tok)
+	logger.info("Examining head: %s", head_tok)
 	head_tok["content"] = True
-	head_tok["ms feats"]["tmp-head"].add("VERB")
+	# head_tok["ms feats"]["tmp-head"].add("VERB")
 
 	# TODO: copy relevant verbal features
 	# ita_utils.copy_features(head_tok)
@@ -25,7 +25,7 @@ def process_verb(head_tok, children_toks):
 
 
 	for child_tok in children_toks:
-		logger.debug("Examining child: %s", child_tok)
+		logger.info("Examining child: %s/%s", child_tok, child_tok["upos"])
 
 		# TODO: agreement on pronouns
 		# TODO: Handle adding "Case" on fell for es. "So I cried until I fell asleep"
@@ -67,8 +67,8 @@ def process_verb(head_tok, children_toks):
 
 			# Voice:
 			if child_tok["lemma"] == "venire": #how do we treat essere, which is ambigous with active forms?
-				logger.debug("Adding Voice feature with value %s", child_tok["Pass"])
-				head_tok["ms feats"]["Voice"].add(child_tok["Pass"])
+				logger.debug("Adding Voice feature with value 'Pass'")
+				head_tok["ms feats"]["Voice"].add("Pass")
 			# else:
 				# !! why the warning?
 				# logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])

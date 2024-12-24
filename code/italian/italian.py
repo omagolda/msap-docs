@@ -8,6 +8,7 @@ python -m code.italian.italian data/italian/dev.conllu data/italian/dev.out.conl
 """
 import logging
 import collections
+import tqdm
 import code.utils as utils
 import code.italian.verbs as verbs
 import code.italian.nouns as nouns
@@ -58,13 +59,14 @@ if __name__ == '__main__':
 
 	with open(out_path, "w", encoding="utf-8") as fout:
 
-		for tree, tokenlist in zip(parse_trees, parse_lists):
+		for tree, tokenlist in tqdm.tqdm(zip(parse_trees, parse_lists)):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
 			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 
 			for node in tokenlist:
+				# * initialize empty ms-feats and set all nodes to false at the beginning
 				node["ms feats"] = collections.defaultdict(set)
-				node["content"] = False # * set all nodes to false at the beginning
+				node["content"] = False
 
 			id2idx = {token['id']:i for i, token in enumerate(tokenlist)}
 			idx2id = {y:x for x, y in id2idx.items()}
@@ -77,7 +79,7 @@ if __name__ == '__main__':
 								.filter(deprel=lambda x: x != "reparandum")
 			logging.debug("Removed punctuation: %s", " ".join([str(x) for x in filtered_tokenlist]))
 
-			# combine fixed expressions
+			# * combine fixed expressions and remove nodes with 'fixed' relation
 			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
 			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x!= "fixed")
 
@@ -90,9 +92,6 @@ if __name__ == '__main__':
 
 				logging.debug("Removed fixed deprels: %s", " | ".join([str(x) for x in filtered_tokenlist]))
 
-
-			# TODO: split parataxis?
-
 			tree = filtered_tokenlist.to_tree()
 
 			# * visit tree in depth-first fashion
@@ -101,19 +100,49 @@ if __name__ == '__main__':
 				# * only select non-content children: information will be gathered only from those
 				children_toks = [tok for tok in children_toks if not tok["content"]]
 
-				# remove parataxis
-				# TODO: filter out sentences with parataxis
-				children_toks = [tok for tok in children_toks if tok["deprel"] != "parataxis"]
-
-				logging.info("Processing head (%s/%s) with children (%s)",
+				logging.info("Processing head '%s/%s' with children '%s'",
 							head_tok, head_tok["upos"],
 							" | ".join(str(x) for x in children_toks))
 
-				# TODO: handle nominative, accusative, dative (only on pronouns?)
 				# TODO: placeholder for agentive in passive clauses
 
-				# head_tok["content"] = True
-				if head_tok["upos"] in ["VERB"]:
+				# * Assigning 'Nom', 'Acc' and 'Dat' Case based on syntactic function
+				if head_tok["deprel"] == "nsubj":
+					head_tok["ms feats"]["Case"].add("Nom")
+					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "nsubj:pass" or head_tok["deprel"] == "obj":
+					head_tok["ms feats"]["Case"].add("Acc")
+					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "iobj":
+					head_tok["ms feats"]["Case"].add("Dat")
+					logging.debug("Assigned 'Dat' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+
+				# Open class words 	Closed class words 	Other
+				# ADJ 				ADP 				PUNCT
+				# ADV 				AUX 				SYM
+				# INTJ 				CCONJ			 	X
+				# NOUN 				DET
+				# PROPN 			NUM
+				# VERB 				PART
+				# 					PRON
+				# 					SCONJ
+
+				# * Check that interjection has no deps and set to content word
+				if head_tok["upos"] in ["INTJ"]:
+					if len(children_toks) > 0:
+						logging.error("Found INTJ '%s' with children '%s'. Consider removing sentence %s",
+									head_tok, ", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+					head_tok["content"] = True
+
+				# * OPEN CLASS WORDS SECTION
+				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
 				elif head_tok["upos"] in ["NOUN", "PROPN", "NUM", "SYM"]:
 					nouns.process_noun(head_tok, children_toks)
@@ -121,6 +150,29 @@ if __name__ == '__main__':
 					adjs.process_adj(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
+
+				# * CLOSED CLASS WORDS SECTION
+				elif head_tok["upos"] in ["CCONJ", "SCONJ"]:
+					if len(children_toks) > 0:
+						logging.error("Found CONJ '%s' with children '%s'. Consider removing sentence %s",
+									head_tok, ", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+
+						# TODO: advmod case (non appena, anche se...)
+						# TODO: cc
+
+						# print(head_tok.items())
+						# print(children_toks)
+						# input()
+
+				elif head_tok["upos"] in ["PART"]:
+					if len(children_toks) > 0:
+						logging.error("Found PART '%s' with children '%s'. Consider removing sentence %s",
+									head_tok, ", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+						print(head_tok.items())
+						print(children_toks)
+						input()
 				elif head_tok["upos"] in ["DET", "AUX"]:
 					# TODO: handle case with dependencies
 					pass
@@ -128,7 +180,7 @@ if __name__ == '__main__':
 					# TODO everything here
 					pass
 				else:
-					logging.warning("Found head (%s) with PoS %s, children (%s)",
+					logging.warning("Not treated head '%s/%s', children '%s'",
 									head_tok, head_tok["upos"],
 									" | ".join(str(x) for x in children_toks))
 					#TODO: PRON?
