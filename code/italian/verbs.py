@@ -87,8 +87,11 @@ def process_verb(head_tok, children_toks):
 			logger.warning("Found negation")
 
 		if child_tok["deprel"] == "mark":
-			pass
 			# TODO: handle "Case"
+
+			logger.debug("Adding Case feature with value %s", lbd.switch_sconj_case(child_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_sconj_case(child_tok))
+			
 
 		# TODO: Indexing (person, number)
 
