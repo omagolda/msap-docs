@@ -35,6 +35,17 @@ while(<>)
             my $is_function_word = scalar(@msffunc) == 0 || $msffunc[0] ne 'MSFFunc=No';
             my $has_msfeats = scalar(@msfeats) > 0;
             $msfeats = $is_function_word ? '_' : $has_msfeats ? join('|', @msfeats) : '|';
+            # Abstract nodes that have been created to represent subject MS features
+            # must be attached in the basic MS tree (Udapi could only put them in the
+            # enhanced graph).
+            if($f[0] =~ m/\./ && !$is_function_word && $has_msfeats)
+            {
+                if($f[8] =~ m/^([0-9]+):(.+)$/)
+                {
+                    $f[6] = $1;
+                    $f[7] = $2;
+                }
+            }
         }
         push(@f, $msfeats);
         # Pack the line again.
