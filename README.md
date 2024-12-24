@@ -164,8 +164,8 @@ details a set of universal values for the `Case` feature. These feature does not
 all possible relations, and in some cases when there are adpositions or conjunctions that
 do not correspond to any of the features, the value of the respective feature should be
 the canonical citation form of the function word transliterated into latin letters in
-quotation marks. For example, the word _books_ in the phrase _about books_ should be
-assigned the MS features `Case="about"|Number=Plur`.
+quotation marks. <!-- For example, the word _books_ in the phrase _about books_ should be
+assigned the MS features `Case="about"|Number=Plur`. -->
 
 A mapping from adpositions and conjunctions to the features in "inventory.md" should be
 created as part of the annotation process. Note that the mapping does not have to be
