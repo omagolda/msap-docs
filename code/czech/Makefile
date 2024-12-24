@@ -9,7 +9,7 @@ TMPFILE = /net/work/people/zeman/msap-docs/code/czech/lk.conllu
 .PHONY: all
 all: view
 
-SCEN = util.Filter delete_tree_if_node='node.udeprel == "orphan"' mwe.MsfInit mwe.MsfNumPhrase mwe.MsfCase mwe.MsfRemoveFunc
+SCEN = util.Filter delete_tree_if_node='node.udeprel == "orphan"' mwe.MsfInit mwe.MsfNumPhrase mwe.MsfCase mwe.MsfCreateAbstract mwe.MsfRemoveFunc
 LKSCEN = mwe.Slavic_cond mwe.Slavic_future mwe.Slavic_imperative mwe.Slavic_inf mwe.Slavic_past mwe.Slavic_pres mwe.Slavic_transgressive
 
 # Process a CoNLL-U file and view the resulting trees.
