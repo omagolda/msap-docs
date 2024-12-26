@@ -1,0 +1,171 @@
+[italian:48] INFO:Processing data/italian/adhoc.conllu into data/italian/adhoc.out.conllu
+[italian:59] INFO:Processing sentence id: tut-3797
+[italian:60] INFO:Sentence content: La fibra, che è costituita da una sostanza proteica, la cheratina, ha lunghezza tra i 2 e i 40 nm e sezione circolare;
+[italian:77] DEBUG:Removed punctuation: La fibra che è costituita da una sostanza proteica la cheratina ha lunghezza tra i 2 e i 40 nm e sezione circolare
+[italian:113] INFO:Processing head 'La/DET' with children ''
+[italian:113] INFO:Processing head 'che/PRON' with children ''
+[italian:127] DEBUG:Assigned 'Acc' case to head 'che' because its deprel is 'nsubj:pass'
+[nouns:10] INFO:Examining head: che
+[nouns:12] DEBUG:Setting node che/PRON to content and copying its features
+[italian:113] INFO:Processing head 'è/AUX' with children ''
+[italian:113] INFO:Processing head 'da/ADP' with children ''
+[italian:113] INFO:Processing head 'una/DET' with children ''
+[italian:113] INFO:Processing head 'proteica/ADJ' with children ''
+[adjs:10] INFO:Examining head: proteica
+[adjs:12] DEBUG:Setting proteica to content node
+[italian:113] INFO:Processing head 'la/DET' with children ''
+[italian:113] INFO:Processing head 'cheratina/NOUN' with children 'la'
+[nouns:10] INFO:Examining head: cheratina
+[nouns:12] DEBUG:Setting node cheratina/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: la/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'sostanza/NOUN' with children 'da | una'
+[italian:142] DEBUG:Assigned 'Agt' case to head 'sostanza' because its deprel is 'obl:agent'
+[nouns:10] INFO:Examining head: sostanza
+[nouns:12] DEBUG:Setting node sostanza/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: da/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'da'
+[nouns:17] INFO:Examining child: una/DET
+[nouns:47] DEBUG:Adding Definite feature with value Ind
+[italian:113] INFO:Processing head 'costituita/VERB' with children 'è'
+[verbs:10] INFO:Examining head: costituita
+[verbs:23] INFO:Examining child: è/AUX
+[verbs:77] DEBUG:Adding Voice feature with value 'Pass'
+[italian:113] INFO:Processing head 'fibra/NOUN' with children 'La'
+[italian:120] DEBUG:Assigned 'Nom' case to head 'fibra' because its deprel is 'nsubj'
+[nouns:10] INFO:Examining head: fibra
+[nouns:12] DEBUG:Setting node fibra/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: La/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'tra/ADP' with children ''
+[italian:113] INFO:Processing head 'i/DET' with children ''
+[italian:113] INFO:Processing head 'e/CCONJ' with children ''
+[italian:113] INFO:Processing head 'i/DET' with children ''
+[italian:113] INFO:Processing head '40/NUM' with children ''
+[nouns:10] INFO:Examining head: 40
+[nouns:12] DEBUG:Setting node 40/NUM to content and copying its features
+[italian:102] DEBUG:Adding Case feature with value Conj
+[italian:113] INFO:Processing head 'nm/NOUN' with children 'i'
+[nouns:10] INFO:Examining head: nm
+[nouns:12] DEBUG:Setting node nm/NOUN to content and copying its features
+[ita_utils:12] INFO:Node nm/NOUN has no features
+[nouns:17] INFO:Examining child: i/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head '2/NUM' with children 'tra | i'
+[nouns:10] INFO:Examining head: 2
+[nouns:12] DEBUG:Setting node 2/NUM to content and copying its features
+[nouns:17] INFO:Examining child: tra/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'tra'
+[nouns:17] INFO:Examining child: i/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'e/CCONJ' with children ''
+[italian:113] INFO:Processing head 'circolare/ADJ' with children ''
+[adjs:10] INFO:Examining head: circolare
+[adjs:12] DEBUG:Setting circolare to content node
+[italian:102] DEBUG:Adding Case feature with value Conj
+[italian:113] INFO:Processing head 'sezione/NOUN' with children ''
+[nouns:10] INFO:Examining head: sezione
+[nouns:12] DEBUG:Setting node sezione/NOUN to content and copying its features
+[italian:113] INFO:Processing head 'lunghezza/NOUN' with children ''
+[italian:132] DEBUG:Assigned 'Acc' case to head 'lunghezza' because its deprel is 'obj'
+[nouns:10] INFO:Examining head: lunghezza
+[nouns:12] DEBUG:Setting node lunghezza/NOUN to content and copying its features
+[italian:113] INFO:Processing head 'ha/VERB' with children ''
+[verbs:10] INFO:Examining head: ha
+[italian:59] INFO:Processing sentence id: isst_tanl-2667
+[italian:60] INFO:Sentence content: E qualcosa di vero, dice il dirigente, ci deve pure essere, sebbene di prove zero.
+[italian:77] DEBUG:Removed punctuation: E qualcosa di vero dice il dirigente ci deve pure essere sebbene di prove zero
+[italian:113] INFO:Processing head 'E/CCONJ' with children ''
+[italian:113] INFO:Processing head 'di/ADP' with children ''
+[italian:113] INFO:Processing head 'vero/NOUN' with children 'di'
+[nouns:10] INFO:Examining head: vero
+[nouns:12] DEBUG:Setting node vero/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: di/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'di'
+[italian:113] INFO:Processing head 'qualcosa/PRON' with children ''
+[italian:120] DEBUG:Assigned 'Nom' case to head 'qualcosa' because its deprel is 'nsubj'
+[nouns:10] INFO:Examining head: qualcosa
+[nouns:12] DEBUG:Setting node qualcosa/PRON to content and copying its features
+[italian:113] INFO:Processing head 'il/DET' with children ''
+[italian:113] INFO:Processing head 'dirigente/NOUN' with children 'il'
+[italian:120] DEBUG:Assigned 'Nom' case to head 'dirigente' because its deprel is 'nsubj'
+[nouns:10] INFO:Examining head: dirigente
+[nouns:12] DEBUG:Setting node dirigente/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: il/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'dice/VERB' with children ''
+[verbs:10] INFO:Examining head: dice
+[italian:113] INFO:Processing head 'ci/PRON' with children ''
+[nouns:10] INFO:Examining head: ci
+[nouns:12] DEBUG:Setting node ci/PRON to content and copying its features
+[italian:113] INFO:Processing head 'deve/AUX' with children ''
+[italian:113] INFO:Processing head 'pure/ADV' with children ''
+[advs:10] INFO:Examining head: 'pure'
+[advs:14] DEBUG:Setting node pure/ADV to content and copying its features
+[ita_utils:12] INFO:Node pure/ADV has no features
+[italian:113] INFO:Processing head 'sebbene/CCONJ' with children ''
+[italian:113] INFO:Processing head 'di/ADP' with children ''
+[italian:113] INFO:Processing head 'prove/NOUN' with children 'di'
+[nouns:10] INFO:Examining head: prove
+[nouns:12] DEBUG:Setting node prove/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: di/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'di'
+[italian:102] DEBUG:Adding Case feature with value TBD-CONJ-sebbene
+[italian:113] INFO:Processing head 'zero/NUM' with children ''
+[nouns:10] INFO:Examining head: zero
+[nouns:12] DEBUG:Setting node zero/NUM to content and copying its features
+[italian:102] DEBUG:Adding Case feature with value Conj
+[italian:113] INFO:Processing head 'essere/VERB' with children 'deve'
+[verbs:10] INFO:Examining head: essere
+[verbs:23] INFO:Examining child: deve/AUX
+[verbs:33] DEBUG:Adding Mood feature with value Ind
+[verbs:40] DEBUG:Adding Tense feature with value Pres
+[verbs:59] DEBUG:Adding Modality feature with value Nec
+[italian:59] INFO:Processing sentence id: isst_tanl-2724
+[italian:60] INFO:Sentence content: Un miracolo che la laicissima giunta sperava potesse venire dalle "lacrime di sangue".
+[italian:77] DEBUG:Removed punctuation: Un miracolo che la laicissima giunta sperava potesse venire da le lacrime di sangue
+[italian:113] INFO:Processing head 'Un/DET' with children ''
+[italian:113] INFO:Processing head 'miracolo/NOUN' with children 'Un'
+[nouns:10] INFO:Examining head: miracolo
+[nouns:12] DEBUG:Setting node miracolo/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: Un/DET
+[nouns:47] DEBUG:Adding Definite feature with value Ind
+[italian:113] INFO:Processing head 'che/SCONJ' with children ''
+[italian:132] DEBUG:Assigned 'Acc' case to head 'che' because its deprel is 'obj'
+[italian:113] INFO:Processing head 'la/DET' with children ''
+[italian:113] INFO:Processing head 'laicissima/ADJ' with children ''
+[adjs:10] INFO:Examining head: laicissima
+[adjs:12] DEBUG:Setting laicissima to content node
+[italian:113] INFO:Processing head 'giunta/NOUN' with children 'la'
+[italian:120] DEBUG:Assigned 'Nom' case to head 'giunta' because its deprel is 'nsubj'
+[nouns:10] INFO:Examining head: giunta
+[nouns:12] DEBUG:Setting node giunta/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: la/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'potesse/AUX' with children ''
+[italian:113] INFO:Processing head 'da/ADP' with children ''
+[italian:113] INFO:Processing head 'le/DET' with children ''
+[italian:113] INFO:Processing head 'di/ADP' with children ''
+[italian:113] INFO:Processing head 'sangue/NOUN' with children 'di'
+[nouns:10] INFO:Examining head: sangue
+[nouns:12] DEBUG:Setting node sangue/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: di/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'di'
+[italian:113] INFO:Processing head 'lacrime/NOUN' with children 'da | le'
+[nouns:10] INFO:Examining head: lacrime
+[nouns:12] DEBUG:Setting node lacrime/NOUN to content and copying its features
+[nouns:17] INFO:Examining child: da/ADP
+[nouns:85] DEBUG:Adding Case feature with value TBD-'da'
+[nouns:17] INFO:Examining child: le/DET
+[nouns:47] DEBUG:Adding Definite feature with value Def
+[italian:113] INFO:Processing head 'venire/VERB' with children 'potesse'
+[verbs:10] INFO:Examining head: venire
+[verbs:23] INFO:Examining child: potesse/AUX
+[verbs:33] DEBUG:Adding Mood feature with value Sub
+[verbs:40] DEBUG:Adding Tense feature with value Imp
+[verbs:59] DEBUG:Adding Modality feature with value Pot
+[italian:113] INFO:Processing head 'sperava/VERB' with children 'che'
+[verbs:10] INFO:Examining head: sperava
+[verbs:23] INFO:Examining child: che/SCONJ
+[verbs:123] WARNING:Node che/SCONJ with deprel 'obj' needs new rules
+[italian:226] ERROR:Node che should be empty bus has features defaultdict(<class 'set'>, {'Case': {'Acc'}, 'tmp-child': {'VERB'}})
