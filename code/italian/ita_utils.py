@@ -5,11 +5,8 @@ from typing import List
 
 logger = logging.getLogger(__name__)
 
-# TODO: create_abstract_nsubj
-
 def copy_features(node):
 	if node.get("feats"):
-		print(node.items())
 		for feat in node["feats"]:
 			node["ms feats"][feat].add(node["feats"][feat])
 	else:
@@ -33,21 +30,9 @@ def create_abstract_nsubj(head: conllu.Token):
 	abstract_nsubj["content"] = True
 	abstract_nsubj['ms feats'] = collections.defaultdict(set)
 
-	# if auxes: # if there are auxiliaries, take the features from the first one
-	#     first_aux_id = min([child['id'] for child in auxes])
-	#     feats_source = [aux for aux in auxes if aux['id'] == first_aux_id][0]
-	# else: # if there are no auxiliaries, take the features from the head
-	#     feats_source = head
-
-	for attr in ['Number', 'Person', 'Gender']: # copy the features from the head or the auxiliaries
+	for attr in ['Number', 'Person', 'Gender']: # copy the features from the head
 		if attr in head["ms feats"]:
 			for value in head['ms feats'][attr]:
 				abstract_nsubj['ms feats'][attr].add(value)
-
-	# abstract_nsubj['ms feats'] = {k:v for k,v in abstract_nsubj['ms feats'].items() if v} #clean up nones
-
-	# in case of some pragmatical omission of subject with no agreement on the predicate - do not create abstract node
-	# if not abstract_nsubj['ms feats']:
-		# return None
 
 	return abstract_nsubj

@@ -125,14 +125,7 @@ if __name__ == '__main__':
 					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
-					# TODO: add person features to head
-
 				if head_tok["deprel"] == "nsubj:pass":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
-					# TODO: add person features to head
 					head_tok["ms feats"]["Case"].add("Acc")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
@@ -169,7 +162,6 @@ if __name__ == '__main__':
 				# * OPEN CLASS WORDS SECTION
 				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
-					print(head_tok.items())
 					if "Fin" in head_tok["ms feats"]["VerbForm"] and not found_nsubj:
 						new_node = ita_utils.create_abstract_nsubj(head_tok)
 						new_nodes.append(new_node)
@@ -179,7 +171,6 @@ if __name__ == '__main__':
 						del[head_tok["ms feats"]["Gender"]]
 					if "Number" in head_tok["ms feats"]:
 						del[head_tok["ms feats"]["Number"]]
-					# TODO: remove person, gender, number from verb
 
 				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
@@ -221,14 +212,7 @@ if __name__ == '__main__':
 							conj_tok["ms feats"][feat].add(value)
 
 			for node in new_nodes:
-				# print(node['id'])
 				idx = int(node['id'])
-				# print(idx)
-				# input()
-				# if idx == 0:
-				# 	res = -1
-				# else:
-				# 	res = id2idx[idx]
 				node['id'] = f"{node['id']:.1f}"
 				tokenlist.insert(id2idx[idx] + 1, node)
 
@@ -241,11 +225,10 @@ if __name__ == '__main__':
 				node['form'] = node['form'].split(" ")[0]
 
 				if node["content"]:
-					if node.get("feats"):
-						node_feats = node['feats']
-						node_msfeats = node["ms feats"]
-
-						# TODO: copy default values
+					# !! defaults should be already there at this point
+					# if node.get("feats"):
+					# 	node_feats = node['feats']
+					# 	node_msfeats = node["ms feats"]
 						# for feat, value in node["feats"].items():
 						# 	if feat in node["ms feats"]:
 						# 		print(node.items())
@@ -265,8 +248,6 @@ if __name__ == '__main__':
 				elif node.get("ms feats"):
 					logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
-
-
 
 			to_write = tokenlist.serialize()
 			print(to_write, file=fout)
