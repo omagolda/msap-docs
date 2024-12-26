@@ -7,14 +7,12 @@ logger = logging.getLogger(__name__)
 
 def process_noun(head_tok, children_toks):
 
-	logging.info("Examining head: %s", head_tok)
-
-	logging.debug("Setting node %s/%s to content and copying its features", head_tok, head_tok["upos"])
+	logging.debug("Setting %s/%s to content and copying its features", head_tok, head_tok["upos"])
 	head_tok["content"] = True
 	ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s/%s", child_tok, child_tok["upos"])
+		logger.info("Examining child: %s", child_tok.values())
 
 		# * evaluate copulas
 		if child_tok["deprel"] in ["cop", "aux"]:
@@ -43,12 +41,14 @@ def process_noun(head_tok, children_toks):
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
 
 			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				logging.debug("Adding Gender feature with value %s", child_tok["feats"]["Gender"])
 				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
 			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				logging.debug("Adding Number feature with value %s", child_tok["feats"]["Number"])
 				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
 
 			# * add definiteness
-			if "Definite" in child_tok["feats"]:
+			if child_tok.get("feats") and "Definite" in child_tok["feats"]:
 
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])

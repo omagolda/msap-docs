@@ -7,14 +7,15 @@ logger = logging.getLogger(__name__)
 
 def process_verb(head_tok, children_toks):
 
-	logger.info("Examining head: %s", head_tok)
+	logging.debug("Setting %s/%s to content node", head_tok, head_tok["upos"])
 	head_tok["content"] = True
 
 	# * default polarity to Pos, than change to Neg if "not" is present
+	logging.debug("Setting Polarity as Pos")
 	head_tok["ms feats"]["Polarity"].add("Pos")
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s/%s", child_tok, child_tok["upos"])
+		logger.info("Examining child: %s", child_tok.values())
 
 		# TODO: agreement on pronouns
 

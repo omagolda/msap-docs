@@ -7,8 +7,6 @@ logger = logging.getLogger(__name__)
 
 def process_adv(head_tok, children_toks):
 
-	logger.info("Examining head: '%s'", head_tok)
-
 	# * setting all adverbs to content words, except for "non", "più", "meno"
 	if not head_tok["lemma"] in ["non", "più", "meno"]:
 		logging.debug("Setting node %s/%s to content and copying its features",
@@ -17,6 +15,7 @@ def process_adv(head_tok, children_toks):
 		ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
+		logger.info("Examining child: %s", child_tok.values())
 
 		if child_tok["deprel"] in ["aux", "cop"]:
 			if child_tok.get("feats") and "Mood" in child_tok["feats"]:

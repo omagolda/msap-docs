@@ -90,13 +90,13 @@ if __name__ == '__main__':
 
 			tree = filtered_tokenlist.to_tree()
 
-			new_nodes = []
+			new_nodes = [] # * list to contain abstract nodes
+
 			# * visit tree in depth-first fashion
 			for head_tok, children_toks in DFS(tree):
 
-				found_nsubj = False
-				if any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] for tok in children_toks):
-					found_nsubj = True
+				found_nsubj = any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] \
+								for tok in children_toks)
 
 				# * only select non-content children: information will be gathered only from those
 				children_toks = [tok for tok in children_toks if not tok["content"]]
@@ -115,11 +115,11 @@ if __name__ == '__main__':
 					logging.debug("Isolated %d conjuncts", len(conjuncts))
 					logging.debug("%s", " | ".join(str(x) for x in conjuncts))
 
-				logging.info("Processing head '%s/%s' with children '%s'",
-							head_tok, head_tok["upos"],
+				logging.info("Processing head %s with children '%s'",
+							head_tok.values(),
 							" | ".join(str(x) for x in children_toks))
 
-				# * Assigning 'Nom', 'Acc' and 'Dat' Case based on syntactic function
+				# * Assigning 'Nom', 'Acc', 'Dat', 'Agt' Cases based on syntactic function
 				if head_tok["deprel"] == "nsubj":
 					head_tok["ms feats"]["Case"].add("Nom")
 					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
@@ -131,22 +131,16 @@ if __name__ == '__main__':
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obj":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Acc")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "iobj":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Dat")
 					logging.debug("Assigned 'Dat' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obl:agent":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Agt")
 					logging.debug("Assigned 'Agt' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
@@ -162,9 +156,12 @@ if __name__ == '__main__':
 				# * OPEN CLASS WORDS SECTION
 				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
+					# * Create abstract subject if the VerbForm is Finite and there's no other subject
 					if "Fin" in head_tok["ms feats"]["VerbForm"] and not found_nsubj:
 						new_node = ita_utils.create_abstract_nsubj(head_tok)
 						new_nodes.append(new_node)
+
+					# * Remove Person, Gender and Number features from VERB
 					if "Person" in head_tok["ms feats"]:
 						del[head_tok["ms feats"]["Person"]]
 					if "Gender" in head_tok["ms feats"]:
@@ -180,6 +177,8 @@ if __name__ == '__main__':
 					advs.process_adv(head_tok, children_toks)
 
 				# * CLOSED CLASS WORDS SECTION
+
+				# * Check that closed classes have no deps
 				elif head_tok["upos"] in ["CCONJ", "SCONJ", "AUX", "PART", "ADP"]:
 					if len(children_toks) > 0:
 						logging.error("Found %s '%s' with children '%s'. Consider removing sentence %s",
@@ -187,6 +186,7 @@ if __name__ == '__main__':
 									", ".join(str(x) for x in children_toks),
 									tokenlist.metadata["sent_id"])
 
+				# * Check that determiners have no deps and set some of them to content
 				elif head_tok["upos"] in ["DET"]:
 					if len(children_toks) > 0:
 						logging.error("Found DET '%s' with children '%s'. Consider removing sentence %s",
@@ -195,6 +195,7 @@ if __name__ == '__main__':
 
 					if head_tok["lemma"] in ["tutto", "ogni",
 											"mio", "tuo", "suo", "nostro", "vostro", "loro"]:
+						logging.debug("Setting %s to content word", head_tok)
 						head_tok["content"] = True
 
 
@@ -211,16 +212,15 @@ if __name__ == '__main__':
 						for value in head_tok["ms feats"][feat]:
 							conj_tok["ms feats"][feat].add(value)
 
+			# * add abstract nodes back into token list
 			for node in new_nodes:
 				idx = int(node['id'])
 				node['id'] = f"{node['id']:.1f}"
 				tokenlist.insert(id2idx[idx] + 1, node)
 
 			for node in tokenlist:
-				# TODO: at the end function words should have "_"
-				# and content words with no ms-feat should have "|"
 
-				# restore original lemma
+				# * restore original lemma
 				node['lemma'] = node['lemma'].split(" ")[0]
 				node['form'] = node['form'].split(" ")[0]
 
@@ -238,11 +238,16 @@ if __name__ == '__main__':
 						# 		node["ms feats"][feat].add(node["feats"][feat])
 
 					sorted_msfeats = sorted(node["ms feats"].items())
-					# * if multiple values are present, they are conjoined by semi-colon
+					if len(sorted_msfeats) == 0:
+						sorted_msfeats = ["|"]
+					else:
+						# * if multiple values are present, they are conjoined by semi-colon
+						sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
+
 					# TODO: handle negation -> es. not(Pot)
 					# TODO: handle conjunction of values -> es. "if and when" and(Cnd,Tmp)
 					# TODO: handle disjunction of values -> es. Tense=or(Past,Fut)
-					sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
+
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
