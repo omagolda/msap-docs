@@ -27,8 +27,8 @@ def create_abstract_nsubj(head: conllu.Token):
 	abstract_nsubj['misc'] = '-'
 	abstract_nsubj['head'] = head['id']
 	abstract_nsubj['deprel'] = 'nsubj'
-	abstract_nsubj["content"] = True
 	abstract_nsubj['ms feats'] = collections.defaultdict(set)
+	abstract_nsubj["content"] = True
 
 	for attr in ['Number', 'Person', 'Gender']: # copy the features from the head
 		if attr in head["ms feats"]:
