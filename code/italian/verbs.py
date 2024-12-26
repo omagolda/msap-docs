@@ -132,7 +132,6 @@ def process_verb(head_tok, children_toks):
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
-			child_tok["ms feats"]["tmp-child"].add("VERB")
 
 	if head_tok.get("feats"):
 		for feat in head_tok.get("feats"):
@@ -145,4 +144,3 @@ def process_verb(head_tok, children_toks):
 		head_tok["ms feats"]["VerbForm"].add("Fin")
 	if "Voice" not in head_tok["ms feats"]:
 		head_tok["ms feats"]["Voice"].add("Act")
-	# TODO: if no subj found -> create abstract node

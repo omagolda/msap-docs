@@ -77,9 +77,9 @@ def process_adv(head_tok, children_toks):
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
-			child_tok["ms feats"]["tmp-child"].add("ADV")
 
 	if "Def" in head_tok["ms feats"]["Definite"] and "Cmp" in head_tok["ms feats"]["Degree"]:
 		logging.debug("Changing Cmp to Sup Degree for node %s/%s", head_tok, head_tok["upos"])
 		head_tok["ms feats"]["Degree"].remove("Cmp")
 		head_tok["ms feats"]["Degree"].add("Sup")
+	# TODO: Handle aspect

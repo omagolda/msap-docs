@@ -99,4 +99,5 @@ def process_noun(head_tok, children_toks):
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
-			child_tok["ms feats"]["tmp-child"].add("NOUN")
+
+	# TODO: Handle aspect
