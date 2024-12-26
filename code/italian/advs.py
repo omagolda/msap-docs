@@ -19,15 +19,15 @@ def process_adv(head_tok, children_toks):
 	for child_tok in children_toks:
 
 		if child_tok["deprel"] in ["aux", "cop"]:
-			if "Mood" in child_tok["feats"]:
+			if child_tok.get("feats") and "Mood" in child_tok["feats"]:
 				logging.debug("Adding TAM features with values Mood: %s - Tense: %s",
 							child_tok["feats"]["Mood"], child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
-			if "Tense" in child_tok["feats"]:
+			if child_tok.get("feats") and "Tense" in child_tok["feats"]:
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 
-			if "VerbForm" in child_tok["feats"]:
+			if child_tok.get("feats") and "VerbForm" in child_tok["feats"]:
 				logging.debug("Adding VerbForm feature with value: %s",
 							child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
@@ -39,8 +39,12 @@ def process_adv(head_tok, children_toks):
 				head_tok["ms feats"]["Modality"].add(modality)
 
 		elif child_tok["deprel"] in ["det"]:
+			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
 			# * add definiteness
-			if "Definite" in child_tok["feats"]:
+			if child_tok.get("feats") and "Definite" in child_tok["feats"]:
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
 			elif lbd.switch_det_definitess(child_tok):
@@ -55,7 +59,7 @@ def process_adv(head_tok, children_toks):
 				logging.debug("Adding Polarity feature with value %s", polarity)
 				head_tok["ms feats"]["Polarity"].add(polarity)
 
-			if "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
+			if child_tok.get("feats") and "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
 				dem = lbd.switch_det_dem(child_tok)
 				if dem:
 					logging.debug("Adding Dem feature with value %s", dem)

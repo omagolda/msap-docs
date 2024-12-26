@@ -10,14 +10,8 @@ def process_verb(head_tok, children_toks):
 	logger.info("Examining head: %s", head_tok)
 	head_tok["content"] = True
 
-	# TODO: copy relevant verbal features
-	# ita_utils.copy_features(head_tok)
-
 	# * default polarity to Pos, than change to Neg if "not" is present
 	head_tok["ms feats"]["Polarity"].add("Pos")
-	# TODO: default Mood to "Ind"
-	# TODO: default VerbForm to "Fin"
-	# TODO: default Voice to "Act"
 
 	for child_tok in children_toks:
 		logger.info("Examining child: %s/%s", child_tok, child_tok["upos"])
@@ -27,6 +21,9 @@ def process_verb(head_tok, children_toks):
 		# * Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
 
+			if "Person" in child_tok["feats"]:
+				head_tok["ms feats"]["Person"].add(child_tok["feats"]["Person"])
+
 			# TAM
 			# Mood
 			if "Mood" in child_tok["feats"]:
@@ -35,12 +32,12 @@ def process_verb(head_tok, children_toks):
 			elif child_tok["feats"]["VerbForm"] == "Fin":
 				logger.debug("No Mood: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
-			# Tense
-			if "Tense" in child_tok["feats"]:
-				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
-				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-			else:
-				logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
+			# # Tense
+			# if "Tense" in child_tok["feats"]:
+			# 	logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
+			# 	head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+			# else:
+			# 	logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 
 			# Aspect
@@ -52,6 +49,14 @@ def process_verb(head_tok, children_toks):
 				else:
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
+			elif head_tok["feats"]["VerbForm"] == "Part":
+				logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
+				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
+				if head_tok["feats"]["Tense"] == "Past":
+					logger.debug("Adding Aspect feature with value Perf")
+					head_tok["ms feats"]["Aspect"].add("Perf")
+
+			# TODO: handle Prosp
 
 			# Modality
 			modality = lbd.switch_verb_modality(child_tok)
@@ -60,7 +65,7 @@ def process_verb(head_tok, children_toks):
 				head_tok["ms feats"]["Modality"].add(modality)
 
 			# Voice:
-			if child_tok["lemma"] == "venire": #how do we treat essere, which is ambigous with active forms?
+			if child_tok["lemma"] == "venire":
 				logger.debug("Adding Voice feature with value 'Pass'")
 				head_tok["ms feats"]["Voice"].add("Pass")
 			# else:
@@ -78,10 +83,14 @@ def process_verb(head_tok, children_toks):
 			head_tok["ms feats"]["Voice"].add("Pass")
 
 		# * evaluate determiners (cases like "Il perdurare...")
-		elif child_tok["deprel"] in ["det"]:
+		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
+			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
 
 			# * add definiteness
-			if "Definite" in child_tok["feats"]:
+			if child_tok.get("feats") and "Definite" in child_tok["feats"]:
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
 			elif lbd.switch_det_definitess(child_tok):
@@ -98,7 +107,7 @@ def process_verb(head_tok, children_toks):
 				logging.debug("Adding Polarity feature with value %s", polarity)
 				head_tok["ms feats"]["Polarity"].add(polarity)
 
-			if "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
+			if child_tok.get("feats") and "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
 				dem = lbd.switch_det_dem(child_tok)
 				if dem:
 					logging.debug("Adding Dem feature with value %s", dem)
@@ -116,7 +125,7 @@ def process_verb(head_tok, children_toks):
 				# TODO: difference "non possiamo andare" vs. "possiamo non andare"
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			head_tok["ms feats"]["Case"].add(lbd.switch_verb_modality(child_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_verbal_case(child_tok))
 			# TODO: handle "Case"
 
 		else:
@@ -124,4 +133,15 @@ def process_verb(head_tok, children_toks):
 							child_tok, child_tok["upos"], child_tok["deprel"])
 			child_tok["ms feats"]["tmp-child"].add("VERB")
 
+	if head_tok.get("feats"):
+		for feat in head_tok.get("feats"):
+			if not feat in head_tok["ms feats"]:
+				head_tok["ms feats"][feat].add(head_tok["feats"][feat])
+
+	if "Mood" not in head_tok["ms feats"]:
+		head_tok["ms feats"]["Mood"].add("Ind")
+	if "VerbForm" not in head_tok["ms feats"]:
+		head_tok["ms feats"]["VerbForm"].add("Fin")
+	if "Voice" not in head_tok["ms feats"]:
+		head_tok["ms feats"]["Voice"].add("Act")
 	# TODO: if no subj found -> create abstract node

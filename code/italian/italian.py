@@ -15,7 +15,7 @@ import code.italian.adjs as adjs
 import code.italian.advs as advs
 # import code.italian.pronouns as prons
 import code.italian.lemma_based_decisions as lbd
-# import code.italian.ita_utils as ita_utils
+import code.italian.ita_utils as ita_utils
 import tqdm
 import conllu
 
@@ -90,8 +90,13 @@ if __name__ == '__main__':
 
 			tree = filtered_tokenlist.to_tree()
 
+			new_nodes = []
 			# * visit tree in depth-first fashion
 			for head_tok, children_toks in DFS(tree):
+
+				found_nsubj = False
+				if any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] for tok in children_toks):
+					found_nsubj = True
 
 				# * only select non-content children: information will be gathered only from those
 				children_toks = [tok for tok in children_toks if not tok["content"]]
@@ -119,25 +124,36 @@ if __name__ == '__main__':
 					head_tok["ms feats"]["Case"].add("Nom")
 					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
+
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					# TODO: add person features to head
 
 				if head_tok["deprel"] == "nsubj:pass":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					# TODO: add person features to head
 					head_tok["ms feats"]["Case"].add("Acc")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obj":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Acc")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "iobj":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Dat")
 					logging.debug("Assigned 'Dat' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obl:agent":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Agt")
 					logging.debug("Assigned 'Agt' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
@@ -153,6 +169,18 @@ if __name__ == '__main__':
 				# * OPEN CLASS WORDS SECTION
 				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
+					print(head_tok.items())
+					if "Fin" in head_tok["ms feats"]["VerbForm"] and not found_nsubj:
+						new_node = ita_utils.create_abstract_nsubj(head_tok)
+						new_nodes.append(new_node)
+					if "Person" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Person"]]
+					if "Gender" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Gender"]]
+					if "Number" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Number"]]
+					# TODO: remove person, gender, number from verb
+
 				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADJ"]:
@@ -192,6 +220,18 @@ if __name__ == '__main__':
 						for value in head_tok["ms feats"][feat]:
 							conj_tok["ms feats"][feat].add(value)
 
+			for node in new_nodes:
+				# print(node['id'])
+				idx = int(node['id'])
+				# print(idx)
+				# input()
+				# if idx == 0:
+				# 	res = -1
+				# else:
+				# 	res = id2idx[idx]
+				node['id'] = f"{node['id']:.1f}"
+				tokenlist.insert(id2idx[idx] + 1, node)
+
 			for node in tokenlist:
 				# TODO: at the end function words should have "_"
 				# and content words with no ms-feat should have "|"
@@ -225,6 +265,8 @@ if __name__ == '__main__':
 				elif node.get("ms feats"):
 					logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
+
+
 
 			to_write = tokenlist.serialize()
 			print(to_write, file=fout)

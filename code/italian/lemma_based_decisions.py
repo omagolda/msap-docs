@@ -38,7 +38,7 @@ def switch_verb_modality(token):
 	if token["lemma"] == "dovere":
 		return "Nec"
 
-	return f"TBD-MOD-{token['lemma']}"
+	# TODO: what about prms?
 
 
 def switch_det_definitess(token):
@@ -76,3 +76,14 @@ def switch_det_dem(token):
 
 	if token["lemma"] == "quello":
 		return "Dist"
+
+
+# def switch_pron_person(token):
+# 	if token["lemma"] in ["io", "noi", "mi", "ci"]:
+# 		return "1"
+# 	if token["lemma"] in ["tu", "voi", "ti", "vi"]:
+# 		return "2"
+# 	if token["lemma"] in ["lui", "lei", "egli", "ella", "esso", "essa",
+# 								"loro", "le", "gli", "il", "lo", "la", "le", "li",
+# 								"chi", "che", "si"]:
+# 		return "3"

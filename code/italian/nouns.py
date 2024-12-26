@@ -18,19 +18,21 @@ def process_noun(head_tok, children_toks):
 
 		# * evaluate copulas
 		if child_tok["deprel"] in ["cop", "aux"]:
-			if "Mood" in child_tok["feats"]:
+			# TODO: add polarity and verb-like features
+
+			if child_tok.get("feats") and "Mood" in child_tok["feats"]:
 				logging.debug("Adding TAM features with values Mood: %s - Tense: %s",
 							child_tok["feats"]["Mood"], child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 			else:
 				logging.debug("No Mood feature in %s - %s", child_tok, child_tok["feats"])
 
-			if "Tense" in child_tok["feats"]:
+			if child_tok.get("feats") and "Tense" in child_tok["feats"]:
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 			else:
 				logging.debug("No Tense feature in %s - %s", child_tok, child_tok["feats"])
 
-			if "VerbForm" in child_tok["feats"]:
+			if child_tok.get("feats") and "VerbForm" in child_tok["feats"]:
 				logging.debug("Adding VerbForm feature with value: %s",
 							child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
@@ -39,15 +41,20 @@ def process_noun(head_tok, children_toks):
 
 		# * evaluate determiners
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
-			processed = False
+
+			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
 
 			# * add definiteness
 			if "Definite" in child_tok["feats"]:
-				processed = True
+
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
+
 			elif lbd.switch_det_definitess(child_tok):
-				processed = True
+
 				definitess = lbd.switch_det_definitess(child_tok)
 				logging.debug("Adding Definite feature with value %s", definitess)
 				head_tok["ms feats"]["Definite"].add(definitess)
@@ -58,15 +65,13 @@ def process_noun(head_tok, children_toks):
 			# ? should polarity be set to "Pos" by default?
 			polarity = lbd.switch_det_polarity(child_tok)
 			if polarity:
-				processed = True
 				logging.debug("Adding Polarity feature with value %s", polarity)
 				head_tok["ms feats"]["Polarity"].add(polarity)
 
-			if "PronType" in child_tok["feats"]:
+			if child_tok.get("feats") and "PronType" in child_tok["feats"]:
 				if child_tok["feats"]["PronType"] == "Dem":
 					dem = lbd.switch_det_dem(child_tok)
 					if dem:
-						processed = True
 						logging.debug("Adding Dem feature with value %s", dem)
 						head_tok["ms feats"]["Dem"].add(dem)
 					else:
