@@ -1,0 +1,76 @@
+# sent_id = tut-3797
+# text = La fibra, che è costituita da una sostanza proteica, la cheratina, ha lunghezza tra i 2 e i 40 nm e sezione circolare;
+1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_	_	False
+2	fibra	fibra	NOUN	S	Gender=Fem|Number=Sing	15	nsubj	6:nsubj:pass|15:nsubj	SpaceAfter=No	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
+3	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
+4	che	che	PRON	PR	PronType=Rel	6	nsubj:pass	2:ref	_	Case=Acc|PronType=Rel	True
+5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	6:aux:pass	_	_	False
+6	costituita	costituire	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl:relcl	2:acl:relcl	_	Polarity=Pos|Voice=Pass	True
+7	da	da	ADP	E	_	9	case	9:case	_	_	False
+8	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
+9	sostanza	sostanza	NOUN	S	Gender=Fem|Number=Sing	6	obl:agent	6:obl:agent:da	_	Case=TBD-'da';Agt|Definite=Ind|Gender=Fem|Number=Sing	True
+10	proteica	proteica	ADJ	A	Gender=Fem|Number=Sing	9	amod	9:amod	SpaceAfter=No	Gender=Fem|Number=Sing	True
+11	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
+12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	13:det	_	_	False
+13	cheratina	cheratina	NOUN	S	Gender=Fem|Number=Sing	9	appos	9:appos	SpaceAfter=No	Definite=Def|Gender=Fem|Number=Sing	True
+14	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
+15	ha	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_	Polarity=Pos	True
+16	lunghezza	lunghezza	NOUN	S	Gender=Fem|Number=Sing	15	obj	15:obj	_	Case=Acc|Gender=Fem|Number=Sing	True
+17	tra	tra	ADP	E	_	19	case	19:case	_	_	False
+18	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_	_	False
+19	2	2	NUM	N	NumType=Card	16	nummod	16:nummod	_	Case=TBD-'tra'|Definite=Def|NumType=Card	True
+20	e	e	CCONJ	CC	_	23	cc	23:cc	_	_	False
+21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	23:det	_	_	False
+22	40	40	NUM	N	NumType=Card	23	nummod	23:nummod	_	NumType=Card	True
+23	nm	nm	NOUN	S	_	19	conj	19:conj:e	_	Case=Conj|Definite=Def	True
+24	e	e	CCONJ	CC	_	25	cc	25:cc	_	_	False
+25	sezione	sezione	NOUN	S	Gender=Fem|Number=Sing	16	conj	15:obj|16:conj:e	_	Case=Conj|Gender=Fem|Number=Sing	True
+26	circolare	circolare	ADJ	A	Number=Sing	25	amod	25:amod	SpaceAfter=No	Number=Sing	True
+27	;	;	PUNCT	FC	_	15	punct	15:punct	_	_	False
+
+
+# sent_id = isst_tanl-2667
+# text = E qualcosa di vero, dice il dirigente, ci deve pure essere, sebbene di prove zero.
+1	E	e	CCONJ	CC	_	13	cc	13:cc	_	_	False
+2	qualcosa	qualcosa	PRON	PI	Number=Sing|PronType=Ind	13	nsubj	13:nsubj|18:nsubj	_	Case=Nom|Number=Sing|PronType=Ind	True
+3	di	di	ADP	E	_	4	case	4:case	_	_	False
+4	vero	vero	NOUN	S	Gender=Masc|Number=Sing	2	nmod	2:nmod:di	SpaceAfter=No	Case=TBD-'di'|Gender=Masc|Number=Sing	True
+5	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
+6	dice	dire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	13:parataxis	_	Polarity=Pos	True
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_	_	False
+8	dirigente	dirigente	NOUN	S	Number=Sing	6	nsubj	6:nsubj	SpaceAfter=No	Case=Nom|Definite=Def|Number=Sing	True
+9	,	,	PUNCT	FF	_	6	punct	6:punct	_	_	False
+10	ci	ci	PRON	PC	Clitic=Yes|PronType=Prs	13	expl	13:expl	_	Clitic=Yes|PronType=Prs	True
+11	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	13:aux	_	_	False
+12	pure	pure	ADV	B	_	13	advmod	13:advmod	_	Definite=	True
+13	essere	essere	VERB	V	VerbForm=Inf	0	root	0:root	SpaceAfter=No	Case=Conj|Modality=Nec|Mood=Ind|Polarity=Pos|Tense=Pres	True
+14	,	,	PUNCT	FF	_	18	punct	18:punct	_	_	False
+15	sebbene	sebbene	CCONJ	CC	_	18	cc	18:cc	_	_	False
+16	di	di	ADP	E	_	17	case	17:case	_	_	False
+17	prove	prova	NOUN	S	Gender=Fem|Number=Plur	18	nmod	18:nmod:di	_	Case=TBD-'di'|Gender=Fem|Number=Plur	True
+18	zero	zero	NUM	N	NumType=Card	13	conj	13:conj:sebbene	SpaceAfter=No	Case=TBD-CONJ-sebbene|NumType=Card	True
+19	.	.	PUNCT	FS	_	13	punct	13:punct	_	_	False
+
+
+# sent_id = isst_tanl-2724
+# text = Un miracolo che la laicissima giunta sperava potesse venire dalle "lacrime di sangue".
+1	Un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_	_	False
+2	miracolo	miracolo	NOUN	S	Gender=Masc|Number=Sing	7	acl:relcl	7:acl:relcl	_	Definite=Ind|Gender=Masc|Number=Sing	True
+3	che	che	SCONJ	CS	_	7	obj	7:obj	_	_	False
+4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_	_	False
+5	laicissima	laico	ADJ	A	Degree=Abs|Gender=Fem|Number=Sing	6	amod	6:amod	_	Degree=Sup|Gender=Fem|Number=Sing	True
+6	giunta	giunto	NOUN	S	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
+7	sperava	sperare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	0:root	_	Polarity=Pos	True
+8	potesse	potere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	9	aux	9:aux	_	_	False
+9	venire	venire	VERB	V	VerbForm=Inf	7	ccomp	7:ccomp	_	Modality=Pot|Mood=Sub|Polarity=Pos|Tense=Imp	True
+10-11	dalle	_	_	_	_	_	_	_	_	_	False
+10	da	da	ADP	E	_	13	case	13:case	_	_	False
+11	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_	_	False
+12	"	"	PUNCT	FB	_	13	punct	13:punct	SpaceAfter=No	_	False
+13	lacrime	lacrima	NOUN	S	Gender=Fem|Number=Plur	9	obl	9:obl:da	_	Case=TBD-'da'|Definite=Def|Gender=Fem|Number=Plur	True
+14	di	di	ADP	E	_	15	case	15:case	_	_	False
+15	sangue	sangue	NOUN	S	Gender=Masc|Number=Sing	13	nmod	13:nmod:di	SpaceAfter=No	Case=TBD-'di'|Gender=Masc|Number=Sing	True
+16	"	"	PUNCT	FB	_	13	punct	13:punct	SpaceAfter=No	_	False
+17	.	.	PUNCT	FS	_	7	punct	7:punct	_	_	False
+
+

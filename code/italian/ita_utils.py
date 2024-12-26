@@ -9,4 +9,4 @@ def copy_features(node):
 		for feat in node["feats"]:
 			node["ms feats"][feat].add(node["feats"][feat])
 	else:
-		logger.warning("Node %s has no features", node)
+		logger.info("Node %s/%s has no features", node, node["upos"])
