@@ -133,9 +133,10 @@ def process_verb(head_tok, children_toks):
 				# TODO: check what the negation refers to, either modality or polarity
 				# TODO: difference "non possiamo andare" vs. "possiamo non andare"
 
-		elif child_tok["deprel"] in ["case", "mark"]:
+		elif child_tok["deprel"] in ["mark"]:
 			head_tok["ms feats"]["Case"].add(lbd.switch_verbal_case(child_tok))
 			# TODO: handle "Case"
+			# doing!
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
