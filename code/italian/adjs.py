@@ -1,69 +1,119 @@
 import logging
+import conllu.serializer as conllu
 
+import code.italian.lemma_based_decisions as lbd
 import code.italian.ita_utils as ita_utils
 
 logger = logging.getLogger(__name__)
 
 def process_adj(head_tok, children_toks):
 
-	logger.debug("Examining head: %s", head_tok)
+	logging.debug("Setting %s/%s to content and copying its features", head_tok, head_tok["upos"])
 	head_tok["content"] = True
+	ita_utils.copy_features(head_tok)
 
-	# # TODO: handle sentences with copula
-	# if any(tok["deprel"] == "cop" for tok in children_toks):
-	# 	head_tok["ms feats"]["tmp-head"].add("VERBAL-ADJ")
-	# 	for child_tok in children_toks:
-	# 		child_tok["ms feats"]["tmp-child"].add("VERBAL-ADJ")
-
-	# else:
-	# TODO: copy features?
-	# print("HEAD:", head_tok, head_tok["feats"])
+	# if "Degree" in head_tok["ms feats"] and "Abs" in head_tok["ms feats"]["Degree"]:
+	# 	head_tok["ms feats"]["Degree"].remove("Abs")
+	# 	head_tok["ms feats"]["Degree"].add("Sup")
 
 	for child_tok in children_toks:
-		logger.debug("Examining child: %s", child_tok)
+		logger.info("Examining child: %s", child_tok.values())
 
-		if child_tok["deprel"] == "cop":
-			# print(child_tok.items())
-			if "Mood" in child_tok["feats"] and "Tense" in child_tok["feats"]:
-				logger.debug("Adding TAM features with values Mood: %s - Tense: %s",
-							child_tok["feats"]["Mood"], child_tok["feats"]["Tense"])
+		# * evaluate copulas
+		if child_tok["deprel"] in ["aux", "cop"]:
+
+			# TODO: set defaults
+
+			if child_tok.get("feats") and "Person" in child_tok["feats"]:
+				head_tok["ms feats"]["Person"].add(child_tok["feats"]["Person"])
+
+			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+
+			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
+
+			if child_tok.get("feats") and "Mood" in child_tok["feats"]:
+				logging.debug("Adding Mood: %s", child_tok["feats"]["Mood"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+
+			if child_tok.get("feats") and "Tense" in child_tok["feats"]:
+				logging.debug("Adding Tense: %s", child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-			else:
-				logger.warning("Copula %s has no Mood or Tense features", child_tok)
 
-			# TODO: add Person and Number to subject
+			if child_tok.get("feats") and "VerbForm" in child_tok["feats"]:
+				logging.debug("Adding VerbForm feature with value: %s",
+							child_tok["feats"]["VerbForm"])
+				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
 
-		if child_tok["deprel"] == "advmod":
+			# Modality
+			modality = lbd.switch_verb_modality(child_tok)
+			if modality:
+				logger.debug("Adding Modality feature with value %s", modality)
+				head_tok["ms feats"]["Modality"].add(modality)
 
-			# add Degree feature
+		elif child_tok["deprel"] in ["det", "det:predet", "det:poss"]:
+
+
+			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
+				logging.debug("Adding Gender feature with value %s", child_tok["feats"]["Gender"])
+				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+			if child_tok.get("feats") and "Number" in child_tok["feats"]:
+				logging.debug("Adding Number feature with value %s", child_tok["feats"]["Number"])
+				head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
+
+			# * add definiteness
+			if child_tok.get("feats") and "Definite" in child_tok["feats"]:
+				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
+				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
+			elif lbd.switch_det_definitess(child_tok):
+				definitess = lbd.switch_det_definitess(child_tok)
+				logging.debug("Adding Definite feature with value %s", definitess)
+				head_tok["ms feats"]["Definite"].add(definitess)
+
+			# * add polarity
+			# ? should polarity be set to "Pos" by default?
+			polarity = lbd.switch_det_polarity(child_tok)
+			if polarity:
+				logging.debug("Adding Polarity feature with value %s", polarity)
+				head_tok["ms feats"]["Polarity"].add(polarity)
+
+			if child_tok.get("feats") and "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
+				dem = lbd.switch_det_dem(child_tok)
+				if dem:
+					logging.debug("Adding Dem feature with value %s", dem)
+					head_tok["ms feats"]["Dem"].add(dem)
+
+		elif child_tok["deprel"] in ["case", "mark"]:
+			logging.debug("Add Case feature with value %s", lbd.switch_nominal_case(child_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+
+		elif child_tok["deprel"] in ["advmod"]:
+
+			# * add Degree feature
 			if child_tok["lemma"] in ["più", "meno"]:
-				logger.debug("Adding Degree feature with value Cmp")
+				logging.debug("Adding Degree feature with value Cmp")
 				head_tok["ms feats"]["Degree"].add("Cmp")
 
-			elif child_tok["lemma"] in ["molto"]:
-				logger.debug("Adding Degree feature with value Sup")
-				head_tok["ms feats"]["Degree"].add("Sup")
-
-			# TODO: should we use all 7 possible values for degrees?
-
-			# TODO: how to deal with "non più X"?
-			# (see isst_tanl-3074, see isst_tanl-3598
-			# add Negation feature
 			elif child_tok["lemma"] in ["non"]:
-				logger.debug("Adding Polarity feature with value Neg")
-				head_tok["ms feats"]["Polarity"].add("Neg")
+				if "Degree" in head_tok["ms feats"] and head_tok["ms feats"]["Degree"] == "Cmp":
+					logging.error("What should we do here??")
+					# ? what should we do here
+				else:
+					logging.debug("Adding Polarity feature with value Neg")
+					head_tok["ms feats"]["Polarity"].add("Neg")
 
 			else:
-				# TODO: molto, poco?
-				logger.debug("Switching node to content and keeping its features")
-				ita_utils.copy_features(child_tok)
-				child_tok["content"] = True
+				logging.warning("Node %s/%s needs new rule", child_tok, child_tok["upos"])
 
-		elif child_tok["deprel"] == "amod":
-			child_tok["ms feats"]["tmp-child"].add("amod-ADJ")
-			# input()
+		else:
+			logging.warning("Node %s/%s with deprel '%s' needs new rules",
+							child_tok, child_tok["upos"], child_tok["deprel"])
 
-		elif child_tok["deprel"].startswith("obl"):
-			child_tok["ms feats"]["tmp-child"].add("obl-ADJ")
-			# input()
+	if "Definite" in head_tok["ms feats"] and "Degree" in head_tok["ms feats"]:
+		if "Def" in head_tok["ms feats"]["Definite"] and "Cmp" in head_tok["ms feats"]["Degree"]:
+			logging.debug("Changing Cmp to Sup Degree for node %s/%s", head_tok, head_tok["upos"])
+			head_tok["ms feats"]["Degree"].remove("Cmp")
+			head_tok["ms feats"]["Degree"].add("Sup")
+
+	# TODO: Handle aspect
