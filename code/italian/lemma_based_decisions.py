@@ -1,137 +1,211 @@
-def switch_nominal_case(token):
+def switch(token, parent = None):
+	lemma = token["lemma"]
+	deprel = token["deprel"]
 
-	if token["lemma"] in ["entro", "dentro"]:
-		return "Ine" # Inessive
+	#======<Static location>===========================================
+	# Inessive
+	if lemma in ["in", "entro", "dentro"]:
+		return "Ine"
 	
-	# NOTE: 'entro' has also many occurrences in which it is temporal Lim (e.g., 'entro sessanta giorni dalla consegna dalla pubblicazione della legge', ISDT), however, according to the guidelines, we promoted the spatial sense.
+	# NOTE: 'entro' has also many occurrences in which it is temporal Lim (e.g., 'entro sessanta giorni dalla consegna dalla pubblicazione della legge', ISDT), however, promoted spatial sense, according to the guidelines.
+
+	# Interessive
+	# TODO: decide how to treat things that are not 'fixed' e.g., 'in mezzo a', which could be mapped to 'Ces' (Interessive)
 	
-	if token["lemma"] in ["tra", "fra"]:
-		return "Int" # Intrative (between X and Y)
+	# Intrative (between X and Y)
+	if lemma in ["tra", "fra"]:
+		return "Int"
 
-	if token["lemma"] in ["su"]:
-		return "Adt" # Superadessive 
+	# External
+	if lemma in ["fuori", "fuori da"]:
+		return "Ext"
+
+	# Superadessive
+	if lemma in ["su", "su di"]:
+		return "Adt"
 	
-	if token["lemma"] in ["a"]:
-		return "Lat" # Lative 
+	# NOTE: 'su di' can also have a The - Themative meaning: 'i libri che si scriveranno su di lui' 'the books that will be written about him'.
+
+	# Apudessive (next to something)
+	if lemma in ["accanto a"]:
+		return "Apu"
+
+	# Circumessive
+	if lemma in ["attorno a", "intorno a"]:
+		return "Cir"
 	
-	# NOTE: it seems impossible to distinguish when "a" introduces a Dative. It it. treebank when the indirect object is realized as a prepositional phrase, it is labeled as obl (ex. Dare a qualcuno qualcosa, give something to someone).
-
-	if token["lemma"] in ["prima di"]:
-		return "Ant" # Antessive but Temporal antessive much more frequent
-
-	if token["lemma"] in ["dopo"]:
-		return "Pst" # Postessive but Temporal postessive much more frequent
-
-	if token["lemma"] in ["fino a"]:
-		return "Ter" # Terminative but Temporal terminative much more frequent
-
-	# NOTE: it's normal that deprel = mark has only temporal meaning and deprel = case can have both temporal and spatial, because if it is 'mark' then it's anchored to an 'event' and an 'event' cannot be before, after or until in a spatial sense, but only in a temporal sense. 
-
-	if token["lemma"] in ["oltre", "oltre che"]:
-		return "Add" # Additive (besides, in addition to something 
+	# Proximative
+	if lemma in ["vicino", "vicino a"]:
+		return "Prx"
 	
-	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori". 
-
-	if token["lemma"] in ["con"]:
-		return "Com" # Comitative
-
-	if token["lemma"] in ["di"]:
-		return "Gen" # Genitive
-
-	if token["lemma"] in ["senza"]:
-		return "Abe" # Abessive (without something)
+	# Distantive
+	if lemma in ["lontano da"]:
+		return "distantive"
 	
-	# NOTE: in 'inventory.md' also 'salvo' is under Absessive (which is correct), but in the treebank 'salvo' has deprel = amod and is considered 'ADJ'.
-
-	if token["lemma"] in ["tranne", "tranne che", "tranne in", "eccetto", "eccetto che"]:
-		return "Exc" # Exclusive
-
-	if token["lemma"] in ["piuttosto che"]:
-		return "Sbs" # Substitutive
-
-	if token["lemma"] in ["rispetto a", "riguardo a"]:
-		return "Cns" # Considerative
+	# Superessive
+	if lemma in ["sopra"]:
+		return "Sup"
 	
-	if token["lemma"] in ["nonostante", "malgrado"]:
-		return "Ccs" # Concessive
+	# Subessive
+	if lemma in ["sotto"]:
+		return "Sub"
 	
-	if token["lemma"] in ["contro"]:
-		return "Adv" # Adversative
+	# TODO: handle 'sopra o sotto'
 	
-	# 'anti', suggested in 'inventory.md' is usually a prefix 'anti-'. When written with a whitespace in between is marked with deprel = amod and considered an ADJ.
+	# Antessive
+	if lemma in ["davanti", "davanti a"]:
+		return "Ant"
 
-	return f"TBD-'{token['lemma']}'"
+	# Postessive
+	if lemma in ["dietro", "dietro a", "dietro di"]:
+		return "Pst"
 
-def switch_verbal_case(token):
-	# NOTE: modus operandi. In a totally exploratory fashion I am 
-	# 1) Retrieving lemmas
-	# 1.1) having a look at the lemmas proposed by Omer and Leonie in 'inventory.md' for each 'Case'
-	# 1.2) having a look at LICO (http://connective-lex.info/#{%22s%22:[%22lico_d%22]}) to see if other lemmas can be added to the 'inventory.md'
-	# 2) then I am looking for examples in ISDT of that lemma in context.  
+	# Oppositive
+	# TODO: decide how to treat things that are not 'fixed' e.g., 'di fronte a', which could be mapped to 'Opp' (Oppositive)
+	#======<\Static location>============================================
 
-	# For now I am working on 'mark' and 'case' separately, however it can have little sense.
-
-	if token["lemma"] in ["prima di", "prima che"]:
-		return "Tan" # Temporal antessive (before a point in time)
+	#======<Direction focused on origin>=================================
 	
-	if token["lemma"] in ["finché", "fino a che"]:
-		return "Ttr" # Temporal terminative
+	# Ablative
+	if lemma in ["da"]:
+		if parent["deprel"] != "obl:agent":
+			return "Abl"
+
+	#======<\Direction focused on origin>==================================
 	
+	#======<Direction focused on path>=====================================
+
+	# TODO: direction focused on path
+
+	#======<\Direction focused on path>====================================
+	
+	#======<Direction focused on destination>==============================
+	
+	# Lative
+	if lemma in ["a", "verso"]:
+		return "Lat" 
+	
+	# NOTE: it seems impossible to distinguish when "a" introduces a Dative. It it. treebanks when the indirect object is realized as a prepositional phrase, it is labeled as obl (ex. Dare a qualcuno qualcosa, give something to someone).
+
+	# NOTE: 'verso' can be also temporal approximative
+	
+	#======<\Direction focused on destination>==============================
+
+	#======<Temporal>=======================================================
+	
+	# Temporal antessive
+	if lemma in ["prima di", "prima che"]:
+			return "Tan"
+	
+	# Temporal postessive (after a point or period)
 	if token["lemma"] in ["dopo", "dopodiché", "dopo di che"]:
-		return "Tps" # Temporal postessive (after a point or period)
+			return "Tps"
+
+	# Temporal terminative
+	if token["lemma"] in ["fino a", "finché", "fino a che"]:
+			return "Ttr"
 	
-	# deprel = advmod; poi (Temporal postessive)
-	
+	# NOTE: it's normal that when deprel = mark the lemma has only temporal meaning and when deprel = case it can have both temporal and spatial, because if it is 'mark' then it's anchored to an 'event' and an 'event' cannot be before, after or until in a spatial sense, but only in a temporal sense. 
+
+	# Temporal (at, on, in, upon a point in time)
 	if token["lemma"] in ["appena", "quando"]:
-		return "Tem" # Temporal (at, on, in, upon a point in time)
-					 # 'Quando' (when) is also very often conditional, but we treat the conditional meaning as an extension of the temporal. 
+		return "Tem"
 	
+	# NOTE: 'Quando' (when) is also very often conditional, but we treat the conditional meaning as an extension of the temporal. 
+	
+	# Durative (during a period)
 	if token["lemma"] in ["mentre"]:
-		return "Dur" # Durative (during a period)
+		return "Dur"
 	
 	# deprel = advmod; frattanto, intanto (Durative - Dur).
 	# deprel = advmod; circa (Temporal approximative - Tpx). But also not temporal (is approximative in general: circa il 12% della popolazione; no case of approximation beside temporal approximation).
 
+	#======<\Temporal>======================================================
+
+	#======<Relation>=======================================================
+	
+	# Genitive
+	if token["lemma"] in ["di"]: # be aware of polysemy
+		return "Gen"
+	
+	# Comitative
+	if token["lemma"] in ["con"]: # be aware of polisemy
+		return "Com"
+
+	# Abessive (without something)
 	if token["lemma"] in ["salvo che", "senza", "senza che"]:
-		return "Abe" # Abessive (without something)
+		return "Abe"
 	
 	# TODO: decide how to treat things that are not 'fixed': e.g., 'a meno che'.
-
-	if token["lemma"] in ["tranne quando", "fuorché"]:
-		return "Exc" # Exclusive
 	
-	# TODO: deepen the understanding of the differences between Abessive and Exclusive.
+	# NOTE: in 'inventory.md' also 'salvo' is under Absessive, but in the treebank 'salvo' has deprel = amod and is considered 'ADJ'.
+
+	# Inclusive
+	# TODO: decide what to do with form = 'compreso', 'incluso'.
+
+	# Additive (besides, in addition to something)
+	if token["lemma"] in ["oltre", "oltre a", "oltre che"]:
+		return "Add"
+	
+	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori". 
+
+	# Exclusive
+	if token["lemma"] in ["tranne", "tranne che", "tranne in", "eccetto", "eccetto che", "tranne quando", "fuorché"]:
+		return "Exc"
 	
 	# NOTE: Exclusive - lemmas from LICO "Negative condition:Arg2" + "Exception:Arg2"
 
-	if token["lemma"] in ["oltre a"]:
-		return "Add" # Additive
-	
-	# deprel = advmod; inoltre (Add - Additive)
-	
-	if token["lemma"] in ["anziché", "piuttosto che", "invece di"]:
-		return "Sbs" # Substitutive
+	# TODO: precise difference between Abessive and Exclusive?
 
+	# Substitutive
+	if token["lemma"] in ["anziché", "piuttosto che", "invece di"]:
+		return "Sbs"
+
+	# NOTE: Substitutive - lemmas from LICO Substitution:Arg1
 	# deprel = advmod; 'piuttosto che' (Sbs - Substitutive)
 	# TODO: decide what to do with 'al posto di' [lemma = 'posto', child lemma = 'a', 'il'], 'in luogo di'.
 
-	# NOTE: Substitutive - lemmas from LICO Substitution:Arg1
+	#======<\Relation>======================================================
 
+	#======<Similarity>=====================================================
+
+	# TODO: Similarity
+
+	#======<\Similarity>====================================================
+	
+	#======<Cause, consequence, circumstance, other>========================
+	
+	# Causative
 	if token["lemma"] in ["giacché", "perché", "poiché", "siccome"]:
-		return "Caus"  # Causative
+		return "Caus"
 	
+	# Purposive
 	if token["lemma"] in ["affinché"]:
-		return "Pur"  # Purposive
+		return "Pur"
+
+	# Themative
+	if token["lemma"] in ["riguardo a", "circa"]:
+		return "The"
 	
+	# Concessive
 	if token["lemma"] in ["anche se", "benché", "malgrado", "nonostante", "quantunque", "sebbene", "seppure"]:
-		return "Ccs"  # Concessive 
+		return "Ccs"  
 	
 	# lemma = seppur(e) in ISDT has only 2 occurrences and one time is deprel = mark and the other is deprel = advmod
+	
+	# Adversative
+	if token["lemma"] in ["contro"]:
+		return "Adv"
+	
+	# 'anti', suggested in 'inventory.md' is usually a prefix 'anti-'. When written with a whitespace in between is marked with deprel = amod and considered an ADJ.
 
-    # Default mapping for unlisted lemmas
-	return f"TBD-{token['lemma']}"
+	#======<\Cause, consequence, circumstance, other>=====================================================
+
+	return f"TBD-'{token['lemma']}'"
 
 def switch_conj_case(token):
+
+	#======<\Coordination>=====================================================
 
 	if token["lemma"] in ["e", "ed"]:
 		return "Conj"
@@ -151,6 +225,8 @@ def switch_conj_case(token):
 	if token["lemma"] in ["anziché", "piuttosto che"]:
 		return "Sbs"
 	# Here because in ISDT many 'anziché' and 'piuttosto che' have deprel = cc
+
+	#======<\Coordination>=====================================================
 
 	return f"TBD-CONJ-{token['lemma']}"
 
