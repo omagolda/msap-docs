@@ -1,4 +1,4 @@
-def switch(token, parent = None):
+def switch_case(token, parent = None):
 	lemma = token["lemma"]
 	deprel = token["deprel"]
 
@@ -111,7 +111,7 @@ def switch(token, parent = None):
 	if token["lemma"] in ["appena", "quando"]:
 		return "Tem"
 	
-	# NOTE: 'Quando' (when) is also very often conditional, but we treat the conditional meaning as an extension of the temporal. 
+	# NOTE: 'Quando' (when) is also conditional, but we treat the conditional meaning as an extension of the temporal. 
 	
 	# Durative (during a period)
 	if token["lemma"] in ["mentre"]:
@@ -147,7 +147,7 @@ def switch(token, parent = None):
 	if token["lemma"] in ["oltre", "oltre a", "oltre che"]:
 		return "Add"
 	
-	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori". 
+	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) (?) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori". 
 
 	# Exclusive
 	if token["lemma"] in ["tranne", "tranne che", "tranne in", "eccetto", "eccetto che", "tranne quando", "fuorché"]:
@@ -174,6 +174,8 @@ def switch(token, parent = None):
 	#======<\Similarity>====================================================
 	
 	#======<Cause, consequence, circumstance, other>========================
+	
+	# TODO: work in progress
 	
 	# Causative
 	if token["lemma"] in ["giacché", "perché", "poiché", "siccome"]:
