@@ -71,6 +71,8 @@ def switch_case(token, parent = None):
 		if parent["deprel"] != "obl:agent":
 			return "Abl"
 
+	# TODO: avoid falling back to default when deprel == obl:agent
+
 	#======<\Direction focused on origin>==================================
 	
 	#======<Direction focused on path>=====================================
