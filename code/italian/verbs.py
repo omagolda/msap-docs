@@ -85,8 +85,8 @@ def process_verb(head_tok, children_toks):
 
 		elif child_tok["deprel"] == "mark":
 			# TODO: handle "Case"
-			logger.debug("Adding Case feature with value %s", lbd.switch_verbal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_verbal_case(child_tok))
+			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 			
 
 		# TODO: Indexing (person, number)
