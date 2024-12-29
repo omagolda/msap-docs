@@ -71,8 +71,8 @@ def process_adv(head_tok, children_toks):
 				head_tok["ms feats"]["Degree"].add("Cmp")
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			logging.debug("Add Case feature with value %s", lbd.switch_nominal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+			logging.debug("Add Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",

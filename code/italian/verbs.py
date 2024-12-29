@@ -83,7 +83,7 @@ def process_verb(head_tok, children_toks):
 			logger.debug("Adding Voice feature with value 'Pass'")
 			head_tok["ms feats"]["Voice"].add("Pass")
 
-		elif child_tok["deprel"] == "mark":
+		elif child_tok["deprel"] in ["case", "mark"]:
 			# TODO: handle "Case"
 			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
 			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
