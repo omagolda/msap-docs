@@ -44,9 +44,9 @@ def process_noun(head_tok, children_toks):
 
 
 		# case relations
-		elif child_tok["deprel"] == "case":
-			logger.debug("Adding Case feature with value %s", lbd.switch_nominal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+		elif child_tok["deprel"] in ["case", "mark"]:
+			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		elif child_tok["upos"] in ["NOUN", "PROPN"]:
 			logger.debug("Switching node to content and keeping its features")

@@ -83,6 +83,13 @@ def process_verb(head_tok, children_toks):
 			logger.debug("Adding Voice feature with value 'Pass'")
 			head_tok["ms feats"]["Voice"].add("Pass")
 
+		elif child_tok["deprel"] in ["case", "mark"]:
+			# TODO: handle "Case"
+			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
+			
+
+		# TODO: Indexing (person, number)
 		# * evaluate determiners (cases like "Il perdurare...")
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
 			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
@@ -124,10 +131,6 @@ def process_verb(head_tok, children_toks):
 				head_tok["ms feats"]["Polarity"].add("Neg")
 				# TODO: check what the negation refers to, either modality or polarity
 				# TODO: difference "non possiamo andare" vs. "possiamo non andare"
-
-		elif child_tok["deprel"] in ["case", "mark"]:
-			head_tok["ms feats"]["Case"].add(lbd.switch_verbal_case(child_tok))
-			# TODO: handle "Case"
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",

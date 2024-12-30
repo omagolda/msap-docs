@@ -85,8 +85,8 @@ def process_adj(head_tok, children_toks):
 					head_tok["ms feats"]["Dem"].add(dem)
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			logging.debug("Add Case feature with value %s", lbd.switch_nominal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+			logging.debug("Add Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		elif child_tok["deprel"] in ["advmod"]:
 

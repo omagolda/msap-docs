@@ -86,9 +86,9 @@ def process_noun(head_tok, children_toks):
 			# 	head_tok["ms feats"]["Degree"].add("Sup")
 
 		# * evaluate case relations
-		elif child_tok["deprel"] in ["mark", "case"]:
-			logging.debug("Adding Case feature with value %s", lbd.switch_nominal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+		elif child_tok["deprel"] in ["case", "mark"]:
+			logging.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		elif child_tok["deprel"] in ["advmod"]:
 			if child_tok["lemma"] in ["non"]:
