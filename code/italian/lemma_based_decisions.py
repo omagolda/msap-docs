@@ -82,6 +82,7 @@ def switch_case(token, parent = None):
 		return "Per"
 	
 	# TODO: decide on 'per mezzo di'
+	# TODO: decide between Perlative and Instrumental
 	
 	# Perlative across
 	if lemma in ["attraverso"]:
@@ -105,7 +106,10 @@ def switch_case(token, parent = None):
 	
 	# Lative
 	if lemma in ["a", "verso"]:
-		return "Lat" 
+		if deprel == "case":
+			return "Lat"
+		elif deprel == "mark":
+			return "Pur"
 	
 	# NOTE: it seems impossible to distinguish when "a" introduces a Dative. It it. treebanks when the indirect object is realized as a prepositional phrase, it is labeled as obl (ex. Dare a qualcuno qualcosa, give something to someone).
 
@@ -227,11 +231,11 @@ def switch_case(token, parent = None):
 	
 	# NOTE: source: LICO Contingency:Cause:Reason (they're all hypotactic)
 
-	if lemma in ["giacché", "perché", "perciò", "poiché", "siccome", "per", "grazie a"]:
+	if lemma in ["giacché", "perché", "perciò", "poiché", "siccome", "per", "grazie a", "in quanto"]:
 		return "Caus"
 	
-	# TODO: 'in quanto' & 'a causa di' 
-	# TODO: 'dato che' (fixed) (weired tree)
+	# TODO: 'a causa di' 
+	# TODO: 'dato che' (fixed) (tree strano)
 	# NOTE: 'per' is highly polisemic.
 	# NOTE: perciò deprel = 'mark' (9 occ) vs. 'perciò' deprel = advmod (30 occ) - don't understand why different deprels. 
 
