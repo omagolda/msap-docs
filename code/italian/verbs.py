@@ -34,11 +34,11 @@ def process_verb(head_tok, children_toks):
 				logger.debug("No Mood: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 			# # Tense
-			# if "Tense" in child_tok["feats"]:
-			# 	logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
-			# 	head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-			# else:
-			# 	logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
+			if "Tense" in child_tok["feats"]:
+			 	logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
+			 	head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+			else:
+			 	logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 
 			# Aspect
@@ -50,6 +50,7 @@ def process_verb(head_tok, children_toks):
 				else:
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
+			# Aspect and Tense with participles = Perfective aspect
 			elif head_tok["feats"]["VerbForm"] == "Part":
 				logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
@@ -57,7 +58,7 @@ def process_verb(head_tok, children_toks):
 					logger.debug("Adding Aspect feature with value Perf")
 					head_tok["ms feats"]["Aspect"].add("Perf")
 
-			# TODO: handle Prosp
+			# TODO: handle Prosp: Like inchoative/cessative aspect, these are lexically marked in Italian like comincio/finisco
 
 			# Modality
 			modality = lbd.switch_verb_modality(child_tok)
@@ -141,6 +142,7 @@ def process_verb(head_tok, children_toks):
 			if not feat in head_tok["ms feats"]:
 				head_tok["ms feats"][feat].add(head_tok["feats"][feat])
 
+	#Default features: indicative mood, finite verb forms and active voice
 	if "Mood" not in head_tok["ms feats"]:
 		head_tok["ms feats"]["Mood"].add("Ind")
 	if "VerbForm" not in head_tok["ms feats"]:
