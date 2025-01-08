@@ -240,19 +240,19 @@ def switch_case(token, parent = None):
 	# NOTE: in some cases it's ok to attribute 'quale' & 'come' deprel = case to essive. However, there are also cases in which they have an 'instantiation' (for-example) meaning: "Troppe persone lavorano in l'industria di i servizi tradizionali a bassa produttività, come il commercio a l'ingrosso e a il dettaglio e la ristorazione, lasciando in uno stato di arretratezza servizi moderni e ad alta produttività quali le comunicazioni, la salute, l'intermediazione finanziaria e i servizi aziendali."
 
 	# Equative
-	if lemma ["quanto"]:
+	if lemma in ["quanto"]:
 		return "Equ"
 	
 	# Example: si tratta di una spirale di metallo, alta quanto la facciata.
 
 	# Semblative (?)
-	if lemma ["quasi", "tipo"]:
+	if lemma in ["quasi", "tipo"]:
 		return "Sem" 
 	
 	# Example: Era il quarto d'ora di il secondo tempo iniziato in anticipo, quasi ci fosse la fretta di chiudere la pratica e che non ci si pensasse più.
 
 	# Replicative
-	if lemma ["così come"]:
+	if lemma in ["così come"]:
 		return "Rpl"
 	
 	# NOTE: in ISDT sometimes 'così come' is fixed, sometimes not.
@@ -261,7 +261,7 @@ def switch_case(token, parent = None):
 	# TODO: decide on 'a differenza di'
 
 	# Comparative
-	if lemma ["che"]:
+	if lemma in ["che"]:
 		if deprel == "case":
 			return "Cmp"
 		elif deprel == "mark":
@@ -270,7 +270,7 @@ def switch_case(token, parent = None):
 	# Example: In effetti siamo più vicini ai funghi che ad ogni altro regno della natura.
 
 	# Differential
-	if lemma ["meno di"]:
+	if lemma in ["meno di"]:
 		return "Dif"
 
 	# Comment ??? 
