@@ -1,6 +1,7 @@
 import logging
 
 import code.italian.lemma_based_decisions as lbd
+# ? do we use utils somewhere?
 import code.italian.ita_utils as ita_utils
 
 logger = logging.getLogger(__name__)
@@ -18,9 +19,12 @@ def process_verb(head_tok, children_toks):
 		logger.info("Examining child: %s", child_tok.values())
 
 		# TODO: agreement on pronouns
+		# ? is it still a todo? From the guidelines: "Features should be applied only to their relevant node. In other words, no agreement features are needed, and in a phrase like he goes only he should bear Number=Sing|Person=3, and goes should have only Tense=Pres (and other features if relevant)."
 
 		# * Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
+			
+			# ? Not clear why we add features and then in italian.py we remove those features. We add Person from aux/cop to the head and then in italian.py (line 164) we remove Person.
 
 			if "Person" in child_tok["feats"]:
 				head_tok["ms feats"]["Person"].add(child_tok["feats"]["Person"])
@@ -50,6 +54,7 @@ def process_verb(head_tok, children_toks):
 				else:
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
+			
 			# Aspect and Tense with participles = Perfective aspect
 			elif head_tok["feats"]["VerbForm"] == "Part":
 				logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
@@ -85,13 +90,13 @@ def process_verb(head_tok, children_toks):
 			head_tok["ms feats"]["Voice"].add("Pass")
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			# TODO: handle "Case"
 			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
 			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 			
 
 		# TODO: Indexing (person, number)
 		# * evaluate determiners (cases like "Il perdurare...")
+		# ? From the 'det' we get Gender and Number, but then we remove it in italian.py
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
 			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
 				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
