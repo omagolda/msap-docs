@@ -174,7 +174,7 @@ def switch_case(token, parent = None):
 	# deprel = advmod; circa (Temporal approximative - Tpx). But also not temporal (is approximative in general: circa il 12% della popolazione; no case of approximation beside temporal approximation).
 
 	# Temporal egressive
-	if lemma ["sino da", "fin da", "da quando"]:
+	if lemma in ["sino da", "fin da", "da quando"]:
 		return "Teg"
 	# TODO: decide on 'da allora' = temporal egressive
 	#======<\Temporal>======================================================
