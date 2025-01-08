@@ -35,10 +35,10 @@ def process_verb(head_tok, children_toks):
 
 			# # Tense
 			if "Tense" in child_tok["feats"]:
-			 	logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
-			 	head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
+				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 			else:
-			 	logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
+				logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 
 			# Aspect
