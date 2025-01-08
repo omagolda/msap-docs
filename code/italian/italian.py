@@ -236,8 +236,9 @@ if __name__ == '__main__':
 						# 		assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
 						# 	else:
 						# 		node["ms feats"][feat].add(node["feats"][feat])
-
-					sorted_msfeats = sorted(node["ms feats"].items())
+					
+					filtered_msfeats = {k: {v for v in values if v is not None} for k, values in node["ms feats"].items() if values is not None}
+					sorted_msfeats = sorted(filtered_msfeats.items())
 					if len(sorted_msfeats) == 0:
 						sorted_msfeats = ["|"]
 					else:
