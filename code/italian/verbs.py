@@ -132,11 +132,13 @@ def process_verb(head_tok, children_toks):
 		elif child_tok["deprel"] in ["advmod"]:
 
 			if child_tok["lemma"] in ["non"]:
-
-				head_tok["ms feats"]["Polarity"].remove("Pos")
-				head_tok["ms feats"]["Polarity"].add("Neg")
-				# TODO: check what the negation refers to, either modality or polarity
-				# TODO: difference "non possiamo andare" vs. "possiamo non andare"
+				if "Pos" in head_tok["ms feats"]["Polarity"]:
+					head_tok["ms feats"]["Polarity"].remove("Pos")
+					head_tok["ms feats"]["Polarity"].add("Neg")
+					# TODO: check what the negation refers to, either modality or polarity
+					# TODO: difference "non possiamo andare" vs. "possiamo non andare"
+				else:
+					logging.warning("'Pos' not found in Polarity for token: %s", head_tok)
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
