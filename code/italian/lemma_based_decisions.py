@@ -135,7 +135,7 @@ def switch_case(token, parent = None):
 
 	# NOTE: 'verso' can be also temporal approximative
 
-	if lemma ["incontro a"]:
+	if lemma in ["incontro a"]:
 		return "Anl"
 	
 	# NOTE: from De Mauro "per indicare un movimento frontale in direzione di qcn. o di qcs."
