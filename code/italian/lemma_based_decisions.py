@@ -233,7 +233,7 @@ def switch_case(token, parent = None):
 
 	# Essive
 	# TODO: decide on 'in qualità di'
-	if lemma ["quale", "come"]:
+	if lemma in ["quale", "come"]:
 		if deprel == "case":
 			return "Ess"
 
