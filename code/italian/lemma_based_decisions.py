@@ -240,7 +240,7 @@ def switch_case(token, parent = None):
 	# NOTE: in some cases it's ok to attribute 'quale' & 'come' deprel = case to essive. However, there are also cases in which they have an 'instantiation' (for-example) meaning: "Troppe persone lavorano in l'industria di i servizi tradizionali a bassa produttività, come il commercio a l'ingrosso e a il dettaglio e la ristorazione, lasciando in uno stato di arretratezza servizi moderni e ad alta produttività quali le comunicazioni, la salute, l'intermediazione finanziaria e i servizi aziendali."
 
 	# Equative
-	if lemma in ["quanto"]:
+	if lemma ["quanto"]:
 		return "Equ"
 	
 	# Example: si tratta di una spirale di metallo, alta quanto la facciata.
