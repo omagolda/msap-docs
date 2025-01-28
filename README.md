@@ -131,7 +131,7 @@ stands for "after some time" hence contentful).
 
 #### Feature Inventory
 
-quick link: [inventory of relation features](inventory.md)
+quick link: [inventory of relation features](https://docs.google.com/spreadsheets/d/16d0B7yYwyjS-o6T15JElt37Zy6DvngjY/edit?usp=sharing&ouid=117571112446302948501&rtpof=true&sd=true)
 
 Since the MS features are a generalization of UD's morphological features, their types
 and possible values are also highly similar with that of [UD's features](https://universaldependencies.org/u/feat/index.html).
@@ -160,7 +160,7 @@ In general, the same function word/morpheme combination should be mapped to the 
 _na_ should be mapped only to `Case=Conj` even when it serves a function of introducing
 the agent of a passive verb.
 
-"[inventory.md](inventory.md)"
+"[inventory.md](https://docs.google.com/spreadsheets/d/16d0B7yYwyjS-o6T15JElt37Zy6DvngjY/edit?usp=sharing&ouid=117571112446302948501&rtpof=true&sd=true)"
 details a set of universal values for the `Case` feature. These feature does not cover
 all possible relations, and in some cases when there are adpositions or conjunctions that
 do not correspond to any of the features, the value of the respective feature should be
