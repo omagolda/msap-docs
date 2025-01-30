@@ -1,0 +1,11 @@
+working_status	test_case	sentence
+_	nominative/accusative	Il gatto insegue il cane
+_	nominal sentence	Il gatto è il Presidente della Repubblica
+_	adjectival agreement	Il gatto grigio è bello
+_	superlative	Il gatto grigio è bellissimo
+_	comparative	Il gatto grigio è più bello del gatto nero
+_	passive	Il cane è inseguito dal gatto
+_	passive#2	Il cane viene inseguito dal gatto
+_	simple negation	Il gatto non insegue il gatto
+_	prodrop	Insegue il cane
+_	pronoun features	Lui insegue il cane
