@@ -1,11 +1,14 @@
-working_status	test_case	sentence
-_	nominative/accusative	Il gatto insegue il cane
-_	nominal sentence	Il gatto è il Presidente della Repubblica
-_	adjectival agreement	Il gatto grigio è bello
-_	superlative	Il gatto grigio è bellissimo
-_	comparative	Il gatto grigio è più bello del gatto nero
-_	passive	Il cane è inseguito dal gatto
-_	passive#2	Il cane viene inseguito dal gatto
-_	simple negation	Il gatto non insegue il gatto
-_	prodrop	Insegue il cane
-_	pronoun features	Lui insegue il cane
+id	working_status	test_case	sentence	issues
+1	OK	nominative/accusative	Il gatto insegue il cane.
+2	OK	nominal sentence	Il gatto è il Presidente della Repubblica.
+3	_	adjectival agreement	Il gatto grigio è bello.	gender and number are both on "gatto" and "grigio", is it ok?
+4	OK	superlative	Il gatto grigio è bellissimo.
+5	OK	comparative	Il gatto grigio è più bello del gatto nero.
+6	_	passive	Il cane è inseguito dal gatto.	"gatto" needs to have Case=Agt + verbform on main verb should be "Fin" - inherited from aux
+7	_	passive#2	Il cane viene inseguito dal gatto.	same issues as #6
+8	OK	simple negation	Il gatto non insegue il gatto.
+9	_	prodrop	Insegue il cane.	does the empty node need Case=Nom?
+10	OK	pronoun features	Lui insegue il cane.
+11	OK	superlative#2	Il gatto grigio è il più bello.
+12	_	dative pronoun	Il gatto gli passa la pallina.	Clitic and PronType need to remain on "gli"?
+13	_	accusative pronoun	Il gatto lo insegue.	Clitic and PronType need to remain on "gli"?

@@ -1,0 +1,147 @@
+# sent_id = 1
+# text = Il gatto insegue il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+6	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 2
+# text = Il gatto è il Presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	_	False
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
+5	Presidente	Presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+6-7	della	_	_	_	_	_	_	_	_	_	False
+6	di	di	ADP	E	_	8	case	_	_	_	False
+7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_	_	False
+8	Repubblica	repubblica	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	True
+9	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 3
+# text = Il gatto grigio è bello.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_	Gender=Masc|Number=Sing	True
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	_	False
+5	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 4
+# text = Il gatto grigio è bellissimo.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_	Gender=Masc|Number=Sing	True
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_	_	False
+5	bellissimo	bello	ADJ	A	Degree=Abs|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	Degree=Abs|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 5
+# text = Il gatto grigio è più bello del gatto nero.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_	Gender=Masc|Number=Sing	True
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_	_	False
+5	più	più	ADV	B	_	6	advmod	_	_	_	False
+6	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	_	Degree=Cmp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+7-8	del	_	_	_	_	_	_	_	_	_	False
+7	di	di	ADP	E	_	9	case	_	_	_	False
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	_	False
+9	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	obl	_	_	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	True
+10	nero	nero	ADJ	A	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No	Gender=Masc|Number=Sing	True
+11	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 6
+# text = Il cane è inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	_	False
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	True
+5-6	dal	_	_	_	_	_	_	_	_	_	False
+5	da	da	ADP	E	_	7	case	_	_	_	False
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	_	False
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No	Definite=Def|Gender=Masc|Number=Sing	True
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 7
+# text = Il cane viene inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+3	viene	venire	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_	_	False
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Pass	True
+5-6	dal	_	_	_	_	_	_	_	_	_	False
+5	da	da	ADP	E	_	7	case	_	_	_	False
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	_	False
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No	Definite=Def|Gender=Masc|Number=Sing	True
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 8
+# text = Il gatto non insegue il gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	non	non	ADV	BN	PronType=Neg	4	advmod	_	_	_	False
+4	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	True
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	_	False
+6	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 9
+# text = Insegue il cane.
+1	Insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+1.1	-	-	-	-	-	-	1	nsubj	Number=Sing|Person=3	True	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_	_	False
+3	cane	cane	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+4	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 10
+# text = Lui insegue il cane.
+1	Lui	lui	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	True
+2	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_	_	False
+4	cane	cane	NOUN	S	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+5	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No	_	False
+
+
+# sent_id = 11
+# text = Il gatto grigio è il più bello.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_	Gender=Masc|Number=Sing	True
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_	_	False
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_	_	False
+6	più	più	ADV	B	_	7	advmod	_	_	_	False
+7	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No	Definite=Def|Degree=Sup|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+8	.	.	PUNCT	FS	_	7	punct	_	SpaceAfter=No	_	False
+
+
+# sent_id = 12
+# text = Il gatto gli passa la pallina.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	gli	lo	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_	Case=Dat|Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	True
+4	passa	passare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_	_	False
+6	pallina	pallina	NOUN	S	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n	_	False
+
+
+# sent_id = 13
+# text = Il gatto lo insegue.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	lo	lo	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_	Case=Acc|Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	True
+4	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+5	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No	_	False
+
+
