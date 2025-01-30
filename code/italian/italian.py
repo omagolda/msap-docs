@@ -225,19 +225,19 @@ if __name__ == '__main__':
 				node['form'] = node['form'].split(" ")[0]
 
 				if node["content"]:
-					# !! defaults should be already there at this point
-					# if node.get("feats"):
-					# 	node_feats = node['feats']
-					# 	node_msfeats = node["ms feats"]
-						# for feat, value in node["feats"].items():
-						# 	if feat in node["ms feats"]:
-						# 		print(node.items())
-						# 		input()
-						# 		assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
-						# 	else:
-						# 		node["ms feats"][feat].add(node["feats"][feat])
+
+					to_delete = []
+					for feat in node["ms feats"]:
+						node["ms feats"][feat] = set(x for x in node["ms feats"][feat] if not x is None)
+						if len(node["ms feats"][feat]) == 0:
+						# if None in node["ms feats"][feat]:
+							to_delete.append(feat)
+
+					for feat in to_delete:
+						del node["ms feats"][feat]
 
 					sorted_msfeats = sorted(node["ms feats"].items())
+
 					if len(sorted_msfeats) == 0:
 						sorted_msfeats = ["|"]
 					else:
@@ -251,7 +251,12 @@ if __name__ == '__main__':
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
-					logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
+					remove_feats = False
+					if all(len(y)==0 for x, y in node["ms feats"].items()):
+						remove_feats = True
+
+					if not remove_feats:
+						logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
 
 			to_write = tokenlist.serialize()

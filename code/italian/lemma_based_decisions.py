@@ -9,12 +9,12 @@ def switch_case(token, parent = None):
 	# Inessive
 	if lemma in ["in", "entro", "dentro"]:
 		return "Ine"
-	
+
 	# NOTE: 'entro' has also many occurrences in which it is temporal Lim (e.g., 'entro sessanta giorni dalla consegna dalla pubblicazione della legge', ISDT), however, promoted spatial sense, according to the guidelines.
 
 	# Interessive
 	# TODO: decide how to treat things that are not 'fixed' e.g., 'in mezzo a', which could be mapped to 'Ces' (Interessive)
-	
+
 	# Intrative (between X and Y)
 	if lemma in ["tra", "fra"]:
 		return "Int"
@@ -29,7 +29,7 @@ def switch_case(token, parent = None):
 			return "Adt"
 		elif deprel == "mark":
 			return "The"
-	
+
 	# NOTE: 'su di' can also have a The - Themative meaning: 'i libri che si scriveranno su di lui' 'the books that will be written about him'.
 
 	# Apudessive (next to something)
@@ -39,25 +39,25 @@ def switch_case(token, parent = None):
 	# Circumessive
 	if lemma in ["attorno a", "intorno a"]:
 		return "Cir"
-	
+
 	# Proximative
 	if lemma in ["vicino", "vicino a"]:
 		return "Prx"
-	
+
 	# Distantive
 	if lemma in ["lontano da"]:
 		return "Dst"
-	
+
 	# Superessive
 	if lemma in ["sopra"]:
 		return "Sup"
-	
+
 	# Subessive
 	if lemma in ["sotto"]:
 		return "Sub"
-	
+
 	# TODO: handle 'sopra o sotto'
-	
+
 	# Antessive
 	if lemma in ["davanti", "davanti a", "innanzi", "dinanzi a", "dinnanzi a"]:
 		return "Ant"
@@ -78,7 +78,7 @@ def switch_case(token, parent = None):
 	#======<\Static location>============================================
 
 	#======<Direction focused on origin>=================================
-	
+
 	# Ablative
 	if lemma in ["da"]:
 		if parent["deprel"] != "obl:agent":
@@ -91,24 +91,24 @@ def switch_case(token, parent = None):
 	# TODO: avoid falling back to default when deprel == obl:agent
 
 	#======<\Direction focused on origin>==================================
-	
+
 	#======<Direction focused on path>=====================================
 
 	# Perlative
 	if lemma in ["tramite"]:
 		return "Per"
-	
+
 	# TODO: decide on 'per mezzo di'
 	# TODO: decide between Perlative and Instrumental
-	
+
 	# Perlative across
 	if lemma in ["attraverso"]:
 		return "Crs"
-	
+
 	# Perlative along
 	if lemma in ["lungo"]:
 		return "Lng"
-	
+
 	# Prolative
 	if lemma in ["via"]:
 		return "Pro"
@@ -118,16 +118,16 @@ def switch_case(token, parent = None):
 	# Descentive: deprel = advmod 'giù' ?
 
 	#======<\Direction focused on path>====================================
-	
+
 	#======<Direction focused on destination>==============================
-	
+
 	# Lative
 	if lemma in ["a"]:
 		if deprel == "case":
 			return "Lat"
 		elif deprel == "mark":
 			return "Pur"
-	
+
 	# NOTE: it seems impossible to distinguish when "a" introduces a Dative. It it. treebanks when the indirect object is realized as a prepositional phrase, it is labeled as obl (ex. Dare a qualcuno qualcosa, give something to someone).
 
 	if lemma in ["verso"]:
@@ -135,19 +135,19 @@ def switch_case(token, parent = None):
 
 	# NOTE: 'verso' can be also temporal approximative
 
-	if lemma ["incontro a"]:
+	if lemma in ["incontro a"]:
 		return "Anl"
-	
+
 	# NOTE: from De Mauro "per indicare un movimento frontale in direzione di qcn. o di qcs."
-	
+
 	#======<\Direction focused on destination>==============================
 
 	#======<Temporal>=======================================================
-	
+
 	# Temporal antessive
 	if lemma in ["prima di", "prima che"]:
 			return "Tan"
-	
+
 	# Temporal postessive (after a point or period)
 	if lemma in ["dopo", "dopodiché", "dopo di che", "una volta che"]:
 			return "Tps"
@@ -157,30 +157,30 @@ def switch_case(token, parent = None):
 	# Temporal terminative
 	if lemma in ["fino a", "sino a", "finché", "fino a che"]:
 			return "Ttr"
-	
-	# NOTE: it's normal that when deprel = mark the lemma has only temporal meaning and when deprel = case it can have both temporal and spatial, because if it is 'mark' then it's anchored to an 'event' and an 'event' cannot be before, after or until in a spatial sense, but only in a temporal sense. 
+
+	# NOTE: it's normal that when deprel = mark the lemma has only temporal meaning and when deprel = case it can have both temporal and spatial, because if it is 'mark' then it's anchored to an 'event' and an 'event' cannot be before, after or until in a spatial sense, but only in a temporal sense.
 
 	# Temporal (at, on, in, upon a point in time)
 	if lemma in ["appena", "quando", "allorché", "allorquando"]:
 		return "Tem"
-	
-	# NOTE: 'Quando' (when) is also conditional, but we treat the conditional meaning as an extension of the temporal. 
-	
+
+	# NOTE: 'Quando' (when) is also conditional, but we treat the conditional meaning as an extension of the temporal.
+
 	# Durative (during a period)
 	if lemma in ["mentre", "durante"]:
 		return "Dur"
-	
+
 	# deprel = advmod; frattanto, intanto (Durative - Dur).
 	# deprel = advmod; circa (Temporal approximative - Tpx). But also not temporal (is approximative in general: circa il 12% della popolazione; no case of approximation beside temporal approximation).
 
 	# Temporal egressive
-	if lemma ["sino da", "fin da", "da quando"]:
+	if lemma in ["sino da", "fin da", "da quando"]:
 		return "Teg"
 	# TODO: decide on 'da allora' = temporal egressive
 	#======<\Temporal>======================================================
 
 	#======<Relation>=======================================================
-	
+
 	# Genitive
 	if lemma in ["di", "d'"]: # be aware of polysemy
 		if deprel == "case":
@@ -189,7 +189,7 @@ def switch_case(token, parent = None):
 			return None
 
 	# NOTE: lemma "d'" is here because in ISDT it is not always (17 occurrences) mapped to lemma "di".
-	
+
 	# Comitative
 	if lemma in ["con", "insieme a", "insieme con", "assieme a"]: # "con": be aware of polisemy
 		return "Com"
@@ -197,9 +197,9 @@ def switch_case(token, parent = None):
 	# Abessive (without something)
 	if lemma in ["a meno che","salvo", "salvo che", "senza", "senza che"]:
 		return "Abe"
-	
+
 	# NOTE: 'a meno che' is deprel = fixed only once, the rest of the time is not considered (or partially considered) a fixed expression.
-	
+
 	# NOTE: in 'inventory.md' also 'salvo' is under Absessive, but in the treebank 'salvo' has deprel = amod and is considered 'ADJ'.
 
 	# Inclusive
@@ -208,13 +208,13 @@ def switch_case(token, parent = None):
 	# Additive (besides, in addition to something)
 	if lemma in ["oltre", "oltre a", "oltre che"]:
 		return "Add"
-	
-	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) (or simply Superessive ?) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori". 
+
+	# NOTE: example: "... pagando, oltre il valore della metà del muro, il valore del suolo da occupare con la nuova fabbrica)". However, 'oltre' can also be used as a Spx (Superprolative) (or simply Superessive ?) ex. "In Italia vi sono oltre 40 modelli posti in commercio da una ventina di distributori".
 
 	# Exclusive
 	if lemma in ["meno che", "tranne", "tranne che", "tranne in", "eccetto", "eccetto che", "tranne quando", "fuorché", "se non che"]:
 		return "Exc"
-	
+
 	# NOTE: Exclusive - lemmas from LICO "Negative condition:Arg2" + "Exception:Arg2"
 
 	# TODO: precise difference between Abessive and Exclusive?
@@ -233,64 +233,64 @@ def switch_case(token, parent = None):
 
 	# Essive
 	# TODO: decide on 'in qualità di'
-	if lemma ["quale", "come"]:
+	if lemma in ["quale", "come"]:
 		if deprel == "case":
 			return "Ess"
 
 	# NOTE: in some cases it's ok to attribute 'quale' & 'come' deprel = case to essive. However, there are also cases in which they have an 'instantiation' (for-example) meaning: "Troppe persone lavorano in l'industria di i servizi tradizionali a bassa produttività, come il commercio a l'ingrosso e a il dettaglio e la ristorazione, lasciando in uno stato di arretratezza servizi moderni e ad alta produttività quali le comunicazioni, la salute, l'intermediazione finanziaria e i servizi aziendali."
 
 	# Equative
-	if lemma ["quanto"]:
+	if lemma in ["quanto"]:
 		return "Equ"
-	
+
 	# Example: si tratta di una spirale di metallo, alta quanto la facciata.
 
 	# Semblative (?)
-	if lemma ["quasi", "tipo"]:
-		return "Sem" 
-	
+	if lemma in ["quasi", "tipo"]:
+		return "Sem"
+
 	# Example: Era il quarto d'ora di il secondo tempo iniziato in anticipo, quasi ci fosse la fretta di chiudere la pratica e che non ci si pensasse più.
 
 	# Replicative
-	if lemma ["così come"]:
+	if lemma in ["così come"]:
 		return "Rpl"
-	
+
 	# NOTE: in ISDT sometimes 'così come' is fixed, sometimes not.
 
 	# Dissemblative
 	# TODO: decide on 'a differenza di'
 
 	# Comparative
-	if lemma ["che"]:
+	if lemma in ["che"]:
 		if deprel == "case":
 			return "Cmp"
 		elif deprel == "mark":
 			return None
-	
+
 	# Example: In effetti siamo più vicini ai funghi che ad ogni altro regno della natura.
 
 	# Differential
-	if lemma ["meno di"]:
+	if lemma in ["meno di"]:
 		return "Dif"
 
-	# Comment ??? 
+	# Comment ???
 
 
 	#======<\Similarity>====================================================
-	
+
 	#======<Cause, consequence, circumstance, other>========================
-	
+
 	# Causative
-	
+
 	# NOTE: source: LICO Contingency:Cause:Reason (they're all hypotactic)
 
 	if lemma in ["giacché", "perché", "perciò", "poiché", "siccome", "grazie a", "in quanto", "per"]:
 		return "Cau"
-	
-	# TODO: 'a causa di' 
+
+	# TODO: 'a causa di'
 	# TODO: 'dato che' (fixed) (tree strano)
 	# NOTE: 'per' is highly polisemic.
-	# NOTE: perciò deprel = 'mark' (9 occ) vs. 'perciò' deprel = advmod (30 occ) - don't understand why different deprels. 
+	# NOTE: perciò deprel = 'mark' (9 occ) vs. 'perciò' deprel = advmod (30 occ) - don't understand why different deprels.
 
 	# Purposive
 	# TODO: work in progress
@@ -298,7 +298,7 @@ def switch_case(token, parent = None):
 
 	if lemma in ["affinché", "pure di", "onde"]:
 		return "Pur"
-	
+
 	# Considerative
 
 	# TODO: find a place for 'rispetto a' (which is not considerative). 'Rispetto a' is like setting a baseline to which something is compared.
@@ -306,30 +306,30 @@ def switch_case(token, parent = None):
 	# Ignorative
 
 	# TODO: decide on 'a prescindere da'
-	
+
 	# Concessive
 	# NOTE: source: LICO Comparison:Concession:Arg1
 
 	# TODO: 'a dispetto di', 'per quanto' (?)
 
 	if lemma in ["anche se", "ancorché", "benché", "comunque", "malgrado", "nonostante", "quantunque", "sebbene", "seppure"]:
-		return "Ccs"  
-	
+		return "Ccs"
+
 	# lemma = seppur(e) in ISDT has only 2 occurrences and one time is deprel = mark and the other is deprel = advmod
 
 	# lemma = "tuttavia", deprel = "advmod": concessive?
 	# lemma = eppure, deprel = "advmod"; concessive?
-	
+
 	# Conditional
 	# NOTE: source: LICO Contingency:Condition
 
-	# TODO: 'a condizione che', 
+	# TODO: 'a condizione che',
 	# TODO: Conj of values: 'se, come e quando'
 	# TODO: Conj of values: 'solo e quando'
 
 	if lemma in ["casomai", "purché", "qualora", "se", "sempreché", "solo", "laddove", "ove"]:
 		return "Cnd"
-	
+
 	# NOTE: 'laddove' is polysemic as Cnd and Advs
 
 	# Map negative condition to its lemma, since it's not in inventory.md
@@ -345,11 +345,11 @@ def switch_case(token, parent = None):
 	# Quotative
 	if lemma in ["secondo"]:
 		return "Quo"
-	
+
 	# Instrumental
 	if lemma in ["mediante"]:
 		return "Ins"
-	
+
 	# TODO: decide on the belonging of 'tramite' and 'per mezzo di' to Perlative. Aren't they more 'Ins'? Should we promote spatial senses?
 
 	# Adversative
@@ -379,7 +379,7 @@ def switch_conj_case(token):
 	# Adversative
 	if token["lemma"] in ["ma", "però", "bensì"]:
 		return "Advs"
-	
+
 	# NOTE: many 'però' are deprel = advmod
 	# TODO: decide on 'per contro', 'al contrario', 'invece' (deprel = advmod)
 
@@ -390,7 +390,7 @@ def switch_conj_case(token):
 	# Consequence
 	# NOTE: source: LICO Contingency:Cause:Result
 	# lemma = quindi, pertanto, dunque, così che, allora (?); deprel = advmod; così da; deprel = "mark".
-	# NOTE: 'allora' has also other meanings: '... di cui era allora amministratore delegato Orsi' (true advmod?); 'da allora' (since) = temporal egressive. 
+	# NOTE: 'allora' has also other meanings: '... di cui era allora amministratore delegato Orsi' (true advmod?); 'da allora' (since) = temporal egressive.
 	# lemma = conseguenza; child = di/come (?)
 
 	#======<\Coordination>=====================================================
@@ -447,6 +447,8 @@ def switch_det_dem(token):
 
 	if token["lemma"] == "quello":
 		return "Dist"
+
+	return f"TBD-DETDEM-{token['lemma']}"
 
 
 # def switch_pron_person(token):
