@@ -27,5 +27,7 @@ id	working_status	test_case	sentence	issues
 26	_	mood:SubjPast	È possibile che il gatto abbia inseguito il cane.
 27	_	mood:SubjTrap	È possibile che il gatto avesse inseguito il cane.
 28	_	mood:Ger	Inseguendo il cane, il gatto si è stancato.
-29	_	aspect:Progr	Il gatto sta inseguendo il cane.
-30	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.
+29	_	det+verb	Nell'inseguire il cane, il gatto si è stancato.
+30	_	aspect:Progr	Il gatto sta inseguendo il cane.
+31	_	neg on Pot	Il gatto non può inseguire il cane.
+32	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.
