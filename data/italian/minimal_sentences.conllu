@@ -130,3 +130,13 @@
 3	lo	lo	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
 4	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 14
+# text = Questo gatto insegue quel cane.
+1	Questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=7:12
+3	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=13:20
+4	quel	quello	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	TokenRange=21:25
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=26:30
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+
