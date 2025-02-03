@@ -88,8 +88,6 @@ def switch_case(token, parent = None):
 		elif deprel == "mark":
 			return None
 
-	# TODO: avoid falling back to default when deprel == obl:agent
-
 	#======<\Direction focused on origin>==================================
 
 	#======<Direction focused on path>=====================================
@@ -186,7 +184,7 @@ def switch_case(token, parent = None):
 		if deprel == "case":
 			return "Gen"
 		elif deprel == "mark":
-			return None
+			return "di"
 
 	# NOTE: lemma "d'" is here because in ISDT it is not always (17 occurrences) mapped to lemma "di".
 
@@ -265,7 +263,7 @@ def switch_case(token, parent = None):
 		if deprel == "case":
 			return "Cmp"
 		elif deprel == "mark":
-			return None
+			return "che"
 
 	# Example: In effetti siamo più vicini ai funghi che ad ogni altro regno della natura.
 
