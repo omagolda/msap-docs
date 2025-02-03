@@ -447,6 +447,8 @@ def switch_det_dem(token):
 	if token["lemma"] == "quello":
 		return "Dist"
 
+	return f"TBD-DETDEM-{token['lemma']}"
+
 
 # def switch_pron_person(token):
 # 	if token["lemma"] in ["io", "noi", "mi", "ci"]:

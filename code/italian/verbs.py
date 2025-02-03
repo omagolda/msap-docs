@@ -63,8 +63,6 @@ def process_verb(head_tok, children_toks):
 					logger.debug("Adding Aspect feature with value Perf")
 					head_tok["ms feats"]["Aspect"].add("Perf")
 
-			# TODO: handle Prosp: Like inchoative/cessative aspect, these are lexically marked in Italian like comincio/finisco
-
 			# Modality
 			modality = lbd.switch_verb_modality(child_tok)
 			if modality:
