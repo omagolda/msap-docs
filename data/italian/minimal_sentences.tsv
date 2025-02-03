@@ -29,5 +29,8 @@ id	working_status	test_case	sentence	issues
 28	OK	VerbForm:Ger	Inseguendo il cane, il gatto si è stancato.
 29	_	det+verb	Nell'inseguire il cane, il gatto si è stancato.	I don't remember what we decided on this (what feature we want and need)
 30	_	aspect:Progr	Il gatto sta inseguendo il cane.	VerbForm is not inherited from 'stare' > do we want this?
-31	_	neg on Pot	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
-32	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.	Don't know how to handle this, but probably double negation should result in Polarity=Pos?
+31	_	aspect:Progr;tense:Past	Il gatto stava inseguendo il cane.	Same as #30 + do we want to add Perf?
+32	_	not(Pot)	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
+33	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.	Don't know how to handle this, but probably double negation should result in Polarity=Pos?
+34	_	and(value,value)	(1) Il proprietario può decidere se, come e quando usare la cosa.	At the moment other 'case' values do not even arrive on content node
+35	_	or(value,value)	Opere fatte sopra o sotto il suolo.	At the moment other 'case' values do not even arrive on content node

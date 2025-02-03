@@ -316,6 +316,16 @@
 7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
 
 # sent_id = 31
+# text = Il gatto stava inseguendo il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	stava	stare	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 32
 # text = Il gatto non può inseguire il cane.
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
@@ -326,7 +336,7 @@
 7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No
 
-# sent_id = 32
+# sent_id = 33
 # text = Non si può non dire che il gatto stia inseguendo il cane.
 1	Non	non	ADV	BN	PronType=Neg	5	advmod	_	_
 2	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	5	expl:impers	_	_
@@ -341,3 +351,35 @@
 11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	cane	cane	NOUN	S	Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 34
+# text = (1) Il proprietario può decidere se, come e quando usare la cosa.
+1	(	(	PUNCT	FB	_	2	punct	_	SpaceAfter=No
+2	1	1	NUM	N	NumType=Card	7	nummod	_	SpaceAfter=No
+3	)	)	PUNCT	FB	_	2	punct	_	_
+4	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	proprietario	proprietario	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	decidere	decidere	VERB	V	VerbForm=Inf	0	root	_	_
+8	se	se	SCONJ	CS	_	13	mark	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	10	punct	_	_
+10	come	come	SCONJ	CS	_	8	conj	_	_
+11	e	e	CCONJ	CC	_	12	cc	_	_
+12	quando	quando	SCONJ	CS	_	8	conj	_	_
+13	usare	usare	VERB	V	VerbForm=Inf	7	ccomp	_	_
+14	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	cosa	cosa	NOUN	S	Gender=Fem|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	FS	_	7	punct	_	_
+
+# sent_id = 35
+# text = 934. Opere fatte sopra o sotto il suolo.
+1	934	934	NUM	N	NumType=Card	3	nummod	_	SpaceAfter=No
+2	.	.	PUNCT	FF	_	1	punct	_	_
+3	Opere	opera	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_
+4	fatte	fare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_
+5	sopra	sopra	ADP	E	_	9	case	_	_
+6	o	o	CCONJ	CC	_	7	cc	_	_
+7	sotto	sotto	ADP	E	_	5	conj	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	suolo	suolo	NOUN	S	Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	3	punct	_	_

@@ -587,7 +587,7 @@
 [verbs:11] DEBUG:Setting insegua/VERB to content node
 [verbs:15] DEBUG:Setting Polarity as Pos
 [verbs:19] INFO:Examining child: dict_values([3, 'che', 'che', 'SCONJ', 'CS', None, 6, 'mark', None, None, defaultdict(<class 'set'>, {}), False])
-[verbs:91] DEBUG:Adding Case feature with value None
+[verbs:91] DEBUG:Adding Case feature with value che
 [italian:118] INFO:Processing head dict_values([2, 'possibile', 'possibile', 'ADJ', 'A', {'Number': 'Sing'}, 0, 'root', None, None, defaultdict(<class 'set'>, {}), False]) with children 'È'
 [adjs:11] DEBUG:Setting possibile/ADJ to content and copying its features
 [adjs:20] INFO:Examining child: dict_values([1, 'È', 'essere', 'AUX', 'VA', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 2, 'cop', None, None, defaultdict(<class 'set'>, {}), False])
@@ -619,7 +619,7 @@
 [verbs:11] DEBUG:Setting inseguisse/VERB to content node
 [verbs:15] DEBUG:Setting Polarity as Pos
 [verbs:19] INFO:Examining child: dict_values([3, 'che', 'che', 'SCONJ', 'CS', None, 6, 'mark', None, None, defaultdict(<class 'set'>, {}), False])
-[verbs:91] DEBUG:Adding Case feature with value None
+[verbs:91] DEBUG:Adding Case feature with value che
 [italian:118] INFO:Processing head dict_values([2, 'possibile', 'possibile', 'ADJ', 'A', {'Number': 'Sing'}, 0, 'root', None, None, defaultdict(<class 'set'>, {}), False]) with children 'È'
 [adjs:11] DEBUG:Setting possibile/ADJ to content and copying its features
 [adjs:20] INFO:Examining child: dict_values([1, 'È', 'essere', 'AUX', 'VA', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 2, 'cop', None, None, defaultdict(<class 'set'>, {}), False])
@@ -652,7 +652,7 @@
 [verbs:11] DEBUG:Setting inseguito/VERB to content node
 [verbs:15] DEBUG:Setting Polarity as Pos
 [verbs:19] INFO:Examining child: dict_values([3, 'che', 'che', 'SCONJ', 'CS', None, 7, 'mark', None, None, defaultdict(<class 'set'>, {}), False])
-[verbs:91] DEBUG:Adding Case feature with value None
+[verbs:91] DEBUG:Adding Case feature with value che
 [verbs:19] INFO:Examining child: dict_values([6, 'abbia', 'avere', 'AUX', 'VA', {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 7, 'aux', None, None, defaultdict(<class 'set'>, {}), False])
 [verbs:33] DEBUG:Adding Mood feature with value Sub
 [verbs:40] DEBUG:Adding Tense feature with value Pres
@@ -690,7 +690,7 @@
 [verbs:11] DEBUG:Setting inseguito/VERB to content node
 [verbs:15] DEBUG:Setting Polarity as Pos
 [verbs:19] INFO:Examining child: dict_values([3, 'che', 'che', 'SCONJ', 'CS', None, 7, 'mark', None, None, defaultdict(<class 'set'>, {}), False])
-[verbs:91] DEBUG:Adding Case feature with value None
+[verbs:91] DEBUG:Adding Case feature with value che
 [verbs:19] INFO:Examining child: dict_values([6, 'avesse', 'avere', 'AUX', 'VA', {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}, 7, 'aux', None, None, defaultdict(<class 'set'>, {}), False])
 [verbs:33] DEBUG:Adding Mood feature with value Sub
 [verbs:40] DEBUG:Adding Tense feature with value Imp
@@ -802,6 +802,33 @@
 [verbs:40] DEBUG:Adding Tense feature with value Pres
 [verbs:50] DEBUG:Adding Aspect feature with value Prog
 [italian:59] INFO:Processing sentence id: 31
+[italian:60] INFO:Sentence content: Il gatto stava inseguendo il cane.
+[italian:77] DEBUG:Removed punctuation: Il gatto stava inseguendo il cane
+[italian:118] INFO:Processing head dict_values([1, 'Il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 2, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([2, 'gatto', 'gatto', 'NOUN', 'S', {'Gender': 'Masc', 'Number': 'Sing'}, 4, 'nsubj', None, None, defaultdict(<class 'set'>, {}), False]) with children 'Il'
+[italian:125] DEBUG:Assigned 'Nom' case to head 'gatto' because its deprel is 'nsubj'
+[nouns:10] DEBUG:Setting gatto/NOUN to content and copying its features
+[nouns:15] INFO:Examining child: dict_values([1, 'Il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 2, 'det', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:44] DEBUG:Adding Gender feature with value Masc
+[nouns:47] DEBUG:Adding Number feature with value Sing
+[nouns:53] DEBUG:Adding Definite feature with value Def
+[italian:118] INFO:Processing head dict_values([3, 'stava', 'stare', 'AUX', 'VA', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}, 4, 'aux', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([5, 'il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 6, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([6, 'cane', 'cane', 'NOUN', 'S', {'Gender': 'Masc', 'Number': 'Sing'}, 4, 'obj', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children 'il'
+[italian:135] DEBUG:Assigned 'Acc' case to head 'cane' because its deprel is 'obj'
+[nouns:10] DEBUG:Setting cane/NOUN to content and copying its features
+[nouns:15] INFO:Examining child: dict_values([5, 'il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 6, 'det', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:44] DEBUG:Adding Gender feature with value Masc
+[nouns:47] DEBUG:Adding Number feature with value Sing
+[nouns:53] DEBUG:Adding Definite feature with value Def
+[italian:118] INFO:Processing head dict_values([4, 'inseguendo', 'inseguire', 'VERB', 'V', {'VerbForm': 'Ger'}, 0, 'root', None, None, defaultdict(<class 'set'>, {}), False]) with children 'stava'
+[verbs:11] DEBUG:Setting inseguendo/VERB to content node
+[verbs:15] DEBUG:Setting Polarity as Pos
+[verbs:19] INFO:Examining child: dict_values([3, 'stava', 'stare', 'AUX', 'VA', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}, 4, 'aux', None, None, defaultdict(<class 'set'>, {}), False])
+[verbs:33] DEBUG:Adding Mood feature with value Ind
+[verbs:40] DEBUG:Adding Tense feature with value Imp
+[verbs:50] DEBUG:Adding Aspect feature with value Prog
+[italian:59] INFO:Processing sentence id: 32
 [italian:60] INFO:Sentence content: Il gatto non può inseguire il cane.
 [italian:77] DEBUG:Removed punctuation: Il gatto non può inseguire il cane
 [italian:118] INFO:Processing head dict_values([1, 'Il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 2, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
@@ -830,7 +857,7 @@
 [verbs:33] DEBUG:Adding Mood feature with value Ind
 [verbs:40] DEBUG:Adding Tense feature with value Pres
 [verbs:69] DEBUG:Adding Modality feature with value Pot
-[italian:59] INFO:Processing sentence id: 32
+[italian:59] INFO:Processing sentence id: 33
 [italian:60] INFO:Sentence content: Non si può non dire che il gatto stia inseguendo il cane.
 [italian:77] DEBUG:Removed punctuation: Non si può non dire che il gatto stia inseguendo il cane
 [italian:118] INFO:Processing head dict_values([1, 'Non', 'non', 'ADV', 'BN', {'PronType': 'Neg'}, 5, 'advmod', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
@@ -860,7 +887,7 @@
 [verbs:11] DEBUG:Setting inseguendo/VERB to content node
 [verbs:15] DEBUG:Setting Polarity as Pos
 [verbs:19] INFO:Examining child: dict_values([6, 'che', 'che', 'SCONJ', 'CS', None, 10, 'mark', None, None, defaultdict(<class 'set'>, {}), False])
-[verbs:91] DEBUG:Adding Case feature with value None
+[verbs:91] DEBUG:Adding Case feature with value che
 [verbs:19] INFO:Examining child: dict_values([9, 'stia', 'stare', 'AUX', 'VA', {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 10, 'aux', None, None, defaultdict(<class 'set'>, {}), False])
 [verbs:33] DEBUG:Adding Mood feature with value Sub
 [verbs:40] DEBUG:Adding Tense feature with value Pres
@@ -875,3 +902,74 @@
 [verbs:69] DEBUG:Adding Modality feature with value Pot
 [verbs:19] INFO:Examining child: dict_values([4, 'non', 'non', 'ADV', 'BN', {'PronType': 'Neg'}, 5, 'advmod', None, None, defaultdict(<class 'set'>, {'Definite': set()}), False])
 [verbs:140] WARNING:'Pos' not found in Polarity for token: dire
+[italian:59] INFO:Processing sentence id: 34
+[italian:60] INFO:Sentence content: (1) Il proprietario può decidere se, come e quando usare la cosa.
+[italian:77] DEBUG:Removed punctuation: 1 Il proprietario può decidere se come e quando usare la cosa
+[italian:118] INFO:Processing head dict_values([2, '1', '1', 'NUM', 'N', {'NumType': 'Card'}, 7, 'nummod', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children ''
+[nouns:10] DEBUG:Setting 1/NUM to content and copying its features
+[italian:118] INFO:Processing head dict_values([4, 'Il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 5, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([5, 'proprietario', 'proprietario', 'NOUN', 'S', {'Gender': 'Masc', 'Number': 'Sing'}, 7, 'nsubj', None, None, defaultdict(<class 'set'>, {}), False]) with children 'Il'
+[italian:125] DEBUG:Assigned 'Nom' case to head 'proprietario' because its deprel is 'nsubj'
+[nouns:10] DEBUG:Setting proprietario/NOUN to content and copying its features
+[nouns:15] INFO:Examining child: dict_values([4, 'Il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 5, 'det', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:44] DEBUG:Adding Gender feature with value Masc
+[nouns:47] DEBUG:Adding Number feature with value Sing
+[nouns:53] DEBUG:Adding Definite feature with value Def
+[italian:118] INFO:Processing head dict_values([6, 'può', 'potere', 'AUX', 'VM', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 7, 'aux', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([10, 'come', 'come', 'SCONJ', 'CS', None, 8, 'conj', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([11, 'e', 'e', 'CCONJ', 'CC', None, 12, 'cc', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:107] DEBUG:Adding Case feature with value Conj
+[italian:118] INFO:Processing head dict_values([12, 'quando', 'quando', 'SCONJ', 'CS', None, 8, 'conj', None, None, defaultdict(<class 'set'>, {'Case': {'Conj'}}), False]) with children ''
+[italian:115] DEBUG:Isolated 2 conjuncts
+[italian:116] DEBUG:come | quando
+[italian:118] INFO:Processing head dict_values([8, 'se', 'se', 'SCONJ', 'CS', None, 13, 'mark', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:212] INFO:Copying se features (defaultdict(<class 'set'>, {})) to come
+[italian:212] INFO:Copying se features (defaultdict(<class 'set'>, {})) to quando
+[italian:118] INFO:Processing head dict_values([14, 'la', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Fem', 'Number': 'Sing', 'PronType': 'Art'}, 15, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([15, 'cosa', 'cosa', 'NOUN', 'S', {'Gender': 'Fem', 'Number': 'Sing'}, 13, 'obj', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children 'la'
+[italian:135] DEBUG:Assigned 'Acc' case to head 'cosa' because its deprel is 'obj'
+[nouns:10] DEBUG:Setting cosa/NOUN to content and copying its features
+[nouns:15] INFO:Examining child: dict_values([14, 'la', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Fem', 'Number': 'Sing', 'PronType': 'Art'}, 15, 'det', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:44] DEBUG:Adding Gender feature with value Fem
+[nouns:47] DEBUG:Adding Number feature with value Sing
+[nouns:53] DEBUG:Adding Definite feature with value Def
+[italian:118] INFO:Processing head dict_values([13, 'usare', 'usare', 'VERB', 'V', {'VerbForm': 'Inf'}, 7, 'ccomp', None, None, defaultdict(<class 'set'>, {}), False]) with children 'se'
+[verbs:11] DEBUG:Setting usare/VERB to content node
+[verbs:15] DEBUG:Setting Polarity as Pos
+[verbs:19] INFO:Examining child: dict_values([8, 'se', 'se', 'SCONJ', 'CS', None, 13, 'mark', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False])
+[verbs:91] DEBUG:Adding Case feature with value Cnd
+[italian:118] INFO:Processing head dict_values([7, 'decidere', 'decidere', 'VERB', 'V', {'VerbForm': 'Inf'}, 0, 'root', None, None, defaultdict(<class 'set'>, {}), False]) with children 'può'
+[verbs:11] DEBUG:Setting decidere/VERB to content node
+[verbs:15] DEBUG:Setting Polarity as Pos
+[verbs:19] INFO:Examining child: dict_values([6, 'può', 'potere', 'AUX', 'VM', {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}, 7, 'aux', None, None, defaultdict(<class 'set'>, {}), False])
+[verbs:33] DEBUG:Adding Mood feature with value Ind
+[verbs:40] DEBUG:Adding Tense feature with value Pres
+[verbs:69] DEBUG:Adding Modality feature with value Pot
+[italian:263] ERROR:Node quando should be empty bus has features defaultdict(<class 'set'>, {'Case': {'Conj'}})
+[italian:59] INFO:Processing sentence id: 35
+[italian:60] INFO:Sentence content: 934. Opere fatte sopra o sotto il suolo.
+[italian:77] DEBUG:Removed punctuation: 934 Opere fatte sopra o sotto il suolo
+[italian:118] INFO:Processing head dict_values([1, '934', '934', 'NUM', 'N', {'NumType': 'Card'}, 3, 'nummod', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children ''
+[nouns:10] DEBUG:Setting 934/NUM to content and copying its features
+[italian:118] INFO:Processing head dict_values([6, 'o', 'o', 'CCONJ', 'CC', None, 7, 'cc', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:107] DEBUG:Adding Case feature with value Disj
+[italian:118] INFO:Processing head dict_values([7, 'sotto', 'sotto', 'ADP', 'E', None, 5, 'conj', None, None, defaultdict(<class 'set'>, {'Case': {'Disj'}}), False]) with children ''
+[italian:115] DEBUG:Isolated 1 conjuncts
+[italian:116] DEBUG:sotto
+[italian:118] INFO:Processing head dict_values([5, 'sopra', 'sopra', 'ADP', 'E', None, 9, 'case', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:212] INFO:Copying sopra features (defaultdict(<class 'set'>, {})) to sotto
+[italian:118] INFO:Processing head dict_values([8, 'il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 9, 'det', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[italian:118] INFO:Processing head dict_values([9, 'suolo', 'suolo', 'NOUN', 'S', {'Gender': 'Masc', 'Number': 'Sing'}, 4, 'obl', None, {'SpaceAfter': 'No'}, defaultdict(<class 'set'>, {}), False]) with children 'sopra | il'
+[nouns:10] DEBUG:Setting suolo/NOUN to content and copying its features
+[nouns:15] INFO:Examining child: dict_values([5, 'sopra', 'sopra', 'ADP', 'E', None, 9, 'case', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:90] DEBUG:Adding Case feature with value Sup
+[nouns:15] INFO:Examining child: dict_values([8, 'il', 'il', 'DET', 'RD', {'Definite': 'Def', 'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Art'}, 9, 'det', None, None, defaultdict(<class 'set'>, {}), False])
+[nouns:44] DEBUG:Adding Gender feature with value Masc
+[nouns:47] DEBUG:Adding Number feature with value Sing
+[nouns:53] DEBUG:Adding Definite feature with value Def
+[italian:118] INFO:Processing head dict_values([4, 'fatte', 'fare', 'VERB', 'V', {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}, 3, 'acl', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[verbs:11] DEBUG:Setting fatte/VERB to content node
+[verbs:15] DEBUG:Setting Polarity as Pos
+[italian:118] INFO:Processing head dict_values([3, 'Opere', 'opera', 'NOUN', 'S', {'Gender': 'Fem', 'Number': 'Plur'}, 0, 'root', None, None, defaultdict(<class 'set'>, {}), False]) with children ''
+[nouns:10] DEBUG:Setting Opere/NOUN to content and copying its features
+[italian:263] ERROR:Node sotto should be empty bus has features defaultdict(<class 'set'>, {'Case': {'Disj'}})

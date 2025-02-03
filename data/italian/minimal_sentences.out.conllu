@@ -257,7 +257,7 @@
 3	che	che	SCONJ	CS	_	6	mark	_	_	_	False
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
-6	insegua	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+6	insegua	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	ccomp	_	_	Case=che|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
 7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	_	False
 8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 9	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No	_	False
@@ -270,7 +270,7 @@
 3	che	che	SCONJ	CS	_	6	mark	_	_	_	False
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
-6	inseguisse	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	_	_	Mood=Sub|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
+6	inseguisse	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	_	_	Case=che|Mood=Sub|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
 7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	_	False
 8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 9	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No	_	False
@@ -284,7 +284,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_	_	False
-7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	Aspect=Perf|Mood=Sub|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	Aspect=Perf|Case=che|Mood=Sub|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	_	False
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No	_	False
@@ -298,7 +298,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 6	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_	_	False
-7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	Aspect=Perf|Mood=Sub|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_	Aspect=Perf|Case=che|Mood=Sub|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	_	False
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No	_	False
@@ -347,6 +347,17 @@
 
 
 # sent_id = 31
+# text = Il gatto stava inseguendo il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+3	stava	stare	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_	_	False
+4	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_	Aspect=Prog|Mood=Ind|Polarity=Pos|Tense=Imp|VerbForm=Ger|Voice=Act	True
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_	_	False
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No	_	False
+
+
+# sent_id = 32
 # text = Il gatto non può inseguire il cane.
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_	_	False
 2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -358,7 +369,7 @@
 8	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No	_	False
 
 
-# sent_id = 32
+# sent_id = 33
 # text = Non si può non dire che il gatto stia inseguendo il cane.
 1	Non	non	ADV	BN	PronType=Neg	5	advmod	_	_	_	False
 2	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	5	expl:impers	_	_	Clitic=Yes|Person=3|PronType=Prs	True
@@ -369,9 +380,43 @@
 7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_	_	False
 8	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 9	stia	stare	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_	_	False
-10	inseguendo	inseguire	VERB	V	VerbForm=Ger	5	ccomp	_	_	Aspect=Prog|Mood=Sub|Polarity=Pos|Tense=Pres|VerbForm=Ger|Voice=Act	True
+10	inseguendo	inseguire	VERB	V	VerbForm=Ger	5	ccomp	_	_	Aspect=Prog|Case=che|Mood=Sub|Polarity=Pos|Tense=Pres|VerbForm=Ger|Voice=Act	True
 11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_	_	False
 12	cane	cane	NOUN	S	Gender=Masc|Number=Sing	10	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 13	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No	_	False
+
+
+# sent_id = 34
+# text = (1) Il proprietario può decidere se, come e quando usare la cosa.
+1	(	(	PUNCT	FB	_	2	punct	_	SpaceAfter=No	_	False
+2	1	1	NUM	N	NumType=Card	7	nummod	_	SpaceAfter=No	NumType=Card	True
+3	)	)	PUNCT	FB	_	2	punct	_	_	_	False
+4	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_	_	False
+5	proprietario	proprietario	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
+6	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_	_	False
+7	decidere	decidere	VERB	V	VerbForm=Inf	0	root	_	_	Modality=Pot|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Inf|Voice=Act	True
+8	se	se	SCONJ	CS	_	13	mark	_	SpaceAfter=No	_	False
+9	,	,	PUNCT	FF	_	10	punct	_	_	_	False
+10	come	come	SCONJ	CS	_	8	conj	_	_	_	False
+11	e	e	CCONJ	CC	_	12	cc	_	_	_	False
+12	quando	quando	SCONJ	CS	_	8	conj	_	_	_	False
+13	usare	usare	VERB	V	VerbForm=Inf	7	ccomp	_	_	Case=Cnd|Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+14	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_	_	False
+15	cosa	cosa	NOUN	S	Gender=Fem|Number=Sing	13	obj	_	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
+16	.	.	PUNCT	FS	_	7	punct	_	_	_	False
+
+
+# sent_id = 35
+# text = 934. Opere fatte sopra o sotto il suolo.
+1	934	934	NUM	N	NumType=Card	3	nummod	_	SpaceAfter=No	NumType=Card	True
+2	.	.	PUNCT	FF	_	1	punct	_	_	_	False
+3	Opere	opera	NOUN	S	Gender=Fem|Number=Plur	0	root	_	_	Gender=Fem|Number=Plur	True
+4	fatte	fare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Part|Voice=Act	True
+5	sopra	sopra	ADP	E	_	9	case	_	_	_	False
+6	o	o	CCONJ	CC	_	7	cc	_	_	_	False
+7	sotto	sotto	ADP	E	_	5	conj	_	_	_	False
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_	_	False
+9	suolo	suolo	NOUN	S	Gender=Masc|Number=Sing	4	obl	_	SpaceAfter=No	Case=Sup|Definite=Def|Gender=Masc|Number=Sing	True
+10	.	.	PUNCT	FS	_	3	punct	_	_	_	False
 
 
