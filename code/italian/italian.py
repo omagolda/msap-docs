@@ -164,10 +164,13 @@ if __name__ == '__main__':
 					# * Remove Person, Gender and Number features from VERB
 					if "Person" in head_tok["ms feats"]:
 						del[head_tok["ms feats"]["Person"]]
-					if "Gender" in head_tok["ms feats"]:
-						del[head_tok["ms feats"]["Gender"]]
-					if "Number" in head_tok["ms feats"]:
-						del[head_tok["ms feats"]["Number"]]
+
+					# Todo: move into verbs
+					if not head_tok["ms feats"]["VerbForm"] == "Part":
+						if "Gender" in head_tok["ms feats"]:
+							del[head_tok["ms feats"]["Gender"]]
+						if "Number" in head_tok["ms feats"]:
+							del[head_tok["ms feats"]["Number"]]
 
 				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
@@ -236,7 +239,8 @@ if __name__ == '__main__':
 					for feat in to_delete:
 						del node["ms feats"][feat]
 
-					sorted_msfeats = sorted(node["ms feats"].items())
+					filtered_msfeats = {k: {v for v in values if v is not None} for k, values in node["ms feats"].items() if values is not None}
+					sorted_msfeats = sorted(filtered_msfeats.items())
 
 					if len(sorted_msfeats) == 0:
 						sorted_msfeats = ["|"]
