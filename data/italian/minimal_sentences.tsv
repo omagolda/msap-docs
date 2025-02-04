@@ -4,8 +4,8 @@ id	working_status	test_case	sentence	issues
 3	_	adjectival agreement	Il gatto grigio è bello.	gender and number are both on "gatto" and "grigio", is it ok?
 4	OK	superlative	Il gatto grigio è bellissimo.
 5	OK	comparative	Il gatto grigio è più bello del gatto nero.
-6	_	passive	Il cane è inseguito dal gatto.	verbform on main verb should be "Fin" - inherited from aux
-7	_	passive#2	Il cane viene inseguito dal gatto.	same issues as #6
+6	_	voice passive	Il cane è inseguito dal gatto.	verbform on main verb should be "Fin" - inherited from aux
+7	_	voice passive#2	Il cane viene inseguito dal gatto.	same issues as #6
 8	OK	simple negation	Il gatto non insegue il gatto.
 9	_	prodrop	Insegue il cane.	does the empty node need Case=Nom?
 10	OK	pronoun features	Lui insegue il cane.
@@ -13,4 +13,10 @@ id	working_status	test_case	sentence	issues
 12	_	dative pronoun	Il gatto gli passa la pallina.	Clitic and PronType need to remain on "gli"?
 13	_	accusative pronoun	Il gatto lo insegue.	Clitic and PronType need to remain on "gli"?
 14	_	demonstrative	Questo catto insegue quel cane.
-15	_	tense
+15	_	indefinite	Un gatto insegue qualche cane.
+16	_	verbform Ger	Il gatto inseguiva il cane correndo a zampe levate.
+17	_	verbform#2 Inf	Il gatto spinge il cane a scendere dal divano.
+18	_	verbform#3 Fin	Il gatto ha inseguito il cane.
+19	_	verbform#4 Fin	Il cane è stato inseguito dal gatto.
+20	_	tense present
+21	_
