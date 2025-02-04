@@ -1,0 +1,650 @@
+# Person = yes Mood = yes Modality
+# sent_id = isst_tanl-52
+# text = Negli ambienti giudiziari si tende ad accreditare la tesi di una leggerezza, escludendo che il militare volesse veramente mettere in pericolo l'incolumità del presidente Scalfaro.
+1-2	Negli	_	_	_	_	_	_	_	_
+1	In	in	ADP	E	_	3	case	_	_
+2	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	3	det	_	_
+3	ambienti	ambiente	NOUN	S	Gender=Masc|Number=Plur	6	obl	_	_
+4	giudiziari	giudiziario	ADJ	A	Gender=Masc|Number=Plur	3	amod	_	_
+5	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	6	expl:impers	_	_
+6	tende	tendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	ad	a	ADP	E	_	8	mark	_	_
+8	accreditare	accreditare	VERB	V	VerbForm=Inf	6	ccomp	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	tesi	tesi	NOUN	S	Gender=Fem	8	obj	_	_
+11	di	di	ADP	E	_	13	case	_	_
+12	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
+13	leggerezza	leggerezza	NOUN	S	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	6	punct	_	_
+15	escludendo	escludere	VERB	V	VerbForm=Ger	6	advcl	_	_
+16	che	che	SCONJ	CS	_	21	mark	_	_
+17	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	militare	militare	NOUN	S	Number=Sing	21	nsubj	_	_
+19	volesse	volere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	21	aux	_	_
+20	veramente	veramente	ADV	B	_	21	advmod	_	_
+21	mettere	mettere	VERB	V	VerbForm=Inf	15	ccomp	_	_
+22	in	in	ADP	E	_	23	case	_	_
+23	pericolo	pericolo	NOUN	S	Gender=Masc|Number=Sing	21	obl	_	_
+24	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	25	det	_	SpaceAfter=No
+25	incolumità	incolumità	NOUN	S	Gender=Fem	21	obj	_	_
+26-27	del	_	_	_	_	_	_	_	_
+26	di	di	ADP	E	_	28	case	_	_
+27	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	25	nmod	_	_
+29	Scalfaro	Scalfaro	PROPN	SP	_	28	nmod	_	SpaceAfter=No
+30	.	.	PUNCT	FS	_	6	punct	_	_
+
+# Mood = No
+# sent_id = isst_tanl-3618
+# text = Adesso, comunque, che finalmente sembra essersi decisa a parlare, è scoppiato il finimondo.
+1	Adesso	adesso	ADV	B	_	7	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	FF	_	3	punct	_	_
+3	comunque	comunque	ADV	B	_	7	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	3	punct	_	_
+5	che	che	SCONJ	CS	_	7	mark	_	_
+6	finalmente	finalmente	ADV	B	_	7	advmod	_	_
+7	sembra	sembrare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	advcl	_	_
+8-9	essersi	_	_	_	_	_	_	_	_
+8	esser	essere	AUX	VA	VerbForm=Inf	10	aux	_	_
+9	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	10	expl	_	_
+10	decisa	decidere	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	xcomp	_	_
+11	a	a	ADP	E	_	12	mark	_	_
+12	parlare	parlare	VERB	V	VerbForm=Inf	10	xcomp	_	SpaceAfter=No
+13	,	,	PUNCT	FF	_	7	punct	_	_
+14	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+15	scoppiato	scoppiare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+16	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	finimondo	finimondo	NOUN	S	Gender=Masc|Number=Sing	15	nsubj	_	SpaceAfter=No
+18	.	.	PUNCT	FS	_	15	punct	_	_
+
+# STARE + GERUNDIO
+# sent_id = isst_tanl-958
+# text = Ci stavano sterminando".
+1	Ci	ci	PRON	PC	Clitic=Yes|Number=Plur|Person=1|PronType=Prs	3	obj	_	_
+2	stavano	stare	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	3	aux	_	_
+3	sterminando	sterminare	VERB	V	VerbForm=Ger	0	root	_	SpaceAfter=No
+4	"	"	PUNCT	FB	_	3	punct	_	SpaceAfter=No
+5	.	.	PUNCT	FS	_	3	punct	_	_
+
+# !STARE + GERUNDIO
+# sent_id = isst_tanl-1493
+# text = E occulta la sua tensione alla normalità, la stessa che oggi un D'Alema e un Veltroni vanno propugnando con molta chiarezza ideologica ".
+1	E	e	CCONJ	CC	_	2	cc	_	_
+2	occulta	occultare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+4	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	det:poss	_	_
+5	tensione	tensione	NOUN	S	Gender=Fem|Number=Sing	2	obj	_	_
+6-7	alla	_	_	_	_	_	_	_	_
+6	a	a	ADP	E	_	8	case	_	_
+7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	normalità	normalità	NOUN	S	Gender=Fem	5	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	8	punct	_	_
+10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	stessa	stesso	PRON	PD	Gender=Fem|Number=Sing|PronType=Dem	8	nmod	_	_
+12	che	che	PRON	PR	PronType=Rel	21	obj	_	_
+13	oggi	oggi	ADV	B	_	21	advmod	_	_
+14	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	D'	D'	PROPN	SP	_	21	nsubj	_	SpaceAfter=No
+16	Alema	Alema	PROPN	SP	_	15	flat:name	_	_
+17	e	e	CCONJ	CC	_	19	cc	_	_
+18	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
+19	Veltroni	Veltroni	PROPN	SP	_	15	conj	_	_
+20	vanno	andare	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
+21	propugnando	propugnare	VERB	V	VerbForm=Ger	11	acl:relcl	_	_
+22	con	con	ADP	E	_	24	case	_	_
+23	molta	molto	DET	DI	Gender=Fem|Number=Sing|PronType=Ind	24	det	_	_
+24	chiarezza	chiarezza	NOUN	S	Gender=Fem|Number=Sing	21	obl	_	_
+25	ideologica	ideologico	ADJ	A	Gender=Fem|Number=Sing	24	amod	_	_
+26	"	"	PUNCT	FB	_	25	punct	_	SpaceAfter=No
+27	.	.	PUNCT	FS	_	2	punct	_	_
+
+# Part: VerbForm child on VerbForm head (Fin) + aux:pass
+# sent_id = isst_tanl-256
+# text = Il nome del carabiniere (i corazzieri sono infatti un reparto speciale dell'Arma) è "top secret", ma la vicenda è stata denunciata alla magistratura e il procuratore militare Antonino Intelisano ha aperto un'inchiesta per il reato di offesa all'onore del presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	nome	nome	NOUN	S	Gender=Masc|Number=Sing	20	nsubj	_	_
+3-4	del	_	_	_	_	_	_	_	_
+3	di	di	ADP	E	_	5	case	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	carabiniere	carabiniere	NOUN	S	Gender=Masc|Number=Sing	2	nmod	_	_
+6	(	(	PUNCT	FB	_	12	punct	_	SpaceAfter=No
+7	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	_	_
+8	corazzieri	corazziere	NOUN	S	Gender=Masc|Number=Plur	12	nsubj	_	_
+9	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	_
+10	infatti	infatti	ADV	B	_	12	advmod	_	_
+11	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	reparto	reparto	NOUN	S	Gender=Masc|Number=Sing	5	advcl	_	_
+13	speciale	speciale	ADJ	A	Number=Sing	12	amod	_	_
+14-15	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+14	di	di	ADP	E	_	16	case	_	_
+15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	16	det	_	_
+16	Arma	Arma	PROPN	SP	_	12	nmod	_	SpaceAfter=No
+17	)	)	PUNCT	FB	_	12	punct	_	_
+18	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	_	_
+19	"	"	PUNCT	FB	_	20	punct	_	SpaceAfter=No
+20	top	top	ADJ	A	_	0	root	_	_
+21	secret	secret	NOUN	S	_	20	compound	_	SpaceAfter=No
+22	"	"	PUNCT	FB	_	20	punct	_	SpaceAfter=No
+23	,	,	PUNCT	FF	_	29	punct	_	_
+24	ma	ma	CCONJ	CC	_	29	cc	_	_
+25	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	vicenda	vicenda	NOUN	S	Gender=Fem|Number=Sing	29	nsubj:pass	_	_
+27	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	aux	_	_
+28	stata	essere	AUX	VA	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	29	aux:pass	_	_
+29	denunciata	denunciare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	20	conj	_	_
+30-31	alla	_	_	_	_	_	_	_	_
+30	a	a	ADP	E	_	32	case	_	_
+31	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
+32	magistratura	magistratura	NOUN	S	Gender=Fem|Number=Sing	29	obl	_	_
+33	e	e	CCONJ	CC	_	40	cc	_	_
+34	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
+35	procuratore	procuratore	NOUN	S	Gender=Masc|Number=Sing	40	nsubj	_	_
+36	militare	militare	ADJ	A	Number=Sing	35	amod	_	_
+37	Antonino	Antonino	PROPN	SP	_	35	nmod	_	_
+38	Intelisano	Intelisano	PROPN	SP	_	37	flat:name	_	_
+39	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	40	aux	_	_
+40	aperto	aprire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	conj	_	_
+41	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	42	det	_	SpaceAfter=No
+42	inchiesta	inchiesta	NOUN	S	Gender=Fem|Number=Sing	40	obj	_	_
+43	per	per	ADP	E	_	45	case	_	_
+44	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	45	det	_	_
+45	reato	reato	NOUN	S	Gender=Masc|Number=Sing	42	nmod	_	_
+46	di	di	ADP	E	_	47	case	_	_
+47	offesa	offesa	NOUN	S	Gender=Fem|Number=Sing	45	nmod	_	_
+48-49	all'	_	_	_	_	_	_	_	SpaceAfter=No
+48	a	a	ADP	E	_	50	case	_	_
+49	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	50	det	_	_
+50	onore	onore	NOUN	S	Gender=Masc|Number=Sing	47	nmod	_	_
+51-52	del	_	_	_	_	_	_	_	_
+51	di	di	ADP	E	_	53	case	_	_
+52	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_
+53	presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	50	nmod	_	_
+54-55	della	_	_	_	_	_	_	_	_
+54	di	di	ADP	E	_	56	case	_	_
+55	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	56	det	_	_
+56	Repubblica	Repubblica	PROPN	SP	_	53	nmod	_	SpaceAfter=No
+57	.	.	PUNCT	FS	_	20	punct	_	_
+
+# Part: VerbForm child on VerbForm head (Ger)
+# sent_id = tut-3369
+# text = Nel 1999 la band non volendo più essere etichettata come una semplice "melodic death metal band" intraprende la via della sperimentazione.
+1-2	Nel	_	_	_	_	_	_	_	_
+1	In	in	ADP	E	_	3	case	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	1999	1999	NUM	N	NumType=Card	20	obl	_	_
+4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	band	band	NOUN	S	Gender=Fem	20	nsubj	_	_
+6	non	non	ADV	BN	PronType=Neg	10	advmod	_	_
+7	volendo	volere	AUX	VM	VerbForm=Ger	10	aux	_	_
+8	più	più	ADV	B	_	10	advmod	_	_
+9	essere	essere	AUX	VA	VerbForm=Inf	10	aux:pass	_	_
+10	etichettata	etichettare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_
+11	come	come	ADP	E	_	18	case	_	_
+12	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+13	semplice	semplice	ADJ	A	Number=Sing	18	amod	_	_
+14	"	"	PUNCT	FB	_	18	punct	_	SpaceAfter=No
+15	melodic	melodic	ADJ	A	_	18	amod	_	_
+16	death	death	NOUN	S	_	17	nmod	_	_
+17	metal	metal	NOUN	S	_	18	nmod	_	_
+18	band	band	NOUN	S	Gender=Fem	10	obl	_	SpaceAfter=No
+19	"	"	PUNCT	FB	_	18	punct	_	_
+20	intraprende	intraprendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+21	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	via	via	NOUN	S	Gender=Fem|Number=Sing	20	obj	_	_
+23-24	della	_	_	_	_	_	_	_	_
+23	di	di	ADP	E	_	25	case	_	_
+24	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	sperimentazione	sperimentazione	NOUN	S	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	FS	_	20	punct	_	_
+
+# Part: VerbForm child on VerbForm head (Part)
+# sent_id = isst_tanl-6
+# text = una sala ha dovuto essere sgomberata per una fuga di gas tossico da una scultura moderna in vetro che simboleggia "i pericoli della vita".
+1	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	sala	sala	NOUN	S	Gender=Fem|Number=Sing	6	nsubj:pass	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	dovuto	dovere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	aux	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	6	aux:pass	_	_
+6	sgomberata	sgomberare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+7	per	per	ADP	E	_	9	case	_	_
+8	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
+9	fuga	fuga	NOUN	S	Gender=Fem|Number=Sing	6	obl	_	_
+10	di	di	ADP	E	_	11	case	_	_
+11	gas	gas	NOUN	S	Gender=Masc	9	nmod	_	_
+12	tossico	tossico	ADJ	A	Gender=Masc|Number=Sing	11	amod	_	_
+13	da	da	ADP	E	_	15	case	_	_
+14	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	scultura	scultura	NOUN	S	Gender=Fem|Number=Sing	9	nmod	_	_
+16	moderna	moderno	ADJ	A	Gender=Fem|Number=Sing	15	amod	_	_
+17	in	in	ADP	E	_	18	case	_	_
+18	vetro	vetro	NOUN	S	Gender=Masc|Number=Sing	15	nmod	_	_
+19	che	che	PRON	PR	PronType=Rel	20	nsubj	_	_
+20	simboleggia	simboleggiare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	acl:relcl	_	_
+21	"	"	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+22	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
+23	pericoli	pericolo	NOUN	S	Gender=Masc|Number=Plur	20	obj	_	_
+24-25	della	_	_	_	_	_	_	_	_
+24	di	di	ADP	E	_	26	case	_	_
+25	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	vita	vita	NOUN	S	Gender=Fem|Number=Sing	23	nmod	_	SpaceAfter=No
+27	"	"	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+28	.	.	PUNCT	FS	_	6	punct	_	_
+
+# Part: Tense != "Past"
+# sent_id = 9_PS-515
+# text = Delegare il potere politico lì dove effettivamente vive la popolazione è sempre allettante, e di solito efficace.
+1	Delegare	delegare	VERB	V	VerbForm=Inf	13	csubj	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	potere	potere	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	_
+4	politico	politico	ADJ	A	Gender=Masc|Number=Sing	3	amod	_	_
+5	lì	lì	ADV	B	_	1	advmod	_	_
+6	dove	dove	SCONJ	CS	_	8	mark	_	_
+7	effettivamente	effettivamente	ADV	B	_	8	advmod	_	_
+8	vive	vivere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	8	nsubj	_	_
+11	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	cop	_	_
+12	sempre	sempre	ADV	B	_	13	advmod	_	_
+13	allettante	allettare	VERB	V	Number=Sing|Tense=Pres|VerbForm=Part	0	root	_	SpaceAfter=No
+14	,	,	PUNCT	FF	_	18	punct	_	_
+15	e	e	CCONJ	CC	_	18	cc	_	_
+16	di	di	ADP	E	_	17	case	_	_
+17	solito	solito	NOUN	S	Gender=Masc|Number=Sing	18	obl	_	_
+18	efficace	efficace	ADJ	A	Number=Sing	13	conj	_	SpaceAfter=No
+19	.	.	PUNCT	FS	_	13	punct	_	_
+
+# TODO: handle Prosp (stare per)
+# sent_id = tut-2284
+# text = Davanti alla città universitaria in rivolta stava per crollare il regime di Ramiz Alia.
+1	Davanti	davanti	ADV	B	_	4	case	_	_
+2-3	alla	_	_	_	_	_	_	_	_
+2	a	a	ADP	E	_	1	fixed	_	_
+3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	città	città	NOUN	S	Gender=Fem	8	obl	_	_
+5	universitaria	universitario	ADJ	A	Gender=Fem|Number=Sing	4	amod	_	_
+6	in	in	ADP	E	_	7	case	_	_
+7	rivolta	rivolta	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	_
+8	stava	stare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+9	per	per	ADP	E	_	10	mark	_	_
+10	crollare	crollare	VERB	V	VerbForm=Inf	8	advcl	_	_
+11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	regime	regime	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
+13	di	di	ADP	E	_	14	case	_	_
+14	Ramiz	Ramiz	PROPN	SP	_	12	nmod	_	_
+15	Alia	Alia	PROPN	SP	_	14	flat:name	_	SpaceAfter=No
+16	.	.	PUNCT	FS	_	8	punct	_	_
+
+# TODO: handle Prosp (cominciare a)
+# sent_id = isst_tanl-390
+# text = Dieci anni fa aveva cominciato a viaggiare nello Zaire, si era legato ai volontari lecchesi per collaborare a mille progetti:
+1	Dieci	dieci	NUM	N	NumType=Card	2	nummod	_	_
+2	anni	anno	NOUN	S	Gender=Masc|Number=Plur	5	obl	_	_
+3	fa	fa	ADV	B	_	2	advmod	_	_
+4	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux	_	_
+5	cominciato	cominciare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6	a	a	ADP	E	_	7	mark	_	_
+7	viaggiare	viaggiare	VERB	V	VerbForm=Inf	5	xcomp	_	_
+8-9	nello	_	_	_	_	_	_	_	_
+8	in	in	ADP	E	_	10	case	_	_
+9	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Zaire	Zaire	PROPN	SP	_	7	obl	_	SpaceAfter=No
+11	,	,	PUNCT	FF	_	14	punct	_	_
+12	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	14	expl	_	_
+13	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	14	aux	_	_
+14	legato	legare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_
+15-16	ai	_	_	_	_	_	_	_	_
+15	a	a	ADP	E	_	17	case	_	_
+16	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
+17	volontari	volontario	NOUN	S	Gender=Masc|Number=Plur	14	obl	_	_
+18	lecchesi	lecchese	ADJ	A	Number=Plur	17	amod	_	_
+19	per	per	ADP	E	_	20	mark	_	_
+20	collaborare	collaborare	VERB	V	VerbForm=Inf	14	advcl	_	_
+21	a	a	ADP	E	_	23	case	_	_
+22	mille	mille	NUM	N	NumType=Card	23	nummod	_	_
+23	progetti	progetto	NOUN	S	Gender=Masc|Number=Plur	20	obl	_	SpaceAfter=No
+24	:	:	PUNCT	FC	_	5	punct	_	_
+
+# TODO: handle Prosp (finire di)
+# sent_id = isst_tanl-2169
+# text = GOTEBORG - Ieri l'oro di Didoni, ma la marcia azzurra non ha finito di sognare.
+1	GOTEBORG	Goteborg	PROPN	SP	_	5	nmod	_	_
+2	-	-	PUNCT	FF	_	1	punct	_	_
+3	Ieri	ieri	ADV	B	_	5	advmod	_	_
+4	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	SpaceAfter=No
+5	oro	oro	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+6	di	di	ADP	E	_	7	case	_	_
+7	Didoni	Didoni	PROPN	SP	_	5	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	15	punct	_	_
+9	ma	ma	CCONJ	CC	_	15	cc	_	_
+10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	marcia	marcia	NOUN	S	Gender=Fem|Number=Sing	15	nsubj	_	_
+12	azzurra	azzurro	ADJ	A	Gender=Fem|Number=Sing	11	amod	_	_
+13	non	non	ADV	BN	PronType=Neg	15	advmod	_	_
+14	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	_	_
+15	finito	finire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	conj	_	_
+16	di	di	ADP	E	_	17	mark	_	_
+17	sognare	sognare	VERB	V	VerbForm=Inf	15	xcomp	_	SpaceAfter=No
+18	.	.	PUNCT	FS	_	5	punct	_	_
+
+# venire Pass
+# sent_id = isst_tanl-47
+# text = Le ripetute telefonate hanno finito per mettere in moto i dispositivi di sicurezza e le ricerche dell'utenza dalla quale venivano effettuate.
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	3	det	_	_
+2	ripetute	ripetuto	ADJ	A	Gender=Fem|Number=Plur	3	amod	_	_
+3	telefonate	telefonata	NOUN	S	Gender=Fem|Number=Plur	5	nsubj	_	_
+4	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	finito	finire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6	per	per	ADP	E	_	7	mark	_	_
+7	mettere	mettere	VERB	V	VerbForm=Inf	5	xcomp	_	_
+8	in	in	ADP	E	_	9	case	_	_
+9	moto	moto	NOUN	S	Gender=Masc|Number=Sing	7	obl	_	_
+10	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
+11	dispositivi	dispositivo	NOUN	S	Gender=Masc|Number=Plur	7	obj	_	_
+12	di	di	ADP	E	_	13	case	_	_
+13	sicurezza	sicurezza	NOUN	S	Gender=Fem|Number=Sing	11	nmod	_	_
+14	e	e	CCONJ	CC	_	16	cc	_	_
+15	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	16	det	_	_
+16	ricerche	ricerca	NOUN	S	Gender=Fem|Number=Plur	11	conj	_	_
+17-18	dell'	_	_	_	_	_	_	_	SpaceAfter=No
+17	di	di	ADP	E	_	19	case	_	_
+18	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	19	det	_	_
+19	utenza	utenza	NOUN	S	Gender=Fem|Number=Sing	16	nmod	_	_
+20-21	dalla	_	_	_	_	_	_	_	_
+20	da	da	ADP	E	_	22	case	_	_
+21	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
+22	quale	quale	PRON	PR	Number=Sing|PronType=Rel	24	obl	_	_
+23	venivano	venire	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	24	aux	_	_
+24	effettuate	effettuare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	19	acl:relcl	_	SpaceAfter=No
+25	.	.	PUNCT	FS	_	5	punct	_	_
+
+# aux:pass
+# sent_id = isst_tanl-291
+# text = Sergio Minetto, ex volontario nella Repubblica di Salò, riparatore di frigoriferi, tre figli (due dei quali impegnati nella sinistra), era stato arrestato nella sua abitazione il 17 maggio, su ordine del giudice milanese Guido Salvini.
+1	Sergio	Sergio	PROPN	SP	_	31	nsubj:pass	_	_
+2	Minetto	Minetto	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	FF	_	1	punct	_	_
+4	ex	ex	ADJ	A	_	5	amod	_	_
+5	volontario	volontario	NOUN	S	Gender=Masc|Number=Sing	1	appos	_	_
+6-7	nella	_	_	_	_	_	_	_	_
+6	in	in	ADP	E	_	8	case	_	_
+7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Repubblica	Repubblica	PROPN	SP	_	5	nmod	_	_
+9	di	di	ADP	E	_	10	case	_	_
+10	Salò	Salò	PROPN	SP	_	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	FF	_	12	punct	_	_
+12	riparatore	riparatore	NOUN	S	Gender=Masc|Number=Sing	5	conj	_	_
+13	di	di	ADP	E	_	14	case	_	_
+14	frigoriferi	frigorifero	NOUN	S	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
+15	,	,	PUNCT	FF	_	17	punct	_	_
+16	tre	tre	NUM	N	NumType=Card	17	nummod	_	_
+17	figli	figlio	NOUN	S	Gender=Masc|Number=Plur	5	conj	_	_
+18	(	(	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+19	due	due	NUM	N	NumType=Card	23	nsubj	_	_
+20-21	dei	_	_	_	_	_	_	_	_
+20	di	di	ADP	E	_	22	case	_	_
+21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	_	_
+22	quali	quale	PRON	PR	Number=Plur|PronType=Rel	19	nmod	_	_
+23	impegnati	impegnare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	17	acl:relcl	_	_
+24-25	nella	_	_	_	_	_	_	_	_
+24	in	in	ADP	E	_	26	case	_	_
+25	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	sinistra	sinistra	NOUN	S	Gender=Fem|Number=Sing	23	obl	_	SpaceAfter=No
+27	)	)	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+28	,	,	PUNCT	FF	_	1	punct	_	_
+29	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	31	aux	_	_
+30	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	aux:pass	_	_
+31	arrestato	arrestare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+32-33	nella	_	_	_	_	_	_	_	_
+32	in	in	ADP	E	_	35	case	_	_
+33	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
+34	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	35	det:poss	_	_
+35	abitazione	abitazione	NOUN	S	Gender=Fem|Number=Sing	31	obl	_	_
+36	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	_
+37	17	17	NUM	N	NumType=Card	31	obl	_	_
+38	maggio	maggio	NOUN	S	Gender=Masc|Number=Sing	37	flat	_	SpaceAfter=No
+39	,	,	PUNCT	FF	_	31	punct	_	_
+40	su	su	ADP	E	_	41	case	_	_
+41	ordine	ordine	NOUN	S	Gender=Masc|Number=Sing	31	obl	_	_
+42-43	del	_	_	_	_	_	_	_	_
+42	di	di	ADP	E	_	44	case	_	_
+43	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
+44	giudice	giudice	NOUN	S	Gender=Masc|Number=Sing	41	nmod	_	_
+45	milanese	milanese	ADJ	A	Number=Sing	44	amod	_	_
+46	Guido	Guido	PROPN	SP	_	44	nmod	_	_
+47	Salvini	Salvini	PROPN	SP	_	46	flat:name	_	SpaceAfter=No
+48	.	.	PUNCT	FS	_	31	punct	_	_
+
+# DET (Definite, Gender, Number) + VERB
+# sent_id = isst_tanl-3184
+# text = Recentissima anche la creazione di "Splatter", un composto di marmo e quarzo con una superficie che luccica secondo il variare della luce.
+1	Recentissima	recente	ADJ	A	Degree=Abs|Gender=Fem|Number=Sing	4	amod	_	_
+2	anche	anche	ADV	B	_	4	advmod	_	_
+3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	creazione	creazione	NOUN	S	Gender=Fem|Number=Sing	0	root	_	_
+5	di	di	ADP	E	_	7	case	_	_
+6	"	"	PUNCT	FB	_	7	punct	_	SpaceAfter=No
+7	Splatter	Splatter	PROPN	SP	_	4	nmod	_	SpaceAfter=No
+8	"	"	PUNCT	FB	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	7	punct	_	_
+10	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	_
+11	composto	composto	NOUN	S	Gender=Masc|Number=Sing	7	appos	_	_
+12	di	di	ADP	E	_	13	case	_	_
+13	marmo	marmo	NOUN	S	Gender=Masc|Number=Sing	11	nmod	_	_
+14	e	e	CCONJ	CC	_	15	cc	_	_
+15	quarzo	quarzo	NOUN	S	Gender=Masc|Number=Sing	13	conj	_	_
+16	con	con	ADP	E	_	18	case	_	_
+17	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	_
+18	superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	11	nmod	_	_
+19	che	che	PRON	PR	PronType=Rel	20	nsubj	_	_
+20	luccica	luccicare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+21	secondo	secondo	ADP	E	_	23	case	_	_
+22	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
+23	variare	variare	VERB	V	VerbForm=Inf	20	obl	_	_
+24-25	della	_	_	_	_	_	_	_	_
+24	di	di	ADP	E	_	26	case	_	_
+25	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
+26	luce	luce	NOUN	S	Gender=Fem|Number=Sing	23	obl	_	SpaceAfter=No
+27	.	.	PUNCT	FS	_	4	punct	_	_
+
+# DET (no Definite)
+# sent_id = isst_tanl-1572
+# text = Ma è lui, Nanni, che assume, nel suo stesso sottrarsi, un ruolo pubblico di guru che chiede di essere giudicato.
+1	Ma	ma	CCONJ	CC	_	3	cc	_	_
+2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	lui	lui	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	3	punct	_	_
+5	Nanni	Nanni	PROPN	SP	_	3	appos	_	SpaceAfter=No
+6	,	,	PUNCT	FF	_	3	punct	_	_
+7	che	che	PRON	PR	PronType=Rel	8	nsubj	_	_
+8	assume	assumere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	8	punct	_	_
+10-11	nel	_	_	_	_	_	_	_	_
+10	in	in	ADP	E	_	14	case	_	_
+11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+12	suo	suo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	14	det:poss	_	_
+13	stesso	stesso	ADJ	A	Gender=Masc|Number=Sing	14	amod	_	_
+14-15	sottrarsi	_	_	_	_	_	_	_	SpaceAfter=No
+14	sottrar	sottrarre	VERB	V	VerbForm=Inf	8	obl	_	_
+15	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	14	obj	_	_
+16	,	,	PUNCT	FF	_	8	punct	_	_
+17	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	ruolo	ruolo	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	_
+19	pubblico	pubblico	ADJ	A	Gender=Masc|Number=Sing	18	amod	_	_
+20	di	di	ADP	E	_	21	case	_	_
+21	guru	guru	NOUN	S	Gender=Masc	18	nmod	_	_
+22	che	che	PRON	PR	PronType=Rel	23	nsubj	_	_
+23	chiede	chiedere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_
+24	di	di	ADP	E	_	26	mark	_	_
+25	essere	essere	AUX	VA	VerbForm=Inf	26	aux	_	_
+26	giudicato	giudicare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	xcomp	_	SpaceAfter=No
+27	.	.	PUNCT	FS	_	3	punct	_	_
+
+# DET (lemma based, definiteness and demonstrative) + VERB
+# sent_id = tut-3192
+# text = Le donne si facevano la croce quando la vedevano passare, sola come una cagnaccia, con quell'andare randagio e sospettoso della lupa affamata;
+1	Le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
+2	donne	donna	NOUN	S	Gender=Fem|Number=Plur	4	nsubj	_	_
+3	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	4	iobj	_	_
+4	facevano	fare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	croce	croce	NOUN	S	Gender=Fem|Number=Sing	4	obj	_	_
+7	quando	quando	SCONJ	CS	_	9	mark	_	_
+8	la	la	PRON	PC	Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+9	vedevano	vedere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	4	advcl	_	_
+10	passare	passare	VERB	V	VerbForm=Inf	9	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	FF	_	10	punct	_	_
+12	sola	solo	ADJ	A	Gender=Fem|Number=Sing	10	xcomp	_	_
+13	come	come	ADP	E	_	15	case	_	_
+14	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
+15	cagnaccia	cagnaccia	NOUN	S	Gender=Fem|Number=Sing	12	obl	_	SpaceAfter=No
+16	,	,	PUNCT	FF	_	10	punct	_	_
+17	con	con	ADP	E	_	19	case	_	_
+18	quell'	quello	DET	DD	Number=Sing|PronType=Dem	19	det	_	SpaceAfter=No
+19	andare	andare	VERB	V	VerbForm=Inf	10	obl	_	_
+20	randagio	randagio	ADJ	A	Gender=Masc|Number=Sing	19	xcomp	_	_
+21	e	e	CCONJ	CC	_	22	cc	_	_
+22	sospettoso	sospettoso	ADJ	A	Gender=Masc|Number=Sing	20	conj	_	_
+23-24	della	_	_	_	_	_	_	_	_
+23	di	di	ADP	E	_	25	case	_	_
+24	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
+25	lupa	lupo	NOUN	S	Gender=Fem|Number=Sing	19	obl	_	_
+26	affamata	affamato	ADJ	A	Gender=Fem|Number=Sing	25	amod	_	SpaceAfter=No
+27	;	;	PUNCT	FC	_	4	punct	_	_
+
+# POLARITY NEG
+# sent_id = isst_tanl-129
+# text = Fanno fatica ad ammettere che una mescolanza misteriosa di fattori genetici, di educazione e di stimoli ambientali, possa produrre individui che sanno fare cose che essi non potranno mai nemmeno immaginare.
+1	Fanno	fare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	fatica	fatica	NOUN	S	Gender=Fem|Number=Sing	1	obj	_	_
+3	ad	a	ADP	E	_	4	mark	_	_
+4	ammettere	ammettere	VERB	V	VerbForm=Inf	2	acl	_	_
+5	che	che	SCONJ	CS	_	21	mark	_	_
+6	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
+7	mescolanza	mescolanza	NOUN	S	Gender=Fem|Number=Sing	21	nsubj	_	_
+8	misteriosa	misterioso	ADJ	A	Gender=Fem|Number=Sing	7	amod	_	_
+9	di	di	ADP	E	_	10	case	_	_
+10	fattori	fattore	NOUN	S	Gender=Masc|Number=Plur	7	nmod	_	_
+11	genetici	genetico	ADJ	A	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	14	punct	_	_
+13	di	di	ADP	E	_	14	case	_	_
+14	educazione	educazione	NOUN	S	Gender=Fem|Number=Sing	10	conj	_	_
+15	e	e	CCONJ	CC	_	17	cc	_	_
+16	di	di	ADP	E	_	17	case	_	_
+17	stimoli	stimolo	NOUN	S	Gender=Masc|Number=Plur	10	conj	_	_
+18	ambientali	ambientale	ADJ	A	Number=Plur	17	amod	_	SpaceAfter=No
+19	,	,	PUNCT	FF	_	7	punct	_	_
+20	possa	potere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	_	_
+21	produrre	produrre	VERB	V	VerbForm=Inf	4	ccomp	_	_
+22	individui	individuo	NOUN	S	Gender=Masc|Number=Plur	21	obj	_	_
+23	che	che	PRON	PR	PronType=Rel	24	nsubj	_	_
+24	sanno	sapere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	22	acl:relcl	_	_
+25	fare	fare	VERB	V	VerbForm=Inf	24	xcomp	_	_
+26	cose	cosa	NOUN	S	Gender=Fem|Number=Plur	25	obj	_	_
+27	che	che	PRON	PR	PronType=Rel	33	obj	_	_
+28	essi	essi	PRON	PE	Gender=Masc|Number=Plur|Person=3|PronType=Prs	33	nsubj	_	_
+29	non	non	ADV	BN	PronType=Neg	33	advmod	_	_
+30	potranno	potere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	33	aux	_	_
+31	mai	mai	ADV	B	_	33	advmod	_	_
+32	nemmeno	nemmeno	ADV	BN	PronType=Neg	33	advmod	_	_
+33	immaginare	immaginare	VERB	V	VerbForm=Inf	26	acl:relcl	_	SpaceAfter=No
+34	.	.	PUNCT	FS	_	1	punct	_	_
+
+# non-MODAL-non-VERB
+# sent_id = isst_tanl-3203
+# text = Quando si parla di piastrelle a mano non si può non citare la produzione di Vietri.
+1	Quando	quando	SCONJ	CS	_	3	mark	_	_
+2	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	3	expl:impers	_	_
+3	parla	parlare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advcl	_	_
+4	di	di	ADP	E	_	5	case	_	_
+5	piastrelle	piastrella	NOUN	S	Gender=Fem|Number=Plur	3	obl	_	_
+6	a	a	ADP	E	_	7	case	_	_
+7	mano	mano	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	_
+8	non	non	ADV	BN	PronType=Neg	12	advmod	_	_
+9	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	12	expl:impers	_	_
+10	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+11	non	non	ADV	BN	PronType=Neg	12	advmod	_	_
+12	citare	citare	VERB	V	VerbForm=Inf	0	root	_	_
+13	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
+14	produzione	produzione	NOUN	S	Gender=Fem|Number=Sing	12	obj	_	_
+15	di	di	ADP	E	_	16	case	_	_
+16	Vietri	Vietri	PROPN	SP	_	14	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	FS	_	12	punct	_	_
+
+# MODAL-non-VERB
+# sent_id = tut-3141
+# text = E' questa l'opinione del capogruppo socialista alla Camera, Nicola Capria, che giudica le due iniziative «oggettivamente destabilizzanti» perché «difficilmente possono non avere come bersaglio il governo visto che tendono a corroderne la maggioranza», e aggiunge che è un vizio tipico delle correnti democristiane trasferire i contrasti interni di partito sul terreno delle istituzioni.
+1	E'	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	questa	questo	PRON	PD	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	_
+3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	SpaceAfter=No
+4	opinione	opinione	NOUN	S	Gender=Fem|Number=Sing	2	nsubj	_	_
+5-6	del	_	_	_	_	_	_	_	_
+5	di	di	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	capogruppo	capogruppo	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	_
+8	socialista	socialista	ADJ	A	Number=Sing	7	amod	_	_
+9-10	alla	_	_	_	_	_	_	_	_
+9	a	a	ADP	E	_	11	case	_	_
+10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Camera	Camera	PROPN	SP	_	7	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	FF	_	7	punct	_	_
+13	Nicola	Nicola	PROPN	SP	_	7	appos	_	_
+14	Capria	Capria	PROPN	SP	_	13	flat:name	_	SpaceAfter=No
+15	,	,	PUNCT	FF	_	7	punct	_	_
+16	che	che	PRON	PR	PronType=Rel	17	nsubj	_	_
+17	giudica	giudicare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+18	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	20	det	_	_
+19	due	due	NUM	N	NumType=Card	20	nummod	_	_
+20	iniziative	iniziativa	NOUN	S	Gender=Fem|Number=Plur	17	obj	_	_
+21	«	«	PUNCT	FB	_	23	punct	_	SpaceAfter=No
+22	oggettivamente	oggettivamente	ADV	B	_	23	advmod	_	_
+23	destabilizzanti	destabilizzare	VERB	V	Number=Plur|Tense=Pres|VerbForm=Part	17	xcomp	_	SpaceAfter=No
+24	»	»	PUNCT	FB	_	23	punct	_	_
+25	perché	perché	SCONJ	CS	_	30	mark	_	_
+26	«	«	PUNCT	FB	_	30	punct	_	SpaceAfter=No
+27	difficilmente	difficilmente	ADV	B	_	30	advmod	_	_
+28	possono	potere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	_
+29	non	non	ADV	BN	PronType=Neg	30	advmod	_	_
+30	avere	avere	VERB	V	VerbForm=Inf	17	advcl	_	_
+31	come	come	ADP	E	_	32	case	_	_
+32	bersaglio	bersaglio	NOUN	S	Gender=Masc|Number=Sing	30	obl	_	_
+33	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
+34	governo	governo	NOUN	S	Gender=Masc|Number=Sing	30	obj	_	_
+35	visto	vedere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	advcl	_	_
+36	che	che	SCONJ	CS	_	37	mark	_	_
+37	tendono	tendere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	ccomp	_	_
+38	a	a	ADP	E	_	39	mark	_	_
+39-40	corroderne	_	_	_	_	_	_	_	_
+39	corroder	corrodere	VERB	V	VerbForm=Inf	37	xcomp	_	_
+40	ne	ne	PRON	PC	Clitic=Yes|PronType=Prs	39	iobj	_	_
+41	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
+42	maggioranza	maggioranza	NOUN	S	Gender=Fem|Number=Sing	39	obj	_	SpaceAfter=No
+43	»	»	PUNCT	FB	_	30	punct	_	SpaceAfter=No
+44	,	,	PUNCT	FF	_	46	punct	_	_
+45	e	e	CCONJ	CC	_	46	cc	_	_
+46	aggiunge	aggiungere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	conj	_	_
+47	che	che	SCONJ	CS	_	50	mark	_	_
+48	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	50	cop	_	_
+49	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	50	det	_	_
+50	vizio	vizio	NOUN	S	Gender=Masc|Number=Sing	46	ccomp	_	_
+51	tipico	tipico	ADJ	A	Gender=Masc|Number=Sing	50	amod	_	_
+52-53	delle	_	_	_	_	_	_	_	_
+52	di	di	ADP	E	_	54	case	_	_
+53	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	54	det	_	_
+54	correnti	corrente	NOUN	S	Gender=Fem|Number=Plur	51	obl	_	_
+55	democristiane	democristiano	ADJ	A	Gender=Fem|Number=Plur	54	amod	_	_
+56	trasferire	trasferire	VERB	V	VerbForm=Inf	50	csubj	_	_
+57	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	58	det	_	_
+58	contrasti	contrasto	NOUN	S	Gender=Masc|Number=Plur	56	obj	_	_
+59	interni	interno	ADJ	A	Gender=Masc|Number=Plur	58	amod	_	_
+60	di	di	ADP	E	_	61	case	_	_
+61	partito	partito	NOUN	S	Gender=Masc|Number=Sing	58	nmod	_	_
+62-63	sul	_	_	_	_	_	_	_	_
+62	su	su	ADP	E	_	64	case	_	_
+63	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	64	det	_	_
+64	terreno	terreno	NOUN	S	Gender=Masc|Number=Sing	56	obl	_	_
+65-66	delle	_	_	_	_	_	_	_	_
+65	di	di	ADP	E	_	67	case	_	_
+66	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	67	det	_	_
+67	istituzioni	istituzione	NOUN	S	Gender=Fem|Number=Plur	64	nmod	_	SpaceAfter=No
+68	.	.	PUNCT	FS	_	2	punct	_	_
+

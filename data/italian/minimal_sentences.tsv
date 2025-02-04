@@ -12,11 +12,25 @@ id	working_status	test_case	sentence	issues
 11	OK	superlative#2	Il gatto grigio è il più bello.
 12	_	dative pronoun	Il gatto gli passa la pallina.	Clitic and PronType need to remain on "gli"?
 13	_	accusative pronoun	Il gatto lo insegue.	Clitic and PronType need to remain on "gli"?
-14	_	demonstrative	Questo catto insegue quel cane.
-15	_	indefinite	Un gatto insegue qualche cane.
-16	_	verbform Ger	Il gatto inseguiva il cane correndo a zampe levate.
-17	_	verbform#2 Inf	Il gatto spinge il cane a scendere dal divano.
-18	_	verbform#3 Fin	Il gatto ha inseguito il cane.
-19	_	verbform#4 Fin	Il cane è stato inseguito dal gatto.
-20	_	tense present
-21	_
+14	OK	demonstrative	Questo gatto insegue quel cane.
+15	_	tense:Imp	Il gatto inseguiva il cane.	add aspect?
+16	_	tense:PassRem	Il gatto inseguì il cane.	add aspect?
+17	_	tense:Fut	Il gatto inseguirà il cane.	add aspect?
+18	OK	tense:PassPross	Il gatto ha inseguito il cane.
+19	OK	tense:TrapPross	Il gatto aveva inseguito il cane.
+20	OK	tense:TrapRem	Il gatto ebbe inseguito il cane.
+21	OK	tense:FutAnt	Il gatto avrà inseguito il cane.
+22	_	mood:CondPres	Il gatto inseguirebbe il cane.	I don't remember what we decided on default aspect value
+23	OK	mood:CondPast	Il gatto avrebbe inseguito il cane.
+24	_	mood:SubjPres	È possibile che il gatto insegua il cane.	I don't remember what we decided on default aspect value
+25	_	mood:SubjImp	È possibile che il gatto inseguisse il cane.	add aspect?
+26	OK	mood:SubjPast	È possibile che il gatto abbia inseguito il cane.
+27	OK	mood:SubjTrap	È possibile che il gatto avesse inseguito il cane.
+28	OK	VerbForm:Ger	Inseguendo il cane, il gatto si è stancato.
+29	_	det+verb	Nell'inseguire il cane, il gatto si è stancato.	I don't remember what we decided on this (what feature we want and need)
+30	_	aspect:Progr	Il gatto sta inseguendo il cane.	VerbForm is not inherited from 'stare' > do we want this?
+31	_	aspect:Progr;tense:Past	Il gatto stava inseguendo il cane.	Same as #30 + do we want to add Perf?
+32	_	not(Pot)	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
+33	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.	Don't know how to handle this, but probably double negation should result in Polarity=Pos?
+34	_	and(value,value)	(1) Il proprietario può decidere se, come e quando usare la cosa.	At the moment other 'case' values do not even arrive on content node
+35	_	or(value,value)	Opere fatte sopra o sotto il suolo.	At the moment other 'case' values do not even arrive on content node

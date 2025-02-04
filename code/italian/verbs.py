@@ -1,6 +1,7 @@
 import logging
 
 import code.italian.lemma_based_decisions as lbd
+# ? do we use utils somewhere?
 import code.italian.ita_utils as ita_utils
 
 logger = logging.getLogger(__name__)
@@ -17,10 +18,11 @@ def process_verb(head_tok, children_toks):
 	for child_tok in children_toks:
 		logger.info("Examining child: %s", child_tok.values())
 
-		# TODO: agreement on pronouns
 
 		# * Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
+
+			# ? Not clear why we add features and then in italian.py we remove those features. We add Person from aux/cop to the head and then in italian.py (line 164) we remove Person.
 
 			if "Person" in child_tok["feats"]:
 				head_tok["ms feats"]["Person"].add(child_tok["feats"]["Person"])
@@ -33,28 +35,31 @@ def process_verb(head_tok, children_toks):
 			elif child_tok["feats"]["VerbForm"] == "Fin":
 				logger.debug("No Mood: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
-			# # Tense
+			# Tense
 			if "Tense" in child_tok["feats"]:
 				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
 				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+				# TODO: c'è un caso in cui il tense del child è Pres ma il tense della head deve essere Past (è andato/ha fatto)
 			else:
 				logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 
 			# Aspect
 			if head_tok["feats"]["VerbForm"] == "Ger":
-				if child_tok["lemma"] == "stare":
+				if child_tok["lemma"] == "stare": # TODO: or "andare"
 					logger.debug("Adding Aspect feature with value Prog") #child_tok["Prog"])
 					# head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
 					head_tok["ms feats"]["Aspect"].add("Prog")
 				else:
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
+
 			# Aspect and Tense with participles = Perfective aspect
 			elif head_tok["feats"]["VerbForm"] == "Part":
+				# TODO: remove "Part" from VerbForm
 				logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
-				if head_tok["feats"]["Tense"] == "Past":
+				if head_tok["feats"]["Tense"] in ["Past"]:
 					logger.debug("Adding Aspect feature with value Perf")
 					head_tok["ms feats"]["Aspect"].add("Perf")
 
@@ -83,13 +88,14 @@ def process_verb(head_tok, children_toks):
 			head_tok["ms feats"]["Voice"].add("Pass")
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			# TODO: handle "Case"
 			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))
 			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
-			
+
+
 
 		# TODO: Indexing (person, number)
 		# * evaluate determiners (cases like "Il perdurare...")
+		# ? From the 'det' we get Gender and Number, but then we remove it in italian.py
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
 			if child_tok.get("feats") and "Gender" in child_tok["feats"]:
 				head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
@@ -125,11 +131,13 @@ def process_verb(head_tok, children_toks):
 		elif child_tok["deprel"] in ["advmod"]:
 
 			if child_tok["lemma"] in ["non"]:
-
-				head_tok["ms feats"]["Polarity"].remove("Pos")
-				head_tok["ms feats"]["Polarity"].add("Neg")
-				# TODO: check what the negation refers to, either modality or polarity
-				# TODO: difference "non possiamo andare" vs. "possiamo non andare"
+				if "Pos" in head_tok["ms feats"]["Polarity"]:
+					head_tok["ms feats"]["Polarity"].remove("Pos")
+					head_tok["ms feats"]["Polarity"].add("Neg")
+					# TODO: check what the negation refers to, either modality or polarity
+					# TODO: difference "non possiamo andare" vs. "possiamo non andare"
+				else:
+					logging.warning("'Pos' not found in Polarity for token: %s", head_tok)
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
@@ -141,6 +149,7 @@ def process_verb(head_tok, children_toks):
 				head_tok["ms feats"][feat].add(head_tok["feats"][feat])
 
 	#Default features: indicative mood, finite verb forms and active voice
+	# TODO: add default tense Pres?
 	if "Mood" not in head_tok["ms feats"]:
 		head_tok["ms feats"]["Mood"].add("Ind")
 	if "VerbForm" not in head_tok["ms feats"]:

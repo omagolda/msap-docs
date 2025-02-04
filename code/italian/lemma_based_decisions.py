@@ -88,8 +88,6 @@ def switch_case(token, parent = None):
 		elif deprel == "mark":
 			return None
 
-	# TODO: avoid falling back to default when deprel == obl:agent
-
 	#======<\Direction focused on origin>==================================
 
 	#======<Direction focused on path>=====================================
@@ -186,7 +184,7 @@ def switch_case(token, parent = None):
 		if deprel == "case":
 			return "Gen"
 		elif deprel == "mark":
-			return None
+			return "di"
 
 	# NOTE: lemma "d'" is here because in ISDT it is not always (17 occurrences) mapped to lemma "di".
 
@@ -265,7 +263,7 @@ def switch_case(token, parent = None):
 		if deprel == "case":
 			return "Cmp"
 		elif deprel == "mark":
-			return None
+			return "che"
 
 	# Example: In effetti siamo più vicini ai funghi che ad ogni altro regno della natura.
 
@@ -410,7 +408,6 @@ def switch_verb_modality(token):
 		return "Nec"
 
 	# TODO: what about prms?
-	# TODO: map to "Nec" 'da + infinitive' constructions? es. "dovrà definire i mutamenti da apportare alla Costituzione" = 'i mutamenti che si devono apportare alla costituzione'.
 
 def switch_det_definitess(token):
 	if token["lemma"] == "nessuno":
@@ -426,7 +423,7 @@ def switch_det_definitess(token):
 		return "Def"
 
 	if token["lemma"] == "quello":
-		return "Ind"
+		return "Def"
 
 	# * accounts for dei, degli, della etc...
 	if token["lemma"] == "di":
