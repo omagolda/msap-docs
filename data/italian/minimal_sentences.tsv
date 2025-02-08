@@ -14,16 +14,16 @@ id	working_status	test_case	sentence	issues
 13	OK	accusative pronoun	Il gatto lo insegue.
 14	OK	demonstrative	Questo gatto insegue quel cane.
 15	OK	tense:Imp	Il gatto inseguiva il cane.
-16	_	tense:PassRem	Il gatto inseguì il cane.	add aspect?
+16	OK	tense:PassRem	Il gatto inseguì il cane.
 17	OK	tense:Fut	Il gatto inseguirà il cane.
 18	OK	tense:PassPross	Il gatto ha inseguito il cane.
 19	OK	tense:TrapPross	Il gatto aveva inseguito il cane.
 20	OK	tense:TrapRem	Il gatto ebbe inseguito il cane.
 21	OK	tense:FutAnt	Il gatto avrà inseguito il cane.
-22	_	mood:CondPres	Il gatto inseguirebbe il cane.	I don't remember what we decided on default aspect value
+22	OK	mood:CondPres	Il gatto inseguirebbe il cane.	
 23	OK	mood:CondPast	Il gatto avrebbe inseguito il cane.
-24	_	mood:SubjPres	È possibile che il gatto insegua il cane.	I don't remember what we decided on default aspect value
-25	_	mood:SubjImp	È possibile che il gatto inseguisse il cane.	add aspect?
+24	OK	mood:SubjPres	È possibile che il gatto insegua il cane.	#TODO mettere Case=Nom per csubj; Case=Acc per ccomp
+25	OK	mood:SubjImp	È possibile che il gatto inseguisse il cane.	#TODO mettere Case=Nom per csubj; Case=Acc per ccomp
 26	OK	mood:SubjPast	È possibile che il gatto abbia inseguito il cane.
 27	OK	mood:SubjTrap	È possibile che il gatto avesse inseguito il cane.
 28	OK	VerbForm:Ger	Inseguendo il cane, il gatto si è stancato.
@@ -39,3 +39,4 @@ id	working_status	test_case	sentence	issues
 38	_	Nec	Il gatto deve inseguire il cane
 39	_	nessun-Ind+Polarity neg	Nessun gatto può inseguire un cane
 40	_	Voice Passive mood conj	È possibile che il cane sia inseguito dal gatto
+41	_	det+verb	Nell'essere inseguito, il cane si è stancato.	I don't remember what we decided on this (what feature we want and need)
