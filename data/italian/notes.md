@@ -97,6 +97,51 @@ Markers that needs to be discussed
 	* frasi con la negazione (non) che ha advmod (ok)
 	* frasi AUX-non-VERB (ok) e non-AUX-non-VERB (ok)
 
+
+Da Salvi/Vanelli:
+Aspetto:
+* perfettivo:
+	* aoristico
+	* compiuto -> compatibile con *da x tempo*
+
+* imperfettivo:
+	* progressivo
+	* abituale
+	* continuo
+
+Incompatibile con *in x tempo, per x tempo, fino a x, da x e y, tra x e y*. 
+Compatibile con *da x tempo*
+
+Noi facciamo distinzione solo tra perf, imp e prog
+
+Tense & Aspect
+
+Voice Act
+
+* Indic Pres: default Imp, ma casi di Perf che verranno disambiguati a mano (verbi performativi e usato al posto del futuro)
+* Indic Imp: default Imp, ma casi di Perf che verranno disambiguati a mano (evento appena concluso, *arrivava in quel momento* e quando viene usato al posto del condizionale composto *ho aspettato per vedere se venivi* = *se saresti venuto*, e narrativo ha valore aoristico).
+* Indic Past: aspetto perfettivo
+* Indic Past composto: aspetto perfettivo 
+* Fut: default Perf. ma casi di Imp che verranno disambiguati a mano (*Quando arriverai, tutti dormiranno* ok test con *da x tempo*)
+* Fut composto: default Perf.  
+
+Tutto ciò vale solo per l'indic, eliminiamo aspetto su Sub, Cnd, Imp
+
+Perifrasi aspettuali:
+
+stare + Ger -> Aspect = Prog 
+andare, venire -> Aspect = Imp
+
+Tense & Aspect
+Voice Pass
+
+Indic Pres Pass è mangiata
+
+
+### Verbi Nominali
+abbiamo deciso coscientemente che gli infiniti con funzione nominale non hanno Genere e Numero. Nota: nel gold eventualmente aggiungeremo il numero a mano.
+
+
 ---
 # References
 
