@@ -167,7 +167,7 @@ if __name__ == '__main__':
 						del[head_tok["ms feats"]["Person"]]
 
 					# Todo: move into verbs
-					if not head_tok["ms feats"]["VerbForm"] == "Part":
+					if head_tok["ms feats"]["VerbForm"] == "Part":
 						if "Gender" in head_tok["ms feats"]:
 							del[head_tok["ms feats"]["Gender"]]
 						if "Number" in head_tok["ms feats"]:
