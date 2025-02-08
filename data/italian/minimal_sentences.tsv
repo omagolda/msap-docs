@@ -1,21 +1,21 @@
 id	working_status	test_case	sentence	issues
 1	OK	nominative/accusative	Il gatto insegue il cane.
 2	OK	nominal sentence	Il gatto è il Presidente della Repubblica.
-3	_	adjectival agreement	Il gatto grigio è bello.	gender and number are both on "gatto" and "grigio", is it ok?
+3	OK	adjectival agreement	Il gatto grigio è bello.
 4	OK	superlative	Il gatto grigio è bellissimo.
 5	OK	comparative	Il gatto grigio è più bello del gatto nero.
-6	_	voice passive	Il cane è inseguito dal gatto.	verbform on main verb should be "Fin" - inherited from aux
-7	_	voice passive#2	Il cane viene inseguito dal gatto.	same issues as #6
+6	OK	voice passive	Il cane è inseguito dal gatto.
+7	OK	voice passive#2	Il cane viene inseguito dal gatto.
 8	OK	simple negation	Il gatto non insegue il gatto.
-9	_	prodrop	Insegue il cane.	does the empty node need Case=Nom?
+9	OK	prodrop	Insegue il cane.
 10	OK	pronoun features	Lui insegue il cane.
 11	OK	superlative#2	Il gatto grigio è il più bello.
-12	_	dative pronoun	Il gatto gli passa la pallina.	Clitic and PronType need to remain on "gli"?
-13	_	accusative pronoun	Il gatto lo insegue.	Clitic and PronType need to remain on "gli"?
+12	OK	dative pronoun	Il gatto gli passa la pallina.
+13	OK	accusative pronoun	Il gatto lo insegue.
 14	OK	demonstrative	Questo gatto insegue quel cane.
-15	_	tense:Imp	Il gatto inseguiva il cane.	add aspect?
+15	OK	tense:Imp	Il gatto inseguiva il cane.
 16	_	tense:PassRem	Il gatto inseguì il cane.	add aspect?
-17	_	tense:Fut	Il gatto inseguirà il cane.	add aspect?
+17	OK	tense:Fut	Il gatto inseguirà il cane.
 18	OK	tense:PassPross	Il gatto ha inseguito il cane.
 19	OK	tense:TrapPross	Il gatto aveva inseguito il cane.
 20	OK	tense:TrapRem	Il gatto ebbe inseguito il cane.
@@ -28,9 +28,14 @@ id	working_status	test_case	sentence	issues
 27	OK	mood:SubjTrap	È possibile che il gatto avesse inseguito il cane.
 28	OK	VerbForm:Ger	Inseguendo il cane, il gatto si è stancato.
 29	_	det+verb	Nell'inseguire il cane, il gatto si è stancato.	I don't remember what we decided on this (what feature we want and need)
-30	_	aspect:Progr	Il gatto sta inseguendo il cane.	VerbForm is not inherited from 'stare' > do we want this?
+30	OK	aspect:Progr	Il gatto sta inseguendo il cane.
 31	_	aspect:Progr;tense:Past	Il gatto stava inseguendo il cane.	Same as #30 + do we want to add Perf?
 32	_	not(Pot)	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
 33	_	double neg on Pot	Non si può non dire che il gatto stia inseguendo il cane.	Don't know how to handle this, but probably double negation should result in Polarity=Pos?
 34	_	and(value,value)	(1) Il proprietario può decidere se, come e quando usare la cosa.	At the moment other 'case' values do not even arrive on content node
 35	_	or(value,value)	Opere fatte sopra o sotto il suolo.	At the moment other 'case' values do not even arrive on content node
+36	_	Pot	Il gatto può inseguire il cane
+37	_	Des	Il gatto vuole inseguire il cane
+38	_	Nec	Il gatto deve inseguire il cane
+39	_	nessun-Ind+Polarity neg	Nessun gatto può inseguire un cane
+40	_	Voice Passive mood conj	È possibile che il cane sia inseguito dal gatto
