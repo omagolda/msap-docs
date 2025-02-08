@@ -407,8 +407,6 @@ def switch_verb_modality(token):
 	if token["lemma"] == "dovere":
 		return "Nec"
 
-	# TODO: what about prms?
-
 def switch_det_definitess(token):
 	if token["lemma"] == "nessuno":
 		return "Def"

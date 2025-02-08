@@ -15,53 +15,101 @@ def process_verb(head_tok, children_toks):
 	logging.debug("Setting Polarity as Pos")
 	head_tok["ms feats"]["Polarity"].add("Pos")
 
+	# * default voice to Act
+	logging.debug("Setting Voice as Act")
+	head_tok["ms feats"]["Voice"].add("Act")
+
+	# * default aspect to Imp if Mood = Ind
+	logging.debug("Setting Aspct as Imp")
+	if "Mood" in head_tok["feats"] and head_tok["feats"]["Mood"] == "Ind":
+		if head_tok["feats"]["Tense"] in ["Pres", "Imp"]:
+			head_tok["ms feats"]["Aspect"].add("Imp")
+		elif head_tok["feats"]["Tense"] in ["Past", "Fut"]:
+			head_tok["ms feats"]["Aspect"].add("Perf")
+
+	# * default mood
+	if "Mood" in head_tok["feats"]:
+		head_tok["ms feats"]["Mood"] = head_tok["feats"]["Mood"]
+
+	# * default tense
+	if "Tense" in head_tok["feats"]:
+		head_tok["ms feats"]["VerbForm"] = head_tok["feats"]["VerbForm"]
+
+	# * default verbform
+	head_tok["ms feats"]["VerbForm"] = head_tok["feats"]["VerbForm"]
+
 	for child_tok in children_toks:
 		logger.info("Examining child: %s", child_tok.values())
-
 
 		# * Auxiliaries and copulas
 		if child_tok["deprel"] in ["aux","cop"]:
 
-			# ? Not clear why we add features and then in italian.py we remove those features. We add Person from aux/cop to the head and then in italian.py (line 164) we remove Person.
-
 			if "Person" in child_tok["feats"]:
 				head_tok["ms feats"]["Person"].add(child_tok["feats"]["Person"])
 
-			# TAM
-			# Mood
-			if "Mood" in child_tok["feats"]:
-				logger.debug("Adding Mood feature with value %s", child_tok["feats"]["Mood"])
-				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-			elif child_tok["feats"]["VerbForm"] == "Fin":
-				logger.debug("No Mood: Aux/cop %s with features %s", child_tok, child_tok["feats"])
-
-			# Tense
-			if "Tense" in child_tok["feats"]:
-				logger.debug("Adding Tense feature with value %s", child_tok["feats"]["Tense"])
-				head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-				# TODO: c'è un caso in cui il tense del child è Pres ma il tense della head deve essere Past (è andato/ha fatto)
-			else:
-				logger.debug("No Tense: Aux/cop %s with features %s", child_tok, child_tok["feats"])
-
+			del head_tok["ms feats"]["VerbForm"]
+			head_tok["ms feats"]["VerbForm"] = child_tok["feats"]["VerbForm"]
 
 			# Aspect
 			if head_tok["feats"]["VerbForm"] == "Ger":
-				if child_tok["lemma"] == "stare": # TODO: or "andare"
-					logger.debug("Adding Aspect feature with value Prog") #child_tok["Prog"])
-					# head_tok["ms feats"]["Aspect"].add(child_tok["Prog"])
+				if child_tok["lemma"] == "stare":
+					logger.debug("Adding Aspect feature with value Prog")
+					del head_tok["ms feats"]["Aspect"]
 					head_tok["ms feats"]["Aspect"].add("Prog")
+
+				elif child_tok["lemma"] in ["andare", "venire"]:
+					logger.debug("Adding Aspect feature with value Imp")
+					del head_tok["ms feats"]["Aspect"]
+					head_tok["ms feats"]["Aspect"].add("Imp")
 				else:
 					logger.warning("Head '%s' is 'Ger' but Aux/cop '%s' has incompatible lemma",
 									head_tok, child_tok)
 
-			# Aspect and Tense with participles = Perfective aspect
 			elif head_tok["feats"]["VerbForm"] == "Part":
-				# TODO: remove "Part" from VerbForm
-				logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
-				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
-				if head_tok["feats"]["Tense"] in ["Past"]:
-					logger.debug("Adding Aspect feature with value Perf")
+
+				# logger.debug("Adding VerbForm feature with value %s", child_tok["feats"]["VerbForm"])
+				# head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
+				# if head_tok["feats"]["Tense"] in ["Past"]:
+				# 	logger.debug("Adding Aspect feature with value Perf")
+				# 	del head_tok["ms feats"]["Aspect"]
+				# 	head_tok["ms feats"]["Aspect"].add("Perf")
+
+				# Indicativo perfetto composto > sono andata
+				# Congiuntivo perfetto > sia andata
+				# Condizionale composto > sarei andata
+
+				if child_tok["feats"]["Tense"] == "Pres":
+					if child_tok["feats"]["Mood"] == "Ind":
+						head_tok["ms feats"]["Aspect"].add("Perf")
+					head_tok["ms feats"]["Tense"].add("Past")
+					head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+					# del head_tok["ms feats"]["VerbForm"]
+					# head_tok["ms feats"]["VerbForm"].add("Fin")
+
+				# Indicativo piùcheperfetto > ero andata
+				# Congiuntivo piucheperfetto > fossi andata
+
+				if child_tok["feats"]["Tense"] == "Imp":
+					if child_tok["feats"]["Mood"] == "Ind":
+						head_tok["ms feats"]["Aspect"].add("Perf")
+					head_tok["ms feats"]["Tense"].add("Past")
+					head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+					# del head_tok["ms feats"]["VerbForm"]
+					# head_tok["ms feats"]["VerbForm"].add("Fin")
+
+				# Indicativo trapassato > fui andata
+				# Indicativo futuro composto > sarò andata
+
+				if child_tok["feats"]["Tense"] in ["Past", "Fut"]:
 					head_tok["ms feats"]["Aspect"].add("Perf")
+					head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+					head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+					# del head_tok["ms feats"]["VerbForm"]
+					# head_tok["ms feats"]["VerbForm"].add("Fin")
+
+			else:
+				logger.warning("Head '%s' is neither 'Ger' not 'Part'",
+									head_tok)
 
 			# Modality
 			modality = lbd.switch_verb_modality(child_tok)
@@ -69,23 +117,28 @@ def process_verb(head_tok, children_toks):
 				logger.debug("Adding Modality feature with value %s", modality)
 				head_tok["ms feats"]["Modality"].add(modality)
 
-			# Voice:
-			if child_tok["lemma"] == "venire":
-				logger.debug("Adding Voice feature with value 'Pass'")
-				head_tok["ms feats"]["Voice"].add("Pass")
-			# else:
-				# !! why the warning?
-				# logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
-
-			# if child_tok["lemma"] == "fare": #it is probably not defined as aux
-			# 	logger.debug("Adding Voice feature with value %s", child_tok["Cau"])
-			# 	head_tok["ms feats"]["Voice"].add(child_tok["Cau"])
-			# else:
-			# 	logger.warning("Aux/cop %s with features %s", child_tok, child_tok["feats"])
 
 		elif child_tok["deprel"] == "aux:pass":
 			logger.debug("Adding Voice feature with value 'Pass'")
 			head_tok["ms feats"]["Voice"].add("Pass")
+
+			# Indicativo presente
+
+
+			# Indicativo imperfetto
+			# Indicativo passato
+			# Indicativo futuro
+
+			# Congiuntivo presente
+			# Congiuntivo imperfetto
+
+			# Condizionale presente
+
+			if child_tok.get("feats"):
+				if "VerbForm" in child_tok["feats"] and child_tok["feats"]["VerbForm"] == "Fin":
+					head_tok["ms feats"]["VerbForm"] = set()
+					head_tok["ms feats"]["VerbForm"].add("Fin")
+
 
 		elif child_tok["deprel"] in ["case", "mark"]:
 			logger.debug("Adding Case feature with value %s", lbd.switch_case(child_tok, head_tok))

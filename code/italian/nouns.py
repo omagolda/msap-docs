@@ -101,3 +101,32 @@ def process_noun(head_tok, children_toks):
 							child_tok, child_tok["upos"], child_tok["deprel"])
 
 	# TODO: Handle aspect
+
+
+def update_features(head_tok, children_toks):
+
+	logging.debug("Examining content children of node %s/%s", head_tok, head_tok["upos"])
+	# head_tok["content"] = True
+	# ita_utils.copy_features(head_tok)
+
+	for child_tok in children_toks:
+		logger.info("Examining child: %s", child_tok.values())
+
+		if child_tok["deprel"] in ["amod"]:
+			# print("HERE")
+			if child_tok.get("feats"):
+				# print(head_tok["ms feats"])
+				# print(child_tok["feats"])
+				# input()
+
+				if "Gender" in child_tok["feats"]:
+					head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
+					del child_tok["ms feats"]["Gender"]
+
+				if "Number" in child_tok["feats"]:
+					head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
+					del child_tok["ms feats"]["Number"]
+
+		else:
+			logging.warning("Node %s/%s with deprel '%s' needs new rules",
+							child_tok, child_tok["upos"], child_tok["deprel"])

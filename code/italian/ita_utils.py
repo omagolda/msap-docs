@@ -35,4 +35,6 @@ def create_abstract_nsubj(head: conllu.Token):
 			for value in head['ms feats'][attr]:
 				abstract_nsubj['ms feats'][attr].add(value)
 
+	abstract_nsubj["ms feats"]["Case"].add("Nom")
+
 	return abstract_nsubj

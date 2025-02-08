@@ -93,13 +93,14 @@ if __name__ == '__main__':
 			new_nodes = [] # * list to contain abstract nodes
 
 			# * visit tree in depth-first fashion
-			for head_tok, children_toks in DFS(tree):
+			for head_tok, all_children_toks in DFS(tree):
 
 				found_nsubj = any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] \
-								for tok in children_toks)
+								for tok in all_children_toks)
 
 				# * only select non-content children: information will be gathered only from those
-				children_toks = [tok for tok in children_toks if not tok["content"]]
+				children_toks = [tok for tok in all_children_toks if not tok["content"]]
+				content_children = [tok for tok in all_children_toks if tok["content"]]
 
 				for child_tok in children_toks:
 					# * Handling cc
@@ -174,8 +175,11 @@ if __name__ == '__main__':
 
 				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
+					nouns.update_features(head_tok, content_children)
+
 				elif head_tok["upos"] in ["ADJ"]:
 					adjs.process_adj(head_tok, children_toks)
+
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
 
