@@ -67,16 +67,19 @@ def process_adj(head_tok, children_toks):
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
 			elif lbd.switch_det_definitess(child_tok):
-				definitess = lbd.switch_det_definitess(child_tok)
+				definitess, polarity = lbd.switch_det_definitess(child_tok)
 				logging.debug("Adding Definite feature with value %s", definitess)
 				head_tok["ms feats"]["Definite"].add(definitess)
 
+				if polarity:
+					head_tok["ms feats"]["Polarity"].add(polarity)
+
 			# * add polarity
 			# ? should polarity be set to "Pos" by default?
-			polarity = lbd.switch_det_polarity(child_tok)
-			if polarity:
-				logging.debug("Adding Polarity feature with value %s", polarity)
-				head_tok["ms feats"]["Polarity"].add(polarity)
+			# polarity = lbd.switch_det_polarity(child_tok)
+			# if polarity:
+			# 	logging.debug("Adding Polarity feature with value %s", polarity)
+			# 	head_tok["ms feats"]["Polarity"].add(polarity)
 
 			if child_tok.get("feats") and "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
 				dem = lbd.switch_det_dem(child_tok)

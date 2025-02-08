@@ -408,24 +408,26 @@ def switch_verb_modality(token):
 		return "Nec"
 
 def switch_det_definitess(token):
-	if token["lemma"] == "nessuno":
-		return "Def"
+
+	polarity = None
+	if token["lemma"] in ["nessun", "nessuna", "nessuno"]:
+		return "Def", "Neg"
 
 	if token["lemma"] == "alcuno":
-		return "Def"
+		return "Def", polarity
 
 	if token["lemma"] == "qualche":
-		return "Ind"
+		return "Ind", polarity
 
 	if token["lemma"] == "questo":
-		return "Def"
+		return "Def", polarity
 
 	if token["lemma"] == "quello":
-		return "Def"
+		return "Def", polarity
 
 	# * accounts for dei, degli, della etc...
 	if token["lemma"] == "di":
-		return "Ind"
+		return "Ind", polarity
 
 
 def switch_det_polarity(token):
