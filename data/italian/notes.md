@@ -141,7 +141,8 @@ Indic Pres Pass è mangiata
 ### Verbi Nominali
 abbiamo deciso coscientemente che gli infiniti con funzione nominale non hanno Genere e Numero. Nota: nel gold eventualmente aggiungeremo il numero a mano.
 
-
+### And/or(value, value)
+a mano
 ---
 # References
 

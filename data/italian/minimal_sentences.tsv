@@ -7,7 +7,7 @@ id	working_status	test_case	sentence	issues
 6	OK	voice passive	Il cane è inseguito dal gatto.
 7	OK	voice passive#2	Il cane viene inseguito dal gatto.
 8	OK	simple negation	Il gatto non insegue il gatto.
-9	OK	prodrop	Insegue il cane.
+9	_	prodrop	Insegue il cane.	One more column.
 10	OK	pronoun features	Lui insegue il cane.
 11	OK	superlative#2	Il gatto grigio è il più bello.
 12	OK	dative pronoun	Il gatto gli passa la pallina.
@@ -31,8 +31,7 @@ id	working_status	test_case	sentence	issues
 30	OK	aspect:Progr	Il gatto sta inseguendo il cane.
 31	OK	aspect:Progr;tense	Il gatto stava inseguendo il cane.	
 32	_	not(Pot)	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
-34	_	and(value,value)	(1) Il proprietario può decidere se, come e quando usare la cosa.	At the moment other 'case' values do not even arrive on content node
-35	_	or(value,value)	Opere fatte sopra o sotto il suolo.	At the moment other 'case' values do not even arrive on content node
+33	_	Neg + Pot	Il gatto può non inseguire il cane.
 36	_	Pot	Il gatto può inseguire il cane	Aggiungere aspetto
 37	_	Des	Il gatto vuole inseguire il cane	Aggiungere aspetto
 38	_	Nec	Il gatto deve inseguire il cane	Aggiungere aspetto
