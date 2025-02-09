@@ -57,6 +57,7 @@ if __name__ == '__main__':
 
 		for tree, tokenlist in tqdm.tqdm(zip(parse_trees, parse_lists)):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
+			# print("Processing sentence id: %s", tokenlist.metadata["sent_id"])
 			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 			# print(tokenlist.metadata["text"])
 

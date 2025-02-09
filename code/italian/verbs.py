@@ -42,6 +42,9 @@ def process_verb(head_tok, children_toks):
 	# if "Person" in head_tok["feats"]:
 	# 	head_tok["ms feats"]["Person"].add(head_tok["feats"]["Person"])
 
+	pos_non = []
+	pos_mod = []
+
 	for child_tok in children_toks:
 		logger.info("Examining child: %s", child_tok.values())
 
@@ -120,6 +123,8 @@ def process_verb(head_tok, children_toks):
 			# Modality
 			modality = lbd.switch_verb_modality(child_tok)
 			if modality:
+
+				pos_mod.append(child_tok["id"])
 				logger.debug("Adding Modality feature with value %s", modality)
 				head_tok["ms feats"]["Modality"].add(modality)
 				if "Mood" in child_tok["feats"]:
@@ -221,18 +226,38 @@ def process_verb(head_tok, children_toks):
 		elif child_tok["deprel"] in ["advmod"]:
 
 			if child_tok["lemma"] in ["non"]:
-				if "Pos" in head_tok["ms feats"]["Polarity"]:
-					head_tok["ms feats"]["Polarity"].remove("Pos")
-					head_tok["ms feats"]["Polarity"].add("Neg")
+				pos_non.append(child_tok["id"])
+				# if "Pos" in head_tok["ms feats"]["Polarity"]:
+				# 	head_tok["ms feats"]["Polarity"].remove("Pos")
+				# 	head_tok["ms feats"]["Polarity"].add("Neg")
 					# TODO: check what the negation refers to, either modality or polarity
 					# TODO: difference "non possiamo andare" vs. "possiamo non andare"
-				else:
-					logging.warning("'Pos' not found in Polarity for token: %s", head_tok)
+				# else:
+				# 	logging.warning("'Pos' not found in Polarity for token: %s", head_tok)
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
 
+
+	if len(pos_non)>0 and len(pos_mod)>0:
+		assert(len(pos_mod)==1)
+
+		pos_mod = pos_mod[0]
+		for i in pos_non:
+			if i < pos_mod:
+				modality_value = head_tok["ms feats"]["Modality"].pop()
+				del head_tok["ms feats"]["Modality"]
+				head_tok["ms feats"]["Modality"].add(f"not({modality_value})")
+			else:
+				del head_tok["ms feats"]["Polarity"]
+				head_tok["ms feats"]["Polarity"].add("Neg")
+
+	elif len(pos_non)>0:
+		del head_tok["ms feats"]["Polarity"]
+		head_tok["ms feats"]["Polarity"].add("Neg")
+
+	# print(pos_non, pos_mod)
 	# if head_tok.get("feats"):
 	# 	for feat in head_tok.get("feats"):
 	# 		if not feat in head_tok["ms feats"]:
