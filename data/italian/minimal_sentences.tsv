@@ -30,15 +30,17 @@ id	working_status	test_case	sentence	issues
 29	OK	det+verb	Nell'inseguire il cane, il gatto si è stancato.	
 30	OK	aspect:Progr	Il gatto sta inseguendo il cane.
 31	OK	aspect:Progr;tense	Il gatto stava inseguendo il cane.	
-32	_	not(Pot)	Il gatto non può inseguire il cane.	Probably it should be Modality=not(Pot), right?
-33	_	Neg + Pot	Il gatto può non inseguire il cane.
-36	_	Pot	Il gatto può inseguire il cane	Aggiungere aspetto
-37	_	Des	Il gatto vuole inseguire il cane	Aggiungere aspetto
-38	_	Nec	Il gatto deve inseguire il cane	Aggiungere aspetto
+32	OK	not(Pot)	Il gatto non può inseguire il cane.
+33	OK	Neg + Pot	Il gatto può non inseguire il cane.
+36	OK	Pot	Il gatto può inseguire il cane	
+37	OK	Des	Il gatto vuole inseguire il cane	
+38	OK	Nec	Il gatto deve inseguire il cane	
 39	OK	nessun-Ind+Polarity neg	Nessun cane può inseguire un gatto	
 40	OK	Voice Passive mood conj pres	È possibile che il cane sia inseguito dal gatto	 
-41	_	det+verb	Nell'essere inseguito, il cane si è stancato.	Tense dell'infinito! Al presente non lo vogliamo, ma al passato sì. Shiftare cose quando c'è aux:pass.
-42	_	Pot	Il gatto ha potuto inseguire il cane	Aggiungere aspetto, Mood; sistemare VerbForm
-43	_	Des	Il gatto ha voluto inseguire il cane	Aggiungere aspetto, Mood; sistemare VerbForm
-44	_	Nec	Il gatto ha dovuto inseguire il cane	Aggiungere aspetto, Mood; sistemare VerbForm
+41	OK	det+verb	Nell'essere inseguito, il cane si è stancato.
+42	OK	Pot	Il gatto ha potuto inseguire il cane
+43	OK	Des	Il gatto ha voluto inseguire il cane
+44	OK	Nec	Il gatto ha dovuto inseguire il cane
 45	_	Voice Passive mood conj pass	È possibile che il cane sia inseguito dal gatto	Togliere Tense=Pres; Mettere VerbForm=Fin anziché Part.
+46	_	det+verb	Nell'essere stato inseguito, il cane si è stancato.	
+47	_	det+verb	Nel non poter essere stato inseguito, il cane si è stancato. 

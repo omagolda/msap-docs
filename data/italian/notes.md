@@ -109,7 +109,7 @@ Aspetto:
 	* abituale
 	* continuo
 
-Incompatibile con *in x tempo, per x tempo, fino a x, da x e y, tra x e y*. 
+Incompatibile con *in x tempo, per x tempo, fino a x, da x a y, tra x e y*. 
 Compatibile con *da x tempo*
 
 Noi facciamo distinzione solo tra perf, imp e prog
@@ -122,7 +122,7 @@ Voice Act
 * Indic Imp: default Imp, ma casi di Perf che verranno disambiguati a mano (evento appena concluso, *arrivava in quel momento* e quando viene usato al posto del condizionale composto *ho aspettato per vedere se venivi* = *se saresti venuto*, e narrativo ha valore aoristico).
 * Indic Past: aspetto perfettivo
 * Indic Past composto: aspetto perfettivo 
-* Fut: default Perf. ma casi di Imp che verranno disambiguati a mano (*Quando arriverai, tutti dormiranno* ok test con *da x tempo*)
+* Fut: no aspetto.
 * Fut composto: default Perf.  
 
 Tutto ciò vale solo per l'indic, eliminiamo aspetto su Sub, Cnd, Imp
@@ -143,6 +143,45 @@ abbiamo deciso coscientemente che gli infiniti con funzione nominale non hanno G
 
 ### And/or(value, value)
 a mano
+
+### Aspect on Mod verbs
+volere e dovere hanno sempre l'aspetto
+potere ha l'aspetto quando è equivalente a be able to, ma non quando è un irrealis e indica l'azione come nel mondo della possibilità. -> disambiguare a mano. 
+
+luigi mangia
+luigi può mangiare -> se è inf, copia tense child // gerundio
+
+la mela sta venendo mangiata da luigi
+la mela stava venendo mangiata da luigi
+
+luigi ha mangiato
+lui
+luigi può mangiare
+
+dovrà aver fatto -> tense: fut (dal aux potere, dovere, volere);
+dovrà essere fatto -> tense: fut
+
+deve fare > tense: dal modale; mood: dal modale; aspect: dal modale
+deve aver fatto > tense: past; 
+deve essere fatto > tense: pres
+deve essere stato fatto > tense: past
+
+sta dovendo mangiare
+se hai progressivizzato il modale, allora dai il progr a tutto e non puoi avere qualcosa come sta dovendo aver mangiato.
+
+Perifrasi aspettuale stare, andare, venire + gerundio (cit. Salvi Vanelli): 
+lemmi = stare, andare, venire
+
+* lemma = stare
+	* asp: progr.
+	* restrizioni:
+		* tempi composti (pass prossimo, piùcheperfetto, trap. prossimo), no perfetto semplice (passato remoto). No Tense Past.
+		* no Mood = imperativo
+		* no Voice = Pass
+
+* lemmi = andare, venire > asp. Imp
+
+
 ---
 # References
 
