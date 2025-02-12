@@ -254,16 +254,18 @@ def process_verb(head_tok, children_toks):
 					if child_tok["feats"]["Mood"] == "Ind":
 						logger.debug("Adding Aspect feature with value Imp")
 						head_tok["ms feats"]["Aspect"].add("Imp")
+				
+				if "feats" in child_tok:
+					logger.debug(f"child_tok['feats']: {child_tok['feats']}")	
+					if child_tok["feats"].get("Tense") == "Fut":
+						head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+						if child_tok["feats"]["Mood"] == "Ind":
+							head_tok["ms feats"]["Aspect"].add("Perf")
 
-				if child_tok["feats"]["Tense"] == "Fut":
-					head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-					if child_tok["feats"]["Mood"] == "Ind":
-						head_tok["ms feats"]["Aspect"].add("Perf")
-
-				elif child_tok["feats"]["Tense"] in ["Pres", "Past", "Imp"]:
-					head_tok["ms feats"]["Tense"].add("Past")
-					if child_tok["feats"]["Mood"] == "Ind":
-						head_tok["ms feats"]["Aspect"].add("Perf")
+					elif child_tok["feats"].get("Tense") in ["Pres", "Past", "Imp"]:
+						head_tok["ms feats"]["Tense"].add("Past")
+						if child_tok["feats"]["Mood"] == "Ind":
+							head_tok["ms feats"]["Aspect"].add("Perf")
 
 			elif child_tok["deprel"] == "aux:pass" and child_tok["feats"]["VerbForm"] == "Fin" :
 
