@@ -175,6 +175,9 @@ def process_verb(head_tok, children_toks):
 		mood_modality_aux = None
 		aspect_modality_aux = None
 
+		del head_tok["ms feats"]["VerbForm"]
+		head_tok["ms feats"]["VerbForm"].add(pos_mod_child["feats"]["VerbForm"])
+
 		if len(modality_aux) == 0:
 			if "Tense" in children_toks_dict[pos_mod]["feats"] and "Mood" in children_toks_dict[pos_mod]["feats"]:
 				tense_modality_aux = children_toks_dict[pos_mod]["feats"]["Tense"]
@@ -183,15 +186,17 @@ def process_verb(head_tok, children_toks):
 			assert(len(modality_aux)==1)
 			modality_aux_child = children_toks_dict[modality_aux[0]]
 
+			if modality_aux_child["lemma"] == "stare":
+				aspect_modality_aux = "Prog"
+
+			# we're supposing 'andare' and 'venire' do not bear auxiliaries themselves
+			if modality_aux_child["lemma"] in ["andare", "venire"]:
+				aspect_modality_aux = "Imp"
+
 			if pos_mod_child["feats"]["VerbForm"] == "Ger":
 				tense_modality_aux = modality_aux_child["feats"]["Tense"]
 				mood_modality_aux = modality_aux_child["feats"]["Mood"]
 
-				if modality_aux_child["lemma"] == "stare":
-					aspect_modality_aux = "Prog"
-				# we're supposing 'andare' and 'venire' do not bear auxiliaries themselves
-				elif modality_aux_child["lemma"] in ["andare", "venire"]:
-					aspect_modality_aux = "Imp"
 
 			elif pos_mod_child["feats"]["VerbForm"] == "Part":
 
@@ -245,6 +250,9 @@ def process_verb(head_tok, children_toks):
 
 			if child_tok["deprel"] in ["aux", "cop"]:
 
+				if child_tok["feats"]["VerbForm"] in ["Inf", "Ger"]:
+					head_tok["ms feats"]["Tense"].add("Past")
+
 				if child_tok["lemma"] == "stare":
 					if child_tok["feats"]["Mood"] == "Ind":
 						logger.debug("Adding Aspect feature with value Prog")
@@ -254,9 +262,9 @@ def process_verb(head_tok, children_toks):
 					if child_tok["feats"]["Mood"] == "Ind":
 						logger.debug("Adding Aspect feature with value Imp")
 						head_tok["ms feats"]["Aspect"].add("Imp")
-				
+
 				if "feats" in child_tok:
-					logger.debug(f"child_tok['feats']: {child_tok['feats']}")	
+					logger.debug(f"child_tok['feats']: {child_tok['feats']}")
 					if child_tok["feats"].get("Tense") == "Fut":
 						head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 						if child_tok["feats"]["Mood"] == "Ind":
