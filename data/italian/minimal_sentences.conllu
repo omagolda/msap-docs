@@ -703,25 +703,13 @@
 # sent_id = 65
 # text = Il gatto deve star inseguendo il cane.
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
-3	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
-4	star	stare	VERB	V	VerbForm=Inf	0	root	_	_
-5	inseguendo	inseguire	VERB	V	VerbForm=Ger	4	advcl	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	star	stare	AUX	V	VerbForm=Inf	5	aux	_	_
+5	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_
 6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
-
-# sent_id = 66
-# text = Il gatto ha dovuto star inseguendo il cane.
-1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
-2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
-4	dovuto	dovere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
-5	star	stare	VERB	V	VerbForm=Inf	0	root	_	_
-6	inseguendo	inseguire	VERB	V	VerbForm=Ger	5	advcl	_	_
-7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
-8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
-9	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
 
 # sent_id = 67
 # text = Il cane è inseguito dal gatto.
@@ -879,3 +867,17 @@
 9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
 10	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	FS	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 81
+# text = Avendo inseguito il cane, il gatto si è stancato.
+1	Avendo	avere	AUX	VA	VerbForm=Ger	2	aux	_	TokenRange=0:6
+2	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	TokenRange=7:16
+3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	TokenRange=17:19
+4	cane	cane	NOUN	S	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=20:24
+5	,	,	PUNCT	FF	_	2	punct	_	TokenRange=24:25
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	TokenRange=26:28
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	TokenRange=29:34
+8	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	10	expl	_	TokenRange=35:37
+9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	TokenRange=38:39
+10	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No|TokenRange=40:48
+11	.	.	PUNCT	FS	_	10	punct	_	SpaceAfter=No|TokenRange=48:49
