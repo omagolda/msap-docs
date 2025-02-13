@@ -41,27 +41,27 @@ id	working_status	test_case	sentence	issues
 42	OK	Pot	Il gatto ha potuto inseguire il cane
 43	OK	Des	Il gatto ha voluto inseguire il cane
 44	OK	Nec	Il gatto ha dovuto inseguire il cane
-45	_	det+verb	Nell'essere stato inseguito, il cane si è stancato.	Do we want to add Tense = Past?
+45	OK	det+verb	Nell'essere stato inseguito, il cane si è stancato.	
 46	OK	det+verb	Nel non poter essere stato inseguito, il cane si è stancato. 
 47	OK	modals;Pres	Il gatto vuole inseguire il cane.
 48	OK	modals;PassPross	Il gatto ha voluto inseguire il cane.	
-49	_	modals;PassRem	Il gatto volle inseguire il cane.	Aspect is missing
-50	_	modals;Imp	Il gatto voleva inseguire il cane.	Aspect is missing
+49	OK	modals;PassRem	Il gatto volle inseguire il cane.	
+50	OK	modals;Imp	Il gatto voleva inseguire il cane.	
 51	OK	modals;TrapPross	Il gatto aveva voluto inseguire il cane.	
 52	OK	modals;TrapRem	Il gatto ebbe voluto inseguire il cane.
 53	OK	modals;Fut	Il gatto vorrà inseguire il cane.
-54	_	modals;FutAnt	Il gatto avrà voluto inseguire il cane.	Aspect is missing?
+54	OK	modals;FutAnt	Il gatto avrà voluto inseguire il cane.	
 55	OK	modals;SubjPres	È possibile che il gatto voglia inseguire il cane.	
 56	OK	modals;SubjImp	È possibile che il gatto volesse inseguire il cane.
 57	OK	modals;SubjPast	È possibile che il gatto abbia voluto inseguire il cane.
 58	OK	modals;SubjTrap	È possibile che il gatto avesse voluto inseguire il cane.
-59	_	modals;SubjPast;PassInf	È possibile che il cane abbia voluto essere inseguito dal gatto.	Tense should be Past, right? and VerbForm=Fin?
+59	OK	modals;SubjPast;PassInf	È possibile che il cane abbia voluto essere inseguito dal gatto.	
 60	OK	modals;CondPres	Il gatto vorrebbe inseguire il cane.
 61	OK	modals;CondPast	Il gatto avrebbe voluto inseguire il cane.
 62	OK	modals;InfPast	Il gatto vuole aver inseguito il cane.	
 63	OK	modals;InfPresPass	Il gatto non può essere inseguito dal cane.	
-64	OK	modals;InfPastPass	Il gatto non può essere stato inseguito dal cane.	VerbForm=Fin?
-65	_	modals;stare+gerPres	Il gatto deve star inseguendo il cane.	Aspect=Prog? Mood and Tense from 'deve'?+ VerbForm=Fin
+64	OK	modals;InfPastPass	Il gatto non può essere stato inseguito dal cane.	
+65	OK	modals;stare+gerPres	Il gatto deve star inseguendo il cane.	
 67	OK	aux:pass;Pres	Il cane è inseguito dal gatto.
 68	OK	aux:pass;PassPross	Il cane è stato inseguito dal gatto.
 69	OK	aux:pass;Imp	Il cane era inseguito dal gatto.
@@ -75,5 +75,5 @@ id	working_status	test_case	sentence	issues
 77	OK	aux:pass;SubjImp	È possibile che il cane fosse inseguito.
 78	OK	aux:pass;SubjTrap	È possibile che il cane fosse stato inseguito.
 79	OK	det+verb;PresAct	Nell’inseguire, il gatto si è stancato.
-80	_	det+verb;PastAct	Nell’aver inseguito, il gatto si è stancato.	Manca Tense = Past
-81	_	GerPast	Avendo inseguito il cane, il gatto si è stancato.	
+80	OK	det+verb;PastAct	Nell’aver inseguito, il gatto si è stancato.	
+81	OK	GerPast	Avendo inseguito il cane, il gatto si è stancato.	

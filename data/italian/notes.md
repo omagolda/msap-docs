@@ -145,7 +145,9 @@ abbiamo deciso coscientemente che gli infiniti con funzione nominale non hanno G
 a mano
 
 ### Aspect on Mod verbs
-volere e dovere hanno sempre l'aspetto
+non abbiamo messo aspetto su verbi modali
+
+volere e dovere hanno sempre l'aspetto?
 potere ha l'aspetto quando è equivalente a be able to, ma non quando è un irrealis e indica l'azione come nel mondo della possibilità. -> disambiguare a mano. 
 
 luigi mangia
