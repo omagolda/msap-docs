@@ -174,20 +174,22 @@ def process_verb(head_tok, children_toks):
 		tense_modality_aux = None
 		mood_modality_aux = None
 		aspect_modality_aux = None
+		verbform_modality_aux = None
 
-		del head_tok["ms feats"]["VerbForm"]
-		head_tok["ms feats"]["VerbForm"].add(pos_mod_child["feats"]["VerbForm"])
 
 		if len(modality_aux) == 0:
 			if "Tense" in children_toks_dict[pos_mod]["feats"] and "Mood" in children_toks_dict[pos_mod]["feats"]:
 				tense_modality_aux = children_toks_dict[pos_mod]["feats"]["Tense"]
 				mood_modality_aux = children_toks_dict[pos_mod]["feats"]["Mood"]
+				verbform_modality_aux = children_toks_dict[pos_mod]["feats"]["VerbForm"]
 		else:
+
 			assert(len(modality_aux)==1)
 			modality_aux_child = children_toks_dict[modality_aux[0]]
+			verbform_modality_aux = modality_aux_child["feats"]["VerbForm"]
 
-			if modality_aux_child["lemma"] == "stare":
-				aspect_modality_aux = "Prog"
+			# if modality_aux_child["lemma"] == "stare":
+			# 	aspect_modality_aux = "Prog"
 
 			# we're supposing 'andare' and 'venire' do not bear auxiliaries themselves
 			if modality_aux_child["lemma"] in ["andare", "venire"]:
@@ -204,16 +206,16 @@ def process_verb(head_tok, children_toks):
 				# Congiuntivo perfetto > abbia potuto
 				# Condizionale composto > avrei potuto
 				if modality_aux_child["feats"]["Tense"] == "Pres":
-					if modality_aux_child["feats"]["Mood"] == "Ind":
-						aspect_modality_aux = "Perf"
+					# if modality_aux_child["feats"]["Mood"] == "Ind":
+					# 	aspect_modality_aux = "Perf"
 					tense_modality_aux = "Past"
 					mood_modality_aux = modality_aux_child["feats"]["Mood"]
 
 				# Indicativo piùcheperfetto > avevo potuto
 				# Congiuntivo piucheperfetto > avessi potuto
 				elif modality_aux_child["feats"]["Tense"] == "Imp":
-					if modality_aux_child["feats"]["Mood"] == "Ind":
-						aspect_modality_aux = "Perf"
+					# if modality_aux_child["feats"]["Mood"] == "Ind":
+					# 	aspect_modality_aux = "Perf"
 					tense_modality_aux = "Past"
 					mood_modality_aux = modality_aux_child["feats"]["Mood"]
 
@@ -222,19 +224,30 @@ def process_verb(head_tok, children_toks):
 				elif modality_aux_child["feats"]["Tense"] in ["Past", "Fut"]:
 					tense_modality_aux = modality_aux_child["feats"]["Tense"]
 					mood_modality_aux = modality_aux_child["feats"]["Mood"]
-					if modality_aux_child["feats"]["Tense"] == "Past":
-						aspect_modality_aux = "Perf"
+					# if modality_aux_child["feats"]["Tense"] == "Past":
+					# 	aspect_modality_aux = "Perf"
 
 		if mood_modality_aux:
 			head_tok["ms feats"]["Mood"].add(mood_modality_aux)
 		if aspect_modality_aux:
 			head_tok["ms feats"]["Aspect"].add(aspect_modality_aux)
+		if verbform_modality_aux:
+			del head_tok["ms feats"]["VerbForm"]
+			head_tok["ms feats"]["VerbForm"].add(verbform_modality_aux)
 
 		if len(head_aux) == 0:
 			if tense_modality_aux:
 				head_tok["ms feats"]["Tense"].add(tense_modality_aux)
 		else:
-			if tense_modality_aux == "Fut":
+
+			if any(children_toks_dict[x]["lemma"] == "stare" for x in head_aux):
+				head_tok["ms feats"]["Aspect"].add("Prog")
+
+			# we're supposing 'andare' and 'venire' do not bear auxiliaries themselves
+			if any(children_toks_dict[x]["lemma"] in ["andare", "venire"] for x in head_aux):
+				head_tok["ms feats"]["Aspect"].add("Imp")
+
+			if tense_modality_aux in ["Fut", "Past"]:
 				head_tok["ms feats"]["Tense"].add(tense_modality_aux)
 			else:
 				if any(children_toks_dict[x]["deprel"] == "aux" for x in head_aux):
