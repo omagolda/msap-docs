@@ -36,6 +36,8 @@ if __name__ == '__main__':
 	import sys
 	import pathlib
 
+	exclude_sentences = [x.strip() for x in open("data/italian/exclude_sentences.txt").readlines()]
+
 	filepath = pathlib.Path(sys.argv[1])
 	out_path = pathlib.Path(sys.argv[2])
 
@@ -43,7 +45,7 @@ if __name__ == '__main__':
 	logging.basicConfig(format='[%(module)s:%(lineno)d] %(levelname)s:%(message)s',
 					filename=f"logs/italian/{filepath.stem}.log",
 					filemode='w', encoding='utf-8',
-					level=logging.DEBUG)
+					level=logging.INFO)
 
 	logging.info("Processing %s into %s", filepath, out_path)
 
@@ -57,6 +59,12 @@ if __name__ == '__main__':
 
 		for tree, tokenlist in tqdm.tqdm(zip(parse_trees, parse_lists)):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
+
+			if tokenlist.metadata["sent_id"] in exclude_sentences:
+				logging.info("SKIPPING SENTENCE")
+				continue
+
+			# print("Processing sentence id: %s", tokenlist.metadata["sent_id"])
 			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 			# print(tokenlist.metadata["text"])
 
@@ -78,7 +86,7 @@ if __name__ == '__main__':
 
 			# * combine fixed expressions and remove nodes with 'fixed' relation
 			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
-			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x!= "fixed")
+			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x not in ["fixed", "flat", "flat:name", "compound"])
 
 			if len(fixed_nodes):
 				fixed_nodes_sorted = sorted(fixed_nodes, key=lambda x: x['id'])
@@ -90,16 +98,17 @@ if __name__ == '__main__':
 
 			tree = filtered_tokenlist.to_tree()
 
-			new_nodes = []
-			# * visit tree in depth-first fashion
-			for head_tok, children_toks in DFS(tree):
+			new_nodes = [] # * list to contain abstract nodes
 
-				found_nsubj = False
-				if any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] for tok in children_toks):
-					found_nsubj = True
+			# * visit tree in depth-first fashion
+			for head_tok, all_children_toks in DFS(tree):
+
+				found_nsubj = any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] \
+								for tok in all_children_toks)
 
 				# * only select non-content children: information will be gathered only from those
-				children_toks = [tok for tok in children_toks if not tok["content"]]
+				children_toks = [tok for tok in all_children_toks if not tok["content"]]
+				content_children = [tok for tok in all_children_toks if tok["content"]]
 
 				for child_tok in children_toks:
 					# * Handling cc
@@ -115,11 +124,11 @@ if __name__ == '__main__':
 					logging.debug("Isolated %d conjuncts", len(conjuncts))
 					logging.debug("%s", " | ".join(str(x) for x in conjuncts))
 
-				logging.info("Processing head '%s/%s' with children '%s'",
-							head_tok, head_tok["upos"],
+				logging.debug("Processing head %s with children '%s'",
+							head_tok.values(),
 							" | ".join(str(x) for x in children_toks))
 
-				# * Assigning 'Nom', 'Acc' and 'Dat' Case based on syntactic function
+				# * Assigning 'Nom', 'Acc', 'Dat', 'Agt' Cases based on syntactic function
 				if head_tok["deprel"] == "nsubj":
 					head_tok["ms feats"]["Case"].add("Nom")
 					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
@@ -131,22 +140,16 @@ if __name__ == '__main__':
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obj":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Acc")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "iobj":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Dat")
 					logging.debug("Assigned 'Dat' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "obl:agent":
-					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
-						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
 					head_tok["ms feats"]["Case"].add("Agt")
 					logging.debug("Assigned 'Agt' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
@@ -162,24 +165,35 @@ if __name__ == '__main__':
 				# * OPEN CLASS WORDS SECTION
 				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
+					# * Create abstract subject if the VerbForm is Finite and there's no other subject
 					if "Fin" in head_tok["ms feats"]["VerbForm"] and not found_nsubj:
 						new_node = ita_utils.create_abstract_nsubj(head_tok)
 						new_nodes.append(new_node)
+
+					# * Remove Person, Gender and Number features from VERB
 					if "Person" in head_tok["ms feats"]:
 						del[head_tok["ms feats"]["Person"]]
-					if "Gender" in head_tok["ms feats"]:
-						del[head_tok["ms feats"]["Gender"]]
-					if "Number" in head_tok["ms feats"]:
-						del[head_tok["ms feats"]["Number"]]
+
+					# Todo: move into verbs
+					if head_tok["ms feats"]["VerbForm"] == "Part":
+						if "Gender" in head_tok["ms feats"]:
+							del[head_tok["ms feats"]["Gender"]]
+						if "Number" in head_tok["ms feats"]:
+							del[head_tok["ms feats"]["Number"]]
 
 				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
+					nouns.update_features(head_tok, content_children)
+
 				elif head_tok["upos"] in ["ADJ"]:
 					adjs.process_adj(head_tok, children_toks)
+
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
 
 				# * CLOSED CLASS WORDS SECTION
+
+				# * Check that closed classes have no deps
 				elif head_tok["upos"] in ["CCONJ", "SCONJ", "AUX", "PART", "ADP"]:
 					if len(children_toks) > 0:
 						logging.error("Found %s '%s' with children '%s'. Consider removing sentence %s",
@@ -187,6 +201,7 @@ if __name__ == '__main__':
 									", ".join(str(x) for x in children_toks),
 									tokenlist.metadata["sent_id"])
 
+				# * Check that determiners have no deps and set some of them to content
 				elif head_tok["upos"] in ["DET"]:
 					if len(children_toks) > 0:
 						logging.error("Found DET '%s' with children '%s'. Consider removing sentence %s",
@@ -195,6 +210,7 @@ if __name__ == '__main__':
 
 					if head_tok["lemma"] in ["tutto", "ogni",
 											"mio", "tuo", "suo", "nostro", "vostro", "loro"]:
+						logging.debug("Setting %s to content word", head_tok)
 						head_tok["content"] = True
 
 
@@ -211,42 +227,52 @@ if __name__ == '__main__':
 						for value in head_tok["ms feats"][feat]:
 							conj_tok["ms feats"][feat].add(value)
 
+			# * add abstract nodes back into token list
 			for node in new_nodes:
 				idx = int(node['id'])
 				node['id'] = f"{node['id']:.1f}"
 				tokenlist.insert(id2idx[idx] + 1, node)
 
 			for node in tokenlist:
-				# TODO: at the end function words should have "_"
-				# and content words with no ms-feat should have "|"
 
-				# restore original lemma
+				# * restore original lemma
 				node['lemma'] = node['lemma'].split(" ")[0]
 				node['form'] = node['form'].split(" ")[0]
 
 				if node["content"]:
-					# !! defaults should be already there at this point
-					# if node.get("feats"):
-					# 	node_feats = node['feats']
-					# 	node_msfeats = node["ms feats"]
-						# for feat, value in node["feats"].items():
-						# 	if feat in node["ms feats"]:
-						# 		print(node.items())
-						# 		input()
-						# 		assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
-						# 	else:
-						# 		node["ms feats"][feat].add(node["feats"][feat])
 
-					sorted_msfeats = sorted(node["ms feats"].items())
-					# * if multiple values are present, they are conjoined by semi-colon
+					to_delete = []
+					for feat in node["ms feats"]:
+						node["ms feats"][feat] = set(x for x in node["ms feats"][feat] if not x is None)
+						if len(node["ms feats"][feat]) == 0:
+						# if None in node["ms feats"][feat]:
+							to_delete.append(feat)
+
+					for feat in to_delete:
+						del node["ms feats"][feat]
+
+					filtered_msfeats = {k: {v for v in values if v is not None} for k, values in node["ms feats"].items() if values is not None}
+					sorted_msfeats = sorted(filtered_msfeats.items())
+
+					if len(sorted_msfeats) == 0:
+						sorted_msfeats = ["|"]
+					else:
+						# * if multiple values are present, they are conjoined by semi-colon
+						sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
+
 					# TODO: handle negation -> es. not(Pot)
 					# TODO: handle conjunction of values -> es. "if and when" and(Cnd,Tmp)
 					# TODO: handle disjunction of values -> es. Tense=or(Past,Fut)
-					sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
+
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
-					logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
+					remove_feats = False
+					if all(len(y)==0 for x, y in node["ms feats"].items()):
+						remove_feats = True
+
+					if not remove_feats:
+						logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
 
 			to_write = tokenlist.serialize()

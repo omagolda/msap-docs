@@ -9,7 +9,7 @@ from pt_relations import case_feat_map
 VERBAL = {'VERB'}
 NOMINAL = {'NOUN', 'PROPN', 'PRON', 'NUM'}
 clausal_rels = {'conj','csubj','xcomp','ccomp','advcl','acl','advcl:relcl','acl:relcl','ccomp:speech','csubj:outer','csubj:pass'}
-determiners = {'seu':('Prs'),'ambos':('Definite','Ind'), 'aquele':('Dem','Dist'), 'cada':('Definite','Ind'), 'certo':('Definite','Ind'), 'demais':('Definite','Ind'), 'esse':('Dem','Prox'), 'este':('Dem','Prox'), 'mais':('Definite','Ind'), 'menos':('Definite','Ind'), 'o':('Definite','Def'), 'outro':('Definite','Ind'), 'qualquer':('Definite','Ind'), 'quanto':('Definite','Ind'), 'tanto':('Definite','Ind'), 'um':('Definite','Ind'), 'vários':('Definite','Ind')}
+determiners = {'ambos':('Definite','Ind'), 'aquele':('Dem','Dist'), 'cada':('Definite','Ind'), 'certo':('Definite','Ind'), 'demais':('Definite','Ind'), 'esse':('Dem','Prox'), 'este':('Dem','Prox'), 'mais':('Definite','Ind'), 'menos':('Definite','Ind'), 'o':('Definite','Def'), 'outro':('Definite','Ind'), 'qualquer':('Definite','Ind'), 'quanto':('Definite','Ind'), 'tanto':('Definite','Ind'), 'um':('Definite','Ind'), 'vários':('Definite','Ind')}
 modalities = {'dever':'Nec','precisar':'Nec','necessitar':'Nec','ter':'Nec','haver':'Nec','poder':'Pot'}
 negation_markers = {'não', 'nunca', 'jamais', 'sem','nem'}
 
@@ -29,6 +29,14 @@ def apply_grammar(head: conllu.Token, children: List[conllu.Token]):
     '''
     The main method combining functional children to create the morpho-syntactic features of head.
     '''
+
+    #skip_lemmas = {'meu', 'teu', 'seu', 'nosso', 'vosso'}
+    #children = [
+    #    child for child in children 
+    #    if not (
+    #        child['deprel'] == 'det' and child['lemma'] in skip_lemmas
+    #    )
+    #]
 
     children = [child for child in children if not child['deprel'] in {'parataxis', 'reparandum'}] # remove punctuation and parataxis and reparandum
 
@@ -120,7 +128,8 @@ def apply_grammar(head: conllu.Token, children: List[conllu.Token]):
 
     elif noun or head['upos'] in {'ADV', 'ADJ'}:
         # treat determiners
-        det_nodes = [child for child in children if child['deprel'] == 'det']
+
+        det_nodes = [child for child in children if child['deprel'] == 'det']        
 
         if det_nodes:
             # Extract Gender and Number from all determiners
@@ -492,6 +501,11 @@ if __name__ == '__main__':
             for head, children in heads[::-1]:
                 head: conllu.Token = parse_list[id2idx[head]]
                 children = [parse_list[id2idx[child]] for child in children]
+                skip_lemmas = {'meu', 'teu', 'seu', 'nosso', 'vosso'}
+                children = [
+                    child for child in children 
+                        if not (child['deprel'] == 'det' and child['lemma'] in skip_lemmas)
+                        ]
                 added_nodes = apply_grammar(head, children)
                 if added_nodes:
                     added_idxs = get_where_to_add(added_nodes, id2idx)
@@ -511,6 +525,7 @@ if __name__ == '__main__':
                 # function nodes end up with empty ms-feats
                 else:
                     node['ms feats'] = node.get('ms feats', None)
+
 
                 # sort alphabetically the MS features of all nodes
                 node['ms feats'] = order_alphabetically(node['ms feats'])

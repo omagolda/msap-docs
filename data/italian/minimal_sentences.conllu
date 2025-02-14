@@ -1,0 +1,883 @@
+# sent_id = 1
+# text = Il gatto insegue il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpacesAfter=\n
+
+# sent_id = 2
+# text = Il gatto è il Presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Presidente	Presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+6-7	della	_	_	_	_	_	_	_	_
+6	di	di	ADP	E	_	8	case	_	_
+7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
+8	Repubblica	repubblica	NOUN	S	Gender=Fem|Number=Sing	5	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 3
+# text = Il gatto grigio è bello.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 4
+# text = Il gatto grigio è bellissimo.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	bellissimo	bello	ADJ	A	Degree=Abs|Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 5
+# text = Il gatto grigio è più bello del gatto nero.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	più	più	ADV	B	_	6	advmod	_	_
+6	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	_
+7-8	del	_	_	_	_	_	_	_	_
+7	di	di	ADP	E	_	9	case	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	obl	_	_
+10	nero	nero	ADJ	A	Gender=Masc|Number=Sing	9	amod	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n
+
+# sent_id = 6
+# text = Il cane è inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5-6	dal	_	_	_	_	_	_	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 7
+# text = Il cane viene inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	viene	venire	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5-6	dal	_	_	_	_	_	_	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 8
+# text = Il gatto non insegue il gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	non	non	ADV	BN	PronType=Neg	4	advmod	_	_
+4	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 9
+# text = Insegue il cane.
+1	Insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	cane	cane	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	SpaceAfter=No
+4	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n
+
+# sent_id = 10
+# text = Lui insegue il cane.
+1	Lui	lui	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	cane	cane	NOUN	S	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 11
+# text = Il gatto grigio è il più bello.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	grigio	grigio	ADJ	A	Gender=Masc|Number=Sing	2	amod	_	_
+4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+6	più	più	ADV	B	_	7	advmod	_	_
+7	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	7	punct	_	SpaceAfter=No
+
+# sent_id = 12
+# text = Il gatto gli passa la pallina.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	gli	lo	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	iobj	_	_
+4	passa	passare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	pallina	pallina	NOUN	S	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 13
+# text = Il gatto lo insegue.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	lo	lo	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+4	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 14
+# text = Questo gatto insegue quel cane.
+1	Questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	insegue	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	quel	quello	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 15
+# text = Il gatto inseguiva il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	inseguiva	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 16
+# text = Il gatto inseguì il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	inseguì	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 17
+# text = Il gatto inseguirà il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	inseguirà	inseguire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 18
+# text = Il gatto ha inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 19
+# text = Il gatto aveva inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 20
+# text = Il gatto ebbe inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	ebbe	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 21
+# text = Il gatto avrà inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	avrà	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 22
+# text = Il gatto inseguirebbe il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	_	_
+3	inseguirebbe	inseguire	VERB	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 23
+# text = Il gatto avrebbe inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	avrebbe	avere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 24
+# text = È possibile che il gatto insegua il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	6	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	insegua	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	csubj	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 25
+# text = È possibile che il gatto inseguisse il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	6	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	inseguisse	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 26
+# text = È possibile che il gatto abbia inseguito il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 27
+# text = È possibile che il gatto avesse inseguito il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 28
+# text = Inseguendo il cane, il gatto si è stancato.
+1	Inseguendo	inseguire	VERB	V	VerbForm=Ger	9	advcl	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	cane	cane	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	1	punct	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	9	nsubj	_	_
+7	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	9	expl	_	_
+8	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	9	punct	_	SpaceAfter=No
+
+# sent_id = 29
+# text = Nell'inseguire il cane, il gatto si è stancato.
+1-2	Nell'	_	_	_	_	_	_	_	SpaceAfter=No
+1	In	in	ADP	E	_	3	case	_	_
+2	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	inseguire	inseguire	VERB	V	VerbForm=Inf	11	obl	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	FF	_	3	punct	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	11	nsubj	_	_
+9	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	11	expl	_	_
+10	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	FS	_	11	punct	_	SpaceAfter=No
+
+# sent_id = 30
+# text = Il gatto sta inseguendo il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	sta	stare	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 31
+# text = Il gatto stava inseguendo il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	stava	stare	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 32
+# text = Il gatto non può inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	non	non	ADV	BN	PronType=Neg	5	advmod	_	_
+4	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 33
+# text = Il gatto può non inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	non	non	ADV	BN	PronType=Neg	5	advmod	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 36
+# text = Il gatto può inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 37
+# text = Il gatto vuole inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	vuole	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 38
+# text = Il gatto deve inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 39
+# text = Nessun cane può inseguire un gatto.
+1	Nessun	nessuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpaceAfter=No
+
+# sent_id = 40
+# text = È possibile che il cane sia inseguito dal gatto.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
+6	sia	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:pass	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	_
+8-9	dal	_	_	_	_	_	_	_	_
+8	da	da	ADP	E	_	10	case	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	obl:agent	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 41
+# text = Nell'essere inseguito, il cane si è stancato.
+1-2	Nell'	_	_	_	_	_	_	_	SpaceAfter=No
+1	In	in	ADP	E	_	4	mark	_	_
+2	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+3	essere	essere	AUX	VA	VerbForm=Inf	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	FF	_	4	punct	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	_
+8	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	10	expl	_	_
+9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 42
+# text = Il gatto ha potuto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	potuto	potere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 43
+# text = Il gatto ha voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 44
+# text = Il gatto ha dovuto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	dovuto	dovere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpaceAfter=No
+
+# sent_id = 45
+# text = Nell'essere stato inseguito, il cane si è stancato.
+1-2	Nell'	_	_	_	_	_	_	_	SpaceAfter=No
+1	In	in	ADP	E	_	5	mark	_	_
+2	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
+3	essere	essere	AUX	VA	VerbForm=Inf	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	FF	_	5	punct	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	11	nsubj	_	_
+9	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	11	expl	_	_
+10	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_
+11	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	FS	_	11	punct	_	SpaceAfter=No
+
+# sent_id = 46
+# text = Nel non poter essere stato inseguito, il cane si è stancato.
+1-2	Nel	_	_	_	_	_	_	_	_
+1	In	in	ADP	E	_	7	mark	_	_
+2	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+3	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+4	poter	potere	AUX	VM	VerbForm=Inf	7	aux	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	7	aux	_	_
+6	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	aux:pass	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	7	punct	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	13	nsubj	_	_
+11	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	13	expl	_	_
+12	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux	_	_
+13	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	FS	_	13	punct	_	SpacesAfter=\s\n
+
+# sent_id = 47
+# text = Il gatto vuole inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	vuole	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 48
+# text = Il gatto ha voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 49
+# text = Il gatto volle inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	volle	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 50
+# text = Il gatto voleva inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	voleva	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 51
+# text = Il gatto aveva voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	aveva	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 52
+# text = Il gatto ebbe voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	ebbe	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 53
+# text = Il gatto vorrà inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	vorrà	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 54
+# text = Il gatto avrà voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	avrà	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 55
+# text = È possibile che il gatto voglia inseguire il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	voglia	volere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 56
+# text = È possibile che il gatto volesse inseguire il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+6	volesse	volere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
+7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 57
+# text = È possibile che il gatto abbia voluto inseguire il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	8	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
+6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux	_	_
+8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 58
+# text = È possibile che il gatto avesse voluto inseguire il cane.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	8	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
+6	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
+7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux	_	_
+8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 59
+# text = È possibile che il cane abbia voluto essere inseguito dal gatto.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	9	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	9	nsubj:pass	_	_
+6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	aux	_	_
+8	essere	essere	AUX	VA	VerbForm=Inf	9	aux:pass	_	_
+9	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+10-11	dal	_	_	_	_	_	_	_	_
+10	da	da	ADP	E	_	12	case	_	_
+11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	9	obl:agent	_	SpaceAfter=No
+13	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 60
+# text = Il gatto vorrebbe inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	vorrebbe	volere	AUX	VM	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 61
+# text = Il gatto avrebbe voluto inseguire il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	avrebbe	avere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux	_	_
+5	inseguire	inseguire	VERB	V	VerbForm=Inf	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 62
+# text = Il gatto vuole aver inseguito il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	vuole	volere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	aver	avere	AUX	VA	VerbForm=Inf	5	aux	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 63
+# text = Il gatto non può essere inseguito dal cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj:pass	_	_
+3	non	non	ADV	BN	PronType=Neg	6	advmod	_	_
+4	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	6	aux:pass	_	_
+6	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+7-8	dal	_	_	_	_	_	_	_	_
+7	da	da	ADP	E	_	9	case	_	_
+8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
+9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obl:agent	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\s\n
+
+# sent_id = 64
+# text = Il gatto non può essere stato inseguito dal cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
+3	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+4	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	7	aux	_	_
+6	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	aux:pass	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+8-9	dal	_	_	_	_	_	_	_	_
+8	da	da	ADP	E	_	10	case	_	_
+9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obl:agent	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 65
+# text = Il gatto deve star inseguendo il cane.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	star	stare	AUX	V	VerbForm=Inf	5	aux	_	_
+5	inseguendo	inseguire	VERB	V	VerbForm=Ger	0	root	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 67
+# text = Il cane è inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5-6	dal	_	_	_	_	_	_	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 68
+# text = Il cane è stato inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6-7	dal	_	_	_	_	_	_	_	_
+6	da	da	ADP	E	_	8	case	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	obl:agent	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 69
+# text = Il cane era inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5-6	dal	_	_	_	_	_	_	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 70
+# text = Il cane era stato inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
+3	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+6-7	dal	_	_	_	_	_	_	_	_
+6	da	da	ADP	E	_	8	case	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	obl:agent	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 71
+# text = Il cane fu inseguito.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	fu	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 72
+# text = Il cane fu stato inseguito.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
+3	fu	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 73
+# text = Il cane sarà inseguito.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	sarà	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 74
+# text = Il cane sarà stato inseguito.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
+3	sarà	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 75
+# text = Il cane sarebbe inseguito dal gatto.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	4	nsubj:pass	_	_
+3	sarebbe	essere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5-6	dal	_	_	_	_	_	_	_	_
+5	da	da	ADP	E	_	7	case	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	4	obl:agent	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n
+
+# sent_id = 76
+# text = Il cane sarebbe stato inseguito.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	5	nsubj:pass	_	_
+3	sarebbe	essere	AUX	VA	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	_
+5	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 77
+# text = È possibile che il cane fosse inseguito.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	7	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
+6	fosse	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:pass	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 78
+# text = È possibile che il cane fosse stato inseguito.
+1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	_
+2	possibile	possibile	ADJ	A	Number=Sing	0	root	_	_
+3	che	che	SCONJ	CS	_	8	mark	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
+6	fosse	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
+7	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_
+8	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
+
+# sent_id = 79
+# text = Nell’inseguire, il gatto si è stancato.
+1-2	Nell’	_	_	_	_	_	_	_	SpaceAfter=No
+1	In	in	ADP	E	_	3	case	_	_
+2	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	3	det	_	_
+3	inseguire	inseguire	VERB	V	VerbForm=Inf	9	obl	_	SpaceAfter=No
+4	,	,	PUNCT	FF	_	3	punct	_	_
+5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	9	nsubj	_	_
+7	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	9	expl	_	_
+8	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	FS	_	9	punct	_	SpacesAfter=\n
+
+# sent_id = 80
+# text = Nell’aver inseguito, il gatto si è stancato.
+1-2	Nell’	_	_	_	_	_	_	_	SpaceAfter=No
+1	In	in	ADP	E	_	4	mark	_	_
+2	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	_	_
+3	aver	avere	AUX	VA	VerbForm=Inf	4	aux	_	_
+4	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	FF	_	4	punct	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	_
+8	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	10	expl	_	_
+9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	10	punct	_	SpaceAfter=No
+
+# sent_id = 81
+# text = Avendo inseguito il cane, il gatto si è stancato.
+1	Avendo	avere	AUX	VA	VerbForm=Ger	2	aux	_	TokenRange=0:6
+2	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	TokenRange=7:16
+3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	TokenRange=17:19
+4	cane	cane	NOUN	S	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=20:24
+5	,	,	PUNCT	FF	_	2	punct	_	TokenRange=24:25
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	TokenRange=26:28
+7	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	TokenRange=29:34
+8	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	10	expl	_	TokenRange=35:37
+9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	TokenRange=38:39
+10	stancato	stancare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No|TokenRange=40:48
+11	.	.	PUNCT	FS	_	10	punct	_	SpaceAfter=No|TokenRange=48:49

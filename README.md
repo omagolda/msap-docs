@@ -83,7 +83,7 @@ marker, be it a morpheme or a word. So the content node _go_ in _will go_ should
 the feature `Tense=Fut`.
   * All applicable features should be marked on the respective content nodes, even if
   expressed by non-concatenative means (as long as they are grammatical). E.g., the node
-  _go_ in _did you go?_ should be marked with `Mood=Int;Ind` even though the
+  _go_ in _did you go?_ should be marked with `Mood=Ind;Int` even though the
   interrogative mood is expressed mostly by word order.
 * Features should be applied only to their relevant node. In other words, no agreement
 features are needed, and in a phrase like _he goes_ only _he_ should bear
@@ -99,7 +99,8 @@ strings. They can contain:
   conjunction of grammatical constructions, for example `Case=and(Cnd,Temp)` is the
   manifestation of the English phrase _if and when_ when connecting two clauses (see
   below for discussion on the `Case` feature)
-  * and a disjunction of values, `Tense=or(Past,Fut)`
+  * and a disjunction of values, `Tense=or(Fut,Pas)`
+* If a feature includes multiple values in any kind of order or structure, they should be ordered alphabetically in accordance with the general UD guidelines.
 
 The mapping from morpho-syntactic constructions to features does not have to be
 one-to-one. In cases where several constructions have the exact some meaning (e.g.,
@@ -130,7 +131,7 @@ stands for "after some time" hence contentful).
 
 #### Feature Inventory
 
-quick link: [inventory of relation features](inventory.md)
+quick link: [inventory of relation features](https://docs.google.com/spreadsheets/d/16d0B7yYwyjS-o6T15JElt37Zy6DvngjY/edit?usp=sharing&ouid=117571112446302948501&rtpof=true&sd=true)
 
 Since the MS features are a generalization of UD's morphological features, their types
 and possible values are also highly similar with that of [UD's features](https://universaldependencies.org/u/feat/index.html).
@@ -159,7 +160,7 @@ In general, the same function word/morpheme combination should be mapped to the 
 _na_ should be mapped only to `Case=Conj` even when it serves a function of introducing
 the agent of a passive verb.
 
-"[inventory.md](inventory.md)"
+"[inventory.md](https://docs.google.com/spreadsheets/d/16d0B7yYwyjS-o6T15JElt37Zy6DvngjY/edit?usp=sharing&ouid=117571112446302948501&rtpof=true&sd=true)"
 details a set of universal values for the `Case` feature. These feature does not cover
 all possible relations, and in some cases when there are adpositions or conjunctions that
 do not correspond to any of the features, the value of the respective feature should be

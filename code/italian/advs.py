@@ -7,8 +7,6 @@ logger = logging.getLogger(__name__)
 
 def process_adv(head_tok, children_toks):
 
-	logger.info("Examining head: '%s'", head_tok)
-
 	# * setting all adverbs to content words, except for "non", "più", "meno"
 	if not head_tok["lemma"] in ["non", "più", "meno"]:
 		logging.debug("Setting node %s/%s to content and copying its features",
@@ -17,6 +15,7 @@ def process_adv(head_tok, children_toks):
 		ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
+		logger.debug("Examining child: %s", child_tok.values())
 
 		if child_tok["deprel"] in ["aux", "cop"]:
 			if child_tok.get("feats") and "Mood" in child_tok["feats"]:
@@ -48,16 +47,19 @@ def process_adv(head_tok, children_toks):
 				logging.debug("Adding Definite feature with value %s", child_tok["feats"]["Definite"])
 				head_tok["ms feats"]["Definite"].add(child_tok["feats"]["Definite"])
 			elif lbd.switch_det_definitess(child_tok):
-				definitess = lbd.switch_det_definitess(child_tok)
+				definitess, polarity = lbd.switch_det_definitess(child_tok)
 				logging.debug("Adding Definite feature with value %s", definitess)
 				head_tok["ms feats"]["Definite"].add(definitess)
 
+				if polarity:
+					head_tok["ms feats"]["Polarity"].add(polarity)
+
 			# * add polarity
 			# ? should polarity be set to "Pos" by default?
-			polarity = lbd.switch_det_polarity(child_tok)
-			if polarity:
-				logging.debug("Adding Polarity feature with value %s", polarity)
-				head_tok["ms feats"]["Polarity"].add(polarity)
+			# polarity = lbd.switch_det_polarity(child_tok)
+			# if polarity:
+			# 	logging.debug("Adding Polarity feature with value %s", polarity)
+			# 	head_tok["ms feats"]["Polarity"].add(polarity)
 
 			if child_tok.get("feats") and "PronType" in child_tok["feats"] and child_tok["feats"]["PronType"] == "Dem":
 				dem = lbd.switch_det_dem(child_tok)
@@ -72,15 +74,15 @@ def process_adv(head_tok, children_toks):
 				head_tok["ms feats"]["Degree"].add("Cmp")
 
 		elif child_tok["deprel"] in ["case", "mark"]:
-			logging.debug("Add Case feature with value %s", lbd.switch_nominal_case(child_tok))
-			head_tok["ms feats"]["Case"].add(lbd.switch_nominal_case(child_tok))
+			logging.debug("Add Case feature with value %s", lbd.switch_case(child_tok, head_tok))
+			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
-			child_tok["ms feats"]["tmp-child"].add("ADV")
 
 	if "Def" in head_tok["ms feats"]["Definite"] and "Cmp" in head_tok["ms feats"]["Degree"]:
 		logging.debug("Changing Cmp to Sup Degree for node %s/%s", head_tok, head_tok["upos"])
 		head_tok["ms feats"]["Degree"].remove("Cmp")
 		head_tok["ms feats"]["Degree"].add("Sup")
+	# TODO: Handle aspect

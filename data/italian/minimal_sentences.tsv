@@ -1,0 +1,79 @@
+id	working_status	test_case	sentence	issues
+1	OK	nominative/accusative	Il gatto insegue il cane.
+2	OK	nominal sentence	Il gatto è il Presidente della Repubblica.
+3	OK	adjectival agreement	Il gatto grigio è bello.
+4	OK	superlative	Il gatto grigio è bellissimo.
+5	OK	comparative	Il gatto grigio è più bello del gatto nero.
+6	OK	voice passive	Il cane è inseguito dal gatto.
+7	OK	voice passive#2	Il cane viene inseguito dal gatto.
+8	OK	simple negation	Il gatto non insegue il gatto.
+9	_	prodrop	Insegue il cane.	One more column.
+10	OK	pronoun features	Lui insegue il cane.
+11	OK	superlative#2	Il gatto grigio è il più bello.
+12	OK	dative pronoun	Il gatto gli passa la pallina.
+13	OK	accusative pronoun	Il gatto lo insegue.
+14	OK	demonstrative	Questo gatto insegue quel cane.
+15	OK	tense:Imp	Il gatto inseguiva il cane.
+16	OK	tense:PassRem	Il gatto inseguì il cane.
+17	OK	tense:Fut	Il gatto inseguirà il cane.
+18	OK	tense:PassPross	Il gatto ha inseguito il cane.
+19	OK	tense:TrapPross	Il gatto aveva inseguito il cane.
+20	OK	tense:TrapRem	Il gatto ebbe inseguito il cane.
+21	OK	tense:FutAnt	Il gatto avrà inseguito il cane.
+22	OK	mood:CondPres	Il gatto inseguirebbe il cane.	
+23	OK	mood:CondPast	Il gatto avrebbe inseguito il cane.
+24	OK	mood:SubjPres	È possibile che il gatto insegua il cane.
+25	OK	mood:SubjImp	È possibile che il gatto inseguisse il cane.	
+26	OK	mood:SubjPast	È possibile che il gatto abbia inseguito il cane.
+27	OK	mood:SubjTrap	È possibile che il gatto avesse inseguito il cane.
+28	OK	VerbForm:Ger	Inseguendo il cane, il gatto si è stancato.
+29	OK	det+verb	Nell'inseguire il cane, il gatto si è stancato.	
+30	OK	aspect:Progr	Il gatto sta inseguendo il cane.
+31	OK	aspect:Progr;tense	Il gatto stava inseguendo il cane.	
+32	OK	not(Pot)	Il gatto non può inseguire il cane.
+33	OK	Neg + Pot	Il gatto può non inseguire il cane.
+36	OK	Pot	Il gatto può inseguire il cane	
+37	OK	Des	Il gatto vuole inseguire il cane	
+38	OK	Nec	Il gatto deve inseguire il cane	
+39	OK	nessun-Ind+Polarity neg	Nessun cane può inseguire un gatto	
+40	OK	Voice Passive mood conj pres	È possibile che il cane sia inseguito dal gatto	 
+41	OK	det+verb	Nell'essere inseguito, il cane si è stancato.
+42	OK	Pot	Il gatto ha potuto inseguire il cane
+43	OK	Des	Il gatto ha voluto inseguire il cane
+44	OK	Nec	Il gatto ha dovuto inseguire il cane
+45	OK	det+verb	Nell'essere stato inseguito, il cane si è stancato.	
+46	OK	det+verb	Nel non poter essere stato inseguito, il cane si è stancato. 
+47	OK	modals;Pres	Il gatto vuole inseguire il cane.
+48	OK	modals;PassPross	Il gatto ha voluto inseguire il cane.	
+49	OK	modals;PassRem	Il gatto volle inseguire il cane.	
+50	OK	modals;Imp	Il gatto voleva inseguire il cane.	
+51	OK	modals;TrapPross	Il gatto aveva voluto inseguire il cane.	
+52	OK	modals;TrapRem	Il gatto ebbe voluto inseguire il cane.
+53	OK	modals;Fut	Il gatto vorrà inseguire il cane.
+54	OK	modals;FutAnt	Il gatto avrà voluto inseguire il cane.	
+55	OK	modals;SubjPres	È possibile che il gatto voglia inseguire il cane.	
+56	OK	modals;SubjImp	È possibile che il gatto volesse inseguire il cane.
+57	OK	modals;SubjPast	È possibile che il gatto abbia voluto inseguire il cane.
+58	OK	modals;SubjTrap	È possibile che il gatto avesse voluto inseguire il cane.
+59	OK	modals;SubjPast;PassInf	È possibile che il cane abbia voluto essere inseguito dal gatto.	
+60	OK	modals;CondPres	Il gatto vorrebbe inseguire il cane.
+61	OK	modals;CondPast	Il gatto avrebbe voluto inseguire il cane.
+62	OK	modals;InfPast	Il gatto vuole aver inseguito il cane.	
+63	OK	modals;InfPresPass	Il gatto non può essere inseguito dal cane.	
+64	OK	modals;InfPastPass	Il gatto non può essere stato inseguito dal cane.	
+65	OK	modals;stare+gerPres	Il gatto deve star inseguendo il cane.	
+67	OK	aux:pass;Pres	Il cane è inseguito dal gatto.
+68	OK	aux:pass;PassPross	Il cane è stato inseguito dal gatto.
+69	OK	aux:pass;Imp	Il cane era inseguito dal gatto.
+70	OK	aux:pass;TrapPross	Il cane era stato inseguito dal gatto.
+71	OK	aux:pass;PassRem	Il cane fu inseguito.
+72	OK	aux:pass;TrapRem	Il cane fu stato inseguito.
+73	OK	aux:pass;Fut	Il cane sarà inseguito.
+74	OK	aux:pass;FutAnt	Il cane sarà stato inseguito.
+75	OK	aux:pass;CondPres	Il cane sarebbe inseguito dal gatto.
+76	OK	aux:pass;CondPast	Il cane sarebbe stato inseguito.
+77	OK	aux:pass;SubjImp	È possibile che il cane fosse inseguito.
+78	OK	aux:pass;SubjTrap	È possibile che il cane fosse stato inseguito.
+79	OK	det+verb;PresAct	Nell’inseguire, il gatto si è stancato.
+80	OK	det+verb;PastAct	Nell’aver inseguito, il gatto si è stancato.	
+81	OK	GerPast	Avendo inseguito il cane, il gatto si è stancato.	
