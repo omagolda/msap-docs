@@ -12,7 +12,7 @@ def process_noun(head_tok, children_toks):
 	ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s", child_tok.values())
+		logger.debug("Examining child: %s", child_tok.values())
 
 		# * evaluate copulas
 		if child_tok["deprel"] in ["cop", "aux"]:
@@ -113,7 +113,7 @@ def update_features(head_tok, children_toks):
 	# ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s", child_tok.values())
+		logger.debug("Examining child: %s", child_tok.values())
 
 		if child_tok["deprel"] in ["amod"]:
 			# print("HERE")
@@ -123,13 +123,19 @@ def update_features(head_tok, children_toks):
 				# input()
 
 				if "Gender" in child_tok["feats"]:
+					# print(child_tok)
 					head_tok["ms feats"]["Gender"].add(child_tok["feats"]["Gender"])
-					del child_tok["ms feats"]["Gender"]
+					if "Gender" in child_tok["ms feats"]:
+						del child_tok["ms feats"]["Gender"]
 
 				if "Number" in child_tok["feats"]:
 					head_tok["ms feats"]["Number"].add(child_tok["feats"]["Number"])
-					del child_tok["ms feats"]["Number"]
+					if "Number" in child_tok["ms feats"]:
+						del child_tok["ms feats"]["Number"]
+
+		elif child_tok["deprel"] in ["nummod", "nmod"]:
+			pass
 
 		else:
-			logging.warning("Node %s/%s with deprel '%s' needs new rules",
-							child_tok, child_tok["upos"], child_tok["deprel"])
+			logging.warning("Node %s/%s with deprel '%s' needs new rules: %s",
+							child_tok, child_tok["upos"], child_tok["deprel"], child_tok["feats"])

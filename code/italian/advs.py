@@ -15,7 +15,7 @@ def process_adv(head_tok, children_toks):
 		ita_utils.copy_features(head_tok)
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s", child_tok.values())
+		logger.debug("Examining child: %s", child_tok.values())
 
 		if child_tok["deprel"] in ["aux", "cop"]:
 			if child_tok.get("feats") and "Mood" in child_tok["feats"]:

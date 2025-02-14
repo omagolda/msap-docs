@@ -36,6 +36,8 @@ if __name__ == '__main__':
 	import sys
 	import pathlib
 
+	exclude_sentences = [x.strip() for x in open("data/italian/exclude_sentences.txt").readlines()]
+
 	filepath = pathlib.Path(sys.argv[1])
 	out_path = pathlib.Path(sys.argv[2])
 
@@ -43,7 +45,7 @@ if __name__ == '__main__':
 	logging.basicConfig(format='[%(module)s:%(lineno)d] %(levelname)s:%(message)s',
 					filename=f"logs/italian/{filepath.stem}.log",
 					filemode='w', encoding='utf-8',
-					level=logging.DEBUG)
+					level=logging.INFO)
 
 	logging.info("Processing %s into %s", filepath, out_path)
 
@@ -57,6 +59,11 @@ if __name__ == '__main__':
 
 		for tree, tokenlist in tqdm.tqdm(zip(parse_trees, parse_lists)):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
+
+			if tokenlist.metadata["sent_id"] in exclude_sentences:
+				logging.info("SKIPPING SENTENCE")
+				continue
+
 			# print("Processing sentence id: %s", tokenlist.metadata["sent_id"])
 			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 			# print(tokenlist.metadata["text"])
@@ -79,7 +86,7 @@ if __name__ == '__main__':
 
 			# * combine fixed expressions and remove nodes with 'fixed' relation
 			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
-			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x!= "fixed")
+			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x not in ["fixed", "flat", "flat:name", "compound"])
 
 			if len(fixed_nodes):
 				fixed_nodes_sorted = sorted(fixed_nodes, key=lambda x: x['id'])
@@ -117,7 +124,7 @@ if __name__ == '__main__':
 					logging.debug("Isolated %d conjuncts", len(conjuncts))
 					logging.debug("%s", " | ".join(str(x) for x in conjuncts))
 
-				logging.info("Processing head %s with children '%s'",
+				logging.debug("Processing head %s with children '%s'",
 							head_tok.values(),
 							" | ".join(str(x) for x in children_toks))
 

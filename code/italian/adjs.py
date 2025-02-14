@@ -17,7 +17,7 @@ def process_adj(head_tok, children_toks):
 	# 	head_tok["ms feats"]["Degree"].add("Sup")
 
 	for child_tok in children_toks:
-		logger.info("Examining child: %s", child_tok.values())
+		logger.debug("Examining child: %s", child_tok.values())
 
 		# * evaluate copulas
 		if child_tok["deprel"] in ["aux", "cop"]:
