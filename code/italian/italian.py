@@ -8,11 +8,15 @@ python -m code.italian.italian data/italian/dev.conllu data/italian/dev.out.conl
 """
 import logging
 import collections
-import code.utils as utils
+# import code.utils as utils
 import code.italian.verbs as verbs
 import code.italian.nouns as nouns
 import code.italian.adjs as adjs
 import code.italian.advs as advs
+# import code.italian.pronouns as prons
+import code.italian.lemma_based_decisions as lbd
+import code.italian.ita_utils as ita_utils
+import tqdm
 import conllu
 
 
@@ -24,15 +28,9 @@ def DFS(root_tree):
 			# print(child)
 			yield from DFS(child)
 		yield(root_tree.token, [child.token for child in children])
-	# else:
-	# 	yield(root_tree.token, None)
+	else:
+		yield(root_tree.token, [])
 
-	# else:
-	# 	return
-		# return root_tree.token, [tok.token for tok in root_tree.children]
-		# process_vertex(root_tree)
-	# else:
-	# 	pass
 
 if __name__ == '__main__':
 	import sys
@@ -57,19 +55,20 @@ if __name__ == '__main__':
 
 	with open(out_path, "w", encoding="utf-8") as fout:
 
-		for tree, tokenlist in zip(parse_trees, parse_lists):
+		for tree, tokenlist in tqdm.tqdm(zip(parse_trees, parse_lists)):
 			logging.info("Processing sentence id: %s", tokenlist.metadata["sent_id"])
-			logging.debug("Processing sentence: %s", tokenlist.metadata["text"])
+			logging.info("Sentence content: %s", tokenlist.metadata["text"])
 			# print(tokenlist.metadata["text"])
 
 			for node in tokenlist:
+				# * initialize empty ms-feats and set all nodes to false at the beginning
 				node["ms feats"] = collections.defaultdict(set)
 				node["content"] = False
 
 			id2idx = {token['id']:i for i, token in enumerate(tokenlist)}
 			idx2id = {y:x for x, y in id2idx.items()}
 
-			# filter out useless nodes (punct, reparandum)
+			# * filter out useless nodes (punct, reparandum)
 			filtered_tokenlist = tokenlist \
 								.filter(id=lambda x: isinstance(x, int)) \
 								.filter(upos=lambda x: x!="PUNCT") \
@@ -77,7 +76,7 @@ if __name__ == '__main__':
 								.filter(deprel=lambda x: x != "reparandum")
 			logging.debug("Removed punctuation: %s", " ".join([str(x) for x in filtered_tokenlist]))
 
-			# combine fixed expressions
+			# * combine fixed expressions and remove nodes with 'fixed' relation
 			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
 			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x!= "fixed")
 
@@ -87,74 +86,163 @@ if __name__ == '__main__':
 					node_head = tokenlist[id2idx[node['head']]]
 					node_head["lemma"] += f" {node['lemma']}"
 					node_head["form"] += f" {node['form']}"
-
 				logging.debug("Removed fixed deprels: %s", " | ".join([str(x) for x in filtered_tokenlist]))
 
-
-			# TODO: split parataxis?
-
 			tree = filtered_tokenlist.to_tree()
-			# print(tree.token)
-			# input()
 
-			# heads = utils.span(tree)
-			# print(heads)
-			# heads_dict = {}
-			# for element in heads:
-			# 	head, children = element
-			# 	heads_dict[head] = children
-
-			# assert utils.verify_span(heads) #TODO: a che serve?
-
-
-			# for head, children in heads_dict.items():
+			new_nodes = []
+			# * visit tree in depth-first fashion
 			for head_tok, children_toks in DFS(tree):
-				# head_tok = tokenlist[id2idx[head]]
-				# children_toks = [tokenlist[id2idx[child]] for child in children]
 
-				# remove parataxis
-				children_toks = [tok for tok in children_toks if tok["deprel"] != "parataxis"]
+				found_nsubj = False
+				if any(tok["deprel"] in ["nsubj", "csubj", "nsubj:pass", "csubj:pass"] for tok in children_toks):
+					found_nsubj = True
 
+				# * only select non-content children: information will be gathered only from those
+				children_toks = [tok for tok in children_toks if not tok["content"]]
 
-				logging.info("Processing head (%s/%s) with children (%s)",
-				 head_tok, head_tok["upos"], " | ".join(str(x) for x in children_toks))
+				for child_tok in children_toks:
+					# * Handling cc
+					if child_tok["deprel"] == "cc":
+						logging.debug("Adding Case feature with value %s", lbd.switch_conj_case(child_tok))
+						head_tok["ms feats"]["Case"].add(lbd.switch_conj_case(child_tok))
 
-				# TODO: check case of ADPs
-				head_tok["content"] = True
+				# * remove conjuncts as they will be treated in the end by copying features from head
+				conjuncts = [tok for tok in children_toks if tok["deprel"] == "conj"]
+				children_toks = [tok for tok in children_toks if not tok["deprel"] in ["conj", "cc"]]
 
-				if head_tok["upos"] in ["VERB"]:
+				if len(conjuncts)>0:
+					logging.debug("Isolated %d conjuncts", len(conjuncts))
+					logging.debug("%s", " | ".join(str(x) for x in conjuncts))
+
+				logging.info("Processing head '%s/%s' with children '%s'",
+							head_tok, head_tok["upos"],
+							" | ".join(str(x) for x in children_toks))
+
+				# * Assigning 'Nom', 'Acc' and 'Dat' Case based on syntactic function
+				if head_tok["deprel"] == "nsubj":
+					head_tok["ms feats"]["Case"].add("Nom")
+					logging.debug("Assigned 'Nom' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "nsubj:pass":
+					head_tok["ms feats"]["Case"].add("Acc")
+					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "obj":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
+					head_tok["ms feats"]["Case"].add("Acc")
+					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "iobj":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
+					head_tok["ms feats"]["Case"].add("Dat")
+					logging.debug("Assigned 'Dat' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				if head_tok["deprel"] == "obl:agent":
+					# if head_tok["upos"] == "PRON" and head_tok["feats"]["PronType"] == "Prs":
+						# head_tok["ms feats"]["Person"].add(lbd.switch_pron_person(head_tok))
+					head_tok["ms feats"]["Case"].add("Agt")
+					logging.debug("Assigned 'Agt' case to head '%s' because its deprel is '%s'",
+								head_tok, head_tok["deprel"])
+
+				# * Check that interjection has no deps and set to content word
+				if head_tok["upos"] in ["INTJ"]:
+					if len(children_toks) > 0:
+						logging.error("Found INTJ '%s' with children '%s'. Consider removing sentence %s",
+									head_tok, ", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+					head_tok["content"] = True
+
+				# * OPEN CLASS WORDS SECTION
+				elif head_tok["upos"] in ["VERB"]:
 					verbs.process_verb(head_tok, children_toks)
-				elif head_tok["upos"] in ["NOUN", "PROPN"]:
+					if "Fin" in head_tok["ms feats"]["VerbForm"] and not found_nsubj:
+						new_node = ita_utils.create_abstract_nsubj(head_tok)
+						new_nodes.append(new_node)
+					if "Person" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Person"]]
+					if "Gender" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Gender"]]
+					if "Number" in head_tok["ms feats"]:
+						del[head_tok["ms feats"]["Number"]]
+
+				elif head_tok["upos"] in ["NOUN", "PRON", "PROPN", "NUM", "SYM", "X"]:
 					nouns.process_noun(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADJ"]:
 					adjs.process_adj(head_tok, children_toks)
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
+
+				# * CLOSED CLASS WORDS SECTION
+				elif head_tok["upos"] in ["CCONJ", "SCONJ", "AUX", "PART", "ADP"]:
+					if len(children_toks) > 0:
+						logging.error("Found %s '%s' with children '%s'. Consider removing sentence %s",
+									head_tok["upos"], head_tok,
+									", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+
+				elif head_tok["upos"] in ["DET"]:
+					if len(children_toks) > 0:
+						logging.error("Found DET '%s' with children '%s'. Consider removing sentence %s",
+									head_tok, ", ".join(str(x) for x in children_toks),
+									tokenlist.metadata["sent_id"])
+
+					if head_tok["lemma"] in ["tutto", "ogni",
+											"mio", "tuo", "suo", "nostro", "vostro", "loro"]:
+						head_tok["content"] = True
+
+
 				else:
-					logging.warning("Found head (%s) with PoS %s, children (%s)",
-					 head_tok, head_tok["upos"], " | ".join(str(x) for x in children_toks))
-					#TODO: NUM?
-					#TODO: PRON?
+					logging.error("Not treated head '%s/%s', children '%s'",
+									head_tok, head_tok["upos"],
+									" | ".join(str(x) for x in children_toks))
+
+				# * for conj, add ms features of head into conjunct
+				for conj_tok in conjuncts:
+					logging.info("Copying %s features (%s) to %s", head_tok, head_tok["ms feats"], conj_tok)
+					conj_tok["content"] = head_tok["content"]
+					for feat in head_tok["ms feats"]:
+						for value in head_tok["ms feats"][feat]:
+							conj_tok["ms feats"][feat].add(value)
+
+			for node in new_nodes:
+				idx = int(node['id'])
+				node['id'] = f"{node['id']:.1f}"
+				tokenlist.insert(id2idx[idx] + 1, node)
 
 			for node in tokenlist:
+				# TODO: at the end function words should have "_"
+				# and content words with no ms-feat should have "|"
 
 				# restore original lemma
 				node['lemma'] = node['lemma'].split(" ")[0]
 				node['form'] = node['form'].split(" ")[0]
 
 				if node["content"]:
-					if node.get("feats"):
-						node_feats = node['feats']
-						node_msfeats = node["ms feats"]
-
-						for feat, value in node["feats"].items():
-							if feat in node["ms feats"]:
-								assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
-							else:
-								node["ms feats"][feat].add(node["feats"][feat])
+					# !! defaults should be already there at this point
+					# if node.get("feats"):
+					# 	node_feats = node['feats']
+					# 	node_msfeats = node["ms feats"]
+						# for feat, value in node["feats"].items():
+						# 	if feat in node["ms feats"]:
+						# 		print(node.items())
+						# 		input()
+						# 		assert any(x==node["feats"][feat] for x in node["ms feats"][feat])
+						# 	else:
+						# 		node["ms feats"][feat].add(node["feats"][feat])
 
 					sorted_msfeats = sorted(node["ms feats"].items())
-					sorted_msfeats = [f"{x}={','.join(y)}" for x, y in sorted_msfeats]
+					# * if multiple values are present, they are conjoined by semi-colon
+					# TODO: handle negation -> es. not(Pot)
+					# TODO: handle conjunction of values -> es. "if and when" and(Cnd,Tmp)
+					# TODO: handle disjunction of values -> es. Tense=or(Past,Fut)
+					sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
@@ -163,46 +251,3 @@ if __name__ == '__main__':
 
 			to_write = tokenlist.serialize()
 			print(to_write, file=fout)
-
-
-	# with open(out_path, 'w', encoding='utf8') as outfile:
-	#     for i in range(len(parse_trees)): # iterate over the sentences
-	#         parse_tree = parse_trees[i]
-	#         parse_list: conllu.TokenList = parse_lists[i]
-
-	#         id2idx = {token['id']:i for i, token in enumerate(parse_list) if isinstance(token['id'], int)}
-	#         idx2id = [token['id'] if isinstance(token['id'], int) else None for token in parse_list]
-
-	#         heads = utils.span(parse_tree)
-	#         assert utils.verify_span(heads)
-
-	#         to_add = []
-	#         for head, children in heads[::-1]:
-	#             head: conllu.Token = parse_list[id2idx[head]]
-	#             children = [parse_list[id2idx[child]] for child in children]
-	#             added_nodes = apply_grammar(head, children)
-	#             if added_nodes:
-	#                 added_idxs = get_where_to_add(added_nodes, id2idx)
-	#                 to_add += list(zip(added_nodes, added_idxs))
-
-	#         for added_node in to_add[::-1]:
-	#             node, idx = added_node
-	#             parse_list.insert(idx + 1, node)
-
-	#         for node in parse_list:
-	#             # setting ms-feats for content nodes that were not dealt with earlier
-	#             if node['upos'] in {'ADJ', 'INTJ'} | VERBAL | NOMINAL and not node.get('ms feats', None): # if the node is a content node and the ms_feats are not set
-	#                 ms_feats = deepcopy(node['feats'])
-	#                 if ms_feats is None:
-	#                     ms_feats = '|'
-	#                 node['ms feats'] = ms_feats
-	#             # function nodes end up with empty ms-feats
-	#             else:
-	#                 node['ms feats'] = node.get('ms feats', None)
-
-	#             # sort alphabetically the MS features of all nodes
-	#             node['ms feats'] = order_alphabetically(node['ms feats'])
-	#         assert utils.verify_treeness(parse_list)
-
-	#         to_write = parse_list.serialize()
-	#         outfile.write(to_write + '\n')
