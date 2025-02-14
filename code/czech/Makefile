@@ -1,8 +1,15 @@
 SHELL=/bin/bash
 
-UDDIR = /net/work/people/zeman/unidep
-INPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.conllu
-OUTPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.msf
+#UDDIR = /net/work/people/zeman/unidep
+#INPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.conllu
+#OUTPUT = $(UDDIR)/UD_Czech-PUD/cs_pud-ud-test.msf
+UDDIR = /net/data/universal-dependencies-2.15
+INPUT = $(UDDIR)/UD_Czech-PDT/cs_pdt-ud-test.conllu
+OUTPUT = $(UDDIR)/UD_Czech-PDT/cs_pud-ud-test.msf
+#INPUT = $(UDDIR)/UD_Czech-PDT/cs_pdt-ud-dev.conllu
+#OUTPUT = $(UDDIR)/UD_Czech-PDT/cs_pud-ud-dev.msf
+#INPUT = $(UDDIR)/UD_Czech-PDT/cs_pdt-ud-train.conllu
+#OUTPUT = $(UDDIR)/UD_Czech-PDT/cs_pud-ud-train.msf
 LKDIR = /net/work/people/zeman/casovani-sloves/Slavic_languages
 TMPFILE = /net/work/people/zeman/msap-docs/code/czech/lk.conllu
 
