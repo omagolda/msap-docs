@@ -245,7 +245,7 @@
 3	che	che	SCONJ	CS	_	6	mark	_	_
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
-6	inseguisse	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	ccomp	_	_
+6	inseguisse	inseguire	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	2	csubj	_	_
 7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	cane	cane	NOUN	S	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
 9	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
@@ -258,7 +258,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	_
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
@@ -271,7 +271,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
-7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	_
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
@@ -576,7 +576,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	voglia	volere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
-7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	csubj	_	_
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
@@ -589,7 +589,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
 6	volesse	volere	AUX	VM	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux	_	_
-7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+7	inseguire	inseguire	VERB	V	VerbForm=Inf	2	csubj	_	_
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
 9	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	obj	_	SpaceAfter=No
 10	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
@@ -603,7 +603,7 @@
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
 6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
 7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux	_	_
-8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	csubj	_	_
 9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
 11	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
@@ -617,7 +617,7 @@
 5	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
 6	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
 7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux	_	_
-8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	ccomp	_	_
+8	inseguire	inseguire	VERB	V	VerbForm=Inf	2	csubj	_	_
 9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	obj	_	SpaceAfter=No
 11	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
@@ -632,7 +632,7 @@
 6	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
 7	voluto	volere	AUX	VM	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	aux	_	_
 8	essere	essere	AUX	VA	VerbForm=Inf	9	aux:pass	_	_
-9	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	_
+9	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	_
 10-11	dal	_	_	_	_	_	_	_	_
 10	da	da	ADP	E	_	12	case	_	_
 11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -824,7 +824,7 @@
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	nsubj:pass	_	_
 6	fosse	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	7	aux:pass	_	_
-7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+7	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
 
 # sent_id = 78
@@ -836,7 +836,7 @@
 5	cane	cane	NOUN	S	Gender=Masc|Number=Sing	8	nsubj:pass	_	_
 6	fosse	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux	_	_
 7	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	aux:pass	_	_
-8	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	ccomp	_	SpaceAfter=No
+8	inseguito	inseguire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	csubj	_	SpaceAfter=No
 9	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n
 
 # sent_id = 79
@@ -1065,4 +1065,15 @@
 5	essere	essere	AUX	VA	VerbForm=Inf	7	cop	_	_
 6	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
 7	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	FS	_	7	punct	_	SpaceAfter=No
+
+# sent_id = 96
+# text = Il cane e la gatta sono belli.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	cane	cane	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	e	e	CCONJ	CC	_	5	cc	_	_
+4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
+5	gatta	gatta	NOUN	S	Gender=Fem|Number=Sing	2	conj	_	_
+6	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	belli	bello	ADJ	A	Gender=Masc|Number=Plur	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	7	punct	_	SpaceAfter=No
