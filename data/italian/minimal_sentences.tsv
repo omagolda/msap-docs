@@ -85,4 +85,4 @@ id	working_status	test_case	sentence	issues
 87	_	frasi nom Fut	Il gatto sarà il Presidente della Repubblica.
 88	_	frasi nom FutAnt	Il gatto sarà stato il Presidente della Repubblica.
 89	_	frasi nom modals	Il gatto può essere stato il Presidente della Repubblica.
-90	_	frasi nom Progr	Il può sta essendo il Presidente della Repubblica.
+90	_	frasi nom Progr	Il gatto sta essendo il Presidente della Repubblica.
