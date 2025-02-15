@@ -45,7 +45,7 @@ if __name__ == '__main__':
 	logging.basicConfig(format='[%(module)s:%(lineno)d] %(levelname)s:%(message)s',
 					filename=f"logs/italian/{filepath.stem}.log",
 					filemode='w', encoding='utf-8',
-					level=logging.DEBUG)
+					level=logging.INFO)
 
 	logging.info("Processing %s into %s", filepath, out_path)
 
@@ -88,16 +88,21 @@ if __name__ == '__main__':
 			logging.debug("Removed punctuation: %s", " ".join([str(x) for x in filtered_tokenlist]))
 
 			# * combine fixed expressions and remove nodes with 'fixed' relation
-			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
+			fixed_nodes = filtered_tokenlist.filter(deprel=lambda x: x in ["fixed", "flat", "flat:name", "flat:foreign", "compound"])
 			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x not in ["fixed", "flat", "flat:name", "flat:foreign",
 																					"compound"])
 
 			if len(fixed_nodes):
 				fixed_nodes_sorted = sorted(fixed_nodes, key=lambda x: x['id'])
 				for node in fixed_nodes_sorted:
+					# print(node)
+					# input()
 					node_head = tokenlist[id2idx[node['head']]]
 					node_head["lemma"] += f" {node['lemma']}"
 					node_head["form"] += f" {node['form']}"
+
+					if node["upos"] in ["VERB", "NOUN", "NUM", "PROPN"]:
+						node["content"] = True
 				logging.debug("Removed fixed deprels: %s", " | ".join([str(x) for x in filtered_tokenlist]))
 
 			tree = filtered_tokenlist.to_tree()
@@ -194,6 +199,8 @@ if __name__ == '__main__':
 
 				elif head_tok["upos"] in ["ADV"]:
 					advs.process_adv(head_tok, children_toks)
+					if any(x["deprel"]in["obl", "nummod"] for x in content_children):
+						head_tok["content"] = True  # es. "il più delle volte"
 
 				# * CLOSED CLASS WORDS SECTION
 
@@ -264,10 +271,6 @@ if __name__ == '__main__':
 						# * if multiple values are present, they are conjoined by semi-colon
 						sorted_msfeats = [f"{x}={';'.join(y)}" for x, y in sorted_msfeats]
 
-					# TODO: handle negation -> es. not(Pot)
-					# TODO: handle conjunction of values -> es. "if and when" and(Cnd,Tmp)
-					# TODO: handle disjunction of values -> es. Tense=or(Past,Fut)
-
 					node['ms feats'] = "|".join(sorted_msfeats)
 
 				elif node.get("ms feats"):
@@ -276,7 +279,11 @@ if __name__ == '__main__':
 						remove_feats = True
 
 					if not remove_feats:
-						logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
+
+						if "Case" in node["ms feats"] and any(x in node["ms feats"]["Case"] for x in ["Conj", "Disj", "Nnor"]):
+							logging.warning("Node %s: Handle with manual annotation", node)
+						else:
+							logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
 
 			to_write = tokenlist.serialize()

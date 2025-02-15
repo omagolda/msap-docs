@@ -985,20 +985,6 @@
 41	.	.	PUNCT	FS	_	3	punct	3:punct	_
 
 
-# sent_id = isst_tanl-885
-# text = E come no, come no, caro Ante.
-1	E	e	CCONJ	CC	_	9	cc	9:cc	_
-2	come	come	ADV	B	_	9	advmod	9:advmod	_
-3	no	no	INTJ	I	Polarity=Neg	2	discourse	2:discourse	SpaceAfter=No
-4	,	,	PUNCT	FF	_	5	punct	5:punct	_
-5	come	come	ADV	B	_	2	conj	2:conj|9:advmod	_
-6	no	no	INTJ	I	Polarity=Neg	5	discourse	5:discourse	SpaceAfter=No
-7	,	,	PUNCT	FF	_	2	punct	2:punct	_
-8	caro	caro	ADJ	A	Gender=Masc|Number=Sing	9	amod	9:amod	_
-9	Ante	Ante	PROPN	SP	_	0	root	0:root	SpaceAfter=No
-10	.	.	PUNCT	FS	_	9	punct	9:punct	_
-
-
 # sent_id = isst_tanl-917
 # text = "Molti non hanno neppure fatto in tempo a raccogliere gli effetti personali.
 1	"	"	PUNCT	FB	_	6	punct	6:punct	SpaceAfter=No

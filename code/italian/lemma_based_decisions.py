@@ -371,7 +371,7 @@ def switch_conj_case(token):
 		return "Disj"
 
 	#Negative disjunctive
-	if token["lemma"] in ["né"]:
+	if token["lemma"] in ["né", "nè"]:
 		return "Nnor"
 
 	# Adversative

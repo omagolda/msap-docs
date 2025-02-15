@@ -10,9 +10,6 @@ def sample(input_file, n, output_file, seed):
 	with open(input_file, encoding='utf8') as fin:
 		parse_trees = list(conllu.parse_incr(fin))
 		for sent in parse_trees:
-			# print(sent)
-			# print(sent)
-			# n_orphans = len(sent.filter(deprel="orphan").filter(deprel="parataxis"))
 			n_exclusion = len(sent.filter(deprel="parataxis")) + \
 						len(sent.filter(deprel="orphan")) + \
 						len(sent.filter(deprel="dep")) + \

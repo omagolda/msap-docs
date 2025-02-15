@@ -2,12 +2,10 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-3
 [italian:68] INFO:Sentence content: Evacuata la Tate Gallery.
 [ita_utils:13] INFO:Node Tate/PROPN has no features
-[nouns:140] WARNING:Node Evacuata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-14
 [italian:68] INFO:Sentence content: GOTEBORG - È stata la giornata del doppio oro italiano ai Mondiali di atletica:
 [ita_utils:13] INFO:Node GOTEBORG/PROPN has no features
 [ita_utils:13] INFO:Node Mondiali/PROPN has no features
-[nouns:140] WARNING:Node Mondiali/PROPN with deprel 'obl' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-52
 [italian:68] INFO:Sentence content: Negli ambienti giudiziari si tende ad accreditare la tesi di una leggerezza, escludendo che il militare volesse veramente mettere in pericolo l'incolumità del presidente Scalfaro.
 [ita_utils:13] INFO:Node veramente/ADV has no features
@@ -17,19 +15,11 @@
 [ita_utils:13] INFO:Node Papa/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-123
 [italian:68] INFO:Sentence content: Un ottimo conservatorio un valido musicista.
-[nouns:140] WARNING:Node musicista/NOUN with deprel 'conj' needs new rules: {'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-129
 [italian:68] INFO:Sentence content: Fanno fatica ad ammettere che una mescolanza misteriosa di fattori genetici, di educazione e di stimoli ambientali, possa produrre individui che sanno fare cose che essi non potranno mai nemmeno immaginare.
-[nouns:140] WARNING:Node educazione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node stimoli/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node mai/ADV has no features
-[nouns:140] WARNING:Node immaginare/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node sanno/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node ammettere/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: isst_tanl-219
 [italian:68] INFO:Sentence content: lo storico, paternalistico disinteresse della chiesa cattolica verso il loro "genio" è alla fine.
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node disinteresse/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-246
 [italian:68] INFO:Sentence content: Un corazziere contro Scalfaro.
 [ita_utils:13] INFO:Node Scalfaro/PROPN has no features
@@ -37,9 +27,6 @@
 [italian:68] INFO:Sentence content: Il nome del carabiniere (i corazzieri sono infatti un reparto speciale dell'Arma) è "top secret", ma la vicenda è stata denunciata alla magistratura e il procuratore militare Antonino Intelisano ha aperto un'inchiesta per il reato di offesa all'onore del presidente della Repubblica.
 [ita_utils:13] INFO:Node infatti/ADV has no features
 [ita_utils:13] INFO:Node Arma/PROPN has no features
-[nouns:140] WARNING:Node corazzieri/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node infatti/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node reparto/NOUN with deprel 'advcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Antonino/PROPN has no features
 [ita_utils:13] INFO:Node Repubblica/PROPN has no features
 [ita_utils:13] INFO:Node top/ADJ has no features
@@ -48,26 +35,18 @@
 [ita_utils:13] INFO:Node Fersina/PROPN has no features
 [ita_utils:13] INFO:Node Trentino/PROPN has no features
 [ita_utils:13] INFO:Node Palù/PROPN has no features
-[nouns:140] WARNING:Node mio/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node ha/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node su/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-291
 [italian:68] INFO:Sentence content: Sergio Minetto, ex volontario nella Repubblica di Salò, riparatore di frigoriferi, tre figli (due dei quali impegnati nella sinistra), era stato arrestato nella sua abitazione il 17 maggio, su ordine del giudice milanese Guido Salvini.
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node Salò/PROPN has no features
 [ita_utils:13] INFO:Node Repubblica/PROPN has no features
-[nouns:140] WARNING:Node impegnati/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node riparatore/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node figli/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node Sergio/PROPN has no features
-[nouns:140] WARNING:Node volontario/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Guido/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-377
 [italian:68] INFO:Sentence content: Il tutto avviene con la connivenza delle autorità costituite e così uno dei Paesi più ricchi del mondo è stato gettato in uno stato di povertà assoluta.
 [ita_utils:13] INFO:Node così/ADV has no features
 [ita_utils:13] INFO:Node Paesi/PROPN has no features
-[nouns:140] WARNING:Node così/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-404
 [italian:68] INFO:Sentence content: I Castiglioni li chiamavano per scherzo "gli africani" e, dal paesino comasco, in tanti erano andati a trovarli in questi anni, laggiù.
 [ita_utils:13] INFO:Node Castiglioni/PROPN has no features
@@ -77,27 +56,16 @@
 [ita_utils:13] INFO:Node Africa/PROPN has no features
 [ita_utils:13] INFO:Node Lamberti/PROPN has no features
 [ita_utils:13] INFO:Node Cattaneo/PROPN has no features
-[nouns:140] WARNING:Node Cattaneo/PROPN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node Lamberti/PROPN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node moglie/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node figli/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node lasciando/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Ger'}
 [italian:61] INFO:Processing sentence id: isst_tanl-414
 [italian:68] INFO:Sentence content: era partito solo qualche mese fa.
 [ita_utils:13] INFO:Node solo/ADV has no features
 [ita_utils:13] INFO:Node fa/ADV has no features
-[nouns:140] WARNING:Node solo/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node fa/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-449
 [italian:68] INFO:Sentence content: MILANO - "Carissimi, ho ricevuto con grande piacere la vostra lettera e con altrettanto sento che state bene.
 [ita_utils:13] INFO:Node MILANO/PROPN has no features
-[nouns:140] WARNING:Node vostra/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node bene/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-460
 [italian:68] INFO:Sentence content: assassini e omicidi sono all'ordine del giorno tra i locali;
-[nouns:140] WARNING:Node omicidi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node locali/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node assassini/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-475
 [italian:68] INFO:Sentence content: Irene venga a lezione di tolleranza.
 [ita_utils:13] INFO:Node Irene/PROPN has no features
@@ -105,7 +73,6 @@
 [italian:68] INFO:Sentence content: E la fiducia è ritornata.
 [italian:61] INFO:Processing sentence id: isst_tanl-577
 [italian:68] INFO:Sentence content: A quel punto può coltivare la sua passione per la storia militante e di lì a poco sposa la linea dei nazionalisti.
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node poco/ADV has no features
 [ita_utils:13] INFO:Node lì/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-599
@@ -114,39 +81,30 @@
 [ita_utils:13] INFO:Node Slovenia/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-616
 [italian:68] INFO:Sentence content: È guerra con i nemici".
-[nouns:140] WARNING:Node nemici/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-627
 [italian:68] INFO:Sentence content: una volta per sempre Bossi va colpito secondo la legge".
 [ita_utils:13] INFO:Node sempre/ADV has no features
-[nouns:140] WARNING:Node sempre/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Bossi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-669
 [italian:68] INFO:Sentence content: È nel suo diritto.
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: isst_tanl-674
 [italian:68] INFO:Sentence content: La sinistra l'ha attaccata perché Pivetti non si è adeguata.
 [ita_utils:13] INFO:Node Pivetti/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-681
 [italian:68] INFO:Sentence content: Prima ho dovuto lottare con una del mio stesso partito, Tina Lagostena Bassi.
 [ita_utils:13] INFO:Node Prima/ADV has no features
-[nouns:140] WARNING:Node mio/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Tina/PROPN has no features
-[nouns:140] WARNING:Node Tina/PROPN with deprel 'appos' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-718
 [italian:68] INFO:Sentence content: Ma se gliene avete fatte di tutti i colori, voi di Forza Italia ....
-[nouns:140] WARNING:Node tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node Forza/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-905
 [italian:68] INFO:Sentence content: Ma già si parla di epurazioni e di processi contro i vinti.
 [ita_utils:13] INFO:Node già/ADV has no features
-[nouns:140] WARNING:Node processi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-958
 [italian:68] INFO:Sentence content: Ci stavano sterminando".
 [italian:61] INFO:Processing sentence id: isst_tanl-1009
 [italian:68] INFO:Sentence content: Sabato Mladic aveva spedito un fax dal suo quartier generale per definire "illegale" la decisione del presidente e invocare il sostegno dei suoi soldati.
 [ita_utils:13] INFO:Node Mladic/PROPN has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node suoi/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1014
 [italian:68] INFO:Sentence content: I generali si sono anche appellati al "parlamento" di Pale.
 [ita_utils:13] INFO:Node anche/ADV has no features
@@ -155,41 +113,30 @@
 [italian:68] INFO:Sentence content: "Lui le regalò un porcellino salvadanaio".
 [italian:61] INFO:Processing sentence id: isst_tanl-1048
 [italian:68] INFO:Sentence content: il fusto in questione non è una sconosciuta guardia del corpo o un cavaliere dell'empireo aristocratico, ma un eroe dell'immaginario popolare.
-[nouns:140] WARNING:Node fusto/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node cavaliere/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node eroe/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1103
 [italian:68] INFO:Sentence content: Qui solo due anni fa dominava il coprifuoco imposto dai soldati israeliani.
 [ita_utils:13] INFO:Node Qui/ADV has no features
 [ita_utils:13] INFO:Node solo/ADV has no features
-[nouns:140] WARNING:Node solo/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node fa/ADV has no features
-[nouns:140] WARNING:Node fa/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node imposto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1147
 [italian:68] INFO:Sentence content: "Chirac, ricordati Hiroshima".
 [ita_utils:13] INFO:Node Chirac/PROPN has no features
 [ita_utils:13] INFO:Node Hiroshima/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1168
 [italian:68] INFO:Sentence content: Per quanto se ne sa, il presidente non ha inviato un messaggio al primo ministro giapponese Tomiichi Murayama per l'anniversario di Hiroshima.
-[nouns:140] WARNING:Node sa/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node Tomiichi/PROPN has no features
 [ita_utils:13] INFO:Node Hiroshima/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1171
 [italian:68] INFO:Sentence content: Sono state liberate, come auspicio di pace, come per scacciare demoni di guerra ancora incombenti, venticinquemila colombe che hanno innalzato verso il cielo, nelle scene televisive, una specie di sinfonia alata.
 [ita_utils:13] INFO:Node come/ADV has no features
 [ita_utils:13] INFO:Node ancora/ADV has no features
-[nouns:140] WARNING:Node innalzato/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1183
 [italian:68] INFO:Sentence content: Ma gli accenti più forti sono stati quelli di Takako Doi, presidente della Camera dei rappresentanti della Dieta:
 [ita_utils:13] INFO:Node Dieta/PROPN has no features
 [ita_utils:13] INFO:Node Camera/PROPN has no features
 [ita_utils:13] INFO:Node Takako/PROPN has no features
-[nouns:140] WARNING:Node presidente/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node accenti/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1206
 [italian:68] INFO:Sentence content: I coloni torneranno a compiere occupazioni simboliche delle alture prospicienti i loro insediamenti.
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1218
 [italian:68] INFO:Sentence content: O se in gruppo, cantare cose tipo "Bella, bella, bella".
 [italian:61] INFO:Processing sentence id: isst_tanl-1299
@@ -197,14 +144,9 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-1307
 [italian:68] INFO:Sentence content: Il padre di lei, spalleggiato forse dalla moglie, gli ha sparato contro numerosi colpi d'arma da fuoco.
 [ita_utils:13] INFO:Node forse/ADV has no features
-[nouns:140] WARNING:Node forse/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node spalleggiato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node contro/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1324
 [italian:68] INFO:Sentence content: La sua identità e la sua nazionalità non sono state ancora accertate.
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node nazionalità/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
 [ita_utils:13] INFO:Node ancora/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1349
 [italian:68] INFO:Sentence content: "È successo un quarto d'ora fa.
@@ -215,14 +157,10 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-1445
 [italian:68] INFO:Sentence content: Non sarà anche colpa dei giudici che danno retta a troppi pentiti?
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node danno/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-1537
 [italian:68] INFO:Sentence content: Ad esempio, ammira ma trova terribile l'esattezza sociologica di Ecce Bombo, che per molti fans di Moretti si accompagna a una nostalgia generazionale:
-[nouns:140] WARNING:Node Bombo/X with deprel 'flat:foreign' needs new rules: {'Foreign': 'Yes'}
 [ita_utils:13] INFO:Node Moretti/PROPN has no features
 [ita_utils:13] INFO:Node fans/NOUN has no features
-[nouns:140] WARNING:Node accompagna/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1548
 [italian:68] INFO:Sentence content: Ed eccoci ricascati nel "politicamente corretto".
 [ita_utils:13] INFO:Node ecco/ADV has no features
@@ -230,7 +168,6 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-1558
 [italian:68] INFO:Sentence content: Ma, come ammoniva il Vangelo, chi vuol salvare la propria vita, la perderà".
 [ita_utils:13] INFO:Node Vangelo/PROPN has no features
-[nouns:140] WARNING:Node salvare/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1616
 [italian:68] INFO:Sentence content: una serata all'Elba per Mariateresa Di Lascia.
 [ita_utils:13] INFO:Node Elba/PROPN has no features
@@ -238,32 +175,22 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-1628
 [italian:68] INFO:Sentence content: Diefenbach, il pittore nudo.
 [ita_utils:13] INFO:Node Diefenbach/PROPN has no features
-[nouns:140] WARNING:Node pittore/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1657
 [italian:68] INFO:Sentence content: mare, spruzzi d'acqua, fluire d'onde tra gli scogli intarsiati dal soffio furente del vento e della pioggia.
-[nouns:140] WARNING:Node pioggia/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node intarsiati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node spruzzi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node fluire/VERB with deprel 'conj' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1692
 [italian:68] INFO:Sentence content: Come non bastasse, l'ex commissario viene a conoscenza di altri particolari inquietanti.
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1699
 [italian:68] INFO:Sentence content: Si finirà per scoprire che, prima di dedicarsi alla terza età e di sfruttare le perversioni dei suoi anziani ospiti, Irma ha lavorato come prostituta in un bordello.
 [ita_utils:13] INFO:Node prima di/ADV has no features
-[nouns:140] WARNING:Node suoi/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Irma/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1705
 [italian:68] INFO:Sentence content: Basti sapere che costui uccide memore delle vespe d'autunno (ecco il titolo) che, quando il loro nido va in briciole e la bella stagione muore, "diventano erratiche e aggressive".
 [ita_utils:13] INFO:Node ecco/ADV has no features
-[nouns:140] WARNING:Node ecco/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node diventano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1745
 [italian:68] INFO:Sentence content: Mi provo a ripetere con la variante le frasi di poco fa:
 [ita_utils:13] INFO:Node fa/ADV has no features
 [ita_utils:13] INFO:Node poco/ADV has no features
-[nouns:140] WARNING:Node poco/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-1782
 [italian:68] INFO:Sentence content: "A me questa "Traviata" è piaciuta molto.
 [ita_utils:13] INFO:Node Traviata/PROPN has no features
@@ -276,29 +203,21 @@
 [ita_utils:13] INFO:Node Festival/PROPN has no features
 [ita_utils:13] INFO:Node qui/ADV has no features
 [ita_utils:13] INFO:Node Cannes/PROPN has no features
-[nouns:140] WARNING:Node qui/ADV with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node presentato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1911
 [italian:68] INFO:Sentence content: Le è simpatica Nicole Kidman?
 [ita_utils:13] INFO:Node Nicole/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1940
 [italian:68] INFO:Sentence content: Ma va da sè che io faccio parte di quella maggioranza di condomini che non saprebbe da che parte cominciare.
-[nouns:140] WARNING:Node saprebbe/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Cnd', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1941
 [italian:68] INFO:Sentence content: I tecnici del mestiere comunque avranno capito quello che fate la domenica mattina, quando il palazzo ancora dorme, con spazzole, cemento e gel e, se vorranno, potranno imitarvi.
 [ita_utils:13] INFO:Node comunque/ADV has no features
 [ita_utils:13] INFO:Node ancora/ADV has no features
-[nouns:140] WARNING:Node cemento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node gel/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
-[nouns:140] WARNING:Node fate/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '2', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-1947
 [italian:68] INFO:Sentence content: La Stefi di Grazia Nidasio.
 [ita_utils:13] INFO:Node Grazia/PROPN has no features
 [ita_utils:13] INFO:Node Stefi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2045
 [italian:68] INFO:Sentence content: Studiando con sapienza la sua strategia, Pasqualin mette in circolo la suggestione Juve.
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Pasqualin/PROPN has no features
 [ita_utils:13] INFO:Node Juve/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2058
@@ -309,13 +228,10 @@
 [ita_utils:13] INFO:Node anche/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2083
 [italian:68] INFO:Sentence content: È nella natura delle cose e degli uomini.
-[nouns:140] WARNING:Node uomini/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2085
 [italian:68] INFO:Sentence content: Ed è quello che hanno fatto May e Bailey.
 [ita_utils:13] INFO:Node Bailey/PROPN has no features
 [ita_utils:13] INFO:Node May/PROPN has no features
-[nouns:140] WARNING:Node Bailey/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node fatto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2168
 [italian:68] INFO:Sentence content: E il sogno continua con la Sidoti.
 [ita_utils:13] INFO:Node Sidoti/PROPN has no features
@@ -326,18 +242,10 @@
 [ita_utils:13] INFO:Node Mondiali/PROPN has no features
 [ita_utils:13] INFO:Node Ileana/PROPN has no features
 [ita_utils:13] INFO:Node Essayah/PROPN has no features
-[nouns:140] WARNING:Node videro/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Past', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2196
 [italian:68] INFO:Sentence content: atleta che non nasconde lo sforzo ma lo rende tanto naturale che la sua rimonta, dopo una crisi al quindicesimo chilometro, sembra scritta negli occhi, sotto le due tettoie di sopracciglia scure che lo fanno più uomo di quanto Michele non sia, più avvezzo alle emozioni di quanto non sembri.
 [ita_utils:13] INFO:Node tanto/ADV has no features
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Michele/PROPN has no features
-[nouns:140] WARNING:Node sia/VERB with deprel 'advcl' needs new rules: {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node sembri/VERB with deprel 'advcl' needs new rules: {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:100] WARNING:Adverb needs coding più
-[nouns:140] WARNING:Node avvezzo/ADJ with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node fanno/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node nasconde/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2239
 [italian:68] INFO:Sentence content: non ho finito il liceo artistico, mi sono ritirato alla maturità.
 [italian:61] INFO:Processing sentence id: isst_tanl-2249
@@ -346,16 +254,13 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-2295
 [italian:68] INFO:Sentence content: La gara di Goteborg è stata un passaggio di consegne:
 [ita_utils:13] INFO:Node Goteborg/PROPN has no features
-[nouns:140] WARNING:Node gara/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2322
 [italian:68] INFO:Sentence content: È una scena genuina perché Fiona sulle prime non capisce che si tratta del marito.
 [ita_utils:13] INFO:Node Fiona/PROPN has no features
-[nouns:140] WARNING:Node capisce/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2343
 [italian:68] INFO:Sentence content: L'oro di Fiona, in pratica, è stato conquistato già al primo salto, con 6,93;
 [ita_utils:13] INFO:Node Fiona/PROPN has no features
 [ita_utils:13] INFO:Node già/ADV has no features
-[nouns:140] WARNING:Node già/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-2380
 [italian:68] INFO:Sentence content: Al 35'il pareggio di Agostini.
 [ita_utils:13] INFO:Node Agostini/PROPN has no features
@@ -363,81 +268,52 @@
 [italian:68] INFO:Sentence content: Gli arbitri non hanno gradito la linea di condotta tenuta dalla Federcalcio e dall'Aia nelle ultime vicende legate alle nomine delle commissioni (con il siluramento di Baldas e Capelluti) e vogliono chiarimenti sul trattamento economico riservato a chi dirige in serie A e B.
 [ita_utils:13] INFO:Node Aia/PROPN has no features
 [ita_utils:13] INFO:Node Federcalcio/PROPN has no features
-[nouns:140] WARNING:Node Aia/PROPN with deprel 'conj' needs new rules: None
 [ita_utils:13] INFO:Node Capelluti/PROPN has no features
 [ita_utils:13] INFO:Node Baldas/PROPN has no features
-[nouns:140] WARNING:Node Capelluti/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node legate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node tenuta/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node B/PROPN has no features
 [ita_utils:13] INFO:Node A/PROPN has no features
-[nouns:140] WARNING:Node B/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node dirige/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node riservato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2490
 [italian:68] INFO:Sentence content: Gianluca Vialli ama parlare della gestione del calcio e non soltanto dei suoi aspetti tecnici.
 [ita_utils:13] INFO:Node Gianluca/PROPN has no features
 [ita_utils:13] INFO:Node soltanto/ADV has no features
-[nouns:140] WARNING:Node soltanto/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node suoi/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node aspetti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2530
 [italian:68] INFO:Sentence content: O accontentarsi così, perché per vincere non occorre essere per forza Lewis:
 [ita_utils:13] INFO:Node così/ADV has no features
 [ita_utils:13] INFO:Node Lewis/PROPN has no features
-[nouns:140] WARNING:Node forza/NOUN with deprel 'obl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2572
 [italian:68] INFO:Sentence content: Esiste poi un progetto di legge, al quale sta lavorando l'assessore Donato Giordano, per giungere a una diversa organizzazione della struttura, a partire dalla dirigenza e dalle competenze degli assessori;
 [ita_utils:13] INFO:Node poi/ADV has no features
 [ita_utils:13] INFO:Node Donato/PROPN has no features
-[nouns:140] WARNING:Node competenze/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node lavorando/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Ger'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2592
 [italian:68] INFO:Sentence content: Mentre Luca osservava dall'alto, suo padre, in quel fosso profondo quasi quattro metri, largo due e lungo più di dieci, ha cominciato a lavorare per mettere in posa i tubi fognari.
 [ita_utils:13] INFO:Node Luca/PROPN has no features
 [ita_utils:13] INFO:Node quasi/ADV has no features
-[nouns:140] WARNING:Node quasi/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2612
 [italian:68] INFO:Sentence content: Il motoscafo, un "Draco AS", è partito da Fiumicino e sta dirigendosi verso Anzio.
 [ita_utils:13] INFO:Node Draco/PROPN has no features
-[nouns:140] WARNING:Node Draco/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node Fiumicino/PROPN has no features
 [ita_utils:13] INFO:Node Anzio/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2631
 [italian:68] INFO:Sentence content: Cimini era uscito in mare, solo, a bordo di una piccola imbarcazione, la sera prima.
 [ita_utils:13] INFO:Node Cimini/PROPN has no features
 [ita_utils:13] INFO:Node prima/ADV has no features
-[nouns:140] WARNING:Node prima/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-2685
 [italian:68] INFO:Sentence content: Monsignor Grillo è stato molto sensibile a nominare due esorcisti.
 [ita_utils:13] INFO:Node Grillo/PROPN has no features
 [ita_utils:13] INFO:Node molto/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2740
 [italian:68] INFO:Sentence content: Quadri, oggetti ricordo dell'Africa, qualche monile regalato alla cognata, ma soprattutto un grosso pacco di lettere: i ricordi di Luigi passano di mano in mano, dal fratello alla cognata, dal cugino ai nipoti.
-[nouns:140] WARNING:Node regalato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node soprattutto/ADV has no features
-[nouns:140] WARNING:Node soprattutto/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node oggetti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node monile/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node pacco/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Luigi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2748
 [italian:68] INFO:Sentence content: Affidava le lettere a persone di passaggio, in viaggio verso località dove fosse possibile imbucare".
 [ita_utils:13] INFO:Node dove/ADV has no features
-[nouns:140] WARNING:Node possibile/ADJ with deprel 'acl:relcl' needs new rules: {'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2795
 [italian:68] INFO:Sentence content: Al momento di scendere, spesso si rischia di cadere perché gli autisti non fanno alcuna attenzione e ripartono senza guardare".
-[nouns:140] WARNING:Node scendere/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [ita_utils:13] INFO:Node spesso/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2811
 [italian:68] INFO:Sentence content: Per lui, che da quasi un lustro aspetta la nuova divisa (in pieno agosto lavora con i pantaloni invernali e una maglietta grigia portata da casa), si tratta di accuse ingiustificate:
 [ita_utils:13] INFO:Node quasi/ADV has no features
-[nouns:140] WARNING:Node quasi/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node portata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node maglietta/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node aspetta/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node lavora/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2838
 [italian:68] INFO:Sentence content: Una Milano al 35 per cento quella della prima, calda domenica d'agosto:
 [ita_utils:13] INFO:Node Milano/PROPN has no features
@@ -449,7 +325,6 @@
 [ita_utils:13] INFO:Node Pescara/PROPN has no features
 [ita_utils:13] INFO:Node prima di/ADV has no features
 [ita_utils:13] INFO:Node Ferragosto/PROPN has no features
-[nouns:140] WARNING:Node prima di/ADV with deprel 'case' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-2920
 [italian:68] INFO:Sentence content: Si chiama Tiziano, è svizzero e fa lo "svizzero" al soldo del papa.
 [ita_utils:13] INFO:Node Tiziano/PROPN has no features
@@ -458,34 +333,17 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-2969
 [italian:68] INFO:Sentence content: Dal 1970 è l'unico corpo militare del Vaticano.
 [ita_utils:13] INFO:Node Vaticano/PROPN has no features
-[nouns:140] WARNING:Node 1970/NUM with deprel 'obl' needs new rules: {'NumType': 'Card'}
 [italian:61] INFO:Processing sentence id: isst_tanl-2999
 [italian:68] INFO:Sentence content: Il più vistoso è quello situato davanti all'ingresso della Casa dell'Artista, il palazzo che fino al 12 giugno ospiterà la Mostra:
 [ita_utils:13] INFO:Node davanti a/ADV has no features
 [ita_utils:13] INFO:Node fino a/ADV has no features
-[nouns:140] WARNING:Node fino a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node ospiterà/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Fut', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node palazzo/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node davanti a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node situato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[italian:275] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Definite': {'Def'}, 'Degree': set()})
 [italian:61] INFO:Processing sentence id: isst_tanl-3002
 [italian:68] INFO:Sentence content: Esce da un grande cilindro (a sua volta emblematico, perché ha la forma del copricapo dell'uomo comune dell'Ottocento) e con le sue volute colpisce una torre fatta di soldati (lo Stato poliziesco) sulla balaustra che sovrasta l'edificio, e li inghiotte.
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Ottocento/PROPN has no features
-[nouns:140] WARNING:Node sue/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Stato/PROPN has no features
-[nouns:140] WARNING:Node fatta/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node sovrasta/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3024
 [italian:68] INFO:Sentence content: Ama la casa, il lavoro, la musica, la letteratura edificante e idilliaca, la buona conversazione con gli amici, che incontra con una certa regolarità anche al caffè.
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node incontra/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node lavoro/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node musica/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node letteratura/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node conversazione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3034
 [italian:68] INFO:Sentence content: Si formano così gruppi di costruzioni in stretta connessione fra loro.
 [ita_utils:13] INFO:Node così/ADV has no features
@@ -493,15 +351,7 @@
 [italian:68] INFO:Sentence content: l'albero di Natale, la prima Comunione, scene di riunioni borghesi in casa e all'aria aperta, la signora davanti alla toeletta, bambini teneri e rosei, blandi accenni alla povertà e al dolore.
 [ita_utils:13] INFO:Node Natale/PROPN has no features
 [ita_utils:13] INFO:Node Comunione/PROPN has no features
-[nouns:140] WARNING:Node aria/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node davanti a/ADV has no features
-[nouns:140] WARNING:Node davanti a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node dolore/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Comunione/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node scene/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node signora/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node bambini/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node accenni/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3070
 [italian:68] INFO:Sentence content: Boris Podrecca, però, si è rifiutato di porre l'accento per l'ennesima volta su questi aspetti ben noti.
 [ita_utils:13] INFO:Node Boris/PROPN has no features
@@ -509,16 +359,10 @@
 [ita_utils:13] INFO:Node ben/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3183
 [italian:68] INFO:Sentence content: "fili" di ottone luccicante, "cocci" di vetro di diversi colori, decisi o lievi, scaglie di madreperla iridescente.
-[nouns:140] WARNING:Node scaglie/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node cocci/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3184
 [italian:68] INFO:Sentence content: Recentissima anche la creazione di "Splatter", un composto di marmo e quarzo con una superficie che luccica secondo il variare della luce.
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node quarzo/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node luccica/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node Splatter/PROPN has no features
-[nouns:140] WARNING:Node composto/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-3203
 [italian:68] INFO:Sentence content: Quando si parla di piastrelle a mano non si può non citare la produzione di Vietri.
 [ita_utils:13] INFO:Node Vietri/PROPN has no features
@@ -527,47 +371,31 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-3221
 [italian:68] INFO:Sentence content: Oltre alle tinte unite, esistono bordure di diversi tipi, anche con suggestivi motivi a rilievo.
 [ita_utils:13] INFO:Node Oltre a/ADV has no features
-[nouns:140] WARNING:Node Oltre a/ADV with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-3228
 [italian:68] INFO:Sentence content: Ha la stessa durezza del granito, è antigelivo e inassorbente (va bene anche all'esterno ma dove non esistano pericoli di formazione di ghiaccio che renderebbe la superficie sdrucciolevole).
 [ita_utils:13] INFO:Node bene/ADV has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
-[nouns:140] WARNING:Node renderebbe/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Cnd', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node esistano/VERB with deprel 'conj' needs new rules: {'Mood': 'Sub', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3401
 [italian:68] INFO:Sentence content: Se sei un tipo preciso completa il trattamento con la spazzola speciale "Brosse pour le sein" di Jeanne Piaubert, che stimola la circolazione e l'assorbimento del prodotto.
 [ita_utils:13] INFO:Node Jeanne/PROPN has no features
 [ita_utils:13] INFO:Node Brosse/PROPN has no features
-[nouns:140] WARNING:Node assorbimento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node stimola/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3457
 [italian:68] INFO:Sentence content: La cellulite, infatti, ha ben poco a che vedere col grasso anche se chi ha chili di troppo è più predisposta ad "accoglierla".
 [ita_utils:13] INFO:Node infatti/ADV has no features
 [ita_utils:13] INFO:Node ben/ADV has no features
-[nouns:140] WARNING:Node ben/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node vedere/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [ita_utils:13] INFO:Node anche se/ADV has no features
 [ita_utils:13] INFO:Node troppo/ADV has no features
-[nouns:140] WARNING:Node troppo/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node ha/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3473
 [italian:68] INFO:Sentence content: Chi ha la cellulite ha una muscolatura debole e il massaggio violento provocherebbe ematomi e rilasciamenti dei tessuti.
-[nouns:140] WARNING:Node ha/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node rilasciamenti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3477
 [italian:68] INFO:Sentence content: Chiedi al computer il tuo menù.
 [italian:61] INFO:Processing sentence id: isst_tanl-3603
 [italian:68] INFO:Sentence content: È una signora ancor bella di quasi sessant'anni e che da più di dieci vive in esilio a Parigi.
 [ita_utils:13] INFO:Node ancor/ADV has no features
 [ita_utils:13] INFO:Node quasi/ADV has no features
-[nouns:140] WARNING:Node quasi/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Parigi/PROPN has no features
-[nouns:140] WARNING:Node vive/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[italian:275] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'Case': {'Abl'}, 'Definite': set()})
 [italian:61] INFO:Processing sentence id: isst_tanl-3618
 [italian:68] INFO:Sentence content: Adesso, comunque, che finalmente sembra essersi decisa a parlare, è scoppiato il finimondo.
 [ita_utils:13] INFO:Node Adesso/ADV has no features
@@ -579,51 +407,33 @@
 [ita_utils:13] INFO:Node Parigi/PROPN has no features
 [ita_utils:13] INFO:Node Payita/PROPN has no features
 [ita_utils:13] INFO:Node Gaston/PROPN has no features
-[nouns:140] WARNING:Node Payita/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node avvenuto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node Carmen/PROPN has no features
-[nouns:140] WARNING:Node signora/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3749
 [italian:68] INFO:Sentence content: Il mercato dell'editoria elettronica personale o editoria da tavolo (in inglese desktop publishing) è molto giovane con i suoi soli tre anni di vita, ma è considerato nel settore dell'informatica fra i più promettenti in assoluto:
 [ita_utils:13] INFO:Node publishing/NOUN has no features
-[nouns:140] WARNING:Node publishing/NOUN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node editoria/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node molto/ADV has no features
-[nouns:140] WARNING:Node suoi/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
-[italian:275] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Plur'}, 'Definite': {'Def'}, 'Degree': set()})
 [italian:61] INFO:Processing sentence id: isst_tanl-3759
 [italian:68] INFO:Sentence content: A parte personal computer e programmi di composizione, la diminuzione in particolare ha riguardato le stampanti (grazie ai minori costi delle memorie e dei microprocessori), soprattutto fra quelle che consentono di gestire testo e grafica ad alta risoluzione.
 [ita_utils:13] INFO:Node personal/ADJ has no features
 [ita_utils:13] INFO:Node computer/NOUN has no features
-[nouns:140] WARNING:Node programmi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node grazie a/NOUN has no features
-[nouns:140] WARNING:Node microprocessori/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node grazie a/NOUN with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node soprattutto/ADV has no features
-[nouns:140] WARNING:Node grafica/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node consentono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3785
 [italian:68] INFO:Sentence content: Care signore così onorevoli.
 [ita_utils:13] INFO:Node così/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3798
 [italian:68] INFO:Sentence content: tra gli incarcerati per reati contro l'ordine pubblico la percentuale di donne cresce notevolmente e per i reati connessi con la tossicodipendenza il numero delle donne detenute è maggiore della media generale.
 [ita_utils:13] INFO:Node notevolmente/ADV has no features
-[nouns:140] WARNING:Node connessi/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3881
 [italian:68] INFO:Sentence content: Ho cominciato con 3-4 chilometri al giorno e sono arrivato alla fine a correrne anche 20.
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-3900
 [italian:68] INFO:Sentence content: "Con l'esempio di Saverio abbiamo voluto dare un'iniezione di fiducia a tutti i cardiopatici, dimostrare che la vita, grazie a una buona riabilitazione, può essere estremamente attiva, quasi del tutto normale anche dopo un incidente cardiaco.
 [ita_utils:13] INFO:Node Saverio/PROPN has no features
-[nouns:140] WARNING:Node tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node grazie a/NOUN has no features
-[nouns:140] WARNING:Node grazie a/NOUN with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node estremamente/ADV has no features
 [ita_utils:13] INFO:Node quasi/ADV has no features
-[nouns:140] WARNING:Node quasi/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: isst_tanl-3904
 [italian:68] INFO:Sentence content: Significa che sono state tagliate le vie nervose attraverso le quali è normalmente regolata l'attività cardiaca.
 [ita_utils:13] INFO:Node normalmente/ADV has no features
@@ -631,157 +441,88 @@
 [italian:68] INFO:Sentence content: Per questo un "trapiantato" non riesce ad avvertire la sensazione di cardiopalmo, non ha controllo cosciente della frequenza cardiaca.
 [italian:61] INFO:Processing sentence id: isst_tanl-3932
 [italian:68] INFO:Sentence content: Tutti gli edifici sono collegati tra loro da gallerie, percorse in continuazione da medici, personale di servizio e pazienti.
-[nouns:140] WARNING:Node Tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
-[nouns:140] WARNING:Node personale/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node pazienti/NOUN with deprel 'conj' needs new rules: {'Number': 'Plur'}
-[nouns:140] WARNING:Node percorse/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3947
 [italian:68] INFO:Sentence content: Inutile guardarli.
 [italian:61] INFO:Processing sentence id: isst_tanl-3977
 [italian:68] INFO:Sentence content: Prende l'appuntamento più di un mese prima e ci arriva generalmente alla vigilia degli esami.
 [ita_utils:13] INFO:Node prima/ADV has no features
-[nouns:140] WARNING:Node prima/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node generalmente/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3981
 [italian:68] INFO:Sentence content: La "Guida del paziente" consiglia una visita al museo dei Mayo, situato nell'antica clinica, proprio di fronte all'enorme edificio bianco in cui vengono effettuati gli esami.
 [ita_utils:13] INFO:Node Guida/PROPN has no features
 [ita_utils:13] INFO:Node Mayo/PROPN has no features
 [ita_utils:13] INFO:Node proprio/ADV has no features
-[nouns:140] WARNING:Node effettuati/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node proprio/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node situato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: isst_tanl-3996
 [italian:68] INFO:Sentence content: D'altronde è proprio questo che sorprende il visitatore che, alla sette di mattina, è qui per il suo check-up:
 [ita_utils:13] INFO:Node altronde/ADV has no features
 [ita_utils:13] INFO:Node proprio/ADV has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node qui/ADV has no features
-[nouns:140] WARNING:Node qui/ADV with deprel 'acl:relcl' needs new rules: None
-[nouns:140] WARNING:Node altronde/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node proprio/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node sorprende/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: isst_tanl-4073
 [italian:68] INFO:Sentence content: A Rochester, infatti, si può benissimo affittare un appartamento o una camera in case private.
 [ita_utils:13] INFO:Node Rochester/PROPN has no features
 [ita_utils:13] INFO:Node infatti/ADV has no features
-[nouns:140] WARNING:Node camera/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: isst_tanl-4083
 [italian:68] INFO:Sentence content: Nella camera d'albergo il cameriere vi porterà, su semplice richiesta, un clistere.
 [italian:61] INFO:Processing sentence id: tut-13
 [italian:68] INFO:Sentence content: l'essenzialità, in quanto delineano e definiscono il contenuto del diritto stesso;
-[nouns:140] WARNING:Node delineano/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-33
 [italian:68] INFO:Sentence content: L'espropriazione è realizzata attraverso un atto amministrativo;
 [italian:61] INFO:Processing sentence id: tut-56
 [italian:68] INFO:Sentence content: La norma prevede una sottospecie di espropriazione, fondata non sulla pubblica utilità del bene, ma sul cattivo uso di alcuni beni da parte del proprietario, e sul danno che il cattivo uso può arrecare alla produzione nazionale, al decoro e all'igiene nelle città.
-[nouns:140] WARNING:Node decoro/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node igiene/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node arrecare/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node uso/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node danno/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-174
 [italian:68] INFO:Sentence content: 867. Sistemazione e rimboschimento dei terreni vincolati.
-[nouns:140] WARNING:Node rimboschimento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-188
 [italian:68] INFO:Sentence content: Le conseguenze di carattere amministrativo della violazione delle norme indicate dall'articolo precedente sono stabilite da leggi speciali.
-[nouns:140] WARNING:Node indicate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-206
 [italian:68] INFO:Sentence content: Se il vicino vuole servirsi (1) del muro esistente sul confine solo per innestarvi un capo del proprio muro, non ha l'obbligo di renderlo comune a norma dell'articolo 874, ma deve pagare una indennità (2) per l'innesto.
-[nouns:140] WARNING:Node esistente/VERB with deprel 'acl' needs new rules: {'Number': 'Sing', 'Tense': 'Pres', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node solo/ADV has no features
 [ita_utils:13] INFO:Node vi/ADV has no features
-[nouns:140] WARNING:Node render/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: tut-222
 [italian:68] INFO:Sentence content: lo Stato può anche costruire edifici demaniali in aderenza con quelli dei privati.
 [ita_utils:13] INFO:Node anche/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-235
 [italian:68] INFO:Sentence content: La rinunzia (3) non libera il rinunziante dall'obbligo delle riparazioni e ricostruzioni a cui abbia dato causa col fatto proprio.
-[nouns:140] WARNING:Node dato/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node ricostruzioni/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-246
 [italian:68] INFO:Sentence content: Ogni comproprietario può (1) alzare il muro comune, ma sono a suo carico tutte le spese di costruzione e conservazione (2) della parte sopraedificata [903].
-[nouns:140] WARNING:Node Ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node conservazione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node tutte/DET with deprel 'det:predet' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'PronType': 'Tot'}
 [italian:61] INFO:Processing sentence id: tut-264
 [italian:68] INFO:Sentence content: 889. Distanze per pozzi, cisterne, fosse e tubi.
-[nouns:140] WARNING:Node cisterne/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node fosse/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node tubi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-279
 [italian:68] INFO:Sentence content: 892. Distanze per gli alberi.
 [italian:61] INFO:Processing sentence id: tut-306
 [italian:68] INFO:Sentence content: Ogni fosso interposto tra due fondi si presume comune.
-[nouns:140] WARNING:Node Ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node interposto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-394
 [italian:68] INFO:Sentence content: Qualora per esigenze della produzione si debba provvedere ad opere di sistemazione degli scoli, di soppressione di ristagni o di raccolta di acque, l'autorità amministrativa, su richiesta della maggioranza degli interessati o anche d'ufficio, può costituire un consorzio tra i proprietari dei fondi che traggono beneficio dalle opere stesse [863, 865].
-[nouns:140] WARNING:Node soppressione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node raccolta/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node ufficio/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node traggono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node 865/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
 [italian:61] INFO:Processing sentence id: tut-551
 [italian:68] INFO:Sentence content: Il proprietario può costituire il diritto di fare e mantenere al di sopra del suolo una costruzione a favore di altri, che ne acquista la proprietà [934, 1350 n. 2, 2643 n. 2, 2810 n. 3].
 [ita_utils:13] INFO:Node sopra/ADV has no features
-[nouns:140] WARNING:Node sopra/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node acquista/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node fare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node n./NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
-[nouns:140] WARNING:Node n./NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
-[nouns:140] WARNING:Node n./NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
 [italian:61] INFO:Processing sentence id: tut-562
 [italian:68] INFO:Sentence content: 954. Estinzione del diritto di superficie.
 [italian:61] INFO:Processing sentence id: tut-618
 [italian:68] INFO:Sentence content: Il diritto dell'enfiteuta si prescrive per effetto del non uso protratto per venti anni (2934 e seguenti).
-[nouns:140] WARNING:Node protratto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node seguenti/ADJ with deprel 'conj' needs new rules: {'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-665
 [italian:68] INFO:Sentence content: L'usufruttuario ha il diritto di conseguire il possesso della cosa di cui ha l'usufrutto, salvo quanto è disposto dall'art. 1002.
-[nouns:140] WARNING:Node ha/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node conseguire/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node disposto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-675
 [italian:68] INFO:Sentence content: L'usufruttuario ha diritto a un'indennità per i miglioramenti che sussistono al momento della restituzione della cosa (att. 157).
-[nouns:140] WARNING:Node sussistono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-682
 [italian:68] INFO:Sentence content: Se le addizioni non possono separarsi senza nocumento della cosa e costituiscono miglioramento di essa si applicano le disposizioni relative ai miglioramenti (att. 157).
 [italian:61] INFO:Processing sentence id: tut-696
 [italian:68] INFO:Sentence content: L'usufruttuario può servirsi di essi soltanto per le riparazioni che sono a suo carico.
 [ita_utils:13] INFO:Node soltanto/ADV has no features
-[nouns:140] WARNING:Node che/PRON with deprel 'nsubj' needs new rules: {'PronType': 'Rel'}
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node soltanto/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node carico/NOUN with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-729
 [italian:68] INFO:Sentence content: L'usufruttuario deve restituire le cose che formano oggetto del suo diritto, al termine dell'usufrutto, salvo quanto è disposto dall'art. 995 (2930).
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node formano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node disposto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-770
 [italian:68] INFO:Sentence content: L'usufruttuario di un'eredità o di una quota di eredità (588) è obbligato a pagare per intero, o in proporzione della quota, le annualità e gli interessi dei debiti o dei legati da cui l'eredità stessa sia gravata.
-[nouns:140] WARNING:Node quota/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node proporzione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node gravata/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node legati/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node interessi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-790
 [italian:68] INFO:Sentence content: 1015. Abusi dell'usufruttuario.
 [italian:61] INFO:Processing sentence id: tut-804
 [italian:68] INFO:Sentence content: Se è perito un edificio e il proprietario intende di ricostruirlo con la somma conseguita come indennità, l'usufruttuario non può opporsi.
-[nouns:140] WARNING:Node conseguita/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-808
 [italian:68] INFO:Sentence content: Se la cosa è requisita o espropriata per pubblico interesse, l'usufrutto si trasferisce sull'indennità relativa (1000).
 [italian:61] INFO:Processing sentence id: tut-828
 [italian:68] INFO:Sentence content: Delle servitu'prediali.
 [italian:61] INFO:Processing sentence id: tut-832
 [italian:68] INFO:Sentence content: La servitù prediale consiste nel peso imposto sopra un fondo per l'utilità di un altro fondo appartenente a diverso proprietario (1072, 1100).
-[nouns:140] WARNING:Node appartenente/VERB with deprel 'acl' needs new rules: {'Number': 'Sing', 'Tense': 'Pres', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node imposto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node 1100/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
 [italian:61] INFO:Processing sentence id: tut-867
 [italian:68] INFO:Sentence content: 1038. Indennità per l'imposizione della servitù.
 [italian:61] INFO:Processing sentence id: tut-871
@@ -792,24 +533,14 @@
 [italian:68] INFO:Sentence content: 1063. Norme regolatrici.
 [italian:61] INFO:Processing sentence id: tut-994
 [italian:68] INFO:Sentence content: Il termine decorre dal giorno in cui si è cessato di esercitarla;
-[nouns:140] WARNING:Node cessato/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-1006
 [italian:68] INFO:Sentence content: Le servitù costituite dall'enfiteuta sul fondo enfiteutico cessano quando l'enfiteusi si estingue per decorso del termine, per prescrizione o per devoluzione (958, 970, 972).
-[nouns:140] WARNING:Node costituite/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node prescrizione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node devoluzione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node 970/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
-[nouns:140] WARNING:Node 972/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
 [italian:61] INFO:Processing sentence id: tut-1014
 [italian:68] INFO:Sentence content: Della servitù di presa o di derivazione di acqua.
-[nouns:140] WARNING:Node derivazione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1098
 [italian:68] INFO:Sentence content: Se si tratta di cose destinate a servire i condomini in misura diversa, le spese sono ripartite in proporzione dell'uso che ciascuno può farne.
-[nouns:140] WARNING:Node destinate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node far/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: tut-1104
 [italian:68] INFO:Sentence content: La prestazione che forma oggetto dell'obbligazione deve essere suscettibile di valutazione economica e deve corrispondere a un interesse, anche non patrimoniale del creditore.
-[nouns:140] WARNING:Node forma/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node anche/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-1106
 [italian:68] INFO:Sentence content: Nell'adempiere l'obbligazione il debitore deve usare la diligenza del buon padre di famiglia.
@@ -817,105 +548,60 @@
 [italian:68] INFO:Sentence content: In questo caso l'obbligazione si estingue quando la diversa prestazione è eseguita.
 [italian:61] INFO:Processing sentence id: tut-1153
 [italian:68] INFO:Sentence content: Il creditore è in mora quando, senza il motivo legittimo, non riceve il pagamento offertogli nei modi indicati dagli articoli seguenti o non compie quanto è necessario affinché il debitore possa adempiere l'obbligazione.
-[nouns:140] WARNING:Node indicati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node offerto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node necessario/ADJ with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node creditore/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node riceve/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-1181
 [italian:68] INFO:Sentence content: Nelle obbligazioni che hanno per oggetto una somma di danaro, sono dovuti dal giorno della mora gli interessi legali, anche se non erano dovuti precedentemente e anche se il creditore non prova di aver sofferto alcun danno.
-[nouns:140] WARNING:Node hanno/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node anche se/ADV has no features
 [ita_utils:13] INFO:Node precedentemente/ADV has no features
 [ita_utils:13] INFO:Node anche se/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-1200
 [italian:68] INFO:Sentence content: La restituzione volontaria del titolo originale del credito, fatta dal creditore al debitore, costituisce prova della liberazione anche rispetto ai condebitori in solido.
-[nouns:140] WARNING:Node fatta/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-1205
 [italian:68] INFO:Sentence content: Tuttavia se gli altri fideiussori hanno consentito la liberazione, essi rimangono obbligati per l'intero.
 [ita_utils:13] INFO:Node Tuttavia/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-1216
 [italian:68] INFO:Sentence content: La compensazione non si verifica in pregiudizio dei terzi che hanno acquistato diritti di usufrutto o di pegno su uno dei crediti.
-[nouns:140] WARNING:Node pegno/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1339
 [italian:68] INFO:Sentence content: La difesa è diritto inviolabile in ogni stato e grado del procedimento.
-[nouns:140] WARNING:Node ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node grado/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node difesa/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node stato/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1351
 [italian:68] INFO:Sentence content: L'imputato non è considerato colpevole sino alla condanna definitiva.
 [ita_utils:13] INFO:Node sino a/ADV has no features
-[nouns:140] WARNING:Node sino a/ADV with deprel 'case' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-1368
 [italian:68] INFO:Sentence content: La Repubblica agevola con misure economiche e altre provvidenze la formazione della famiglia e l'adempimento dei compiti relativi, con particolare riguardo alle famiglie numerose.
-[nouns:140] WARNING:Node provvidenze/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node adempimento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1405
 [italian:68] INFO:Sentence content: Gli inabili ed i minorati hanno diritto all'educazione e all'avviamento professionale.
-[nouns:140] WARNING:Node avviamento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1450
 [italian:68] INFO:Sentence content: Il diritto di voto non può essere limitato se non per incapacità civile o per effetto di sentenza penale irrevocabile o nei casi di indegnità morale indicati dalla legge.
-[nouns:140] WARNING:Node indicati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node effetto/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node casi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-1576
 [italian:68] INFO:Sentence content: Con la legge di approvazione del bilancio non si possono stabilire nuovi tributi e nuove spese.
-[nouns:140] WARNING:Node spese/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-1620
 [italian:68] INFO:Sentence content: Gli atti che hanno valore legislativo e gli altri indicati dalla legge sono controfirmati anche dal Presidente del Consiglio dei Ministri.
-[nouns:140] WARNING:Node indicati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node hanno/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node altri/PRON with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Ind'}
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-1625
 [italian:68] INFO:Sentence content: Il Presidente della Repubblica, prima di assumere le sue funzioni, presta giuramento di fedeltà alla Repubblica e di osservanza della Costituzione dinanzi al Parlamento in seduta comune.
 [ita_utils:13] INFO:Node prima di/ADV has no features
-[nouns:140] WARNING:Node sue/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node osservanza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node dinanzi a/ADV has no features
-[nouns:140] WARNING:Node dinanzi a/ADV with deprel 'case' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-1634
 [italian:68] INFO:Sentence content: Il Presidente del Consiglio dei ministri e i ministri, prima di assumere le funzioni, prestano giuramento nelle mani del Presidente della Repubblica.
-[nouns:140] WARNING:Node ministri/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node prima di/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-1652
 [italian:68] INFO:Sentence content: Nell'ordinamento degli uffici sono determinate le sfere di competenza, le attribuzioni e le responsabilità proprie dei funzionari.
-[nouns:140] WARNING:Node attribuzioni/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node responsabilità/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
 [italian:61] INFO:Processing sentence id: tut-1683
 [italian:68] INFO:Sentence content: Il Consiglio di Stato e gli altri organi di giustizia amministrativa hanno giurisdizione per la tutela nei confronti della pubblica amministrazione degli interessi legittimi e, in particolari materie indicate dalla legge, anche dei diritti soggettivi.
-[nouns:140] WARNING:Node organi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node diritti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node indicate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-1725
 [italian:68] INFO:Sentence content: La colpevolezza dell'imputato non può essere provata sulla base di dichiarazioni rese da chi, per libera scelta, si è sempre volontariamente sottratto all'interrogatorio da parte dell'imputato o del suo difensore.
 [ita_utils:13] INFO:Node sempre/ADV has no features
 [ita_utils:13] INFO:Node volontariamente/ADV has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node difensore/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node sottratto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node rese/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-1799
 [italian:68] INFO:Sentence content: Il Presidente eletto nomina e revoca i componenti della Giunta.
 [italian:61] INFO:Processing sentence id: tut-1805
 [italian:68] INFO:Sentence content: Il Governo della Repubblica può promuovere la questione di legittimità costituzionale sugli statuti regionali dinanzi alla Corte costituzionale entro trenta giorni dalla loro pubblicazione.
 [ita_utils:13] INFO:Node dinanzi a/ADV has no features
-[nouns:140] WARNING:Node dinanzi a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-1857
 [italian:68] INFO:Sentence content: Una legge costituzionale stabilisce le condizioni, le forme, i termini di proponibilità dei giudizi di legittimità costituzionale, e le garanzie d'indipendenza dei giudici della Corte.
-[nouns:140] WARNING:Node forme/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node termini/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node garanzie/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-1858
 [italian:68] INFO:Sentence content: Con legge ordinaria sono stabilite le altre norme necessarie per la costituzione e il funzionamento della Corte.
-[nouns:140] WARNING:Node funzionamento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-1899
 [italian:68] INFO:Sentence content: Alla Regione del Friuli-Venezia Giulia, di cui all'art. 116, si applicano provvisoriamente le norme generali del Titolo V della parte seconda, ferma restando la tutela delle minoranze linguistiche in conformità con l'art. 6.
 [ita_utils:13] INFO:Node Venezia/PROPN has no features
@@ -926,50 +612,29 @@
 [italian:61] INFO:Processing sentence id: tut-1919
 [italian:68] INFO:Sentence content: Fino al giorno delle elezioni delle nuove Camere, l'Assemblea Costituente può essere convocata, quando vi sia necessità di deliberare nelle materie attribuite alla sua competenza dagli articoli 2, primo e secondo comma, e 3, comma primo e secondo, del decreto legislativo 16 marzo 1946, n. 98.
 [ita_utils:13] INFO:Node Fino a/ADV has no features
-[nouns:140] WARNING:Node Fino a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node 3/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
-[nouns:140] WARNING:Node attribuite/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node deliberare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: tut-1928
 [italian:68] INFO:Sentence content: La Costituzione dovrà essere fedelmente osservata come Legge fondamentale della Repubblica da tutti i cittadini e dagli organi dello Stato.
 [ita_utils:13] INFO:Node fedelmente/ADV has no features
-[nouns:140] WARNING:Node tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
-[nouns:140] WARNING:Node organi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-1965
 [italian:68] INFO:Sentence content: (14) Come principio generale, il consumo energetico dei prodotti che consumano energia in stand-by o quando sono disattivati dovrebbe essere ridotto al minimo necessario per il loro adeguato funzionamento.
-[nouns:140] WARNING:Node disattivati/VERB with deprel 'advcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node consumano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-2049
 [italian:68] INFO:Sentence content: - Il programma deve essere prorogato di almeno 4 anni con lo stesso importo di riferimento finanziario (1 milione di EUR all'anno) e gli stessi interventi e destinatari.
 [ita_utils:13] INFO:Node almeno/ADV has no features
-[nouns:140] WARNING:Node almeno/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node EUR/PROPN has no features
-[nouns:140] WARNING:Node milione/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node interventi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node destinatari/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-2122
 [italian:68] INFO:Sentence content: Il perimetro della concessione è costituito dagli archi di meridiano e di parallelo che collegano successivamente i vertici qui di seguito definiti dalle rispettive coordinate geografiche.
-[nouns:140] WARNING:Node parallelo/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node successivamente/ADV has no features
 [ita_utils:13] INFO:Node qui/ADV has no features
-[nouns:140] WARNING:Node definiti/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node collegano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2131
 [italian:68] INFO:Sentence content: c) I rifiuti solidi radioattivi derivanti dalle operazioni di smantellamento saranno collocati in un deposito esterno al sito.
 [ita_utils:13] INFO:Node c/X has no features
-[nouns:140] WARNING:Node derivanti/VERB with deprel 'acl' needs new rules: {'Number': 'Plur', 'Tense': 'Pres', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-2166
 [italian:68] INFO:Sentence content: Anche gli italiani hanno assaggiato la reazione velenosa di Valona che nel 1915 gli accordi segreti di Londra ci assegnarono insieme alla base militare sull'Isola di Saseno.
 [ita_utils:13] INFO:Node Anche/ADV has no features
-[nouns:140] WARNING:Node Anche/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Londra/PROPN has no features
 [ita_utils:13] INFO:Node insieme a/ADV has no features
 [ita_utils:13] INFO:Node Saseno/PROPN has no features
-[nouns:140] WARNING:Node insieme a/ADV with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node Valona/PROPN has no features
-[nouns:140] WARNING:Node assegnarono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Past', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2182
 [italian:68] INFO:Sentence content: Si allunga l'ombra della mafia sullo scandalo delle finanziarie albanesi.
 [italian:61] INFO:Processing sentence id: tut-2194
@@ -977,7 +642,6 @@
 [italian:61] INFO:Processing sentence id: tut-2295
 [italian:68] INFO:Sentence content: Lei sostiene che c'è un aspetto inquietante nella rivolta di Valona e nel crack delle finanziarie.
 [ita_utils:13] INFO:Node Valona/PROPN has no features
-[nouns:140] WARNING:Node crack/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
 [italian:61] INFO:Processing sentence id: tut-2302
 [italian:68] INFO:Sentence content: E i soldi delle piramidi dove sono finiti?
 [ita_utils:13] INFO:Node dove/ADV has no features
@@ -987,7 +651,6 @@
 [italian:61] INFO:Processing sentence id: tut-2335
 [italian:68] INFO:Sentence content: rispetto a gennaio è attesa una flessione dello 0,4 per cento.
 [ita_utils:13] INFO:Node rispetto a/ADV has no features
-[nouns:140] WARNING:Node rispetto a/ADV with deprel 'case' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-2340
 [italian:68] INFO:Sentence content: L'idea è emersa nella riunione alla Farnesina dei sottosegretari degli Esteri della Trilaterale.
 [ita_utils:13] INFO:Node Farnesina/PROPN has no features
@@ -996,10 +659,6 @@
 [italian:68] INFO:Sentence content: Successivamente verrà il turno di chi ha un capitale investito di un massimo di 10 mila dollari e, infine, tra i 10 e i 20 mila dollari.
 [ita_utils:13] INFO:Node Successivamente/ADV has no features
 [ita_utils:13] INFO:Node infine/ADV has no features
-[nouns:140] WARNING:Node infine/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node dollari/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node 10/NUM with deprel 'conj' needs new rules: {'NumType': 'Card'}
-[nouns:140] WARNING:Node ha/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2386
 [italian:68] INFO:Sentence content: Riesplode la questione albanese.
 [italian:61] INFO:Processing sentence id: tut-2389
@@ -1007,55 +666,34 @@
 [ita_utils:13] INFO:Node Tirana/PROPN has no features
 [ita_utils:13] INFO:Node Kosovo/PROPN has no features
 [ita_utils:13] INFO:Node Uck/PROPN has no features
-[nouns:140] WARNING:Node Uck/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node Mehemet/PROPN has no features
-[nouns:140] WARNING:Node nome/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Liberazione/PROPN has no features
 [ita_utils:13] INFO:Node Clirimi/PROPN has no features
-[nouns:140] WARNING:Node Liberazione/PROPN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node bollettini/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-2422
 [italian:68] INFO:Sentence content: Gli emigrati versano il 3% dello stipendio in un fondo speciale che va al Governo autoproclamato del Kosovo e anche a noi.
 [ita_utils:13] INFO:Node %/SYM has no features
 [ita_utils:13] INFO:Node Kosovo/PROPN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node noi/PRON with deprel 'conj' needs new rules: {'Number': 'Plur', 'Person': '1', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node va/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2426
 [italian:68] INFO:Sentence content: Liri Avdekie, Libertà o Morte, è il motto in albanese dell'esercito kosovaro ma in Serbia i nazionalisti di Milosevic e anche l'opinione pubblica sono concordi.
-[nouns:140] WARNING:Node Morte/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Liri/PROPN has no features
-[nouns:140] WARNING:Node Libertà/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem'}
 [ita_utils:13] INFO:Node Serbia/PROPN has no features
 [ita_utils:13] INFO:Node Milosevic/PROPN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node opinione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Liri/PROPN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node concordi/ADJ with deprel 'conj' needs new rules: {'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-2451
 [italian:68] INFO:Sentence content: Una decina di morti, 30 feriti, il Sud nell'anarchia isolato dal resto del Paese.
-[nouns:140] WARNING:Node isolato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node feriti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node Sud/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-2477
 [italian:68] INFO:Sentence content: A Scutari c'era la più alta densità di benzinai d'Europa per chilometro quadrato che vendevano alla Federazione di Milosevic carburante quotato 20 marchi al litro sulle strade di Belgrado.
 [ita_utils:13] INFO:Node Scutari/PROPN has no features
 [ita_utils:13] INFO:Node Milosevic/PROPN has no features
 [ita_utils:13] INFO:Node Belgrado/PROPN has no features
-[nouns:140] WARNING:Node quotato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node vendevano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node Europa/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2522
 [italian:68] INFO:Sentence content: Dopo i calci e i pugni di domenica davanti al Parlamento, la sede del Club della stampa è stata devastata e incendiata.
 [ita_utils:13] INFO:Node davanti a/ADV has no features
-[nouns:140] WARNING:Node davanti a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node pugni/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-2568
 [italian:68] INFO:Sentence content: difficoltà a trovare partner locali affidabili;
 [ita_utils:13] INFO:Node partner/NOUN has no features
-[nouns:140] WARNING:Node trovare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: tut-2581
 [italian:68] INFO:Sentence content: L'intera operazione, in pieno accordo con le autorità albanesi, è durata un paio di ore.
 [italian:61] INFO:Processing sentence id: tut-2586
@@ -1069,66 +707,45 @@
 [italian:61] INFO:Processing sentence id: tut-2592
 [italian:68] INFO:Sentence content: Un altro messaggio è stato inviato al presidente del Consiglio dell'Unione, Hans Van Mierlo, per sollecitare la convocazione straordinaria del Comitato politico, che avrebbe luogo domani a Bruxelles.
 [ita_utils:13] INFO:Node Hans/PROPN has no features
-[nouns:140] WARNING:Node Hans/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node domani/ADV has no features
 [ita_utils:13] INFO:Node Bruxelles/PROPN has no features
-[nouns:140] WARNING:Node avrebbe/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Cnd', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2627
 [italian:68] INFO:Sentence content: 'La causa degli albanesi è la mia'.
-[nouns:140] WARNING:Node causa/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-2636
 [italian:68] INFO:Sentence content: Tempi duri a Tirana per i partiti che dal maggio scorso contestano la larghissima vittoria elettorale del Centro-destra disertando il Parlamento.
 [ita_utils:13] INFO:Node Tirana/PROPN has no features
-[nouns:140] WARNING:Node contestano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2637
 [italian:68] INFO:Sentence content: una manifestazione di circa 200 persone, inscenata davanti al vecchio stadio dove domenica scorsa erano cominciati i disordini più violenti, ieri è stata facilmente dispersa dalla polizia, senza ricorrere a metodi pesanti.
 [ita_utils:13] INFO:Node circa/ADV has no features
-[nouns:140] WARNING:Node circa/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node davanti a/ADV has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
-[nouns:140] WARNING:Node davanti a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node cominciati/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node inscenata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node ieri/ADV has no features
 [ita_utils:13] INFO:Node facilmente/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2667
 [italian:68] INFO:Sentence content: Alla vox populi Berisha risponde adesso evocando lo spettro della Segurimi, la polizia segreta del defunto regime comunista che al tempo dello stalinismo ferreo di Enver Hoxha aveva al servizio 5.000 delatori su tre milioni di albanesi.
-[nouns:140] WARNING:Node populi/X with deprel 'flat:foreign' needs new rules: {'Foreign': 'Yes'}
 [ita_utils:13] INFO:Node Berisha/PROPN has no features
 [ita_utils:13] INFO:Node adesso/ADV has no features
 [ita_utils:13] INFO:Node Enver/PROPN has no features
-[nouns:140] WARNING:Node aveva/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node Segurimi/PROPN has no features
-[nouns:140] WARNING:Node polizia/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-2681
 [italian:68] INFO:Sentence content: Un crack finanziario scatena l'opposizione.
 [italian:61] INFO:Processing sentence id: tut-2685
 [italian:68] INFO:Sentence content: In 500 mila, un albanese su sette, hanno scommesso su questa pesca miracolosa con la promessa di rendimenti mensili sul capitale versato dal 30% al 50%, in un Paese in cui l'inflazione ufficiale è del 20% l'anno e il reddito medio pro capite non supera i 700 dollari.
-[nouns:140] WARNING:Node albanese/NOUN with deprel 'appos' needs new rules: {'Number': 'Sing'}
 [ita_utils:13] INFO:Node %/SYM has no features
 [ita_utils:13] INFO:Node %/SYM has no features
 [ita_utils:13] INFO:Node %/SYM has no features
-[nouns:140] WARNING:Node capite/X with deprel 'flat:foreign' needs new rules: {'Foreign': 'Yes'}
-[nouns:140] WARNING:Node è/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2740
 [italian:68] INFO:Sentence content: Le indagini, condotte dal Comando carabinieri politiche agricole di Roma e dai Comandi provinciali della Guardia di finanza di Catanzaro e Reggio Calabria sono state coordinate dalla Procura della Repubblica di Palmi.
 [ita_utils:13] INFO:Node Roma/PROPN has no features
 [ita_utils:13] INFO:Node Reggio/PROPN has no features
 [ita_utils:13] INFO:Node Catanzaro/PROPN has no features
-[nouns:140] WARNING:Node Reggio/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node Comandi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node condotte/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node Palmi/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2782
 [italian:68] INFO:Sentence content: Ci ha messo freddezza nel realizzare il rigore del 2-1, tirandolo sulla sinistra del portiere Manninger, poi sulla destra, nella ripetizione imposta perché troppa gente era entrata in area.
 [ita_utils:13] INFO:Node Manninger/PROPN has no features
 [ita_utils:13] INFO:Node poi/ADV has no features
-[nouns:140] WARNING:Node poi/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node destra/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node imposta/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-2785
 [italian:68] INFO:Sentence content: Ciascuno ne tragga il significato che crede sullo stato del pallone.
-[nouns:140] WARNING:Node crede/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2795
 [italian:68] INFO:Sentence content: Sarebbe stata probabilmente un'altra storia se Negro avesse raddoppiato in avvio di ripresa con un colpo di tacco nell'angolo basso, dove Julio Cesar arrivava miracolosamente col piede come un portiere da calcetto.
 [ita_utils:13] INFO:Node probabilmente/ADV has no features
@@ -1136,17 +753,10 @@
 [ita_utils:13] INFO:Node dove/ADV has no features
 [ita_utils:13] INFO:Node Julio/PROPN has no features
 [ita_utils:13] INFO:Node miracolosamente/ADV has no features
-[nouns:140] WARNING:Node arrivava/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node probabilmente/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node raddoppiato/VERB with deprel 'advcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-2802
 [italian:68] INFO:Sentence content: Nell'1 si troveranno lo stand del paese ospite, la Lituania, e, oltre alla Sala rossa, un'altra novità creata in occasione delle venti candeline:
 [ita_utils:13] INFO:Node Lituania/PROPN has no features
-[nouns:140] WARNING:Node Lituania/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node oltre a/ADV has no features
-[nouns:140] WARNING:Node oltre a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node creata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node novità/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
 [italian:61] INFO:Processing sentence id: tut-2854
 [italian:68] INFO:Sentence content: Intanto il caso della pantera è diventato un'emergenza.
 [ita_utils:13] INFO:Node Intanto/ADV has no features
@@ -1155,80 +765,44 @@
 [ita_utils:13] INFO:Node mini/ADJ has no features
 [ita_utils:13] INFO:Node Rai/PROPN has no features
 [ita_utils:13] INFO:Node Telestudio/PROPN has no features
-[nouns:140] WARNING:Node giornali/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-2877
 [italian:68] INFO:Sentence content: Bonino e Pannella in campo per la sfida delle Regionali.
 [ita_utils:13] INFO:Node Pannella/PROPN has no features
 [ita_utils:13] INFO:Node Bonino/PROPN has no features
-[nouns:140] WARNING:Node Pannella/PROPN with deprel 'conj' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-2882
 [italian:68] INFO:Sentence content: Ma la novità di ieri sono i radicali, che dopo la rabbia per il taglio della Consulta ai loro referendum sociali, rilanciano con 15 candidature «pesanti», nell'intento di rilanciare anche la battaglia referendaria.
 [ita_utils:13] INFO:Node ieri/ADV has no features
-[nouns:140] WARNING:Node ieri/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node loro/DET with deprel 'det:poss' needs new rules: {'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node rilanciare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node novità/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem'}
-[nouns:140] WARNING:Node rilanciano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-2924
 [italian:68] INFO:Sentence content: E chi lo conosce da una vita non si rassegna all'assenza e si aspetta sempre di vederlo così come gli era apparso la prima volta a Bahia, luminoso in una camicia fiorita, circondato dalla sua piccola corte di pittori popolari, di baiane biancoridenti, di cantori di samba e di ieratici negri, padri e madri "de santo" nei terreiros del candomblè.
-[nouns:140] WARNING:Node conosce/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node sempre/ADV has no features
 [ita_utils:13] INFO:Node così/ADV has no features
 [ita_utils:13] INFO:Node Bahia/PROPN has no features
-[nouns:140] WARNING:Node madri/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node padri/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node baiane/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node cantori/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node negri/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-2952
 [italian:68] INFO:Sentence content: Durante i lavori si parlerà di riforme economiche, di modifiche per la struttura del partito e del congresso straordinario che il prossimo gennaio dovrà definire i mutamenti da apportare alla Costituzione in vista dell'introduzione di un sistema che rifletta le democrazie occidentali.
-[nouns:140] WARNING:Node rifletta/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Sub', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node apportare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node definire/VERB with deprel 'acl:relcl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node modifiche/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node congresso/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-2971
 [italian:68] INFO:Sentence content: Oggi a Torino Jackson il puro del rock Ci sono concerti che ti lasciano indifferente, altri che non vedi l'ora che finiscano, altri che quando finiscono si va via senza rimpianti.
 [ita_utils:13] INFO:Node Oggi/ADV has no features
 [ita_utils:13] INFO:Node Torino/PROPN has no features
 [ita_utils:13] INFO:Node Jackson/PROPN has no features
-[nouns:140] WARNING:Node vedi/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '2', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node via/ADV has no features
-[nouns:140] WARNING:Node va/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node lasciano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node altri/PRON with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node altri/PRON with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Ind'}
 [italian:61] INFO:Processing sentence id: tut-2977
 [italian:68] INFO:Sentence content: parla del suo nuovo film "Ultima fermata Brooklyn", tratto dal romanzo scandalo di Hubert Selby, come di una creatura vivente, il frutto di un parto lungo e travagliato che oggi ha finalmente visto la luce.
 [ita_utils:13] INFO:Node Brooklyn/PROPN has no features
 [ita_utils:13] INFO:Node Hubert/PROPN has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node tratto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node oggi/ADV has no features
 [ita_utils:13] INFO:Node finalmente/ADV has no features
-[nouns:140] WARNING:Node visto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node frutto/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node come/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2993
 [italian:68] INFO:Sentence content: E visto che come caratteristiche Bianchi è uomo di fascia ben più di Sordo, cioè nel suo naturale atteggiamento tattico in campo rassomiglia maggiormente a Policano, ecco che la sua candidatura prende quota.
 [ita_utils:13] INFO:Node Bianchi/PROPN has no features
 [ita_utils:13] INFO:Node ben/ADV has no features
 [ita_utils:13] INFO:Node Sordo/PROPN has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node maggiormente/ADV has no features
 [ita_utils:13] INFO:Node Policano/PROPN has no features
-[nouns:100] WARNING:Adverb needs coding più
-[nouns:140] WARNING:Node caratteristiche/NOUN with deprel 'obl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node Bianchi/PROPN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node rassomiglia/VERB with deprel 'conj' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node ecco che/ADV has no features
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-3014
 [italian:68] INFO:Sentence content: Vede che strani corsi e ricorsi?
-[nouns:140] WARNING:Node ricorsi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-3026
 [italian:68] INFO:Sentence content: Record di presenze al Lingotto per la mostra sull'arte russa e sovietica.
 [ita_utils:13] INFO:Node Lingotto/PROPN has no features
@@ -1238,7 +812,6 @@
 [ita_utils:13] INFO:Node Sant'/PROPN has no features
 [ita_utils:13] INFO:Node Los/PROPN has no features
 [ita_utils:13] INFO:Node Sieroterapico/PROPN has no features
-[nouns:140] WARNING:Node chiama/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-3130
 [italian:68] INFO:Sentence content: Fuoristrada con lo smoking di rigore.
 [ita_utils:13] INFO:Node Fuoristrada/NOUN has no features
@@ -1247,19 +820,14 @@
 [ita_utils:13] INFO:Node però/ADV has no features
 [ita_utils:13] INFO:Node sempre/ADV has no features
 [ita_utils:13] INFO:Node Warner/PROPN has no features
-[nouns:140] WARNING:Node sempre/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Lethal/PROPN has no features
-[nouns:140] WARNING:Node totalizzato/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-3162
 [italian:68] INFO:Sentence content: Prima di farci vedere gli scaffali di libri preziosi della biblioteca e l'onesta chiara faccia dell'onorevole Tina Anselmi, ci mostra una catasta di legna su un terrazzo romano.
 [ita_utils:13] INFO:Node Prima di/ADV has no features
 [ita_utils:13] INFO:Node Tina/PROPN has no features
-[nouns:140] WARNING:Node faccia/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-3188
 [italian:68] INFO:Sentence content: sicchè un bel giorno si udì la notizia che nella notte erano arrivati i compagni d'arme e ognuno poteva andare a vederli nello stallatico.
 [ita_utils:13] INFO:Node sicchè/ADV has no features
-[nouns:140] WARNING:Node arrivati/VERB with deprel 'advcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node andare/VERB with deprel 'conj' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: tut-3265
 [italian:68] INFO:Sentence content: Il 19 novembre i berlinesi saranno chiamati a manifestare per la libertà di stampa.
 [italian:61] INFO:Processing sentence id: tut-3301
@@ -1272,8 +840,6 @@
 [ita_utils:13] INFO:Node quindi/ADV has no features
 [ita_utils:13] INFO:Node tecnologicamente/ADV has no features
 [ita_utils:13] INFO:Node Baudo/PROPN has no features
-[nouns:140] WARNING:Node chiamato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-3320
 [italian:68] INFO:Sentence content: Il 7 settembre 1439 è citato come allievo di Domenico Veneziano nella commissione degli affreschi, oggi perduti, per le Storie della Vergine nel coro della chiesa di Sant'Egidio.
 [ita_utils:13] INFO:Node Domenico/PROPN has no features
@@ -1282,42 +848,23 @@
 [ita_utils:13] INFO:Node Sant'/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3333
 [italian:68] INFO:Sentence content: i sei santi laterali e le sette tavolette che costituiscono la predella sono invece opera dello sconosciuto allievo.
-[nouns:140] WARNING:Node costituiscono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node tavolette/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node invece/ADV has no features
-[nouns:140] WARNING:Node santi/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node invece/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-3342
 [italian:68] INFO:Sentence content: Nel 1467 a Perugia eseguì per conto delle suore terziarie del convento di Sant'Antonio un polittico, dove all'impostazione tardogotica voluta dalla committenza, si contrappone nella cimasa, un'annunciazione di chiaro stampo rinascimentale, che evidenzia il sapiente uso dell'arte prospettica nelle strutture architettoniche, palesando una conoscenza delle opere e dei postulati architettonici formulati qualche anno addietro da Filippo Brunelleschi e Leon Battista Alberti.
 [ita_utils:13] INFO:Node Perugia/PROPN has no features
 [ita_utils:13] INFO:Node Sant'/PROPN has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
-[nouns:140] WARNING:Node voluta/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node addietro/ADV has no features
-[nouns:140] WARNING:Node addietro/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Leon/PROPN has no features
 [ita_utils:13] INFO:Node Filippo/PROPN has no features
-[nouns:140] WARNING:Node Leon/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node formulati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node postulati/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node evidenzia/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node contrappone/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-3353
 [italian:68] INFO:Sentence content: Si è ispirato alla lezione euclidea per l'ordine logico delle espressioni e per i riferimenti e per l'uso coordinato e complesso dei teoremi, mentre è stato vicino alle esigenze dei tecnici per la determinatezza delle figure trattate, solide e poliedriche, e per l'assenza di dimostrazioni classiche e per l'uso di regole aritmetiche e algebriche applicate ai calcoli.
-[nouns:140] WARNING:Node riferimenti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node uso/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node vicino a/ADV has no features
-[nouns:140] WARNING:Node applicate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node assenza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node uso/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:103] WARNING:Node è/AUX with deprel 'aux:pass' needs new rules
-[nouns:140] WARNING:Node vicino a/ADV with deprel 'case' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-3369
 [italian:68] INFO:Sentence content: Nel 1999 la band non volendo più essere etichettata come una semplice "melodic death metal band" intraprende la via della sperimentazione.
 [ita_utils:13] INFO:Node melodic/ADJ has no features
 [ita_utils:13] INFO:Node death/NOUN has no features
 [ita_utils:13] INFO:Node metal/NOUN has no features
-[nouns:140] WARNING:Node etichettata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-3370
 [italian:68] INFO:Sentence content: Con Projector il gruppo approda a sonorità quasi totalmente melodiche, alternando un metal energico e tagliente a parti più meditate, atmosferiche, con anche vocals in canto pulito.
 [ita_utils:13] INFO:Node Projector/NOUN has no features
@@ -1325,47 +872,33 @@
 [ita_utils:13] INFO:Node totalmente/ADV has no features
 [ita_utils:13] INFO:Node metal/NOUN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: tut-3371
 [italian:68] INFO:Sentence content: L'album riscuote un alto successo, ma divide i fan, fra chi apprezza il nuovo corso e chi li accusa di aver rinnegato le origini.
-[nouns:140] WARNING:Node accusa/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node apprezza/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node chi/PRON with deprel 'conj' needs new rules: {'Number': 'Sing', 'PronType': 'Rel'}
 [ita_utils:13] INFO:Node fan/NOUN has no features
 [italian:61] INFO:Processing sentence id: tut-3433
 [italian:68] INFO:Sentence content: una evoluzione di questa tecnica permetteva di far apparire falsi bersagli multipli sugli schermi radar, allineati lungo la radiale.
 [italian:61] INFO:Processing sentence id: tut-3467
 [italian:68] INFO:Sentence content: Tutti gli altri radar dello scenario continuano a funzionare regolarmente.
-[nouns:140] WARNING:Node Tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node regolarmente/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-3498
 [italian:68] INFO:Sentence content: La maggior parte dei dispositivi commercializzati con il nome di "radar jammer", in realtà non utilizza tecniche di accecamento del radar di misura, ma si limita a disturbare il rilevamento, creando un errore che porta ad una lettura corrispondente ad una velocità minore.
-[nouns:140] WARNING:Node commercializzati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node porta/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-3515
 [italian:68] INFO:Sentence content: Specchi progettò la fontana nel 1711, nelle immediate vicinanze del preesistente Santuario della Madonna della Neve, per volere di Livio de Carolis, marchese di Prossedi e Generale delle Poste pontificie.
 [ita_utils:13] INFO:Node Specchi/PROPN has no features
 [ita_utils:13] INFO:Node Madonna/PROPN has no features
 [ita_utils:13] INFO:Node Carolis/PROPN has no features
 [ita_utils:13] INFO:Node Prossedi/PROPN has no features
-[nouns:140] WARNING:Node Generale/NOUN with deprel 'conj' needs new rules: {'Number': 'Sing'}
 [ita_utils:13] INFO:Node Livio/PROPN has no features
-[nouns:140] WARNING:Node marchese/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: tut-3553
 [italian:68] INFO:Sentence content: La sua prima comparsa viene generalmente identificata in un articolo del 1905, presentato a un convegno sulla salute pubblica.
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node generalmente/ADV has no features
-[nouns:140] WARNING:Node presentato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: tut-3582
 [italian:68] INFO:Sentence content: Lo smog fotochimico viene anche chiamato smog estivo o smog di Los Angeles perché più comune nei climi caldi e asciutti, come accade tipicamente nella città di Los Angeles (i primi casi di smog fotochimico vennero segnalati intorno al 1940 a Los Angeles).
 [ita_utils:13] INFO:Node anche/ADV has no features
 [ita_utils:13] INFO:Node Los/PROPN has no features
-[nouns:140] WARNING:Node smog/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc'}
 [ita_utils:13] INFO:Node tipicamente/ADV has no features
 [ita_utils:13] INFO:Node Los/PROPN has no features
-[nouns:140] WARNING:Node accade/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node intorno a/ADV has no features
-[nouns:140] WARNING:Node intorno a/ADV with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node Los/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3638
 [italian:68] INFO:Sentence content: Yamanote-sen è scritto ufficialmente senza kana "no" (の o ノ), rendendo la sua pronuncia ambigua.
@@ -1374,66 +907,42 @@
 [ita_utils:13] INFO:Node kana/PROPN has no features
 [ita_utils:13] INFO:Node ノ/PROPN has no features
 [ita_utils:13] INFO:Node の/PROPN has no features
-[nouns:140] WARNING:Node ノ/PROPN with deprel 'conj' needs new rules: None
 [ita_utils:13] INFO:Node no/PROPN has no features
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: tut-3718
 [italian:68] INFO:Sentence content: Infatti il tentativo di Broglio di continuare la collaborazione con la NASA per il lancio di altri satelliti dalla base in Kenya si rivelò un successo solo parziale a causa del progressivo affermarsi del programma Space Shuttle e la riduzione d'interesse per il lancio di satelliti di piccole dimensioni.
 [ita_utils:13] INFO:Node Infatti/ADV has no features
 [ita_utils:13] INFO:Node Broglio/PROPN has no features
 [ita_utils:13] INFO:Node NASA/PROPN has no features
 [ita_utils:13] INFO:Node Kenya/PROPN has no features
-[nouns:140] WARNING:Node continuare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [ita_utils:13] INFO:Node solo/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-3763
 [italian:68] INFO:Sentence content: Le attività incluse nel primo progetto di elaborazione di immagini satellitari sono il Global Monitoring for Security and Sustenaibility (GMOSS), il System for Fire Detection (SFIDE), le Southern Hemisphere Additional Ozonesondes (SHADOZ) e il Central-East Africa Satellite Monitoring (CEASMO).
 [ita_utils:13] INFO:Node Global/ADJ has no features
-[nouns:140] WARNING:Node Sustenaibility/NOUN with deprel 'conj' needs new rules: {'Number': 'Sing'}
 [ita_utils:13] INFO:Node GMOSS/PROPN has no features
 [ita_utils:13] INFO:Node System/NOUN has no features
-[nouns:140] WARNING:Node SFIDE/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node Southern/ADJ has no features
 [ita_utils:13] INFO:Node Additional/ADJ has no features
 [ita_utils:13] INFO:Node SHADOZ/PROPN has no features
 [ita_utils:13] INFO:Node Ozonesondes/NOUN has no features
-[nouns:140] WARNING:Node SHADOZ/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node Central/PROPN has no features
 [ita_utils:13] INFO:Node East/PROPN has no features
 [ita_utils:13] INFO:Node Africa/PROPN has no features
 [ita_utils:13] INFO:Node CEASMO/PROPN has no features
-[nouns:140] WARNING:Node CEASMO/PROPN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node attività/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem'}
-[nouns:140] WARNING:Node GMOSS/PROPN with deprel 'appos' needs new rules: None
-[nouns:140] WARNING:Node System/NOUN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node Ozonesondes/NOUN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node Monitoring/NOUN with deprel 'conj' needs new rules: {'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-3781
 [italian:68] INFO:Sentence content: L'insieme di tutte queste operazioni viene chiamato stigliatura.
-[nouns:140] WARNING:Node tutte/DET with deprel 'det:predet' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'PronType': 'Tot'}
 [italian:61] INFO:Processing sentence id: tut-3794
 [italian:68] INFO:Sentence content: La lana che si ricava si chiama lana di concia.
-[nouns:140] WARNING:Node ricava/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: tut-3798
 [italian:68] INFO:Sentence content: è rivestita esternamente da squame e presenta numerose ondulazioni elastiche, origine della caratteristica arricciatura.
 [ita_utils:13] INFO:Node esternamente/ADV has no features
-[nouns:140] WARNING:Node origine/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: tut-3819
 [italian:68] INFO:Sentence content: La trasformazione, che comprende filatura, tessitura e le altre operazioni collegate, è stata per secoli prerogativa europea, con Inghilterra e Italia in testa.
-[nouns:140] WARNING:Node tessitura/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node operazioni/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node comprende/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [ita_utils:13] INFO:Node Italia/PROPN has no features
 [ita_utils:13] INFO:Node Inghilterra/PROPN has no features
-[nouns:140] WARNING:Node Italia/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node trasformazione/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node secoli/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node Inghilterra/PROPN with deprel 'obl' needs new rules: None
 [italian:61] INFO:Processing sentence id: splet-165
 [italian:68] INFO:Sentence content: Il terzo originale è firmato dal vettore e da questo consegnato al mittente dopo aver preso in consegna la merce.
 [italian:61] INFO:Processing sentence id: splet-229
 [italian:68] INFO:Sentence content: considerando che un termine di prescrizione uniforme dell'azione di risarcimento è nell'interesse sia del danneggiato sia del produttore;
-[nouns:140] WARNING:Node produttore/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node termine/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-10
 [italian:68] INFO:Sentence content: Quando è stato consegnato il premio Nobel per la pace a Yasser Arafat?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1446,7 +955,6 @@
 [italian:61] INFO:Processing sentence id: quest-103
 [italian:68] INFO:Sentence content: Chi è Jean-Bertrand Aristide?
 [ita_utils:13] INFO:Node Jean-Bertrand/PROPN has no features
-[nouns:140] WARNING:Node Jean-Bertrand/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-116
 [italian:68] INFO:Sentence content: Come si forma l'ozono?
 [ita_utils:13] INFO:Node Come/ADV has no features
@@ -1465,7 +973,6 @@
 [italian:61] INFO:Processing sentence id: quest-201
 [italian:68] INFO:Sentence content: Qual è la sigla per Amnesty International?
 [ita_utils:13] INFO:Node Amnesty/PROPN has no features
-[nouns:140] WARNING:Node sigla/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-206
 [italian:68] INFO:Sentence content: Che cosa ha influenzato l'"effetto Tequila"?
 [ita_utils:13] INFO:Node Tequila/PROPN has no features
@@ -1478,36 +985,29 @@
 [italian:61] INFO:Processing sentence id: quest-253
 [italian:68] INFO:Sentence content: Che giorno è l'anniversario della scoperta dell'America?
 [ita_utils:13] INFO:Node America/PROPN has no features
-[nouns:140] WARNING:Node giorno/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-280
 [italian:68] INFO:Sentence content: Chi era il presidente degli Stati Uniti nel 1994?
 [ita_utils:13] INFO:Node Stati/PROPN has no features
-[nouns:140] WARNING:Node presidente/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node 1994/NUM with deprel 'obl' needs new rules: {'NumType': 'Card'}
 [italian:61] INFO:Processing sentence id: quest-321
 [italian:68] INFO:Sentence content: In quale città italiana si trova la fontana di Trevi?
 [ita_utils:13] INFO:Node Trevi/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-338
 [italian:68] INFO:Sentence content: Chi è il fondatore del canale di notizie CNN?
 [ita_utils:13] INFO:Node CNN/PROPN has no features
-[nouns:140] WARNING:Node fondatore/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-364
 [italian:68] INFO:Sentence content: Qual è il titolo dell'autobiografia di Nelson Mandela?
 [ita_utils:13] INFO:Node Nelson/PROPN has no features
-[nouns:140] WARNING:Node titolo/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-365
 [italian:68] INFO:Sentence content: Come si chiama la vedova di Samora Machel, il defunto presidente del Mozambico?
 [ita_utils:13] INFO:Node Come/ADV has no features
 [ita_utils:13] INFO:Node Mozambico/PROPN has no features
 [ita_utils:13] INFO:Node Samora/PROPN has no features
-[nouns:140] WARNING:Node presidente/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-373
 [italian:68] INFO:Sentence content: Dimmi il nome di uno dei fondatori di Greenpeace.
 [ita_utils:13] INFO:Node Greenpeace/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-376
 [italian:68] INFO:Sentence content: Chi è Joao Havelange?
 [ita_utils:13] INFO:Node Joao/PROPN has no features
-[nouns:140] WARNING:Node Joao/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-421
 [italian:68] INFO:Sentence content: Che cosa ha ritirato la Saab?
 [ita_utils:13] INFO:Node Saab/PROPN has no features
@@ -1524,7 +1024,6 @@
 [italian:68] INFO:Sentence content: Chi è l'architetto del museo Guggenheim di Bilbao?
 [ita_utils:13] INFO:Node Guggenheim/PROPN has no features
 [ita_utils:13] INFO:Node Bilbao/PROPN has no features
-[nouns:140] WARNING:Node architetto/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-514
 [italian:68] INFO:Sentence content: Come si chiama il partito di Silvio Berlusconi?
 [ita_utils:13] INFO:Node Come/ADV has no features
@@ -1532,8 +1031,6 @@
 [italian:61] INFO:Processing sentence id: quest-536
 [italian:68] INFO:Sentence content: Di quale paese Egor Gadar è stato primo ministro?
 [ita_utils:13] INFO:Node Egor/PROPN has no features
-[nouns:140] WARNING:Node paese/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Egor/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-573
 [italian:68] INFO:Sentence content: Quanti film sono stati presentati al Festival mondiale del cinema di Montreal?
 [ita_utils:13] INFO:Node Montreal/PROPN has no features
@@ -1544,16 +1041,12 @@
 [italian:61] INFO:Processing sentence id: quest-589
 [italian:68] INFO:Sentence content: Di quale squadra automobilistica è direttore Flavio Briatore?
 [ita_utils:13] INFO:Node Flavio/PROPN has no features
-[nouns:140] WARNING:Node squadra/NOUN with deprel 'obl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Flavio/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-632
 [italian:68] INFO:Sentence content: Chi era il marito di Vieira da Silva?
 [ita_utils:13] INFO:Node Vieira/PROPN has no features
 [ita_utils:13] INFO:Node Silva/PROPN has no features
-[nouns:140] WARNING:Node marito/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-636
 [italian:68] INFO:Sentence content: Chi è il ministro dell'ambiente svedese?
-[nouns:140] WARNING:Node ministro/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-662
 [italian:68] INFO:Sentence content: Quando morì Simon Bolivar?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1564,18 +1057,14 @@
 [italian:61] INFO:Processing sentence id: quest-724
 [italian:68] INFO:Sentence content: Quante persone, in tutta la UE, hanno diritto di voto per eleggere il nuovo Parlamento Europeo?
 [ita_utils:13] INFO:Node UE/PROPN has no features
-[nouns:140] WARNING:Node tutta/DET with deprel 'det:predet' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node Parlamento/PROPN has no features
-[nouns:140] WARNING:Node eleggere/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: quest-735
 [italian:68] INFO:Sentence content: Chi è il capo del Sinn Fein?
 [ita_utils:13] INFO:Node Sinn/PROPN has no features
-[nouns:140] WARNING:Node capo/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-787
 [italian:68] INFO:Sentence content: Chi è il fondatore dell'Ordine del Tempio Solare?
 [ita_utils:13] INFO:Node Tempio/PROPN has no features
 [ita_utils:13] INFO:Node Ordine/PROPN has no features
-[nouns:140] WARNING:Node fondatore/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-791
 [italian:68] INFO:Sentence content: Quando avvenne il disastro di Chernobyl?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1584,7 +1073,6 @@
 [italian:68] INFO:Sentence content: Chi è il Ministro degli Esteri italiano?
 [ita_utils:13] INFO:Node Esteri/PROPN has no features
 [ita_utils:13] INFO:Node Ministro/PROPN has no features
-[nouns:140] WARNING:Node Ministro/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-856
 [italian:68] INFO:Sentence content: Quando Hong Kong passerà alla Cina?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1636,13 +1124,11 @@
 [italian:61] INFO:Processing sentence id: quest-1202
 [italian:68] INFO:Sentence content: Qual è l'inno nazionale in Inghilterra?
 [ita_utils:13] INFO:Node Inghilterra/PROPN has no features
-[nouns:140] WARNING:Node inno/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1238
 [italian:68] INFO:Sentence content: Quanto era alta Judy Garland?
 [ita_utils:13] INFO:Node Judy/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1239
 [italian:68] INFO:Sentence content: Qual è il paese col più alto numero di abitanti al mondo?
-[nouns:140] WARNING:Node paese/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1244
 [italian:68] INFO:Sentence content: In che anno venne inventato il PC?
 [ita_utils:13] INFO:Node PC/PROPN has no features
@@ -1651,26 +1137,20 @@
 [ita_utils:13] INFO:Node Riforma/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1286
 [italian:68] INFO:Sentence content: Qual è la percentuale della popolazione mancina?
-[nouns:140] WARNING:Node percentuale/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1303
 [italian:68] INFO:Sentence content: Come si chiama la moneta usata in Bolivia?
 [ita_utils:13] INFO:Node Come/ADV has no features
 [ita_utils:13] INFO:Node Bolivia/PROPN has no features
-[nouns:140] WARNING:Node usata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: quest-1306
 [italian:68] INFO:Sentence content: Quando ci fu l'invasione statunitense di Haiti?
 [ita_utils:13] INFO:Node Quando/ADV has no features
 [ita_utils:13] INFO:Node Haiti/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1317
 [italian:68] INFO:Sentence content: Qual è l'ingrediente attivo nel tilenolo?
-[nouns:140] WARNING:Node ingrediente/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1329
 [italian:68] INFO:Sentence content: Come si chiama la famosa competizione di slitta trainata da cani che si tiene ogni anno in Alaska?
 [ita_utils:13] INFO:Node Come/ADV has no features
-[nouns:140] WARNING:Node ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
 [ita_utils:13] INFO:Node Alaska/PROPN has no features
-[nouns:140] WARNING:Node tiene/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node trainata/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: quest-1339
 [italian:68] INFO:Sentence content: Quanto si stima che costeranno le stazioni spaziali internazionali?
 [ita_utils:13] INFO:Node Quanto/ADV has no features
@@ -1698,7 +1178,6 @@
 [italian:61] INFO:Processing sentence id: quest-1541
 [italian:68] INFO:Sentence content: Qual è il soprannome dell'Oklahoma?
 [ita_utils:13] INFO:Node Oklahoma/PROPN has no features
-[nouns:140] WARNING:Node soprannome/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1550
 [italian:68] INFO:Sentence content: Dimmi dove si trova la compagnia DuPont.
 [ita_utils:13] INFO:Node dove/ADV has no features
@@ -1706,27 +1185,21 @@
 [italian:61] INFO:Processing sentence id: quest-1597
 [italian:68] INFO:Sentence content: Chi è Alberto Tomba?
 [ita_utils:13] INFO:Node Alberto/PROPN has no features
-[nouns:140] WARNING:Node Alberto/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-1598
 [italian:68] INFO:Sentence content: Qual è la popolazione dell'Islanda?
 [ita_utils:13] INFO:Node Islanda/PROPN has no features
-[nouns:140] WARNING:Node popolazione/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1626
 [italian:68] INFO:Sentence content: Quale velocità può raggiungere un sottomarino nucleare?
 [italian:61] INFO:Processing sentence id: quest-1630
 [italian:68] INFO:Sentence content: Quale membrana controlla la quantità di luce che entra nell'occhio?
-[nouns:140] WARNING:Node entra/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: quest-1672
 [italian:68] INFO:Sentence content: Come vengono chiamate le persone nate dal 1965 al 1980?
 [ita_utils:13] INFO:Node Come/ADV has no features
-[nouns:140] WARNING:Node nate/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: quest-1673
 [italian:68] INFO:Sentence content: Qual è il nome dello stadio dei Cav?
 [ita_utils:13] INFO:Node Cav/PROPN has no features
-[nouns:140] WARNING:Node nome/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1687
 [italian:68] INFO:Sentence content: Qual è lo stato con la minore popolazione?
-[nouns:140] WARNING:Node stato/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1690
 [italian:68] INFO:Sentence content: Elenca delle cantanti che hanno recitato la parte di Donna Elvira in messe in scena del "Don Giovanni" di Mozart.
 [ita_utils:13] INFO:Node Donna/PROPN has no features
@@ -1737,7 +1210,6 @@
 [italian:61] INFO:Processing sentence id: quest-1746
 [italian:68] INFO:Sentence content: Qual è il motto del "New York Times"?
 [ita_utils:13] INFO:Node New/PROPN has no features
-[nouns:140] WARNING:Node motto/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: quest-1764
 [italian:68] INFO:Sentence content: A quale azienda appartiene il marchio di bevande non alcoliche "Gatorade"?
 [ita_utils:13] INFO:Node Gatorade/PROPN has no features
@@ -1756,7 +1228,6 @@
 [italian:61] INFO:Processing sentence id: quest-1846
 [italian:68] INFO:Sentence content: Che cos'è L'A?
 [ita_utils:13] INFO:Node A/PROPN has no features
-[nouns:140] WARNING:Node A/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-1857
 [italian:68] INFO:Sentence content: In quale giorno avvenne l'attacco a Pearl Harbor?
 [ita_utils:13] INFO:Node Pearl/PROPN has no features
@@ -1780,13 +1251,11 @@
 [italian:61] INFO:Processing sentence id: quest-1991
 [italian:68] INFO:Sentence content: Chi è Niels Bohr?
 [ita_utils:13] INFO:Node Niels/PROPN has no features
-[nouns:140] WARNING:Node Niels/PROPN with deprel 'nsubj' needs new rules: None
 [italian:61] INFO:Processing sentence id: quest-1999
 [italian:68] INFO:Sentence content: Da quante repubbliche era composta l'Unione Sovietica?
 [ita_utils:13] INFO:Node Unione/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-2000
 [italian:68] INFO:Sentence content: A quanto corrisponde uno "stone" inglese?
-[nouns:140] WARNING:Node corrisponde/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: quest-2034
 [italian:68] INFO:Sentence content: Dove si trova il Monte Olimpo?
 [ita_utils:13] INFO:Node Dove/ADV has no features
@@ -1822,41 +1291,29 @@
 [ita_utils:13] INFO:Node Austria/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-2
 [italian:68] INFO:Sentence content: Con le accuse di peculato e abuso d'ufficio, il procuratore capo di Cassino, Mario Mercone, ha chiesto il rinvio a giudizio dell'ex consigliere regionale del Pdl Angelo D'Ovidio, sindaco di Pastena per oltre venti anni, in relazione all'incarico di commissario del Consorzio per il patrimonio speleologico delle grotte di Pastena e Collepardo, costituito tra i due Comuni della Ciociaria.
-[nouns:140] WARNING:Node abuso/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Cassino/PROPN has no features
 [ita_utils:13] INFO:Node Mario/PROPN has no features
-[nouns:140] WARNING:Node Mario/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node Pdl/PROPN has no features
 [ita_utils:13] INFO:Node Pastena/PROPN has no features
 [ita_utils:13] INFO:Node oltre/ADV has no features
-[nouns:140] WARNING:Node oltre/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Angelo/PROPN has no features
-[nouns:140] WARNING:Node sindaco/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Collepardo/PROPN has no features
 [ita_utils:13] INFO:Node Pastena/PROPN has no features
-[nouns:140] WARNING:Node Collepardo/PROPN with deprel 'conj' needs new rules: None
 [ita_utils:13] INFO:Node Ciociaria/PROPN has no features
 [ita_utils:13] INFO:Node Consorzio/PROPN has no features
-[nouns:140] WARNING:Node costituito/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: test-13
 [italian:68] INFO:Sentence content: Tra gli indagati Francesco Rossi e Paolo Bianchi.
 [ita_utils:13] INFO:Node Paolo/PROPN has no features
 [ita_utils:13] INFO:Node Francesco/PROPN has no features
-[nouns:140] WARNING:Node Paolo/PROPN with deprel 'conj' needs new rules: None
 [italian:61] INFO:Processing sentence id: test-18
 [italian:68] INFO:Sentence content: Ma quei soldi, per i pm di Palermo, sono frutto di un reato, ed è per questo che Miranda Ratti, la moglie del politico siciliano, è stata iscritta nel registro degli indagati dalla procura di Palermo per riciclaggio aggravato nell'ambito dell'inchiesta sulla presunta estorsione che il fondatore di Forza Italia avrebbe fatto all'ex premier.
 [ita_utils:13] INFO:Node Palermo/PROPN has no features
 [ita_utils:13] INFO:Node Miranda/PROPN has no features
-[nouns:140] WARNING:Node moglie/NOUN with deprel 'appos' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Palermo/PROPN has no features
 [ita_utils:13] INFO:Node Forza/PROPN has no features
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node premier/NOUN has no features
-[nouns:140] WARNING:Node fatto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node soldi/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node pm/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc'}
-[nouns:140] WARNING:Node è/VERB with deprel 'conj' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: test-24
 [italian:68] INFO:Sentence content: Per l'ex ministro Scajola i pm napoletani ipotizzano il reato di corruzione internazionale.
 [ita_utils:13] INFO:Node ex/ADJ has no features
@@ -1866,11 +1323,7 @@
 [ita_utils:13] INFO:Node già/ADV has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
 [ita_utils:13] INFO:Node solo/ADV has no features
-[nouns:140] WARNING:Node tutto/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Tot'}
-[nouns:140] WARNING:Node solo/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node anno/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node Lombardia/PROPN has no features
-[nouns:140] WARNING:Node spinto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: test-69
 [italian:68] INFO:Sentence content: prima che l'inchiesta colpisse addirittura il vertice di Finmeccanica, Giuseppe Orsi, indagato nell'ambito di un altro filone, poi trasferito da Napoli a Busto Arstizio.
 [ita_utils:13] INFO:Node prima che/ADV has no features
@@ -1879,47 +1332,32 @@
 [ita_utils:13] INFO:Node poi/ADV has no features
 [ita_utils:13] INFO:Node Napoli/PROPN has no features
 [ita_utils:13] INFO:Node Busto/PROPN has no features
-[nouns:140] WARNING:Node trasferito/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node Giuseppe/PROPN has no features
-[nouns:140] WARNING:Node indagato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node Giuseppe/PROPN with deprel 'appos' needs new rules: None
 [italian:61] INFO:Processing sentence id: test-89
 [italian:68] INFO:Sentence content: E non dimentichiamo che secondo Borgogni è stata assunta anche la figlia di Massimo Ponzellini.
 [ita_utils:13] INFO:Node Borgogni/PROPN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
 [ita_utils:13] INFO:Node Massimo/PROPN has no features
-[nouns:140] WARNING:Node anche/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: test-109
 [italian:68] INFO:Sentence content: Altre tre persone, tra cui Marco Tornatore, figlio di Gianfranco, sono indagate a piede libero.
 [ita_utils:13] INFO:Node Gianfranco/PROPN has no features
 [ita_utils:13] INFO:Node Marco/PROPN has no features
-[nouns:140] WARNING:Node figlio/NOUN with deprel 'appos' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Marco/PROPN with deprel 'acl:relcl' needs new rules: None
 [italian:61] INFO:Processing sentence id: test-134
 [italian:68] INFO:Sentence content: Emergono intercettazioni in cui il manager Pozzessere al telefono con una delle consulenti di Finmeccanica, Debbie Castaneda, parla con disinvoltura di accordi e di quote.
 [ita_utils:13] INFO:Node Pozzessere/PROPN has no features
 [ita_utils:13] INFO:Node Finmeccanica/PROPN has no features
 [ita_utils:13] INFO:Node Debbie/PROPN has no features
-[nouns:140] WARNING:Node Debbie/PROPN with deprel 'appos' needs new rules: None
 [ita_utils:13] INFO:Node manager/NOUN has no features
-[nouns:140] WARNING:Node quote/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node parla/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: test-166
 [italian:68] INFO:Sentence content: “Nell’incidente ha sbattuto la parte destra della testa.
 [italian:61] INFO:Processing sentence id: test-168
 [italian:68] INFO:Sentence content: Non possiamo però speculare su eventuali lesioni permanenti o sulle sue chance di sopravvivenza.
 [ita_utils:13] INFO:Node però/ADV has no features
-[nouns:140] WARNING:Node sue/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node chance/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
 [italian:61] INFO:Processing sentence id: test-260
 [italian:68] INFO:Sentence content: Le ricerche dei bambini, quindi, sono proseguite tutta la notte e, oltre ai cani molecolari, sono stati utilizzati anche un elicottero della forestale e uno della Guardia di finanza che hanno pattugliato la zona dall’alto.
 [ita_utils:13] INFO:Node quindi/ADV has no features
-[nouns:140] WARNING:Node tutta/DET with deprel 'det:predet' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node oltre a/ADV has no features
-[nouns:140] WARNING:Node oltre a/ADV with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node anche/ADV has no features
-[nouns:140] WARNING:Node uno/PRON with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node pattugliato/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: test-261
 [italian:68] INFO:Sentence content: Fiat acquisirà restante 41,46% di Chrysler per 3,6 miliardi.
 [ita_utils:13] INFO:Node Fiat/PROPN has no features
@@ -1936,12 +1374,8 @@
 [italian:61] INFO:Processing sentence id: 1_CC-1
 [italian:68] INFO:Sentence content: Attribuzione - Condividi allo stesso modo 2.0 (Italia).
 [ita_utils:13] INFO:Node Italia/PROPN has no features
-[nouns:140] WARNING:Node Condividi/VERB with deprel 'advcl' needs new rules: {'Mood': 'Imp', 'Number': 'Sing', 'Person': '2', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 1_CC-9
 [italian:68] INFO:Sentence content: Ogni utilizzazione dell'opera che non sia autorizzata ai sensi della presente licenza o del diritto d'autore è proibita.
-[nouns:140] WARNING:Node diritto/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node Ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node autorizzata/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 1_CC-36
 [italian:68] INFO:Sentence content: Compensi per la comunicazione al pubblico dell'opera mediante fonogrammi.
 [italian:61] INFO:Processing sentence id: 1_CC-70
@@ -1950,110 +1384,56 @@
 [ita_utils:13] INFO:Node altrimenti/ADV has no features
 [ita_utils:13] INFO:Node Licenziante/PROPN has no features
 [ita_utils:13] INFO:Node così/ADV has no features
-[nouns:140] WARNING:Node garanzia/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node espressa/ADJ with deprel 'advcl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node quindi/ADV has no features
-[nouns:140] WARNING:Node tipo/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[italian:224] INFO:Copying accertabili features (defaultdict(<class 'set'>, {'Number': {'Plur'}, 'Person': {'3'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}})) to meno
-[nouns:140] WARNING:Node accertabili/ADJ with deprel 'advcl' needs new rules: {'Number': 'Plur'}
-[nouns:140] WARNING:Node commerciabilità/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
-[nouns:140] WARNING:Node idoneità/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem'}
-[nouns:140] WARNING:Node violazione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node mancanza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node esattezza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node presenza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
+[italian:230] INFO:Copying accertabili features (defaultdict(<class 'set'>, {'Number': {'Plur'}, 'Voice': {'Act'}, 'Person': {'3'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}})) to meno
 [italian:61] INFO:Processing sentence id: 1_CC-95
 [italian:68] INFO:Sentence content: Creative Commons non è parte della presente licenza e non dà alcuna garanzia connessa all'opera.
 [ita_utils:13] INFO:Node Creative/PROPN has no features
-[nouns:140] WARNING:Node connessa/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node Creative/PROPN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node dà/VERB with deprel 'conj' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-79
 [italian:68] INFO:Sentence content: Secondo me, questa seconda ipotesi significherebbe rinunciare alle nostre responsabilità di parlamento, oltre a introdurre una tesi originale, un metodo finora sconosciuto che consiste nel distribuire per iscritto ai gruppi politici il discorso programmatico della commissione una settimana prima - e non il giorno prima, come era stato concordato.
-[nouns:140] WARNING:Node nostre/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node oltre a/ADV has no features
 [ita_utils:13] INFO:Node finora/ADV has no features
-[nouns:140] WARNING:Node giorno/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node prima/ADV has no features
 [ita_utils:13] INFO:Node prima/ADV has no features
-[nouns:140] WARNING:Node consiste/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-96
 [italian:68] INFO:Sentence content: Come è noto, ciascun presidente dispone di un numero di voti pari al numero dei deputati iscritti al proprio gruppo politico.
-[nouns:140] WARNING:Node iscritti/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node pari/ADJ has no features
 [italian:61] INFO:Processing sentence id: 2_Europarl-98
 [italian:68] INFO:Sentence content: Ciò significa che tutti i gruppi politici, ad eccezione dei non iscritti - che però non costituiscono un gruppo politico -, erano concordi e che un solo gruppo era del parere di procedere come proposto dal collega in questa sede.
-[nouns:140] WARNING:Node tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
 [ita_utils:13] INFO:Node però/ADV has no features
-[nouns:140] WARNING:Node costituiscono/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node gruppo/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node procedere/VERB with deprel 'ccomp' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-178
 [italian:68] INFO:Sentence content: Di recente il tema della sicurezza dei trasporti è stato tristemente al centro dell'attenzione dei mass media con l'incidente ferroviario alla stazione di Paddington a Londra, il terribile incidente ferroviario in Norvegia, i due incidenti aerei in cui hanno perso la vita alcuni cittadini dell'unione e il disastro ecologico provocato dalla petroliera Erika al largo della costa bretone.
 [ita_utils:13] INFO:Node tristemente/ADV has no features
-[nouns:140] WARNING:Node media/X with deprel 'flat:foreign' needs new rules: {'Foreign': 'Yes'}
 [ita_utils:13] INFO:Node Paddington/PROPN has no features
 [ita_utils:13] INFO:Node Erika/PROPN has no features
-[nouns:140] WARNING:Node provocato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node Londra/PROPN has no features
-[nouns:140] WARNING:Node incidente/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node disastro/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node largo/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
-[nouns:140] WARNING:Node perso/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node Norvegia/PROPN has no features
-[nouns:140] WARNING:Node incidenti/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-224
 [italian:68] INFO:Sentence content: Credo tuttavia che occorra fare tutto ciò che rientra nelle nostre possibilità per limitare il più possibile il trasporto di merci pericolose in tutti i paesi, siano essi di transito o meno.
 [ita_utils:13] INFO:Node tuttavia/ADV has no features
-[nouns:140] WARNING:Node nostre/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node tutto/DET with deprel 'det' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node che/PRON with deprel 'nsubj' needs new rules: {'PronType': 'Rel'}
-[nouns:140] WARNING:Node rientra/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node essi/PRON with deprel 'nsubj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Person': '3', 'PronType': 'Prs'}
-[italian:224] INFO:Copying transito features (defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}, 'Case': {'Gen'}})) to meno
-[nouns:140] WARNING:Node tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
-[italian:275] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Definite': {'Def'}, 'Degree': set()})
+[italian:230] INFO:Copying transito features (defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Voice': {'Act'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}, 'Case': {'Gen'}})) to meno
 [italian:61] INFO:Processing sentence id: 2_Europarl-282
 [italian:68] INFO:Sentence content: Spero che la mia proposta venga presa in considerazione nel corso della votazione di domani.
-[nouns:140] WARNING:Node mia/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-307
 [italian:68] INFO:Sentence content: Vorrei chiedere alla vicepresidente se oggi è in grado di dirci qualcosa sullo stato di avanzamento degli sforzi di armonizzazione da parte delle due organizzazioni summenzionate e se l'Unione Europea ha la possibilità di accelerare l'armonizzazione adottando principi il più possibile semplici.
 [ita_utils:13] INFO:Node oggi/ADV has no features
 [ita_utils:13] INFO:Node Unione/PROPN has no features
-[nouns:140] WARNING:Node accelerare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node oggi/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node dir/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
-[nouns:140] WARNING:Node ha/VERB with deprel 'conj' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[italian:275] ERROR:Node più should be empty bus has features defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Definite': {'Def'}, 'Degree': set()})
 [italian:61] INFO:Processing sentence id: 2_Europarl-415
 [italian:68] INFO:Sentence content: Sono stati inseriti numerosissimi dettagli, che erano emersi già nelle relazioni precedenti.
 [ita_utils:13] INFO:Node già/ADV has no features
-[nouns:140] WARNING:Node già/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node emersi/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-466
 [italian:68] INFO:Sentence content: si tratta di una lunga storia, che si trascina almeno da quando sono stato eletto al parlamento, cinque anni fa, tant ' è vero che ho già trattato questo argomento a più riprese.
 [ita_utils:13] INFO:Node almeno/ADV has no features
 [ita_utils:13] INFO:Node fa/ADJ has no features
 [ita_utils:13] INFO:Node tant/NOUN has no features
 [ita_utils:13] INFO:Node già/ADV has no features
-[nouns:140] WARNING:Node tant/NOUN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node trattato/VERB with deprel 'advcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node trascina/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 2_Europarl-502
 [italian:68] INFO:Sentence content: Signor presidente, anch'io mi voglio complimentare con il relatore per l'ottimo lavoro svolto.
 [ita_utils:13] INFO:Node anch'/ADV has no features
-[nouns:140] WARNING:Node anch'/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: 3_UDHR-46
 [italian:68] INFO:Sentence content: Ogni individuo ha diritto di lasciare qualsiasi paese, incluso il proprio, e di ritornare nel proprio paese.
-[nouns:140] WARNING:Node Ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node incluso/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node lasciare/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: 3_UDHR-54
 [italian:68] INFO:Sentence content: Uomini e donne in età adatta hanno il diritto di sposarsi e di fondare una famiglia, senza alcuna limitazione di razza, cittadinanza o religione.
-[nouns:140] WARNING:Node donne/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
-[nouns:140] WARNING:Node cittadinanza/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node religione/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node sposar/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: 4_FB-84
 [italian:68] INFO:Sentence content: In questo modo sono aumentate le opportunità di diffusione e l'azienda ha sviluppato una campagna pubblicitaria vincente.
 [italian:61] INFO:Processing sentence id: 4_FB-85
@@ -2068,42 +1448,26 @@
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-27
 [italian:68] INFO:Sentence content: "Era sicuramente consapevole in modo distaccato di essere stata data a un vecchio marito come ricompensa per i servizi professionali di quest'ultimo a un amico della sua famiglia e che il capitale proveniva dalla sua parte.
 [ita_utils:13] INFO:Node sicuramente/ADV has no features
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-128
 [italian:68] INFO:Sentence content: Pianificò di divenire lui stesso questo candidato, facendo appello soprattutto alle classi più elevate di Chinon.
 [ita_utils:13] INFO:Node soprattutto/ADV has no features
 [ita_utils:13] INFO:Node Chinon/PROPN has no features
-[nouns:140] WARNING:Node soprattutto/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-168
 [italian:68] INFO:Sentence content: Nonostante Balzac fosse "talvolta un eremita e un girovago", ha sempre provato a rimanere in contatto con la società che forniva materiale per il suo lavoro.
 [ita_utils:13] INFO:Node Balzac/PROPN has no features
 [ita_utils:13] INFO:Node talvolta/ADV has no features
-[nouns:140] WARNING:Node Balzac/PROPN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node talvolta/ADV with deprel 'advmod' needs new rules: None
-[nouns:140] WARNING:Node girovago/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node sempre/ADV has no features
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node forniva/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-196
 [italian:68] INFO:Sentence content: La salute di lui peggiorò lungo il cammino, e Ewelina scrisse a sua figlia che Balzac era "in uno stato di estrema debolezza" e "sudava copiosamente".
 [ita_utils:13] INFO:Node Ewelina/PROPN has no features
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node Balzac/PROPN has no features
 [ita_utils:13] INFO:Node copiosamente/ADV has no features
-[nouns:140] WARNING:Node Balzac/PROPN with deprel 'nsubj' needs new rules: None
-[nouns:140] WARNING:Node sudava/VERB with deprel 'conj' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Imp', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-199
 [italian:68] INFO:Sentence content: Sua madre era la sola persona presente quando egli spirò;
-[nouns:140] WARNING:Node Sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node madre/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
-[nouns:140] WARNING:Node spirò/VERB with deprel 'advcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Past', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-244
 [italian:68] INFO:Sentence content: Come fece con la gente attorno a sè, Balzac studiò in profondità quei luoghi, viaggiando in luoghi remoti e prendendo nota di ciò che aveva fatto nelle visite precedenti.
 [ita_utils:13] INFO:Node attorno a/ADV has no features
-[nouns:140] WARNING:Node attorno a/ADV with deprel 'case' needs new rules: None
 [ita_utils:13] INFO:Node Balzac/PROPN has no features
-[nouns:140] WARNING:Node fatto/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-287
 [italian:68] INFO:Sentence content: "L'artista della Comédie Humaine", egli scrisse, "è semi-sommerso dallo storico.
 [ita_utils:13] INFO:Node Comédie/PROPN has no features
@@ -2114,35 +1478,15 @@
 [ita_utils:13] INFO:Node così/ADV has no features
 [ita_utils:13] INFO:Node Camille/PROPN has no features
 [ita_utils:13] INFO:Node Walter/PROPN has no features
-[nouns:140] WARNING:Node Camille/PROPN with deprel 'conj' needs new rules: None
-[nouns:140] WARNING:Node così/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: 7_WIKIShake-101
 [italian:68] INFO:Sentence content: L'epitaffio inciso sulla lastra di roccia che copre la tomba racchiude una maledizione su chiunque oserà spostare le sue ossa, cosa che venne accuratamente evitata durante i lavori di restauro della chiesa nel 2008.
-[nouns:140] WARNING:Node copre/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node inciso/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node sue/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Poss': 'Yes', 'PronType': 'Prs'}
 [ita_utils:13] INFO:Node accuratamente/ADV has no features
-[nouns:140] WARNING:Node evitata/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node oserà/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Fut', 'VerbForm': 'Fin'}
-[italian:61] INFO:Processing sentence id: 7_WIKIShake-141
-[italian:68] INFO:Sentence content: Shakespeare collaborò ad altre due opere ancora oggi conosciute, Enrico VIII e i due nobili congiunti, probabilmente con John Fletcher.
-[ita_utils:13] INFO:Node Shakespeare/PROPN has no features
-[ita_utils:13] INFO:Node ancora/ADV has no features
-[ita_utils:13] INFO:Node oggi/ADV has no features
-[nouns:103] WARNING:Node i/DET with deprel 'dep' needs new rules
-[ita_utils:13] INFO:Node Enrico/PROPN has no features
-[nouns:140] WARNING:Node congiunti/NOUN with deprel 'conj' needs new rules: {'Number': 'Plur'}
-[ita_utils:13] INFO:Node probabilmente/ADV has no features
-[ita_utils:13] INFO:Node John/PROPN has no features
-[nouns:140] WARNING:Node probabilmente/ADV with deprel 'advmod' needs new rules: None
 [italian:61] INFO:Processing sentence id: 8_WIT3-7
 [italian:68] INFO:Sentence content: mamma infelice, tutti infelici.
 [italian:61] INFO:Processing sentence id: 9_PS-62
 [italian:68] INFO:Sentence content: Queste aziende introducono infatti nuove importazioni tecnologicamente avanzate e nuove tecniche gestionali che incoraggiano la crescita delle aziende nazionali, esortando dall'altra parte il processo di modernizzazione industriale.
 [ita_utils:13] INFO:Node infatti/ADV has no features
 [ita_utils:13] INFO:Node tecnologicamente/ADV has no features
-[nouns:140] WARNING:Node incoraggiano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node tecniche/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: 9_PS-78
 [italian:68] INFO:Sentence content: I farmaci, per quanto accessibili, non hanno alcun valore se non c'è nessuno a prescriverli o a somministrarli.
 [italian:61] INFO:Processing sentence id: 9_PS-129
@@ -2151,30 +1495,17 @@
 [italian:61] INFO:Processing sentence id: 9_PS-170
 [italian:68] INFO:Sentence content: Anche in questo caso, la Germania dovrebbe prendere il comando.
 [ita_utils:13] INFO:Node Anche/ADV has no features
-[nouns:140] WARNING:Node Anche/ADV with deprel 'advmod' needs new rules: None
 [ita_utils:13] INFO:Node Germania/PROPN has no features
 [italian:61] INFO:Processing sentence id: 9_PS-208
 [italian:68] INFO:Sentence content: restando impantanata nella carenza di risparmio ma ritrovandosi senza prodotti né capitali cinesi, l'America rischia di andare incontro a un aumento dell'inflazione e dei tassi di interesse, e a un indebolimento del dollaro.
-[nouns:140] WARNING:Node capitali/NOUN with deprel 'conj' needs new rules: {'Gender': 'Fem', 'Number': 'Plur'}
 [ita_utils:13] INFO:Node America/PROPN has no features
 [ita_utils:13] INFO:Node incontro a/ADV has no features
-[nouns:140] WARNING:Node tassi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
-[nouns:140] WARNING:Node incontro a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node indebolimento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: 9_PS-320
 [italian:68] INFO:Sentence content: È alquanto esplicativo che la maggior parte dei 47 partecipanti al simposio - influenti figure del settore pubblico e privato di tutto il mondo - non erano a conoscenza del grado in cui l'alimentazione di una madre influenza il benessere della sua prole.
 [ita_utils:13] INFO:Node alquanto/ADV has no features
-[nouns:140] WARNING:Node tutto/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Tot'}
-[nouns:140] WARNING:Node influenti/VERB with deprel 'acl' needs new rules: {'Number': 'Plur', 'Tense': 'Pres', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node sua/DET with deprel 'det:poss' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node influenza/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node parte/NOUN with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: 9_PS-417
 [italian:68] INFO:Sentence content: La sua è una storia di successo che può, e anzi deve, essere replicata in tutto il continente.
 [ita_utils:13] INFO:Node anzi/ADV has no features
-[nouns:140] WARNING:Node tutto/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'PronType': 'Tot'}
-[nouns:140] WARNING:Node replicata/VERB with deprel 'acl:relcl' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node sua/PRON with deprel 'nsubj' needs new rules: {'Gender': 'Fem', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
 [italian:61] INFO:Processing sentence id: 9_PS-453
 [italian:68] INFO:Sentence content: In realtà, l'amministrazione ha cercato di rendere il Fmi più interessante, soprattutto per incoraggiare i repubblicani della Camera dei rappresentanti a sostenere le riforme.
 [ita_utils:13] INFO:Node Fmi/PROPN has no features
@@ -2183,12 +1514,10 @@
 [italian:61] INFO:Processing sentence id: 9_PS-594
 [italian:68] INFO:Sentence content: La Germania apprezza questo ruolo, ma non è in grado di esercitarlo.
 [ita_utils:13] INFO:Node Germania/PROPN has no features
-[nouns:140] WARNING:Node esercitar/VERB with deprel 'acl' needs new rules: {'VerbForm': 'Inf'}
 [italian:61] INFO:Processing sentence id: 10_new-76
 [italian:68] INFO:Sentence content: La repubblica di Bulgaria e la Romania diventano membri dell'Unione Europea.
 [ita_utils:13] INFO:Node Bulgaria/PROPN has no features
 [ita_utils:13] INFO:Node Romania/PROPN has no features
-[nouns:140] WARNING:Node Romania/PROPN with deprel 'conj' needs new rules: None
 [ita_utils:13] INFO:Node Unione/PROPN has no features
 [italian:61] INFO:Processing sentence id: 10_new-79
 [italian:68] INFO:Sentence content: Le disposizioni di tale atto costituiscono parte integrante del presente trattato.
@@ -2203,8 +1532,6 @@
 [italian:61] INFO:Processing sentence id: 10_new-85
 [italian:68] INFO:Sentence content: Il testo del trattato che adotta una costituzione per l'Europa, redatto in lingua bulgara e rumena, è accluso al presente trattato.
 [ita_utils:13] INFO:Node Europa/PROPN has no features
-[nouns:140] WARNING:Node adotta/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node redatto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-89
 [italian:68] INFO:Sentence content: Essa presenta un progetto dei protocolli al consiglio per la conclusione.
 [italian:61] INFO:Processing sentence id: 10_new-90
@@ -2216,51 +1543,37 @@
 [italian:61] INFO:Processing sentence id: 10_new-96
 [italian:68] INFO:Sentence content: Proroghe limitate della durata possono essere concesse per l'esecuzione dei contratti, in via eccezionale e in casi debitamente giustificati.
 [ita_utils:13] INFO:Node debitamente/ADV has no features
-[nouns:140] WARNING:Node casi/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Plur'}
 [italian:61] INFO:Processing sentence id: 10_new-98
 [italian:68] INFO:Sentence content: Non si applicano tuttavia le disposizioni previste all'articolo 165 del regolamento finanziario applicabile al bilancio generale delle comunità europee.
 [ita_utils:13] INFO:Node tuttavia/ADV has no features
-[nouns:140] WARNING:Node previste/VERB with deprel 'acl' needs new rules: {'Gender': 'Fem', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-101
 [italian:68] INFO:Sentence content: Il comitato adotta il proprio regolamento interno.
 [italian:61] INFO:Processing sentence id: 10_new-104
 [italian:68] INFO:Sentence content: Il primo giorno lavorativo di ciascun mese del corrispondente anno viene corrisposto alla Bulgaria e alla Romania un dodicesimo di ciascun importo annuale.
 [ita_utils:13] INFO:Node Romania/PROPN has no features
 [ita_utils:13] INFO:Node Bulgaria/PROPN has no features
-[nouns:140] WARNING:Node Romania/PROPN with deprel 'conj' needs new rules: None
 [italian:61] INFO:Processing sentence id: 10_new-106
 [italian:68] INFO:Sentence content: Tutti i fondi inutilizzati o spesi ingiustificatamente sono recuperati dalla commissione.
 [ita_utils:13] INFO:Node ingiustificatamente/ADV has no features
-[nouns:140] WARNING:Node Tutti/DET with deprel 'det:predet' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'PronType': 'Tot'}
 [italian:61] INFO:Processing sentence id: 10_new-107
 [italian:68] INFO:Sentence content: La commissione può adottare qualsiasi provvedimento tecnico necessario al funzionamento dello strumento temporaneo per i flussi di tesoreria e strumento Schengen.
 [ita_utils:13] INFO:Node Schengen/PROPN has no features
-[nouns:140] WARNING:Node strumento/NOUN with deprel 'conj' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [italian:61] INFO:Processing sentence id: 10_new-109
 [italian:68] INFO:Sentence content: Nella scelta di tali misure si dovrà accordare la precedenza a quelle che turbino il meno possibile il funzionamento del mercato interno.
-[nouns:140] WARNING:Node turbino/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Sub', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[italian:275] ERROR:Node meno should be empty bus has features defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Definite': {'Def'}, 'Degree': set()})
 [italian:61] INFO:Processing sentence id: 10_new-111
 [italian:68] INFO:Sentence content: Le misure non sono mantenute oltre il tempo strettamente necessario e, in ogni caso, cessano di essere applicate una volta attuato l'impegno pertinente.
 [ita_utils:13] INFO:Node strettamente/ADV has no features
-[nouns:140] WARNING:Node ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
-[nouns:140] WARNING:Node attuato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-112
 [italian:68] INFO:Sentence content: Esse possono tuttavia essere applicate oltre il periodo specificato nel primo comma fino a che non siano adempiuti i pertinenti impegni.
 [ita_utils:13] INFO:Node tuttavia/ADV has no features
-[nouns:140] WARNING:Node specificato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [ita_utils:13] INFO:Node fino a che/ADV has no features
 [italian:61] INFO:Processing sentence id: 10_new-115
 [italian:68] INFO:Sentence content: Esse possono tuttavia essere applicate oltre il periodo specificato nel primo comma finché tali carenze persistono.
 [ita_utils:13] INFO:Node tuttavia/ADV has no features
-[nouns:140] WARNING:Node specificato/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-118
 [italian:68] INFO:Sentence content: Il parlamento europeo apporta al suo regolamento interno gli adattamenti resi necessari dall'adesione.
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node resi/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-120
 [italian:68] INFO:Sentence content: Un cittadino di ogni nuovo stato membro è nominato membro della commissione a partire dalla data dell'adesione.
-[nouns:140] WARNING:Node ogni/DET with deprel 'det' needs new rules: {'Number': 'Sing', 'PronType': 'Ind'}
 [italian:61] INFO:Processing sentence id: 10_new-124
 [italian:68] INFO:Sentence content: Questo giudice è estratto a sorte.
 [italian:61] INFO:Processing sentence id: 10_new-125
@@ -2269,30 +1582,20 @@
 [italian:68] INFO:Sentence content: Il mandato dell'altro giudice scade il 31 agosto 2010.
 [italian:61] INFO:Processing sentence id: 10_new-129
 [italian:68] INFO:Sentence content: Il tribunale, di concerto con la corte di giustizia, apporta al suo regolamento di procedura gli adattamenti resi necessari dall'adesione.
-[nouns:140] WARNING:Node suo/DET with deprel 'det:poss' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Poss': 'Yes', 'PronType': 'Prs'}
-[nouns:140] WARNING:Node resi/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-130
 [italian:68] INFO:Sentence content: I regolamenti di procedura così adattati sono sottoposti all'approvazione del consiglio.
 [ita_utils:13] INFO:Node così/ADV has no features
-[nouns:140] WARNING:Node adattati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-133
 [italian:68] INFO:Sentence content: Il mandato dei membri recentemente nominati scade contemporaneamente a quello dei membri che sono in carica al momento dell'adesione.
 [ita_utils:13] INFO:Node recentemente/ADV has no features
-[nouns:140] WARNING:Node nominati/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Plur', 'Tense': 'Past', 'VerbForm': 'Part'}
-[nouns:140] WARNING:Node che/PRON with deprel 'nsubj' needs new rules: {'PronType': 'Rel'}
-[nouns:140] WARNING:Node momento/NOUN with deprel 'obl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing'}
 [ita_utils:13] INFO:Node contemporaneamente/ADV has no features
 [italian:61] INFO:Processing sentence id: 10_new-135
 [italian:68] INFO:Sentence content: Le misure sono adottate in conformità delle regole di voto che disciplinano l'adozione dell'atto rispetto al quale si chiede una deroga temporanea.
 [ita_utils:13] INFO:Node rispetto a/ADV has no features
-[nouns:140] WARNING:Node rispetto a/ADV with deprel 'case' needs new rules: None
-[nouns:140] WARNING:Node chiede/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Sing', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
-[nouns:140] WARNING:Node disciplinano/VERB with deprel 'acl:relcl' needs new rules: {'Mood': 'Ind', 'Number': 'Plur', 'Person': '3', 'Tense': 'Pres', 'VerbForm': 'Fin'}
 [italian:61] INFO:Processing sentence id: 10_new-137
 [italian:68] INFO:Sentence content: Tali adattamenti, se adottati dopo l'adesione, sono applicabili dalla data di adesione.
 [italian:61] INFO:Processing sentence id: 10_new-140
 [italian:68] INFO:Sentence content: Il testo del suddetto trattato, redatto in lingua bulgara e rumena, è allegato al presente protocollo.
-[nouns:140] WARNING:Node redatto/VERB with deprel 'acl' needs new rules: {'Gender': 'Masc', 'Number': 'Sing', 'Tense': 'Past', 'VerbForm': 'Part'}
 [italian:61] INFO:Processing sentence id: 10_new-143
 [italian:68] INFO:Sentence content: È istituita una superficie di base nazionale per ciascuno stato membro produttore.
 [italian:61] INFO:Processing sentence id: 10_new-144
@@ -2306,4 +1609,3 @@
 [italian:68] INFO:Sentence content: Se tale decisione è presa anteriormente alla data di adesione, essa entra in vigore solo dalla data di adesione.
 [ita_utils:13] INFO:Node anteriormente/ADV has no features
 [ita_utils:13] INFO:Node solo/ADV has no features
-[nouns:140] WARNING:Node solo/ADV with deprel 'advmod' needs new rules: None
