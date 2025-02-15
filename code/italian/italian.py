@@ -45,7 +45,7 @@ if __name__ == '__main__':
 	logging.basicConfig(format='[%(module)s:%(lineno)d] %(levelname)s:%(message)s',
 					filename=f"logs/italian/{filepath.stem}.log",
 					filemode='w', encoding='utf-8',
-					level=logging.INFO)
+					level=logging.DEBUG)
 
 	logging.info("Processing %s into %s", filepath, out_path)
 
@@ -73,6 +73,9 @@ if __name__ == '__main__':
 				node["ms feats"] = collections.defaultdict(set)
 				node["content"] = False
 
+				if node["deprel"] == "root":
+					node["content"] = True
+
 			id2idx = {token['id']:i for i, token in enumerate(tokenlist)}
 			idx2id = {y:x for x, y in id2idx.items()}
 
@@ -86,7 +89,8 @@ if __name__ == '__main__':
 
 			# * combine fixed expressions and remove nodes with 'fixed' relation
 			fixed_nodes = filtered_tokenlist.filter(deprel="fixed")
-			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x not in ["fixed", "flat", "flat:name", "compound"])
+			filtered_tokenlist = filtered_tokenlist.filter(deprel=lambda x: x not in ["fixed", "flat", "flat:name", "flat:foreign",
+																					"compound"])
 
 			if len(fixed_nodes):
 				fixed_nodes_sorted = sorted(fixed_nodes, key=lambda x: x['id'])
