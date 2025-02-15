@@ -63,21 +63,22 @@ def process_noun(head_tok, children_toks):
 				head_tok["ms feats"]["Modality"].add(modality)
 
 			if child_tok["feats"]["VerbForm"] == "Fin":
-				del head_tok["ms feats"]["VerbForm"]
+				if "VerbForm" in head_tok:
+					del head_tok["ms feats"]["VerbForm"]
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
-		elif child_tok["deprep"] in ["aux:pass"]:
+		elif child_tok["deprel"] in ["aux:pass"]:
 			pos_aux.append(child_tok["id"])
 
 			logger.debug("Adding Voice feature with value 'Pass'")
 			del head_tok["ms feats"]["Voice"]
 			head_tok["ms feats"]["Voice"].add("Pass")
 
-			if child_tok["feats"]["VerbForm"] == "Fin":
-				del head_tok["ms feats"]["VerbForm"]
-				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
-				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+			# if child_tok["feats"]["VerbForm"] == "Fin":
+			# 	del head_tok["ms feats"]["VerbForm"]
+			# 	head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
+			# 	head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
 		# * evaluate determiners
 		elif child_tok["deprel"] in ["det", "det:poss", "det:predet"]:
@@ -160,6 +161,9 @@ def process_noun(head_tok, children_toks):
 		elif "Ger" in verbforms:
 			del head_tok["ms feats"]["VerbForm"]
 			head_tok["ms feats"]["VerbForm"].add("Ger")
+		else:
+			del head_tok["ms feats"]["VerbForm"]
+			head_tok["ms feats"]["VerbForm"].add("Fin")
 
 		if len(pos_mod)>0:
 			pos_mod = pos_mod[0]
@@ -179,7 +183,6 @@ def process_noun(head_tok, children_toks):
 					mood_modality_aux = children_toks_dict[pos_mod]["feats"]["Mood"]
 					verbform_modality_aux = children_toks_dict[pos_mod]["feats"]["VerbForm"]
 			else:
-
 				assert(len(modality_aux)==1)
 				modality_aux_child = children_toks_dict[modality_aux[0]]
 				verbform_modality_aux = modality_aux_child["feats"]["VerbForm"]
@@ -319,12 +322,6 @@ def process_noun(head_tok, children_toks):
 						elif child_tok["feats"]["Tense"] in ["Fut"]:
 							head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 							head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-
-
-
-
-
 
 		# if child_tok.get("feats") and "Mood" in child_tok["feats"]:
 		# 	logging.debug("Adding TAM features with values Mood: %s - Tense: %s",
