@@ -1,10 +1,10 @@
-id	working_status	test_case	sentence	issues
-1	OK	nominative/accusative	Il gatto insegue il cane.
-2	OK	nominal sentence	Il gatto è il Presidente della Repubblica.
-3	OK	adjectival agreement	Il gatto grigio è bello.
-4	OK	superlative	Il gatto grigio è bellissimo.
-5	OK	comparative	Il gatto grigio è più bello del gatto nero.
-6	OK	voice passive	Il cane è inseguito dal gatto.
+id	working_status	test_case	sentence	issues	luigi's comments
+1	OK	nominative/accusative	Il gatto insegue il cane.		Manca tense
+2	OK	nominal sentence	Il gatto è il Presidente della Repubblica.		OK
+3	OK	adjectival agreement	Il gatto grigio è bello.		OK
+4	OK	superlative	Il gatto grigio è bellissimo.		OK
+5	OK	comparative	Il gatto grigio è più bello del gatto nero.		OK
+6	OK	voice passive	Il cane è inseguito dal gatto.	
 7	OK	voice passive#2	Il cane viene inseguito dal gatto.
 8	OK	simple negation	Il gatto non insegue il gatto.
 9	_	prodrop	Insegue il cane.	One more column.
@@ -89,4 +89,5 @@ id	working_status	test_case	sentence	issues
 91	_	nom modals not(Pot)	Il gatto non può essere il Presidente della Repubblica.
 92	_	doppia neg	Il gatto non può non essere il Presidente della Repubblica.
 93	_	agg neg	Il gatto è non bello.
-94	_	agg neg modals	Il gatto può essere non bello.
+94	_	agg neg modals	Il gatto può essere non bello.	verbform is Fin;Inf -> Fin
+95	_		Il gatto non può essere non bello.
