@@ -992,15 +992,66 @@
 11	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
 
 # sent_id = 90
-# text = Il gatto sta essendo il Presidente della Repubblica.
+# text = Il gatto può non essere il Presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+4	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	7	cop	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+8-9	della	_	_	_	_	_	_	_	_
+8	di	di	ADP	E	_	10	case	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Repubblica	repubblica	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 91
+# text = Il gatto non può essere il Presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+4	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+5	essere	essere	AUX	VA	VerbForm=Inf	7	cop	_	_
+6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+8-9	della	_	_	_	_	_	_	_	_
+8	di	di	ADP	E	_	10	case	_	_
+9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Repubblica	repubblica	NOUN	S	Gender=Fem|Number=Sing	7	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n
+
+# sent_id = 92
+# text = Il gatto non può non essere il Presidente della Repubblica.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	8	nsubj	_	_
+3	non	non	ADV	BN	PronType=Neg	8	advmod	_	_
+4	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
+5	non	non	ADV	BN	PronType=Neg	8	advmod	_	_
+6	essere	essere	AUX	VA	VerbForm=Inf	8	cop	_	_
+7	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	Presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
+9-10	della	_	_	_	_	_	_	_	_
+9	di	di	ADP	E	_	11	case	_	_
+10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
+11	Repubblica	Repubblica	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	FS	_	8	punct	_	SpacesAfter=\n
+
+# sent_id = 93
+# text = Il gatto è non bello.
+1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
+2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
+3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	non	non	ADV	BN	PronType=Neg	5	advmod	_	_
+5	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n
+
+# sent_id = 94
+# text = Il gatto può essere non bello.
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	gatto	gatto	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_
-3	sta	stare	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
-4	essendo	essere	AUX	VA	VerbForm=Ger	6	cop	_	_
-5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
-6	Presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
-7-8	della	_	_	_	_	_	_	_	_
-7	di	di	ADP	E	_	9	case	_	_
-8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Repubblica	Repubblica	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
-10	.	.	PUNCT	FS	_	6	punct	_	SpaceAfter=No
+3	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	essere	essere	AUX	VA	VerbForm=Inf	6	cop	_	_
+5	non	non	ADV	BN	PronType=Neg	6	advmod	_	_
+6	bello	bello	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	6	punct	_	SpaceAfter=No
