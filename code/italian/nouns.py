@@ -26,12 +26,6 @@ def process_noun(head_tok, children_toks):
 		if child_tok["deprel"] in ["cop"]:
 			cop = True
 
-			logging.debug("Setting Voice as Act")
-			head_tok["ms feats"]["Voice"].add("Act")
-
-			logging.debug("Setting Polarity as Pos")
-			head_tok["ms feats"]["Polarity"].add("Pos")
-
 			# * default aspect to Imp if Mood = Ind
 			logging.debug("Setting Aspct")
 			if "Mood" in child_tok["feats"] and child_tok["feats"]["Mood"] == "Ind":
@@ -63,19 +57,8 @@ def process_noun(head_tok, children_toks):
 				head_tok["ms feats"]["Modality"].add(modality)
 
 			if child_tok["feats"]["VerbForm"] == "Fin":
-				del head_tok["ms feats"]["VerbForm"]
-				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
-				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-		elif child_tok["deprep"] in ["aux:pass"]:
-			pos_aux.append(child_tok["id"])
-
-			logger.debug("Adding Voice feature with value 'Pass'")
-			del head_tok["ms feats"]["Voice"]
-			head_tok["ms feats"]["Voice"].add("Pass")
-
-			if child_tok["feats"]["VerbForm"] == "Fin":
-				del head_tok["ms feats"]["VerbForm"]
+				if "VerbForm" in head_tok:
+					del head_tok["ms feats"]["VerbForm"]
 				head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
 				head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
@@ -122,10 +105,9 @@ def process_noun(head_tok, children_toks):
 			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
 		elif child_tok["deprel"] in ["advmod"]:
-			pos_non.append(child_tok["id"])
-			if child_tok["lemma"] in ["non"]:
-				head_tok["ms feats"]["Polarity"].add("Neg")
-			elif child_tok["lemma"] in ["più", "meno"]:
+			if child_tok["lemma"] == "non":
+				pos_non.append(child_tok["id"])
+			if child_tok["lemma"] in ["più", "meno"]:
 				if "Definite" in child_tok["ms feats"]:
 					for x in child_tok["ms feats"]["Definite"]:
 						head_tok["ms feats"]["Definite"].add(x)
@@ -146,11 +128,12 @@ def process_noun(head_tok, children_toks):
 					del head_tok["ms feats"]["Modality"]
 					head_tok["ms feats"]["Modality"].add(f"not({modality_value})")
 				else:
-					del head_tok["ms feats"]["Polarity"]
 					head_tok["ms feats"]["Polarity"].add("Neg")
 
+
+
 		elif len(pos_non)>0:
-			del head_tok["ms feats"]["Polarity"]
+			# del head_tok["ms feats"]["Polarity"]
 			head_tok["ms feats"]["Polarity"].add("Neg")
 
 		verbforms = [children_toks_dict[x]["feats"]["VerbForm"] for x in pos_aux]
@@ -160,6 +143,9 @@ def process_noun(head_tok, children_toks):
 		elif "Ger" in verbforms:
 			del head_tok["ms feats"]["VerbForm"]
 			head_tok["ms feats"]["VerbForm"].add("Ger")
+		else:
+			del head_tok["ms feats"]["VerbForm"]
+			head_tok["ms feats"]["VerbForm"].add("Fin")
 
 		if len(pos_mod)>0:
 			pos_mod = pos_mod[0]
@@ -172,14 +158,12 @@ def process_noun(head_tok, children_toks):
 			aspect_modality_aux = None
 			verbform_modality_aux = None
 
-
 			if len(modality_aux) == 0:
 				if "Tense" in children_toks_dict[pos_mod]["feats"] and "Mood" in children_toks_dict[pos_mod]["feats"]:
 					tense_modality_aux = children_toks_dict[pos_mod]["feats"]["Tense"]
 					mood_modality_aux = children_toks_dict[pos_mod]["feats"]["Mood"]
 					verbform_modality_aux = children_toks_dict[pos_mod]["feats"]["VerbForm"]
 			else:
-
 				assert(len(modality_aux)==1)
 				modality_aux_child = children_toks_dict[modality_aux[0]]
 				verbform_modality_aux = modality_aux_child["feats"]["VerbForm"]
@@ -256,75 +240,69 @@ def process_noun(head_tok, children_toks):
 			for aux in head_aux:
 				child_tok = children_toks_dict[aux]
 
-				if child_tok["deprel"] in ["aux", "cop"]:
+				# if child_tok["deprel"] in ["aux", "cop"]:
 
-					if child_tok["feats"]["VerbForm"] in ["Inf", "Ger"]:
-						head_tok["ms feats"]["Tense"].add("Past")
+				if child_tok["feats"]["VerbForm"] in ["Inf", "Ger"]:
+					head_tok["ms feats"]["Tense"].add("Past")
 
-					if child_tok["lemma"] == "stare":
+				if child_tok["lemma"] == "stare":
+					if "Mood" in child_tok["feats"]:
+						if child_tok["feats"]["Mood"] == "Ind":
+							logger.debug("Adding Aspect feature with value Prog")
+							head_tok["ms feats"]["Aspect"].add("Prog")
+					else:
+						logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
+
+				elif child_tok["lemma"] in ["andare", "venire"]:
+					if "Mood" in child_tok["feats"]:
+						if child_tok["feats"]["Mood"] == "Ind":
+							logger.debug("Adding Aspect feature with value Imp")
+							head_tok["ms feats"]["Aspect"].add("Imp")
+					else:
+						logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
+
+				if "feats" in child_tok:
+					logger.debug(f"child_tok['feats']: {child_tok['feats']}")
+					if child_tok["feats"].get("Tense") == "Fut":
+						head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 						if "Mood" in child_tok["feats"]:
-							if child_tok["feats"]["Mood"] == "Ind":
-								logger.debug("Adding Aspect feature with value Prog")
-								head_tok["ms feats"]["Aspect"].add("Prog")
-						else:
-							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
-
-					elif child_tok["lemma"] in ["andare", "venire"]:
-						if "Mood" in child_tok["feats"]:
-							if child_tok["feats"]["Mood"] == "Ind":
-								logger.debug("Adding Aspect feature with value Imp")
-								head_tok["ms feats"]["Aspect"].add("Imp")
-						else:
-							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
-
-					if "feats" in child_tok:
-						logger.debug(f"child_tok['feats']: {child_tok['feats']}")
-						if child_tok["feats"].get("Tense") == "Fut":
-							head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-							if "Mood" in child_tok["feats"]:
-								if child_tok["feats"]["Mood"] == "Ind":
-									head_tok["ms feats"]["Aspect"].add("Perf")
-							else:
-								logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
-
-						elif child_tok["feats"].get("Tense") in ["Pres", "Past", "Imp"]:
-							head_tok["ms feats"]["Tense"].add("Past")
-							if "Mood" in child_tok["feats"]:
-								if child_tok["feats"]["Mood"] == "Ind":
-									head_tok["ms feats"]["Aspect"].add("Perf")
-							else:
-								logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
-
-				elif child_tok["deprel"] == "aux:pass" and child_tok["feats"]["VerbForm"] == "Fin" :
-
-						# Indicativo presente > è mandata
-						# Indicativo imperfetto > era mandata
-						# Congiuntivo presente > sia mandata
-						# Congiuntivo imperfetto > fosse mandata
-						# Condizionale presente > sarebbe mandata
-						if child_tok["feats"]["Tense"] in ["Pres", "Imp"]:
-							if child_tok["feats"]["Mood"] == "Ind":
-								head_tok["ms feats"]["Aspect"].add("Imp")
-							head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-							head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-						# Indicativo passato
-						# Indicativo futuro
-						elif child_tok["feats"]["Tense"] in ["Past"]:
 							if child_tok["feats"]["Mood"] == "Ind":
 								head_tok["ms feats"]["Aspect"].add("Perf")
-							head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-							head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+						else:
+							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
 
-						elif child_tok["feats"]["Tense"] in ["Fut"]:
-							head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-							head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
+					elif child_tok["feats"].get("Tense") in ["Pres", "Past", "Imp"]:
+						head_tok["ms feats"]["Tense"].add("Past")
+						if "Mood" in child_tok["feats"]:
+							if child_tok["feats"]["Mood"] == "Ind":
+								head_tok["ms feats"]["Aspect"].add("Perf")
+						else:
+							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
 
+				# elif child_tok["deprel"] == "aux:pass" and child_tok["feats"]["VerbForm"] == "Fin" :
 
+				# 		# Indicativo presente > è mandata
+				# 		# Indicativo imperfetto > era mandata
+				# 		# Congiuntivo presente > sia mandata
+				# 		# Congiuntivo imperfetto > fosse mandata
+				# 		# Condizionale presente > sarebbe mandata
+				# 		if child_tok["feats"]["Tense"] in ["Pres", "Imp"]:
+				# 			if child_tok["feats"]["Mood"] == "Ind":
+				# 				head_tok["ms feats"]["Aspect"].add("Imp")
+				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
+				# 		# Indicativo passato
+				# 		# Indicativo futuro
+				# 		elif child_tok["feats"]["Tense"] in ["Past"]:
+				# 			if child_tok["feats"]["Mood"] == "Ind":
+				# 				head_tok["ms feats"]["Aspect"].add("Perf")
+				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
-
-
+				# 		elif child_tok["feats"]["Tense"] in ["Fut"]:
+				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
+				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
 
 		# if child_tok.get("feats") and "Mood" in child_tok["feats"]:
 		# 	logging.debug("Adding TAM features with values Mood: %s - Tense: %s",
@@ -348,7 +326,11 @@ def process_noun(head_tok, children_toks):
 		# if child_tok["deprel"] == "aux:pass":
 		# 	del head_tok["ms feats"]["Voice"]
 		# 	head_tok["ms feats"]["Voice"].add("Pass")
+	# if not cop and len(pos_non)>0:
+	# 	head_tok["ms feats"]["Polarity"].add("Neg")
 
+	if len(head_tok["ms feats"]["Polarity"]) == 0:
+		head_tok["ms feats"]["Polarity"].add("Pos")
 
 def update_features(head_tok, children_toks):
 

@@ -42,10 +42,6 @@ def process_verb(head_tok, children_toks):
 	else:
 		logger.warning("Head %s has no VerbForm: %s", head_tok, head_tok["feats"])
 
-	# # * default person
-	# if "Person" in head_tok["feats"]:
-	# 	head_tok["ms feats"]["Person"].add(head_tok["feats"]["Person"])
-
 	pos_non = []
 	pos_mod = []
 

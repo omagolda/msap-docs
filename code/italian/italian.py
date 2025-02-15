@@ -144,7 +144,7 @@ if __name__ == '__main__':
 								head_tok, head_tok["deprel"])
 
 				if head_tok["deprel"] == "nsubj:pass":
-					head_tok["ms feats"]["Case"].add("Acc")
+					head_tok["ms feats"]["Case"].add("Nom")
 					logging.debug("Assigned 'Acc' case to head '%s' because its deprel is '%s'",
 								head_tok, head_tok["deprel"])
 
