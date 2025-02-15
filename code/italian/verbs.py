@@ -24,7 +24,8 @@ def process_verb(head_tok, children_toks):
 	if "Mood" in head_tok["feats"] and head_tok["feats"]["Mood"] == "Ind":
 		if head_tok["feats"]["Tense"] in ["Pres", "Imp"]:
 			head_tok["ms feats"]["Aspect"].add("Imp")
-		elif head_tok["feats"]["Tense"] in ["Past", "Fut"]:
+		elif head_tok["feats"]["Tense"] in ["Past"]:
+		# elif head_tok["feats"]["Tense"] in ["Past", "Fut"]:
 			head_tok["ms feats"]["Aspect"].add("Perf")
 
 	# * default mood
@@ -33,7 +34,7 @@ def process_verb(head_tok, children_toks):
 
 	# * default tense
 	if "Tense" in head_tok["feats"]:
-		head_tok["ms feats"]["VerbForm"].add(head_tok["feats"]["VerbForm"])
+		head_tok["ms feats"]["Tense"].add(head_tok["feats"]["Tense"])
 
 	# * default verbform
 	if "VerbForm" in head_tok["feats"]:
@@ -73,7 +74,6 @@ def process_verb(head_tok, children_toks):
 				logger.debug("Adding Modality feature with value %s", modality)
 				head_tok["ms feats"]["Modality"].add(modality)
 
-
 		elif child_tok["deprel"] == "aux:pass":
 
 			pos_aux.append(child_tok["id"])
@@ -93,13 +93,12 @@ def process_verb(head_tok, children_toks):
 			if child_tok["lemma"] == "che":
 				if head_tok["deprel"] == "csubj":
 					head_tok["ms feats"]["Case"].add("Nom")
-				elif head_tok["deprel"] == "ccomp":
+				elif head_tok["deprel"] in ["ccomp", "xcomp"]:
 					head_tok["ms feats"]["Case"].add("Acc")
 				else:
 					head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 			else:
 				head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
-
 
 		# TODO: Indexing (person, number)
 		# * evaluate determiners (cases like "Il perdurare...")
@@ -136,10 +135,12 @@ def process_verb(head_tok, children_toks):
 			if child_tok["lemma"] in ["non"]:
 				pos_non.append(child_tok["id"])
 
+		elif child_tok["deprel"] in ["xcomp", "obj", "nsubj"]:
+			child_tok["content"] = True
+
 		else:
 			logging.warning("Node %s/%s with deprel '%s' needs new rules",
 							child_tok, child_tok["upos"], child_tok["deprel"])
-
 
 	if len(pos_non)>0 and len(pos_mod)>0:
 		assert(len(pos_mod)==1)
@@ -158,7 +159,6 @@ def process_verb(head_tok, children_toks):
 		del head_tok["ms feats"]["Polarity"]
 		head_tok["ms feats"]["Polarity"].add("Neg")
 
-
 	verbforms = [children_toks_dict[x]["feats"]["VerbForm"] for x in pos_aux]
 	if "Inf" in verbforms:
 		del head_tok["ms feats"]["VerbForm"]
@@ -166,7 +166,6 @@ def process_verb(head_tok, children_toks):
 	elif "Ger" in verbforms:
 		del head_tok["ms feats"]["VerbForm"]
 		head_tok["ms feats"]["VerbForm"].add("Ger")
-
 
 	if len(pos_mod)>0:
 		pos_mod = pos_mod[0]
@@ -201,7 +200,6 @@ def process_verb(head_tok, children_toks):
 			if pos_mod_child["feats"]["VerbForm"] == "Ger":
 				tense_modality_aux = modality_aux_child["feats"]["Tense"]
 				mood_modality_aux = modality_aux_child["feats"]["Mood"]
-
 
 			elif pos_mod_child["feats"]["VerbForm"] == "Part":
 
