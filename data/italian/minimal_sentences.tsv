@@ -89,6 +89,6 @@ id	working_status	test_case	sentence	issues
 91	OK	nom modals not(Pot)	Il gatto non può essere il Presidente della Repubblica.
 92	OK	doppia neg	Il gatto non può non essere il Presidente della Repubblica.
 93	OK	agg neg	Il gatto è non bello.
-94	OK	agg neg modals	Il gatto può essere non bello.	verbform is Fin;Inf -> Fin
+94	OK	agg neg modals	Il gatto può essere non bello.
 95	OK	agg neg modals neg on adj	Il gatto non può essere non bello.
-96	_	cc diverse gender	Il cane e la gatta sono belli.
+96	OK	cc diverse gender	Il cane e la gatta sono belli.
