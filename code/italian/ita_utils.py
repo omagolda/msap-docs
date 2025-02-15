@@ -23,10 +23,11 @@ def create_abstract_nsubj(head: conllu.Token):
 	abstract_nsubj['lemma'] = '-'
 	abstract_nsubj['upos'] = '-'
 	abstract_nsubj['xpos'] = '-'
-	abstract_nsubj['deps'] = '-'
-	abstract_nsubj['misc'] = '-'
+	abstract_nsubj['feats'] = '-'
 	abstract_nsubj['head'] = head['id']
 	abstract_nsubj['deprel'] = 'nsubj'
+	abstract_nsubj['deps'] = '-'
+	abstract_nsubj['misc'] = '-'
 	abstract_nsubj['ms feats'] = collections.defaultdict(set)
 	abstract_nsubj["content"] = True
 

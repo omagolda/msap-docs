@@ -286,5 +286,7 @@ if __name__ == '__main__':
 							logging.error("Node %s should be empty bus has features %s", node, node["ms feats"])
 					node["ms feats"] = None
 
+				del node["content"]
+
 			to_write = tokenlist.serialize()
 			print(to_write, file=fout)

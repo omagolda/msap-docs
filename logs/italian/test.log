@@ -1,7 +1,7 @@
 [italian:50] INFO:Processing data/italian/test.conllu into data/italian/test.out.conllu
 [italian:61] INFO:Processing sentence id: isst_tanl-3
 [italian:68] INFO:Sentence content: Evacuata la Tate Gallery.
-[ita_utils:13] INFO:Node Tate/PROPN has no features
+[ita_utils:13] INFO:Node Tate Gallery/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-14
 [italian:68] INFO:Sentence content: GOTEBORG - È stata la giornata del doppio oro italiano ai Mondiali di atletica:
 [ita_utils:13] INFO:Node GOTEBORG/PROPN has no features
@@ -27,9 +27,9 @@
 [italian:68] INFO:Sentence content: Il nome del carabiniere (i corazzieri sono infatti un reparto speciale dell'Arma) è "top secret", ma la vicenda è stata denunciata alla magistratura e il procuratore militare Antonino Intelisano ha aperto un'inchiesta per il reato di offesa all'onore del presidente della Repubblica.
 [ita_utils:13] INFO:Node infatti/ADV has no features
 [ita_utils:13] INFO:Node Arma/PROPN has no features
-[ita_utils:13] INFO:Node Antonino/PROPN has no features
+[ita_utils:13] INFO:Node Antonino Intelisano/PROPN has no features
 [ita_utils:13] INFO:Node Repubblica/PROPN has no features
-[ita_utils:13] INFO:Node top/ADJ has no features
+[ita_utils:13] INFO:Node top secret/ADJ has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-286
 [italian:68] INFO:Sentence content: L'altro giorno mio figlio, che ha una casetta in affitto a Palù del Fersina, in Trentino, voleva portarlo su al fresco, perché si riposasse qualche giorno, ma lui non se l'è sentita di partire.
 [ita_utils:13] INFO:Node Fersina/PROPN has no features
@@ -41,8 +41,8 @@
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node Salò/PROPN has no features
 [ita_utils:13] INFO:Node Repubblica/PROPN has no features
-[ita_utils:13] INFO:Node Sergio/PROPN has no features
-[ita_utils:13] INFO:Node Guido/PROPN has no features
+[ita_utils:13] INFO:Node Sergio Minetto/PROPN has no features
+[ita_utils:13] INFO:Node Guido Salvini/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-377
 [italian:68] INFO:Sentence content: Il tutto avviene con la connivenza delle autorità costituite e così uno dei Paesi più ricchi del mondo è stato gettato in uno stato di povertà assoluta.
 [ita_utils:13] INFO:Node così/ADV has no features
@@ -93,10 +93,10 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-681
 [italian:68] INFO:Sentence content: Prima ho dovuto lottare con una del mio stesso partito, Tina Lagostena Bassi.
 [ita_utils:13] INFO:Node Prima/ADV has no features
-[ita_utils:13] INFO:Node Tina/PROPN has no features
+[ita_utils:13] INFO:Node Tina Lagostena Bassi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-718
 [italian:68] INFO:Sentence content: Ma se gliene avete fatte di tutti i colori, voi di Forza Italia ....
-[ita_utils:13] INFO:Node Forza/PROPN has no features
+[ita_utils:13] INFO:Node Forza Italia/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-905
 [italian:68] INFO:Sentence content: Ma già si parla di epurazioni e di processi contro i vinti.
 [ita_utils:13] INFO:Node già/ADV has no features
@@ -124,7 +124,7 @@
 [ita_utils:13] INFO:Node Hiroshima/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1168
 [italian:68] INFO:Sentence content: Per quanto se ne sa, il presidente non ha inviato un messaggio al primo ministro giapponese Tomiichi Murayama per l'anniversario di Hiroshima.
-[ita_utils:13] INFO:Node Tomiichi/PROPN has no features
+[ita_utils:13] INFO:Node Tomiichi Murayama/PROPN has no features
 [ita_utils:13] INFO:Node Hiroshima/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1171
 [italian:68] INFO:Sentence content: Sono state liberate, come auspicio di pace, come per scacciare demoni di guerra ancora incombenti, venticinquemila colombe che hanno innalzato verso il cielo, nelle scene televisive, una specie di sinfonia alata.
@@ -134,7 +134,7 @@
 [italian:68] INFO:Sentence content: Ma gli accenti più forti sono stati quelli di Takako Doi, presidente della Camera dei rappresentanti della Dieta:
 [ita_utils:13] INFO:Node Dieta/PROPN has no features
 [ita_utils:13] INFO:Node Camera/PROPN has no features
-[ita_utils:13] INFO:Node Takako/PROPN has no features
+[ita_utils:13] INFO:Node Takako Doi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1206
 [italian:68] INFO:Sentence content: I coloni torneranno a compiere occupazioni simboliche delle alture prospicienti i loro insediamenti.
 [italian:61] INFO:Processing sentence id: isst_tanl-1218
@@ -171,7 +171,7 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-1616
 [italian:68] INFO:Sentence content: una serata all'Elba per Mariateresa Di Lascia.
 [ita_utils:13] INFO:Node Elba/PROPN has no features
-[ita_utils:13] INFO:Node Mariateresa/PROPN has no features
+[ita_utils:13] INFO:Node Mariateresa Di Lascia/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1628
 [italian:68] INFO:Sentence content: Diefenbach, il pittore nudo.
 [ita_utils:13] INFO:Node Diefenbach/PROPN has no features
@@ -205,7 +205,7 @@
 [ita_utils:13] INFO:Node Cannes/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1911
 [italian:68] INFO:Sentence content: Le è simpatica Nicole Kidman?
-[ita_utils:13] INFO:Node Nicole/PROPN has no features
+[ita_utils:13] INFO:Node Nicole Kidman/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1940
 [italian:68] INFO:Sentence content: Ma va da sè che io faccio parte di quella maggioranza di condomini che non saprebbe da che parte cominciare.
 [italian:61] INFO:Processing sentence id: isst_tanl-1941
@@ -214,7 +214,7 @@
 [ita_utils:13] INFO:Node ancora/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-1947
 [italian:68] INFO:Sentence content: La Stefi di Grazia Nidasio.
-[ita_utils:13] INFO:Node Grazia/PROPN has no features
+[ita_utils:13] INFO:Node Grazia Nidasio/PROPN has no features
 [ita_utils:13] INFO:Node Stefi/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2045
 [italian:68] INFO:Sentence content: Studiando con sapienza la sua strategia, Pasqualin mette in circolo la suggestione Juve.
@@ -240,7 +240,7 @@
 [ita_utils:13] INFO:Node Oggi/ADV has no features
 [ita_utils:13] INFO:Node Stoccarda/PROPN has no features
 [ita_utils:13] INFO:Node Mondiali/PROPN has no features
-[ita_utils:13] INFO:Node Ileana/PROPN has no features
+[ita_utils:13] INFO:Node Ileana Salvador/PROPN has no features
 [ita_utils:13] INFO:Node Essayah/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2196
 [italian:68] INFO:Sentence content: atleta che non nasconde lo sforzo ma lo rende tanto naturale che la sua rimonta, dopo una crisi al quindicesimo chilometro, sembra scritta negli occhi, sotto le due tettoie di sopracciglia scure che lo fanno più uomo di quanto Michele non sia, più avvezzo alle emozioni di quanto non sembri.
@@ -274,7 +274,7 @@
 [ita_utils:13] INFO:Node A/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2490
 [italian:68] INFO:Sentence content: Gianluca Vialli ama parlare della gestione del calcio e non soltanto dei suoi aspetti tecnici.
-[ita_utils:13] INFO:Node Gianluca/PROPN has no features
+[ita_utils:13] INFO:Node Gianluca Vialli/PROPN has no features
 [ita_utils:13] INFO:Node soltanto/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2530
 [italian:68] INFO:Sentence content: O accontentarsi così, perché per vincere non occorre essere per forza Lewis:
@@ -283,14 +283,14 @@
 [italian:61] INFO:Processing sentence id: isst_tanl-2572
 [italian:68] INFO:Sentence content: Esiste poi un progetto di legge, al quale sta lavorando l'assessore Donato Giordano, per giungere a una diversa organizzazione della struttura, a partire dalla dirigenza e dalle competenze degli assessori;
 [ita_utils:13] INFO:Node poi/ADV has no features
-[ita_utils:13] INFO:Node Donato/PROPN has no features
+[ita_utils:13] INFO:Node Donato Giordano/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2592
 [italian:68] INFO:Sentence content: Mentre Luca osservava dall'alto, suo padre, in quel fosso profondo quasi quattro metri, largo due e lungo più di dieci, ha cominciato a lavorare per mettere in posa i tubi fognari.
 [ita_utils:13] INFO:Node Luca/PROPN has no features
 [ita_utils:13] INFO:Node quasi/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2612
 [italian:68] INFO:Sentence content: Il motoscafo, un "Draco AS", è partito da Fiumicino e sta dirigendosi verso Anzio.
-[ita_utils:13] INFO:Node Draco/PROPN has no features
+[ita_utils:13] INFO:Node Draco AS/PROPN has no features
 [ita_utils:13] INFO:Node Fiumicino/PROPN has no features
 [ita_utils:13] INFO:Node Anzio/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-2631
@@ -354,7 +354,7 @@
 [ita_utils:13] INFO:Node davanti a/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3070
 [italian:68] INFO:Sentence content: Boris Podrecca, però, si è rifiutato di porre l'accento per l'ennesima volta su questi aspetti ben noti.
-[ita_utils:13] INFO:Node Boris/PROPN has no features
+[ita_utils:13] INFO:Node Boris Podrecca/PROPN has no features
 [ita_utils:13] INFO:Node però/ADV has no features
 [ita_utils:13] INFO:Node ben/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3183
@@ -379,7 +379,7 @@
 [ita_utils:13] INFO:Node dove/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3401
 [italian:68] INFO:Sentence content: Se sei un tipo preciso completa il trattamento con la spazzola speciale "Brosse pour le sein" di Jeanne Piaubert, che stimola la circolazione e l'assorbimento del prodotto.
-[ita_utils:13] INFO:Node Jeanne/PROPN has no features
+[ita_utils:13] INFO:Node Jeanne Piaubert/PROPN has no features
 [ita_utils:13] INFO:Node Brosse/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3457
 [italian:68] INFO:Sentence content: La cellulite, infatti, ha ben poco a che vedere col grasso anche se chi ha chili di troppo è più predisposta ad "accoglierla".
@@ -406,8 +406,8 @@
 [ita_utils:13] INFO:Node bene/ADV has no features
 [ita_utils:13] INFO:Node Parigi/PROPN has no features
 [ita_utils:13] INFO:Node Payita/PROPN has no features
-[ita_utils:13] INFO:Node Gaston/PROPN has no features
-[ita_utils:13] INFO:Node Carmen/PROPN has no features
+[ita_utils:13] INFO:Node Gaston Salvatore/PROPN has no features
+[ita_utils:13] INFO:Node Carmen Castillo/PROPN has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-3749
 [italian:68] INFO:Sentence content: Il mercato dell'editoria elettronica personale o editoria da tavolo (in inglese desktop publishing) è molto giovane con i suoi soli tre anni di vita, ma è considerato nel settore dell'informatica fra i più promettenti in assoluto:
 [ita_utils:13] INFO:Node publishing/NOUN has no features
@@ -604,7 +604,7 @@
 [italian:68] INFO:Sentence content: Con legge ordinaria sono stabilite le altre norme necessarie per la costituzione e il funzionamento della Corte.
 [italian:61] INFO:Processing sentence id: tut-1899
 [italian:68] INFO:Sentence content: Alla Regione del Friuli-Venezia Giulia, di cui all'art. 116, si applicano provvisoriamente le norme generali del Titolo V della parte seconda, ferma restando la tutela delle minoranze linguistiche in conformità con l'art. 6.
-[ita_utils:13] INFO:Node Venezia/PROPN has no features
+[ita_utils:13] INFO:Node Venezia Giulia/PROPN has no features
 [ita_utils:13] INFO:Node Friuli/PROPN has no features
 [ita_utils:13] INFO:Node provvisoriamente/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-1914
@@ -647,7 +647,7 @@
 [ita_utils:13] INFO:Node dove/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2322
 [italian:68] INFO:Sentence content: Giancarlo Pagliarini ha difeso le ragioni economiche della secessione.
-[ita_utils:13] INFO:Node Giancarlo/PROPN has no features
+[ita_utils:13] INFO:Node Giancarlo Pagliarini/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2335
 [italian:68] INFO:Sentence content: rispetto a gennaio è attesa una flessione dello 0,4 per cento.
 [ita_utils:13] INFO:Node rispetto a/ADV has no features
@@ -676,7 +676,7 @@
 [ita_utils:13] INFO:Node anche/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2426
 [italian:68] INFO:Sentence content: Liri Avdekie, Libertà o Morte, è il motto in albanese dell'esercito kosovaro ma in Serbia i nazionalisti di Milosevic e anche l'opinione pubblica sono concordi.
-[ita_utils:13] INFO:Node Liri/PROPN has no features
+[ita_utils:13] INFO:Node Liri Avdekie/PROPN has no features
 [ita_utils:13] INFO:Node Serbia/PROPN has no features
 [ita_utils:13] INFO:Node Milosevic/PROPN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
@@ -702,11 +702,11 @@
 [ita_utils:13] INFO:Node Farnesina/PROPN has no features
 [ita_utils:13] INFO:Node ieri/ADV has no features
 [ita_utils:13] INFO:Node neo/ADV has no features
-[ita_utils:13] INFO:Node Sali/PROPN has no features
+[ita_utils:13] INFO:Node Sali Berisha/PROPN has no features
 [ita_utils:13] INFO:Node ampiamente/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2592
 [italian:68] INFO:Sentence content: Un altro messaggio è stato inviato al presidente del Consiglio dell'Unione, Hans Van Mierlo, per sollecitare la convocazione straordinaria del Comitato politico, che avrebbe luogo domani a Bruxelles.
-[ita_utils:13] INFO:Node Hans/PROPN has no features
+[ita_utils:13] INFO:Node Hans Van Mierlo/PROPN has no features
 [ita_utils:13] INFO:Node domani/ADV has no features
 [ita_utils:13] INFO:Node Bruxelles/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2627
@@ -725,7 +725,7 @@
 [italian:68] INFO:Sentence content: Alla vox populi Berisha risponde adesso evocando lo spettro della Segurimi, la polizia segreta del defunto regime comunista che al tempo dello stalinismo ferreo di Enver Hoxha aveva al servizio 5.000 delatori su tre milioni di albanesi.
 [ita_utils:13] INFO:Node Berisha/PROPN has no features
 [ita_utils:13] INFO:Node adesso/ADV has no features
-[ita_utils:13] INFO:Node Enver/PROPN has no features
+[ita_utils:13] INFO:Node Enver Hoxha/PROPN has no features
 [ita_utils:13] INFO:Node Segurimi/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2681
 [italian:68] INFO:Sentence content: Un crack finanziario scatena l'opposizione.
@@ -737,7 +737,7 @@
 [italian:61] INFO:Processing sentence id: tut-2740
 [italian:68] INFO:Sentence content: Le indagini, condotte dal Comando carabinieri politiche agricole di Roma e dai Comandi provinciali della Guardia di finanza di Catanzaro e Reggio Calabria sono state coordinate dalla Procura della Repubblica di Palmi.
 [ita_utils:13] INFO:Node Roma/PROPN has no features
-[ita_utils:13] INFO:Node Reggio/PROPN has no features
+[ita_utils:13] INFO:Node Reggio Calabria/PROPN has no features
 [ita_utils:13] INFO:Node Catanzaro/PROPN has no features
 [ita_utils:13] INFO:Node Palmi/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-2782
@@ -751,7 +751,7 @@
 [ita_utils:13] INFO:Node probabilmente/ADV has no features
 [ita_utils:13] INFO:Node Negro/PROPN has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
-[ita_utils:13] INFO:Node Julio/PROPN has no features
+[ita_utils:13] INFO:Node Julio Cesar/PROPN has no features
 [ita_utils:13] INFO:Node miracolosamente/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-2802
 [italian:68] INFO:Sentence content: Nell'1 si troveranno lo stand del paese ospite, la Lituania, e, oltre alla Sala rossa, un'altra novità creata in occasione delle venti candeline:
@@ -789,7 +789,7 @@
 [italian:61] INFO:Processing sentence id: tut-2977
 [italian:68] INFO:Sentence content: parla del suo nuovo film "Ultima fermata Brooklyn", tratto dal romanzo scandalo di Hubert Selby, come di una creatura vivente, il frutto di un parto lungo e travagliato che oggi ha finalmente visto la luce.
 [ita_utils:13] INFO:Node Brooklyn/PROPN has no features
-[ita_utils:13] INFO:Node Hubert/PROPN has no features
+[ita_utils:13] INFO:Node Hubert Selby/PROPN has no features
 [ita_utils:13] INFO:Node oggi/ADV has no features
 [ita_utils:13] INFO:Node finalmente/ADV has no features
 [ita_utils:13] INFO:Node come/ADV has no features
@@ -809,8 +809,8 @@
 [italian:61] INFO:Processing sentence id: tut-3074
 [italian:68] INFO:Sentence content: All'interno della maggioranza rossoverde c'è una faglia che non si chiama di Sant'Andrea, come quella di Los Angeles, ma Sieroterapico.
 [ita_utils:13] INFO:Node rossoverde/ADJ has no features
-[ita_utils:13] INFO:Node Sant'/PROPN has no features
-[ita_utils:13] INFO:Node Los/PROPN has no features
+[ita_utils:13] INFO:Node Sant' Andrea/PROPN has no features
+[ita_utils:13] INFO:Node Los Angeles/PROPN has no features
 [ita_utils:13] INFO:Node Sieroterapico/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3130
 [italian:68] INFO:Sentence content: Fuoristrada con lo smoking di rigore.
@@ -819,12 +819,12 @@
 [italian:68] INFO:Sentence content: Dopo due settimane di programmazione, però, ha dovuto vedersela con «Lethal Weapon II», sempre della Warner Bros, che aveva totalizzato in 14 giorni 100 miliardi.
 [ita_utils:13] INFO:Node però/ADV has no features
 [ita_utils:13] INFO:Node sempre/ADV has no features
-[ita_utils:13] INFO:Node Warner/PROPN has no features
-[ita_utils:13] INFO:Node Lethal/PROPN has no features
+[ita_utils:13] INFO:Node Warner Bros/PROPN has no features
+[ita_utils:13] INFO:Node Lethal Weapon/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3162
 [italian:68] INFO:Sentence content: Prima di farci vedere gli scaffali di libri preziosi della biblioteca e l'onesta chiara faccia dell'onorevole Tina Anselmi, ci mostra una catasta di legna su un terrazzo romano.
 [ita_utils:13] INFO:Node Prima di/ADV has no features
-[ita_utils:13] INFO:Node Tina/PROPN has no features
+[ita_utils:13] INFO:Node Tina Anselmi/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3188
 [italian:68] INFO:Sentence content: sicchè un bel giorno si udì la notizia che nella notte erano arrivati i compagni d'arme e ognuno poteva andare a vederli nello stallatico.
 [ita_utils:13] INFO:Node sicchè/ADV has no features
@@ -834,7 +834,7 @@
 [italian:68] INFO:Sentence content: E qui Baudo, chiamato a Raitre dal direttore Angelo Guglielmi non solo per fare ascolto ma anche per convincere i più riottosi tra i teleutenti a comprare l'antenna supplementare indispensabile in alcune zone per ricevere il segnale della rete e lasciarle quindi in eredità un cospicuo patrimonio aggiuntivo di spettatori tecnologicamente attrezzati, spiega la sua teoria.
 [ita_utils:13] INFO:Node qui/ADV has no features
 [ita_utils:13] INFO:Node Raitre/PROPN has no features
-[ita_utils:13] INFO:Node Angelo/PROPN has no features
+[ita_utils:13] INFO:Node Angelo Guglielmi/PROPN has no features
 [ita_utils:13] INFO:Node solo/ADV has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
 [ita_utils:13] INFO:Node quindi/ADV has no features
@@ -842,24 +842,23 @@
 [ita_utils:13] INFO:Node Baudo/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3320
 [italian:68] INFO:Sentence content: Il 7 settembre 1439 è citato come allievo di Domenico Veneziano nella commissione degli affreschi, oggi perduti, per le Storie della Vergine nel coro della chiesa di Sant'Egidio.
-[ita_utils:13] INFO:Node Domenico/PROPN has no features
+[ita_utils:13] INFO:Node Domenico Veneziano/PROPN has no features
 [ita_utils:13] INFO:Node oggi/ADV has no features
 [ita_utils:13] INFO:Node Vergine/PROPN has no features
-[ita_utils:13] INFO:Node Sant'/PROPN has no features
+[ita_utils:13] INFO:Node Sant' Egidio/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3333
 [italian:68] INFO:Sentence content: i sei santi laterali e le sette tavolette che costituiscono la predella sono invece opera dello sconosciuto allievo.
 [ita_utils:13] INFO:Node invece/ADV has no features
 [italian:61] INFO:Processing sentence id: tut-3342
 [italian:68] INFO:Sentence content: Nel 1467 a Perugia eseguì per conto delle suore terziarie del convento di Sant'Antonio un polittico, dove all'impostazione tardogotica voluta dalla committenza, si contrappone nella cimasa, un'annunciazione di chiaro stampo rinascimentale, che evidenzia il sapiente uso dell'arte prospettica nelle strutture architettoniche, palesando una conoscenza delle opere e dei postulati architettonici formulati qualche anno addietro da Filippo Brunelleschi e Leon Battista Alberti.
 [ita_utils:13] INFO:Node Perugia/PROPN has no features
-[ita_utils:13] INFO:Node Sant'/PROPN has no features
+[ita_utils:13] INFO:Node Sant' Antonio/PROPN has no features
 [ita_utils:13] INFO:Node dove/ADV has no features
 [ita_utils:13] INFO:Node addietro/ADV has no features
-[ita_utils:13] INFO:Node Leon/PROPN has no features
-[ita_utils:13] INFO:Node Filippo/PROPN has no features
+[ita_utils:13] INFO:Node Leon Battista Alberti/PROPN has no features
+[ita_utils:13] INFO:Node Filippo Brunelleschi/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3353
-[italian:68] INFO:Sentence content: Si è ispirato alla lezione euclidea per l'ordine logico delle espressioni e per i riferimenti e per l'uso coordinato e complesso dei teoremi, mentre è stato vicino alle esigenze dei tecnici per la determinatezza delle figure trattate, solide e poliedriche, e per l'assenza di dimostrazioni classiche e per l'uso di regole aritmetiche e algebriche applicate ai calcoli.
-[ita_utils:13] INFO:Node vicino a/ADV has no features
+[italian:64] INFO:SKIPPING SENTENCE
 [italian:61] INFO:Processing sentence id: tut-3369
 [italian:68] INFO:Sentence content: Nel 1999 la band non volendo più essere etichettata come una semplice "melodic death metal band" intraprende la via della sperimentazione.
 [ita_utils:13] INFO:Node melodic/ADJ has no features
@@ -895,14 +894,14 @@
 [italian:61] INFO:Processing sentence id: tut-3582
 [italian:68] INFO:Sentence content: Lo smog fotochimico viene anche chiamato smog estivo o smog di Los Angeles perché più comune nei climi caldi e asciutti, come accade tipicamente nella città di Los Angeles (i primi casi di smog fotochimico vennero segnalati intorno al 1940 a Los Angeles).
 [ita_utils:13] INFO:Node anche/ADV has no features
-[ita_utils:13] INFO:Node Los/PROPN has no features
+[ita_utils:13] INFO:Node Los Angeles/PROPN has no features
 [ita_utils:13] INFO:Node tipicamente/ADV has no features
-[ita_utils:13] INFO:Node Los/PROPN has no features
+[ita_utils:13] INFO:Node Los Angeles/PROPN has no features
 [ita_utils:13] INFO:Node intorno a/ADV has no features
-[ita_utils:13] INFO:Node Los/PROPN has no features
+[ita_utils:13] INFO:Node Los Angeles/PROPN has no features
 [italian:61] INFO:Processing sentence id: tut-3638
 [italian:68] INFO:Sentence content: Yamanote-sen è scritto ufficialmente senza kana "no" (の o ノ), rendendo la sua pronuncia ambigua.
-[ita_utils:13] INFO:Node Yamanote/PROPN has no features
+[ita_utils:13] INFO:Node Yamanote sen/PROPN has no features
 [ita_utils:13] INFO:Node ufficialmente/ADV has no features
 [ita_utils:13] INFO:Node kana/PROPN has no features
 [ita_utils:13] INFO:Node ノ/PROPN has no features
@@ -947,14 +946,14 @@
 [italian:68] INFO:Sentence content: Quando è stato consegnato il premio Nobel per la pace a Yasser Arafat?
 [ita_utils:13] INFO:Node Quando/ADV has no features
 [ita_utils:13] INFO:Node Nobel/PROPN has no features
-[ita_utils:13] INFO:Node Yasser/PROPN has no features
+[ita_utils:13] INFO:Node Yasser Arafat/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-34
 [italian:68] INFO:Sentence content: Dove si tiene il Motorshow?
 [ita_utils:13] INFO:Node Dove/ADV has no features
 [ita_utils:13] INFO:Node Motorshow/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-103
 [italian:68] INFO:Sentence content: Chi è Jean-Bertrand Aristide?
-[ita_utils:13] INFO:Node Jean-Bertrand/PROPN has no features
+[ita_utils:13] INFO:Node Jean-Bertrand Aristide/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-116
 [italian:68] INFO:Sentence content: Come si forma l'ozono?
 [ita_utils:13] INFO:Node Come/ADV has no features
@@ -967,27 +966,27 @@
 [italian:68] INFO:Sentence content: Di che cosa sono fatti i cavi in fibra ottica?
 [italian:61] INFO:Processing sentence id: quest-195
 [italian:68] INFO:Sentence content: Chi interpreta il ruolo di una prostituta in "Taxi Driver"?
-[ita_utils:13] INFO:Node Taxi/PROPN has no features
+[ita_utils:13] INFO:Node Taxi Driver/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-199
 [italian:68] INFO:Sentence content: Da quale paese viene il tango?
 [italian:61] INFO:Processing sentence id: quest-201
 [italian:68] INFO:Sentence content: Qual è la sigla per Amnesty International?
-[ita_utils:13] INFO:Node Amnesty/PROPN has no features
+[ita_utils:13] INFO:Node Amnesty International/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-206
 [italian:68] INFO:Sentence content: Che cosa ha influenzato l'"effetto Tequila"?
 [ita_utils:13] INFO:Node Tequila/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-223
 [italian:68] INFO:Sentence content: Cosa si può trovare al "Chester Beatty"?
-[ita_utils:13] INFO:Node Chester/PROPN has no features
+[ita_utils:13] INFO:Node Chester Beatty/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-227
 [italian:68] INFO:Sentence content: Che cosa ha inventato il Barone Marcel Bich?
-[ita_utils:13] INFO:Node Barone/PROPN has no features
+[ita_utils:13] INFO:Node Barone Marcel Bich/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-253
 [italian:68] INFO:Sentence content: Che giorno è l'anniversario della scoperta dell'America?
 [ita_utils:13] INFO:Node America/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-280
 [italian:68] INFO:Sentence content: Chi era il presidente degli Stati Uniti nel 1994?
-[ita_utils:13] INFO:Node Stati/PROPN has no features
+[ita_utils:13] INFO:Node Stati Uniti/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-321
 [italian:68] INFO:Sentence content: In quale città italiana si trova la fontana di Trevi?
 [ita_utils:13] INFO:Node Trevi/PROPN has no features
@@ -996,18 +995,18 @@
 [ita_utils:13] INFO:Node CNN/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-364
 [italian:68] INFO:Sentence content: Qual è il titolo dell'autobiografia di Nelson Mandela?
-[ita_utils:13] INFO:Node Nelson/PROPN has no features
+[ita_utils:13] INFO:Node Nelson Mandela/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-365
 [italian:68] INFO:Sentence content: Come si chiama la vedova di Samora Machel, il defunto presidente del Mozambico?
 [ita_utils:13] INFO:Node Come/ADV has no features
 [ita_utils:13] INFO:Node Mozambico/PROPN has no features
-[ita_utils:13] INFO:Node Samora/PROPN has no features
+[ita_utils:13] INFO:Node Samora Machel/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-373
 [italian:68] INFO:Sentence content: Dimmi il nome di uno dei fondatori di Greenpeace.
 [ita_utils:13] INFO:Node Greenpeace/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-376
 [italian:68] INFO:Sentence content: Chi è Joao Havelange?
-[ita_utils:13] INFO:Node Joao/PROPN has no features
+[ita_utils:13] INFO:Node Joao Havelange/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-421
 [italian:68] INFO:Sentence content: Che cosa ha ritirato la Saab?
 [ita_utils:13] INFO:Node Saab/PROPN has no features
@@ -1019,7 +1018,7 @@
 [italian:68] INFO:Sentence content: Come si sono leggermente ferite 22 persone nell'Empire State Building?
 [ita_utils:13] INFO:Node Come/ADV has no features
 [ita_utils:13] INFO:Node leggermente/ADV has no features
-[ita_utils:13] INFO:Node Empire/PROPN has no features
+[ita_utils:13] INFO:Node Empire State Building/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-493
 [italian:68] INFO:Sentence content: Chi è l'architetto del museo Guggenheim di Bilbao?
 [ita_utils:13] INFO:Node Guggenheim/PROPN has no features
@@ -1027,20 +1026,20 @@
 [italian:61] INFO:Processing sentence id: quest-514
 [italian:68] INFO:Sentence content: Come si chiama il partito di Silvio Berlusconi?
 [ita_utils:13] INFO:Node Come/ADV has no features
-[ita_utils:13] INFO:Node Silvio/PROPN has no features
+[ita_utils:13] INFO:Node Silvio Berlusconi/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-536
 [italian:68] INFO:Sentence content: Di quale paese Egor Gadar è stato primo ministro?
-[ita_utils:13] INFO:Node Egor/PROPN has no features
+[ita_utils:13] INFO:Node Egor Gadar/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-573
 [italian:68] INFO:Sentence content: Quanti film sono stati presentati al Festival mondiale del cinema di Montreal?
 [ita_utils:13] INFO:Node Montreal/PROPN has no features
 [ita_utils:13] INFO:Node Festival/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-586
 [italian:68] INFO:Sentence content: Che lavoro faceva Danny Barker?
-[ita_utils:13] INFO:Node Danny/PROPN has no features
+[ita_utils:13] INFO:Node Danny Barker/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-589
 [italian:68] INFO:Sentence content: Di quale squadra automobilistica è direttore Flavio Briatore?
-[ita_utils:13] INFO:Node Flavio/PROPN has no features
+[ita_utils:13] INFO:Node Flavio Briatore/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-632
 [italian:68] INFO:Sentence content: Chi era il marito di Vieira da Silva?
 [ita_utils:13] INFO:Node Vieira/PROPN has no features
@@ -1050,20 +1049,20 @@
 [italian:61] INFO:Processing sentence id: quest-662
 [italian:68] INFO:Sentence content: Quando morì Simon Bolivar?
 [ita_utils:13] INFO:Node Quando/ADV has no features
-[ita_utils:13] INFO:Node Simon/PROPN has no features
+[ita_utils:13] INFO:Node Simon Bolivar/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-699
 [italian:68] INFO:Sentence content: Quale importante fenomeno del Sud Pacifico influenza il clima mondiale?
-[ita_utils:13] INFO:Node Sud/PROPN has no features
+[ita_utils:13] INFO:Node Sud Pacifico/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-724
 [italian:68] INFO:Sentence content: Quante persone, in tutta la UE, hanno diritto di voto per eleggere il nuovo Parlamento Europeo?
 [ita_utils:13] INFO:Node UE/PROPN has no features
-[ita_utils:13] INFO:Node Parlamento/PROPN has no features
+[ita_utils:13] INFO:Node Parlamento Europeo/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-735
 [italian:68] INFO:Sentence content: Chi è il capo del Sinn Fein?
-[ita_utils:13] INFO:Node Sinn/PROPN has no features
+[ita_utils:13] INFO:Node Sinn Fein/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-787
 [italian:68] INFO:Sentence content: Chi è il fondatore dell'Ordine del Tempio Solare?
-[ita_utils:13] INFO:Node Tempio/PROPN has no features
+[ita_utils:13] INFO:Node Tempio Solare/PROPN has no features
 [ita_utils:13] INFO:Node Ordine/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-791
 [italian:68] INFO:Sentence content: Quando avvenne il disastro di Chernobyl?
@@ -1076,15 +1075,15 @@
 [italian:61] INFO:Processing sentence id: quest-856
 [italian:68] INFO:Sentence content: Quando Hong Kong passerà alla Cina?
 [ita_utils:13] INFO:Node Quando/ADV has no features
-[ita_utils:13] INFO:Node Hong/PROPN has no features
+[ita_utils:13] INFO:Node Hong Kong/PROPN has no features
 [ita_utils:13] INFO:Node Cina/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-865
 [italian:68] INFO:Sentence content: Quale Primo Ministro francese si suicidò negli anni 90?
-[ita_utils:13] INFO:Node Primo/PROPN has no features
+[ita_utils:13] INFO:Node Primo Ministro/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-900
 [italian:68] INFO:Sentence content: Dove vennero utilizzati i caccia Strike Eagles nel 1990?
 [ita_utils:13] INFO:Node Dove/ADV has no features
-[ita_utils:13] INFO:Node Strike/PROPN has no features
+[ita_utils:13] INFO:Node Strike Eagles/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-943
 [italian:68] INFO:Sentence content: Quando è stato girato il film "Giochi di Guerra" ("WarGames")?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1097,7 +1096,7 @@
 [italian:61] INFO:Processing sentence id: quest-1067
 [italian:68] INFO:Sentence content: Quando l'Unione Sovietica invase l'Afghanistan?
 [ita_utils:13] INFO:Node Quando/ADV has no features
-[ita_utils:13] INFO:Node Unione/PROPN has no features
+[ita_utils:13] INFO:Node Unione Sovietica/PROPN has no features
 [ita_utils:13] INFO:Node Afghanistan/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1077
 [italian:68] INFO:Sentence content: Quanto è lungo il fiume Okavango?
@@ -1116,7 +1115,7 @@
 [italian:61] INFO:Processing sentence id: quest-1151
 [italian:68] INFO:Sentence content: Il disastro di Hindenburg avvenne nel 1937 in quale città del New Jersey?
 [ita_utils:13] INFO:Node Hindenburg/PROPN has no features
-[ita_utils:13] INFO:Node New/PROPN has no features
+[ita_utils:13] INFO:Node New Jersey/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1178
 [italian:68] INFO:Sentence content: Dove si trova il punto più elevato della Terra?
 [ita_utils:13] INFO:Node Dove/ADV has no features
@@ -1126,7 +1125,7 @@
 [ita_utils:13] INFO:Node Inghilterra/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1238
 [italian:68] INFO:Sentence content: Quanto era alta Judy Garland?
-[ita_utils:13] INFO:Node Judy/PROPN has no features
+[ita_utils:13] INFO:Node Judy Garland/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1239
 [italian:68] INFO:Sentence content: Qual è il paese col più alto numero di abitanti al mondo?
 [italian:61] INFO:Processing sentence id: quest-1244
@@ -1134,7 +1133,7 @@
 [ita_utils:13] INFO:Node PC/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1258
 [italian:68] INFO:Sentence content: Chi diede inizio alla Riforma Protestante?
-[ita_utils:13] INFO:Node Riforma/PROPN has no features
+[ita_utils:13] INFO:Node Riforma Protestante/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1286
 [italian:68] INFO:Sentence content: Qual è la percentuale della popolazione mancina?
 [italian:61] INFO:Processing sentence id: quest-1303
@@ -1159,7 +1158,7 @@
 [ita_utils:13] INFO:Node Come/ADV has no features
 [italian:61] INFO:Processing sentence id: quest-1397
 [italian:68] INFO:Sentence content: Che premio vinse nel 1963 il libro di Sterling North "Rascal"?
-[ita_utils:13] INFO:Node Sterling/PROPN has no features
+[ita_utils:13] INFO:Node Sterling North/PROPN has no features
 [ita_utils:13] INFO:Node Rascal/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1428
 [italian:68] INFO:Sentence content: Come si dice "maiale" in spagnolo?
@@ -1171,8 +1170,8 @@
 [ita_utils:13] INFO:Node Come/ADV has no features
 [italian:61] INFO:Processing sentence id: quest-1529
 [italian:68] INFO:Sentence content: In quale anno venne costruito Ebbets Field, la sede dei Brooklin Dodgers?
-[ita_utils:13] INFO:Node Brooklin/PROPN has no features
-[ita_utils:13] INFO:Node Ebbets/PROPN has no features
+[ita_utils:13] INFO:Node Brooklin Dodgers/PROPN has no features
+[ita_utils:13] INFO:Node Ebbets Field/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1531
 [italian:68] INFO:Sentence content: Quale stato venne istituito nel 1948?
 [italian:61] INFO:Processing sentence id: quest-1541
@@ -1184,7 +1183,7 @@
 [ita_utils:13] INFO:Node DuPont/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1597
 [italian:68] INFO:Sentence content: Chi è Alberto Tomba?
-[ita_utils:13] INFO:Node Alberto/PROPN has no features
+[ita_utils:13] INFO:Node Alberto Tomba/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1598
 [italian:68] INFO:Sentence content: Qual è la popolazione dell'Islanda?
 [ita_utils:13] INFO:Node Islanda/PROPN has no features
@@ -1202,21 +1201,21 @@
 [italian:68] INFO:Sentence content: Qual è lo stato con la minore popolazione?
 [italian:61] INFO:Processing sentence id: quest-1690
 [italian:68] INFO:Sentence content: Elenca delle cantanti che hanno recitato la parte di Donna Elvira in messe in scena del "Don Giovanni" di Mozart.
-[ita_utils:13] INFO:Node Donna/PROPN has no features
+[ita_utils:13] INFO:Node Donna Elvira/PROPN has no features
 [ita_utils:13] INFO:Node Mozart/PROPN has no features
-[ita_utils:13] INFO:Node Don/PROPN has no features
+[ita_utils:13] INFO:Node Don Giovanni/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1697
 [italian:68] INFO:Sentence content: Quale animale ha le impronte digitali simili a quelle umane?
 [italian:61] INFO:Processing sentence id: quest-1746
 [italian:68] INFO:Sentence content: Qual è il motto del "New York Times"?
-[ita_utils:13] INFO:Node New/PROPN has no features
+[ita_utils:13] INFO:Node New York Times/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1764
 [italian:68] INFO:Sentence content: A quale azienda appartiene il marchio di bevande non alcoliche "Gatorade"?
 [ita_utils:13] INFO:Node Gatorade/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1785
 [italian:68] INFO:Sentence content: Quali paesi ha visitato la first lady Hillary Clinton?
 [ita_utils:13] INFO:Node first/NOUN has no features
-[ita_utils:13] INFO:Node Hillary/PROPN has no features
+[ita_utils:13] INFO:Node Hillary Clinton/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1803
 [italian:68] INFO:Sentence content: In quale provincia canadese si trova il maggior numero di persone di origine francese?
 [ita_utils:13] INFO:Node maggior/ADJ has no features
@@ -1230,7 +1229,7 @@
 [ita_utils:13] INFO:Node A/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1857
 [italian:68] INFO:Sentence content: In quale giorno avvenne l'attacco a Pearl Harbor?
-[ita_utils:13] INFO:Node Pearl/PROPN has no features
+[ita_utils:13] INFO:Node Pearl Harbor/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1937
 [italian:68] INFO:Sentence content: Quando Panama si vide restituire il Canale di Panama?
 [ita_utils:13] INFO:Node Quando/ADV has no features
@@ -1247,13 +1246,13 @@
 [italian:68] INFO:Sentence content: Quante fossette ha una pallina regolamentare da golf?
 [italian:61] INFO:Processing sentence id: quest-1988
 [italian:68] INFO:Sentence content: Da quale paese proveniva Marco Polo?
-[ita_utils:13] INFO:Node Marco/PROPN has no features
+[ita_utils:13] INFO:Node Marco Polo/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1991
 [italian:68] INFO:Sentence content: Chi è Niels Bohr?
-[ita_utils:13] INFO:Node Niels/PROPN has no features
+[ita_utils:13] INFO:Node Niels Bohr/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-1999
 [italian:68] INFO:Sentence content: Da quante repubbliche era composta l'Unione Sovietica?
-[ita_utils:13] INFO:Node Unione/PROPN has no features
+[ita_utils:13] INFO:Node Unione Sovietica/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-2000
 [italian:68] INFO:Sentence content: A quanto corrisponde uno "stone" inglese?
 [italian:61] INFO:Processing sentence id: quest-2034
@@ -1262,7 +1261,7 @@
 [ita_utils:13] INFO:Node Olimpo/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-2039
 [italian:68] INFO:Sentence content: Quale ingegnere progettò il Canale Erie?
-[ita_utils:13] INFO:Node Canale/PROPN has no features
+[ita_utils:13] INFO:Node Canale Erie/PROPN has no features
 [italian:61] INFO:Processing sentence id: quest-2055
 [italian:68] INFO:Sentence content: Quale attrice recitava il ruolo di Betsy nel "Matrimonio di Betsy"?
 [ita_utils:13] INFO:Node Betsy/PROPN has no features
@@ -1292,26 +1291,26 @@
 [italian:61] INFO:Processing sentence id: test-2
 [italian:68] INFO:Sentence content: Con le accuse di peculato e abuso d'ufficio, il procuratore capo di Cassino, Mario Mercone, ha chiesto il rinvio a giudizio dell'ex consigliere regionale del Pdl Angelo D'Ovidio, sindaco di Pastena per oltre venti anni, in relazione all'incarico di commissario del Consorzio per il patrimonio speleologico delle grotte di Pastena e Collepardo, costituito tra i due Comuni della Ciociaria.
 [ita_utils:13] INFO:Node Cassino/PROPN has no features
-[ita_utils:13] INFO:Node Mario/PROPN has no features
+[ita_utils:13] INFO:Node Mario Mercone/PROPN has no features
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node Pdl/PROPN has no features
 [ita_utils:13] INFO:Node Pastena/PROPN has no features
 [ita_utils:13] INFO:Node oltre/ADV has no features
-[ita_utils:13] INFO:Node Angelo/PROPN has no features
+[ita_utils:13] INFO:Node Angelo D' Ovidio/PROPN has no features
 [ita_utils:13] INFO:Node Collepardo/PROPN has no features
 [ita_utils:13] INFO:Node Pastena/PROPN has no features
 [ita_utils:13] INFO:Node Ciociaria/PROPN has no features
 [ita_utils:13] INFO:Node Consorzio/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-13
 [italian:68] INFO:Sentence content: Tra gli indagati Francesco Rossi e Paolo Bianchi.
-[ita_utils:13] INFO:Node Paolo/PROPN has no features
-[ita_utils:13] INFO:Node Francesco/PROPN has no features
+[ita_utils:13] INFO:Node Paolo Bianchi/PROPN has no features
+[ita_utils:13] INFO:Node Francesco Rossi/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-18
 [italian:68] INFO:Sentence content: Ma quei soldi, per i pm di Palermo, sono frutto di un reato, ed è per questo che Miranda Ratti, la moglie del politico siciliano, è stata iscritta nel registro degli indagati dalla procura di Palermo per riciclaggio aggravato nell'ambito dell'inchiesta sulla presunta estorsione che il fondatore di Forza Italia avrebbe fatto all'ex premier.
 [ita_utils:13] INFO:Node Palermo/PROPN has no features
-[ita_utils:13] INFO:Node Miranda/PROPN has no features
+[ita_utils:13] INFO:Node Miranda Ratti/PROPN has no features
 [ita_utils:13] INFO:Node Palermo/PROPN has no features
-[ita_utils:13] INFO:Node Forza/PROPN has no features
+[ita_utils:13] INFO:Node Forza Italia/PROPN has no features
 [ita_utils:13] INFO:Node ex/ADJ has no features
 [ita_utils:13] INFO:Node premier/NOUN has no features
 [italian:61] INFO:Processing sentence id: test-24
@@ -1331,22 +1330,22 @@
 [ita_utils:13] INFO:Node Finmeccanica/PROPN has no features
 [ita_utils:13] INFO:Node poi/ADV has no features
 [ita_utils:13] INFO:Node Napoli/PROPN has no features
-[ita_utils:13] INFO:Node Busto/PROPN has no features
-[ita_utils:13] INFO:Node Giuseppe/PROPN has no features
+[ita_utils:13] INFO:Node Busto Arstizio/PROPN has no features
+[ita_utils:13] INFO:Node Giuseppe Orsi/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-89
 [italian:68] INFO:Sentence content: E non dimentichiamo che secondo Borgogni è stata assunta anche la figlia di Massimo Ponzellini.
 [ita_utils:13] INFO:Node Borgogni/PROPN has no features
 [ita_utils:13] INFO:Node anche/ADV has no features
-[ita_utils:13] INFO:Node Massimo/PROPN has no features
+[ita_utils:13] INFO:Node Massimo Ponzellini/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-109
 [italian:68] INFO:Sentence content: Altre tre persone, tra cui Marco Tornatore, figlio di Gianfranco, sono indagate a piede libero.
 [ita_utils:13] INFO:Node Gianfranco/PROPN has no features
-[ita_utils:13] INFO:Node Marco/PROPN has no features
+[ita_utils:13] INFO:Node Marco Tornatore/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-134
 [italian:68] INFO:Sentence content: Emergono intercettazioni in cui il manager Pozzessere al telefono con una delle consulenti di Finmeccanica, Debbie Castaneda, parla con disinvoltura di accordi e di quote.
 [ita_utils:13] INFO:Node Pozzessere/PROPN has no features
 [ita_utils:13] INFO:Node Finmeccanica/PROPN has no features
-[ita_utils:13] INFO:Node Debbie/PROPN has no features
+[ita_utils:13] INFO:Node Debbie Castaneda/PROPN has no features
 [ita_utils:13] INFO:Node manager/NOUN has no features
 [italian:61] INFO:Processing sentence id: test-166
 [italian:68] INFO:Sentence content: “Nell’incidente ha sbattuto la parte destra della testa.
@@ -1366,7 +1365,7 @@
 [italian:61] INFO:Processing sentence id: test-279
 [italian:68] INFO:Sentence content: Dello stesso tenore il commento del sindaco di Torino Piero Fassino:
 [ita_utils:13] INFO:Node Torino/PROPN has no features
-[ita_utils:13] INFO:Node Piero/PROPN has no features
+[ita_utils:13] INFO:Node Piero Fassino/PROPN has no features
 [italian:61] INFO:Processing sentence id: test-300
 [italian:68] INFO:Sentence content: Altri utenti, invece, si sono profusi in una serie di apprezzamenti all’iniziativa di Grillo.
 [ita_utils:13] INFO:Node invece/ADV has no features
@@ -1385,10 +1384,10 @@
 [ita_utils:13] INFO:Node Licenziante/PROPN has no features
 [ita_utils:13] INFO:Node così/ADV has no features
 [ita_utils:13] INFO:Node quindi/ADV has no features
-[italian:230] INFO:Copying accertabili features (defaultdict(<class 'set'>, {'Number': {'Plur'}, 'Voice': {'Act'}, 'Person': {'3'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}})) to meno
+[italian:235] INFO:Copying accertabili features (defaultdict(<class 'set'>, {'Number': {'Plur'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}, 'Polarity': {'Pos'}})) to meno
 [italian:61] INFO:Processing sentence id: 1_CC-95
 [italian:68] INFO:Sentence content: Creative Commons non è parte della presente licenza e non dà alcuna garanzia connessa all'opera.
-[ita_utils:13] INFO:Node Creative/PROPN has no features
+[ita_utils:13] INFO:Node Creative Commons/PROPN has no features
 [italian:61] INFO:Processing sentence id: 2_Europarl-79
 [italian:68] INFO:Sentence content: Secondo me, questa seconda ipotesi significherebbe rinunciare alle nostre responsabilità di parlamento, oltre a introdurre una tesi originale, un metodo finora sconosciuto che consiste nel distribuire per iscritto ai gruppi politici il discorso programmatico della commissione una settimana prima - e non il giorno prima, come era stato concordato.
 [ita_utils:13] INFO:Node oltre a/ADV has no features
@@ -1411,13 +1410,13 @@
 [italian:61] INFO:Processing sentence id: 2_Europarl-224
 [italian:68] INFO:Sentence content: Credo tuttavia che occorra fare tutto ciò che rientra nelle nostre possibilità per limitare il più possibile il trasporto di merci pericolose in tutti i paesi, siano essi di transito o meno.
 [ita_utils:13] INFO:Node tuttavia/ADV has no features
-[italian:230] INFO:Copying transito features (defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Voice': {'Act'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'VerbForm': {'Fin'}, 'Case': {'Gen'}})) to meno
+[italian:235] INFO:Copying transito features (defaultdict(<class 'set'>, {'Gender': {'Masc'}, 'Number': {'Sing'}, 'Mood': {'Sub'}, 'Tense': {'Pres'}, 'Case': {'Gen'}, 'VerbForm': {'Fin'}, 'Polarity': {'Pos'}})) to meno
 [italian:61] INFO:Processing sentence id: 2_Europarl-282
 [italian:68] INFO:Sentence content: Spero che la mia proposta venga presa in considerazione nel corso della votazione di domani.
 [italian:61] INFO:Processing sentence id: 2_Europarl-307
 [italian:68] INFO:Sentence content: Vorrei chiedere alla vicepresidente se oggi è in grado di dirci qualcosa sullo stato di avanzamento degli sforzi di armonizzazione da parte delle due organizzazioni summenzionate e se l'Unione Europea ha la possibilità di accelerare l'armonizzazione adottando principi il più possibile semplici.
 [ita_utils:13] INFO:Node oggi/ADV has no features
-[ita_utils:13] INFO:Node Unione/PROPN has no features
+[ita_utils:13] INFO:Node Unione Europea/PROPN has no features
 [italian:61] INFO:Processing sentence id: 2_Europarl-415
 [italian:68] INFO:Sentence content: Sono stati inseriti numerosissimi dettagli, che erano emersi già nelle relazioni precedenti.
 [ita_utils:13] INFO:Node già/ADV has no features
@@ -1444,7 +1443,7 @@
 [italian:61] INFO:Processing sentence id: 4_FB-114
 [italian:68] INFO:Sentence content: Hai già una Pagina Facebook?
 [ita_utils:13] INFO:Node già/ADV has no features
-[ita_utils:13] INFO:Node Pagina/PROPN has no features
+[ita_utils:13] INFO:Node Pagina Facebook/PROPN has no features
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-27
 [italian:68] INFO:Sentence content: "Era sicuramente consapevole in modo distaccato di essere stata data a un vecchio marito come ricompensa per i servizi professionali di quest'ultimo a un amico della sua famiglia e che il capitale proveniva dalla sua parte.
 [ita_utils:13] INFO:Node sicuramente/ADV has no features
@@ -1470,14 +1469,14 @@
 [ita_utils:13] INFO:Node Balzac/PROPN has no features
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-287
 [italian:68] INFO:Sentence content: "L'artista della Comédie Humaine", egli scrisse, "è semi-sommerso dallo storico.
-[ita_utils:13] INFO:Node Comédie/PROPN has no features
+[ita_utils:13] INFO:Node Comédie Humaine/PROPN has no features
 [ita_utils:13] INFO:Node semi/ADJ has no features
 [italian:61] INFO:Processing sentence id: 5_WIKIBalzac-292
 [italian:68] INFO:Sentence content: "Balzac ricevette alti elogi da critici così diversi come Walter Benjamin e Camille Paglia.
 [ita_utils:13] INFO:Node Balzac/PROPN has no features
 [ita_utils:13] INFO:Node così/ADV has no features
-[ita_utils:13] INFO:Node Camille/PROPN has no features
-[ita_utils:13] INFO:Node Walter/PROPN has no features
+[ita_utils:13] INFO:Node Camille Paglia/PROPN has no features
+[ita_utils:13] INFO:Node Walter Benjamin/PROPN has no features
 [italian:61] INFO:Processing sentence id: 7_WIKIShake-101
 [italian:68] INFO:Sentence content: L'epitaffio inciso sulla lastra di roccia che copre la tomba racchiude una maledizione su chiunque oserà spostare le sue ossa, cosa che venne accuratamente evitata durante i lavori di restauro della chiesa nel 2008.
 [ita_utils:13] INFO:Node accuratamente/ADV has no features
@@ -1518,7 +1517,7 @@
 [italian:68] INFO:Sentence content: La repubblica di Bulgaria e la Romania diventano membri dell'Unione Europea.
 [ita_utils:13] INFO:Node Bulgaria/PROPN has no features
 [ita_utils:13] INFO:Node Romania/PROPN has no features
-[ita_utils:13] INFO:Node Unione/PROPN has no features
+[ita_utils:13] INFO:Node Unione Europea/PROPN has no features
 [italian:61] INFO:Processing sentence id: 10_new-79
 [italian:68] INFO:Sentence content: Le disposizioni di tale atto costituiscono parte integrante del presente trattato.
 [italian:61] INFO:Processing sentence id: 10_new-80
