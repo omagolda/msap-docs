@@ -24,7 +24,8 @@ def process_verb(head_tok, children_toks):
 	if "Mood" in head_tok["feats"] and head_tok["feats"]["Mood"] == "Ind":
 		if head_tok["feats"]["Tense"] in ["Pres", "Imp"]:
 			head_tok["ms feats"]["Aspect"].add("Imp")
-		elif head_tok["feats"]["Tense"] in ["Past", "Fut"]:
+		elif head_tok["feats"]["Tense"] in ["Past"]:
+		# elif head_tok["feats"]["Tense"] in ["Past", "Fut"]:
 			head_tok["ms feats"]["Aspect"].add("Perf")
 
 	# * default mood
@@ -33,7 +34,7 @@ def process_verb(head_tok, children_toks):
 
 	# * default tense
 	if "Tense" in head_tok["feats"]:
-		head_tok["ms feats"]["VerbForm"].add(head_tok["feats"]["VerbForm"])
+		head_tok["ms feats"]["Tense"].add(head_tok["feats"]["Tense"])
 
 	# * default verbform
 	if "VerbForm" in head_tok["feats"]:
@@ -72,7 +73,6 @@ def process_verb(head_tok, children_toks):
 				pos_mod.append(child_tok["id"])
 				logger.debug("Adding Modality feature with value %s", modality)
 				head_tok["ms feats"]["Modality"].add(modality)
-
 
 		elif child_tok["deprel"] == "aux:pass":
 

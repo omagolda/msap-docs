@@ -11298,33 +11298,6 @@
 40	.	.	PUNCT	FS	_	13	punct	13:punct	_
 
 
-# sent_id = 7_WIKIShake-141
-# text = Shakespeare collaborò ad altre due opere ancora oggi conosciute, Enrico VIII e i due nobili congiunti, probabilmente con John Fletcher.
-1	Shakespeare	Shakespeare	PROPN	SP	_	2	nsubj	2:nsubj	_
-2	collaborò	collaborare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
-3	ad	a	ADP	E	_	6	case	6:case	_
-4	altre	altro	ADJ	A	Gender=Fem|Number=Plur	6	amod	6:amod	_
-5	due	due	NUM	N	NumType=Card	6	nummod	6:nummod	_
-6	opere	opera	NOUN	S	Gender=Fem|Number=Plur	2	obl	2:obl:a	_
-7	ancora	ancora	ADV	B	_	8	advmod	8:advmod	_
-8	oggi	oggi	ADV	B	_	9	advmod	9:advmod	_
-9	conosciute	conosciuto	ADJ	A	Gender=Fem|Number=Plur	6	amod	6:amod	SpaceAfter=No
-10	,	,	PUNCT	FF	_	6	punct	6:punct	_
-11	Enrico	Enrico	PROPN	SP	_	6	nmod	6:nmod	_
-12	VIII	ottavo	ADJ	NO	Number=Sing|NumType=Ord	11	amod	11:amod	_
-13	e	e	CCONJ	CC	_	17	cc	17:cc	_
-14	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	dep	17:dep	_
-15	due	due	NUM	N	NumType=Card	17	nummod	17:nummod	_
-16	nobili	nobile	ADJ	A	Gender=Masc|Number=Plur	17	amod	17:amod	_
-17	congiunti	congiunto	NOUN	S	Number=Plur	11	conj	11:conj:e	SpaceAfter=No
-18	,	,	PUNCT	FF	_	2	punct	2:punct	_
-19	probabilmente	probabilmente	ADV	B	_	21	advmod	21:advmod	_
-20	con	con	ADP	E	_	21	case	21:case	_
-21	John	John	PROPN	SP	_	2	obl	2:obl:con	_
-22	Fletcher	Fletcher	PROPN	SP	_	21	flat:name	21:flat:name	SpaceAfter=No
-23	.	.	PUNCT	FS	_	2	punct	2:punct	_
-
-
 # sent_id = 8_WIT3-7
 # text = mamma infelice, tutti infelici.
 1	mamma	mamma	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_

@@ -14,7 +14,7 @@
 3	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_	_	False
 4	stata	essere	AUX	VA	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	cop	6:cop	_	_	False
 5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_	_	False
-6	giornata	giornata	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Part;Fin	True
+6	giornata	giornata	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 7-8	del	_	_	_	_	_	_	_	_	_	False
 7	di	di	ADP	E	_	10	case	10:case	_	_	False
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_	_	False
@@ -150,7 +150,7 @@
 17-18	alla	_	_	_	_	_	_	_	_	_	False
 17	a	a	ADP	E	_	19	case	19:case	_	_	False
 18	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_	_	False
-19	fine	fine	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No	Case=Lat|Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+19	fine	fine	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	SpaceAfter=No	Case=Lat|Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 20	.	.	PUNCT	FS	_	19	punct	19:punct	_	_	False
 
 
@@ -177,7 +177,7 @@
 9	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_	_	False
 10	infatti	infatti	ADV	B	_	12	advmod	12:advmod	_	|	True
 11	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_	_	False
-12	reparto	reparto	NOUN	S	Gender=Masc|Number=Sing	5	advcl	5:advcl	_	Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+12	reparto	reparto	NOUN	S	Gender=Masc|Number=Sing	5	advcl	5:advcl	_	Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 13	speciale	speciale	ADJ	A	Number=Sing	12	amod	12:amod	_	|	True
 14-15	dell'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 14	di	di	ADP	E	_	16	case	16:case	_	_	False
@@ -186,7 +186,7 @@
 17	)	)	PUNCT	FB	_	12	punct	12:punct	_	_	False
 18	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_	_	False
 19	"	"	PUNCT	FB	_	20	punct	20:punct	SpaceAfter=No	_	False
-20	top	top	ADJ	A	_	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+20	top	top	ADJ	A	_	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 21	secret	secret	NOUN	S	_	20	compound	20:compound	SpaceAfter=No	_	False
 22	"	"	PUNCT	FB	_	20	punct	20:punct	SpaceAfter=No	_	False
 23	,	,	PUNCT	FF	_	29	punct	29:punct	_	_	False
@@ -432,10 +432,10 @@
 12	Lamberti	Lamberti	PROPN	SP	_	10	appos	10:appos	SpaceAfter=No	|	True
 13	)	)	PUNCT	FB	_	12	punct	12:punct	_	_	False
 14	e	e	CCONJ	CC	_	15	cc	15:cc	_	_	False
-15	moglie	moglie	NOUN	S	Gender=Fem|Number=Sing	10	conj	6:obj|10:conj:e	_	Case=Conj|Gender=Fem|Number=Sing	True
+15	moglie	moglie	NOUN	S	Gender=Fem|Number=Sing	10	conj	6:obj|10:conj:e	_	Case=Acc;Conj|Gender=Fem|Number=Sing	True
 16	e	e	CCONJ	CC	_	18	cc	18:cc	_	_	False
 17	due	due	NUM	N	NumType=Card	18	nummod	18:nummod	_	NumType=Card	True
-18	figli	figlio	NOUN	S	Gender=Masc|Number=Plur	10	conj	6:obj|10:conj:e	_	Case=Conj|Gender=Masc|Number=Plur	True
+18	figli	figlio	NOUN	S	Gender=Masc|Number=Plur	10	conj	6:obj|10:conj:e	_	Case=Acc;Conj|Gender=Masc|Number=Plur	True
 19	(	(	PUNCT	FB	_	20	punct	20:punct	SpaceAfter=No	_	False
 20	Cattaneo	Cattaneo	PROPN	SP	_	18	appos	18:appos	SpaceAfter=No	|	True
 21	)	)	PUNCT	FB	_	20	punct	20:punct	SpaceAfter=No	_	False
@@ -486,12 +486,12 @@
 # text = assassini e omicidi sono all'ordine del giorno tra i locali;
 1	assassini	assassinio	NOUN	S	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_	Case=Nom|Gender=Masc|Number=Plur	True
 2	e	e	CCONJ	CC	_	3	cc	3:cc	_	_	False
-3	omicidi	omicidio	NOUN	S	Gender=Masc|Number=Plur	1	conj	1:conj:e|7:nsubj	_	Case=Conj|Gender=Masc|Number=Plur	True
+3	omicidi	omicidio	NOUN	S	Gender=Masc|Number=Plur	1	conj	1:conj:e|7:nsubj	_	Case=Nom;Conj|Gender=Masc|Number=Plur	True
 4	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_	_	False
 5-6	all'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 5	a	a	ADP	E	_	7	case	7:case	_	_	False
 6	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	7	det	7:det	_	_	False
-7	ordine	ordine	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Case=Lat|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+7	ordine	ordine	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Case=Lat|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 8-9	del	_	_	_	_	_	_	_	_	_	False
 8	di	di	ADP	E	_	10	case	10:case	_	_	False
 9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_	_	False
@@ -569,7 +569,7 @@
 # sent_id = isst_tanl-616
 # text = È guerra con i nemici".
 1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_	_	False
-2	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+2	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 3	con	con	ADP	E	_	5	case	5:case	_	_	False
 4	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	5:det	_	_	False
 5	nemici	nemico	NOUN	S	Gender=Masc|Number=Plur	2	obl	2:obl:con	SpaceAfter=No	Case=Com|Definite=Def|Gender=Masc|Number=Plur	True
@@ -585,7 +585,7 @@
 4	sempre	sempre	ADV	B	_	2	advmod	2:advmod	_	Case=Cau	True
 5	Bossi	Bossi	PROPN	SP	_	7	nsubj	7:nsubj	_	Case=Nom	True
 6	va	andare	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	7:aux	_	_	False
-7	colpito	colpire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Imp;Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
+7	colpito	colpire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Perf;Imp|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
 8	secondo	secondo	ADP	E	_	10	case	10:case	_	_	False
 9	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	10:det	_	_	False
 10	legge	legge	NOUN	S	Gender=Fem|Number=Sing	7	obl	7:obl:secondo	SpaceAfter=No	Case=Quo|Definite=Def|Gender=Fem|Number=Sing	True
@@ -600,7 +600,7 @@
 2	in	in	ADP	E	_	5	case	5:case	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_	_	False
 4	suo	suo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	5	det:poss	5:det:poss	_	|	True
-5	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No	Case=Ine|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+5	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No	Case=Ine|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6	.	.	PUNCT	FS	_	5	punct	5:punct	_	_	False
 
 
@@ -650,7 +650,7 @@
 3	glie	gli	PRON	PC	Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	iobj	6:iobj	_	Case=Dat|Clitic=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	True
 4	ne	ne	PRON	PC	Clitic=Yes|PronType=Prs	6	iobj	6:iobj	_	Case=Dat|Clitic=Yes|PronType=Prs	True
 5	avete	avere	AUX	VA	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_	_	False
-6	fatte	fare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Perf|Case=Advs;Cnd|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
+6	fatte	fare	VERB	V	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Perf|Case=Cnd;Advs|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
 7	di	di	ADP	E	_	10	case	10:case	_	_	False
 8	tutti	tutto	DET	T	Gender=Masc|Number=Plur|PronType=Tot	10	det:predet	10:det:predet	_	|	True
 9	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	10:det	_	_	False
@@ -771,7 +771,7 @@
 6	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_	_	False
 7	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
 8	sconosciuta	sconosciuto	ADJ	A	Gender=Fem|Number=Sing	9	amod	9:amod	_	|	True
-9	guardia	guardia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin	True
+9	guardia	guardia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	True
 10-11	del	_	_	_	_	_	_	_	_	_	False
 10	di	di	ADP	E	_	12	case	12:case	_	_	False
 11	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	12:det	_	_	False
@@ -913,7 +913,7 @@
 5	forti	forte	ADJ	A	Number=Plur	3	amod	3:amod	_	Degree=Cmp	True
 6	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_	_	False
 7	stati	essere	AUX	VA	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	8	cop	8:cop	_	_	False
-8	quelli	quello	PRON	PD	Gender=Masc|Number=Plur|PronType=Dem	0	root	0:root	_	Case=Advs|Gender=Masc|Mood=Ind|Number=Plur|PronType=Dem|Tense=Pres;Past|VerbForm=Part;Fin	True
+8	quelli	quello	PRON	PD	Gender=Masc|Number=Plur|PronType=Dem	0	root	0:root	_	Case=Advs|Gender=Masc|Mood=Ind|Number=Plur|PronType=Dem|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 9	di	di	ADP	E	_	10	case	10:case	_	_	False
 10	Takako	Takako	PROPN	SP	_	8	nmod	8:nmod:di	_	Case=Gen	True
 11	Doi	Doi	PROPN	SP	_	10	flat:name	10:flat:name	SpaceAfter=No	_	False
@@ -961,7 +961,7 @@
 3	in	in	ADP	E	_	4	case	4:case	_	_	False
 4	gruppo	gruppo	NOUN	S	Gender=Masc|Number=Sing	6	obl	6:obl:in	SpaceAfter=No	Case=Ine|Gender=Masc|Number=Sing	True
 5	,	,	PUNCT	FF	_	4	punct	4:punct	_	_	False
-6	cantare	cantare	VERB	V	VerbForm=Inf	0	root	0:root	_	Case=Disj;Cnd|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+6	cantare	cantare	VERB	V	VerbForm=Inf	0	root	0:root	_	Case=Cnd;Disj|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 7	cose	cosa	NOUN	S	Gender=Fem|Number=Plur	6	obj	6:obj	_	Case=Acc|Gender=Fem|Number=Plur	True
 8	tipo	tipo	NOUN	S	_	7	compound	7:compound	_	_	False
 9	"	"	PUNCT	FB	_	10	punct	10:punct	SpaceAfter=No	_	False
@@ -1035,7 +1035,7 @@
 4	e	e	CCONJ	CC	_	7	cc	7:cc	_	_	False
 5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_	_	False
 6	sua	suo	DET	AP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	7	det:poss	7:det:poss	_	|	True
-7	nazionalità	nazionalità	NOUN	S	Gender=Fem	3	conj	3:conj:e|12:nsubj:pass	_	Case=Conj|Definite=Def|Gender=Fem|Number=Sing	True
+7	nazionalità	nazionalità	NOUN	S	Gender=Fem	3	conj	3:conj:e|12:nsubj:pass	_	Case=Acc;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 8	non	non	ADV	BN	PronType=Neg	12	advmod	12:advmod	_	_	False
 9	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	aux	12:aux	_	_	False
 10	state	essere	AUX	VA	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	12	aux:pass	12:aux:pass	_	_	False
@@ -1075,7 +1075,7 @@
 1	Non	non	ADV	BN	PronType=Neg	4	advmod	4:advmod	_	_	False
 2	sarà	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	4:cop	_	_	False
 3	anche	anche	ADV	B	_	4	advmod	4:advmod	_	|	True
-4	colpa	colpa	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Fut|VerbForm=Fin	True
+4	colpa	colpa	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Fut|VerbForm=Fin|Voice=Act	True
 5-6	dei	_	_	_	_	_	_	_	_	_	False
 5	di	di	ADP	E	_	7	case	7:case	_	_	False
 6	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	7:det	_	_	False
@@ -1105,7 +1105,7 @@
 10	sociologica	sociologico	ADJ	A	Gender=Fem|Number=Sing	9	amod	9:amod	_	|	True
 11	di	di	ADP	E	_	12	case	12:case	_	_	False
 12	Ecce	Ecce	X	SW	Foreign=Yes	9	nmod	9:nmod:di	_	Case=Gen|Foreign=Yes	True
-13	Bombo	Bombo	X	SW	Foreign=Yes	12	flat:foreign	12:flat:foreign	SpaceAfter=No	Foreign=Yes	True
+13	Bombo	Bombo	X	SW	Foreign=Yes	12	flat:foreign	12:flat:foreign	SpaceAfter=No	_	False
 14	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
 15	che	che	PRON	PR	PronType=Rel	22	nsubj	9:ref	_	Case=Nom|PronType=Rel	True
 16	per	per	ADP	E	_	18	case	18:case	_	_	False
@@ -1260,7 +1260,7 @@
 14	età	età	NOUN	S	Gender=Fem	9	obl	9:obl:a	_	Case=Lat|Definite=Def|Gender=Fem|Number=Sing	True
 15	e	e	CCONJ	CC	_	17	cc	17:cc	_	_	False
 16	di	di	ADP	E	_	17	mark	17:mark	_	_	False
-17	sfruttare	sfruttare	VERB	V	VerbForm=Inf	9	conj	9:conj:e|28:advcl:di	_	Case=Conj;di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+17	sfruttare	sfruttare	VERB	V	VerbForm=Inf	9	conj	9:conj:e|28:advcl:di	_	Case=di;Conj|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 18	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	19:det	_	_	False
 19	perversioni	perversione	NOUN	S	Gender=Fem|Number=Plur	17	obj	17:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	True
 20-21	dei	_	_	_	_	_	_	_	_	_	False
@@ -1372,7 +1372,7 @@
 9	Cannes	Cannes	PROPN	SP	_	6	obl	6:obl:a	_	Case=Lat	True
 10	e	e	CCONJ	CC	_	12	cc	12:cc	_	_	False
 11	poi	poi	ADV	B	_	12	advmod	12:advmod	_	|	True
-12	qui	qui	ADV	B	_	9	conj	6:obl:a|9:conj:e	_	Case=Conj	True
+12	qui	qui	ADV	B	_	9	conj	6:obl:a|9:conj:e	_	Case=Lat;Conj	True
 13-14	al	_	_	_	_	_	_	_	_	_	False
 13	a	a	ADP	E	_	15	case	15:case	_	_	False
 14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_	_	False
@@ -1386,7 +1386,7 @@
 # text = Le è simpatica Nicole Kidman?
 1	Le	le	PRON	PC	Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	iobj	3:iobj	_	Case=Dat|Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	simpatica	simpatico	ADJ	A	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	simpatica	simpatico	ADJ	A	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	Nicole	Nicole	PROPN	SP	_	3	nsubj	3:nsubj	_	Case=Nom	True
 5	Kidman	Kidman	PROPN	SP	_	4	flat:name	4:flat:name	SpaceAfter=No	_	False
 6	?	?	PUNCT	FS	_	3	punct	3:punct	_	_	False
@@ -1445,9 +1445,9 @@
 22	con	con	ADP	E	_	23	case	23:case	_	_	False
 23	spazzole	spazzola	NOUN	S	Gender=Fem|Number=Plur	11	obl	11:obl:con	SpaceAfter=No	Case=Com|Gender=Fem|Number=Plur	True
 24	,	,	PUNCT	FF	_	25	punct	25:punct	_	_	False
-25	cemento	cemento	NOUN	S	Gender=Masc|Number=Sing	23	conj	11:obl:con|23:conj:e	_	Gender=Masc|Number=Sing	True
+25	cemento	cemento	NOUN	S	Gender=Masc|Number=Sing	23	conj	11:obl:con|23:conj:e	_	Case=Com|Gender=Masc|Number=Sing	True
 26	e	e	CCONJ	CC	_	27	cc	27:cc	_	_	False
-27	gel	gel	NOUN	S	Gender=Masc	23	conj	11:obl:con|23:conj:e	_	Case=Conj|Gender=Masc	True
+27	gel	gel	NOUN	S	Gender=Masc	23	conj	11:obl:con|23:conj:e	_	Case=Com;Conj|Gender=Masc	True
 28	e	e	CCONJ	CC	_	34	cc	34:cc	SpaceAfter=No	_	False
 29	,	,	PUNCT	FF	_	34	punct	34:punct	_	_	False
 30	se	se	SCONJ	CS	_	31	mark	31:mark	_	_	False
@@ -1515,7 +1515,7 @@
 4	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	7	nsubj	7:nsubj	_	Case=Nom|Definite=Def|Dem=Dist|Gender=Fem|Number=Sing	True
 5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_	_	False
 6	anche	anche	ADV	B	_	7	advmod	7:advmod	_	|	True
-7	inglese	inglese	ADJ	A	Number=Sing	0	root	0:root	SpaceAfter=No	Case=Advs|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+7	inglese	inglese	ADJ	A	Number=Sing	0	root	0:root	SpaceAfter=No	Case=Advs|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 8	?	?	PUNCT	FS	_	7	punct	7:punct	SpaceAfter=No	_	False
 9	"	"	PUNCT	FB	_	7	punct	7:punct	SpaceAfter=No	_	False
 10	.	.	PUNCT	FS	_	7	punct	7:punct	_	_	False
@@ -1527,7 +1527,7 @@
 2-3	nella	_	_	_	_	_	_	_	_	_	False
 2	in	in	ADP	E	_	4	case	4:case	_	_	False
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_	_	False
-4	natura	natura	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Case=Ine|Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+4	natura	natura	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Case=Ine|Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 5-6	delle	_	_	_	_	_	_	_	_	_	False
 5	di	di	ADP	E	_	7	case	7:case	_	_	False
 6	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	7:det	_	_	False
@@ -1544,13 +1544,13 @@
 # text = Ed è quello che hanno fatto May e Bailey.
 1	Ed	e	CCONJ	CC	_	3	cc	3:cc	_	_	False
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	quello	quello	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root|6:obj	_	Case=Conj|Gender=Masc|Mood=Ind|Number=Sing|PronType=Dem|Tense=Pres|VerbForm=Fin	True
+3	quello	quello	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root|6:obj	_	Case=Conj|Gender=Masc|Mood=Ind|Number=Sing|PronType=Dem|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	che	che	PRON	PR	PronType=Rel	6	obj	3:ref	_	Case=Acc|PronType=Rel	True
 5	hanno	avere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_	_	False
 6	fatto	fare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	acl:relcl	3:acl:relcl	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
 7	May	May	PROPN	SP	_	6	nsubj	6:nsubj	_	Case=Nom	True
 8	e	e	CCONJ	CC	_	9	cc	9:cc	_	_	False
-9	Bailey	Bailey	PROPN	SP	_	7	conj	6:nsubj|7:conj:e	SpaceAfter=No	Case=Conj	True
+9	Bailey	Bailey	PROPN	SP	_	7	conj	6:nsubj|7:conj:e	SpaceAfter=No	Case=Nom;Conj	True
 10	.	.	PUNCT	FS	_	3	punct	3:punct	_	_	False
 
 
@@ -1721,7 +1721,7 @@
 5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	8:aux	_	_	False
 6	stata	essere	AUX	VA	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	8	cop	8:cop	_	_	False
 7	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	8:det	_	_	False
-8	passaggio	passaggio	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Part;Fin	True
+8	passaggio	passaggio	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 9	di	di	ADP	E	_	10	case	10:case	_	_	False
 10	consegne	consegna	NOUN	S	Gender=Fem|Number=Plur	8	nmod	8:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Plur	True
 11	:	:	PUNCT	FC	_	8	punct	8:punct	_	_	False
@@ -1731,7 +1731,7 @@
 # text = È una scena genuina perché Fiona sulle prime non capisce che si tratta del marito.
 1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
 2	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_	_	False
-3	scena	scena	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+3	scena	scena	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	genuina	genuino	ADJ	A	Gender=Fem|Number=Sing	3	amod	3:amod	_	|	True
 5	perché	perché	SCONJ	CS	_	11	mark	11:mark	_	_	False
 6	Fiona	Fiona	PROPN	SP	_	11	nsubj	11:nsubj	_	Case=Nom	True
@@ -1810,7 +1810,7 @@
 15-16	dall'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 15	da	da	ADP	E	_	17	case	17:case	_	_	False
 16	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	17	det	17:det	_	_	False
-17	Aia	Aia	PROPN	SP	_	13	conj	10:obl:agent:da|13:conj:e	_	Case=Conj;Abl|Definite=Def|Number=Sing	True
+17	Aia	Aia	PROPN	SP	_	13	conj	10:obl:agent:da|13:conj:e	_	Case=Agt;Abl;Conj|Definite=Def|Number=Sing	True
 18-19	nelle	_	_	_	_	_	_	_	_	_	False
 18	in	in	ADP	E	_	21	case	21:case	_	_	False
 19	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	21:det	_	_	False
@@ -1832,7 +1832,7 @@
 33	di	di	ADP	E	_	34	case	34:case	_	_	False
 34	Baldas	Baldas	PROPN	SP	_	32	nmod	32:nmod:di	_	Case=Gen	True
 35	e	e	CCONJ	CC	_	36	cc	36:cc	_	_	False
-36	Capelluti	Capelluti	PROPN	SP	_	34	conj	32:nmod:di|34:conj:e	SpaceAfter=No	Case=Conj	True
+36	Capelluti	Capelluti	PROPN	SP	_	34	conj	32:nmod:di|34:conj:e	SpaceAfter=No	Case=Gen;Conj	True
 37	)	)	PUNCT	FB	_	32	punct	32:punct	_	_	False
 38	e	e	CCONJ	CC	_	39	cc	39:cc	_	_	False
 39	vogliono	volere	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
@@ -1899,7 +1899,7 @@
 11	essere	essere	AUX	VA	VerbForm=Inf	14	cop	14:cop	_	_	False
 12	per	per	ADP	E	_	13	case	13:case	_	_	False
 13	forza	forza	NOUN	S	Gender=Fem|Number=Sing	14	obl	14:obl:per	_	Case=Cau|Gender=Fem|Number=Sing	True
-14	Lewis	Lewis	PROPN	SP	_	10	ccomp	10:ccomp	SpaceAfter=No	VerbForm=Inf	True
+14	Lewis	Lewis	PROPN	SP	_	10	ccomp	10:ccomp	SpaceAfter=No	VerbForm=Inf|Voice=Act	True
 15	:	:	PUNCT	FC	_	2	punct	2:punct	_	_	False
 
 
@@ -1944,7 +1944,7 @@
 34-35	dalle	_	_	_	_	_	_	_	_	_	False
 34	da	da	ADP	E	_	36	case	36:case	_	_	False
 35	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	36:det	_	_	False
-36	competenze	competenza	NOUN	S	Gender=Fem|Number=Plur	32	conj	29:obl:da|32:conj:e	_	Case=Conj;Abl|Definite=Def|Gender=Fem|Number=Plur	True
+36	competenze	competenza	NOUN	S	Gender=Fem|Number=Plur	32	conj	29:obl:da|32:conj:e	_	Case=Abl;Conj|Definite=Def|Gender=Fem|Number=Plur	True
 37-38	degli	_	_	_	_	_	_	_	_	_	False
 37	di	di	ADP	E	_	39	case	39:case	_	_	False
 38	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	39:det	_	_	False
@@ -1976,8 +1976,8 @@
 19	largo	largo	ADJ	A	Gender=Masc|Number=Sing	13	amod	13:amod	_	|	True
 20	due	due	NUM	N	NumType=Card	19	nummod	19:nummod	_	NumType=Card	True
 21	e	e	CCONJ	CC	_	22	cc	22:cc	_	_	False
-22	lungo	lungo	ADJ	A	Gender=Masc|Number=Sing	19	conj	13:amod|19:conj:e	_	Case=Conj|Degree=Cmp|Gender=Masc|Number=Sing	True
-23	più	più	ADV	B	_	22	advmod	22:advmod	_	_	False
+22	lungo	lungo	ADJ	A	Gender=Masc|Number=Sing	19	conj	13:amod|19:conj:e	_	Case=Conj|Gender=Masc|Number=Sing	True
+23	più	più	ADV	B	_	22	advmod	22:advmod	_	|	True
 24	di	di	ADP	E	_	25	case	25:case	_	_	False
 25	dieci	dieci	NUM	N	NumType=Card	23	nummod	23:nummod	SpaceAfter=No	Case=Gen|NumType=Card	True
 26	,	,	PUNCT	FF	_	19	punct	19:punct	_	_	False
@@ -2051,7 +2051,7 @@
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux	6:aux	_	_	False
 4	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	cop	6:cop	_	_	False
 5	molto	molto	ADV	B	_	6	advmod	6:advmod	_	|	True
-6	sensibile	sensibile	ADJ	A	Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres;Past|VerbForm=Part;Fin	True
+6	sensibile	sensibile	ADJ	A	Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 7	a	a	ADP	E	_	8	mark	8:mark	_	_	False
 8	nominare	nominare	VERB	V	VerbForm=Inf	6	advcl	6:advcl:a	_	Case=Pur|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 9	due	due	NUM	N	NumType=Card	10	nummod	10:nummod	_	NumType=Card	True
@@ -2133,7 +2133,7 @@
 12	località	località	NOUN	S	Gender=Fem	10	nmod	10:nmod:verso	_	Case=Lat|Gender=Fem	True
 13	dove	dove	ADV	B	_	15	advmod	12:ref	_	|	True
 14	fosse	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	cop	15:cop	_	_	False
-15	possibile	possibile	ADJ	A	Number=Sing	12	acl:relcl	12:acl:relcl	_	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	True
+15	possibile	possibile	ADJ	A	Number=Sing	12	acl:relcl	12:acl:relcl	_	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	True
 16	imbucare	imbucare	VERB	V	VerbForm=Inf	15	csubj	15:csubj	SpaceAfter=No	Polarity=Pos|VerbForm=Inf|Voice=Act	True
 17	"	"	PUNCT	FB	_	16	punct	16:punct	SpaceAfter=No	_	False
 18	.	.	PUNCT	FS	_	1	punct	1:punct	_	_	False
@@ -2196,7 +2196,7 @@
 21	invernali	invernale	ADJ	A	Number=Plur	20	amod	20:amod	_	|	True
 22	e	e	CCONJ	CC	_	24	cc	24:cc	_	_	False
 23	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	24:det	_	_	False
-24	maglietta	maglietta	NOUN	S	Gender=Fem|Number=Sing	20	conj	17:obl:con|20:conj:e	_	Case=Conj|Definite=Ind|Gender=Fem|Number=Sing	True
+24	maglietta	maglietta	NOUN	S	Gender=Fem|Number=Sing	20	conj	17:obl:con|20:conj:e	_	Case=Com;Conj|Definite=Ind|Gender=Fem|Number=Sing	True
 25	grigia	grigio	ADJ	A	Gender=Fem|Number=Sing	24	amod	24:amod	_	|	True
 26	portata	portare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	24	acl	24:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
 27	da	da	ADP	E	_	28	case	28:case	_	_	False
@@ -2281,7 +2281,7 @@
 3	Tiziano	Tiziano	PROPN	SP	_	2	xcomp	2:xcomp	SpaceAfter=No	|	True
 4	,	,	PUNCT	FF	_	6	punct	6:punct	_	_	False
 5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_	_	False
-6	svizzero	svizzero	ADJ	A	Gender=Masc|Number=Sing	2	conj	2:conj:e	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+6	svizzero	svizzero	ADJ	A	Gender=Masc|Number=Sing	2	conj	2:conj:e	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 7	e	e	CCONJ	CC	_	8	cc	8:cc	_	_	False
 8	fa	fare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	2:conj:e	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 8.1	-	-	-	-	-	-	8	nsubj	Case=Nom	True	_
@@ -2322,7 +2322,7 @@
 4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	7:cop	_	_	False
 5	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	7	det	7:det	SpaceAfter=No	_	False
 6	unico	unico	ADJ	A	Gender=Masc|Number=Sing	7	amod	7:amod	_	|	True
-7	corpo	corpo	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+7	corpo	corpo	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 8	militare	militare	ADJ	A	Number=Sing	7	amod	7:amod	_	|	True
 9-10	del	_	_	_	_	_	_	_	_	_	False
 9	di	di	ADP	E	_	11	case	11:case	_	_	False
@@ -2335,7 +2335,7 @@
 # text = Il più vistoso è quello situato davanti all'ingresso della Casa dell'Artista, il palazzo che fino al 12 giugno ospiterà la Mostra:
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	2:det	_	_	False
 2	più	più	ADV	B	_	3	advmod	3:advmod	_	_	False
-3	vistoso	vistoso	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Degree=Cmp|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	vistoso	vistoso	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Degree=Sup|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
 5	quello	quello	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	3	nsubj	3:nsubj	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Dem	True
 6	situato	situare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	acl	5:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
@@ -2442,20 +2442,20 @@
 3	casa	casa	NOUN	S	Gender=Fem|Number=Sing	1	obj	1:obj	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 4	,	,	PUNCT	FF	_	6	punct	6:punct	_	_	False
 5	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_	_	False
-6	lavoro	lavoro	NOUN	S	Gender=Masc|Number=Sing	3	conj	1:obj|3:conj	SpaceAfter=No	Definite=Def|Gender=Masc|Number=Sing	True
+6	lavoro	lavoro	NOUN	S	Gender=Masc|Number=Sing	3	conj	1:obj|3:conj	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 7	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
 8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
-9	musica	musica	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	SpaceAfter=No	Definite=Def|Gender=Fem|Number=Sing	True
+9	musica	musica	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 10	,	,	PUNCT	FF	_	12	punct	12:punct	_	_	False
 11	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_	_	False
-12	letteratura	letteratura	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	_	Definite=Def|Gender=Fem|Number=Sing	True
+12	letteratura	letteratura	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 13	edificante	edificante	ADJ	A	Number=Sing	12	amod	12:amod	_	|	True
 14	e	e	CCONJ	CC	_	15	cc	15:cc	_	_	False
 15	idilliaca	idilliaco	ADJ	A	Gender=Fem|Number=Sing	13	conj	12:amod|13:conj:e	SpaceAfter=No	Case=Conj|Gender=Fem|Number=Sing	True
 16	,	,	PUNCT	FF	_	19	punct	19:punct	_	_	False
 17	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	19:det	_	_	False
 18	buona	buono	ADJ	A	Gender=Fem|Number=Sing	19	amod	19:amod	_	|	True
-19	conversazione	conversazione	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	_	Definite=Def|Gender=Fem|Number=Sing	True
+19	conversazione	conversazione	NOUN	S	Gender=Fem|Number=Sing	3	conj	1:obj|3:conj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 20	con	con	ADP	E	_	22	case	22:case	_	_	False
 21	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_	_	False
 22	amici	amico	NOUN	S	Gender=Masc|Number=Plur	19	nmod	19:nmod:con|25:obj	SpaceAfter=No	Case=Com|Definite=Def|Gender=Masc|Number=Plur	True
@@ -2512,7 +2512,7 @@
 17-18	all'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 17	a	a	ADP	E	_	19	case	19:case	_	_	False
 18	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	19	det	19:det	_	_	False
-19	aria	aria	NOUN	S	Gender=Fem|Number=Sing	15	conj	12:nmod:a|15:conj:e	_	Case=Lat;Conj|Definite=Def|Gender=Fem|Number=Sing	True
+19	aria	aria	NOUN	S	Gender=Fem|Number=Sing	15	conj	12:nmod:a|15:conj:e	_	Case=Ine;Lat;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 20	aperta	aperto	ADJ	A	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No	|	True
 21	,	,	PUNCT	FF	_	23	punct	23:punct	_	_	False
 22	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	23:det	_	_	False
@@ -2613,7 +2613,7 @@
 12	di	di	ADP	E	_	13	case	13:case	_	_	False
 13	marmo	marmo	NOUN	S	Gender=Masc|Number=Sing	11	nmod	11:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
 14	e	e	CCONJ	CC	_	15	cc	15:cc	_	_	False
-15	quarzo	quarzo	NOUN	S	Gender=Masc|Number=Sing	13	conj	11:nmod:di|13:conj:e	_	Case=Conj|Gender=Masc|Number=Sing	True
+15	quarzo	quarzo	NOUN	S	Gender=Masc|Number=Sing	13	conj	11:nmod:di|13:conj:e	_	Case=Gen;Conj|Gender=Masc|Number=Sing	True
 16	con	con	ADP	E	_	18	case	18:case	_	_	False
 17	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_	_	False
 18	superficie	superficie	NOUN	S	Gender=Fem|Number=Sing	11	nmod	11:nmod:con|20:nsubj	_	Case=Com|Definite=Ind|Gender=Fem|Number=Sing	True
@@ -2705,7 +2705,7 @@
 7	granito	granito	NOUN	S	Gender=Masc|Number=Sing	4	nmod	4:nmod:di	SpaceAfter=No	Case=Gen|Definite=Def|Gender=Masc|Number=Sing	True
 8	,	,	PUNCT	FF	_	10	punct	10:punct	_	_	False
 9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_	_	False
-10	antigelivo	antigelivo	ADJ	A	Gender=Masc|Number=Sing	1	conj	1:conj	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+10	antigelivo	antigelivo	ADJ	A	Gender=Masc|Number=Sing	1	conj	1:conj	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 11	e	e	CCONJ	CC	_	12	cc	12:cc	_	_	False
 12	inassorbente	inassorbente	ADJ	A	Number=Sing	10	conj	10:conj:e	_	Case=Conj|Number=Sing	True
 13	(	(	PUNCT	FB	_	14	punct	14:punct	SpaceAfter=No	_	False
@@ -2720,7 +2720,7 @@
 20	ma	ma	CCONJ	CC	_	23	cc	23:cc	_	_	False
 21	dove	dove	ADV	B	_	23	mark	23:mark	_	|	True
 22	non	non	ADV	BN	PronType=Neg	23	advmod	23:advmod	_	_	False
-23	esistano	esistere	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	conj	14:obl:a|19:conj:ma	_	Case=Advs|Mood=Sub|Polarity=Neg|VerbForm=Fin|Voice=Act	True
+23	esistano	esistere	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	19	conj	14:obl:a|19:conj:ma	_	Case=Lat;Advs|Mood=Sub|Polarity=Neg|VerbForm=Fin|Voice=Act	True
 24	pericoli	pericolo	NOUN	S	Gender=Masc|Number=Plur	23	nsubj	23:nsubj	_	Case=Nom|Gender=Masc|Number=Plur	True
 25	di	di	ADP	E	_	26	case	26:case	_	_	False
 26	formazione	formazione	NOUN	S	Gender=Fem|Number=Sing	24	nmod	24:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
@@ -2740,7 +2740,7 @@
 1	Se	se	SCONJ	CS	_	4	mark	4:mark	_	_	False
 2	sei	essere	AUX	VA	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_	_	False
 3	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
-4	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	6	advcl	6:advcl:se	_	Case=Cnd|Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+4	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	6	advcl	6:advcl:se	_	Case=Cnd|Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 5	preciso	preciso	ADJ	A	Gender=Masc|Number=Sing	4	amod	4:amod	_	|	True
 6	completa	completare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 6.1	-	-	-	-	-	-	6	nsubj	Case=Nom	True	_
@@ -2766,7 +2766,7 @@
 26	circolazione	circolazione	NOUN	S	Gender=Fem|Number=Sing	24	obj	24:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 27	e	e	CCONJ	CC	_	29	cc	29:cc	_	_	False
 28	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	29	det	29:det	SpaceAfter=No	_	False
-29	assorbimento	assorbimento	NOUN	S	Gender=Masc|Number=Sing	26	conj	24:obj|26:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Sing	True
+29	assorbimento	assorbimento	NOUN	S	Gender=Masc|Number=Sing	26	conj	24:obj|26:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Masc|Number=Sing	True
 30-31	del	_	_	_	_	_	_	_	_	_	False
 30	di	di	ADP	E	_	32	case	32:case	_	_	False
 31	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	32:det	_	_	False
@@ -2801,7 +2801,7 @@
 21	troppo	troppo	ADV	B	_	19	advmod	19:advmod	_	Case=Gen	True
 22	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	cop	24:cop	_	_	False
 23	più	più	ADV	B	_	24	advmod	24:advmod	_	_	False
-24	predisposta	predisposto	ADJ	A	Gender=Fem|Number=Sing	6	advcl	6:advcl:anche_se	_	Degree=Cmp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+24	predisposta	predisposto	ADJ	A	Gender=Fem|Number=Sing	6	advcl	6:advcl:anche_se	_	Degree=Cmp|Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 25	ad	a	ADP	E	_	27	mark	27:mark	_	_	False
 26	"	"	PUNCT	FB	_	27	punct	27:punct	SpaceAfter=No	_	False
 27-28	accoglierla	_	_	_	_	_	_	_	SpaceAfter=No	_	False
@@ -2829,7 +2829,7 @@
 13	provocherebbe	provocare	VERB	V	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	5:conj:e	_	Case=Conj|Mood=Cnd|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 14	ematomi	ematoma	NOUN	S	Gender=Masc|Number=Plur	13	obj	13:obj	_	Case=Acc|Gender=Masc|Number=Plur	True
 15	e	e	CCONJ	CC	_	16	cc	16:cc	_	_	False
-16	rilasciamenti	rilasciamento	NOUN	S	Gender=Masc|Number=Plur	14	conj	13:obj|14:conj:e	_	Case=Conj|Gender=Masc|Number=Plur	True
+16	rilasciamenti	rilasciamento	NOUN	S	Gender=Masc|Number=Plur	14	conj	13:obj|14:conj:e	_	Case=Acc;Conj|Gender=Masc|Number=Plur	True
 17-18	dei	_	_	_	_	_	_	_	_	_	False
 17	di	di	ADP	E	_	19	case	19:case	_	_	False
 18	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	19:det	_	_	False
@@ -2855,7 +2855,7 @@
 # text = È una signora ancor bella di quasi sessant'anni e che da più di dieci vive in esilio a Parigi.
 1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
 2	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_	_	False
-3	signora	signore	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root|16:nsubj	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+3	signora	signore	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root|16:nsubj	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	ancor	ancora	ADV	B	_	5	advmod	5:advmod	_	|	True
 5	bella	bello	ADJ	A	Gender=Fem|Number=Sing	3	amod	3:amod	_	|	True
 6	di	di	ADP	E	_	9	case	9:case	_	_	False
@@ -2865,7 +2865,7 @@
 10	e	e	CCONJ	CC	_	16	cc	16:cc	_	_	False
 11	che	che	PRON	PR	PronType=Rel	16	nsubj	3:ref	_	Case=Nom|PronType=Rel	True
 12	da	da	ADP	E	_	13	case	13:case	_	_	False
-13	più	più	ADV	B	_	16	advmod	16:advmod	_	_	False
+13	più	più	ADV	B	_	16	advmod	16:advmod	_	|	True
 14	di	di	ADP	E	_	15	case	15:case	_	_	False
 15	dieci	dieci	NUM	N	NumType=Card	13	nummod	13:nummod	_	Case=Gen|NumType=Card	True
 16	vive	vivere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	3:acl:relcl	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
@@ -2930,7 +2930,7 @@
 24	Salvatore	Salvatore	PROPN	SP	_	23	flat:name	23:flat:name	_	_	False
 25	e	e	CCONJ	CC	_	27	cc	27:cc	_	_	False
 26	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_	_	False
-27	Payita	Payita	PROPN	SP	_	23	conj	21:nmod:tra|23:conj:e	SpaceAfter=No	Case=Conj|Definite=Def|Gender=Fem|Number=Sing	True
+27	Payita	Payita	PROPN	SP	_	23	conj	21:nmod:tra|23:conj:e	SpaceAfter=No	Case=Int;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 28	,	,	PUNCT	FF	_	31	punct	31:punct	_	_	False
 29	e	e	CCONJ	CC	_	31	cc	31:cc	_	_	False
 30	che	che	PRON	PR	PronType=Rel	31	nsubj	31:nsubj	_	Case=Nom|PronType=Rel	True
@@ -2954,7 +2954,7 @@
 6	elettronica	elettronico	ADJ	A	Gender=Fem|Number=Sing	5	amod	5:amod	_	|	True
 7	personale	personale	ADJ	A	Number=Sing	5	amod	5:amod	_	|	True
 8	o	o	CCONJ	CC	_	9	cc	9:cc	_	_	False
-9	editoria	editoria	NOUN	S	Gender=Fem|Number=Sing	5	conj	2:nmod:di|5:conj:o	_	Case=Disj|Gender=Fem|Number=Sing	True
+9	editoria	editoria	NOUN	S	Gender=Fem|Number=Sing	5	conj	2:nmod:di|5:conj:o	_	Case=Gen;Disj|Gender=Fem|Number=Sing	True
 10	da	da	ADP	E	_	11	case	11:case	_	_	False
 11	tavolo	tavolo	NOUN	S	Gender=Masc|Number=Sing	9	nmod	9:nmod:da	_	Case=Abl|Gender=Masc|Number=Sing	True
 12	(	(	PUNCT	FB	_	16	punct	16:punct	SpaceAfter=No	_	False
@@ -2965,7 +2965,7 @@
 17	)	)	PUNCT	FB	_	16	punct	16:punct	_	_	False
 18	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	cop	20:cop	_	_	False
 19	molto	molto	ADV	B	_	20	advmod	20:advmod	_	|	True
-20	giovane	giovane	ADJ	A	Number=Sing	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+20	giovane	giovane	ADJ	A	Number=Sing	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 21	con	con	ADP	E	_	26	case	26:case	_	_	False
 22	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	26	det	26:det	_	_	False
 23	suoi	suo	DET	AP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	26	det:poss	26:det:poss	_	|	True
@@ -2990,7 +2990,7 @@
 39	fra	fra	ADP	E	_	42	case	42:case	_	_	False
 40	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	41	det	41:det	_	_	False
 41	più	più	ADV	B	_	42	advmod	42:advmod	_	_	False
-42	promettenti	promettente	ADJ	A	Number=Plur	32	obl	32:obl:fra	_	Case=Int|Degree=Cmp|Number=Plur	True
+42	promettenti	promettente	ADJ	A	Number=Plur	32	obl	32:obl:fra	_	Case=Int|Definite=Def|Degree=Sup|Gender=Masc|Number=Plur	True
 43	in	in	ADP	E	_	44	case	44:case	_	_	False
 44	assoluto	assoluto	NOUN	S	Gender=Masc|Number=Sing	42	obl	42:obl:in	SpaceAfter=No	Case=Ine|Gender=Masc|Number=Sing	True
 45	:	:	PUNCT	FC	_	20	punct	20:punct	_	_	False
@@ -3042,7 +3042,7 @@
 39	gestire	gestire	VERB	V	VerbForm=Inf	37	ccomp	37:ccomp	_	Case=di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 40	testo	testo	NOUN	S	Gender=Masc|Number=Sing	39	obj	39:obj	_	Case=Acc|Gender=Masc|Number=Sing	True
 41	e	e	CCONJ	CC	_	42	cc	42:cc	_	_	False
-42	grafica	grafica	NOUN	S	Gender=Fem|Number=Sing	40	conj	39:obj|40:conj:e	_	Case=Conj|Gender=Fem|Number=Sing	True
+42	grafica	grafica	NOUN	S	Gender=Fem|Number=Sing	40	conj	39:obj|40:conj:e	_	Case=Acc;Conj|Gender=Fem|Number=Sing	True
 43	ad	a	ADP	E	_	45	case	45:case	_	_	False
 44	alta	alto	ADJ	A	Gender=Fem|Number=Sing	45	amod	45:amod	_	|	True
 45	risoluzione	risoluzione	NOUN	S	Gender=Fem|Number=Sing	42	nmod	42:nmod:a	SpaceAfter=No	Case=Lat|Gender=Fem|Number=Sing	True
@@ -3091,7 +3091,7 @@
 28	donne	donna	NOUN	S	Gender=Fem|Number=Plur	25	nmod	25:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	True
 29	detenute	detenuto	NOUN	S	Gender=Fem|Number=Plur	28	compound	28:compound	_	_	False
 30	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	cop	31:cop	_	_	False
-31	maggiore	maggiore	ADJ	A	Degree=Cmp|Number=Sing	14	conj	14:conj:e	_	Case=Conj|Degree=Cmp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+31	maggiore	maggiore	ADJ	A	Degree=Cmp|Number=Sing	14	conj	14:conj:e	_	Case=Conj|Degree=Cmp|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 32-33	della	_	_	_	_	_	_	_	_	_	False
 32	di	di	ADP	E	_	34	case	34:case	_	_	False
 33	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	34:det	_	_	False
@@ -3166,7 +3166,7 @@
 30	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	aux	33:aux	_	_	False
 31	essere	essere	AUX	VA	VerbForm=Inf	33	cop	33:cop	_	_	False
 32	estremamente	estremamente	ADV	B	_	33	advmod	33:advmod	_	|	True
-33	attiva	attivo	ADJ	A	Gender=Fem|Number=Sing	19	ccomp	19:ccomp	SpaceAfter=No	Case=che|Gender=Fem|Modality=Pot|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Inf;Fin	True
+33	attiva	attivo	ADJ	A	Gender=Fem|Number=Sing	19	ccomp	19:ccomp	SpaceAfter=No	Case=che|Gender=Fem|Modality=Pot|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Inf;Fin|Voice=Act	True
 34	,	,	PUNCT	FF	_	39	punct	39:punct	_	_	False
 35	quasi	quasi	ADV	B	_	38	advmod	38:advmod	_	|	True
 36-37	del	_	_	_	_	_	_	_	_	_	False
@@ -3253,11 +3253,11 @@
 14	da	da	ADP	E	_	15	case	15:case	_	_	False
 15	medici	medico	NOUN	S	Gender=Masc|Number=Plur	11	obl:agent	11:obl:agent:da	SpaceAfter=No	Case=Agt|Gender=Masc|Number=Plur	True
 16	,	,	PUNCT	FF	_	17	punct	17:punct	_	_	False
-17	personale	personale	NOUN	S	Gender=Masc|Number=Sing	15	conj	11:obl:agent|15:conj:e	_	Gender=Masc|Number=Sing	True
+17	personale	personale	NOUN	S	Gender=Masc|Number=Sing	15	conj	11:obl:agent|15:conj:e	_	Case=Agt|Gender=Masc|Number=Sing	True
 18	di	di	ADP	E	_	19	case	19:case	_	_	False
 19	servizio	servizio	NOUN	S	Gender=Masc|Number=Sing	17	nmod	17:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
 20	e	e	CCONJ	CC	_	21	cc	21:cc	_	_	False
-21	pazienti	paziente	NOUN	S	Number=Plur	15	conj	11:obl:agent|15:conj:e	SpaceAfter=No	Case=Conj|Number=Plur	True
+21	pazienti	paziente	NOUN	S	Number=Plur	15	conj	11:obl:agent|15:conj:e	SpaceAfter=No	Case=Agt;Conj|Number=Plur	True
 22	.	.	PUNCT	FS	_	5	punct	5:punct	_	_	False
 
 
@@ -3276,7 +3276,7 @@
 1.1	-	-	-	-	-	-	1	nsubj	Case=Nom	True	_
 2	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	3	det	3:det	SpaceAfter=No	_	False
 3	appuntamento	appuntamento	NOUN	S	Gender=Masc|Number=Sing	1	obj	1:obj	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
-4	più	più	ADV	B	_	1	advmod	1:advmod	_	_	False
+4	più	più	ADV	B	_	1	advmod	1:advmod	_	|	True
 5	di	di	ADP	E	_	7	case	7:case	_	_	False
 6	un	uno	NUM	N	NumType=Card	7	nummod	7:nummod	_	NumType=Card	True
 7	mese	mese	NOUN	S	Gender=Masc|Number=Sing	4	obl	4:obl:di	_	Case=Gen|Gender=Masc|Number=Sing	True
@@ -3350,7 +3350,7 @@
 2	altronde	altronde	ADV	B	_	5	advmod	5:advmod	_	Case=Abl	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_	_	False
 4	proprio	proprio	ADV	B	_	5	advmod	5:advmod	_	|	True
-5	questo	questo	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root|7:nsubj	_	Gender=Masc|Mood=Ind|Number=Sing|PronType=Dem|Tense=Pres|VerbForm=Fin	True
+5	questo	questo	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	0	root	0:root|7:nsubj	_	Gender=Masc|Mood=Ind|Number=Sing|PronType=Dem|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6	che	che	PRON	PR	PronType=Rel	7	nsubj	5:ref	_	Case=Nom|PronType=Rel	True
 7	sorprende	sorprendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	acl:relcl	5:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 8	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	9:det	_	_	False
@@ -3389,7 +3389,7 @@
 11	appartamento	appartamento	NOUN	S	Gender=Masc|Number=Sing	9	obj	9:obj	_	Case=Acc|Definite=Ind|Gender=Masc|Number=Sing	True
 12	o	o	CCONJ	CC	_	14	cc	14:cc	_	_	False
 13	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_	_	False
-14	camera	camera	NOUN	S	Gender=Fem|Number=Sing	11	conj	9:obj|11:conj:o	_	Case=Disj|Definite=Ind|Gender=Fem|Number=Sing	True
+14	camera	camera	NOUN	S	Gender=Fem|Number=Sing	11	conj	9:obj|11:conj:o	_	Case=Acc;Disj|Definite=Ind|Gender=Fem|Number=Sing	True
 15	in	in	ADP	E	_	16	case	16:case	_	_	False
 16	case	casa	NOUN	S	Gender=Fem|Number=Plur	9	obl	9:obl:in	_	Case=Ine|Gender=Fem|Number=Plur	True
 17	private	privato	ADJ	A	Gender=Fem|Number=Plur	16	amod	16:amod	SpaceAfter=No	|	True
@@ -3675,7 +3675,7 @@
 14	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_	_	False
 15	riparazioni	riparazione	NOUN	S	Gender=Fem|Number=Plur	12	nmod	12:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Plur	True
 16	e	e	CCONJ	CC	_	17	cc	17:cc	_	_	False
-17	ricostruzioni	ricostruzione	NOUN	S	Gender=Fem|Number=Plur	15	conj	12:nmod:di|15:conj:e|21:obl:di	_	Case=Conj|Gender=Fem|Number=Plur	True
+17	ricostruzioni	ricostruzione	NOUN	S	Gender=Fem|Number=Plur	15	conj	12:nmod:di|15:conj:e|21:obl:di	_	Case=Gen;Conj|Gender=Fem|Number=Plur	True
 18	a	a	ADP	E	_	19	case	19:case	_	_	False
 19	cui	cui	PRON	PR	PronType=Rel	21	obl	17:ref	_	Case=Lat|PronType=Rel	True
 20	abbia	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux	21:aux	_	_	False
@@ -3714,7 +3714,7 @@
 20	di	di	ADP	E	_	21	case	21:case	_	_	False
 21	costruzione	costruzione	NOUN	S	Gender=Fem|Number=Sing	19	nmod	19:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 22	e	e	CCONJ	CC	_	23	cc	23:cc	_	_	False
-23	conservazione	conservazione	NOUN	S	Gender=Fem|Number=Sing	21	conj	19:nmod:di|21:conj:e	_	Case=Conj|Gender=Fem|Number=Sing	True
+23	conservazione	conservazione	NOUN	S	Gender=Fem|Number=Sing	21	conj	19:nmod:di|21:conj:e	_	Case=Gen;Conj|Gender=Fem|Number=Sing	True
 24	(	(	PUNCT	FB	_	25	punct	25:punct	SpaceAfter=No	_	False
 25	2	2	NUM	N	NumType=Card	23	nummod	23:nummod	SpaceAfter=No	NumType=Card	True
 26	)	)	PUNCT	FB	_	25	punct	25:punct	_	_	False
@@ -3737,11 +3737,11 @@
 4	per	per	ADP	E	_	5	case	5:case	_	_	False
 5	pozzi	pozzo	NOUN	S	Gender=Masc|Number=Plur	3	nmod	3:nmod:per	SpaceAfter=No	Case=Cau|Gender=Masc|Number=Plur	True
 6	,	,	PUNCT	FF	_	7	punct	7:punct	_	_	False
-7	cisterne	cisterna	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:nmod:per|5:conj:e	SpaceAfter=No	Gender=Fem|Number=Plur	True
+7	cisterne	cisterna	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:nmod:per|5:conj:e	SpaceAfter=No	Case=Cau|Gender=Fem|Number=Plur	True
 8	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
-9	fosse	fossa	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:nmod:per|5:conj:e	_	Gender=Fem|Number=Plur	True
+9	fosse	fossa	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:nmod:per|5:conj:e	_	Case=Cau|Gender=Fem|Number=Plur	True
 10	e	e	CCONJ	CC	_	11	cc	11:cc	_	_	False
-11	tubi	tubo	NOUN	S	Gender=Masc|Number=Plur	5	conj	3:nmod:per|5:conj:e	SpaceAfter=No	Case=Conj|Gender=Masc|Number=Plur	True
+11	tubi	tubo	NOUN	S	Gender=Masc|Number=Plur	5	conj	3:nmod:per|5:conj:e	SpaceAfter=No	Case=Cau;Conj|Gender=Masc|Number=Plur	True
 12	.	.	PUNCT	FS	_	3	punct	3:punct	_	_	False
 
 
@@ -3798,7 +3798,7 @@
 21	ristagni	ristagno	NOUN	S	Gender=Masc|Number=Plur	19	nmod	19:nmod:di	_	Case=Gen|Gender=Masc|Number=Plur	True
 22	o	o	CCONJ	CC	_	24	cc	24:cc	_	_	False
 23	di	di	ADP	E	_	24	case	24:case	_	_	False
-24	raccolta	raccolta	NOUN	S	Gender=Fem|Number=Sing	13	conj	11:nmod:di|13:conj:o	_	Case=Disj;Gen|Gender=Fem|Number=Sing	True
+24	raccolta	raccolta	NOUN	S	Gender=Fem|Number=Sing	13	conj	11:nmod:di|13:conj:o	_	Case=Gen;Disj|Gender=Fem|Number=Sing	True
 25	di	di	ADP	E	_	26	case	26:case	_	_	False
 26	acque	acqua	NOUN	S	Gender=Fem|Number=Plur	24	nmod	24:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Plur	True
 27	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
@@ -3819,7 +3819,7 @@
 40	o	o	CCONJ	CC	_	43	cc	43:cc	_	_	False
 41	anche	anche	ADV	B	_	43	advmod	43:advmod	_	|	True
 42	d'	di	ADP	E	_	43	case	43:case	SpaceAfter=No	_	False
-43	ufficio	ufficio	NOUN	S	Gender=Masc|Number=Sing	33	conj	33:conj:o|46:obl:di	SpaceAfter=No	Case=Disj;Gen|Gender=Masc|Number=Sing	True
+43	ufficio	ufficio	NOUN	S	Gender=Masc|Number=Sing	33	conj	33:conj:o|46:obl:di	SpaceAfter=No	Case=Gen;Adt;Disj|Gender=Masc|Number=Sing	True
 44	,	,	PUNCT	FF	_	33	punct	33:punct	_	_	False
 45	può	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	46	aux	46:aux	_	_	False
 46	costituire	costituire	VERB	V	VerbForm=Inf	0	root	0:root	_	Modality=Pot|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	True
@@ -3864,7 +3864,7 @@
 11	a	a	ADP	E	_	14	case	14:case	_	_	False
 12	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	14:det	_	_	False
 13	di	di	ADP	E	_	14	case	14:case	_	_	False
-14	sopra	sopra	ADV	B	_	17	advmod	17:advmod	_	Case=Lat;Gen|Definite=Def|Gender=Masc|Number=Sing	True
+14	sopra	sopra	ADV	B	_	17	advmod	17:advmod	_	Case=Gen;Lat|Definite=Def|Gender=Masc|Number=Sing	True
 15-16	del	_	_	_	_	_	_	_	_	_	False
 15	di	di	ADP	E	_	17	case	17:case	_	_	False
 16	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_	_	False
@@ -4066,7 +4066,7 @@
 13	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_	_	False
 14	a	a	ADP	E	_	16	case	16:case	_	_	False
 15	suo	suo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	16	det:poss	16:det:poss	_	|	True
-16	carico	carico	NOUN	S	Gender=Masc|Number=Sing	11	acl:relcl	11:acl:relcl	SpaceAfter=No	Case=Lat|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+16	carico	carico	NOUN	S	Gender=Masc|Number=Sing	11	acl:relcl	11:acl:relcl	SpaceAfter=No	Case=Lat|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 17	.	.	PUNCT	FS	_	4	punct	4:punct	_	_	False
 
 
@@ -4122,7 +4122,7 @@
 6	o	o	CCONJ	CC	_	9	cc	9:cc	_	_	False
 7	di	di	ADP	E	_	9	case	9:case	_	_	False
 8	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
-9	quota	quota	NOUN	S	Gender=Fem|Number=Sing	5	conj	2:nmod:di|5:conj:o	_	Case=Disj;Gen|Definite=Ind|Gender=Fem|Number=Sing	True
+9	quota	quota	NOUN	S	Gender=Fem|Number=Sing	5	conj	2:nmod:di|5:conj:o	_	Case=Gen;Disj|Definite=Ind|Gender=Fem|Number=Sing	True
 10	di	di	ADP	E	_	11	case	11:case	_	_	False
 11	eredità	eredità	NOUN	S	Gender=Fem	9	nmod	9:nmod:di	_	Case=Gen|Gender=Fem	True
 12	(	(	PUNCT	FB	_	13	punct	13:punct	SpaceAfter=No	_	False
@@ -4137,7 +4137,7 @@
 21	,	,	PUNCT	FF	_	24	punct	24:punct	_	_	False
 22	o	o	CCONJ	CC	_	24	cc	24:cc	_	_	False
 23	in	in	ADP	E	_	24	case	24:case	_	_	False
-24	proporzione	proporzione	NOUN	S	Gender=Fem|Number=Sing	20	conj	18:obl:in|20:conj:o	_	Case=Disj;Ine|Gender=Fem|Number=Sing	True
+24	proporzione	proporzione	NOUN	S	Gender=Fem|Number=Sing	20	conj	18:obl:in|20:conj:o	_	Case=Cau;Disj;Ine|Gender=Fem|Number=Sing	True
 25-26	della	_	_	_	_	_	_	_	_	_	False
 25	di	di	ADP	E	_	27	case	27:case	_	_	False
 26	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	27:det	_	_	False
@@ -4147,7 +4147,7 @@
 30	annualità	annualità	NOUN	S	Gender=Fem	18	obj	18:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	True
 31	e	e	CCONJ	CC	_	33	cc	33:cc	_	_	False
 32	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	33:det	_	_	False
-33	interessi	interesse	NOUN	S	Gender=Masc|Number=Plur	30	conj	18:obj|30:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+33	interessi	interesse	NOUN	S	Gender=Masc|Number=Plur	30	conj	18:obj|30:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 34-35	dei	_	_	_	_	_	_	_	_	_	False
 34	di	di	ADP	E	_	36	case	36:case	_	_	False
 35	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	36	det	36:det	_	_	False
@@ -4156,7 +4156,7 @@
 38-39	dei	_	_	_	_	_	_	_	_	_	False
 38	di	di	ADP	E	_	40	case	40:case	_	_	False
 39	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	40	det	40:det	_	_	False
-40	legati	legato	NOUN	S	Gender=Masc|Number=Plur	36	conj	33:nmod:di|36:conj:o|47:obl:agent:di	_	Case=Disj;Gen|Definite=Def|Gender=Masc|Number=Plur	True
+40	legati	legato	NOUN	S	Gender=Masc|Number=Plur	36	conj	33:nmod:di|36:conj:o|47:obl:agent:di	_	Case=Gen;Disj|Definite=Def|Gender=Masc|Number=Plur	True
 41	da	da	ADP	E	_	42	case	42:case	_	_	False
 42	cui	cui	PRON	PR	PronType=Rel	47	obl:agent	40:ref	_	Case=Agt|PronType=Rel	True
 43	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	44	det	44:det	SpaceAfter=No	_	False
@@ -4392,7 +4392,7 @@
 24	prescrizione	prescrizione	NOUN	S	Gender=Fem|Number=Sing	18	conj	16:obl:per|18:conj:o	_	Case=Cau|Gender=Fem|Number=Sing	True
 25	o	o	CCONJ	CC	_	27	cc	27:cc	_	_	False
 26	per	per	ADP	E	_	27	case	27:case	_	_	False
-27	devoluzione	devoluzione	NOUN	S	Gender=Fem|Number=Sing	18	conj	16:obl:per|18:conj:o	_	Case=Disj;Cau|Gender=Fem|Number=Sing	True
+27	devoluzione	devoluzione	NOUN	S	Gender=Fem|Number=Sing	18	conj	16:obl:per|18:conj:o	_	Case=Cau;Disj|Gender=Fem|Number=Sing	True
 28	(	(	PUNCT	FB	_	29	punct	29:punct	SpaceAfter=No	_	False
 29	958	958	NUM	N	NumType=Card	11	nummod	11:nummod	SpaceAfter=No	NumType=Card	True
 30	,	,	PUNCT	FF	_	31	punct	31:punct	_	_	False
@@ -4413,7 +4413,7 @@
 5	presa	presa	NOUN	S	Gender=Fem|Number=Sing	3	nmod	3:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 6	o	o	CCONJ	CC	_	8	cc	8:cc	_	_	False
 7	di	di	ADP	E	_	8	case	8:case	_	_	False
-8	derivazione	derivazione	NOUN	S	Gender=Fem|Number=Sing	5	conj	3:nmod:di|5:conj:o	_	Case=Disj;Gen|Gender=Fem|Number=Sing	True
+8	derivazione	derivazione	NOUN	S	Gender=Fem|Number=Sing	5	conj	3:nmod:di|5:conj:o	_	Case=Gen;Disj|Gender=Fem|Number=Sing	True
 9	di	di	ADP	E	_	10	case	10:case	_	_	False
 10	acqua	acqua	NOUN	S	Gender=Fem|Number=Sing	8	nmod	8:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Sing	True
 11	.	.	PUNCT	FS	_	3	punct	3:punct	_	_	False
@@ -4468,7 +4468,7 @@
 8	obbligazione	obbligazione	NOUN	S	Gender=Fem|Number=Sing	5	nmod	5:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	True
 9	deve	dovere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux	11:aux	_	_	False
 10	essere	essere	AUX	VA	VerbForm=Inf	11	cop	11:cop	_	_	False
-11	suscettibile	suscettibile	ADJ	A	Number=Sing	0	root	0:root	_	Modality=Nec|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Inf;Fin	True
+11	suscettibile	suscettibile	ADJ	A	Number=Sing	0	root	0:root	_	Modality=Nec|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Inf;Fin|Voice=Act	True
 12	di	di	ADP	E	_	13	case	13:case	_	_	False
 13	valutazione	valutazione	NOUN	S	Gender=Fem|Number=Sing	11	obl	11:obl:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 14	economica	economico	ADJ	A	Gender=Fem|Number=Sing	13	amod	13:amod	_	|	True
@@ -4538,7 +4538,7 @@
 2	creditore	creditore	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_	_	False
 4	in	in	ADP	E	_	5	case	5:case	_	_	False
-5	mora	mora	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Case=Ine|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+5	mora	mora	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Case=Ine|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6	quando	quando	SCONJ	CS	_	14	mark	14:mark	SpaceAfter=No	_	False
 7	,	,	PUNCT	FF	_	14	punct	14:punct	_	_	False
 8	senza	senza	ADP	E	_	10	case	10:case	_	_	False
@@ -4570,7 +4570,7 @@
 29.1	-	-	-	-	-	-	29	nsubj	Case=Nom	True	_
 30	quanto	quanto	PRON	PR	Gender=Masc|Number=Sing|PronType=Rel	29	obj	29:obj	_	Case=Acc|Gender=Masc|Number=Sing|PronType=Rel	True
 31	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_	_	False
-32	necessario	necessario	ADJ	A	Gender=Masc|Number=Sing	30	acl:relcl	30:acl:relcl	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+32	necessario	necessario	ADJ	A	Gender=Masc|Number=Sing	30	acl:relcl	30:acl:relcl	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 33	affinché	affinché	SCONJ	CS	_	37	mark	37:mark	_	_	False
 34	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_	_	False
 35	debitore	debitore	NOUN	S	Gender=Masc|Number=Sing	37	nsubj	37:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -4716,7 +4716,7 @@
 16	usufrutto	usufrutto	NOUN	S	Gender=Masc|Number=Sing	14	nmod	14:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
 17	o	o	CCONJ	CC	_	19	cc	19:cc	_	_	False
 18	di	di	ADP	E	_	19	case	19:case	_	_	False
-19	pegno	pegno	NOUN	S	Gender=Masc|Number=Sing	16	conj	14:nmod:di|16:conj:o	_	Case=Disj;Gen|Gender=Masc|Number=Sing	True
+19	pegno	pegno	NOUN	S	Gender=Masc|Number=Sing	16	conj	14:nmod:di|16:conj:o	_	Case=Gen;Disj|Gender=Masc|Number=Sing	True
 20	su	su	ADP	E	_	21	case	21:case	_	_	False
 21	uno	uno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	19	nmod	19:nmod:su	_	Case=Adt|Gender=Masc|Number=Sing|PronType=Ind	True
 22-23	dei	_	_	_	_	_	_	_	_	_	False
@@ -4731,13 +4731,13 @@
 1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	2:det	_	_	False
 2	difesa	difesa	NOUN	S	Gender=Fem|Number=Sing	4	nsubj	4:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_	_	False
-4	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+4	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 5	inviolabile	inviolabile	ADJ	A	Number=Sing	4	amod	4:amod	_	|	True
 6	in	in	ADP	E	_	8	case	8:case	_	_	False
 7	ogni	ogni	DET	DI	Number=Sing|PronType=Ind	8	det	8:det	_	|	True
 8	stato	stato	NOUN	S	Gender=Masc|Number=Sing	4	obl	4:obl:in	_	Case=Ine|Gender=Masc|Number=Sing	True
 9	e	e	CCONJ	CC	_	10	cc	10:cc	_	_	False
-10	grado	grado	NOUN	S	Gender=Masc|Number=Sing	8	conj	4:obl:in|8:conj:e	_	Case=Conj|Gender=Masc|Number=Sing	True
+10	grado	grado	NOUN	S	Gender=Masc|Number=Sing	8	conj	4:obl:in|8:conj:e	_	Case=Ine;Conj|Gender=Masc|Number=Sing	True
 11-12	del	_	_	_	_	_	_	_	_	_	False
 11	di	di	ADP	E	_	13	case	13:case	_	_	False
 12	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	13:det	_	_	False
@@ -4772,7 +4772,7 @@
 6	economiche	economico	ADJ	A	Gender=Fem|Number=Plur	5	amod	5:amod	_	|	True
 7	e	e	CCONJ	CC	_	9	cc	9:cc	_	_	False
 8	altre	altro	ADJ	A	Gender=Fem|Number=Plur	9	amod	9:amod	_	|	True
-9	provvidenze	provvidenza	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:obl:con|5:conj:e	_	Case=Conj|Gender=Fem|Number=Plur	True
+9	provvidenze	provvidenza	NOUN	S	Gender=Fem|Number=Plur	5	conj	3:obl:con|5:conj:e	_	Case=Com;Conj|Gender=Fem|Number=Plur	True
 10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	11:det	_	_	False
 11	formazione	formazione	NOUN	S	Gender=Fem|Number=Sing	3	obj	3:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 12-13	della	_	_	_	_	_	_	_	_	_	False
@@ -4781,7 +4781,7 @@
 14	famiglia	famiglia	NOUN	S	Gender=Fem|Number=Sing	11	nmod	11:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	True
 15	e	e	CCONJ	CC	_	17	cc	17:cc	_	_	False
 16	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	17	det	17:det	SpaceAfter=No	_	False
-17	adempimento	adempimento	NOUN	S	Gender=Masc|Number=Sing	11	conj	3:obj|11:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Sing	True
+17	adempimento	adempimento	NOUN	S	Gender=Masc|Number=Sing	11	conj	3:obj|11:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Masc|Number=Sing	True
 18-19	dei	_	_	_	_	_	_	_	_	_	False
 18	di	di	ADP	E	_	20	case	20:case	_	_	False
 19	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_	_	False
@@ -4838,7 +4838,7 @@
 13	civile	civile	ADJ	A	Number=Sing	12	amod	12:amod	_	|	True
 14	o	o	CCONJ	CC	_	16	cc	16:cc	_	_	False
 15	per	per	ADP	E	_	16	case	16:case	_	_	False
-16	effetto	effetto	NOUN	S	Gender=Masc|Number=Sing	12	conj	8:obl:per|12:conj:o	_	Case=Disj;Cau|Gender=Masc|Number=Sing	True
+16	effetto	effetto	NOUN	S	Gender=Masc|Number=Sing	12	conj	8:obl:per|12:conj:o	_	Case=Cau;Cnd;Disj|Gender=Masc|Number=Sing	True
 17	di	di	ADP	E	_	18	case	18:case	_	_	False
 18	sentenza	sentenza	NOUN	S	Gender=Fem|Number=Sing	16	nmod	16:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 19	penale	penale	ADJ	A	Number=Sing	18	amod	18:amod	_	|	True
@@ -4847,7 +4847,7 @@
 22-23	nei	_	_	_	_	_	_	_	_	_	False
 22	in	in	ADP	E	_	24	case	24:case	_	_	False
 23	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_	_	False
-24	casi	caso	NOUN	S	Gender=Masc|Number=Plur	12	conj	8:obl:in|12:conj:o	_	Case=Disj;Ine|Definite=Def|Gender=Masc|Number=Plur	True
+24	casi	caso	NOUN	S	Gender=Masc|Number=Plur	12	conj	8:obl:in|12:conj:o	_	Case=Cau;Cnd;Disj;Ine|Definite=Def|Gender=Masc|Number=Plur	True
 25	di	di	ADP	E	_	26	case	26:case	_	_	False
 26	indegnità	indegnità	NOUN	S	Gender=Fem	24	nmod	24:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 27	morale	morale	ADJ	A	Number=Sing	26	amod	26:amod	_	|	True
@@ -4878,7 +4878,7 @@
 14	tributi	tributo	NOUN	S	Gender=Masc|Number=Plur	12	nsubj:pass	12:nsubj:pass	_	Case=Acc|Gender=Masc|Number=Plur	True
 15	e	e	CCONJ	CC	_	17	cc	17:cc	_	_	False
 16	nuove	nuovo	ADJ	A	Gender=Fem|Number=Plur	17	amod	17:amod	_	|	True
-17	spese	spesa	NOUN	S	Gender=Fem|Number=Plur	14	conj	12:nsubj:pass|14:conj:e	SpaceAfter=No	Case=Conj|Gender=Fem|Number=Plur	True
+17	spese	spesa	NOUN	S	Gender=Fem|Number=Plur	14	conj	12:nsubj:pass|14:conj:e	SpaceAfter=No	Case=Acc;Conj|Gender=Fem|Number=Plur	True
 18	.	.	PUNCT	FS	_	12	punct	12:punct	_	_	False
 
 
@@ -4892,7 +4892,7 @@
 6	legislativo	legislativo	ADJ	A	Gender=Masc|Number=Sing	5	amod	5:amod	_	|	True
 7	e	e	CCONJ	CC	_	9	cc	9:cc	_	_	False
 8	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	9:det	_	_	False
-9	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	2	conj	2:conj:e|15:nsubj:pass	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur|PronType=Ind	True
+9	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	2	conj	2:conj:e|15:nsubj:pass	_	Case=Acc;Conj|Definite=Def|Gender=Masc|Number=Plur|PronType=Ind	True
 10	indicati	indicare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	acl	9:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
 11-12	dalla	_	_	_	_	_	_	_	_	_	False
 11	da	da	ADP	E	_	13	case	13:case	_	_	False
@@ -4972,7 +4972,7 @@
 8	ministri	ministro	NOUN	S	Gender=Masc|Number=Plur	5	nmod	5:nmod:di	_	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	True
 9	e	e	CCONJ	CC	_	11	cc	11:cc	_	_	False
 10	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	11:det	_	_	False
-11	ministri	ministro	NOUN	S	Gender=Masc|Number=Plur	2	conj	2:conj:e|19:nsubj	SpaceAfter=No	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+11	ministri	ministro	NOUN	S	Gender=Masc|Number=Plur	2	conj	2:conj:e|19:nsubj	SpaceAfter=No	Case=Nom;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 12	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
 13	prima	prima	ADV	B	_	15	mark	15:mark	_	|	True
 14	di	di	ADP	E	_	13	fixed	13:fixed	_	_	False
@@ -5015,10 +5015,10 @@
 12	competenza	competenza	NOUN	S	Gender=Fem|Number=Sing	10	nmod	10:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Sing	True
 13	,	,	PUNCT	FF	_	15	punct	15:punct	_	_	False
 14	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	15:det	_	_	False
-15	attribuzioni	attribuzione	NOUN	S	Gender=Fem|Number=Plur	10	conj	8:nsubj:pass|10:conj:e	_	Definite=Def|Gender=Fem|Number=Plur	True
+15	attribuzioni	attribuzione	NOUN	S	Gender=Fem|Number=Plur	10	conj	8:nsubj:pass|10:conj:e	_	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	True
 16	e	e	CCONJ	CC	_	18	cc	18:cc	_	_	False
 17	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	18	det	18:det	_	_	False
-18	responsabilità	responsabilità	NOUN	S	Gender=Fem	10	conj	8:nsubj:pass|10:conj:e	_	Case=Conj|Definite=Def|Gender=Fem|Number=Plur	True
+18	responsabilità	responsabilità	NOUN	S	Gender=Fem	10	conj	8:nsubj:pass|10:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Fem|Number=Plur	True
 19	proprie	proprio	ADJ	A	Gender=Fem|Number=Plur	18	amod	18:amod	_	|	True
 20-21	dei	_	_	_	_	_	_	_	_	_	False
 20	di	di	ADP	E	_	22	case	22:case	_	_	False
@@ -5036,7 +5036,7 @@
 5	e	e	CCONJ	CC	_	8	cc	8:cc	_	_	False
 6	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_	_	False
 7	altri	altro	ADJ	A	Gender=Masc|Number=Plur	8	amod	8:amod	_	|	True
-8	organi	organo	NOUN	S	Gender=Masc|Number=Plur	2	conj	2:conj:e|12:nsubj	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+8	organi	organo	NOUN	S	Gender=Masc|Number=Plur	2	conj	2:conj:e|12:nsubj	_	Case=Nom;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 9	di	di	ADP	E	_	10	case	10:case	_	_	False
 10	giustizia	giustizia	NOUN	S	Gender=Fem|Number=Sing	8	nmod	8:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 11	amministrativa	amministrativo	ADJ	A	Gender=Fem|Number=Sing	10	amod	10:amod	_	|	True
@@ -5126,7 +5126,7 @@
 37	di	di	ADP	E	_	40	case	40:case	_	_	False
 38	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	40:det	_	_	False
 39	suo	suo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	40	det:poss	40:det:poss	_	|	True
-40	difensore	difensore	NOUN	S	Gender=Masc|Number=Sing	35	conj	32:nmod:di|35:conj:o	SpaceAfter=No	Case=Disj;Gen|Definite=Def|Gender=Masc|Number=Sing	True
+40	difensore	difensore	NOUN	S	Gender=Masc|Number=Sing	35	conj	32:nmod:di|35:conj:o	SpaceAfter=No	Case=Gen;Disj|Definite=Def|Gender=Masc|Number=Sing	True
 41	.	.	PUNCT	FS	_	9	punct	9:punct	_	_	False
 
 
@@ -5195,10 +5195,10 @@
 6	condizioni	condizione	NOUN	S	Gender=Fem|Number=Plur	4	obj	4:obj	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	True
 7	,	,	PUNCT	FF	_	9	punct	9:punct	_	_	False
 8	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	9:det	_	_	False
-9	forme	forma	NOUN	S	Gender=Fem|Number=Plur	6	conj	4:obj|6:conj:e	SpaceAfter=No	Definite=Def|Gender=Fem|Number=Plur	True
+9	forme	forma	NOUN	S	Gender=Fem|Number=Plur	6	conj	4:obj|6:conj:e	SpaceAfter=No	Case=Acc|Definite=Def|Gender=Fem|Number=Plur	True
 10	,	,	PUNCT	FF	_	12	punct	12:punct	_	_	False
 11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	12	det	12:det	_	_	False
-12	termini	termine	NOUN	S	Gender=Masc|Number=Plur	6	conj	4:obj|6:conj:e	_	Definite=Def|Gender=Masc|Number=Plur	True
+12	termini	termine	NOUN	S	Gender=Masc|Number=Plur	6	conj	4:obj|6:conj:e	_	Case=Acc|Definite=Def|Gender=Masc|Number=Plur	True
 13	di	di	ADP	E	_	14	case	14:case	_	_	False
 14	proponibilità	proponibilità	NOUN	S	Gender=Fem	12	nmod	12:nmod:di	_	Case=Gen|Gender=Fem	True
 15-16	dei	_	_	_	_	_	_	_	_	_	False
@@ -5211,7 +5211,7 @@
 21	,	,	PUNCT	FF	_	24	punct	24:punct	_	_	False
 22	e	e	CCONJ	CC	_	24	cc	24:cc	_	_	False
 23	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	24	det	24:det	_	_	False
-24	garanzie	garanzia	NOUN	S	Gender=Fem|Number=Plur	6	conj	4:obj|6:conj:e	_	Case=Conj|Definite=Def|Gender=Fem|Number=Plur	True
+24	garanzie	garanzia	NOUN	S	Gender=Fem|Number=Plur	6	conj	4:obj|6:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Fem|Number=Plur	True
 25	d'	di	ADP	E	_	26	case	26:case	SpaceAfter=No	_	False
 26	indipendenza	indipendenza	NOUN	S	Gender=Fem|Number=Sing	24	nmod	24:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 27-28	dei	_	_	_	_	_	_	_	_	_	False
@@ -5241,7 +5241,7 @@
 12	costituzione	costituzione	NOUN	S	Gender=Fem|Number=Sing	9	obl	9:obl:per	_	Case=Cau|Definite=Def|Gender=Fem|Number=Sing	True
 13	e	e	CCONJ	CC	_	15	cc	15:cc	_	_	False
 14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_	_	False
-15	funzionamento	funzionamento	NOUN	S	Gender=Masc|Number=Sing	12	conj	9:obl:per|12:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Sing	True
+15	funzionamento	funzionamento	NOUN	S	Gender=Masc|Number=Sing	12	conj	9:obl:per|12:conj:e	_	Case=Cau;Conj|Definite=Def|Gender=Masc|Number=Sing	True
 16-17	della	_	_	_	_	_	_	_	_	_	False
 16	di	di	ADP	E	_	18	case	18:case	_	_	False
 17	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	18:det	_	_	False
@@ -5443,7 +5443,7 @@
 18-19	dagli	_	_	_	_	_	_	_	_	_	False
 18	da	da	ADP	E	_	20	case	20:case	_	_	False
 19	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	20:det	_	_	False
-20	organi	organo	NOUN	S	Gender=Masc|Number=Plur	16	conj	6:obl:agent:da|16:conj:e	_	Case=Conj;Abl|Definite=Def|Gender=Masc|Number=Plur	True
+20	organi	organo	NOUN	S	Gender=Masc|Number=Plur	16	conj	6:obl:agent:da|16:conj:e	_	Case=Agt;Abl;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 21-22	dello	_	_	_	_	_	_	_	_	_	False
 21	di	di	ADP	E	_	23	case	23:case	_	_	False
 22	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	23:det	_	_	False
@@ -5525,9 +5525,9 @@
 27	e	e	CCONJ	CC	_	30	cc	30:cc	_	_	False
 28	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	30	det	30:det	_	_	False
 29	stessi	stesso	ADJ	A	Gender=Masc|Number=Plur	30	amod	30:amod	_	|	True
-30	interventi	intervento	NOUN	S	Gender=Masc|Number=Plur	14	conj	6:obl:con|14:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+30	interventi	intervento	NOUN	S	Gender=Masc|Number=Plur	14	conj	6:obl:con|14:conj:e	_	Case=Com;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 31	e	e	CCONJ	CC	_	32	cc	32:cc	_	_	False
-32	destinatari	destinatario	NOUN	S	Gender=Masc|Number=Plur	14	conj	6:obl:con|14:conj:e	SpaceAfter=No	Case=Conj|Gender=Masc|Number=Plur	True
+32	destinatari	destinatario	NOUN	S	Gender=Masc|Number=Plur	14	conj	6:obl:con|14:conj:e	SpaceAfter=No	Case=Com;Conj|Gender=Masc|Number=Plur	True
 33	.	.	PUNCT	FS	_	6	punct	6:punct	_	_	False
 
 
@@ -5809,12 +5809,12 @@
 21	,	,	PUNCT	FF	_	20	punct	20:punct	_	_	False
 22	tra	tra	ADP	E	_	24	case	24:case	_	_	False
 23	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	24	det	24:det	_	_	False
-24	10	10	NUM	N	NumType=Card	13	conj	9:nmod:tra|13:conj:e	_	Case=Conj;Int|Definite=Def|Gender=Masc|NumType=Card|Number=Plur	True
+24	10	10	NUM	N	NumType=Card	13	conj	9:nmod:tra|13:conj:e	_	Case=Gen;Int;Conj|Definite=Def|Gender=Masc|NumType=Card|Number=Plur	True
 25	e	e	CCONJ	CC	_	29	cc	29:cc	_	_	False
 26	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	29	det	29:det	_	_	False
 27	20	20	NUM	N	NumType=Card	29	nummod	29:nummod	_	NumType=Card	True
 28	mila	mila	NUM	N	NumType=Card	27	flat	27:flat	_	_	False
-29	dollari	dollaro	NOUN	S	Gender=Masc|Number=Plur	24	conj	24:conj:e	SpaceAfter=No	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+29	dollari	dollaro	NOUN	S	Gender=Masc|Number=Plur	24	conj	24:conj:e	SpaceAfter=No	Case=Int;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 30	.	.	PUNCT	FS	_	2	punct	2:punct	_	_	False
 
 
@@ -5907,7 +5907,7 @@
 68	)	)	PUNCT	FB	_	67	punct	67:punct	_	_	False
 69	e	e	CCONJ	CC	_	71	cc	71:cc	_	_	False
 70	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	71	det	71:det	_	_	False
-71	bollettini	bollettino	NOUN	S	Gender=Masc|Number=Plur	63	conj	61:obj|63:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+71	bollettini	bollettino	NOUN	S	Gender=Masc|Number=Plur	63	conj	61:obj|63:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 72	di	di	ADP	E	_	73	case	73:case	_	_	False
 73	rivendicazione	rivendicazione	NOUN	S	Gender=Fem|Number=Sing	71	nmod	71:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 74	di	di	ADP	E	_	78	case	78:case	_	_	False
@@ -5964,7 +5964,7 @@
 7	,	,	PUNCT	FF	_	1	punct	1:punct	_	_	False
 8	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_	_	False
 9	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_	_	False
-10	motto	motto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+10	motto	motto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 11	in	in	ADP	E	_	12	case	12:case	_	_	False
 12	albanese	albanese	NOUN	S	Number=Sing	10	nmod	10:nmod:in	_	Case=Ine|Number=Sing	True
 13-14	dell'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
@@ -5982,10 +5982,10 @@
 24	e	e	CCONJ	CC	_	27	cc	27:cc	_	_	False
 25	anche	anche	ADV	B	_	27	advmod	27:advmod	_	|	True
 26	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	27	det	27:det	SpaceAfter=No	_	False
-27	opinione	opinione	NOUN	S	Gender=Fem|Number=Sing	21	conj	21:conj:e|30:nsubj	_	Case=Conj|Definite=Def|Gender=Fem|Number=Sing	True
+27	opinione	opinione	NOUN	S	Gender=Fem|Number=Sing	21	conj	21:conj:e|30:nsubj	_	Case=Nom;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 28	pubblica	pubblico	ADJ	A	Gender=Fem|Number=Sing	27	amod	27:amod	_	|	True
 29	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	cop	30:cop	_	_	False
-30	concordi	concorde	ADJ	A	Number=Plur	10	conj	10:conj:ma	SpaceAfter=No	Case=Advs|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	True
+30	concordi	concorde	ADJ	A	Number=Plur	10	conj	10:conj:ma	SpaceAfter=No	Case=Advs|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 31	.	.	PUNCT	FS	_	10	punct	10:punct	_	_	False
 
 
@@ -6066,7 +6066,7 @@
 3	calci	calcio	NOUN	S	Gender=Masc|Number=Plur	24	obl	24:obl:dopo	_	Case=Tps|Definite=Def|Gender=Masc|Number=Plur	True
 4	e	e	CCONJ	CC	_	6	cc	6:cc	_	_	False
 5	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	6:det	_	_	False
-6	pugni	pugno	NOUN	S	Gender=Masc|Number=Plur	3	conj	3:conj:e|24:obl:dopo	_	Case=Conj|Definite=Def|Gender=Masc|Number=Plur	True
+6	pugni	pugno	NOUN	S	Gender=Masc|Number=Plur	3	conj	3:conj:e|24:obl:dopo	_	Case=Conj;Tps|Definite=Def|Gender=Masc|Number=Plur	True
 7	di	di	ADP	E	_	8	case	8:case	_	_	False
 8	domenica	domenica	NOUN	S	Gender=Fem|Number=Sing	6	nmod	6:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 9	davanti	davanti	ADV	B	_	12	case	12:case	_	|	True
@@ -6245,7 +6245,7 @@
 6	albanesi	albanese	NOUN	S	Number=Plur	3	nmod	3:nmod:di	_	Case=Gen|Definite=Def|Gender=Masc|Number=Plur	True
 7	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	cop	9:cop	_	_	False
 8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
-9	mia	mio	PRON	PP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	0	root	0:root	SpaceAfter=No	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Poss=Yes|PronType=Prs|Tense=Pres|VerbForm=Fin	True
+9	mia	mio	PRON	PP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	0	root	0:root	SpaceAfter=No	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Poss=Yes|PronType=Prs|Tense=Pres|VerbForm=Fin|Voice=Act	True
 10	'	'	PUNCT	FB	_	9	punct	9:punct	SpaceAfter=No	_	False
 11	.	.	PUNCT	FS	_	9	punct	9:punct	_	_	False
 
@@ -6332,7 +6332,7 @@
 1	A	a	ADP	E	_	3	case	3:case	_	_	False
 2	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	3:det	_	_	False
 3	vox	vox	X	SW	Foreign=Yes	6	obl	6:obl:a	_	Case=Lat|Definite=Def|Foreign=Yes|Gender=Fem|Number=Sing	True
-4	populi	populi	X	SW	Foreign=Yes	3	flat:foreign	3:flat:foreign	_	Foreign=Yes	True
+4	populi	populi	X	SW	Foreign=Yes	3	flat:foreign	3:flat:foreign	_	_	False
 5	Berisha	Berisha	PROPN	SP	_	6	nsubj	6:nsubj	_	Case=Nom	True
 6	risponde	rispondere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 7	adesso	adesso	ADV	B	_	6	advmod	6:advmod	_	|	True
@@ -6453,7 +6453,7 @@
 52	reddito	reddito	NOUN	S	Gender=Masc|Number=Sing	57	nsubj	57:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 53	medio	medio	ADJ	A	Gender=Masc|Number=Sing	52	amod	52:amod	_	|	True
 54	pro	pro	X	SW	Foreign=Yes	52	nmod	52:nmod	_	Foreign=Yes	True
-55	capite	capite	X	SW	Foreign=Yes	54	flat:foreign	54:flat:foreign	_	Foreign=Yes	True
+55	capite	capite	X	SW	Foreign=Yes	54	flat:foreign	54:flat:foreign	_	_	False
 56	non	non	ADV	BN	PronType=Neg	57	advmod	57:advmod	_	_	False
 57	supera	superare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	conj	37:acl:relcl|43:conj:e	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Neg|VerbForm=Fin|Voice=Act	True
 58	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	60	det	60:det	_	_	False
@@ -6481,7 +6481,7 @@
 14-15	dai	_	_	_	_	_	_	_	_	_	False
 14	da	da	ADP	E	_	16	case	16:case	_	_	False
 15	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	16	det	16:det	_	_	False
-16	Comandi	comando	NOUN	S	Gender=Masc|Number=Plur	7	conj	4:obl:agent:da|7:conj:e	_	Case=Conj;Abl|Definite=Def|Gender=Masc|Number=Plur	True
+16	Comandi	comando	NOUN	S	Gender=Masc|Number=Plur	7	conj	4:obl:agent:da|7:conj:e	_	Case=Agt;Abl;Conj|Definite=Def|Gender=Masc|Number=Plur	True
 17	provinciali	provinciale	ADJ	A	Number=Plur	16	amod	16:amod	_	|	True
 18-19	della	_	_	_	_	_	_	_	_	_	False
 18	di	di	ADP	E	_	20	case	20:case	_	_	False
@@ -6492,7 +6492,7 @@
 23	di	di	ADP	E	_	24	case	24:case	_	_	False
 24	Catanzaro	Catanzaro	PROPN	SP	_	20	nmod	20:nmod:di	_	Case=Gen	True
 25	e	e	CCONJ	CC	_	26	cc	26:cc	_	_	False
-26	Reggio	Reggio	PROPN	SP	_	24	conj	20:nmod:di|24:conj:e	_	Case=Conj	True
+26	Reggio	Reggio	PROPN	SP	_	24	conj	20:nmod:di|24:conj:e	_	Case=Gen;Conj	True
 27	Calabria	Calabria	PROPN	SP	_	26	flat:name	26:flat:name	_	_	False
 28	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	aux	30:aux	_	_	False
 29	state	essere	AUX	VA	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	30	aux:pass	30:aux:pass	_	_	False
@@ -6592,7 +6592,7 @@
 3	probabilmente	probabilmente	ADV	B	_	6	advmod	6:advmod	_	|	True
 4	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	SpaceAfter=No	_	False
 5	altra	altro	ADJ	A	Gender=Fem|Number=Sing	6	amod	6:amod	_	|	True
-6	storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Cnd|Number=Sing|Tense=Pres;Past|VerbForm=Part;Fin	True
+6	storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Cnd|Number=Sing|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 7	se	se	SCONJ	CS	_	10	mark	10:mark	_	_	False
 8	Negro	Negro	PROPN	SP	_	10	nsubj	10:nsubj	_	Case=Nom	True
 9	avesse	avere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	10	aux	10:aux	_	_	False
@@ -6659,7 +6659,7 @@
 23	,	,	PUNCT	FF	_	21	punct	21:punct	_	_	False
 24	un'	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	26	det	26:det	SpaceAfter=No	_	False
 25	altra	altro	ADJ	A	Gender=Fem|Number=Sing	26	amod	26:amod	_	|	True
-26	novità	novità	NOUN	S	Gender=Fem	7	conj	5:nsubj|7:conj:e	_	Case=Conj|Definite=Ind|Gender=Fem|Number=Sing	True
+26	novità	novità	NOUN	S	Gender=Fem	7	conj	5:nsubj|7:conj:e	_	Case=Nom;Conj|Definite=Ind|Gender=Fem|Number=Sing	True
 27	creata	creare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	26	acl	26:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
 28	in	in	ADP	E	_	29	case	29:case	_	_	False
 29	occasione	occasione	NOUN	S	Gender=Fem|Number=Sing	27	obl	27:obl:in	_	Case=Ine|Gender=Fem|Number=Sing	True
@@ -6746,7 +6746,7 @@
 5	ieri	ieri	ADV	B	_	3	advmod	3:advmod	_	Case=Gen	True
 6	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_	_	False
 7	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	8	det	8:det	_	_	False
-8	radicali	radicale	NOUN	S	Number=Plur	0	root	0:root|26:nsubj	SpaceAfter=No	Case=Advs|Definite=Def|Gender=Masc|Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	True
+8	radicali	radicale	NOUN	S	Number=Plur	0	root	0:root|26:nsubj	SpaceAfter=No	Case=Advs|Definite=Def|Gender=Masc|Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin|Voice=Act	True
 9	,	,	PUNCT	FF	_	8	punct	8:punct	_	_	False
 10	che	che	PRON	PR	PronType=Rel	26	nsubj	8:ref	_	Case=Nom|PronType=Rel	True
 11	dopo	dopo	ADP	E	_	13	case	13:case	_	_	False
@@ -6951,7 +6951,7 @@
 15	lasciano	lasciare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	12:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 16	indifferente	indifferente	ADJ	A	Number=Sing	15	xcomp	15:xcomp	SpaceAfter=No	Number=Sing	True
 17	,	,	PUNCT	FF	_	18	punct	18:punct	_	_	False
-18	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	12	conj	11:nsubj|12:conj|21:nsubj	_	Gender=Masc|Number=Plur|PronType=Ind	True
+18	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	12	conj	11:nsubj|12:conj|21:nsubj	_	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	True
 19	che	che	PRON	PR	PronType=Rel	21	nsubj	18:ref	_	Case=Nom|PronType=Rel	True
 20	non	non	ADV	BN	PronType=Neg	21	advmod	21:advmod	_	_	False
 21	vedi	vedere	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	18	acl:relcl	18:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Neg|VerbForm=Fin|Voice=Act	True
@@ -6961,7 +6961,7 @@
 25	finiscano	finire	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	ccomp	21:ccomp	SpaceAfter=No	Case=Acc|Mood=Sub|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 25.1	-	-	-	-	-	-	25	nsubj	Case=Nom	True	_
 26	,	,	PUNCT	FF	_	27	punct	27:punct	_	_	False
-27	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	12	conj	11:nsubj|12:conj|32:nsubj	_	Gender=Masc|Number=Plur|PronType=Ind	True
+27	altri	altro	PRON	PI	Gender=Masc|Number=Plur|PronType=Ind	12	conj	11:nsubj|12:conj|32:nsubj	_	Case=Nom|Gender=Masc|Number=Plur|PronType=Ind	True
 28	che	che	PRON	PR	PronType=Rel	32	nsubj	27:ref	_	Case=Nom|PronType=Rel	True
 29	quando	quando	SCONJ	CS	_	30	mark	30:mark	_	_	False
 30.1	-	-	-	-	-	-	30	nsubj	Case=Nom	True	_
@@ -7033,11 +7033,11 @@
 5	caratteristiche	caratteristica	NOUN	S	Gender=Fem|Number=Plur	8	obl	8:obl:come	_	Case=Ess|Gender=Fem|Number=Plur	True
 6	Bianchi	Bianchi	PROPN	SP	_	8	nsubj	8:nsubj|25:nsubj	_	Case=Nom	True
 7	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	8:cop	_	_	False
-8	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_	Case=che|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+8	uomo	uomo	NOUN	S	Gender=Masc|Number=Sing	2	ccomp	2:ccomp	_	Case=che|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 9	di	di	ADP	E	_	10	case	10:case	_	_	False
 10	fascia	fascia	NOUN	S	Gender=Fem|Number=Sing	8	nmod	8:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 11	ben	bene	ADV	B	_	12	advmod	12:advmod	_	|	True
-12	più	più	ADV	B	_	8	advmod	8:advmod	_	_	False
+12	più	più	ADV	B	_	8	advmod	8:advmod	_	|	True
 13	di	di	ADP	E	_	14	case	14:case	_	_	False
 14	Sordo	Sordo	PROPN	SP	_	12	obl	12:obl:di	SpaceAfter=No	Case=Gen	True
 15	,	,	PUNCT	FF	_	25	punct	25:punct	_	_	False
@@ -7051,7 +7051,7 @@
 22	tattico	tattico	ADJ	A	Gender=Masc|Number=Sing	21	amod	21:amod	_	|	True
 23	in	in	ADP	E	_	24	case	24:case	_	_	False
 24	campo	campo	NOUN	S	Gender=Masc|Number=Sing	21	nmod	21:nmod:in	_	Case=Ine|Gender=Masc|Number=Sing	True
-25	rassomiglia	rassomigliare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	2:ccomp|8:conj:cioè	_	Aspect=Imp|Case=TBD-CONJ-cioè|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
+25	rassomiglia	rassomigliare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	2:ccomp|8:conj:cioè	_	Aspect=Imp|Case=TBD-CONJ-cioè;che|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 25.1	-	-	-	-	-	-	25	nsubj	Case=Nom	True	_
 26	maggiormente	maggiormente	ADV	B	_	25	advmod	25:advmod	_	|	True
 27	a	a	ADP	E	_	28	case	28:case	_	_	False
@@ -7075,7 +7075,7 @@
 3	strani	strano	ADJ	A	Gender=Masc|Number=Plur	4	amod	4:amod	_	|	True
 4	corsi	corso	NOUN	S	Gender=Masc|Number=Plur	1	obj	1:obj	_	Case=Acc|Gender=Masc|Number=Plur	True
 5	e	e	CCONJ	CC	_	6	cc	6:cc	_	_	False
-6	ricorsi	ricorso	NOUN	S	Gender=Masc|Number=Plur	4	conj	1:obj|4:conj:e	SpaceAfter=No	Case=Conj|Gender=Masc|Number=Plur	True
+6	ricorsi	ricorso	NOUN	S	Gender=Masc|Number=Plur	4	conj	1:obj|4:conj:e	SpaceAfter=No	Case=Acc;Conj|Gender=Masc|Number=Plur	True
 7	?	?	PUNCT	FS	_	1	punct	1:punct	_	_	False
 
 
@@ -7209,7 +7209,7 @@
 15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	18	det	18:det	SpaceAfter=No	_	False
 16	onesta	onesto	ADJ	A	Gender=Fem|Number=Sing	18	amod	18:amod	_	|	True
 17	chiara	chiaro	ADJ	A	Gender=Fem|Number=Sing	18	amod	18:amod	_	|	True
-18	faccia	faccia	NOUN	S	Gender=Fem|Number=Sing	7	conj	5:obj|7:conj:e	_	Case=Conj|Definite=Def|Gender=Fem|Number=Sing	True
+18	faccia	faccia	NOUN	S	Gender=Fem|Number=Sing	7	conj	5:obj|7:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 19-20	dell'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 19	di	di	ADP	E	_	21	case	21:case	_	_	False
 20	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	21	det	21:det	_	_	False
@@ -7255,7 +7255,7 @@
 19	e	e	CCONJ	CC	_	22	cc	22:cc	_	_	False
 20	ognuno	ognuno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	22	nsubj	22:nsubj|24:nsubj	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	True
 21	poteva	potere	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	aux	22:aux	_	_	False
-22	andare	andare	VERB	V	VerbForm=Inf	8	conj	6:nsubj:pass|8:conj:e	_	Case=Conj|Modality=Pot|Mood=Ind|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
+22	andare	andare	VERB	V	VerbForm=Inf	8	conj	6:nsubj:pass|8:conj:e	_	Case=Acc;Conj|Modality=Pot|Mood=Ind|Polarity=Pos|Tense=Imp|VerbForm=Fin|Voice=Act	True
 23	a	a	ADP	E	_	24	mark	24:mark	_	_	False
 24-25	vederli	_	_	_	_	_	_	_	_	_	False
 24	veder	vedere	VERB	V	VerbForm=Inf	22	xcomp	22:xcomp	_	Case=Pur|Polarity=Pos|VerbForm=Inf|Voice=Act	True
@@ -7412,14 +7412,14 @@
 5	e	e	CCONJ	CC	_	8	cc	8:cc	_	_	False
 6	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	8:det	_	_	False
 7	sette	sette	NUM	N	NumType=Card	8	nummod	8:nummod	_	NumType=Card	True
-8	tavolette	tavoletta	NOUN	S	Gender=Fem|Number=Plur	3	conj	3:conj:e|10:nsubj|15:nsubj	_	Case=Conj|Definite=Def|Gender=Fem|Number=Plur	True
+8	tavolette	tavoletta	NOUN	S	Gender=Fem|Number=Plur	3	conj	3:conj:e|10:nsubj|15:nsubj	_	Case=Nom;Conj|Definite=Def|Gender=Fem|Number=Plur	True
 9	che	che	PRON	PR	PronType=Rel	10	nsubj	8:ref	_	Case=Nom|PronType=Rel	True
 10	costituiscono	costituire	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	acl:relcl	8:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 11	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	12:det	_	_	False
 12	predella	predella	NOUN	S	Gender=Fem|Number=Sing	10	obj	10:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 13	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	15	cop	15:cop	_	_	False
 14	invece	invece	ADV	B	_	15	advmod	15:advmod	_	|	True
-15	opera	opera	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+15	opera	opera	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 16-17	dello	_	_	_	_	_	_	_	_	_	False
 16	di	di	ADP	E	_	19	case	19:case	_	_	False
 17	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	19:det	_	_	False
@@ -7518,7 +7518,7 @@
 75	Filippo	Filippo	PROPN	SP	_	70	obl:agent	70:obl:agent:da	_	Case=Agt	True
 76	Brunelleschi	Brunelleschi	PROPN	SP	_	75	flat:name	75:flat:name	_	_	False
 77	e	e	CCONJ	CC	_	78	cc	78:cc	_	_	False
-78	Leon	Leon	PROPN	SP	_	75	conj	70:obl:agent|75:conj:e	_	Case=Conj	True
+78	Leon	Leon	PROPN	SP	_	75	conj	70:obl:agent|75:conj:e	_	Case=Agt;Conj	True
 79	Battista	Battista	PROPN	SP	_	78	flat:name	78:flat:name	_	_	False
 80	Alberti	Alberti	PROPN	SP	_	78	flat:name	78:flat:name	SpaceAfter=No	_	False
 81	.	.	PUNCT	FS	_	6	punct	6:punct	_	_	False
@@ -7566,7 +7566,7 @@
 34-35	alle	_	_	_	_	_	_	_	_	_	False
 34	a	a	ADP	E	_	33	fixed	33:fixed	_	_	False
 35	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	36	det	36:det	_	_	False
-36	esigenze	esigenza	NOUN	S	Gender=Fem|Number=Plur	3	obl	3:obl:vicino_a	_	Case=Dur|Definite=Def|Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	True
+36	esigenze	esigenza	NOUN	S	Gender=Fem|Number=Plur	3	obl	3:obl:vicino_a	_	Case=Dur|Definite=Def|Gender=Fem|Mood=Ind|Number=Plur|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Pass;Act	True
 37-38	dei	_	_	_	_	_	_	_	_	_	False
 37	di	di	ADP	E	_	39	case	39:case	_	_	False
 38	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	39:det	_	_	False
@@ -7698,7 +7698,7 @@
 17	nuovo	nuovo	ADJ	A	Gender=Masc|Number=Sing	18	amod	18:amod	_	|	True
 18	corso	corso	NOUN	S	Gender=Masc|Number=Sing	15	obj	15:obj	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 19	e	e	CCONJ	CC	_	20	cc	20:cc	_	_	False
-20	chi	chi	PRON	PR	Number=Sing|PronType=Rel	14	conj	11:nmod:fra|14:conj:e	_	Case=Conj|Number=Sing|PronType=Rel	True
+20	chi	chi	PRON	PR	Number=Sing|PronType=Rel	14	conj	11:nmod:fra|14:conj:e	_	Case=Int;Conj|Number=Sing|PronType=Rel	True
 21	li	li	PRON	PC	Clitic=Yes|Gender=Masc|Number=Plur|Person=3|PronType=Prs	22	obj	22:obj|25:nsubj	_	Case=Acc|Clitic=Yes|Gender=Masc|Number=Plur|Person=3|PronType=Prs	True
 22.1	-	-	-	-	-	-	22	nsubj	Case=Nom	True	_
 22	accusa	accusare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	acl:relcl	20:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
@@ -8057,11 +8057,11 @@
 13	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	16	cop	16:cop	_	_	False
 14	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	16:det	_	_	False
 15	Global	global	ADJ	A	_	16	amod	16:amod	_	|	True
-16	Monitoring	monitoring	NOUN	S	Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+16	Monitoring	monitoring	NOUN	S	Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 17	for	for	ADP	E	_	18	case	18:case	_	_	False
 18	Security	security	NOUN	S	Number=Sing	16	nmod	16:nmod	_	Case=TBD-'for'|Number=Sing	True
 19	and	and	CCONJ	CC	_	20	cc	20:cc	_	_	False
-20	Sustenaibility	sustenaibility	NOUN	S	Number=Sing	18	conj	16:nmod|18:conj	_	Case=TBD-CONJ-and|Number=Sing	True
+20	Sustenaibility	sustenaibility	NOUN	S	Number=Sing	18	conj	16:nmod|18:conj	_	Case=TBD-'for';TBD-CONJ-and|Number=Sing	True
 21	(	(	PUNCT	FB	_	22	punct	22:punct	SpaceAfter=No	_	False
 22	GMOSS	GMOSS	PROPN	SP	_	16	appos	16:appos	SpaceAfter=No	|	True
 23	)	)	PUNCT	FB	_	22	punct	22:punct	SpaceAfter=No	_	False
@@ -8159,24 +8159,24 @@
 5	comprende	comprendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	acl:relcl	2:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 6	filatura	filatura	NOUN	S	Gender=Fem|Number=Sing	5	obj	5:obj	SpaceAfter=No	Case=Acc|Gender=Fem|Number=Sing	True
 7	,	,	PUNCT	FF	_	8	punct	8:punct	_	_	False
-8	tessitura	tessitura	NOUN	S	Gender=Fem|Number=Sing	6	conj	5:obj|6:conj:e	_	Gender=Fem|Number=Sing	True
+8	tessitura	tessitura	NOUN	S	Gender=Fem|Number=Sing	6	conj	5:obj|6:conj:e	_	Case=Acc|Gender=Fem|Number=Sing	True
 9	e	e	CCONJ	CC	_	12	cc	12:cc	_	_	False
 10	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	12	det	12:det	_	_	False
 11	altre	altro	ADJ	A	Gender=Fem|Number=Plur	12	amod	12:amod	_	|	True
-12	operazioni	operazione	NOUN	S	Gender=Fem|Number=Plur	6	conj	5:obj|6:conj:e	_	Case=Conj|Definite=Def|Gender=Fem|Number=Plur	True
+12	operazioni	operazione	NOUN	S	Gender=Fem|Number=Plur	6	conj	5:obj|6:conj:e	_	Case=Acc;Conj|Definite=Def|Gender=Fem|Number=Plur	True
 13	collegate	collegato	ADJ	A	Gender=Fem|Number=Plur	12	amod	12:amod	SpaceAfter=No	|	True
 14	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
 15	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux	19:aux	_	_	False
 16	stata	essere	AUX	VA	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	cop	19:cop	_	_	False
 17	per	per	ADP	E	_	18	case	18:case	_	_	False
 18	secoli	secolo	NOUN	S	Gender=Masc|Number=Plur	19	obl	19:obl:per	_	Case=Cau|Gender=Masc|Number=Plur	True
-19	prerogativa	prerogativa	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Part;Fin	True
+19	prerogativa	prerogativa	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 20	europea	europeo	ADJ	A	Gender=Fem|Number=Sing	19	amod	19:amod	SpaceAfter=No	|	True
 21	,	,	PUNCT	FF	_	19	punct	19:punct	_	_	False
 22	con	con	ADP	E	_	23	case	23:case	_	_	False
 23	Inghilterra	Inghilterra	PROPN	SP	_	19	obl	19:obl:con	_	Case=Com	True
 24	e	e	CCONJ	CC	_	25	cc	25:cc	_	_	False
-25	Italia	Italia	PROPN	SP	_	23	conj	19:obl:con|23:conj:e	_	Case=Conj	True
+25	Italia	Italia	PROPN	SP	_	23	conj	19:obl:con|23:conj:e	_	Case=Com;Conj	True
 26	in	in	ADP	E	_	27	case	27:case	_	_	False
 27	testa	testa	NOUN	S	Gender=Fem|Number=Sing	23	nmod	23:nmod:in	SpaceAfter=No	Case=Ine|Gender=Fem|Number=Sing	True
 28	.	.	PUNCT	FS	_	19	punct	19:punct	_	_	False
@@ -8230,17 +8230,17 @@
 14-15	nell'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 14	in	in	ADP	E	_	16	case	16:case	_	_	False
 15	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	16	det	16:det	_	_	False
-16	interesse	interesse	NOUN	S	Gender=Masc|Number=Sing	1	ccomp	1:ccomp	_	Case=Ine;che|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+16	interesse	interesse	NOUN	S	Gender=Masc|Number=Sing	1	ccomp	1:ccomp	_	Case=Ine;che|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 17	sia	sia	CCONJ	CC	_	20	cc	20:cc	_	_	False
 18-19	del	_	_	_	_	_	_	_	_	_	False
 18	di	di	ADP	E	_	20	case	20:case	_	_	False
 19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
-20	danneggiato	danneggiato	NOUN	S	Gender=Masc|Number=Sing	16	nmod	16:nmod:di	_	Case=Gen;TBD-CONJ-sia|Definite=Def|Gender=Masc|Number=Sing	True
+20	danneggiato	danneggiato	NOUN	S	Gender=Masc|Number=Sing	16	nmod	16:nmod:di	_	Case=TBD-CONJ-sia;Gen|Definite=Def|Gender=Masc|Number=Sing	True
 21	sia	sia	CCONJ	CC	_	24	cc	24:cc	_	_	False
 22-23	del	_	_	_	_	_	_	_	_	_	False
 22	di	di	ADP	E	_	24	case	24:case	_	_	False
 23	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	24:det	_	_	False
-24	produttore	produttore	NOUN	S	Gender=Masc|Number=Sing	20	conj	16:nmod:di|20:conj:sia	SpaceAfter=No	Case=Gen;TBD-CONJ-sia|Definite=Def|Gender=Masc|Number=Sing	True
+24	produttore	produttore	NOUN	S	Gender=Masc|Number=Sing	20	conj	16:nmod:di|20:conj:sia	SpaceAfter=No	Case=TBD-CONJ-sia;Gen|Definite=Def|Gender=Masc|Number=Sing	True
 25	;	;	PUNCT	FC	_	1	punct	1:punct	_	_	False
 
 
@@ -8274,7 +8274,7 @@
 
 # sent_id = quest-103
 # text = Chi è Jean-Bertrand Aristide?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	Jean-Bertrand	Jean-bertrand	PROPN	SP	_	1	nsubj	1:nsubj	_	Case=Nom	True
 4	Aristide	Aristide	PROPN	SP	_	3	flat:name	3:flat:name	SpaceAfter=No	_	False
@@ -8359,7 +8359,7 @@
 
 # sent_id = quest-201
 # text = Qual è la sigla per Amnesty International?
-1	Qual	quale	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	quale	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	sigla	sigla	NOUN	S	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
@@ -8419,7 +8419,7 @@
 2	giorno	giorno	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	5:nsubj	_	Case=Nom|Gender=Masc|Number=Sing	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_	_	False
 4	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	5:det	SpaceAfter=No	_	False
-5	anniversario	anniversario	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+5	anniversario	anniversario	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6-7	della	_	_	_	_	_	_	_	_	_	False
 6	di	di	ADP	E	_	8	case	8:case	_	_	False
 7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_	_	False
@@ -8433,7 +8433,7 @@
 
 # sent_id = quest-280
 # text = Chi era il presidente degli Stati Uniti nel 1994?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Imp|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Imp|VerbForm=Fin|Voice=Act	True
 2	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8466,7 +8466,7 @@
 
 # sent_id = quest-338
 # text = Chi è il fondatore del canale di notizie CNN?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	fondatore	fondatore	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8482,7 +8482,7 @@
 
 # sent_id = quest-364
 # text = Qual è il titolo dell'autobiografia di Nelson Mandela?
-1	Qual	quale	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	quale	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	titolo	titolo	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8536,7 +8536,7 @@
 
 # sent_id = quest-376
 # text = Chi è Joao Havelange?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	Joao	Joao	PROPN	SP	_	1	nsubj	1:nsubj	_	Case=Nom	True
 4	Havelange	Havelange	PROPN	SP	_	3	flat:name	3:flat:name	SpaceAfter=No	_	False
@@ -8593,7 +8593,7 @@
 
 # sent_id = quest-493
 # text = Chi è l'architetto del museo Guggenheim di Bilbao?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	4:det	SpaceAfter=No	_	False
 4	architetto	architetto	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8630,7 +8630,7 @@
 6	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	9:aux	_	_	False
 7	stato	essere	AUX	VA	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	cop	9:cop	_	_	False
 8	primo	primo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	9	amod	9:amod	_	NumType=Ord	True
-9	ministro	ministro	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Part;Fin	True
+9	ministro	ministro	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	SpaceAfter=No	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres;Past|VerbForm=Fin;Part|Voice=Act	True
 10	?	?	PUNCT	FS	_	9	punct	9:punct	_	_	False
 
 
@@ -8672,7 +8672,7 @@
 3	squadra	squadra	NOUN	S	Gender=Fem|Number=Sing	6	obl	6:obl:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 4	automobilistica	automobilistico	ADJ	A	Gender=Fem|Number=Sing	3	amod	3:amod	_	|	True
 5	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	6:cop	_	_	False
-6	direttore	direttore	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+6	direttore	direttore	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 7	Flavio	Flavio	PROPN	SP	_	6	nsubj	6:nsubj	_	Case=Nom	True
 8	Briatore	Briatore	PROPN	SP	_	7	flat:name	7:flat:name	SpaceAfter=No	_	False
 9	?	?	PUNCT	FS	_	6	punct	6:punct	_	_	False
@@ -8680,7 +8680,7 @@
 
 # sent_id = quest-632
 # text = Chi era il marito di Vieira da Silva?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Imp|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Imp|VerbForm=Fin|Voice=Act	True
 2	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	marito	marito	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8693,7 +8693,7 @@
 
 # sent_id = quest-636
 # text = Chi è il ministro dell'ambiente svedese?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	ministro	ministro	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8756,7 +8756,7 @@
 
 # sent_id = quest-735
 # text = Chi è il capo del Sinn Fein?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	capo	capo	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8770,7 +8770,7 @@
 
 # sent_id = quest-787
 # text = Chi è il fondatore dell'Ordine del Tempio Solare?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	fondatore	fondatore	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8799,7 +8799,7 @@
 
 # sent_id = quest-854
 # text = Chi è il Ministro degli Esteri italiano?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	Ministro	Ministro	PROPN	SP	_	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -8927,7 +8927,7 @@
 # text = Quanto è lungo il fiume Okavango?
 1	Quanto	quanto	PRON	PQ	Number=Sing|PronType=Int	3	obl	3:obl	_	Number=Sing|PronType=Int	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	lungo	lungo	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	lungo	lungo	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	5:det	_	_	False
 5	fiume	fiume	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 6	Okavango	Okavango	PROPN	SP	_	5	nmod	5:nmod	SpaceAfter=No	|	True
@@ -8952,7 +8952,7 @@
 2	stati	stato	NOUN	S	Gender=Masc|Number=Plur	5	nsubj	5:nsubj	_	Case=Nom|Gender=Masc|Number=Plur	True
 3	erano	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	5	cop	5:cop	_	_	False
 4	ancora	ancora	ADV	B	_	5	advmod	5:advmod	_	|	True
-5	uniti	unire	ADJ	A	Gender=Masc|Number=Plur	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	True
+5	uniti	unire	ADJ	A	Gender=Masc|Number=Plur	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	True
 6	dopo	dopo	ADP	E	_	8	case	8:case	_	_	False
 7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	8:det	_	_	False
 8	secessione	secessione	NOUN	S	Gender=Fem|Number=Sing	5	obl	5:obl:dopo	_	Case=Tps|Definite=Def|Gender=Fem|Number=Sing	True
@@ -8971,7 +8971,7 @@
 # text = Dove venne costruito il primo Mcdonalds?
 1	Dove	dove	ADV	B	_	3	advmod	3:advmod	_	|	True
 2	venne	venire	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	aux	3:aux	_	_	False
-3	costruito	costruire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Imp;Perf|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
+3	costruito	costruire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	0:root	_	Aspect=Perf;Imp|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	True
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	6:det	_	_	False
 5	primo	primo	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	6	amod	6:amod	_	NumType=Ord	True
 6	Mcdonalds	Mcdonalds	PROPN	SP	_	3	nsubj	3:nsubj	SpaceAfter=No	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9018,7 +9018,7 @@
 
 # sent_id = quest-1202
 # text = Qual è l'inno nazionale in Inghilterra?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	4:det	SpaceAfter=No	_	False
 4	inno	inno	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9032,7 +9032,7 @@
 # text = Quanto era alta Judy Garland?
 1	Quanto	quanto	PRON	PQ	Number=Sing|PronType=Int	3	obl	3:obl	_	Number=Sing|PronType=Int	True
 2	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	alta	alto	ADJ	A	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	True
+3	alta	alto	ADJ	A	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	True
 4	Judy	Judy	PROPN	SP	_	3	nsubj	3:nsubj	_	Case=Nom	True
 5	Garland	Garland	PROPN	SP	_	4	flat:name	4:flat:name	SpaceAfter=No	_	False
 6	?	?	PUNCT	FS	_	3	punct	3:punct	_	_	False
@@ -9040,7 +9040,7 @@
 
 # sent_id = quest-1239
 # text = Qual è il paese col più alto numero di abitanti al mondo?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	paese	paese	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9086,7 +9086,7 @@
 
 # sent_id = quest-1286
 # text = Qual è la percentuale della popolazione mancina?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	percentuale	percentuale	NOUN	S	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
@@ -9126,7 +9126,7 @@
 
 # sent_id = quest-1317
 # text = Qual è l'ingrediente attivo nel tilenolo?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	4	det	4:det	SpaceAfter=No	_	False
 4	ingrediente	ingrediente	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9228,7 +9228,7 @@
 # text = Quanto è vecchio l'universo?
 1	Quanto	quanto	PRON	PQ	Number=Sing|PronType=Int	3	obl	3:obl	_	Number=Sing|PronType=Int	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	vecchio	vecchio	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	vecchio	vecchio	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	5:det	SpaceAfter=No	_	False
 5	universo	universo	NOUN	S	Gender=Masc|Number=Sing	3	nsubj	3:nsubj	SpaceAfter=No	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
 6	?	?	PUNCT	FS	_	3	punct	3:punct	_	_	False
@@ -9281,7 +9281,7 @@
 
 # sent_id = quest-1541
 # text = Qual è il soprannome dell'Oklahoma?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	soprannome	soprannome	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9307,7 +9307,7 @@
 
 # sent_id = quest-1597
 # text = Chi è Alberto Tomba?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	Alberto	Alberto	PROPN	SP	_	1	nsubj	1:nsubj	_	Case=Nom	True
 4	Tomba	Tomba	PROPN	SP	_	3	flat:name	3:flat:name	SpaceAfter=No	_	False
@@ -9316,7 +9316,7 @@
 
 # sent_id = quest-1598
 # text = Qual è la popolazione dell'Islanda?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	popolazione	popolazione	NOUN	S	Gender=Fem|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing	True
@@ -9378,7 +9378,7 @@
 
 # sent_id = quest-1673
 # text = Qual è il nome dello stadio dei Cav?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	nome	nome	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9395,7 +9395,7 @@
 
 # sent_id = quest-1687
 # text = Qual è lo stato con la minore popolazione?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	stato	stato	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9453,7 +9453,7 @@
 
 # sent_id = quest-1746
 # text = Qual è il motto del "New York Times"?
-1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Qual	Qual	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	_	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	4:det	_	_	False
 4	motto	motto	NOUN	S	Gender=Masc|Number=Sing	1	nsubj	1:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
@@ -9551,7 +9551,7 @@
 # sent_id = quest-1846
 # text = Che cos'è L'A?
 1	Che	che	DET	DQ	PronType=Int	2	det	2:det	_	_	False
-2	cos'	cosa	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	SpaceAfter=No	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin	True
+2	cos'	cosa	PRON	PQ	Number=Sing|PronType=Int	0	root	0:root	SpaceAfter=No	Mood=Ind|Number=Sing|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	cop	2:cop	_	_	False
 4	L'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	5:det	SpaceAfter=No	_	False
 5	A	A	PROPN	SP	_	2	nsubj	2:nsubj	SpaceAfter=No	Case=Nom|Definite=Def|Number=Sing	True
@@ -9639,7 +9639,7 @@
 
 # sent_id = quest-1991
 # text = Chi è Niels Bohr?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin	True
+1	Chi	chi	PRON	PQ	PronType=Int	0	root	0:root	_	Mood=Ind|PronType=Int|Tense=Pres|VerbForm=Fin|Voice=Act	True
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	1:cop	_	_	False
 3	Niels	Niels	PROPN	SP	_	1	nsubj	1:nsubj	_	Case=Nom	True
 4	Bohr	Bohr	PROPN	SP	_	3	flat:name	3:flat:name	SpaceAfter=No	_	False
@@ -9810,7 +9810,7 @@
 4	di	di	ADP	E	_	5	case	5:case	_	_	False
 5	peculato	peculato	NOUN	S	Gender=Masc|Number=Sing	3	nmod	3:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
 6	e	e	CCONJ	CC	_	7	cc	7:cc	_	_	False
-7	abuso	abuso	NOUN	S	Gender=Masc|Number=Sing	5	conj	3:nmod:di|5:conj:e	_	Case=Conj|Gender=Masc|Number=Sing	True
+7	abuso	abuso	NOUN	S	Gender=Masc|Number=Sing	5	conj	3:nmod:di|5:conj:e	_	Case=Gen;Conj|Gender=Masc|Number=Sing	True
 8	d'	di	ADP	E	_	9	case	9:case	SpaceAfter=No	_	False
 9	ufficio	ufficio	NOUN	S	Gender=Masc|Number=Sing	7	nmod	7:nmod:di	SpaceAfter=No	Case=Gen|Gender=Masc|Number=Sing	True
 10	,	,	PUNCT	FF	_	3	punct	3:punct	_	_	False
@@ -9874,7 +9874,7 @@
 63	di	di	ADP	E	_	64	case	64:case	_	_	False
 64	Pastena	Pastena	PROPN	SP	_	62	nmod	62:nmod:di	_	Case=Gen	True
 65	e	e	CCONJ	CC	_	66	cc	66:cc	_	_	False
-66	Collepardo	Collepardo	PROPN	SP	_	64	conj	62:nmod:di|64:conj:e	SpaceAfter=No	Case=Conj	True
+66	Collepardo	Collepardo	PROPN	SP	_	64	conj	62:nmod:di|64:conj:e	SpaceAfter=No	Case=Gen;Conj	True
 67	,	,	PUNCT	FF	_	55	punct	55:punct	_	_	False
 68	costituito	costituire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	55	acl	55:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
 69	tra	tra	ADP	E	_	72	case	72:case	_	_	False
@@ -9914,13 +9914,13 @@
 9	Palermo	Palermo	PROPN	SP	_	7	nmod	7:nmod:di	SpaceAfter=No	Case=Gen	True
 10	,	,	PUNCT	FF	_	7	punct	7:punct	_	_	False
 11	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	cop	12:cop	_	_	False
-12	frutto	frutto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Case=Advs|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+12	frutto	frutto	NOUN	S	Gender=Masc|Number=Sing	0	root	0:root	_	Case=Advs|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 13	di	di	ADP	E	_	15	case	15:case	_	_	False
 14	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	15:det	_	_	False
 15	reato	reato	NOUN	S	Gender=Masc|Number=Sing	12	nmod	12:nmod:di	SpaceAfter=No	Case=Gen|Definite=Ind|Gender=Masc|Number=Sing	True
 16	,	,	PUNCT	FF	_	18	punct	18:punct	_	_	False
 17	ed	e	CCONJ	CC	_	18	cc	18:cc	_	_	False
-18	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	12:conj:e	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
+18	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	conj	12:conj:e	_	Aspect=Imp|Case=Conj;Advs|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 18.1	-	-	-	-	-	-	18	nsubj	Case=Nom	True	_
 19	per	per	ADP	E	_	20	case	20:case	_	_	False
 20	questo	questo	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	18	obl	18:obl:per	_	Case=Cau|Gender=Masc|Number=Sing|PronType=Dem	True
@@ -10031,7 +10031,7 @@
 22	ma	ma	CCONJ	CC	_	25	cc	25:cc	_	_	False
 23	tutto	tutto	DET	T	Gender=Masc|Number=Sing|PronType=Tot	25	det:predet	25:det:predet	_	|	True
 24	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	25	det	25:det	SpaceAfter=No	_	False
-25	anno	anno	NOUN	S	Gender=Masc|Number=Sing	21	conj	15:obl:a|21:conj:ma	SpaceAfter=No	Case=Advs|Definite=Def|Gender=Masc|Number=Sing	True
+25	anno	anno	NOUN	S	Gender=Masc|Number=Sing	21	conj	15:obl:a|21:conj:ma	SpaceAfter=No	Case=Lat;Advs|Definite=Def|Gender=Masc|Number=Sing	True
 26	.	.	PUNCT	FS	_	3	punct	3:punct	_	_	False
 
 
@@ -10187,7 +10187,7 @@
 10	su	su	ADP	E	_	13	case	13:case	_	_	False
 11	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	13:det	_	_	False
 12	sue	suo	DET	AP	Gender=Fem|Number=Plur|Poss=Yes|PronType=Prs	13	det:poss	13:det:poss	_	|	True
-13	chance	chance	NOUN	S	Gender=Fem	7	conj	4:obl:su|7:conj:o	_	Case=Disj;Adt|Definite=Def|Gender=Fem|Number=Plur	True
+13	chance	chance	NOUN	S	Gender=Fem	7	conj	4:obl:su|7:conj:o	_	Case=Adt;Disj|Definite=Def|Gender=Fem|Number=Plur	True
 14	di	di	ADP	E	_	15	case	15:case	_	_	False
 15	sopravvivenza	sopravvivenza	NOUN	S	Gender=Fem|Number=Sing	13	nmod	13:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Sing	True
 16	.	.	PUNCT	FS	_	4	punct	4:punct	_	_	False
@@ -10229,7 +10229,7 @@
 29	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	30:det	_	_	False
 30	forestale	forestale	NOUN	S	Gender=Fem|Number=Sing	27	nmod	27:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	True
 31	e	e	CCONJ	CC	_	32	cc	32:cc	_	_	False
-32	uno	uno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	27	conj	24:nsubj:pass|27:conj:e	_	Case=Conj|Gender=Masc|Number=Sing|PronType=Ind	True
+32	uno	uno	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	27	conj	24:nsubj:pass|27:conj:e	_	Case=Acc;Conj|Gender=Masc|Number=Sing|PronType=Ind	True
 33-34	della	_	_	_	_	_	_	_	_	_	False
 33	di	di	ADP	E	_	35	case	35:case	_	_	False
 34	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	35:det	_	_	False
@@ -10352,7 +10352,7 @@
 18-19	del	_	_	_	_	_	_	_	_	_	False
 18	di	di	ADP	E	_	20	case	20:case	_	_	False
 19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
-20	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	16	conj	12:nmod:di|16:conj:o	_	Case=Disj;Gen|Definite=Def|Gender=Masc|Number=Sing	True
+20	diritto	diritto	NOUN	S	Gender=Masc|Number=Sing	16	conj	12:nmod:di|16:conj:o	_	Case=Gen;Disj|Definite=Def|Gender=Masc|Number=Sing	True
 21	d'	di	ADP	E	_	22	case	22:case	SpaceAfter=No	_	False
 22	autore	autore	NOUN	S	Gender=Masc|Number=Sing	20	nmod	20:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
 23	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	aux:pass	24:aux:pass	_	_	False
@@ -10414,7 +10414,7 @@
 28	alcuna	alcuno	DET	DI	Gender=Fem|Number=Sing|PronType=Ind	29	det	29:det	_	_	False
 29	dichiarazione	dichiarazione	NOUN	S	Gender=Fem|Number=Sing	27	obj	27:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 30	o	o	CCONJ	CC	_	31	cc	31:cc	_	_	False
-31	garanzia	garanzia	NOUN	S	Gender=Fem|Number=Sing	29	conj	27:obj|29:conj:o	_	Case=Disj|Gender=Fem|Number=Sing	True
+31	garanzia	garanzia	NOUN	S	Gender=Fem|Number=Sing	29	conj	27:obj|29:conj:o	_	Case=Acc;Disj|Gender=Fem|Number=Sing	True
 32	di	di	ADP	E	_	34	case	34:case	_	_	False
 33	qualsiasi	qualsiasi	DET	DI	PronType=Ind	34	det	34:det	_	_	False
 34	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	31	nmod	31:nmod:di	_	Case=Gen|Gender=Masc|Number=Sing	True
@@ -10427,7 +10427,7 @@
 40	,	,	PUNCT	FF	_	39	punct	39:punct	_	_	False
 41	sia	essere	AUX	VA	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	43	cop	43:cop	_	_	False
 42	essa	esso	PRON	PE	Gender=Fem|Number=Sing|Person=3|PronType=Prs	43	nsubj	43:nsubj|45:nsubj|48:nsubj|53:nsubj	_	Case=Nom|Gender=Fem|Number=Sing|Person=3|PronType=Prs	True
-43	espressa	espressa	ADJ	A	Gender=Fem|Number=Sing	39	advcl	39:advcl	_	Gender=Fem|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+43	espressa	espressa	ADJ	A	Gender=Fem|Number=Sing	39	advcl	39:advcl	_	Gender=Fem|Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 44	od	o	CCONJ	CC	_	45	cc	45:cc	_	_	False
 45	implicita	implicita	ADJ	A	Gender=Fem|Number=Sing	43	conj	39:advcl|43:conj:o	SpaceAfter=No	Case=Disj|Gender=Fem|Number=Sing	True
 46	,	,	PUNCT	FF	_	48	punct	48:punct	_	_	False
@@ -10437,7 +10437,7 @@
 50	o	o	CCONJ	CC	_	53	cc	53:cc	_	_	False
 51	di	di	ADP	E	_	53	case	53:case	_	_	False
 52	altro	altro	ADJ	A	Gender=Masc|Number=Sing	53	amod	53:amod	_	|	True
-53	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	43	conj	39:advcl:di|43:conj:o	SpaceAfter=No	Case=Disj;Gen|Gender=Masc|Number=Sing	True
+53	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	43	conj	39:advcl:di|43:conj:o	SpaceAfter=No	Case=Gen;Disj|Gender=Masc|Number=Sing	True
 54	,	,	PUNCT	FF	_	27	punct	27:punct	_	_	False
 55	essendo	essere	AUX	VA	VerbForm=Ger	57	aux:pass	57:aux:pass	_	_	False
 56	quindi	quindi	ADV	B	_	57	advmod	57:advmod	_	|	True
@@ -10472,8 +10472,8 @@
 82-83	alla	_	_	_	_	_	_	_	_	_	False
 82	a	a	ADP	E	_	85	case	85:case	_	_	False
 83	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	85	det	85:det	_	_	False
-84	non	non	ADV	BN	PronType=Neg	85	advmod	85:advmod	_	_	False
-85	violazione	violazione	NOUN	S	Gender=Fem|Number=Sing	68	conj	65:obl:a|68:conj:e	_	Case=Lat;Conj|Definite=Def|Gender=Fem|Number=Sing|Polarity=Neg	True
+84	non	non	ADV	BN	PronType=Neg	85	advmod	85:advmod	_	|	True
+85	violazione	violazione	NOUN	S	Gender=Fem|Number=Sing	68	conj	65:obl:a|68:conj:e	_	Case=Lat;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 86	di	di	ADP	E	_	87	case	87:case	_	_	False
 87	diritti	diritto	NOUN	S	Gender=Masc|Number=Plur	84	obl	84:obl:di	_	Case=Gen|Gender=Masc|Number=Plur	True
 88	di	di	ADP	E	_	89	case	89:case	_	_	False
@@ -10489,7 +10489,7 @@
 97	o	o	CCONJ	CC	_	100	cc	100:cc	_	_	False
 98	di	di	ADP	E	_	100	case	100:case	_	_	False
 99	altro	altro	ADJ	A	Gender=Masc|Number=Sing	100	amod	100:amod	_	|	True
-100	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	95	conj	93:nmod:di|95:conj:o	SpaceAfter=No	Case=Disj;Gen|Gender=Masc|Number=Sing	True
+100	tipo	tipo	NOUN	S	Gender=Masc|Number=Sing	95	conj	93:nmod:di|95:conj:o	SpaceAfter=No	Case=Gen;Disj|Gender=Masc|Number=Sing	True
 101	,	,	PUNCT	FF	_	104	punct	104:punct	_	_	False
 102-103	all'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 102	a	a	ADP	E	_	104	case	104:case	_	_	False
@@ -10505,9 +10505,9 @@
 111	,	,	PUNCT	FF	_	110	punct	110:punct	_	_	False
 112	siano	essere	AUX	VA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	114	cop	114:cop	_	_	False
 113	essi	essi	PRON	PE	Number=Plur|Person=3|PronType=Prs	114	nsubj	114:nsubj|116:nsubj	_	Case=Nom|Number=Plur|Person=3|PronType=Prs	True
-114	accertabili	accertabili	ADJ	A	Number=Plur	110	advcl	110:advcl	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	True
+114	accertabili	accertabili	ADJ	A	Number=Plur	110	advcl	110:advcl	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 115	o	o	CCONJ	CC	_	116	cc	116:cc	_	_	False
-116	meno	meno	ADV	B	_	114	conj	110:advcl|114:conj:o	SpaceAfter=No	Case=Disj|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	True
+116	meno	meno	ADV	B	_	114	conj	110:advcl|114:conj:o	SpaceAfter=No	Case=Disj|Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 117	.	.	PUNCT	FS	_	15	punct	15:punct	_	_	False
 
 
@@ -10517,7 +10517,7 @@
 2	Commons	Commons	PROPN	SP	_	1	flat:name	1:flat:name	_	_	False
 3	non	non	ADV	BN	PronType=Neg	5	advmod	5:advmod	_	_	False
 4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_	_	False
-5	parte	parte	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin	True
+5	parte	parte	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6-7	della	_	_	_	_	_	_	_	_	_	False
 6	di	di	ADP	E	_	9	case	9:case	_	_	False
 7	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	9:det	_	_	False
@@ -10608,7 +10608,7 @@
 # text = Come è noto, ciascun presidente dispone di un numero di voti pari al numero dei deputati iscritti al proprio gruppo politico.
 1	Come	come	SCONJ	CS	_	3	mark	3:mark	_	_	False
 2	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
-3	noto	noto	ADJ	A	Gender=Masc|Number=Sing	7	advcl	7:advcl:come	SpaceAfter=No	Case=TBD-'come'|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	noto	noto	ADJ	A	Gender=Masc|Number=Sing	7	advcl	7:advcl:come	SpaceAfter=No	Case=TBD-'come'|Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	,	,	PUNCT	FF	_	3	punct	3:punct	_	_	False
 5	ciascun	ciascuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	6	det	6:det	_	_	False
 6	presidente	presidente	NOUN	S	Gender=Masc|Number=Sing	7	nsubj	7:nsubj	_	Case=Nom|Gender=Masc|Number=Sing	True
@@ -10665,7 +10665,7 @@
 23	-	-	PUNCT	FF	_	10	punct	10:punct	SpaceAfter=No	_	False
 24	,	,	PUNCT	FF	_	10	punct	10:punct	_	_	False
 25	erano	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	26	cop	26:cop	_	_	False
-26	concordi	concorde	ADJ	A	Number=Plur	2	ccomp	2:ccomp	_	Case=che|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	True
+26	concordi	concorde	ADJ	A	Number=Plur	2	ccomp	2:ccomp	_	Case=che|Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	True
 27	e	e	CCONJ	CC	_	35	cc	35:cc	_	_	False
 28	che	che	SCONJ	CS	_	35	mark	35:mark	_	_	False
 29	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	31:det	_	_	False
@@ -10675,7 +10675,7 @@
 33-34	del	_	_	_	_	_	_	_	_	_	False
 33	di	di	ADP	E	_	35	case	35:case	_	_	False
 34	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_	_	False
-35	parere	parere	NOUN	S	Gender=Masc|Number=Sing	26	conj	2:ccomp|26:conj:e	_	Case=Gen;che;Conj|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin	True
+35	parere	parere	NOUN	S	Gender=Masc|Number=Sing	26	conj	2:ccomp|26:conj:e	_	Case=Gen;Conj;che|Definite=Def|Gender=Masc|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin|Voice=Act	True
 36	di	di	ADP	E	_	37	mark	37:mark	_	_	False
 37	procedere	procedere	VERB	V	VerbForm=Inf	35	ccomp	35:ccomp	_	Case=di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 38	come	come	SCONJ	CS	_	39	mark	39:mark	_	_	False
@@ -10719,7 +10719,7 @@
 20	di	di	ADP	E	_	22	case	22:case	_	_	False
 21	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	22	det	22:det	_	_	False
 22	mass	mass	X	SW	Foreign=Yes	19	nmod	19:nmod:di	_	Case=Gen|Definite=Def|Foreign=Yes|Gender=Masc|Number=Plur	True
-23	media	media	X	SW	Foreign=Yes	22	flat:foreign	22:flat:foreign	_	Foreign=Yes	True
+23	media	media	X	SW	Foreign=Yes	22	flat:foreign	22:flat:foreign	_	_	False
 24	con	con	ADP	E	_	26	case	26:case	_	_	False
 25	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	26	det	26:det	SpaceAfter=No	_	False
 26	incidente	incidente	NOUN	S	Gender=Masc|Number=Sing	12	obl	12:obl:con	_	Case=Com|Definite=Def|Gender=Masc|Number=Sing	True
@@ -10735,14 +10735,14 @@
 35	,	,	PUNCT	FF	_	38	punct	38:punct	_	_	False
 36	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	38:det	_	_	False
 37	terribile	terribile	ADJ	A	Number=Sing	38	amod	38:amod	_	|	True
-38	incidente	incidente	NOUN	S	Gender=Masc|Number=Sing	34	conj	12:obl:a|34:conj:e	_	Definite=Def|Gender=Masc|Number=Sing	True
+38	incidente	incidente	NOUN	S	Gender=Masc|Number=Sing	34	conj	12:obl:a|34:conj:e	_	Case=Lat|Definite=Def|Gender=Masc|Number=Sing	True
 39	ferroviario	ferroviario	ADJ	A	Gender=Masc|Number=Sing	38	amod	38:amod	_	|	True
 40	in	in	ADP	E	_	41	case	41:case	_	_	False
 41	Norvegia	Norvegia	PROPN	SP	_	12	obl	12:obl:in	SpaceAfter=No	Case=Ine	True
 42	,	,	PUNCT	FF	_	45	punct	45:punct	_	_	False
 43	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	45:det	_	_	False
 44	due	due	NUM	N	NumType=Card	45	nummod	45:nummod	_	NumType=Card	True
-45	incidenti	incidente	NOUN	S	Gender=Masc|Number=Plur	41	conj	12:obl:in|41:conj|50:obl:in	_	Definite=Def|Gender=Masc|Number=Plur	True
+45	incidenti	incidente	NOUN	S	Gender=Masc|Number=Plur	41	conj	12:obl:in|41:conj|50:obl:in	_	Case=Ine|Definite=Def|Gender=Masc|Number=Plur	True
 46	aerei	aereo	ADJ	A	Gender=Masc|Number=Plur	45	amod	45:amod	_	|	True
 47	in	in	ADP	E	_	48	case	48:case	_	_	False
 48	cui	cui	PRON	PR	PronType=Rel	50	obl	45:ref	_	Case=Ine|PronType=Rel	True
@@ -10758,7 +10758,7 @@
 57	unione	unione	NOUN	S	Gender=Fem|Number=Sing	54	nmod	54:nmod:di	_	Case=Gen|Definite=Def|Gender=Fem|Number=Sing	True
 58	e	e	CCONJ	CC	_	60	cc	60:cc	_	_	False
 59	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	det	60:det	_	_	False
-60	disastro	disastro	NOUN	S	Gender=Masc|Number=Sing	34	conj	12:obl:a|34:conj:e	_	Case=Conj|Definite=Def|Gender=Masc|Number=Sing	True
+60	disastro	disastro	NOUN	S	Gender=Masc|Number=Sing	34	conj	12:obl:a|34:conj:e	_	Case=Lat;Conj|Definite=Def|Gender=Masc|Number=Sing	True
 61	ecologico	ecologico	ADJ	A	Gender=Masc|Number=Sing	60	amod	60:amod	_	|	True
 62	provocato	provocare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	60	acl	60:acl	_	Polarity=Pos|VerbForm=Part|Voice=Act	True
 63-64	dalla	_	_	_	_	_	_	_	_	_	False
@@ -10800,7 +10800,7 @@
 15	limitare	limitare	NOUN	S	Gender=Masc|Number=Sing	5	advcl	5:advcl:per	_	Case=Cau|Gender=Masc|Number=Sing	True
 16	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_	_	False
 17	più	più	ADV	B	_	18	advmod	18:advmod	_	_	False
-18	possibile	possibile	ADJ	A	Number=Sing	15	amod	15:amod	_	Degree=Cmp	True
+18	possibile	possibile	ADJ	A	Number=Sing	15	amod	15:amod	_	Definite=Def|Degree=Sup|Gender=Masc	True
 19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
 20	trasporto	trasporto	NOUN	S	Gender=Masc|Number=Sing	18	obj	18:obj	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
 21	di	di	ADP	E	_	22	case	22:case	_	_	False
@@ -10814,9 +10814,9 @@
 29	siano	essere	AUX	VA	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	32	cop	32:cop	_	_	False
 30	essi	esso	PRON	PE	Gender=Masc|Number=Plur|Person=3|PronType=Prs	32	nsubj	32:nsubj|34:nsubj	_	Case=Nom|Gender=Masc|Number=Plur|Person=3|PronType=Prs	True
 31	di	di	ADP	E	_	32	case	32:case	_	_	False
-32	transito	transito	NOUN	S	Gender=Masc|Number=Sing	27	nmod	27:nmod:di	_	Case=Gen|Gender=Masc|Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	True
+32	transito	transito	NOUN	S	Gender=Masc|Number=Sing	27	nmod	27:nmod:di	_	Case=Gen|Gender=Masc|Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 33	o	o	CCONJ	CC	_	34	cc	34:cc	_	_	False
-34	meno	meno	ADV	B	_	32	conj	27:nmod:di|32:conj:o	SpaceAfter=No	Case=Disj;Gen|Gender=Masc|Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin	True
+34	meno	meno	ADV	B	_	32	conj	27:nmod:di|32:conj:o	SpaceAfter=No	Case=Gen;Disj|Gender=Masc|Mood=Sub|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 35	.	.	PUNCT	FS	_	1	punct	1:punct	_	_	False
 
 
@@ -10858,7 +10858,7 @@
 7	oggi	oggi	ADV	B	_	10	advmod	10:advmod	_	|	True
 8	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	cop	10:cop	_	_	False
 9	in	in	ADP	E	_	10	case	10:case	_	_	False
-10	grado	grado	NOUN	S	Gender=Masc|Number=Sing	2	advcl	2:advcl:in	_	Case=Ine;Cnd|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+10	grado	grado	NOUN	S	Gender=Masc|Number=Sing	2	advcl	2:advcl:in	_	Case=Cnd;Ine|Gender=Masc|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 11	di	di	ADP	E	_	12	mark	12:mark	_	_	False
 12-13	dirci	_	_	_	_	_	_	_	_	_	False
 12	dir	dire	VERB	V	VerbForm=Inf	10	acl	10:acl:di	_	Case=di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
@@ -10889,7 +10889,7 @@
 34	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	35	det	35:det	SpaceAfter=No	_	False
 35	Unione	Unione	PROPN	SP	_	37	nsubj	37:nsubj	_	Case=Nom|Definite=Def|Number=Sing	True
 36	Europea	Europea	PROPN	SP	_	35	flat:name	35:flat:name	_	_	False
-37	ha	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	2:advcl:se|10:conj:e	_	Aspect=Imp|Case=Conj;Cnd|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
+37	ha	avere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	conj	2:advcl:se|10:conj:e	_	Aspect=Imp|Case=Cnd;Conj;Ine|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 38	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	39:det	_	_	False
 39	possibilità	possibilità	NOUN	S	Gender=Fem	37	obj	37:obj	_	Case=Acc|Definite=Def|Gender=Fem|Number=Sing	True
 40	di	di	ADP	E	_	41	mark	41:mark	_	_	False
@@ -10900,7 +10900,7 @@
 45	principi	principio	NOUN	S	Gender=Masc|Number=Plur	44	obj	44:obj	_	Case=Acc|Gender=Masc|Number=Plur	True
 46	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	47:det	_	_	False
 47	più	più	ADV	B	_	48	advmod	48:advmod	_	_	False
-48	possibile	possibile	ADJ	A	Number=Sing	49	amod	49:amod	_	Degree=Cmp|Number=Sing	True
+48	possibile	possibile	ADJ	A	Number=Sing	49	amod	49:amod	_	Definite=Def|Degree=Sup|Gender=Masc|Number=Sing	True
 49	semplici	semplice	ADJ	A	Number=Plur	45	amod	45:amod	SpaceAfter=No	|	True
 50	.	.	PUNCT	FS	_	2	punct	2:punct	_	_	False
 
@@ -10951,7 +10951,7 @@
 19	parlamento	parlamento	NOUN	S	Gender=Masc|Number=Sing	16	obl	16:obl:a	SpaceAfter=No	Case=Lat|Definite=Def|Gender=Masc|Number=Sing	True
 20	,	,	PUNCT	FF	_	16	punct	16:punct	_	_	False
 21	cinque	cinque	NUM	N	NumType=Card	22	nummod	22:nummod	_	NumType=Card	True
-22	anni	anno	NOUN	S	Gender=Masc|Number=Plur	16	advcl	16:advcl	_	Gender=Masc|Mood=Ind|Number=Plur;Sing|Tense=Pres|VerbForm=Fin	True
+22	anni	anno	NOUN	S	Gender=Masc|Number=Plur	16	advcl	16:advcl	_	Gender=Masc|Mood=Ind|Number=Plur;Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 23	fa	fa	ADJ	A	_	22	amod	22:amod	SpaceAfter=No	|	True
 24	,	,	PUNCT	FF	_	22	punct	22:punct	_	_	False
 25	tant	tant	NOUN	S	_	22	nsubj	22:nsubj	_	Case=Nom	True
@@ -11009,7 +11009,7 @@
 13	,	,	PUNCT	FF	_	16	punct	16:punct	_	_	False
 14	e	e	CCONJ	CC	_	16	cc	16:cc	_	_	False
 15	di	di	ADP	E	_	16	mark	16:mark	_	_	False
-16	ritornare	ritornare	VERB	V	VerbForm=Inf	6	conj	4:acl:di|6:conj:e	_	Case=Conj;di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+16	ritornare	ritornare	VERB	V	VerbForm=Inf	6	conj	4:acl:di|6:conj:e	_	Case=di;Conj|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 17-18	nel	_	_	_	_	_	_	_	_	_	False
 17	in	in	ADP	E	_	20	case	20:case	_	_	False
 18	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
@@ -11022,7 +11022,7 @@
 # text = Uomini e donne in età adatta hanno il diritto di sposarsi e di fondare una famiglia, senza alcuna limitazione di razza, cittadinanza o religione.
 1	Uomini	uomo	NOUN	S	Gender=Masc|Number=Plur	7	nsubj	7:nsubj	_	Case=Nom|Gender=Masc|Number=Plur	True
 2	e	e	CCONJ	CC	_	3	cc	3:cc	_	_	False
-3	donne	donna	NOUN	S	Gender=Fem|Number=Plur	1	conj	1:conj:e|7:nsubj	_	Case=Conj|Gender=Fem|Number=Plur	True
+3	donne	donna	NOUN	S	Gender=Fem|Number=Plur	1	conj	1:conj:e|7:nsubj	_	Case=Nom;Conj|Gender=Fem|Number=Plur	True
 4	in	in	ADP	E	_	5	case	5:case	_	_	False
 5	età	età	NOUN	S	Gender=Fem	3	nmod	3:nmod:in	_	Case=Ine|Gender=Fem|Number=Sing	True
 6	adatta	adatto	ADJ	A	Gender=Fem|Number=Sing	5	amod	5:amod	_	|	True
@@ -11035,7 +11035,7 @@
 12	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	11	expl	11:expl	_	Clitic=Yes|Person=3|PronType=Prs	True
 13	e	e	CCONJ	CC	_	15	cc	15:cc	_	_	False
 14	di	di	ADP	E	_	15	mark	15:mark	_	_	False
-15	fondare	fondare	VERB	V	VerbForm=Inf	11	conj	9:acl:di|11:conj:e	_	Case=Conj;di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+15	fondare	fondare	VERB	V	VerbForm=Inf	11	conj	9:acl:di|11:conj:e	_	Case=di;Conj|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 16	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	17:det	_	_	False
 17	famiglia	famiglia	NOUN	S	Gender=Fem|Number=Sing	15	obj	15:obj	SpaceAfter=No	Case=Acc|Definite=Ind|Gender=Fem|Number=Sing	True
 18	,	,	PUNCT	FF	_	15	punct	15:punct	_	_	False
@@ -11045,9 +11045,9 @@
 22	di	di	ADP	E	_	23	case	23:case	_	_	False
 23	razza	razza	NOUN	S	Gender=Fem|Number=Sing	21	nmod	21:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Sing	True
 24	,	,	PUNCT	FF	_	25	punct	25:punct	_	_	False
-25	cittadinanza	cittadinanza	NOUN	S	Gender=Fem|Number=Sing	23	conj	21:nmod:di|23:conj:o	_	Gender=Fem|Number=Sing	True
+25	cittadinanza	cittadinanza	NOUN	S	Gender=Fem|Number=Sing	23	conj	21:nmod:di|23:conj:o	_	Case=Gen|Gender=Fem|Number=Sing	True
 26	o	o	CCONJ	CC	_	27	cc	27:cc	_	_	False
-27	religione	religione	NOUN	S	Gender=Fem|Number=Sing	23	conj	21:nmod:di|23:conj:o	SpaceAfter=No	Case=Disj|Gender=Fem|Number=Sing	True
+27	religione	religione	NOUN	S	Gender=Fem|Number=Sing	23	conj	21:nmod:di|23:conj:o	SpaceAfter=No	Case=Gen;Disj|Gender=Fem|Number=Sing	True
 28	.	.	PUNCT	FS	_	7	punct	7:punct	_	_	False
 
 
@@ -11166,7 +11166,7 @@
 1	"	"	PUNCT	FB	_	4	punct	4:punct	SpaceAfter=No	_	False
 2	Era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	4:cop	_	_	False
 3	sicuramente	sicuramente	ADV	B	_	4	advmod	4:advmod	_	|	True
-4	consapevole	consapevole	ADJ	A	Number=Sing	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	True
+4	consapevole	consapevole	ADJ	A	Number=Sing	0	root	0:root	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin|Voice=Act	True
 5	in	in	ADP	E	_	6	case	6:case	_	_	False
 6	modo	modo	NOUN	S	Gender=Masc|Number=Sing	4	obl	4:obl:in	_	Case=Ine|Gender=Masc|Number=Sing	True
 7	distaccato	distaccato	ADJ	A	Gender=Masc|Number=Sing	6	amod	6:amod	_	|	True
@@ -11199,7 +11199,7 @@
 33	che	che	SCONJ	CS	_	36	mark	36:mark	_	_	False
 34	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_	_	False
 35	capitale	capitale	NOUN	S	Gender=Masc|Number=Sing	36	nsubj	36:nsubj	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	True
-36	proveniva	provenire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	conj	4:advcl:che|11:conj:e	_	Aspect=Imp|Case=che;Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
+36	proveniva	provenire	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	conj	4:advcl:che|11:conj:e	_	Aspect=Imp|Case=Conj;che|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 37-38	dalla	_	_	_	_	_	_	_	_	_	False
 37	da	da	ADP	E	_	40	case	40:case	_	_	False
 38	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	40:det	_	_	False
@@ -11241,10 +11241,10 @@
 4	"	"	PUNCT	FB	_	7	punct	7:punct	SpaceAfter=No	_	False
 5	talvolta	talvolta	ADV	B	_	7	advmod	7:advmod	_	|	True
 6	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	7:det	_	_	False
-7	eremita	eremita	NOUN	S	Number=Sing	15	advcl	15:advcl:nonostante	_	Case=Ccs|Definite=Ind|Gender=Masc|Mood=Sub|Number=Sing|Tense=Imp|VerbForm=Fin	True
+7	eremita	eremita	NOUN	S	Number=Sing	15	advcl	15:advcl:nonostante	_	Case=Ccs|Definite=Ind|Gender=Masc|Mood=Sub|Number=Sing|Tense=Imp|VerbForm=Fin|Voice=Act	True
 8	e	e	CCONJ	CC	_	10	cc	10:cc	_	_	False
 9	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	10:det	_	_	False
-10	girovago	girovago	NOUN	S	Gender=Masc|Number=Sing	7	conj	7:conj:e|15:advcl:nonostante	SpaceAfter=No	Case=Conj|Definite=Ind|Gender=Masc|Number=Sing	True
+10	girovago	girovago	NOUN	S	Gender=Masc|Number=Sing	7	conj	7:conj:e|15:advcl:nonostante	SpaceAfter=No	Case=Ccs;Conj|Definite=Ind|Gender=Masc|Number=Sing	True
 11	"	"	PUNCT	FB	_	7	punct	7:punct	SpaceAfter=No	_	False
 12	,	,	PUNCT	FF	_	7	punct	7:punct	_	_	False
 13	ha	avere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux	15:aux	_	_	False
@@ -11291,14 +11291,14 @@
 19	"	"	PUNCT	FB	_	22	punct	22:punct	SpaceAfter=No	_	False
 20	in	in	ADP	E	_	22	case	22:case	_	_	False
 21	uno	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	22:det	_	_	False
-22	stato	stato	NOUN	S	Gender=Masc|Number=Sing	12	obl	12:obl:in	_	Case=Ine;che|Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin	True
+22	stato	stato	NOUN	S	Gender=Masc|Number=Sing	12	obl	12:obl:in	_	Case=Ine;che|Definite=Ind|Gender=Masc|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin|Voice=Act	True
 23	di	di	ADP	E	_	25	case	25:case	_	_	False
 24	estrema	estremo	ADJ	A	Gender=Fem|Number=Sing	25	amod	25:amod	_	|	True
 25	debolezza	debolezza	NOUN	S	Gender=Fem|Number=Sing	22	nmod	22:nmod:di	SpaceAfter=No	Case=Gen|Gender=Fem|Number=Sing	True
 26	"	"	PUNCT	FB	_	22	punct	22:punct	_	_	False
 27	e	e	CCONJ	CC	_	29	cc	29:cc	_	_	False
 28	"	"	PUNCT	FB	_	29	punct	29:punct	SpaceAfter=No	_	False
-29	sudava	sudare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	conj	12:obl:in|22:conj:e	_	Aspect=Imp|Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
+29	sudava	sudare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	22	conj	12:obl:in|22:conj:e	_	Aspect=Imp|Case=Ine;Conj;che|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 29.1	-	-	-	-	-	-	29	nsubj	Case=Nom	True	_
 30	copiosamente	copiosamente	ADV	B	_	29	advmod	29:advmod	SpaceAfter=No	|	True
 31	"	"	PUNCT	FB	_	29	punct	29:punct	SpaceAfter=No	_	False
@@ -11312,7 +11312,7 @@
 3	era	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	6	cop	6:cop	_	_	False
 4	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	6:det	_	_	False
 5	sola	solo	ADJ	A	Gender=Fem|Number=Sing	6	amod	6:amod	_	|	True
-6	persona	persona	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin	True
+6	persona	persona	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Def|Gender=Fem|Mood=Ind|Number=Sing|Tense=Imp|VerbForm=Fin|Voice=Act	True
 7	presente	presente	ADJ	A	Number=Sing	6	amod	6:amod	_	|	True
 8	quando	quando	SCONJ	CS	_	10	mark	10:mark	_	_	False
 9	egli	egli	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	10	nsubj	10:nsubj	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	True
@@ -11379,7 +11379,7 @@
 14	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	17:cop	_	_	False
 15	semi	semi	ADJ	A	_	17	amod	17:amod	SpaceAfter=No	|	True
 16	-	-	PUNCT	FF	_	17	punct	17:punct	SpaceAfter=No	_	False
-17	sommerso	sommerso	ADJ	A	Gender=Masc|Number=Sing	11	ccomp	11:ccomp	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+17	sommerso	sommerso	ADJ	A	Gender=Masc|Number=Sing	11	ccomp	11:ccomp	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 18-19	dallo	_	_	_	_	_	_	_	_	_	False
 18	da	da	ADP	E	_	20	case	20:case	_	_	False
 19	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
@@ -11402,7 +11402,7 @@
 11	Walter	Walter	PROPN	SP	_	9	nmod	9:nmod:come	_	Case=Ess	True
 12	Benjamin	Benjamin	PROPN	SP	_	11	flat:name	11:flat:name	_	_	False
 13	e	e	CCONJ	CC	_	14	cc	14:cc	_	_	False
-14	Camille	Camille	PROPN	SP	_	11	conj	9:nmod:come|11:conj:e	_	Case=Conj	True
+14	Camille	Camille	PROPN	SP	_	11	conj	9:nmod:come|11:conj:e	_	Case=Ess;Conj	True
 15	Paglia	Paglia	PROPN	SP	_	14	flat:name	14:flat:name	SpaceAfter=No	_	False
 16	.	.	PUNCT	FS	_	3	punct	3:punct	_	_	False
 
@@ -11455,33 +11455,6 @@
 40	.	.	PUNCT	FS	_	13	punct	13:punct	_	_	False
 
 
-# sent_id = 7_WIKIShake-141
-# text = Shakespeare collaborò ad altre due opere ancora oggi conosciute, Enrico VIII e i due nobili congiunti, probabilmente con John Fletcher.
-1	Shakespeare	Shakespeare	PROPN	SP	_	2	nsubj	2:nsubj	_	Case=Nom	True
-2	collaborò	collaborare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_	Aspect=Perf|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
-3	ad	a	ADP	E	_	6	case	6:case	_	_	False
-4	altre	altro	ADJ	A	Gender=Fem|Number=Plur	6	amod	6:amod	_	|	True
-5	due	due	NUM	N	NumType=Card	6	nummod	6:nummod	_	NumType=Card	True
-6	opere	opera	NOUN	S	Gender=Fem|Number=Plur	2	obl	2:obl:a	_	Case=Lat|Gender=Fem|Number=Plur	True
-7	ancora	ancora	ADV	B	_	8	advmod	8:advmod	_	|	True
-8	oggi	oggi	ADV	B	_	9	advmod	9:advmod	_	|	True
-9	conosciute	conosciuto	ADJ	A	Gender=Fem|Number=Plur	6	amod	6:amod	SpaceAfter=No	|	True
-10	,	,	PUNCT	FF	_	6	punct	6:punct	_	_	False
-11	Enrico	Enrico	PROPN	SP	_	6	nmod	6:nmod	_	Number=Sing	True
-12	VIII	ottavo	ADJ	NO	Number=Sing|NumType=Ord	11	amod	11:amod	_	NumType=Ord	True
-13	e	e	CCONJ	CC	_	17	cc	17:cc	_	_	False
-14	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	dep	17:dep	_	_	False
-15	due	due	NUM	N	NumType=Card	17	nummod	17:nummod	_	NumType=Card	True
-16	nobili	nobile	ADJ	A	Gender=Masc|Number=Plur	17	amod	17:amod	_	|	True
-17	congiunti	congiunto	NOUN	S	Number=Plur	11	conj	11:conj:e	SpaceAfter=No	Case=Conj|Gender=Masc|Number=Plur	True
-18	,	,	PUNCT	FF	_	2	punct	2:punct	_	_	False
-19	probabilmente	probabilmente	ADV	B	_	21	advmod	21:advmod	_	|	True
-20	con	con	ADP	E	_	21	case	21:case	_	_	False
-21	John	John	PROPN	SP	_	2	obl	2:obl:con	_	Case=Com	True
-22	Fletcher	Fletcher	PROPN	SP	_	21	flat:name	21:flat:name	SpaceAfter=No	_	False
-23	.	.	PUNCT	FS	_	2	punct	2:punct	_	_	False
-
-
 # sent_id = 8_WIT3-7
 # text = mamma infelice, tutti infelici.
 1	mamma	mamma	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Gender=Fem|Number=Sing	True
@@ -11504,7 +11477,7 @@
 8	avanzate	avanzato	ADJ	A	Gender=Fem|Number=Plur	6	amod	6:amod	_	|	True
 9	e	e	CCONJ	CC	_	11	cc	11:cc	_	_	False
 10	nuove	nuovo	ADJ	A	Gender=Fem|Number=Plur	11	amod	11:amod	_	|	True
-11	tecniche	tecnica	NOUN	S	Gender=Fem|Number=Plur	6	conj	3:obj|6:conj:e|14:nsubj	_	Case=Conj|Gender=Fem|Number=Plur	True
+11	tecniche	tecnica	NOUN	S	Gender=Fem|Number=Plur	6	conj	3:obj|6:conj:e|14:nsubj	_	Case=Acc;Conj|Gender=Fem|Number=Plur	True
 12	gestionali	gestionale	ADJ	A	Number=Plur	11	amod	11:amod	_	|	True
 13	che	che	PRON	PR	PronType=Rel	14	nsubj	11:ref	_	Case=Nom|PronType=Rel	True
 14	incoraggiano	incoraggiare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	acl:relcl	11:acl:relcl	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
@@ -11555,7 +11528,7 @@
 20	o	o	CCONJ	CC	_	22	cc	22:cc	_	_	False
 21	a	a	ADP	E	_	22	mark	22:mark	_	_	False
 22-23	somministrarli	_	_	_	_	_	_	_	SpaceAfter=No	_	False
-22	somministrar	somministrare	VERB	V	VerbForm=Inf	18	conj	15:ccomp|18:conj:o	_	Case=Disj;Pur|Polarity=Pos|VerbForm=Inf|Voice=Act	True
+22	somministrar	somministrare	VERB	V	VerbForm=Inf	18	conj	15:ccomp|18:conj:o	_	Case=Pur;Disj|Polarity=Pos|VerbForm=Inf|Voice=Act	True
 23	li	li	PRON	PC	Clitic=Yes|Gender=Masc|Number=Plur|Person=3|PronType=Prs	22	obj	22:obj	_	Case=Acc|Clitic=Yes|Gender=Masc|Number=Plur|Person=3|PronType=Prs	True
 24	.	.	PUNCT	FS	_	9	punct	9:punct	_	_	False
 
@@ -11602,7 +11575,7 @@
 11	senza	senza	ADP	E	_	12	case	12:case	_	_	False
 12	prodotti	prodotto	NOUN	S	Gender=Masc|Number=Plur	9	obl	9:obl:senza	_	Case=Abe|Gender=Masc|Number=Plur	True
 13	né	né	CCONJ	CC	_	14	cc	14:cc	_	_	False
-14	capitali	capitale	NOUN	S	Gender=Fem|Number=Plur	12	conj	9:obl:senza|12:conj:né	_	Case=Nnor|Gender=Fem|Number=Plur	True
+14	capitali	capitale	NOUN	S	Gender=Fem|Number=Plur	12	conj	9:obl:senza|12:conj:né	_	Case=Nnor;Abe|Gender=Fem|Number=Plur	True
 15	cinesi	cinese	ADJ	A	Number=Plur	14	amod	14:amod	SpaceAfter=No	|	True
 16	,	,	PUNCT	FF	_	1	punct	1:punct	_	_	False
 17	l'	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	18	det	18:det	SpaceAfter=No	_	False
@@ -11641,7 +11614,7 @@
 # text = È alquanto esplicativo che la maggior parte dei 47 partecipanti al simposio - influenti figure del settore pubblico e privato di tutto il mondo - non erano a conoscenza del grado in cui l'alimentazione di una madre influenza il benessere della sua prole.
 1	È	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	cop	3:cop	_	_	False
 2	alquanto	alquanto	ADV	B	_	3	advmod	3:advmod	_	|	True
-3	esplicativo	esplicativo	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	True
+3	esplicativo	esplicativo	ADJ	A	Gender=Masc|Number=Sing	0	root	0:root	_	Gender=Masc|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 4	che	che	SCONJ	CS	_	32	mark	32:mark	_	_	False
 5	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_	_	False
 6	maggior	maggiore	ADJ	A	Degree=Cmp|Number=Sing	7	amod	7:amod	_	Degree=Cmp	True
@@ -11673,7 +11646,7 @@
 29	non	non	ADV	BN	PronType=Neg	32	advmod	32:advmod	_	_	False
 30	erano	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	32	cop	32:cop	_	_	False
 31	a	a	ADP	E	_	32	case	32:case	_	_	False
-32	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_	Case=Lat;che|Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Imp|VerbForm=Fin	True
+32	conoscenza	conoscenza	NOUN	S	Gender=Fem|Number=Sing	3	ccomp	3:ccomp	_	Case=Lat;che|Gender=Fem|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Imp|VerbForm=Fin|Voice=Act	True
 33-34	del	_	_	_	_	_	_	_	_	_	False
 33	di	di	ADP	E	_	35	case	35:case	_	_	False
 34	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	35:det	_	_	False
@@ -11702,7 +11675,7 @@
 2	sua	suo	PRON	PP	Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	5	nsubj	5:nsubj	_	Case=Nom|Definite=Def|Gender=Fem|Number=Sing|Poss=Yes|PronType=Prs	True
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	5:cop	_	_	False
 4	una	uno	DET	RI	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	5:det	_	_	False
-5	storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+5	storia	storia	NOUN	S	Gender=Fem|Number=Sing	0	root	0:root	_	Definite=Ind|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 6	di	di	ADP	E	_	7	case	7:case	_	_	False
 7	successo	successo	NOUN	S	Gender=Masc|Number=Sing	5	nmod	5:nmod:di|16:nsubj:pass	_	Case=Gen|Gender=Masc|Number=Sing	True
 8	che	che	PRON	PR	PronType=Rel	16	nsubj:pass	7:ref	_	Case=Acc|PronType=Rel	True
@@ -11770,7 +11743,7 @@
 8	non	non	ADV	BN	PronType=Neg	11	advmod	11:advmod	_	_	False
 9	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_	_	False
 10	in	in	ADP	E	_	11	case	11:case	_	_	False
-11	grado	grado	NOUN	S	Gender=Masc|Number=Sing	3	conj	3:conj:ma	_	Case=Ine;Advs|Gender=Masc|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin	True
+11	grado	grado	NOUN	S	Gender=Masc|Number=Sing	3	conj	3:conj:ma	_	Case=Ine;Advs|Gender=Masc|Mood=Ind|Number=Sing|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	True
 12	di	di	ADP	E	_	13	mark	13:mark	_	_	False
 13-14	esercitarlo	_	_	_	_	_	_	_	SpaceAfter=No	_	False
 13	esercitar	esercitare	VERB	V	VerbForm=Inf	11	acl	11:acl:di	_	Case=di|Polarity=Pos|VerbForm=Inf|Voice=Act	True
@@ -11786,7 +11759,7 @@
 4	Bulgaria	Bulgaria	PROPN	SP	_	2	nmod	2:nmod:di	_	Case=Gen	True
 5	e	e	CCONJ	CC	_	7	cc	7:cc	_	_	False
 6	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	7:det	_	_	False
-7	Romania	Romania	PROPN	SP	_	2	conj	2:conj:e|8:nsubj	_	Case=Conj|Definite=Def|Gender=Fem|Number=Sing	True
+7	Romania	Romania	PROPN	SP	_	2	conj	2:conj:e|8:nsubj	_	Case=Nom;Conj|Definite=Def|Gender=Fem|Number=Sing	True
 8	diventano	diventare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	_	Aspect=Imp|Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 9	membri	membro	NOUN	S	Gender=Masc|Number=Plur	8	xcomp	8:xcomp	_	Gender=Masc|Number=Plur	True
 10-11	dell'	_	_	_	_	_	_	_	SpaceAfter=No	_	False
@@ -12172,7 +12145,7 @@
 19	di	di	ADP	E	_	20	case	20:case	_	_	False
 20	tesoreria	tesoreria	NOUN	S	Gender=Fem|Number=Sing	18	nmod	18:nmod:di	_	Case=Gen|Gender=Fem|Number=Sing	True
 21	e	e	CCONJ	CC	_	22	cc	22:cc	_	_	False
-22	strumento	strumento	NOUN	S	Gender=Masc|Number=Sing	14	conj	11:nmod:di|14:conj:e	_	Case=Conj|Gender=Masc|Number=Sing	True
+22	strumento	strumento	NOUN	S	Gender=Masc|Number=Sing	14	conj	11:nmod:di|14:conj:e	_	Case=Gen;Conj|Gender=Masc|Number=Sing	True
 23	Schengen	Schengen	PROPN	SP	_	22	nmod	22:nmod	SpaceAfter=No	|	True
 24	.	.	PUNCT	FS	_	4	punct	4:punct	_	_	False
 
@@ -12197,7 +12170,7 @@
 14	che	che	PRON	PR	PronType=Rel	15	nsubj	13:ref	_	Case=Nom|PronType=Rel	True
 15	turbino	turbare	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	13:acl:relcl	_	Mood=Sub|Polarity=Pos|VerbForm=Fin|Voice=Act	True
 16	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	17:det	_	_	False
-17	meno	meno	ADV	B	_	15	advmod	15:advmod	_	_	False
+17	meno	meno	ADV	B	_	15	advmod	15:advmod	_	Definite=Def|Gender=Masc|Number=Sing	True
 18	possibile	possibile	ADJ	A	Number=Sing	17	obl	17:obl	_	Number=Sing	True
 19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	20:det	_	_	False
 20	funzionamento	funzionamento	NOUN	S	Gender=Masc|Number=Sing	15	obj	15:obj	_	Case=Acc|Definite=Def|Gender=Masc|Number=Sing	True
@@ -12463,7 +12436,7 @@
 15	che	che	PRON	PR	PronType=Rel	18	nsubj	18:nsubj	_	Case=Nom|PronType=Rel	True
 16	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	18	cop	18:cop	_	_	False
 17	in	in	ADP	E	_	18	case	18:case	_	_	False
-18	carica	carica	NOUN	S	Gender=Fem|Number=Sing	14	nmod	14:nmod:in	_	Case=Ine|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	True
+18	carica	carica	NOUN	S	Gender=Fem|Number=Sing	14	nmod	14:nmod:in	_	Case=Ine|Gender=Fem|Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin|Voice=Act	True
 19-20	al	_	_	_	_	_	_	_	_	_	False
 19	a	a	ADP	E	_	21	case	21:case	_	_	False
 20	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	21:det	_	_	False
@@ -12523,7 +12496,7 @@
 8	adesione	adesione	NOUN	S	Gender=Fem|Number=Sing	5	obl	5:obl:dopo	SpaceAfter=No	Case=Tps|Definite=Def|Gender=Fem|Number=Sing	True
 9	,	,	PUNCT	FF	_	5	punct	5:punct	_	_	False
 10	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	cop	11:cop	_	_	False
-11	applicabili	applicabile	ADJ	A	Number=Plur	0	root	0:root	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	True
+11	applicabili	applicabile	ADJ	A	Number=Plur	0	root	0:root	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	True
 12-13	dalla	_	_	_	_	_	_	_	_	_	False
 12	da	da	ADP	E	_	14	case	14:case	_	_	False
 13	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	14:det	_	_	False
