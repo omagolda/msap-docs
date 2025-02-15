@@ -77,3 +77,12 @@ id	working_status	test_case	sentence	issues
 79	OK	det+verb;PresAct	Nell’inseguire, il gatto si è stancato.
 80	OK	det+verb;PastAct	Nell’aver inseguito, il gatto si è stancato.	
 81	OK	GerPast	Avendo inseguito il cane, il gatto si è stancato.	
+82	_	cc	Il cane e il gatto sono belli.
+83	_	il più di	Il più delle volte il gatto insegue il cane. 
+84	_	frasi nom Neg	Il gatto non è il Presidente della Repubblica.
+85	_	frasi nom PassImp	Il gatto era il Presidente della Repubblica.
+86	_	frasi nom PassPross	Il gatto è stato il Presidente della Repubblica.
+87	_	frasi nom Fut	Il gatto sarà il Presidente della Repubblica.
+88	_	frasi nom FutAnt	Il gatto sarà stato il Presidente della Repubblica.
+89	_	frasi nom modals	Il gatto può essere stato il Presidente della Repubblica.
+90	_	frasi nom Progr	Il può sta essendo il Presidente della Repubblica.
