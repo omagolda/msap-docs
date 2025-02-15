@@ -12,15 +12,13 @@ def process_adj(head_tok, children_toks):
 	head_tok["content"] = True
 	ita_utils.copy_features(head_tok)
 
-	# if "Degree" in head_tok["ms feats"] and "Abs" in head_tok["ms feats"]["Degree"]:
-	# 	head_tok["ms feats"]["Degree"].remove("Abs")
-	# 	head_tok["ms feats"]["Degree"].add("Sup")
-
 	for child_tok in children_toks:
 		logger.debug("Examining child: %s", child_tok.values())
 
 		# * evaluate copulas
-		if child_tok["deprel"] in ["aux", "cop"]:
+		if child_tok["deprel"] in ["aux", "cop", "aux:pass"]:
+
+			head_tok["ms feats"]["Voice"].add("Act")
 
 			# TODO: set defaults
 
@@ -51,6 +49,10 @@ def process_adj(head_tok, children_toks):
 			if modality:
 				logger.debug("Adding Modality feature with value %s", modality)
 				head_tok["ms feats"]["Modality"].add(modality)
+
+			if child_tok["deprel"] == "aux:pass":
+				del head_tok["ms feats"]["Voice"]
+				head_tok["ms feats"]["Voice"].add("Pass")
 
 		elif child_tok["deprel"] in ["det", "det:predet", "det:poss"]:
 
@@ -97,6 +99,21 @@ def process_adj(head_tok, children_toks):
 			if child_tok["lemma"] in ["più", "meno"]:
 				logging.debug("Adding Degree feature with value Cmp")
 				head_tok["ms feats"]["Degree"].add("Cmp")
+
+				if "Definite" in child_tok["ms feats"]:
+					for x in child_tok["ms feats"]["Definite"]:
+						head_tok["ms feats"]["Definite"].add(x)
+					del child_tok["ms feats"]["Definite"]
+
+				if "Gender" in child_tok["ms feats"]:
+					for x in child_tok["ms feats"]["Gender"]:
+						head_tok["ms feats"]["Gender"].add(x)
+					del child_tok["ms feats"]["Gender"]
+
+				if "Number" in child_tok["ms feats"]:
+					for x in child_tok["ms feats"]["Number"]:
+						head_tok["ms feats"]["Number"].add(x)
+					del child_tok["ms feats"]["Number"]
 
 			elif child_tok["lemma"] in ["non"]:
 				if "Degree" in head_tok["ms feats"] and head_tok["ms feats"]["Degree"] == "Cmp":

@@ -73,7 +73,12 @@ def process_adv(head_tok, children_toks):
 				logging.debug("Adding Degree feature with value Cmp")
 				head_tok["ms feats"]["Degree"].add("Cmp")
 
-		elif child_tok["deprel"] in ["case", "mark"]:
+				if "Definite" in child_tok["ms feats"]:
+					for x in child_tok["ms feats"]["Definite"]:
+						head_tok["ms feats"]["Definite"].add(x)
+					del child_tok["ms feats"]["Definite"]
+
+		elif child_tok["deprel"] in ["case", "mark"] and head_tok["lemma"] not in ["più", "meno"]:
 			logging.debug("Add Case feature with value %s", lbd.switch_case(child_tok, head_tok))
 			head_tok["ms feats"]["Case"].add(lbd.switch_case(child_tok, head_tok))
 
