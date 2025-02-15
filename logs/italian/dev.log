@@ -6,7 +6,7 @@
 [italian:68] INFO:Sentence content: I tre avevano da poco lasciato la cima e stavano cominciando la discesa.
 [ita_utils:13] INFO:Node poco/ADV has no features
 [italian:61] INFO:Processing sentence id: isst_tanl-124
-[italian:68] INFO:Sentence content: Tutti gli esseri umani sanno di poter essere più di ciò che sono.
+[italian:64] INFO:SKIPPING SENTENCE
 [italian:61] INFO:Processing sentence id: isst_tanl-128
 [italian:68] INFO:Sentence content: Per lo stesso motivo però, spesso, fanno fatica ad ammettere che qualcun altro sia veramente più dotato, possegga qualità e capacità superiori.
 [ita_utils:13] INFO:Node però/ADV has no features

@@ -133,7 +133,6 @@ def process_noun(head_tok, children_toks):
 
 
 		elif len(pos_non)>0:
-			# del head_tok["ms feats"]["Polarity"]
 			head_tok["ms feats"]["Polarity"].add("Neg")
 
 		verbforms = [children_toks_dict[x]["feats"]["VerbForm"] for x in pos_aux]
@@ -168,9 +167,6 @@ def process_noun(head_tok, children_toks):
 				modality_aux_child = children_toks_dict[modality_aux[0]]
 				verbform_modality_aux = modality_aux_child["feats"]["VerbForm"]
 
-				# if modality_aux_child["lemma"] == "stare":
-				# 	aspect_modality_aux = "Prog"
-
 				# we're supposing 'andare' and 'venire' do not bear auxiliaries themselves
 				if modality_aux_child["lemma"] in ["andare", "venire"]:
 					aspect_modality_aux = "Imp"
@@ -185,16 +181,12 @@ def process_noun(head_tok, children_toks):
 					# Congiuntivo perfetto > abbia potuto
 					# Condizionale composto > avrei potuto
 					if modality_aux_child["feats"]["Tense"] == "Pres":
-						# if modality_aux_child["feats"]["Mood"] == "Ind":
-						# 	aspect_modality_aux = "Perf"
 						tense_modality_aux = "Past"
 						mood_modality_aux = modality_aux_child["feats"]["Mood"]
 
 					# Indicativo piùcheperfetto > avevo potuto
 					# Congiuntivo piucheperfetto > avessi potuto
 					elif modality_aux_child["feats"]["Tense"] == "Imp":
-						# if modality_aux_child["feats"]["Mood"] == "Ind":
-						# 	aspect_modality_aux = "Perf"
 						tense_modality_aux = "Past"
 						mood_modality_aux = modality_aux_child["feats"]["Mood"]
 
@@ -203,8 +195,6 @@ def process_noun(head_tok, children_toks):
 					elif modality_aux_child["feats"]["Tense"] in ["Past", "Fut"]:
 						tense_modality_aux = modality_aux_child["feats"]["Tense"]
 						mood_modality_aux = modality_aux_child["feats"]["Mood"]
-						# if modality_aux_child["feats"]["Tense"] == "Past":
-						# 	aspect_modality_aux = "Perf"
 
 			if mood_modality_aux:
 				head_tok["ms feats"]["Mood"].add(mood_modality_aux)
@@ -239,8 +229,6 @@ def process_noun(head_tok, children_toks):
 
 			for aux in head_aux:
 				child_tok = children_toks_dict[aux]
-
-				# if child_tok["deprel"] in ["aux", "cop"]:
 
 				if child_tok["feats"]["VerbForm"] in ["Inf", "Ger"]:
 					head_tok["ms feats"]["Tense"].add("Past")
@@ -278,56 +266,6 @@ def process_noun(head_tok, children_toks):
 								head_tok["ms feats"]["Aspect"].add("Perf")
 						else:
 							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
-
-				# elif child_tok["deprel"] == "aux:pass" and child_tok["feats"]["VerbForm"] == "Fin" :
-
-				# 		# Indicativo presente > è mandata
-				# 		# Indicativo imperfetto > era mandata
-				# 		# Congiuntivo presente > sia mandata
-				# 		# Congiuntivo imperfetto > fosse mandata
-				# 		# Condizionale presente > sarebbe mandata
-				# 		if child_tok["feats"]["Tense"] in ["Pres", "Imp"]:
-				# 			if child_tok["feats"]["Mood"] == "Ind":
-				# 				head_tok["ms feats"]["Aspect"].add("Imp")
-				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-				# 		# Indicativo passato
-				# 		# Indicativo futuro
-				# 		elif child_tok["feats"]["Tense"] in ["Past"]:
-				# 			if child_tok["feats"]["Mood"] == "Ind":
-				# 				head_tok["ms feats"]["Aspect"].add("Perf")
-				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-				# 		elif child_tok["feats"]["Tense"] in ["Fut"]:
-				# 			head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-				# 			head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-
-		# if child_tok.get("feats") and "Mood" in child_tok["feats"]:
-		# 	logging.debug("Adding TAM features with values Mood: %s - Tense: %s",
-		# 				child_tok["feats"]["Mood"], child_tok["feats"]["Tense"])
-		# 	head_tok["ms feats"]["Mood"].add(child_tok["feats"]["Mood"])
-		# else:
-		# 	logging.debug("No Mood feature in %s - %s", child_tok, child_tok["feats"])
-
-		# if child_tok.get("feats") and "Tense" in child_tok["feats"]:
-		# 	head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
-		# else:
-		# 	logging.debug("No Tense feature in %s - %s", child_tok, child_tok["feats"])
-
-		# if child_tok.get("feats") and "VerbForm" in child_tok["feats"]:
-		# 	logging.debug("Adding VerbForm feature with value: %s",
-		# 				child_tok["feats"]["VerbForm"])
-		# 	head_tok["ms feats"]["VerbForm"].add(child_tok["feats"]["VerbForm"])
-		# else:
-		# 	logging.debug("No VerbForm feature in %s - %s", child_tok, child_tok["feats"])
-
-		# if child_tok["deprel"] == "aux:pass":
-		# 	del head_tok["ms feats"]["Voice"]
-		# 	head_tok["ms feats"]["Voice"].add("Pass")
-	# if not cop and len(pos_non)>0:
-	# 	head_tok["ms feats"]["Polarity"].add("Neg")
 
 	if len(head_tok["ms feats"]["Polarity"]) == 0:
 		head_tok["ms feats"]["Polarity"].add("Pos")

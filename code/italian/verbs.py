@@ -267,6 +267,7 @@ def process_verb(head_tok, children_toks):
 					if "Mood" in child_tok["feats"]:
 						if child_tok["feats"]["Mood"] == "Ind":
 							logger.debug("Adding Aspect feature with value Prog")
+							# print(child_tok, head_tok, head_tok["ms feats"])
 							head_tok["ms feats"]["Aspect"].add("Prog")
 					else:
 						logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
@@ -284,7 +285,7 @@ def process_verb(head_tok, children_toks):
 					if child_tok["feats"].get("Tense") == "Fut":
 						head_tok["ms feats"]["Tense"].add(child_tok["feats"]["Tense"])
 						if "Mood" in child_tok["feats"]:
-							if child_tok["feats"]["Mood"] == "Ind":
+							if child_tok["feats"]["Mood"] == "Ind" and child_tok["lemma"] not in ["stare", "andare", "venire"]:
 								head_tok["ms feats"]["Aspect"].add("Perf")
 						else:
 							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
@@ -292,7 +293,7 @@ def process_verb(head_tok, children_toks):
 					elif child_tok["feats"].get("Tense") in ["Pres", "Past", "Imp"]:
 						head_tok["ms feats"]["Tense"].add("Past")
 						if "Mood" in child_tok["feats"]:
-							if child_tok["feats"]["Mood"] == "Ind":
+							if child_tok["feats"]["Mood"] == "Ind" and child_tok["lemma"] not in ["stare", "andare", "venire"]:
 								head_tok["ms feats"]["Aspect"].add("Perf")
 						else:
 							logger.warning("Node %s has no Mood: %s", child_tok, child_tok["feats"])
