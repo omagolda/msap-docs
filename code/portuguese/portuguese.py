@@ -23,20 +23,13 @@ def combine_fixed_nodes(head, fixed_children):
 
     l = [head] + fixed_children
     l.sort(key=lambda node: node['id'])
+    #print(' '.join([node['lemma'] for node in l]))
     return ' '.join([node['lemma'] for node in l])
 
 def apply_grammar(head: conllu.Token, children: List[conllu.Token]):
     '''
     The main method combining functional children to create the morpho-syntactic features of head.
     '''
-
-    #skip_lemmas = {'meu', 'teu', 'seu', 'nosso', 'vosso'}
-    #children = [
-    #    child for child in children 
-    #    if not (
-    #        child['deprel'] == 'det' and child['lemma'] in skip_lemmas
-    #    )
-    #]
 
     children = [child for child in children if not child['deprel'] in {'parataxis', 'reparandum'}] # remove punctuation and parataxis and reparandum
 
@@ -170,36 +163,37 @@ def apply_grammar(head: conllu.Token, children: List[conllu.Token]):
             # Remove determiner nodes from children
             children = [node for node in children if node not in det_nodes]
 
-        if head['upos'] in {'ADV', 'ADJ'} and children:
-            child_lemmas = [child['lemma'] for child in children]
-            if 'more' in child_lemmas: # if there is a 'more' node, set the degree to comparative
-                head['ms feats']['Degree'] = 'Cmp'
-            elif 'most' in child_lemmas: # if there is a 'most' node, set the degree to superlative
-                head['ms feats']['Degree'] = 'Sup'
-            children = [node for node in children if node['lemma'] not in {'more', 'most'}] # remove the 'more' and 'most' nodes from the children
+        #if head['upos'] in {'ADV', 'ADJ'} and children:
+        #    child_lemmas = [child['lemma'] for child in children]
+        #    if 'more' in child_lemmas: # if there is a 'more' node, set the degree to comparative
+        #        head['ms feats']['Degree'] = 'Cmp'
+        #    elif 'most' in child_lemmas: # if there is a 'most' node, set the degree to superlative
+        #        head['ms feats']['Degree'] = 'Sup'
+        #    children = [node for node in children if node['lemma'] not in {'more', 'most'}] # remove the 'more' and 'most' nodes from the children
 
-        if head['upos'] in {'ADV', 'ADJ'} and children:
-            child_lemmas = [child['lemma'] for child in children]
-            child_det = [child for child in children if child['lemma'] == 'o' and child['deprel'] == 'det']
+        # if head['upos'] in {'ADV', 'ADJ'} and children:
+        #     child_lemmas = [child['lemma'] for child in children]
+        #     print(child_lemmas)
+        #     child_det = [child for child in children if child['lemma'] == 'o' and child['deprel'] == 'det']
 
-            if head.get('ms feats') is None:
-                head['ms feats'] = {}  # Ensure ms_feats is a dictionary
+        #     if head.get('ms feats') is None:
+        #         head['ms feats'] = {}  # Ensure ms_feats is a dictionary
 
-            # Handle "mais" and "menos" cases
-            if 'mais' in child_lemmas or 'menos' in child_lemmas:
-                if child_det:  # If "o" is present as a determiner
-                    head['ms feats']['Degree'] = 'Sup'
-                else:  # If "o" is not present
-                    head['ms feats']['Degree'] = 'Cmp'
-                # Remove "mais" and "menos" nodes from children
-                children = [node for node in children if node['lemma'] not in {'mais', 'menos'}]
+        #     # Handle "mais" and "menos" cases
+        #     if 'mais' in child_lemmas or 'menos' in child_lemmas:
+        #         if child_det:  # If "o" is present as a determiner
+        #             head['ms feats']['Degree'] = 'Sup'
+        #         else:  # If "o" is not present
+        #             head['ms feats']['Degree'] = 'Cmp'
+        #         # Remove "mais" and "menos" nodes from children
+        #         children = [node for node in children if node['lemma'] not in {'mais', 'menos'}]
 
-            # Handle "maior", "menor", "melhor", "pior" cases
-            elif head['lemma'] in {'maior', 'menor', 'melhor', 'pior'}:
-                if child_det:  # If "o" is present as a determiner
-                    head['ms feats']['Degree'] = 'Sup'
-                else:  # If "o" is not present
-                    head['ms feats']['Degree'] = 'Cmp'
+        #     # Handle "maior", "menor", "melhor", "pior" cases
+        #     elif head['lemma'] in {'maior', 'menor', 'melhor', 'pior'}:
+        #         if child_det:  # If "o" is present as a determiner
+        #             head['ms feats']['Degree'] = 'Sup'
+        #         else:  # If "o" is not present
+        #             head['ms feats']['Degree'] = 'Cmp'
 
     if head['ms feats']: # clean up the ms_feats by removing None values
         head['ms feats'] = {k: v for k, v in head['ms feats'].items() if v}
@@ -250,6 +244,9 @@ def get_nTAM_feats(aux_nodes: List[conllu.Token], head_feats: dict, verb=True) -
 
     aux_lemmas = {aux['lemma'] for aux in aux_nodes} # get the lemmas of the auxiliaries
 
+    if head_feats is None:
+        head_feats = {}
+
 
     # Handle auxiliary "ter" or "haver"
     if 'ter' in aux_lemmas or 'haver' in aux_lemmas:
@@ -265,11 +262,13 @@ def get_nTAM_feats(aux_nodes: List[conllu.Token], head_feats: dict, verb=True) -
                 feats['Mood'] = aux_node['feats']['Mood']
 
             # Add Aspect based on the Tense of "ter" or "haver"
-            if head_feats.get('VerbForm') == 'Part':  # If the head verb is a participle
+            if head_feats.get('VerbForm') == 'Part' and len(aux_lemmas - {'ter','haver'}) == 0:  # If the head verb is a participle
                 if aux_node['feats'].get('Tense') == 'Pres':  # Present tense -> Progressive aspect
                     feats['Aspect'] = 'Prog'
                 elif aux_node['feats'].get('Tense') == 'Imp':  # Imperfect tense -> Perfect aspect
                     feats['Aspect'] = 'Perf'
+            elif aux_node['feats'].get('Tense') == 'Imp' and len(aux_lemmas - {'ter','haver'}) > 0:
+                feats['Aspect'] = 'Perf'
 
 
     if 'ser' in aux_lemmas:
@@ -474,9 +473,9 @@ def order_alphabetically(feats):
 
 if __name__ == '__main__':
     #filepath = os.path.join(ud_dir, lang, bank, splits[bank]['test'])
-    filepath = './pt_porttinari-ud-dev.conllu'
+    filepath = './input/pt_porttinari-ud-train-preprocessed.conllu'
     #out_path = os.path.join('UD+', lang, bank, 'test.conllu')
-    out_path = './pt_porttinari-ud-dev_morph.conllu'
+    out_path = './input/pt_porttinari-ud-train-morph.conllu'
     with open(filepath, encoding='utf8') as f:
         parse_trees = list(conllu.parse_tree_incr(f))
         #parse_trees = [sent for sent in parse_trees if sent.metadata['sent_id'].split('_')[1] not in excluded_genres]
@@ -501,11 +500,11 @@ if __name__ == '__main__':
             for head, children in heads[::-1]:
                 head: conllu.Token = parse_list[id2idx[head]]
                 children = [parse_list[id2idx[child]] for child in children]
-                skip_lemmas = {'meu', 'teu', 'seu', 'nosso', 'vosso'}
-                children = [
-                    child for child in children 
-                        if not (child['deprel'] == 'det' and child['lemma'] in skip_lemmas)
-                        ]
+                #skip_lemmas = {'meu', 'teu', 'seu', 'nosso', 'vosso'}
+                #children = [
+                #    child for child in children 
+                #        if not (child['deprel'] == 'det' and child['lemma'] in skip_lemmas)
+                #        ]
                 added_nodes = apply_grammar(head, children)
                 if added_nodes:
                     added_idxs = get_where_to_add(added_nodes, id2idx)

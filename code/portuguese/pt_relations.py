@@ -23,6 +23,7 @@ case_feat_map = {
 'após':'Pst',
 'contra':'Adv',
 'durante':'Dur',
+#'que':'TBD-que',
 'sob':'Sub',
 'conforme':'Quo',
 'ante':'Ant',
@@ -39,7 +40,14 @@ case_feat_map = {
 'x':'Dis',
 'visto':'Reas',
 'em vez de':'Sbs',
-'desde que':'Cnd'
+'desde que':'Cnd',
+'se':'Cnd',
+'quando':'Temp',
+'ou':'Disj',
+'e':'Conj',
+'porém':'Advs',
+'porque':'Cau',
+'enquanto':'Cmt'
 }
 
 
