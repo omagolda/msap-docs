@@ -1,12 +1,14 @@
 
 import os
 import conllu
-from consts import *
-import utils
+import code.utils as utils
+from code.consts import *
 from typing import List
 from copy import deepcopy
 from collections import defaultdict
-from eng_relations import case_feat_map
+from eng_is_content import is_content, case_feat_map
+
+print('imports ok')
 
 lang = 'eng'
 bank = 'GENTLE'
@@ -402,31 +404,42 @@ if __name__ == '__main__':
             heads = utils.span(parse_tree)
             assert utils.verify_span(heads)
             to_add = []
-            for head, children in heads[::-1]:
-                head: conllu.Token = parse_list[id2idx[head]]
-                children = [parse_list[id2idx[child]] for child in children]
-                added_nodes = apply_grammar(head, children)
-                if added_nodes:
-                    added_idxs = get_where_to_add(added_nodes, id2idx)
-                    to_add += list(zip(added_nodes, added_idxs))
+            try:
+                for head, children in heads[::-1]:
+                    head: conllu.Token = parse_list[id2idx[head]]
+                    children = [parse_list[id2idx[child]] for child in children]
+
+                    assert is_content(head, parse_tree.metadata['text']), f"a function node with children occurred in f{parse_tree.metadata['sent_id']}: f{head['id']} f{head['text']}"
+
+                    added_nodes = apply_grammar(head, children)
+                    if added_nodes:
+                        added_idxs = get_where_to_add(added_nodes, id2idx)
+                        to_add += list(zip(added_nodes, added_idxs))
+            except ValueError as e:
+                print(e)
+                continue
 
             for added_node in to_add[::-1]:
                 node, idx = added_node
                 parse_list.insert(idx + 1, node)
 
             for node in parse_list:
-                # setting ms-feats for content nodes that were not dealt with earlier
-                if node['upos'] in {'ADJ', 'INTJ'} | VERBAL | NOMINAL and not node.get('ms feats', None): # if the node is a content node and the ms_feats are not set
-                    ms_feats = deepcopy(node['feats'])
-                    if ms_feats is None:
-                        ms_feats = '|'
-                    node['ms feats'] = ms_feats
-                # function nodes end up with empty ms-feats
+                if not is_content(node, parse_tree.metadata['text']):
+                    continue
                 else:
-                    node['ms feats'] = node.get('ms feats', None)
+                    # setting ms-feats for content nodes that were not dealt with earlier
+                    if not node['deps']:
+                        ms_feats = deepcopy(node['feats'])
+                        if ms_feats is None:
+                            ms_feats = '|'
+                        node['ms feats'] = ms_feats
+                    # function nodes end up with empty ms-feats
+                    else:
+                        # node['ms feats'] = node.get('ms feats', None)
+                        assert node['ms feats']
 
-                # sort alphabetically the MS features of all nodes
-                node['ms feats'] = order_alphabetically(node['ms feats'])
+                    # sort alphabetically the MS features of all nodes
+                    node['ms feats'] = order_alphabetically(node['ms feats'])
             assert utils.verify_treeness(parse_list)
 
             to_write = parse_list.serialize()
