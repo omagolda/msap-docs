@@ -1,6 +1,7 @@
 from typing import List, Union
 from copy import deepcopy
-
+from src.english.english import decisions, new_decisions
+import pickle
 
 def span(parse_tree):
     '''
@@ -54,14 +55,37 @@ def verify_treeness(parse_list):
     return True
 
 
-def get_response(possible_responses, prompt):
+def get_response(possible_responses, prompt, sent_num):
     '''
     When one construction may serve several features, let the annotator decide which it is.
     '''
-    response = None
-    while response not in possible_responses:
-        if response:
-            print(f'invalid response. options are {possible_responses}.')
-        print('##### USER INPUT NEEDED #####')
-        response = input(prompt)
+    global decisions
+    global new_decisions
+
+    if not decisions:
+        possible_responses.append('s')  # save and exit
+        response = None
+        while response not in possible_responses:
+            if response:
+                print(f'invalid response. options are {possible_responses}.')
+            print('##### USER INPUT NEEDED #####')
+            response = input(prompt)
+            if response == 's':
+                response = input('are you sure you want to save and exit? (y/n)')
+                if response == 'y':
+                    with open(r'C:\Users\omer\Documents\university\compsci\phd\research\msud-docs\src\english\responses.pkl', 'rb') as f:
+                        prev_decisions = pickle.load(f)
+                    prev_decisions += new_decisions
+                    with open(r'C:\Users\omer\Documents\university\compsci\phd\research\msud-docs\src\english\responses.pkl', 'wb') as f:
+                        pickle.dump(prev_decisions, f)
+                    exit()
+
+        new_decisions.append(response)
+
+    else:
+        print(prompt)
+        response = decisions.pop(0)
+        print(f'going with saved decision. it is *{response}*')
+        assert response in possible_responses
+
     return response

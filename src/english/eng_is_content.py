@@ -138,18 +138,22 @@ modalities = {'shall':'Des', 'should':'Des', 'must':'Nec', 'may':'Prms', 'might'
 determiners = {'a':('Definite', 'Ind'), 'the':('Definite', 'Def'), 'another':('Definite', 'Ind'), 'no':('Definite', 'Ind', 'Polarity', 'Neg')}  #, 'this':('Dem', 'Prox'), 'that':('Dem', 'Dist')}
 
 
-forced_upos_for_closed_classes = {'the': 'DET', 'a': 'DET', 'any': 'DET'}
+forced_upos_for_closed_classes = {'the': 'DET', 'a': 'DET'}
 
-definitely_content = {'NOUN', 'PROPN', 'VERB', 'SYM', 'INTJ', 'ADJ'}
+definitely_content = {'NOUN', 'PROPN', 'PRON', 'VERB', 'SYM', 'INTJ', 'ADJ', 'NUM'}
 definitely_function = {'PUNCT', 'ADP', 'AUX', 'CCONJ', 'SCONJ', 'PART'}
 skip_sentence = {'X', 'orphan'}
-rules = {'DET', 'PRON', 'ADV'}
+rules = {'DET', 'ADV'}
 det_function_lemmas = {'a', 'the', 'no'}
-adv_function_lemmas = {'then', 'so', 'therefore', 'also', 'however', 'when'}
+adv_function_lemmas = {'then', 'so', 'therefore', 'also', 'however', 'when', 'no'}
 pron_function_lemmas = {'that'}
 
 # def is_content(index, parse_list, parse_tree):
 def is_content(node, sentence):
+    if node['form'] == '_' and node['lemma'] == '_':  # abstract nodes should be considered content
+        return True
+    if isinstance(node['id'], tuple) and node['id'][1] == '.':  # added nodes from enhanced are to be ignored
+        return False
     upos = node['upos']
     lemma = node['lemma']
     incoming_deprel = node['deprel']
@@ -158,23 +162,24 @@ def is_content(node, sentence):
         raise ValueError(f'skip sentence with upos {upos}: {sentence}')
     if incoming_deprel in skip_sentence:
         raise ValueError(f'skip sentence with deprel {incoming_deprel}: {sentence}')
-    if lemma in case_feat_map:
-        return False
     if lemma in forced_upos_for_closed_classes and upos != forced_upos_for_closed_classes[lemma]:
         raise ValueError(f'forced upos for {lemma} is {forced_upos_for_closed_classes[lemma]} but got {upos}, skipping sentence')
     if upos in definitely_content:
         return True
     if upos in definitely_function:
         return False
+    if lemma in case_feat_map:
+        return False
 
     if upos in rules:
         if upos == 'DET' and node['lemma'] not in det_function_lemmas:
             return True
         if upos == 'ADV' and node['lemma'] not in adv_function_lemmas:
+            print(f"is {node['lemma']} a content word?")
             return True
-        if upos == 'PRON' and node['lemma'] not in pron_function_lemmas:
-            if not incoming_deprel == 'nmod:poss':
-                return True
+        # if upos == 'PRON' and node['lemma'] not in pron_function_lemmas:
+        #     if not incoming_deprel == 'nmod:poss':
+        #         return True
         
     return False
 
