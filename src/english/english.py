@@ -457,7 +457,7 @@ if os.path.isfile(r'C:\Users\omer\Documents\university\compsci\phd\research\msud
         decisions = pickle.load(f)
 new_decisions = []
 if __name__ == '__main__':
-    split = 'train'
+    split = 'test'
     # filepath = os.path.join(ud_dir, lang, bank, splits[bank]['test'])
     # out_path = os.path.join('UD+', lang, bank, 'test.conllu')
     filepath = fr'C:\Users\omer\Documents\university\compsci\phd\research\morpho-syntax\UD\eng\EWT\en_ewt-ud-{split}.conllu'
@@ -549,10 +549,14 @@ if __name__ == '__main__':
             remove_fixed_function_nodes(parse_list)
             is_ok = utils.verify_treeness(parse_list)
             if not is_ok:
-                utils.get_response(['y','n'],
+                response = utils.get_response(['y','n'],
                                    f'The following sentence is probably off. Should we just skip it? (y/n)\n{parse_list.metadata["text"]}',
                                    i)
-
+                if response == 'y':
+                    continue
+                else:
+                    print('not skipping the sentence')
             to_write = parse_list.serialize()
             outfile.write(to_write + '\n')
             w += 1
+x=1
