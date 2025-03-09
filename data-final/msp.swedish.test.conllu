@@ -8,7 +8,7 @@
 4	är	vara	AUX	_	_	_	_	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	två	två	NUM	_	Case=Nom|NumType=Card	7	nummod	_	_
-7	slag	slag	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
+7	slag	slag	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
 8	:	:	PUNCT	_	_	_	_	_	_
 9	folkpension	folkpension	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	appos	_	_
 10	och	och	CCONJ	_	_	_	_	_	_
@@ -27,7 +27,7 @@
 4	oberoende	oberoende	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	2	advcl	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	tidigare	tidig	ADJ	_	Degree=Cmp	7	amod	_	_
-7	arbetsinkomst	arbetsinkomst	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
+7	arbetsinkomst	arbetsinkomst	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
 8	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P108.3
@@ -38,7 +38,7 @@
 3	på	på	ADP	_	_	_	_	_	_
 4	inkomst	inkomst	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	2	obl	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	förvärvsarbete	förvärvsarbete	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
+6	förvärvsarbete	förvärvsarbete	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	4	nmod	_	_
 7	(	(	PUNCT	_	_	_	_	_	_
 8	arbetsinkomst	arbetsinkomst	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	appos	_	_
 9	)	)	PUNCT	_	_	_	_	_	_
@@ -131,10 +131,10 @@
 14	grundval	grundval	NOUN	_	Case=Ade|Definite=Ind|Gender=Neut|Number=Sing	7	obl	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	en	en	DET	_	_	_	_	_	_
-17	beräkning	beräkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
+17	beräkning	beräkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
 18	av	av	ADP	_	_	_	_	_	_
 19	statistiska	statistisk	ADJ	_	Degree=Pos	20	amod	_	_
-20	centralbyrån	centralbyrå	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	17	nmod	_	_
+20	centralbyrån	centralbyrå	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	17	nmod	_	_
 21	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-9
@@ -156,7 +156,7 @@
 2	av	av	ADP	_	_	_	_	_	_
 3	de	de	DET	_	_	_	_	_	_
 4	utgående	utgående	ADJ	_	Degree=Pos	5	amod	_	_
-5	pensionerna	pension	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	1	nmod	_	_
+5	pensionerna	pension	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	1	nmod	_	_
 6	följer	följa	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	basbeloppet	basbelopp	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	obj	_	_
 8	.	.	PUNCT	_	_	_	_	_	_
@@ -355,7 +355,7 @@
 1	Inkomst	inkomst	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	8	nsubj:pass	_	_
 2	av	av	ADP	_	_	_	_	_	_
 3	annat	annan	ADJ	_	Degree=Pos	4	amod	_	_
-4	förvärvsarbete	förvärvsarbete	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
+4	förvärvsarbete	förvärvsarbete	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
 5	än	än	SCONJ	_	_	_	_	_	_
 6	anställning	anställning	NOUN	_	Case=Cmp|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	4	acl	_	_
 7	kan	kunna	AUX	_	_	_	_	_	_
@@ -389,7 +389,7 @@
 4	påverka	påverka	VERB	_	Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 5	pensionsrätten	pensionsrätt	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	obj	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	anställningsinkomst	anställningsinkomst	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
+7	anställningsinkomst	anställningsinkomst	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
 8	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-25
@@ -639,18 +639,18 @@
 # text = Storleken av pensionen räknas ut på grundval av ett genomsnitt av de pensionsgrundande inkomsterna under de 15 bästa åren (se sid 7 'ATP de första åren').
 1	Storleken	storlek	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nsubj:pass	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	pensionen	pension	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	1	nmod	_	_
+3	pensionen	pension	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	1	nmod	_	_
 4	räknas	räkna	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 5	ut	ut	ADV	_	|	4	compound:prt	_	_
 6	på	på	ADP	_	_	_	_	_	_
 7	grundval	grundval	NOUN	_	Case=Ade|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	ett	en	DET	_	_	_	_	_	_
-10	genomsnitt	genomsnitt	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	7	nmod	_	_
+10	genomsnitt	genomsnitt	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	7	nmod	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	de	de	DET	_	_	_	_	_	_
 13	pensionsgrundande	pensionsgrundande	ADJ	_	Degree=Pos	14	amod	_	_
-14	inkomsterna	inkomst	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
+14	inkomsterna	inkomst	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
 15	under	under	ADP	_	_	_	_	_	_
 16	de	de	DET	_	_	_	_	_	_
 17	15	15	NUM	_	Case=Nom|NumType=Card	19	nummod	_	_
@@ -678,7 +678,7 @@
 5	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	3	obj	_	_
 6	av	av	ADP	_	_	_	_	_	_
 7	nämnda	nämnd	ADJ	_	Degree=Pos	8	amod	_	_
-8	genomsnittsinkomst	genomsnittsinkomst	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
+8	genomsnittsinkomst	genomsnittsinkomst	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
 9	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-48
@@ -721,7 +721,7 @@
 3	av	av	ADP	_	_	_	_	_	_
 4	den	den	DET	_	_	_	_	_	_
 5	pensionsgrundande	pensionsgrundande	ADJ	_	Degree=Pos	6	amod	_	_
-6	inkomsten	inkomst	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+6	inkomsten	inkomst	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
 7	beräknas	beräkna	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 8	pensionspoäng	pensionspoäng	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	nsubj:pass	_	_
 9	,	,	PUNCT	_	_	_	_	_	_
@@ -773,7 +773,7 @@
 23	ingången	ingång	NOUN	_	Case=Loc|Definite=Def|Gender=Com|Number=Sing	21	nmod	_	_
 24	av	av	ADP	_	_	_	_	_	_
 25	det	den	DET	_	_	_	_	_	_
-26	året	år	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	23	nmod	_	_
+26	året	år	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	23	nmod	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-52
@@ -867,7 +867,7 @@
 15	av	av	ADP	_	_	_	_	_	_
 16	cirka	cirka	ADV	_	|	17	advmod	_	_
 17	20400	20400	NUM	_	Case=Nom|NumType=Card	18	nummod	_	_
-18	kr	krona	NOUN	_	Abbr=Yes|Case=Agt	14	nmod	_	_
+18	kr	krona	NOUN	_	Abbr=Yes|Case=Gen	14	nmod	_	_
 19	)	)	PUNCT	_	_	_	_	_	_
 20	blir	bli	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 21	pensionspoängen	pensionspoäng	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur	20	nsubj	_	_
@@ -1081,7 +1081,7 @@
 5	förtida	förtida	ADJ	_	Degree=Pos	6	amod	_	_
 6	uttag	uttag	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	4	obj	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	ålderspension	ålderspension	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
+8	ålderspension	ålderspension	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
 9	kan	kunna	AUX	_	_	_	_	_	_
 10	återkalla	återkalla	VERB	_	Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 11	detta	denna	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Dem	10	obj	_	_
@@ -1102,7 +1102,7 @@
 11	förtida	förtida	ADJ	_	Degree=Pos	12	amod	_	_
 12	uttag	uttag	NOUN	_	Case=The|Definite=Ind|Gender=Neut|Number=Sing	8	obl	_	_
 13	av	av	ADP	_	_	_	_	_	_
-14	ålderspension	ålderspension	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
+14	ålderspension	ålderspension	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
 15	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-70
@@ -1127,7 +1127,7 @@
 3	förtida	förtida	ADJ	_	Degree=Pos	4	amod	_	_
 4	uttag	uttag	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	9	nsubj	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	ålderspension	ålderspension	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
+6	ålderspension	ålderspension	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 7	inte	inte	PART	_	_	_	_	_	_
 8	är	vara	AUX	_	_	_	_	_	_
 9	detsamma	densamma	PRON	_	Case=Atr|Definite=Def|Gender=Neut|Mood=Ind|Number=Sing|Polarity=Neg|PronType=Ind	1	ccomp	_	_
@@ -1292,7 +1292,7 @@
 7	något	någon	PRON	_	Definite=Ind|Gender=Neut|Number=Sing|PronType=Ind	6	obl	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	åren	år	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	10	nmod	_	_
-10	1896-1923	1896-1923	NUM	_	Case=Agt|NumType=Card	7	nmod	_	_
+10	1896-1923	1896-1923	NUM	_	Case=Gen|NumType=Card	7	nmod	_	_
 11	gäller	gälla	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 12	förmånligare	förmånlig	ADJ	_	Degree=Cmp	13	amod	_	_
 13	regler	regel	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	nsubj	_	_
@@ -1384,7 +1384,7 @@
 7	11/20	11/20	NUM	_	Case=Nom|NumType=Card	5	obj	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	full	full	ADJ	_	Degree=Pos	10	amod	_	_
-10	pension	pension	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
+10	pension	pension	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
 11	,	,	PUNCT	_	_	_	_	_	_
 12	årsklass	årsklass	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	13	nmod	_	_
 13	1906	1906	NUM	_	Case=Nom|NumType=Card	15	nsubj	_	_
@@ -1646,7 +1646,7 @@
 8	25	25	NUM	_	Case=Nom|NumType=Card	9	nummod	_	_
 9	procent	procent	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	basbeloppet	basbelopp	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	9	nmod	_	_
+11	basbeloppet	basbelopp	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	9	nmod	_	_
 12	(	(	PUNCT	_	_	_	_	_	_
 13	i	i	ADP	_	_	_	_	_	_
 14	juli	juli	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	17	obl	_	_
@@ -1699,7 +1699,7 @@
 21	hjälp	hjälp	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	20	obj	_	_
 22	av	av	ADP	_	_	_	_	_	_
 23	annan	annan	ADJ	_	Degree=Pos	24	amod	_	_
-24	person	person	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	20	obl	_	_
+24	person	person	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	20	obl	_	_
 25	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-102
@@ -1742,7 +1742,7 @@
 3	30	30	NUM	_	Case=Nom|NumType=Card	4	nummod	_	_
 4	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obj	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	basbeloppet	basbelopp	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	4	nmod	_	_
+6	basbeloppet	basbelopp	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	4	nmod	_	_
 7	(	(	PUNCT	_	_	_	_	_	_
 8	i	i	ADP	_	_	_	_	_	_
 9	juli	juli	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	14	obl	_	_
@@ -1845,7 +1845,7 @@
 18	större	stor	ADJ	_	Degree=Cmp	19	amod	_	_
 19	delen	del	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	22	nsubj	_	_
 20	av	av	ADP	_	_	_	_	_	_
-21	befolkningen	befolkning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	19	nmod	_	_
+21	befolkningen	befolkning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	19	nmod	_	_
 22	lever	leva	VERB	_	Case=Atr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	16	acl	_	_
 23	i	i	ADP	_	_	_	_	_	_
 24	fattigdom	fattigdom	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	22	obl	_	_
@@ -1902,7 +1902,7 @@
 22	kommer	komma	VERB	_	Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	19	acl:relcl	_	_
 23	majoriteten	majoritet	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	22	obj	_	_
 24	av	av	ADP	_	_	_	_	_	_
-25	folket	folk	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	23	nmod	_	_
+25	folket	folk	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	23	nmod	_	_
 26	tillgodo	tillgodo	ADV	_	|	22	compound:prt	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
@@ -1914,7 +1914,7 @@
 3	karakteristik	karakteristik	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	0	root	_	_
 4	av	av	ADP	_	_	_	_	_	_
 5	ett	en	DET	_	_	_	_	_	_
-6	u-land	u-land	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	3	nmod	_	_
+6	u-land	u-land	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	3	nmod	_	_
 7	är	vara	AUX	_	_	_	_	_	_
 8	att	att	SCONJ	_	_	_	_	_	_
 9	bruttonationalprodukten	bruttonationalprodukt	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	17	nsubj	_	_
@@ -2066,7 +2066,7 @@
 5	om	om	ADP	_	_	_	_	_	_
 6	fördelningen	fördelning	NOUN	_	Case=The|Definite=Def|Gender=Com|Number=Sing	2	obl	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	resurserna	resurs	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	6	nmod	_	_
+8	resurserna	resurs	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	6	nmod	_	_
 9	,	,	PUNCT	_	_	_	_	_	_
 10	om	om	ADP	_	_	_	_	_	_
 11	livet	liv	NOUN	_	Case=The|Definite=Def|Gender=Neut|Number=Sing	6	conj	_	_
@@ -2108,7 +2108,7 @@
 15	av	av	ADP	_	_	_	_	_	_
 16	olika	olik	ADJ	_	Degree=Pos	17	amod	_	_
 17	folks	folk	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	18	nmod:poss	_	_
-18	levnadsnivå	levnadsnivå	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
+18	levnadsnivå	levnadsnivå	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-121
@@ -2170,7 +2170,7 @@
 3	av	av	ADP	_	_	_	_	_	_
 4	typiska	typisk	ADJ	_	Degree=Pos	6	amod	_	_
 5	'	'	PUNCT	_	_	_	_	_	_
-6	u-landsegenskaper	u-landsegenskap	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
+6	u-landsegenskaper	u-landsegenskap	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
 7	'	'	PUNCT	_	_	_	_	_	_
 8	bidrar	bidra	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 9	till	till	ADP	_	_	_	_	_	_
@@ -2190,7 +2190,7 @@
 7	fjärdedelar	fjärdedel	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	nsubj	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	jordens	jord	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	10	nmod:poss	_	_
-10	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
+10	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
 11	bor	bo	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
 12	-	-	PUNCT	_	_	_	_	_	_
 13	skiljer	skilja	VERB	_	Case=Advs|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -2367,7 +2367,7 @@
 1	Många	mången	PRON	_	Definite=Ind|Number=Plur|PronType=Ind	12	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
 3	de	de	DET	_	_	_	_	_	_
-4	länder	land	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	1	nmod	_	_
+4	länder	land	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	1	nmod	_	_
 5	,	,	PUNCT	_	_	_	_	_	_
 6	som	som	PRON	_	PronType=Rel	9	nsubj:pass	_	_
 7	i	i	ADP	_	_	_	_	_	_
@@ -2490,7 +2490,7 @@
 17	de	de	DET	_	_	_	_	_	_
 18	mera	mycket	ADV	_	Degree=Cmp	19	advmod	_	_
 19	genomgripande	genomgripande	ADJ	_	Degree=Pos	20	amod	_	_
-20	händelserna	händelse	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	15	nmod	_	_
+20	händelserna	händelse	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	15	nmod	_	_
 21	i	i	ADP	_	_	_	_	_	_
 22	världshistorien	världshistoria	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	20	nmod	_	_
 23	.	.	PUNCT	_	_	_	_	_	_
@@ -2576,7 +2576,7 @@
 13	som	som	ADP	_	_	_	_	_	_
 14	köpare	köpare	NOUN	_	Case=Rpl|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
 15	av	av	ADP	_	_	_	_	_	_
-16	industrivarorna	industrivara	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	14	nmod	_	_
+16	industrivarorna	industrivara	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	14	nmod	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-147
@@ -2598,7 +2598,7 @@
 15	köpare	köpare	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	14	xcomp	_	_
 16	av	av	ADP	_	_	_	_	_	_
 17	moderlandets	moderland	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	18	nmod:poss	_	_
-18	produkter	produkt	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	15	nmod	_	_
+18	produkter	produkt	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	15	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-148
@@ -2619,7 +2619,7 @@
 14	konkurrerades	konkurrera	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Pass	3	csubj	_	_
 15	ut	ut	ADV	_	|	14	compound:prt	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	engelsmännen	engelsman	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	14	obl:agent	_	_
+17	engelsmännen	engelsman	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	14	obl:agent	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-149
@@ -2956,7 +2956,7 @@
 16	hälften	hälft	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	14	obj	_	_
 17	av	av	ADP	_	_	_	_	_	_
 18	hela	hel	ADJ	_	Degree=Pos	19	amod	_	_
-19	befolkningen	befolkning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
+19	befolkningen	befolkning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
 20	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-164
@@ -3080,7 +3080,7 @@
 4	jämn	jämn	ADJ	_	Degree=Pos	5	amod	_	_
 5	fördelning	fördelning	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Sing	8	obl	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	produktionen	produktion	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
+7	produktionen	produktion	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
 8	blir	bli	VERB	_	Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 9	det	den	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	8	nsubj	_	_
 10	inte	inte	PART	_	_	_	_	_	_
@@ -3110,7 +3110,7 @@
 6	rättvis	rättvis	ADJ	_	Degree=Pos	7	amod	_	_
 7	fördelning	fördelning	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj:pass	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	tillgångarna	tillgång	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	7	nmod	_	_
+9	tillgångarna	tillgång	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	7	nmod	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-173
@@ -3200,7 +3200,7 @@
 4	lider	lida	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	ögonsjukdomen	ögonsjukdom	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
-7	trakom	trakom	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	_
+7	trakom	trakom	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	4	obl	_	_
 8	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-179
@@ -3208,12 +3208,12 @@
 1	Olika	olik	ADJ	_	Degree=Pos	2	amod	_	_
 2	former	form	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	inälvsmask	inälvsmask	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
+4	inälvsmask	inälvsmask	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
 5	härjar	härja	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 6	stora	stor	ADJ	_	Degree=Pos	7	amod	_	_
 7	delar	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	5	obj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	Afrika	Afrika	PROPN	_	Case=Agt	7	nmod	_	_
+9	Afrika	Afrika	PROPN	_	Case=Gen	7	nmod	_	_
 10	,	,	PUNCT	_	_	_	_	_	_
 11	Asien	Asien	PROPN	_	Case=Nom	9	conj	_	_
 12	och	och	CCONJ	_	_	_	_	_	_
@@ -3295,7 +3295,7 @@
 4	får	få	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 5	majoriteten	majoritet	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	nsubj	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	befolkningen	befolkning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
+7	befolkningen	befolkning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
 8	varken	varken	CCONJ	_	_	_	_	_	_
 9	tillräckligt	tillräcklig	ADV	_	Case=Nnor|Degree=Pos	4	obj	_	_
 10	med	med	ADP	_	_	_	_	_	_
@@ -3334,7 +3334,7 @@
 20	vi	vi	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	21	nsubj	_	_
 21	behöver	behöva	VERB	_	Case=Cmp|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	17	acl	_	_
 22	av	av	ADP	_	_	_	_	_	_
-23	bådadera	bådadera	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Tot	21	obl	_	_
+23	bådadera	bådadera	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Tot	21	obl	_	_
 24	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-184
@@ -3352,7 +3352,7 @@
 11	produktionen	produktion	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	17	nsubj:pass	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	sådana	sådan	ADJ	_	Degree=Pos	14	amod	_	_
-14	näringsämnen	näringsämne	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	11	nmod	_	_
+14	näringsämnen	näringsämne	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	11	nmod	_	_
 15	i	i	ADP	_	_	_	_	_	_
 16	världen	värld	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	14	nmod	_	_
 17	tredubblas	tredubbla	VERB	_	Mood=Ind;Nec|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -3665,7 +3665,7 @@
 15	den	den	DET	_	_	_	_	_	_
 16	andre	annan	ADJ	_	Degree=Pos|NumType=Ord	17	amod	_	_
 17	makens	make	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	18	nmod:poss	_	_
-18	tillgångar	tillgång	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
+18	tillgångar	tillgång	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-201
@@ -3829,7 +3829,7 @@
 5	domstolen	domstol	NOUN	_	Case=Loc|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
 6	av	av	ADP	_	_	_	_	_	_
 7	båda	båda	DET	_	PronType=Tot	8	det	_	_
-8	makarna	make	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	3	obl:agent	_	_
+8	makarna	make	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	3	obl:agent	_	_
 9	tillsammans	tillsammans	ADV	_	|	8	nmod	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
@@ -3900,7 +3900,7 @@
 18	är	vara	AUX	_	_	_	_	_	_
 19	utsedd	utsedd	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	15	acl:relcl	_	_
 20	av	av	ADP	_	_	_	_	_	_
-21	kommunen	kommun	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	19	obl:agent	_	_
+21	kommunen	kommun	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	19	obl:agent	_	_
 22	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P114.12
@@ -4018,7 +4018,7 @@
 8	fastställa	fastställa	VERB	_	Mood=Ind|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	_
 9	vem	vem	PRON	_	Definite=Ind|Gender=Com|Number=Sing|PronType=Int	14	dislocated	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	makarna	make	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	9	nmod	_	_
+11	makarna	make	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	9	nmod	_	_
 12	som	som	PRON	_	PronType=Rel	14	nsubj	_	_
 13	ska	skola	AUX	_	_	_	_	_	_
 14	ha	ha	VERB	_	Mood=Ind;Int|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	8	ccomp	_	_
@@ -4032,7 +4032,7 @@
 1	Om	om	SCONJ	_	_	_	_	_	_
 2	ingen	ingen	PRON	_	Definite=Ind|Gender=Com|Number=Sing|PronType=Neg	5	nsubj:pass	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	makarna	make	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	2	nmod	_	_
+4	makarna	make	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	2	nmod	_	_
 5	bedöms	bedöma	VERB	_	Case=Cnd|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	14	advcl	_	_
 6	vara	vara	AUX	_	_	_	_	_	_
 7	lämplig	lämplig	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	5	xcomp	_	_
@@ -4121,7 +4121,7 @@
 15	förändring	förändring	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	12	obj	_	_
 16	av	av	ADP	_	_	_	_	_	_
 17	vårt	vi	PRON	_	Definite=Def|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
-18	liv	liv	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	15	nmod	_	_
+18	liv	liv	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	15	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P122.2
@@ -4171,7 +4171,7 @@
 2	fulla	full	ADJ	_	Degree=Pos	3	amod	_	_
 3	känslan	känsla	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	moderlighet	moderlighet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	3	nmod	_	_
+5	moderlighet	moderlighet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	3	nmod	_	_
 6	brukar	bruka	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	komma	komma	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	6	xcomp	_	_
 8	så	så	ADV	_	ExtPos=ADV	7	advmod	_	_
@@ -4408,7 +4408,7 @@
 7	första	första	ADJ	_	NumType=Ord	8	amod	_	_
 8	upplevelser	upplevelse	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	obj	_	_
 9	av	av	ADP	_	_	_	_	_	_
-10	kärlek	kärlek	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	8	nmod	_	_
+10	kärlek	kärlek	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	8	nmod	_	_
 11	och	och	CCONJ	_	_	_	_	_	_
 12	trygghet	trygghet	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	10	conj	_	_
 13	,	,	PUNCT	_	_	_	_	_	_
@@ -4594,7 +4594,7 @@
 23	trygg	trygg	ADJ	_	Degree=Pos	26	amod	_	_
 24	och	och	CCONJ	_	_	_	_	_	_
 25	varm	varm	ADJ	_	Case=Conj|Degree=Pos	23	conj	_	_
-26	moderskontakt	moderskontakt	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
+26	moderskontakt	moderskontakt	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-249
@@ -5276,7 +5276,7 @@
 5	barnet	barn	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	4	nsubj	_	_
 6	mer	mycket	ADV	_	Degree=Cmp	4	obj	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	lek	lek	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
+8	lek	lek	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
 9	och	och	CCONJ	_	_	_	_	_	_
 10	sällskap	sällskap	NOUN	_	Case=Conj|Definite=Ind|Gender=Neut|Number=Sing	8	conj	_	_
 11	.	.	PUNCT	_	_	_	_	_	_
@@ -5287,7 +5287,7 @@
 2	för	för	ADP	_	_	_	_	_	_
 3	utvecklingen	utveckling	NOUN	_	Case=Ben|Definite=Def|Gender=Com|Number=Sing	8	obl	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	språket	språk	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	3	nmod	_	_
+5	språket	språk	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	3	nmod	_	_
 6	är	vara	AUX	_	_	_	_	_	_
 7	det	den	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	8	expl	_	_
 8	viktigt	viktig	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	0	root	_	_
@@ -5450,7 +5450,7 @@
 9	särskild	särskild	ADJ	_	Degree=Pos	10	amod	_	_
 10	känsla	känsla	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obj	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	närhet	närhet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
+12	närhet	närhet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
 13	och	och	CCONJ	_	_	_	_	_	_
 14	samhörighet	samhörighet	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	12	conj	_	_
 15	.	.	PUNCT	_	_	_	_	_	_
@@ -5650,7 +5650,7 @@
 11	och	och	CCONJ	_	_	_	_	_	_
 12	skrika	skrika	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	10	conj	_	_
 13	av	av	ADP	_	_	_	_	_	_
-14	hunger	hunger	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
+14	hunger	hunger	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
 15	någon	någon	DET	_	PronType=Ind	17	det	_	_
 16	längre	lång	ADJ	_	Degree=Cmp	17	amod	_	_
 17	stund	stund	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
@@ -5674,7 +5674,7 @@
 14	det	den	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	15	nsubj	_	_
 15	vaknar	vakna	VERB	_	Case=Ttr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	sig	sig	PRON	_	Case=Agt|Definite=Def|PronType=Prs	15	obl	_	_
+17	sig	sig	PRON	_	Case=Gen|Definite=Def|PronType=Prs	15	obl	_	_
 18	självt	själv	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	17	acl	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
@@ -5742,7 +5742,7 @@
 23	sover	sova	VERB	_	Case=Tan|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	19	advcl	_	_
 24	över	över	ADP	_	_	_	_	_	_
 25	av	av	ADP	_	_	_	_	_	_
-26	sig	sig	PRON	_	Case=Agt|Definite=Def|PronType=Prs	23	obl	_	_
+26	sig	sig	PRON	_	Case=Gen|Definite=Def|PronType=Prs	23	obl	_	_
 27	själva	själv	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	26	acl	_	_
 28	.	.	PUNCT	_	_	_	_	_	_
 
@@ -5954,7 +5954,7 @@
 11	störs	störa	VERB	_	Case=Disj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	3	conj	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	starka	stark	ADJ	_	Degree=Pos	14	amod	_	_
-14	ljud	ljud	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	11	obl:agent	_	_
+14	ljud	ljud	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	11	obl:agent	_	_
 15	eller	eller	CCONJ	_	_	_	_	_	_
 16	ljus	ljus	NOUN	_	Case=Disj|Definite=Ind|Gender=Neut|Number=Sing	14	conj	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
@@ -6016,7 +6016,7 @@
 10	av	av	ADP	_	_	_	_	_	_
 11	sitt	sig	PRON	_	Definite=Def|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
 12	späda	späd	ADJ	_	Degree=Pos	13	amod	_	_
-13	barn	barn	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	9	nmod	_	_
+13	barn	barn	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	9	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-319
@@ -6056,7 +6056,7 @@
 
 # sent_id = sv-ud-test-321
 # text = Kärlek och ömhet kan barnet inte få för mycket av.
-1	Kärlek	kärlek	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	obl	_	_
+1	Kärlek	kärlek	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	obl	_	_
 2	och	och	CCONJ	_	_	_	_	_	_
 3	ömhet	ömhet	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	1	conj	_	_
 4	kan	kunna	AUX	_	_	_	_	_	_
@@ -6271,7 +6271,7 @@
 2	miljövårdsproblem	miljövårdsproblem	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	8	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
 4	i	i	ADP	_	_	_	_	_	_
-5	dag	dag	NOUN	_	Case=Agt;Ine|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
+5	dag	dag	NOUN	_	Case=Gen;Ine|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
 6	kommer	komma	AUX	_	_	_	_	_	_
 7	att	att	PART	_	_	_	_	_	_
 8	framstå	framstå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Fut|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -6326,7 +6326,7 @@
 3	är	vara	AUX	_	_	_	_	_	_
 4	beroende	beroende	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	0	root	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	bakterier	bakterie	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	4	obl	_	_
+6	bakterier	bakterie	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	4	obl	_	_
 7	som	som	PRON	_	PronType=Rel	8	nsubj	_	_
 8	förstör	förstöra	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
 9	döda	död	ADJ	_	Degree=Pos	10	amod	_	_
@@ -6515,7 +6515,7 @@
 21	på	på	ADP	_	_	_	_	_	_
 22	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	20	obl	_	_
 23	av	av	ADP	_	_	_	_	_	_
-24	överbefolkning	överbefolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	22	nmod	_	_
+24	överbefolkning	överbefolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	22	nmod	_	_
 25	med	med	ADP	_	_	_	_	_	_
 26	åtföljande	åtföljande	ADJ	_	Degree=Pos	27	amod	_	_
 27	stress	stress	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Sing	24	nmod	_	_
@@ -6526,7 +6526,7 @@
 32	anhopningar	anhopning	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Plur	27	conj	_	_
 33	av	av	ADP	_	_	_	_	_	_
 34	allsköns	allsköns	ADJ	_	Degree=Pos	35	amod	_	_
-35	djävligheter	djävlighet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	32	nmod	_	_
+35	djävligheter	djävlighet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	32	nmod	_	_
 36	att	att	SCONJ	_	_	_	_	_	_
 37	det	den	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	38	nsubj	_	_
 38	kommer	komma	VERB	_	Case=Atr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	20	advcl	_	_
@@ -6541,7 +6541,7 @@
 47	reduktion	reduktion	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	44	obj	_	_
 48	av	av	ADP	_	_	_	_	_	_
 49	jordens	jord	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	50	nmod:poss	_	_
-50	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	47	nmod	_	_
+50	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	47	nmod	_	_
 51	till	till	ADP	_	_	_	_	_	_
 52	så	så	ADV	_	|	54	advmod	_	_
 53	där	där	ADV	_	|	52	advmod	_	_
@@ -6690,7 +6690,7 @@
 30	bli	bli	AUX	_	_	_	_	_	_
 31	fjärrundersökta	fjärrundersökt	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Fin|Voice=Pass	13	conj	_	_
 32	av	av	ADP	_	_	_	_	_	_
-33	läkare	läkare	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	31	obl:agent	_	_
+33	läkare	läkare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	31	obl:agent	_	_
 34	,	,	PUNCT	_	_	_	_	_	_
 35	få	få	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	13	conj	_	_
 36	all	all	DET	_	PronType=Tot	38	det	_	_
@@ -6705,7 +6705,7 @@
 45	,	,	PUNCT	_	_	_	_	_	_
 46	framställd	framställd	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	13	xcomp	_	_
 47	av	av	ADP	_	_	_	_	_	_
-48	sojabönor	sojaböna	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	46	obl	_	_
+48	sojabönor	sojaböna	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	46	obl	_	_
 49	och	och	CCONJ	_	_	_	_	_	_
 50	proppas	proppa	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Pass	13	conj	_	_
 51	med	med	ADP	_	_	_	_	_	_
@@ -6791,18 +6791,18 @@
 10	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	8	obj	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	jordens	jord	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	13	nmod:poss	_	_
-13	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
+13	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
 14	,	,	PUNCT	_	_	_	_	_	_
 15	använder	använda	VERB	_	Case=Advs|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 16	redan	redan	ADV	_	|	15	advmod	_	_
 17	nu	nu	ADV	_	|	15	advmod	_	_
 18	hälften	hälft	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	15	obj	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	avkastningen	avkastning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	18	nmod	_	_
+20	avkastningen	avkastning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	18	nmod	_	_
 21	av	av	ADP	_	_	_	_	_	_
 22	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	24	nmod:poss	_	_
 23	alla	all	DET	_	PronType=Tot	24	det	_	_
-24	råvarutillgångar	råvarutillgång	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	20	nmod	_	_
+24	råvarutillgångar	råvarutillgång	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	20	nmod	_	_
 25	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-359
@@ -6922,7 +6922,7 @@
 5	förslummning	förslummning	NOUN	_	Case=Lat|Definite=Ind|Gender=Com|Number=Sing	2	obl	_	_
 6	av	av	ADP	_	_	_	_	_	_
 7	en	en	DET	_	_	_	_	_	_
-8	omfattning	omfattning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
+8	omfattning	omfattning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
 9	som	som	ADV	_	|	14	obj	_	_
 10	världen	värld	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	14	nsubj	_	_
 11	hittills	hittills	ADV	_	|	14	advmod	_	_
@@ -7111,7 +7111,7 @@
 21	i	i	ADP	_	_	_	_	_	_
 22	början	början	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	19	obl	_	_
 23	av	av	ADP	_	_	_	_	_	_
-24	industrialiseringen	industrialisering	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	22	nmod	_	_
+24	industrialiseringen	industrialisering	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	22	nmod	_	_
 25	?	?	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-378
@@ -7164,7 +7164,7 @@
 9	det	den	DET	_	_	_	_	_	_
 10	extremaste	extrem	ADJ	_	Degree=Sup|Mood=Ind|Polarity=Pos	3	advcl	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	alla	all	PRON	_	Case=Agt|Definite=Ind|Number=Plur|PronType=Tot	10	nmod	_	_
+12	alla	all	PRON	_	Case=Gen|Definite=Ind|Number=Plur|PronType=Tot	10	nmod	_	_
 13	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-381
@@ -7231,7 +7231,7 @@
 2	består	bestå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	av	av	ADP	_	_	_	_	_	_
 4	öppna	öppen	ADJ	_	Degree=Pos	5	amod	_	_
-5	diken	dike	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	2	obl	_	_
+5	diken	dike	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	2	obl	_	_
 6	i	i	ADP	_	_	_	_	_	_
 7	gatorna	gata	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Plur	5	nmod	_	_
 8	,	,	PUNCT	_	_	_	_	_	_
@@ -7407,7 +7407,7 @@
 9	rikhaltiga	rikhaltig	ADJ	_	Degree=Pos	10	amod	_	_
 10	exempelflora	exempelflora	NOUN	_	Case=Ela|Definite=Ind|Gender=Com|Number=Sing	5	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	befolkningsproblem	befolkningsproblem	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
+12	befolkningsproblem	befolkningsproblem	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
 13	,	,	PUNCT	_	_	_	_	_	_
 14	därför	därför	ADV	_	ExtPos=SCONJ	22	mark	_	_
 15	att	att	SCONJ	_	_	_	_	_	_
@@ -7436,7 +7436,7 @@
 6	i	i	ADP	_	_	_	_	_	_
 7	form	form	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	5	nmod	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	luft-	lufta	NOUN	_	Case=Agt|Gender=Com	7	nmod	_	_
+9	luft-	lufta	NOUN	_	Case=Gen|Gender=Com	7	nmod	_	_
 10	och	och	CCONJ	_	_	_	_	_	_
 11	vatten-	vatten	NOUN	_	Case=Conj|Gender=Neut	9	conj	_	_
 12	och	och	CCONJ	_	_	_	_	_	_
@@ -7451,7 +7451,7 @@
 21	är	vara	AUX	_	_	_	_	_	_
 22	konsekvenser	konsekvens	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
 23	av	av	ADP	_	_	_	_	_	_
-24	överbefolkningen	överbefolkning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	22	obl	_	_
+24	överbefolkningen	överbefolkning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	22	obl	_	_
 25	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P204.23
@@ -7478,7 +7478,7 @@
 19	'	'	PUNCT	_	_	_	_	_	_
 20	av	av	ADP	_	_	_	_	_	_
 21	radioaktiv	radioaktiv	ADJ	_	Degree=Pos	22	amod	_	_
-22	strålning	strålning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	18	nmod	_	_
+22	strålning	strålning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	18	nmod	_	_
 23	och	och	CCONJ	_	_	_	_	_	_
 24	hur	hur	ADV	_	|	31	advmod	_	_
 25	de	de	PRON	_	Case=Nom|Definite=Def|Number=Plur|PronType=Prs	31	nsubj	_	_
@@ -7558,7 +7558,7 @@
 8	50000	50000	NUM	_	Case=Nom|NumType=Card	9	nummod	_	_
 9	fall	fall	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	5	obj	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	blodkräfta	blodkräfta	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	9	nmod	_	_
+11	blodkräfta	blodkräfta	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	9	nmod	_	_
 12	per	per	ADP	_	_	_	_	_	_
 13	år	år	NOUN	_	Case=Dis|Definite=Ind|Gender=Neut|Number=Sing	9	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
@@ -7693,7 +7693,7 @@
 3	bor	bo	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 4	fyra	fyra	NUM	_	Case=Nom|NumType=Card	3	nsubj	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	fem	fem	NUM	_	Case=Agt|NumType=Card	4	nmod	_	_
+6	fem	fem	NUM	_	Case=Gen|NumType=Card	4	nmod	_	_
 7	i	i	ADP	_	_	_	_	_	_
 8	städer	stad	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Plur	3	obl	_	_
 9	år	år	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	nmod	_	_
@@ -7807,7 +7807,7 @@
 10	grundval	grundval	NOUN	_	Case=Ade|Definite=Ind|Gender=Neut|Number=Sing	5	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	deras	de	PRON	_	Definite=Def|Poss=Yes|PronType=Prs	13	nmod:poss	_	_
-13	duglighet	duglighet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
+13	duglighet	duglighet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 15	'	'	PUNCT	_	_	_	_	_	_
 
@@ -7880,7 +7880,7 @@
 13	i	i	ADP	_	_	_	_	_	_
 14	mitten	mitt	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	12	nmod	_	_
 15	av	av	ADP	_	_	_	_	_	_
-16	pannan	panna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	14	nmod	_	_
+16	pannan	panna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	14	nmod	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P210.4
@@ -8469,7 +8469,7 @@
 24	och	och	CCONJ	_	_	_	_	_	_
 25	vidareutbildning	vidareutbildning	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	23	conj	_	_
 26	av	av	ADP	_	_	_	_	_	_
-27	lärare	lärare	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	25	nmod	_	_
+27	lärare	lärare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	25	nmod	_	_
 28	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-456
@@ -8788,7 +8788,7 @@
 14	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	obj	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	sin	sig	PRON	_	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	17	nmod:poss	_	_
-17	nationalprodukt	nationalprodukt	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
+17	nationalprodukt	nationalprodukt	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
 18	på	på	ADP	_	_	_	_	_	_
 19	utbildning	utbildning	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	10	obl	_	_
 20	(	(	PUNCT	_	_	_	_	_	_
@@ -8830,7 +8830,7 @@
 4	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	2	obj	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	7	nmod:poss	_	_
-7	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
+7	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 8	,	,	PUNCT	_	_	_	_	_	_
 9	men	men	CCONJ	_	_	_	_	_	_
 10	bara	bara	ADV	_	|	11	advmod	_	_
@@ -8838,7 +8838,7 @@
 12	procent	procent	NOUN	_	Case=Advs|Definite=Ind|Gender=Com|Number=Plur	4	conj	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	15	nmod:poss	_	_
-15	utbildningsbudget	utbildningsbudget	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
+15	utbildningsbudget	utbildningsbudget	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
 16	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P210.26
@@ -8856,7 +8856,7 @@
 10	i	i	ADP	_	_	_	_	_	_
 11	form	form	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	9	nmod	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	u-hjälp	u-hjälp	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
+13	u-hjälp	u-hjälp	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P210.27
@@ -8899,7 +8899,7 @@
 # sent_id = sv-ud-test-480
 # text = Av barnen i åldern 6-14 år i Mali gick 68000 i skolan 1961.
 1	Av	av	ADP	_	_	_	_	_	_
-2	barnen	barn	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	9	obl	_	_
+2	barnen	barn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	9	obl	_	_
 3	i	i	ADP	_	_	_	_	_	_
 4	åldern	ålder	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
 5	6-14	6-14	NUM	_	Case=Nom|NumType=Card	6	nummod	_	_
@@ -8927,7 +8927,7 @@
 2	gick	gå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 3	113000	113000	NUM	_	Case=Nom|NumType=Card	2	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	barnen	barn	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
+5	barnen	barn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
 6	i	i	ADP	_	_	_	_	_	_
 7	den	den	DET	_	_	_	_	_	_
 8	åldersgruppen	åldersgrupp	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	5	nmod	_	_
@@ -8951,7 +8951,7 @@
 1	Nästan	nästan	ADV	_	|	2	advmod	_	_
 2	hälften	hälft	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	10	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	alla	all	PRON	_	Case=Agt|Definite=Ind|Number=Plur|PronType=Tot	2	nmod	_	_
+4	alla	all	PRON	_	Case=Gen|Definite=Ind|Number=Plur|PronType=Tot	2	nmod	_	_
 5	i	i	ADP	_	_	_	_	_	_
 6	u-länderna	u-land	NOUN	_	Case=Ine|Definite=Def|Gender=Neut|Number=Plur	4	nmod	_	_
 7	är	vara	AUX	_	_	_	_	_	_
@@ -8996,7 +8996,7 @@
 2	stora	stor	ADJ	_	Degree=Pos	3	amod	_	_
 3	delar	del	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Plur	8	obl	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	Afrika	Afrika	PROPN	_	Case=Agt	3	nmod	_	_
+5	Afrika	Afrika	PROPN	_	Case=Gen	3	nmod	_	_
 6	och	och	CCONJ	_	_	_	_	_	_
 7	Latinamerika	Latinamerika	PROPN	_	Case=Conj	5	conj	_	_
 8	slutar	sluta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -9023,7 +9023,7 @@
 # text = Av de barn som går ut grundskolan i arabvärlden är det bara vart fjärde barn som inte suttit kvar ett eller flera år.
 1	Av	av	ADP	_	_	_	_	_	_
 2	de	de	DET	_	_	_	_	_	_
-3	barn	barn	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	15	obl	_	_
+3	barn	barn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	15	obl	_	_
 4	som	som	PRON	_	PronType=Rel	5	nsubj	_	_
 5	går	gå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
 6	ut	ut	ADV	_	|	5	compound:prt	_	_
@@ -9123,7 +9123,7 @@
 2	38	38	NUM	_	Case=Nom|NumType=Card	3	nummod	_	_
 3	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	skolbarnen	skolbarn	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
+5	skolbarnen	skolbarn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
 6	i	i	ADP	_	_	_	_	_	_
 7	Afrika	Afrika	PROPN	_	Case=Ine	5	nmod	_	_
 8	och	och	CCONJ	_	_	_	_	_	_
@@ -9306,7 +9306,7 @@
 17	större	stor	ADJ	_	Degree=Cmp	18	amod	_	_
 18	delen	del	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	10	obl	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	Sverige	Sverige	PROPN	_	Case=Agt	18	nmod	_	_
+20	Sverige	Sverige	PROPN	_	Case=Gen	18	nmod	_	_
 21	,	,	PUNCT	_	_	_	_	_	_
 22	säger	säga	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	10	parataxis	_	_
 23	direktör	direktör	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	24	nmod	_	_
@@ -9374,7 +9374,7 @@
 14	gjorts	göra	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Pass	12	acl:relcl	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	en	en	DET	_	_	_	_	_	_
-17	forskargrupp	forskargrupp	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	obl:agent	_	_
+17	forskargrupp	forskargrupp	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	obl:agent	_	_
 18	på	på	ADP	_	_	_	_	_	_
 19	Riksmuseet	Riksmuseet	PROPN	_	Case=Ade	17	nmod	_	_
 20	.	.	PUNCT	_	_	_	_	_	_
@@ -9411,7 +9411,7 @@
 1	Resultatet	resultat	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	5	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
 3	detta	denna	DET	_	_	_	_	_	_
-4	fiske	fiske	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Neut|Number=Sing	1	nmod	_	_
+4	fiske	fiske	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Neut|Number=Sing	1	nmod	_	_
 5	visar	visa	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 6	att	att	SCONJ	_	_	_	_	_	_
 7	södra	södra	ADJ	_	Degree=Pos	8	amod	_	_
@@ -9421,7 +9421,7 @@
 11	oroväckande	oroväckande	ADJ	_	Degree=Pos	12	advmod	_	_
 12	stora	stor	ADJ	_	Degree=Pos	13	amod	_	_
 13	mängder	mängd	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	14	nmod	_	_
-14	DDT	DDT	NOUN	_	Abbr=Yes|Case=Agt	9	obl:agent	_	_
+14	DDT	DDT	NOUN	_	Abbr=Yes|Case=Gen	9	obl:agent	_	_
 15	och	och	CCONJ	_	_	_	_	_	_
 16	PCB	PCB	NOUN	_	Abbr=Yes|Case=Conj	14	conj	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
@@ -9481,7 +9481,7 @@
 # text = Massor av fiskare ringde i går i förtvivlan till sina organisationer för att få klarhet om gifthalterna i strömmingen.
 1	Massor	massa	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	4	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	fiskare	fiskare	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
+3	fiskare	fiskare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
 4	ringde	ringa	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 5	i	i	ADP	_	_	_	_	_	_
 6	går	går	NOUN	_	Case=Ine|Definite=Ind	4	obl	_	_
@@ -9652,7 +9652,7 @@
 8	fått	få	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 9	av	av	ADP	_	_	_	_	_	_
 10	jordbrukminister	jordbrukminister	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
-11	Ingemund	Ingemund	PROPN	_	Case=Agt	8	obl	_	_
+11	Ingemund	Ingemund	PROPN	_	Case=Gen	8	obl	_	_
 12	Bengtsson	Bengtsson	PROPN	_	Case=Nom	11	flat:name	_	_
 13	,	,	PUNCT	_	_	_	_	_	_
 14	säger	säga	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	8	parataxis	_	_
@@ -9667,14 +9667,14 @@
 1	39	39	NUM	_	Case=Nom|NumType=Card	2	nummod	_	_
 2	barn	barn	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	5	nsubj:pass	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	100	100	NUM	_	Case=Agt|NumType=Card	2	nmod	_	_
+4	100	100	NUM	_	Case=Gen|NumType=Card	2	nmod	_	_
 5	föds	föda	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 6	ovälkomna	ovälkommen	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	5	xcomp	_	_
 7	och	och	CCONJ	_	_	_	_	_	_
 8	bara	bara	ADV	_	|	9	advmod	_	_
 9	43	43	NUM	_	Case=Nom|NumType=Card	14	nsubj	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	100	100	NUM	_	Case=Agt|NumType=Card	9	nmod	_	_
+11	100	100	NUM	_	Case=Gen|NumType=Card	9	nmod	_	_
 12	är	vara	AUX	_	_	_	_	_	_
 13	aktivt	aktiv	ADV	_	Degree=Pos	14	advmod	_	_
 14	planerade	planerad	ADJ	_	Case=Conj|Degree=Pos|Polarity=Pos	5	conj	_	_
@@ -9721,7 +9721,7 @@
 4	av	av	ADP	_	_	_	_	_	_
 5	alla	all	DET	_	PronType=Tot	7	det	_	_
 6	de	de	DET	_	_	_	_	_	_
-7	data	data	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
+7	data	data	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
 8	som	som	PRON	_	PronType=Rel	18	obj	_	_
 9	med	medicine	ADJ	_	Abbr=Yes	10	amod	_	_
 10	lic	licentiat	NOUN	_	Abbr=Yes	11	nmod	_	_
@@ -9740,7 +9740,7 @@
 23	av	av	ADP	_	_	_	_	_	_
 24	165	165	NUM	_	Case=Nom|NumType=Card	26	nummod	_	_
 25	gravida	gravid	ADJ	_	Degree=Pos	26	amod	_	_
-26	kvinnor	kvinna	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	22	nmod	_	_
+26	kvinnor	kvinna	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	22	nmod	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-525
@@ -10024,7 +10024,7 @@
 10	många	mången	PRON	_	Case=Loc|Definite=Ind|Number=Plur|PronType=Ind	5	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	de	de	DET	_	_	_	_	_	_
-13	kvinnor	kvinna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
+13	kvinnor	kvinna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
 14	som	som	PRON	_	PronType=Rel	15	nsubj	_	_
 15	har	ha	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
 16	svåra	svår	ADJ	_	Degree=Pos	17	amod	_	_
@@ -10037,7 +10037,7 @@
 1	47	47	NUM	_	Case=Nom|NumType=Card	2	nummod	_	_
 2	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	10	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	kvinnorna	kvinna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	2	nmod	_	_
+4	kvinnorna	kvinna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	2	nmod	_	_
 5	i	i	ADP	_	_	_	_	_	_
 6	dr	doktor	NOUN	_	Abbr=Yes	7	nmod	_	_
 7	Nilssons	Nilsson	PROPN	_	Case=Gen	8	nmod:poss	_	_
@@ -10089,7 +10089,7 @@
 1	Deras	de	PRON	_	Definite=Def|Poss=Yes|PronType=Prs	2	nmod:poss	_	_
 2	val	val	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	5	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	äktenskapspartner	äktenskapspartner	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
+4	äktenskapspartner	äktenskapspartner	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
 5	blev	bli	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 6	kanske	kanske	ADV	_	|	5	advmod	_	_
 7	slumpmässigt	slumpmässig	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	5	xcomp	_	_
@@ -10102,7 +10102,7 @@
 2	personlighetspsykologiska	personlighetspsykologisk	ADJ	_	Degree=Pos	3	amod	_	_
 3	delen	del	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	avhandlingen	avhandling	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
+5	avhandlingen	avhandling	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
 6	går	gå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	mera	mycket	ADV	_	Degree=Cmp	6	advmod	_	_
 8	på	på	ADP	_	_	_	_	_	_
@@ -10178,7 +10178,7 @@
 # text = Frånvaron av besvär kan vara ett uttryck för en förträngning av graviditeten, säger Åke Nilsson.
 1	Frånvaron	frånvaro	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	besvär	besvär	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	1	nmod	_	_
+3	besvär	besvär	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	1	nmod	_	_
 4	kan	kunna	AUX	_	_	_	_	_	_
 5	vara	vara	AUX	_	_	_	_	_	_
 6	ett	en	DET	_	_	_	_	_	_
@@ -10187,7 +10187,7 @@
 9	en	en	DET	_	_	_	_	_	_
 10	förträngning	förträngning	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	7	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	graviditeten	graviditet	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	10	nmod	_	_
+12	graviditeten	graviditet	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	10	nmod	_	_
 13	,	,	PUNCT	_	_	_	_	_	_
 14	säger	säga	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 15	Åke	Åke	PROPN	_	Case=Nom	14	nsubj	_	_
@@ -10230,7 +10230,7 @@
 6	undersöka	undersöka	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	2	advcl	_	_
 7	upplevelsen	upplevelse	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	obj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	förlossningen	förlossning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
+9	förlossningen	förlossning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
 10	närmare	nära	ADV	_	Degree=Cmp	6	advmod	_	_
 11	och	och	CCONJ	_	_	_	_	_	_
 12	det	den	DET	_	_	_	_	_	_
@@ -10286,7 +10286,7 @@
 14	vid	vid	ADP	_	_	_	_	_	_
 15	upplevelsen	upplevelse	NOUN	_	Case=Loc|Definite=Def|Gender=Com|Number=Sing	2	obl	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	smärtan	smärta	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
+17	smärtan	smärta	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-555
@@ -10367,7 +10367,7 @@
 12	efter	efter	ADP	_	_	_	_	_	_
 13	kontroll	kontroll	NOUN	_	Case=Tps|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	motiven	motiv	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	13	nmod	_	_
+15	motiven	motiv	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	13	nmod	_	_
 16	för	för	ADP	_	_	_	_	_	_
 17	ansökan	ansökan	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
 18	,	,	PUNCT	_	_	_	_	_	_
@@ -10378,7 +10378,7 @@
 23	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	21	obj	_	_
 24	av	av	ADP	_	_	_	_	_	_
 25	de	de	DET	_	_	_	_	_	_
-26	problem	problem	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	23	nmod	_	_
+26	problem	problem	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	23	nmod	_	_
 27	som	som	PRON	_	PronType=Rel	28	nsubj	_	_
 28	finns	finnas	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	26	acl:relcl	_	_
 29	.	.	PUNCT	_	_	_	_	_	_
@@ -10389,7 +10389,7 @@
 2	övervägande	övervägande	ADJ	_	Degree=Pos	3	amod	_	_
 3	delen	del	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	problematiken	problematik	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
+5	problematiken	problematik	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
 6	ligger	ligga	VERB	_	Case=Advs|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	på	på	ADP	_	_	_	_	_	_
 8	attityderna	attityd	NOUN	_	Case=Ade|Definite=Def|Gender=Com|Number=Plur	6	obl	_	_
@@ -10511,7 +10511,7 @@
 11	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	8	obj	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	det	den	DET	_	_	_	_	_	_
-14	klientel	klientel	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	11	nmod	_	_
+14	klientel	klientel	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	nmod	_	_
 15	som	som	PRON	_	PronType=Rel	18	nsubj:pass	_	_
 16	i	i	ADP	_	_	_	_	_	_
 17	dag	dag	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	18	obl	_	_
@@ -10567,7 +10567,7 @@
 11	i	i	ADP	_	_	_	_	_	_
 12	majoriteten	majoritet	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	16	obl	_	_
 13	av	av	ADP	_	_	_	_	_	_
-14	fall	fall	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	12	nmod	_	_
+14	fall	fall	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	12	nmod	_	_
 15	är	vara	AUX	_	_	_	_	_	_
 16	orsaken	orsak	NOUN	_	Case=Atr;Cnd|Definite=Def|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	2	advcl	_	_
 17	till	till	ADP	_	_	_	_	_	_
@@ -10610,7 +10610,7 @@
 14	är	vara	AUX	_	_	_	_	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	annan	annan	ADJ	_	Degree=Pos	17	amod	_	_
-17	natur	natur	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	9	acl:relcl	_	_
+17	natur	natur	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	9	acl:relcl	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-567
@@ -10632,7 +10632,7 @@
 15	någon	någon	DET	_	PronType=Ind	16	det	_	_
 16	form	form	NOUN	_	Case=Lat|Definite=Ind|Gender=Com|Number=Sing	13	obl	_	_
 17	av	av	ADP	_	_	_	_	_	_
-18	åtgärd	åtgärd	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	_
+18	åtgärd	åtgärd	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	_
 19	som	som	PRON	_	PronType=Rel	21	nsubj	_	_
 20	kan	kunna	AUX	_	_	_	_	_	_
 21	leda	leda	VERB	_	Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	acl:relcl	_	_
@@ -10660,7 +10660,7 @@
 15	somliga	somlig	PRON	_	Definite=Ind|Number=Plur|PronType=Ind	20	nsubj	_	_
 16	av	av	ADP	_	_	_	_	_	_
 17	dessa	denna	DET	_	_	_	_	_	_
-18	fall	fall	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Com|Number=Plur	15	nmod	_	_
+18	fall	fall	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Com|Number=Plur	15	nmod	_	_
 19	har	ha	AUX	_	_	_	_	_	_
 20	haft	ha	VERB	_	Aspect=Perf|Case=Atr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	ccomp	_	_
 21	god	god	ADJ	_	Degree=Pos	22	amod	_	_
@@ -10668,7 +10668,7 @@
 23	av	av	ADP	_	_	_	_	_	_
 24	ett	en	DET	_	_	_	_	_	_
 25	operativt	operativ	ADJ	_	Degree=Pos	26	amod	_	_
-26	ingrepp	ingrepp	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	20	obl	_	_
+26	ingrepp	ingrepp	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	20	obl	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-569
@@ -10700,7 +10700,7 @@
 25	cirkulationen	cirkulation	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	23	nmod	_	_
 26	av	av	ADP	_	_	_	_	_	_
 27	den	den	DET	_	_	_	_	_	_
-28	vätska	vätska	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	25	nmod	_	_
+28	vätska	vätska	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	25	nmod	_	_
 29	som	som	PRON	_	PronType=Rel	30	nsubj	_	_
 30	omger	omge	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	28	acl:relcl	_	_
 31	hjärnan	hjärna	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	30	obj	_	_
@@ -10728,7 +10728,7 @@
 18	försvinnande	försvinna	NOUN	_	Case=Conj|Definite=Ind|Gender=Neut|Number=Sing	16	conj	_	_
 19	av	av	ADP	_	_	_	_	_	_
 20	denna	denna	DET	_	_	_	_	_	_
-21	vätska	vätska	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	18	nmod	_	_
+21	vätska	vätska	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	18	nmod	_	_
 22	är	vara	AUX	_	_	_	_	_	_
 23	störd	störd	ADJ	_	Case=Advs|Degree=Pos|Polarity=Pos	5	conj	_	_
 24	.	.	PUNCT	_	_	_	_	_	_
@@ -10796,7 +10796,7 @@
 10	av	av	ADP	_	_	_	_	_	_
 11	den	den	DET	_	_	_	_	_	_
 12	störda	störd	ADJ	_	Degree=Pos	13	amod	_	_
-13	cirkulationen	cirkulation	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	8	nmod	_	_
+13	cirkulationen	cirkulation	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	8	nmod	_	_
 14	och	och	CCONJ	_	_	_	_	_	_
 15	kan	kunna	AUX	_	_	_	_	_	_
 16	understundom	understundom	ADV	_	|	17	advmod	_	_
@@ -10917,7 +10917,7 @@
 4	med	med	ADP	_	_	_	_	_	_
 5	en	en	PRON	_	Case=Com|Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	3	obl	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	deltagarna	deltagare	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	5	nmod	_	_
+7	deltagarna	deltagare	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	5	nmod	_	_
 8	i	i	ADP	_	_	_	_	_	_
 9	den	den	DET	_	_	_	_	_	_
 10	vetenskapliga	vetenskaplig	ADJ	_	Degree=Pos	11	amod	_	_
@@ -11031,7 +11031,7 @@
 10	hälften	hälft	NOUN	_	Case=Cmp|Definite=Def|Gender=Com|Number=Sing	8	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	de	de	DET	_	_	_	_	_	_
-13	patienter	patient	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
+13	patienter	patient	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	10	nmod	_	_
 14	som	som	PRON	_	PronType=Rel	16	nsubj:pass	_	_
 15	årligen	årligen	ADV	_	|	16	advmod	_	_
 16	intas	inta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	13	acl:relcl	_	_
@@ -11056,7 +11056,7 @@
 12	behandling	behandling	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	obj	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	det	den	DET	_	_	_	_	_	_
-15	slag	slag	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	12	nmod	_	_
+15	slag	slag	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	12	nmod	_	_
 16	som	som	PRON	_	PronType=Rel	17	nsubj:pass	_	_
 17	berörts	beröra	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Pass	15	acl:relcl	_	_
 18	ovan	ovan	ADV	_	|	17	advmod	_	_
@@ -11151,7 +11151,7 @@
 7	någon	någon	DET	_	PronType=Ind	8	det	_	_
 8	form	form	NOUN	_	Case=The|Definite=Ind|Gender=Com|Number=Sing	5	obl	_	_
 9	av	av	ADP	_	_	_	_	_	_
-10	röntgenapparatur	röntgenapparatur	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	8	nmod	_	_
+10	röntgenapparatur	röntgenapparatur	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	8	nmod	_	_
 11	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P218.8
@@ -11254,7 +11254,7 @@
 23	med	med	ADP	_	_	_	_	_	_
 24	hjälp	hjälp	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Sing	27	obl	_	_
 25	av	av	ADP	_	_	_	_	_	_
-26	gammakameran	gammakamera	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	24	nmod	_	_
+26	gammakameran	gammakamera	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	24	nmod	_	_
 27	följa	följa	VERB	_	Case=Conj|Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
 28	ämnets	ämne	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	29	nmod:poss	_	_
 29	passage	passage	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	27	obj	_	_
@@ -11358,7 +11358,7 @@
 21	av	av	ADP	_	_	_	_	_	_
 22	det	den	DET	_	_	_	_	_	_
 23	radioaktiva	radioaktiv	ADJ	_	Degree=Pos	24	amod	_	_
-24	materialet	material	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	20	nmod	_	_
+24	materialet	material	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	20	nmod	_	_
 25	inom	inom	ADP	_	_	_	_	_	_
 26	tumören	tumör	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	17	obl	_	_
 27	,	,	PUNCT	_	_	_	_	_	_
@@ -11413,7 +11413,7 @@
 33	med	med	ADP	_	_	_	_	_	_
 34	hjälp	hjälp	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Sing	32	obl	_	_
 35	av	av	ADP	_	_	_	_	_	_
-36	gammakameran	gammakamera	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	34	nmod	_	_
+36	gammakameran	gammakamera	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	34	nmod	_	_
 37	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P218.11
@@ -11454,7 +11454,7 @@
 33	loppet	lopp	NOUN	_	Case=Sub|Definite=Def|Gender=Neut|Number=Sing	31	obl	_	_
 34	av	av	ADP	_	_	_	_	_	_
 35	20-30	20-30	NUM	_	Case=Nom|NumType=Card	36	nummod	_	_
-36	minuter	minut	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	33	nmod	_	_
+36	minuter	minut	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	33	nmod	_	_
 37	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-601
@@ -11527,7 +11527,7 @@
 5	fullständig	fullständig	ADJ	_	Degree=Pos	6	amod	_	_
 6	bild	bild	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	obj	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	hjärnan	hjärna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
+8	hjärnan	hjärna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
 9	som	som	SCONJ	_	_	_	_	_	_
 10	en	en	DET	_	_	_	_	_	_
 11	s k	så_kallad	ADJ	_	Abbr=Yes	12	amod	_	_
@@ -11606,7 +11606,7 @@
 2	är	vara	AUX	_	_	_	_	_	_
 3	av	av	ADP	_	_	_	_	_	_
 4	den	den	DET	_	_	_	_	_	_
-5	uppfattningen	uppfattning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	0	root	_	_
+5	uppfattningen	uppfattning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	0	root	_	_
 6	att	att	SCONJ	_	_	_	_	_	_
 7	kombinationen	kombination	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	8	nmod	_	_
 8	undersökning	undersökning	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	19	nsubj	_	_
@@ -11619,7 +11619,7 @@
 15	av	av	ADP	_	_	_	_	_	_
 16	en	en	DET	_	_	_	_	_	_
 17	erfaren	erfaren	ADJ	_	Degree=Pos	18	amod	_	_
-18	neurolog	neurolog	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
+18	neurolog	neurolog	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
 19	erbjuder	erbjuda	VERB	_	Case=Atr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl	_	_
 20	både	både	CCONJ	_	_	_	_	_	_
 21	diagnostiska	diagnostisk	ADJ	_	Case=Conj|Degree=Pos	24	amod	_	_
@@ -11788,7 +11788,7 @@
 11	-	-	PUNCT	_	_	_	_	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	senil	senil	ADJ	_	Degree=Pos	14	amod	_	_
-14	sinnessvaghet	sinnessvaghet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
+14	sinnessvaghet	sinnessvaghet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 15	har	ha	AUX	_	_	_	_	_	_
 16	forskarna	forskare	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur	17	nsubj	_	_
 17	funnit	finna	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -11837,7 +11837,7 @@
 25	operation	operation	NOUN	_	Case=Per|Definite=Ind|Gender=Com|Number=Sing	17	obl	_	_
 26	av	av	ADP	_	_	_	_	_	_
 27	det	den	DET	_	_	_	_	_	_
-28	slag	slag	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	25	nmod	_	_
+28	slag	slag	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	25	nmod	_	_
 29	som	som	PRON	_	PronType=Rel	30	nsubj:pass	_	_
 30	återges	återge	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	28	acl:relcl	_	_
 31	på	på	ADP	_	_	_	_	_	_
@@ -11879,7 +11879,7 @@
 10	i	i	ADP	_	_	_	_	_	_
 11	en	en	PRON	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	9	obl	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	halsvenerna	halsven	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	11	nmod	_	_
+13	halsvenerna	halsven	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	11	nmod	_	_
 14	och	och	CCONJ	_	_	_	_	_	_
 15	utmynnar	utmynna	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
 16	i	i	ADP	_	_	_	_	_	_
@@ -11946,7 +11946,7 @@
 9	bild	bild	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obj	_	_
 10	av	av	ADP	_	_	_	_	_	_
 11	patientens	patient	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	12	nmod:poss	_	_
-12	hjärna	hjärna	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
+12	hjärna	hjärna	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	obl	_	_
 13	på	på	ADP	_	_	_	_	_	_
 14	ett	en	DET	_	_	_	_	_	_
 15	mycket	mycket	ADV	_	Degree=Pos	16	advmod	_	_
@@ -12206,14 +12206,14 @@
 16	av	av	ADP	_	_	_	_	_	_
 17	den	den	DET	_	_	_	_	_	_
 18	psykiska	psykisk	ADJ	_	Degree=Pos	19	amod	_	_
-19	jämvikten	jämvikt	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
+19	jämvikten	jämvikt	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
 20	på	på	ADP	_	_	_	_	_	_
 21	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
 22	av	av	ADP	_	_	_	_	_	_
 23	fysisk	fysisk	ADJ	_	Degree=Pos	26	amod	_	_
 24	eller	eller	CCONJ	_	_	_	_	_	_
 25	psykisk	psykisk	ADJ	_	Case=Disj|Degree=Pos	23	conj	_	_
-26	påfrestning	påfrestning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	21	nmod	_	_
+26	påfrestning	påfrestning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	21	nmod	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P301.4
@@ -12233,7 +12233,7 @@
 12	tillstånd	tillstånd	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Mood=Ind|Number=Sing|Polarity=Pos	10	xcomp	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	s k	så_kallad	ADJ	_	Abbr=Yes	15	amod	_	_
-15	stress	stress	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
+15	stress	stress	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
 16	,	,	PUNCT	_	_	_	_	_	_
 17	ett	en	DET	_	_	_	_	_	_
 18	slags	slag	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	19	nmod:poss	_	_
@@ -12391,7 +12391,7 @@
 10	svårare	svår	ADJ	_	Degree=Cmp	11	amod	_	_
 11	former	form	NOUN	_	Case=Int|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	neuroser	neuros	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	11	nmod	_	_
+13	neuroser	neuros	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	11	nmod	_	_
 14	och	och	CCONJ	_	_	_	_	_	_
 15	de	de	DET	_	_	_	_	_	_
 16	sjukdomar	sjukdom	NOUN	_	Case=Conj|Definite=Def|Gender=Com|Number=Plur	11	conj	_	_
@@ -12552,7 +12552,7 @@
 6	=	=	PUNCT	_	_	_	_	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	inre	inre	ADJ	_	Degree=Cmp	9	amod	_	_
-9	ursprung	ursprung	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	4	appos	_	_
+9	ursprung	ursprung	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	4	appos	_	_
 10	)	)	PUNCT	_	_	_	_	_	_
 11	.	.	PUNCT	_	_	_	_	_	_
 
@@ -12609,7 +12609,7 @@
 7	de	de	DET	_	_	_	_	_	_
 8	mera	mycket	ADV	_	Degree=Cmp	9	advmod	_	_
 9	kroniska	kronisk	ADJ	_	Degree=Pos	10	amod	_	_
-10	mentalsjukdomarna	mentalsjukdom	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	5	nmod	_	_
+10	mentalsjukdomarna	mentalsjukdom	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	5	nmod	_	_
 11	,	,	PUNCT	_	_	_	_	_	_
 12	den	den	DET	_	_	_	_	_	_
 13	manisk-depressiva	manisk-depressiv	ADJ	_	Degree=Pos	5	appos	_	_
@@ -12632,10 +12632,10 @@
 4	av	av	ADP	_	_	_	_	_	_
 5	periodiskt	periodisk	ADV	_	Degree=Pos	6	advmod	_	_
 6	återkommande	återkommande	ADJ	_	Degree=Pos	7	amod	_	_
-7	anfall	anfall	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	3	obl:agent	_	_
+7	anfall	anfall	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	3	obl:agent	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	onormal	onormal	ADJ	_	Degree=Pos	10	amod	_	_
-10	upprymdhet	upprymdhet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
+10	upprymdhet	upprymdhet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
 11	respektive	respektive	ADV	_	_	_	_	_	_
 12	nedstämdhet	nedstämdhet	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	10	conj	_	_
 13	.	.	PUNCT	_	_	_	_	_	_
@@ -12673,7 +12673,7 @@
 15	nya	ny	ADJ	_	Degree=Pos	16	amod	_	_
 16	attacker	attack	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	14	obj	_	_
 17	av	av	ADP	_	_	_	_	_	_
-18	sjukdomen	sjukdom	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
+18	sjukdomen	sjukdom	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-662
@@ -12731,7 +12731,7 @@
 2	en	en	NUM	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|NumType=Card	3	nummod	_	_
 3	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	befolkningen	befolkning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
+5	befolkningen	befolkning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
 6	har	ha	AUX	_	_	_	_	_	_
 7	haft	ha	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 8	eller	eller	CCONJ	_	_	_	_	_	_
@@ -12787,7 +12787,7 @@
 1	Omkring	omkring	ADV	_	|	2	advmod	_	_
 2	hälften	hälft	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	9	nsubj:pass	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	2	nmod	_	_
+4	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	2	nmod	_	_
 5	som	som	PRON	_	PronType=Rel	6	nsubj	_	_
 6	insjuknar	insjukna	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
 7	blir	bli	AUX	_	_	_	_	_	_
@@ -12801,7 +12801,7 @@
 15	resten	rest	NOUN	_	Case=Disj|Definite=Def|Gender=Com|Number=Sing	12	conj	_	_
 16	av	av	ADP	_	_	_	_	_	_
 17	sitt	sig	PRON	_	Definite=Def|Gender=Neut|Number=Sing|Poss=Yes|PronType=Prs	18	nmod:poss	_	_
-18	liv	liv	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	15	nmod	_	_
+18	liv	liv	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	15	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-671
@@ -12844,7 +12844,7 @@
 12	hel	hel	ADJ	_	Degree=Pos	13	amod	_	_
 13	grupp	grupp	NOUN	_	Case=Advs|Definite=Ind|Gender=Com|Number=Sing	9	conj	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	sjukdomar	sjukdom	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
+15	sjukdomar	sjukdom	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
 16	med	med	ADP	_	_	_	_	_	_
 17	likartade	likartad	ADJ	_	Degree=Pos	18	amod	_	_
 18	symptom	symptom	NOUN	_	Case=Com|Definite=Ind|Gender=Neut|Number=Plur	15	nmod	_	_
@@ -12855,7 +12855,7 @@
 1	Dessa	denna	PRON	_	Definite=Def|Number=Plur|PronType=Dem	2	nsubj	_	_
 2	består	bestå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	rubbningar	rubbning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
+4	rubbningar	rubbning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
 5	i	i	ADP	_	_	_	_	_	_
 6	tanke-	tanke	NOUN	_	Case=Ine|Gender=Com	4	nmod	_	_
 7	eller	eller	CCONJ	_	_	_	_	_	_
@@ -12935,7 +12935,7 @@
 9	fjärdedel	fjärdedel	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	obj	_	_
 10	av	av	ADP	_	_	_	_	_	_
 11	de	de	DET	_	_	_	_	_	_
-12	schizofrena	schizofren	ADJ	_	Case=Agt|Degree=Pos	9	nmod	_	_
+12	schizofrena	schizofren	ADJ	_	Case=Gen|Degree=Pos	9	nmod	_	_
 13	nästan	nästan	ADV	_	|	14	advmod	_	_
 14	helt	helt	ADV	_	Degree=Pos	15	advmod	_	_
 15	återställda	återställd	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	6	xcomp	_	_
@@ -12968,7 +12968,7 @@
 6	doser	dos	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Plur	11	obl	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	vissa	viss	ADJ	_	Degree=Pos	9	amod	_	_
-9	gifter	gift	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	6	nmod	_	_
+9	gifter	gift	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	6	nmod	_	_
 10	kan	kunna	AUX	_	_	_	_	_	_
 11	framkalla	framkalla	VERB	_	Case=Cau|Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	18	advcl	_	_
 12	övergående	övergående	ADJ	_	Degree=Pos	13	amod	_	_
@@ -13034,7 +13034,7 @@
 19	begagnat	begagnad	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Act	13	conj	_	_
 20	sig	sig	PRON	_	Case=Acc|Definite=Def|PronType=Prs	19	obj	_	_
 21	av	av	ADP	_	_	_	_	_	_
-21.1	_	_	_	_	Case=Agt	19	obl	_	_
+21.1	_	_	_	_	Case=Gen	19	obl	_	_
 22	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-684
@@ -13057,7 +13057,7 @@
 # text = Kvist av kokabuske och opievallmo.
 1	Kvist	Kvist	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	0	root	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	kokabuske	kokabuske	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
+3	kokabuske	kokabuske	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
 4	och	och	CCONJ	_	_	_	_	_	_
 5	opievallmo	opievallmo	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	3	conj	_	_
 6	.	.	PUNCT	_	_	_	_	_	_
@@ -13150,7 +13150,7 @@
 6	lätt	lätt	ADV	_	Degree=Pos	2	advmod	_	_
 7	beroende	beroende	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	2	xcomp	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	2	obl	_	_
+9	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	2	obl	_	_
 10	och	och	CCONJ	_	_	_	_	_	_
 11	dels	dels	CCONJ	_	_	_	_	_	_
 12	har	ha	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
@@ -13178,7 +13178,7 @@
 9	stor	stor	ADJ	_	Degree=Pos	10	amod	_	_
 10	grupp	grupp	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	13	nsubj:pass	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	ämnen	ämne	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
+12	ämnen	ämne	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
 13	upptäckts	upptäcka	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 14	och	och	CCONJ	_	_	_	_	_	_
 15	framställts	framställa	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Pass	13	conj	_	_
@@ -13208,7 +13208,7 @@
 9	för	för	ADP	_	_	_	_	_	_
 10	behandlingen	behandling	NOUN	_	Case=Ben|Definite=Def|Gender=Com|Number=Sing	6	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
-12	mentalsjuka	mentalsjuk	ADJ	_	Case=Agt|Degree=Pos	10	nmod	_	_
+12	mentalsjuka	mentalsjuk	ADJ	_	Case=Gen|Degree=Pos	10	nmod	_	_
 13	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P301.20
@@ -13217,7 +13217,7 @@
 1	Olika	olik	ADJ	_	Degree=Pos	2	amod	_	_
 2	slag	slag	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	psykofarmaka	psykofarmaka	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	2	nmod	_	_
+4	psykofarmaka	psykofarmaka	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	2	nmod	_	_
 
 # sent_id = sv-ud-test-694
 # text = Tidigare i detta kapitel har nämnts en del om transmittorsubstanserna, som överför impulser från en nervcell till en annan vid synapserna.
@@ -13261,7 +13261,7 @@
 12	vid	vid	ADP	_	_	_	_	_	_
 13	överföringen	överföring	NOUN	_	Case=Loc|Definite=Def|Gender=Com|Number=Sing	8	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	impulser	impuls	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
+15	impulser	impuls	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
 16	inom	inom	ADP	_	_	_	_	_	_
 17	hjärnan	hjärna	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	13	nmod	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
@@ -13276,7 +13276,7 @@
 6	ett	en	DET	_	_	_	_	_	_
 7	överskott	överskott	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	nsubj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	monoaminer	monoamin	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	7	nmod	_	_
+9	monoaminer	monoamin	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	7	nmod	_	_
 10	leder	leda	VERB	_	Case=Atr|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	3	csubj	_	_
 11	till	till	ADP	_	_	_	_	_	_
 12	att	att	SCONJ	_	_	_	_	_	_
@@ -13285,7 +13285,7 @@
 15	vissa	viss	ADJ	_	Degree=Pos	16	amod	_	_
 16	delar	del	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
 17	av	av	ADP	_	_	_	_	_	_
-18	hjärnan	hjärna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
+18	hjärnan	hjärna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	16	nmod	_	_
 19	skruvas	skruva	VERB	_	Case=Atr;Lat|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	10	advcl	_	_
 20	upp	upp	ADV	_	|	19	compound:prt	_	_
 21	med	med	ADP	_	_	_	_	_	_
@@ -13350,7 +13350,7 @@
 6	dämpande	dämpande	ADJ	_	Degree=Pos	9	amod	_	_
 7	,	,	PUNCT	_	_	_	_	_	_
 8	rogivande	rogivande	ADJ	_	Degree=Pos	6	conj	_	_
-9	medlen	medel	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	3	obl	_	_
+9	medlen	medel	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	3	obl	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-701
@@ -13359,7 +13359,7 @@
 2	en	en	DET	_	_	_	_	_	_
 3	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	3	nmod	_	_
+5	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	3	nmod	_	_
 6	förstör	förstöra	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	vissa	viss	ADJ	_	Degree=Pos	8	amod	_	_
 8	monoaminer	monoamin	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	obj	_	_
@@ -13414,14 +13414,14 @@
 11	rötterna	rot	NOUN	_	Case=Abl|Definite=Def|Gender=Com|Number=Plur	5	obl	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	denna	denna	DET	_	_	_	_	_	_
-14	växt	växt	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	11	nmod	_	_
+14	växt	växt	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	11	nmod	_	_
 15	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-704
 # text = Ett av dem är reserpin, som har en starkt lugnande verkan och som av läkarna användes vid svåra maniska tillstånd.
 1	Ett	en	PRON	_	Definite=Ind|Gender=Neut|Mood=Ind|Number=Sing|Polarity=Pos|PronType=Prs	0	root	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	1	nmod	_	_
+3	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	1	nmod	_	_
 4	är	vara	AUX	_	_	_	_	_	_
 5	reserpin	reserpin	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	1	nsubj	_	_
 6	,	,	PUNCT	_	_	_	_	_	_
@@ -13434,7 +13434,7 @@
 13	och	och	CCONJ	_	_	_	_	_	_
 14	som	som	PRON	_	PronType=Rel	17	nsubj:pass	_	_
 15	av	av	ADP	_	_	_	_	_	_
-16	läkarna	läkare	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	17	obl:agent	_	_
+16	läkarna	läkare	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	17	obl:agent	_	_
 17	användes	använda	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	8	conj	_	_
 18	vid	vid	ADP	_	_	_	_	_	_
 19	svåra	svår	ADJ	_	Degree=Pos	21	amod	_	_
@@ -13493,7 +13493,7 @@
 4	rent	ren	ADV	_	Degree=Pos	5	advmod	_	_
 5	syntetiskt	syntetisk	ADV	_	Degree=Pos	6	advmod	_	_
 6	framställda	framställd	ADJ	_	Degree=Pos	7	amod	_	_
-7	ämnen	ämne	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	2	nmod	_	_
+7	ämnen	ämne	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	2	nmod	_	_
 8	,	,	PUNCT	_	_	_	_	_	_
 9	fentiazinföreningarna	fentiazinförening	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur	2	appos	_	_
 10	,	,	PUNCT	_	_	_	_	_	_
@@ -13510,7 +13510,7 @@
 # text = Ett av dem (klorpromazin) säljes under namnet Hibernal och användes som ett verksamt medel mot schizofreni och även mot maniska tillstånd.
 1	Ett	en	PRON	_	Definite=Ind|Gender=Neut|Number=Sing|PronType=Prs	7	nsubj:pass	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	1	nmod	_	_
+3	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	1	nmod	_	_
 4	(	(	PUNCT	_	_	_	_	_	_
 5	klorpromazin	klorpromazin	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	1	appos	_	_
 6	)	)	PUNCT	_	_	_	_	_	_
@@ -13566,7 +13566,7 @@
 6	annan	annan	ADJ	_	Degree=Pos	7	amod	_	_
 7	grupp	grupp	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	nsubj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	ämnen	ämne	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	7	nmod	_	_
+9	ämnen	ämne	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	7	nmod	_	_
 10	,	,	PUNCT	_	_	_	_	_	_
 11	till	till	ADP	_	_	_	_	_	_
 12	vilken	vilken	PRON	_	Case=Lat|Definite=Ind|Gender=Com|Number=Sing|PronType=Rel	13	obl	_	_
@@ -13633,7 +13633,7 @@
 2	andra	annan	ADJ	_	Degree=Pos	3	amod	_	_
 3	gruppen	grupp	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	0	root	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	psykofarmaka	psykofarmaka	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	3	nmod	_	_
+5	psykofarmaka	psykofarmaka	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	3	nmod	_	_
 6	är	vara	AUX	_	_	_	_	_	_
 7	de	de	DET	_	_	_	_	_	_
 8	uppiggande	uppiggande	ADJ	_	Degree=Pos	11	amod	_	_
@@ -13867,7 +13867,7 @@
 7	Columbus'	Columbus	PROPN	_	Case=Gen	8	nmod:poss	_	_
 8	dagar	dag	NOUN	_	Case=Tan|Definite=Ind|Gender=Com|Number=Plur	3	obl	_	_
 9	av	av	ADP	_	_	_	_	_	_
-10	indianerna	indian	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	3	obl:agent	_	_
+10	indianerna	indian	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	3	obl:agent	_	_
 11	,	,	PUNCT	_	_	_	_	_	_
 12	särskilt	särskilt	ADV	_	|	3	advmod	_	_
 13	i	i	ADP	_	_	_	_	_	_
@@ -14035,7 +14035,7 @@
 5	skildringar	skildring	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	11	nsubj	_	_
 6	av	av	ADP	_	_	_	_	_	_
 7	kända	känd	ADJ	_	Degree=Pos	8	amod	_	_
-8	författare	författare	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	5	nmod	_	_
+8	författare	författare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	5	nmod	_	_
 9	och	och	CCONJ	_	_	_	_	_	_
 10	konstnärer	konstnär	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Plur	8	conj	_	_
 11	väckt	väcka	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -14135,7 +14135,7 @@
 6	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	3	obl	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	deras	de	PRON	_	Definite=Def|Poss=Yes|PronType=Prs	9	nmod:poss	_	_
-9	verkningar	verkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	6	nmod	_	_
+9	verkningar	verkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	6	nmod	_	_
 10	på	på	ADP	_	_	_	_	_	_
 11	nervsystemet	nervsystem	NOUN	_	Case=Ade|Definite=Def|Gender=Neut|Number=Sing	9	nmod	_	_
 12	utan	utan	ADP	_	_	_	_	_	_
@@ -14235,7 +14235,7 @@
 6	en	en	DET	_	_	_	_	_	_
 7	känsla	känsla	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	4	obj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	avspänning	avspänning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
+9	avspänning	avspänning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
 10	och	och	CCONJ	_	_	_	_	_	_
 11	välbefinnande	välbefinnande	NOUN	_	Case=Conj|Definite=Ind|Gender=Neut|Number=Sing	9	conj	_	_
 12	.	.	PUNCT	_	_	_	_	_	_
@@ -14293,7 +14293,7 @@
 6	delar	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	3	obj	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	centrala	central	ADJ	_	Degree=Pos	9	amod	_	_
-9	nervsystemet	nervsystem	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	6	nmod	_	_
+9	nervsystemet	nervsystem	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	6	nmod	_	_
 10	,	,	PUNCT	_	_	_	_	_	_
 11	så	så	ADV	_	_	_	_	_	_
 12	att	att	SCONJ	_	_	_	_	_	_
@@ -14328,7 +14328,7 @@
 20	förtäring	förtäring	NOUN	_	Case=Loc|Definite=Ind|Gender=Com|Number=Sing	16	obl	_	_
 21	av	av	ADP	_	_	_	_	_	_
 22	dessa	denna	DET	_	_	_	_	_	_
-23	ämnen	ämne	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Com|Number=Plur	20	nmod	_	_
+23	ämnen	ämne	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Com|Number=Plur	20	nmod	_	_
 24	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P301.36
@@ -14345,7 +14345,7 @@
 1	Regelbundet	regelbunden	ADJ	_	Degree=Pos	2	amod	_	_
 2	bruk	bruk	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	7	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	alkohol	alkohol	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
+4	alkohol	alkohol	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	2	nmod	_	_
 5	och	och	CCONJ	_	_	_	_	_	_
 6	narkotika	narkotika	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Plur	4	conj	_	_
 7	leder	leda	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -14442,7 +14442,7 @@
 14	i	i	ADP	_	_	_	_	_	_
 15	form	form	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	13	nmod	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	oro	oro	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
+17	oro	oro	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
 18	och	och	CCONJ	_	_	_	_	_	_
 19	ångest	ångest	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	17	conj	_	_
 20	och	och	CCONJ	_	_	_	_	_	_
@@ -14450,7 +14450,7 @@
 22	i	i	ADP	_	_	_	_	_	_
 23	form	form	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	21	nmod	_	_
 24	av	av	ADP	_	_	_	_	_	_
-25	feber	feber	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	23	nmod	_	_
+25	feber	feber	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	23	nmod	_	_
 26	,	,	PUNCT	_	_	_	_	_	_
 27	smärtor	smärta	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	25	conj	_	_
 28	och	och	CCONJ	_	_	_	_	_	_
@@ -14462,7 +14462,7 @@
 1	Ny	ny	ADJ	_	Degree=Pos	2	amod	_	_
 2	tillförsel	tillförsel	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	giftet	gifte	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
+4	giftet	gifte	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
 5	är	vara	AUX	_	_	_	_	_	_
 6	det	den	DET	_	_	_	_	_	_
 7	enda	enda	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	0	root	_	_
@@ -14574,7 +14574,7 @@
 # text = Bruk av alkohol och narkotika i små doser kan innebära en omedelbar fara, t ex för trafikolyckor, eftersom omdömet trubbas av och reaktionstiden förlängs.
 1	Bruk	bruk	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	10	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	alkohol	alkohol	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
+3	alkohol	alkohol	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
 4	och	och	CCONJ	_	_	_	_	_	_
 5	narkotika	narkotika	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Plur	3	conj	_	_
 6	i	i	ADP	_	_	_	_	_	_
@@ -14665,7 +14665,7 @@
 # text = Många av sjukdomssymptomen beror emellertid på näringsbrist och vitaminbrist, som uppkommer genom att alkoholister och narkomaner oftast lever ett oregelbundet liv utan ordnade måltidsvanor.
 1	Många	mången	PRON	_	Definite=Ind|Number=Plur|PronType=Ind	4	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	sjukdomssymptomen	sjukdomssymptom	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	1	nmod	_	_
+3	sjukdomssymptomen	sjukdomssymptom	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	1	nmod	_	_
 4	beror	bero	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 5	emellertid	emellertid	ADV	_	|	4	advmod	_	_
 6	på	på	ADP	_	_	_	_	_	_
@@ -14748,7 +14748,7 @@
 15	mindre	liten	ADJ	_	Degree=Cmp	16	amod	_	_
 16	doser	dos	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Plur	12	obl	_	_
 17	av	av	ADP	_	_	_	_	_	_
-18	giftet	gifte	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	16	nmod	_	_
+18	giftet	gifte	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	16	nmod	_	_
 19	i	i	ADP	_	_	_	_	_	_
 20	fråga	fråga	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	18	nmod	_	_
 21	.	.	PUNCT	_	_	_	_	_	_
@@ -14950,7 +14950,7 @@
 20	en	en	DET	_	_	_	_	_	_
 21	följd	följd	NOUN	_	Case=Sub|Definite=Ind|Gender=Com|Number=Sing	18	obl	_	_
 22	av	av	ADP	_	_	_	_	_	_
-23	år	år	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	21	nmod	_	_
+23	år	år	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	21	nmod	_	_
 24	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-781
@@ -15087,7 +15087,7 @@
 17	fick	få	VERB	_	Case=Cnd|Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
 18	karaktären	karaktär	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	17	obj	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	punktinsatser	punktinsats	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	18	nmod	_	_
+20	punktinsatser	punktinsats	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	18	nmod	_	_
 21	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P307.6
@@ -15143,7 +15143,7 @@
 18	ökade	ökad	ADJ	_	Degree=Pos	19	amod	_	_
 19	insatser	insats	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	17	obj	_	_
 20	av	av	ADP	_	_	_	_	_	_
-21	produktionsfaktorer	produktionsfaktor	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	19	nmod	_	_
+21	produktionsfaktorer	produktionsfaktor	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	19	nmod	_	_
 22	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P307.7
@@ -15171,7 +15171,7 @@
 20	av	av	ADP	_	_	_	_	_	_
 21	det	den	DET	_	_	_	_	_	_
 22	minskade	minskad	ADJ	_	Degree=Pos	23	amod	_	_
-23	utbudet	utbud	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	19	nmod	_	_
+23	utbudet	utbud	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	19	nmod	_	_
 24	,	,	PUNCT	_	_	_	_	_	_
 25	höjda	höjd	ADJ	_	Degree=Pos	26	amod	_	_
 26	hyror	hyra	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	19	obl	_	_
@@ -15185,7 +15185,7 @@
 4	var	vara	AUX	_	_	_	_	_	_
 5	minst	lite	ADV	_	Degree=Sup|Polarity=Neg	8	advmod	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	allt	all	PRON	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing|PronType=Tot	5	obl	_	_
+7	allt	all	PRON	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing|PronType=Tot	5	obl	_	_
 8	lockande	lockande	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	0	root	_	_
 9	.	.	PUNCT	_	_	_	_	_	_
 
@@ -15349,7 +15349,7 @@
 14	form	form	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	11	obl	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	höjda	höjd	ADJ	_	Degree=Pos	17	amod	_	_
-17	hyror	hyra	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	14	nmod	_	_
+17	hyror	hyra	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	14	nmod	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-803
@@ -15407,7 +15407,7 @@
 21	för	för	ADP	_	_	_	_	_	_
 22	skötsel	skötsel	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	20	nmod	_	_
 23	av	av	ADP	_	_	_	_	_	_
-24	fastigheten	fastighet	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	22	nmod	_	_
+24	fastigheten	fastighet	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	22	nmod	_	_
 25	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-806
@@ -15469,7 +15469,7 @@
 7	till	till	ADP	_	_	_	_	_	_
 8	slutet	slut	NOUN	_	Case=Lat|Definite=Def|Gender=Neut|Number=Sing	5	obl	_	_
 9	av	av	ADP	_	_	_	_	_	_
-10	60-talet	60-tal	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	8	nmod	_	_
+10	60-talet	60-tal	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	8	nmod	_	_
 11	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-810
@@ -15557,7 +15557,7 @@
 13	av	av	ADP	_	_	_	_	_	_
 14	en	en	DET	_	_	_	_	_	_
 15	industriarbetares	industriarbetare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	16	nmod:poss	_	_
-16	inkomst	inkomst	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
+16	inkomst	inkomst	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P307.11
@@ -15575,7 +15575,7 @@
 # sent_id = sv-ud-test-815
 # text = Av bilden framgår 'ramen' d v s bärande väggar samt vatten och avlopp.
 1	Av	av	ADP	_	_	_	_	_	_
-2	bilden	bild	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
+2	bilden	bild	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
 3	framgår	framgå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 4	'	'	PUNCT	_	_	_	_	_	_
 5	ramen	ram	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	3	nsubj	_	_
@@ -15741,7 +15741,7 @@
 17	dvs	det_vill_säga	ADV	_	Abbr=Yes	18	advmod	_	_
 18	tvångsinlösen	tvångsinlösen	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	15	appos	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	mark	mark	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	18	nmod	_	_
+20	mark	mark	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	18	nmod	_	_
 21	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P307.14
@@ -15761,7 +15761,7 @@
 12	del	del	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	2	obl	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	de	de	DET	_	_	_	_	_	_
-15	flerfamiljshus	flerfamiljshus	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	12	nmod	_	_
+15	flerfamiljshus	flerfamiljshus	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	12	nmod	_	_
 16	som	som	PRON	_	PronType=Rel	17	nsubj:pass	_	_
 17	byggts	bygga	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Pass	15	acl:relcl	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
@@ -15859,7 +15859,7 @@
 5	som	som	PRON	_	PronType=Rel	6	nsubj	_	_
 6	gällt	gälla	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Act	4	acl:relcl	_	_
 7	t o m	till_och_med	ADV	_	_	_	_	_	_
-8	1967	1967	NUM	_	Case=Lat|NumType=Card	6	obl	_	_
+8	1967	1967	NUM	_	Case=till_och_med|NumType=Card	6	obl	_	_
 9	har	ha	AUX	_	_	_	_	_	_
 10	staten	stat	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	nsubj	_	_
 11	givit	ge	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -15962,7 +15962,7 @@
 # sent_id = sv-ud-test-838
 # text = Fr o m 1968 har den statliga bostadslånepolitiken radikalt förändrats.
 1	Fr o m	från_och_med	ADV	_	_	_	_	_	_
-2	1968	1968	NUM	_	Case=Abl|NumType=Card	8	obl	_	_
+2	1968	1968	NUM	_	Case=från_och_med|NumType=Card	8	obl	_	_
 3	har	ha	AUX	_	_	_	_	_	_
 4	den	den	DET	_	_	_	_	_	_
 5	statliga	statlig	ADJ	_	Degree=Pos	6	amod	_	_
@@ -16005,7 +16005,7 @@
 6	kostnadshöjande	kostnadshöjande	ADJ	_	Degree=Pos	7	amod	_	_
 7	effekten	effekt	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	4	obj	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	detta	denna	PRON	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing|PronType=Dem	7	nmod	_	_
+9	detta	denna	PRON	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Dem	7	nmod	_	_
 10	har	ha	AUX	_	_	_	_	_	_
 11	införts	införa	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 12	s k	så_kallad	ADJ	_	Abbr=Yes	13	amod	_	_
@@ -16019,7 +16019,7 @@
 20	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	35	nsubj:pass	_	_
 21	av	av	ADP	_	_	_	_	_	_
 22	de	de	DET	_	_	_	_	_	_
-23	kostnader	kostnad	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	20	nmod	_	_
+23	kostnader	kostnad	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	20	nmod	_	_
 24	för	för	ADP	_	_	_	_	_	_
 25	en	en	DET	_	_	_	_	_	_
 26	fastighet	fastighet	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	23	nmod	_	_
@@ -16045,14 +16045,14 @@
 4	i	i	ADP	_	_	_	_	_	_
 5	tiden	tid	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	3	nmod	_	_
 6	av	av	ADP	_	_	_	_	_	_
-7	kostnader	kostnad	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	3	nmod	_	_
+7	kostnader	kostnad	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	3	nmod	_	_
 8	motverkas	motverka	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Pass	0	root	_	_
 9	också	också	ADV	_	|	8	advmod	_	_
 10	en	en	DET	_	_	_	_	_	_
 11	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	8	nsubj:pass	_	_
 12	av	av	ADP	_	_	_	_	_	_
 13	den	den	DET	_	_	_	_	_	_
-14	hyressplittring	hyressplittring	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	11	nmod	_	_
+14	hyressplittring	hyressplittring	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	11	nmod	_	_
 15	(	(	PUNCT	_	_	_	_	_	_
 16	se	se	VERB	_	Mood=Imp|Polarity=Pos|VerbForm=Fin|Voice=Act	8	parataxis	_	_
 17	nedan	nedan	ADV	_	|	16	advmod	_	_
@@ -16063,9 +16063,9 @@
 22	på	på	ADP	_	_	_	_	_	_
 23	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
 24	av	av	ADP	_	_	_	_	_	_
-25	förändringar	förändring	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	23	nmod	_	_
+25	förändringar	förändring	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	23	nmod	_	_
 26	av	av	ADP	_	_	_	_	_	_
-27	byggnadskostnaderna	byggnadskostnad	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	25	nmod	_	_
+27	byggnadskostnaderna	byggnadskostnad	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	25	nmod	_	_
 28	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P307.19
@@ -16231,7 +16231,7 @@
 1	Vid	vid	ADP	_	_	_	_	_	_
 2	mitten	mitt	NOUN	_	Case=Loc|Definite=Def|Gender=Com|Number=Sing	5	obl	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	60-talet	60-tal	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
+4	60-talet	60-tal	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	2	nmod	_	_
 5	fanns	finnas	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 6	den	den	PRON	_	Definite=Def|Gender=Com|Number=Sing|PronType=Prs	5	nsubj	_	_
 7	kvar	kvar	ADV	_	|	5	compound:prt	_	_
@@ -16327,7 +16327,7 @@
 18	och	och	CCONJ	_	_	_	_	_	_
 19	skötsel	skötsel	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	17	conj	_	_
 20	av	av	ADP	_	_	_	_	_	_
-21	fastigheter	fastighet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	19	nmod	_	_
+21	fastigheter	fastighet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	19	nmod	_	_
 22	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-859
@@ -16355,12 +16355,12 @@
 8	som	som	PRON	_	PronType=Rel	9	nsubj:pass	_	_
 9	bestämts	bestämma	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Pass	7	acl:relcl	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	regeringen	regering	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	9	obl:agent	_	_
+11	regeringen	regering	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	9	obl:agent	_	_
 12	på	på	ADP	_	_	_	_	_	_
 13	förslag	förslag	NOUN	_	Case=Ade|Definite=Ind|Gender=Neut|Number=Sing	9	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
 15	statens	stat	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	16	nmod:poss	_	_
-16	hyresråd	hyresråd	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	13	nmod	_	_
+16	hyresråd	hyresråd	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	13	nmod	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-861
@@ -16510,7 +16510,7 @@
 21	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	19	obl	_	_
 22	av	av	ADP	_	_	_	_	_	_
 23	statliga	statlig	ADJ	_	Degree=Pos	24	amod	_	_
-24	ingripanden	ingripande	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	21	nmod	_	_
+24	ingripanden	ingripande	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	21	nmod	_	_
 25	i	i	ADP	_	_	_	_	_	_
 26	marknadsmekanismen	marknadsmekanism	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	24	nmod	_	_
 27	.	.	PUNCT	_	_	_	_	_	_
@@ -16679,12 +16679,12 @@
 7	bostäder	bostad	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Plur	3	obl	_	_
 8	av	av	ADP	_	_	_	_	_	_
 9	tillfredsställande	tillfredsställande	ADJ	_	Degree=Pos	10	amod	_	_
-10	storlek	storlek	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
+10	storlek	storlek	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	7	nmod	_	_
 11	och	och	CCONJ	_	_	_	_	_	_
 12	standard	standard	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Sing	10	conj	_	_
 13	har	ha	AUX	_	_	_	_	_	_
 14	fr o m	från_och_med	ADV	_	_	_	_	_	_
-15	1969	1969	NUM	_	Case=Abl|NumType=Card	16	obl	_	_
+15	1969	1969	NUM	_	Case=från_och_med|NumType=Card	16	obl	_	_
 16	införts	införa	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 17	statliga	statlig	ADJ	_	Degree=Pos	20	amod	_	_
 18	och	och	CCONJ	_	_	_	_	_	_
@@ -16807,7 +16807,7 @@
 18	vid	vid	ADP	_	_	_	_	_	_
 19	slutet	slut	NOUN	_	Case=Loc|Definite=Def|Gender=Neut|Number=Sing	17	nmod	_	_
 20	av	av	ADP	_	_	_	_	_	_
-21	1960-talet	1960-tal	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	19	nmod	_	_
+21	1960-talet	1960-tal	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	19	nmod	_	_
 22	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-884
@@ -16815,7 +16815,7 @@
 1	På	på	ADP	_	_	_	_	_	_
 2	grund	grund	NOUN	_	Case=Ade|Definite=Ind|Gender=Com|Number=Sing	24	obl	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	omflyttningen	omflyttning	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+4	omflyttningen	omflyttning	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
 5	från	från	ADP	_	_	_	_	_	_
 6	landsbygd	landsbygd	NOUN	_	Case=Abl|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 7	till	till	ADP	_	_	_	_	_	_
@@ -16852,7 +16852,7 @@
 6	naturlig	naturlig	ADJ	_	Degree=Pos	7	amod	_	_
 7	följd	följd	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	2	xcomp	_	_
 8	av	av	ADP	_	_	_	_	_	_
-9	systemet	system	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	7	nmod	_	_
+9	systemet	system	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	7	nmod	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-886
@@ -16992,7 +16992,7 @@
 8	långa	lång	ADJ	_	Degree=Pos	9	amod	_	_
 9	köer	kö	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	obj	_	_
 10	av	av	ADP	_	_	_	_	_	_
-11	bostadssökande	bostadssökande	ADJ	_	Case=Agt|Degree=Pos	9	nmod	_	_
+11	bostadssökande	bostadssökande	ADJ	_	Case=Gen|Degree=Pos	9	nmod	_	_
 12	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-897
@@ -17003,7 +17003,7 @@
 4	dock	dock	ADV	_	|	10	advmod	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	olika	olik	ADJ	_	Degree=Pos	7	amod	_	_
-7	skäl	skäl	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	10	obl	_	_
+7	skäl	skäl	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	10	obl	_	_
 8	mycket	mycket	ADV	_	Degree=Pos	9	advmod	_	_
 9	otillförlitliga	otillförlitlig	ADJ	_	Degree=Pos	10	amod	_	_
 10	mått	mått	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
@@ -17223,7 +17223,7 @@
 17	hur	hur	ADV	_	|	18	advmod	_	_
 18	många	mången	PRON	_	Definite=Ind|Number=Plur|PronType=Ind	23	dislocated	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	18	nmod	_	_
+20	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	18	nmod	_	_
 21	som	som	PRON	_	PronType=Rel	23	nsubj	_	_
 22	var	vara	AUX	_	_	_	_	_	_
 23	barn	barn	NOUN	_	Case=Conj|Definite=Ind|Gender=Neut|Number=Plur|Polarity=Pos	2	conj	_	_
@@ -17401,7 +17401,7 @@
 3	av	av	ADP	_	_	_	_	_	_
 4	jordens	jord	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	6	nmod:poss	_	_
 5	alla	all	DET	_	PronType=Tot	6	det	_	_
-6	människor	människa	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
+6	människor	människa	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
 7	kan	kunna	AUX	_	_	_	_	_	_
 8	inte	inte	PART	_	_	_	_	_	_
 9	äta	äta	VERB	_	Mood=Ind;neg(Pot)|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -17412,7 +17412,7 @@
 14	lider	lida	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	direkt	direkt	ADJ	_	Degree=Pos	17	amod	_	_
-17	svält	svält	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	14	obl	_	_
+17	svält	svält	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	14	obl	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P311.2
@@ -17450,7 +17450,7 @@
 1	De	de	DET	_	_	_	_	_	_
 2	rikaste	rik	ADJ	_	Degree=Sup	5	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	2	nmod	_	_
+4	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	2	nmod	_	_
 5	finns	finnas	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 6	i	i	ADP	_	_	_	_	_	_
 7	Nordamerika	Nordamerika	PROPN	_	Case=Ine	5	obl	_	_
@@ -17551,7 +17551,7 @@
 1	I	i	ADP	_	_	_	_	_	_
 2	början	början	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	5	obl	_	_
 3	av	av	ADP	_	_	_	_	_	_
-4	efterkrigstiden	efterkrigstid	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+4	efterkrigstiden	efterkrigstid	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
 5	användes	använda	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
 6	termen	term	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nmod	_	_
 7	underutvecklade	underutvecklad	ADJ	_	Degree=Pos	8	amod	_	_
@@ -17585,7 +17585,7 @@
 3	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	6	nmod:poss	_	_
 4	mest	mycket	ADV	_	_	_	_	_	_
 5	angelägna	angelägen	ADJ	_	Degree=Sup	6	amod	_	_
-6	samarbetsuppgifter	samarbetsuppgift	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
+6	samarbetsuppgifter	samarbetsuppgift	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	1	nmod	_	_
 7	har	ha	AUX	_	_	_	_	_	_
 8	under	under	ADP	_	_	_	_	_	_
 9	efterkrigstiden	efterkrigstid	NOUN	_	Case=Sub|Definite=Def|Gender=Com|Number=Sing	1	obl	_	_
@@ -17621,7 +17621,7 @@
 # text = Nödvändigheten av utvecklingssamarbete har framstått allt klarare.
 1	Nödvändigheten	nödvändighet	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	utvecklingssamarbete	utvecklingssamarbete	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
+3	utvecklingssamarbete	utvecklingssamarbete	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	1	nmod	_	_
 4	har	ha	AUX	_	_	_	_	_	_
 5	framstått	framstå	VERB	_	Aspect=Perf|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 6	allt	allt	ADV	_	|	7	advmod	_	_
@@ -17879,7 +17879,7 @@
 17	en	en	NUM	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|NumType=Card	18	nummod	_	_
 18	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	16	obj	_	_
 19	av	av	ADP	_	_	_	_	_	_
-20	bruttonationalprodukten	bruttonationalprodukt	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	18	nmod	_	_
+20	bruttonationalprodukten	bruttonationalprodukt	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	18	nmod	_	_
 21	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-947
@@ -17903,7 +17903,7 @@
 2	40	40	NUM	_	Case=Nom|NumType=Card	3	nummod	_	_
 3	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	anslaget	anslag	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	3	nmod	_	_
+5	anslaget	anslag	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	3	nmod	_	_
 6	går	gå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	till	till	ADP	_	_	_	_	_	_
 8	FN	FN	PROPN	_	Case=Lat	6	obl	_	_
@@ -17930,7 +17930,7 @@
 11	,	,	PUNCT	_	_	_	_	_	_
 12	förvaltas	förvalta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
 13	av	av	ADP	_	_	_	_	_	_
-14	SIDA	SIDA	PROPN	_	Case=Agt	12	obl:agent	_	_
+14	SIDA	SIDA	PROPN	_	Case=Gen	12	obl:agent	_	_
 15	(	(	PUNCT	_	_	_	_	_	_
 16	Swedish	Swedish	ADJ	_	Degree=Pos|Foreign=Yes	19	amod	_	_
 17	International	International	ADJ	_	Degree=Pos|Foreign=Yes	18	amod	_	_
@@ -18063,7 +18063,7 @@
 3	inte	inte	PART	_	_	_	_	_	_
 4	någon	någon	DET	_	PronType=Ind	8	det	_	_
 5	av	av	ADP	_	_	_	_	_	_
-6	alla	all	PRON	_	Case=Agt|Definite=Ind|Number=Plur|PronType=Tot	7	obl:agent	_	_
+6	alla	all	PRON	_	Case=Gen|Definite=Ind|Number=Plur|PronType=Tot	7	obl:agent	_	_
 7	omfattad	omfattad	ADJ	_	Degree=Pos	8	amod	_	_
 8	definition	definition	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	2	nsubj	_	_
 9	på	på	ADP	_	_	_	_	_	_
@@ -18099,7 +18099,7 @@
 3	av	av	ADP	_	_	_	_	_	_
 4	deras	de	PRON	_	Definite=Def|Poss=Yes|PronType=Prs	6	nmod:poss	_	_
 5	låga	låg	ADJ	_	Degree=Pos	6	amod	_	_
-6	nationalinkomster	nationalinkomst	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
+6	nationalinkomster	nationalinkomst	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
 7	finns	finnas	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 8	det	den	PRON	_	Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	7	expl	_	_
 9	ändå	ändå	ADV	_	|	7	advmod	_	_
@@ -18131,7 +18131,7 @@
 15	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	12	appos	_	_
 16	av	av	ADP	_	_	_	_	_	_
 17	jordens	jord	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	18	nmod:poss	_	_
-18	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
+18	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	15	nmod	_	_
 19	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-963
@@ -18144,7 +18144,7 @@
 6	procent	procent	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	'	'	PUNCT	_	_	_	_	_	_
-9	världsinkomsten	världsinkomst	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
+9	världsinkomsten	världsinkomst	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	6	nmod	_	_
 10	'	'	PUNCT	_	_	_	_	_	_
 11	,	,	PUNCT	_	_	_	_	_	_
 12	har	ha	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
@@ -18152,7 +18152,7 @@
 14	80	80	NUM	_	Case=Nom|NumType=Card	15	nummod	_	_
 15	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	12	obj	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	världsexporten	världsexport	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
+17	världsexporten	världsexport	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	15	nmod	_	_
 18	och	och	CCONJ	_	_	_	_	_	_
 19	ökar	öka	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
 20	i	i	ADP	_	_	_	_	_	_
@@ -18232,7 +18232,7 @@
 4	promille	promille	NOUN	_	Case=Com|Definite=Ind|Gender=Com|Number=Plur	8	obl	_	_
 5	av	av	ADP	_	_	_	_	_	_
 6	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	7	nmod:poss	_	_
-7	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
+7	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 8	svarar	svara	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 9	Sverige	Sverige	PROPN	_	Case=Nom	8	nsubj	_	_
 10	för	för	ADP	_	_	_	_	_	_
@@ -18240,7 +18240,7 @@
 12	två	två	NUM	_	Case=Nom|NumType=Card	13	nummod	_	_
 13	procent	procent	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Plur	8	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	världshandeln	världshandel	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	13	nmod	_	_
+15	världshandeln	världshandel	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	13	nmod	_	_
 16	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-968
@@ -18263,7 +18263,7 @@
 2	två	två	NUM	_	Case=Nom|NumType=Card	3	nummod	_	_
 3	tredjedelar	tredjedel	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Plur	15	obl	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	u-länderna	u-land	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
+5	u-länderna	u-land	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	3	nmod	_	_
 6	är	vara	AUX	_	_	_	_	_	_
 7	genomsnittsinkomsten	genomsnittsinkomst	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	15	nsubj	_	_
 8	under	under	ADV	_	|	14	advmod	_	_
@@ -18287,7 +18287,7 @@
 5	av	av	ADP	_	_	_	_	_	_
 6	den	den	DET	_	_	_	_	_	_
 7	svenska	svensk	ADJ	_	Degree=Pos	8	amod	_	_
-8	nationalinkomsten	nationalinkomst	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	4	nmod	_	_
+8	nationalinkomsten	nationalinkomst	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	4	nmod	_	_
 9	till	till	ADP	_	_	_	_	_	_
 10	u-länderna	u-land	NOUN	_	Case=Lat|Definite=Def|Gender=Neut|Number=Plur	2	obl	_	_
 11	.	.	PUNCT	_	_	_	_	_	_
@@ -18307,7 +18307,7 @@
 10	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	7	appos	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	13	nmod:poss	_	_
-13	befolkning	befolkning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
+13	befolkning	befolkning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-972
@@ -18316,7 +18316,7 @@
 2	andel	andel	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	nsubj	_	_
 3	av	av	ADP	_	_	_	_	_	_
 4	'	'	PUNCT	_	_	_	_	_	_
-5	världsinkomsten	världsinkomst	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
+5	världsinkomsten	världsinkomst	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	2	nmod	_	_
 6	'	'	PUNCT	_	_	_	_	_	_
 7	är	vara	AUX	_	_	_	_	_	_
 8	ungefär	ungefär	ADV	_	|	9	advmod	_	_
@@ -18334,7 +18334,7 @@
 6	procent	procent	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Plur	2	obl	_	_
 7	av	av	ADP	_	_	_	_	_	_
 8	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	9	nmod:poss	_	_
-9	export	export	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
+9	export	export	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-974
@@ -18359,7 +18359,7 @@
 3	av	av	ADP	_	_	_	_	_	_
 4	tredje	tredje	ADJ	_	NumType=Ord	5	amod	_	_
 5	världens	värld	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	6	nmod:poss	_	_
-6	invånare	invånare	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
+6	invånare	invånare	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	2	nmod	_	_
 7	är	vara	AUX	_	_	_	_	_	_
 8	analfabeter	analfabet	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Mood=Ind|Number=Plur|Polarity=Pos	0	root	_	_
 9	.	.	PUNCT	_	_	_	_	_	_
@@ -18582,7 +18582,7 @@
 5	i	i	ADP	_	_	_	_	_	_
 6	Expressen	Expressen	PROPN	_	Case=Ine	4	nmod	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	Rose	Rose	PROPN	_	Case=Agt	4	nmod	_	_
+8	Rose	Rose	PROPN	_	Case=Gen	4	nmod	_	_
 9	Kennedy	Kennedy	PROPN	_	Case=Nom	8	flat:name	_	_
 10	.	.	PUNCT	_	_	_	_	_	_
 
@@ -18652,7 +18652,7 @@
 13	att	att	SCONJ	_	_	_	_	_	_
 14	två	två	NUM	_	Case=Nom|NumType=Card	21	nsubj	_	_
 15	av	av	ADP	_	_	_	_	_	_
-16	dem	de	PRON	_	Case=Agt|Definite=Def|Number=Plur|PronType=Prs	14	nmod	_	_
+16	dem	de	PRON	_	Case=Gen|Definite=Def|Number=Plur|PronType=Prs	14	nmod	_	_
 17	i	i	ADP	_	_	_	_	_	_
 18	sin	sig	PRON	_	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	19	nmod:poss	_	_
 19	tur	tur	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	21	obl	_	_
@@ -18808,7 +18808,7 @@
 2	här	här	ADV	_	|	3	advmod	_	_
 3	typen	typ	NOUN	_	Case=Nom|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	uttalanden	uttalande	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	3	nmod	_	_
+5	uttalanden	uttalande	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	3	nmod	_	_
 6	förekommer	förekomma	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	i	i	ADP	_	_	_	_	_	_
 8	press	press	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	6	obl	_	_
@@ -19458,7 +19458,7 @@
 2	80	80	NUM	_	Case=Nom|NumType=Card	3	nummod	_	_
 3	procent	procent	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	6	nsubj	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	kvinnorna	kvinna	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	3	nmod	_	_
+5	kvinnorna	kvinna	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	3	nmod	_	_
 6	arbetar	arbeta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 7	på	på	ADP	_	_	_	_	_	_
 8	de	de	DET	_	_	_	_	_	_
@@ -19469,7 +19469,7 @@
 13	20	20	NUM	_	Case=Nom|NumType=Card	14	nummod	_	_
 14	procent	procent	NOUN	_	Case=Adv|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
 15	av	av	ADP	_	_	_	_	_	_
-16	männen	man	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	14	nmod	_	_
+16	männen	man	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	14	nmod	_	_
 17	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1036
@@ -19708,7 +19708,7 @@
 12	trygghets	trygghet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	13	nmod:poss	_	_
 13	avhängighet	avhängighet	NOUN	_	Case=Ine|Definite=Ind|Gender=Com|Number=Sing	9	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	vanor	vana	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
+15	vanor	vana	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	13	nmod	_	_
 16	och	och	CCONJ	_	_	_	_	_	_
 17	konventioner	konvention	NOUN	_	Case=Conj|Definite=Ind|Gender=Com|Number=Plur	15	conj	_	_
 18	,	,	PUNCT	_	_	_	_	_	_
@@ -19946,7 +19946,7 @@
 25	unga	ung	ADJ	_	Degree=Pos	28	amod	_	_
 26	och	och	CCONJ	_	_	_	_	_	_
 27	instabila	instabil	ADJ	_	Case=Conj|Degree=Pos	25	conj	_	_
-28	personer	person	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	23	nmod	_	_
+28	personer	person	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	23	nmod	_	_
 29	som	som	PRON	_	PronType=Rel	30	nsubj	_	_
 30	hamnat	hamna	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Act	28	acl:relcl	_	_
 31	i	i	ADP	_	_	_	_	_	_
@@ -20090,7 +20090,7 @@
 5	en	en	DET	_	_	_	_	_	_
 6	form	form	NOUN	_	Case=Rpl|Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos	3	xcomp	_	_
 7	av	av	ADP	_	_	_	_	_	_
-8	förvaring	förvaring	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
+8	förvaring	förvaring	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
 9	som	som	PRON	_	PronType=Rel	11	nsubj	_	_
 10	får	få	AUX	_	_	_	_	_	_
 11	rätta	rätta	VERB	_	Mood=Ind;Prms|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
@@ -20193,7 +20193,7 @@
 12	erfarenhet	erfarenhet	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	11	obj	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	kollektiv	kollektiv	ADJ	_	Degree=Pos	15	amod	_	_
-15	fostran	fostran	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	11	obl	_	_
+15	fostran	fostran	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	11	obl	_	_
 16	,	,	PUNCT	_	_	_	_	_	_
 17	t ex	till_exempel	ADV	_	Abbr=Yes	11	advmod	_	_
 18	från	från	ADP	_	_	_	_	_	_
@@ -20341,7 +20341,7 @@
 1	Något	någon	PRON	_	Definite=Ind|Gender=Neut|Number=Sing|PronType=Ind	7	obj	_	_
 2	av	av	ADP	_	_	_	_	_	_
 3	det	den	DET	_	_	_	_	_	_
-4	samma	samma	ADJ	_	Case=Agt|Degree=Pos	1	nmod	_	_
+4	samma	samma	ADJ	_	Case=Gen|Degree=Pos	1	nmod	_	_
 5	kan	kunna	AUX	_	_	_	_	_	_
 6	vi	vi	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	7	nsubj	_	_
 7	studera	studera	VERB	_	Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -20373,7 +20373,7 @@
 14	uteslutande	uteslutande	ADV	_	|	15	advmod	_	_
 15	beroende	beroende	ADJ	_	Case=Conj|Degree=Pos|Polarity=Neg	2	conj	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	henne	hon	PRON	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	15	obl	_	_
+17	henne	hon	PRON	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing|PronType=Prs	15	obl	_	_
 18	,	,	PUNCT	_	_	_	_	_	_
 19	något	någon	PRON	_	Definite=Ind|Gender=Neut|Number=Sing|PronType=Rel	15	appos	_	_
 20	som	som	PRON	_	PronType=Rel	23	nsubj	_	_
@@ -20424,7 +20424,7 @@
 20	skötseln	skötsel	NOUN	_	Case=Conj|Definite=Def|Gender=Com|Number=Sing	18	conj	_	_
 21	av	av	ADP	_	_	_	_	_	_
 22	det	den	DET	_	_	_	_	_	_
-23	jordiska	jordisk	ADJ	_	Case=Agt|Degree=Pos	20	nmod	_	_
+23	jordiska	jordisk	ADJ	_	Case=Gen|Degree=Pos	20	nmod	_	_
 24	-	-	PUNCT	_	_	_	_	_	_
 25	en	en	DET	_	_	_	_	_	_
 26	rationell	rationell	ADJ	_	Degree=Pos	29	amod	_	_
@@ -20488,7 +20488,7 @@
 1	Storfamiljen	storfamilj	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	5	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
 3	denna	denna	DET	_	_	_	_	_	_
-4	typ	typ	NOUN	_	Case=Agt|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	1	nmod	_	_
+4	typ	typ	NOUN	_	Case=Gen|Definite=Def|Dem=Prox|Gender=Com|Number=Sing	1	nmod	_	_
 5	ställer	ställa	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
 6	stora	stor	ADJ	_	Degree=Pos	7	amod	_	_
 7	krav	krav	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Plur	5	obj	_	_
@@ -20510,7 +20510,7 @@
 23	liv	liv	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	21	obj	_	_
 24	av	av	ADP	_	_	_	_	_	_
 25	de	de	DET	_	_	_	_	_	_
-26	vuxna	vuxen	ADJ	_	Case=Agt|Degree=Pos	21	advmod	_	_
+26	vuxna	vuxen	ADJ	_	Case=Gen|Degree=Pos	21	advmod	_	_
 27	måste	måste	AUX	_	_	_	_	_	_
 28	i	i	ADP	_	_	_	_	_	_
 29	längden	längd	NOUN	_	Case=Ine|Definite=Def|Gender=Com|Number=Sing	31	obl	_	_
@@ -20566,7 +20566,7 @@
 11	av	av	ADP	_	_	_	_	_	_
 12	en	en	NUM	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing|NumType=Card	14	nummod	_	_
 13	enda	enda	ADJ	_	Degree=Pos	14	amod	_	_
-14	person	person	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
+14	person	person	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
 15	-	-	PUNCT	_	_	_	_	_	_
 16	vem	vem	PRON	_	Definite=Ind|Gender=Com|Mood=Ind|Number=Sing|Polarity=Pos|PronType=Int	21	advcl	_	_
 17	denna	denna	DET	_	_	_	_	_	_
@@ -20719,7 +20719,7 @@
 6	av	av	ADP	_	_	_	_	_	_
 7	växandets	växande	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	9	nmod:poss	_	_
 8	oerhörda	oerhörd	ADJ	_	Degree=Pos	9	amod	_	_
-9	glädje	glädje	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	3	nmod	_	_
+9	glädje	glädje	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	3	nmod	_	_
 10	?	?	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1077
@@ -20858,7 +20858,7 @@
 12	huvudparten	huvudpart	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	11	obj	_	_
 13	av	av	ADP	_	_	_	_	_	_
 14	sin	sig	PRON	_	Definite=Def|Gender=Com|Number=Sing|Poss=Yes|PronType=Prs	15	nmod:poss	_	_
-15	arbetstid	arbetstid	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
+15	arbetstid	arbetstid	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	12	nmod	_	_
 16	åt	åt	ADP	_	_	_	_	_	_
 17	ett	en	NUM	_	Case=Disj|Definite=Ind|Gender=Neut|Number=Sing|NumType=Card	20	nummod	_	_
 18	eller	eller	CCONJ	_	_	_	_	_	_
@@ -20918,7 +20918,7 @@
 14	av	av	ADP	_	_	_	_	_	_
 15	det	den	DET	_	_	_	_	_	_
 16	existerande	existerande	ADJ	_	Degree=Pos	17	amod	_	_
-17	samhället	samhälle	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	10	obl	_	_
+17	samhället	samhälle	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	10	obl	_	_
 18	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1083
@@ -20958,7 +20958,7 @@
 # text = Många av oss skulle kanske föredra att avstå från komplett privat ekonomiavdelning och få utökad gemensam service i stället.
 1	Många	mången	PRON	_	Definite=Ind|Number=Plur|PronType=Ind	6	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	oss	vi	PRON	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	1	nmod	_	_
+3	oss	vi	PRON	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	1	nmod	_	_
 4	skulle	skola	AUX	_	_	_	_	_	_
 5	kanske	kanske	ADV	_	|	6	advmod	_	_
 6	föredra	föredra	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
@@ -21180,7 +21180,7 @@
 22	tillgodosåg	tillgodose	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	19	acl:relcl	_	_
 23	behoven	behov	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Plur	22	obj	_	_
 24	av	av	ADP	_	_	_	_	_	_
-25	service	service	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	23	nmod	_	_
+25	service	service	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	23	nmod	_	_
 26	,	,	PUNCT	_	_	_	_	_	_
 27	kultur	kultur	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	25	conj	_	_
 28	,	,	PUNCT	_	_	_	_	_	_
@@ -21248,7 +21248,7 @@
 13	,	,	PUNCT	_	_	_	_	_	_
 14	av	av	ADP	_	_	_	_	_	_
 15	intim	intim	ADJ	_	Degree=Pos	16	amod	_	_
-16	kvarterstyp	kvarterstyp	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
+16	kvarterstyp	kvarterstyp	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
 17	,	,	PUNCT	_	_	_	_	_	_
 18	inom	inom	ADP	_	_	_	_	_	_
 19	sina	sig	PRON	_	Definite=Def|Number=Plur|Poss=Yes|PronType=Prs	20	nmod:poss	_	_
@@ -21338,7 +21338,7 @@
 8	av	av	ADP	_	_	_	_	_	_
 9	samhällets	samhälle	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	11	nmod:poss	_	_
 10	viktigaste	viktig	ADJ	_	Degree=Sup	11	amod	_	_
-11	yrkesgrupper	yrkesgrupp	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	7	nmod	_	_
+11	yrkesgrupper	yrkesgrupp	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	7	nmod	_	_
 12	och	och	CCONJ	_	_	_	_	_	_
 13	vi	vi	PRON	_	Case=Nom|Definite=Def|Gender=Com|Number=Plur|PronType=Prs	15	nsubj	_	_
 14	måste	måste	AUX	_	_	_	_	_	_
@@ -21758,7 +21758,7 @@
 7	av	av	ADP	_	_	_	_	_	_
 8	en	en	DET	_	_	_	_	_	_
 9	mängd	mängd	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	10	nmod	_	_
-10	uppslagsändar	uppslagsände	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	6	nmod	_	_
+10	uppslagsändar	uppslagsände	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	6	nmod	_	_
 11	som	som	PRON	_	PronType=Rel	13	nsubj	_	_
 12	länge	länge	ADV	_	Degree=Pos	13	advmod	_	_
 13	legat	ligga	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Sup|Voice=Act	10	acl:relcl	_	_
@@ -21928,7 +21928,7 @@
 10	olika	olik	ADJ	_	Degree=Pos	11	amod	_	_
 11	former	form	NOUN	_	Case=Adv|Definite=Ind|Gender=Com|Number=Plur	6	obl	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	sammanlevnad	sammanlevnad	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
+13	sammanlevnad	sammanlevnad	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	11	nmod	_	_
 14	och	och	CCONJ	_	_	_	_	_	_
 15	varför	varför	ADV	_	|	16	advmod	_	_
 16	blir	bli	VERB	_	Case=Conj|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
@@ -22023,7 +22023,7 @@
 10	accepterande	accepterande	NOUN	_	Case=The|Definite=Ind|Gender=Neut|Number=Sing	6	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	rådande	rådande	ADJ	_	Degree=Pos	13	amod	_	_
-13	förhållanden	förhållande	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
+13	förhållanden	förhållande	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	10	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1119
@@ -22064,7 +22064,7 @@
 15	ifrågasätter	ifrågasätta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
 16	värdet	värde	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	15	obj	_	_
 17	av	av	ADP	_	_	_	_	_	_
-18	familjebildning	familjebildning	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	_
+18	familjebildning	familjebildning	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	16	nmod	_	_
 19	och	och	CCONJ	_	_	_	_	_	_
 20	ansvarstagande	ansvarstagande	NOUN	_	Case=Conj|Definite=Ind|Gender=Neut|Number=Sing	18	conj	_	_
 21	i	i	ADP	_	_	_	_	_	_
@@ -22140,7 +22140,7 @@
 29	ekonomiskt	ekonomisk	ADJ	_	Degree=Pos	30	amod	_	_
 30	beroende	beroende	NOUN	_	Case=Abe|Definite=Ind|Gender=Neut|Number=Sing	23	obl	_	_
 31	av	av	ADP	_	_	_	_	_	_
-32	anhöriga	anhörig	ADJ	_	Case=Agt|Degree=Pos	30	nmod	_	_
+32	anhöriga	anhörig	ADJ	_	Case=Gen|Degree=Pos	30	nmod	_	_
 33	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1123
@@ -22152,7 +22152,7 @@
 5	av	av	ADP	_	_	_	_	_	_
 6	'	'	PUNCT	_	_	_	_	_	_
 7	frivillig	frivillig	ADJ	_	Degree=Pos	8	amod	_	_
-8	samlevnad	samlevnad	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
+8	samlevnad	samlevnad	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	4	nmod	_	_
 9	mellan	mellan	ADP	_	_	_	_	_	_
 10	självständiga	självständig	ADJ	_	Degree=Pos	11	amod	_	_
 11	personer	person	NOUN	_	Case=Int|Definite=Ind|Gender=Com|Number=Plur	8	nmod	_	_
@@ -22222,7 +22222,7 @@
 14	att	att	SCONJ	_	_	_	_	_	_
 15	en	man	PRON	_	Definite=Ind|Gender=Com|Number=Sing|PronType=Prs	18	nsubj	_	_
 16	av	av	ADP	_	_	_	_	_	_
-17	makarna	make	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Plur	15	nmod	_	_
+17	makarna	make	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Plur	15	nmod	_	_
 18	avlider	avlida	VERB	_	Case=Atr;Ins|Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	11	advcl	_	_
 19	som	som	ADV	_	|	21	advmod	_	_
 20	rättsverkan	rättsverkan	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	21	nsubj	_	_
@@ -22458,7 +22458,7 @@
 # sent_id = sv-ud-test-1137
 # text = Av artikeln framgick klart, att den rapporten måste ses som representativ för det socialdemokratiska partiets familjesyn men att någon majoritet av svenska folket säkert inte står bakom de uppfattningar som förs fram i rapporten.
 1	Av	av	ADP	_	_	_	_	_	_
-2	artikeln	artikel	NOUN	_	Case=Agt|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
+2	artikeln	artikel	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	3	obl	_	_
 3	framgick	framgå	VERB	_	Mood=Ind|Polarity=Pos|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
 4	klart	klar	ADV	_	Degree=Pos	3	advmod	_	_
 5	,	,	PUNCT	_	_	_	_	_	_
@@ -22480,7 +22480,7 @@
 21	majoritet	majoritet	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	27	nsubj	_	_
 22	av	av	ADP	_	_	_	_	_	_
 23	svenska	svensk	ADJ	_	Degree=Pos	24	amod	_	_
-24	folket	folk	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	21	nmod	_	_
+24	folket	folk	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	21	nmod	_	_
 25	säkert	säker	ADV	_	Degree=Pos	27	advmod	_	_
 26	inte	inte	PART	_	_	_	_	_	_
 27	står	stå	VERB	_	Case=Atr|Mood=Ind|Polarity=Neg|Tense=Pres|VerbForm=Fin|Voice=Act	10	conj	_	_
@@ -22601,7 +22601,7 @@
 10	att	att	SCONJ	_	_	_	_	_	_
 11	känslan	känsla	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	17	nsubj	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	ansvar	ansvar	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	11	nmod	_	_
+13	ansvar	ansvar	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	11	nmod	_	_
 14	för	för	ADP	_	_	_	_	_	_
 15	de	de	DET	_	_	_	_	_	_
 16	närstående	närstående	ADJ	_	Case=Ben|Degree=Pos	13	nmod	_	_
@@ -22615,7 +22615,7 @@
 # text = Känslan av varaktighet i ett förhållande ökar viljan till investeringar i eget hem och andra kapitalvaror.
 1	Känslan	känsla	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	7	nsubj	_	_
 2	av	av	ADP	_	_	_	_	_	_
-3	varaktighet	varaktighet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
+3	varaktighet	varaktighet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	1	nmod	_	_
 4	i	i	ADP	_	_	_	_	_	_
 5	ett	en	DET	_	_	_	_	_	_
 6	förhållande	förhållande	NOUN	_	Case=Ine|Definite=Ind|Gender=Neut|Number=Sing	3	nmod	_	_
@@ -22693,7 +22693,7 @@
 11	större	stor	ADJ	_	Degree=Cmp	12	amod	_	_
 12	del	del	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Sing	7	obj	_	_
 13	av	av	ADP	_	_	_	_	_	_
-14	ansvaret	ansvar	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing	12	nmod	_	_
+14	ansvaret	ansvar	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing	12	nmod	_	_
 15	för	för	ADP	_	_	_	_	_	_
 16	barnens	barn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	17	nmod:poss	_	_
 17	vård	vård	NOUN	_	Case=Ben|Definite=Ind|Gender=Com|Number=Sing	14	nmod	_	_
@@ -22740,7 +22740,7 @@
 12	kollektiv	kollektiv	ADJ	_	Degree=Pos	13	amod	_	_
 13	uppfostran	uppfostran	NOUN	_	Case=Per|Definite=Ind|Gender=Com|Number=Sing	17	obl	_	_
 14	av	av	ADP	_	_	_	_	_	_
-15	barnen	barn	NOUN	_	Case=Agt|Definite=Def|Gender=Neut|Number=Plur	13	nmod	_	_
+15	barnen	barn	NOUN	_	Case=Gen|Definite=Def|Gender=Neut|Number=Plur	13	nmod	_	_
 16	kan	kunna	AUX	_	_	_	_	_	_
 17	komma	komma	VERB	_	Case=Atr|Mood=Ind;Pot|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl	_	_
 18	närmare	nära	ADV	_	_	_	_	_	_
@@ -22848,7 +22848,7 @@
 2	Äktenskapet	äktenskap	NOUN	_	Case=Nom|Definite=Def|Gender=Neut|Number=Sing	6	nsubj	_	_
 3	är	vara	AUX	_	_	_	_	_	_
 4	av	av	ADP	_	_	_	_	_	_
-5	Gud	Gud	PROPN	_	Case=Agt	6	obl:agent	_	_
+5	Gud	Gud	PROPN	_	Case=Gen	6	obl:agent	_	_
 6	instiftat	instiftad	ADJ	_	Degree=Pos|Mood=Ind|Polarity=Pos	0	root	_	_
 7	'	'	PUNCT	_	_	_	_	_	_
 8	heter	heta	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
@@ -23225,7 +23225,7 @@
 14	majoriteten	majoritet	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	18	nsubj	_	_
 15	av	av	ADP	_	_	_	_	_	_
 16	dagens	dag	NOUN	_	Case=Gen|Definite=Def|Gender=Com|Number=Sing	17	nmod:poss	_	_
-17	vigslar	vigsel	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	14	nmod	_	_
+17	vigslar	vigsel	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	14	nmod	_	_
 18	sker	ske	VERB	_	Mood=Ind|Polarity=Pos|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
 19	,	,	PUNCT	_	_	_	_	_	_
 20	skulle	skola	AUX	_	_	_	_	_	_
@@ -23296,7 +23296,7 @@
 21	av	av	ADP	_	_	_	_	_	_
 22	ett	en	DET	_	_	_	_	_	_
 23	ifyllt	ifylld	ADJ	_	Degree=Pos	24	amod	_	_
-24	formulär	formulär	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Sing	20	nmod	_	_
+24	formulär	formulär	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Sing	20	nmod	_	_
 25	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1178
@@ -23413,7 +23413,7 @@
 10	inte	inte	PART	_	_	_	_	_	_
 11	registreringen	registrering	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing|Polarity=Neg	8	conj	_	_
 12	av	av	ADP	_	_	_	_	_	_
-13	detsamma	densamma	PRON	_	Case=Agt|Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	11	nmod	_	_
+13	detsamma	densamma	PRON	_	Case=Gen|Definite=Def|Gender=Neut|Number=Sing|PronType=Prs	11	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P416.23
@@ -23454,7 +23454,7 @@
 7	av	av	ADP	_	_	_	_	_	_
 8	en	en	DET	_	_	_	_	_	_
 9	minskad	minskad	ADJ	_	Degree=Pos	10	amod	_	_
-10	benägenhet	benägenhet	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
+10	benägenhet	benägenhet	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Sing	6	nmod	_	_
 11	att	att	PART	_	_	_	_	_	_
 12	ta	ta	VERB	_	Mood=Ind|Polarity=Pos|VerbForm=Inf|Voice=Act	10	acl	_	_
 13	ansvar	ansvar	NOUN	_	Case=Nom|Definite=Ind|Gender=Neut|Number=Sing	12	obj	_	_
@@ -23790,7 +23790,7 @@
 10	rättsverkningar	rättsverkning	NOUN	_	Case=The|Definite=Ind|Gender=Com|Number=Plur	8	obl	_	_
 11	av	av	ADP	_	_	_	_	_	_
 12	olika	olik	ADJ	_	Degree=Pos	13	amod	_	_
-13	samlevnadsformer	samlevnadsform	NOUN	_	Case=Agt|Definite=Ind|Gender=Com|Number=Plur	10	nmod	_	_
+13	samlevnadsformer	samlevnadsform	NOUN	_	Case=Gen|Definite=Ind|Gender=Com|Number=Plur	10	nmod	_	_
 14	.	.	PUNCT	_	_	_	_	_	_
 
 # sent_id = sv-ud-test-1199
@@ -23960,7 +23960,7 @@
 25	förmåner	förmån	NOUN	_	Case=Nom|Definite=Ind|Gender=Com|Number=Plur	21	obj	_	_
 26	av	av	ADP	_	_	_	_	_	_
 27	olika	olik	ADJ	_	Degree=Pos	28	amod	_	_
-28	slag	slag	NOUN	_	Case=Agt|Definite=Ind|Gender=Neut|Number=Plur	25	nmod	_	_
+28	slag	slag	NOUN	_	Case=Gen|Definite=Ind|Gender=Neut|Number=Plur	25	nmod	_	_
 29	.	.	PUNCT	_	_	_	_	_	_
 
 # newpar id = P416.28
